@@ -1,0 +1,719 @@
+================================================================
+HAVA ARACI BAKIM PERSONELİ YABANCI DİL SINAVI
+SORU BANKASI - BÖLÜM 6 DEVAM: CÜMLE TAMAMLAMA (SENTENCE COMPLETION)
+100 SORU — Q1901-Q2000
+================================================================
+
+1901. If an engine experiences an overtemperature event, ……………………………………
+a) a borescope inspection of the turbine section must be performed before return to service.
+b) the engine may be returned to service if the cockpit indication returns to normal.
+c) the event must be reported to the crew after the flight.
+d) no inspection is required if the exceedance was brief.
+ANSWER: a
+
+1902. Before entering a fuel tank for maintenance, ……………………………………
+a) a confined space permit and atmospheric monitoring must be in place.
+b) only verbal permission from the supervisor is required.
+c) the area must be ventilated for 30 minutes only.
+d) the technician may enter alone if the tank has been drained.
+ANSWER: a
+
+1903. Aircraft tyres are inflated with nitrogen rather than compressed air because ……………………………………
+a) nitrogen is dry and does not support combustion.
+b) nitrogen provides more cushioning at high landing speeds.
+c) compressed air is too expensive for aviation use.
+d) nitrogen is lighter than air, reducing tyre weight.
+ANSWER: a
+
+1904. When a hydraulic system component is replaced, ……………………………………
+a) the system must be leak-tested before the aircraft returns to service.
+b) the hydraulic fluid need not be changed unless visibly contaminated.
+c) a pressure test is optional if the component is a direct replacement.
+d) no functional test is required for minor components.
+ANSWER: a
+
+1905. A maintenance task card is used to ……………………………………
+a) define, control, and document each individual maintenance task.
+b) record the aircraft's flight hours and cycles only.
+c) authorize the maintenance organisation to carry out work.
+d) provide a cost estimate for each maintenance task.
+ANSWER: a
+
+1906. If carbon brake discs become contaminated with oil or grease, ……………………………………
+a) their braking performance is degraded and they must be replaced.
+b) they can be cleaned with a solvent and returned to service.
+c) their performance is unaffected below the wear limit.
+d) the contamination is acceptable if detected before the next flight.
+ANSWER: a
+
+1907. After a hard landing, ……………………………………
+a) a specific inspection of the landing gear, structure, and surrounding systems must be performed.
+b) the aircraft may continue in service if no vibration was felt.
+c) only the landing gear tyres need to be inspected.
+d) the inspection is deferred to the next scheduled C-check.
+ANSWER: a
+
+1908. The aircraft's centre of gravity must remain within limits throughout the flight because ……………………………………
+a) a CG outside limits can make the aircraft uncontrollable or structurally unsafe.
+b) exceeding CG limits increases fuel burn.
+c) the pressurization system depends on CG being within range.
+d) CG outside limits triggers autopilot disconnection.
+ANSWER: a
+
+1909. Electrical bonding straps that are broken or corroded must ……………………………………
+a) be replaced immediately to restore electrical continuity.
+b) be cleaned and retested before further action.
+c) be monitored at the next scheduled inspection.
+d) be replaced only if the resistance exceeds 10 ohms.
+ANSWER: a
+
+1910. Before performing any maintenance on a high-voltage electrical system, ……………………………………
+a) power isolation must be verified and a lockout/tagout procedure applied.
+b) the system may remain energized if the area is properly marked.
+c) verbal confirmation from the pilot is sufficient authorization.
+d) a qualified electrician must be present as an observer only.
+ANSWER: a
+
+1911. The fire suppression system on an aircraft engine ……………………………………
+a) is activated by the engine fire push button in the cockpit, which isolates the engine and arms the extinguisher.
+b) discharges automatically when the fire detection loop detects heat.
+c) can only be activated by ground personnel.
+d) provides unlimited fire suppression capacity.
+ANSWER: a
+
+1912. If metallic particles are found in a hydraulic filter during replacement, ……………………………………
+a) a system investigation must be initiated to identify the source.
+b) the particles are noted and the system returned to service.
+c) the hydraulic fluid is replaced and no further action is needed.
+d) the filter replacement interval is shortened to 50 hours.
+ANSWER: a
+
+1913. Avionics equipment must be protected from electrostatic discharge because ……………………………………
+a) static electricity can damage sensitive electronic components.
+b) static electricity reduces the battery life of avionics units.
+c) electrostatic discharge can cause shorts in the aircraft wiring.
+d) avionics are required by law to be stored in antistatic environments.
+ANSWER: a
+
+1914. The Aircraft Maintenance Manual (AMM) must be consulted because ……………………………………
+a) it provides the approved step-by-step procedures for all maintenance tasks.
+b) it contains the aircraft's flight performance data.
+c) it is the only source of spare parts information.
+d) it replaces the need for maintenance personnel qualifications.
+ANSWER: a
+
+1915. During aircraft fuelling operations, the aircraft must be bonded to the fuel bowser because ……………………………………
+a) this dissipates static electricity and reduces the risk of igniting fuel vapour.
+b) it ensures the fuel flow rate is measured accurately.
+c) it prevents contamination of the fuel during transfer.
+d) it is a requirement of the refuelling contract.
+ANSWER: a
+
+1916. A borescope inspection is used to ……………………………………
+a) visually inspect internal engine components without major disassembly.
+b) measure fuel flow through the engine fuel nozzles.
+c) check hydraulic pressure inside the actuators.
+d) inspect the external surface of the engine fan blades.
+ANSWER: a
+
+1917. If the nitrogen pre-charge in a hydraulic accumulator is found too low, ……………………………………
+a) the accumulator's capacity is reduced and it must be recharged to the specified pressure.
+b) the accumulator is serviceable if the hydraulic pressure remains normal.
+c) the aircraft may continue in service with enhanced monitoring.
+d) the nitrogen charge is supplemented with compressed air.
+ANSWER: a
+
+1918. When an aircraft undergoes a D-check (heavy maintenance visit), ……………………………………
+a) the aircraft is fully disassembled to allow comprehensive structural inspection of the entire airframe.
+b) only the engines and landing gear are overhauled.
+c) the check is limited to electrical and avionics systems.
+d) the check is performed on a sample of aircraft in the fleet only.
+ANSWER: a
+
+1919. The purpose of the Illustrated Parts Catalogue (IPC) is to ……………………………………
+a) identify parts by assembly breakdown and part number for ordering and installation.
+b) provide step-by-step maintenance procedures for each system.
+c) list the electrical schematic of each aircraft system.
+d) provide the aircraft's structural repair limits.
+ANSWER: a
+
+1920. A component that has a "hard time" life limit ……………………………………
+a) must be replaced or overhauled at a fixed interval regardless of its apparent condition.
+b) must be replaced only when it shows signs of wear.
+c) may be extended beyond its limit if an inspection confirms it is serviceable.
+d) has no condition monitoring requirements.
+ANSWER: a
+
+1921. Before an aircraft is released to service after maintenance, the certifying engineer must ……………………………………
+a) confirm that all maintenance work has been correctly completed and documented.
+b) check that the aircraft has sufficient fuel for the next flight.
+c) ensure the flight crew is aware of the maintenance performed.
+d) verify that all passengers have boarded the aircraft.
+ANSWER: a
+
+1922. The purpose of the MEL (Minimum Equipment List) is to ……………………………………
+a) allow the aircraft to dispatch with defined inoperative systems or components under controlled conditions.
+b) list all equipment that must be operational for every flight.
+c) define the minimum maintenance tools required for each check.
+d) specify the minimum qualifications for maintenance personnel.
+ANSWER: a
+
+1923. If a tyre shows a flat spot caused by a locked-wheel skid, ……………………………………
+a) it must be assessed against the allowable damage limits and may need to be replaced.
+b) it can be returned to service if the flat spot is smooth.
+c) it is serviceable if the wheel passes a visual balance check.
+d) it need only be replaced if the aircraft has a reported shimmy on the next landing.
+ANSWER: a
+
+1924. Delamination in a composite structure ……………………………………
+a) is separation of layers within the material that may not be visible from the surface and requires NDT to assess.
+b) is a surface defect that can be repaired with surface filler.
+c) is always visible as a raised blister on the surface.
+d) can be corrected by applying pressure and adhesive.
+ANSWER: a
+
+1925. Engine trend monitoring is used to ……………………………………
+a) detect early signs of engine deterioration by analysing performance data over time.
+b) record the engine's total accumulated hours for logbook purposes.
+c) calculate the engine's remaining service life.
+d) monitor fuel efficiency during normal cruise flight.
+ANSWER: a
+
+1926. Before an aircraft can be towed, ……………………………………
+a) chocks must be removed, gear pins removed, all panels secured, and a clear communication plan established.
+b) the pilot must confirm the tow from the cockpit.
+c) the aircraft must have all engines running.
+d) the fuelling operation must be completed.
+ANSWER: a
+
+1927. The function of the pitot heat system is to ……………………………………
+a) prevent ice from forming on the pitot probe, which would cause incorrect airspeed indication.
+b) heat the windshield to prevent ice accumulation.
+c) provide warm air to the static ports to prevent condensation.
+d) regulate the temperature of the pitot system pressure lines.
+ANSWER: a
+
+1928. When performing a weight and balance calculation, the "moment" is determined by ……………………………………
+a) multiplying the weight of each item by its arm (distance from the reference datum).
+b) dividing the total aircraft weight by the distance between the CG and the datum.
+c) adding the weight of all items to the basic empty weight.
+d) subtracting the zero fuel weight from the maximum takeoff weight.
+ANSWER: a
+
+1929. During a pressurization test of the aircraft fuselage structure, ……………………………………
+a) the structural integrity of the fuselage under pressurization loading is verified.
+b) only the door seals and window seals are checked.
+c) the test is performed only if a pressurization warning has occurred.
+d) the aircraft is pressurized to twice the normal differential pressure.
+ANSWER: a
+
+1930. Replacement parts installed on an aircraft must ……………………………………
+a) have a valid serviceable release certificate and traceable part history.
+b) only be from the same manufacturer as the part they replace.
+c) be visually inspected by the pilot before installation.
+d) be re-certified by the maintenance organisation before use.
+ANSWER: a
+
+1931. If an aircraft exceeds its maximum landing weight on landing, ……………………………………
+a) a special inspection must be performed before the next flight.
+b) the aircraft may continue in service if no structural damage is visible.
+c) the flight crew must complete an incident report and no further action is needed.
+d) the landing gear only needs to be inspected.
+ANSWER: a
+
+1932. The function of the aircraft bleed air precooler is to ……………………………………
+a) reduce the temperature of the bleed air before it enters the pneumatic distribution manifold.
+b) increase the pressure of bleed air for engine starting.
+c) cool the cabin air before it is delivered to passengers.
+d) regulate bleed air flow to the anti-icing system.
+ANSWER: a
+
+1933. A "squawk" as used by aircraft maintenance personnel refers to ……………………………………
+a) a defect or malfunction reported by the flight crew for maintenance action.
+b) a type of radio communication between the aircraft and ATC.
+c) a specific warning tone activated by the aircraft's GPWS.
+d) a maintenance schedule item.
+ANSWER: a
+
+1934. FOD (Foreign Object Debris/Damage) prevention in maintenance requires ……………………………………
+a) accounting for all tools and materials before and after each maintenance task.
+b) using only approved tools from the tool store.
+c) conducting a walkround of the aircraft after every maintenance action.
+d) keeping all work areas clean at the end of the maintenance check.
+ANSWER: a
+
+1935. When locking wire is installed on a critical fastener, ……………………………………
+a) it must be routed so that loosening the fastener causes the wire to tighten.
+b) the wire must be routed away from any moving parts.
+c) the wire must be installed before the fastener is torqued.
+d) the wire must be attached to an adjacent structure for support.
+ANSWER: a
+
+1936. A "Certificate of Release to Service" (CRS) ……………………………………
+a) is issued by the certifying engineer to confirm the aircraft is airworthy following maintenance.
+b) is issued by the regulatory authority after annual inspection.
+c) is issued to approve the use of a new component type.
+d) is issued by the manufacturer after delivery of a new aircraft.
+ANSWER: a
+
+1937. A hydraulic system bypass valve open position means ……………………………………
+a) fluid flows around a restriction, which may indicate a blocked component or open test valve.
+b) the system has been isolated for maintenance.
+c) the pump is operating at maximum output.
+d) the accumulator is fully charged and the excess pressure is relieved.
+ANSWER: a
+
+1938. If an aircraft is struck by lightning, ……………………………………
+a) specific inspections covering lightning entry/exit points, fuel system, avionics, and flight controls must be completed before return to service.
+b) the aircraft may continue operations if no pilot report of damage is received.
+c) only the antenna and avionics need to be checked.
+d) the aircraft is inspected at the next scheduled check.
+ANSWER: a
+
+1939. The purpose of the Safety Management System (SMS) in a maintenance organisation is to ……………………………………
+a) systematically identify, assess, and mitigate safety risks through a structured process.
+b) investigate accidents after they occur.
+c) ensure all maintenance is completed on schedule.
+d) provide a training framework for new technicians.
+ANSWER: a
+
+1940. When performing an NDT inspection, the method selected must ……………………………………
+a) be appropriate for the material type and the type of defect being sought.
+b) be the most cost-effective method available.
+c) always include both ultrasonic and visual inspection.
+d) be the method with which the technician is most familiar.
+ANSWER: a
+
+1941. Before releasing the aircraft after a C-check, ……………………………………
+a) all task cards must be signed off, all components reinstalled, and a comprehensive functional check performed.
+b) a test flight must always be performed.
+c) the regulatory authority must inspect the aircraft.
+d) all major components must be sent for calibration.
+ANSWER: a
+
+1942. Engine-driven hydraulic pumps (EDPs) are driven from ……………………………………
+a) the engine accessory gearbox and are the primary source of hydraulic pressure.
+b) the APU bleed air system.
+c) the aircraft electrical bus.
+d) the engine thrust reverser system.
+ANSWER: a
+
+1943. When using dye penetrant inspection, the developer is applied to ……………………………………
+a) draw penetrant out of any cracks, making them visible as coloured indications.
+b) clean the surface before the penetrant is applied.
+c) set the penetrant permanently in any defects found.
+d) increase the surface porosity for better penetrant absorption.
+ANSWER: a
+
+1944. If the fire extinguisher bottle pressure on an engine is below the minimum limit, ……………………………………
+a) the system is unserviceable and must be recharged or replaced before the next flight.
+b) the aircraft may fly for one more sector with crew awareness.
+c) a lower pressure is acceptable if the temperature is low.
+d) the bottle is acceptable if the other bottle is fully charged.
+ANSWER: a
+
+1945. During an aircraft painting operation, ……………………………………
+a) masking must protect all areas not to be painted, and overspray must be prevented from reaching critical areas.
+b) the aircraft must be fully fuelled to prevent moisture ingress.
+c) all access panels must be removed to ensure full coverage.
+d) the aircraft must be in the pressurized condition during painting.
+ANSWER: a
+
+1946. The Fault Isolation Manual (FIM) provides ……………………………………
+a) systematic troubleshooting guidance to identify the cause of faults in aircraft systems.
+b) the step-by-step procedures for replacing faulty components.
+c) a list of all faults that have been recorded on the aircraft fleet.
+d) the approved tools for testing each aircraft system.
+ANSWER: a
+
+1947. Pitting corrosion in aluminium structures is particularly concerning because ……………………………………
+a) the small pits can be deeper than they appear and can grow into cracks under fatigue loading.
+b) pitting always requires immediate structural replacement.
+c) pitting corrosion cannot be detected by visual inspection.
+d) pitting corrosion affects only cosmetic surfaces.
+ANSWER: a
+
+1948. When a new Aircraft Maintenance Programme (AMP) revision is issued, ……………………………………
+a) the operator must update their maintenance procedures to comply with the new revision.
+b) the revision takes effect only after the next scheduled C-check.
+c) the revision applies only to new aircraft entering the fleet.
+d) the operator may continue with the previous revision until the next renewal.
+ANSWER: a
+
+1949. A "dry bay" in aircraft structure is an area where ……………………………………
+a) no flammable fluids are permitted, to reduce fire risk.
+b) the aircraft dehumidification system vents dry air.
+c) all drains are sealed to prevent moisture entry.
+d) fuel tank access is prohibited for maintenance.
+ANSWER: a
+
+1950. If a maintenance organisation fails to maintain its required certifications and approvals, ……………………………………
+a) it may lose the authorisation to release aircraft to service.
+b) it must immediately ground all aircraft it has signed for.
+c) all maintenance work performed becomes automatically invalid.
+d) the regulatory authority issues a warning but no operational impact occurs.
+ANSWER: a
+
+1951. Aircraft battery electrolyte spills must be ……………………………………
+a) neutralised with the appropriate solution before cleaning, as the electrolyte is corrosive.
+b) cleaned with dry cloths immediately without any treatment.
+c) reported to the regulatory authority within 24 hours.
+d) sealed with sealant to prevent further spread.
+ANSWER: a
+
+1952. The purpose of the outflow valve in the pressurization system is to ……………………………………
+a) control the rate at which cabin air is vented overboard, thereby maintaining the desired differential pressure.
+b) supply fresh outside air to the cabin.
+c) shut off the bleed air supply to the cabin if pressure exceeds limits.
+d) provide a safety relief function if the fuselage is overpressurised.
+ANSWER: a
+
+1953. Wing anti-icing using bleed air is more effective than de-icing fluid because ……………………………………
+a) bleed air provides continuous heating, preventing ice formation rather than removing ice after it forms.
+b) bleed air is available on all aircraft types.
+c) de-icing fluid degrades quickly at high altitude.
+d) bleed air uses less energy than the de-icing system.
+ANSWER: a
+
+1954. The purpose of the crew oxygen demand mask is to ……………………………………
+a) deliver oxygen on demand to crew members at high altitude when cabin pressure is lost.
+b) provide supplemental oxygen during normal flight above 10,000 ft.
+c) supply 100% oxygen to crew throughout all flight phases.
+d) replace the function of the aircraft pressurization system.
+ANSWER: a
+
+1955. An aircraft that is operated outside of its Approved Maintenance Programme without authorisation ……………………………………
+a) may be considered unairworthy and be grounded by the regulatory authority.
+b) can continue operations if no defects are found.
+c) must undergo an additional inspection to return to compliance.
+d) will have its Certificate of Airworthiness automatically suspended.
+ANSWER: a
+
+1956. When an engine is motored without ignition after a failed start, the purpose is to ……………………………………
+a) purge unburned fuel from the combustion section to prevent a hot start on the next attempt.
+b) cool the turbine section after a high-power run.
+c) dry the engine of any residual moisture after storage.
+d) check that the starter is functioning correctly before the next start attempt.
+ANSWER: a
+
+1957. Non-destructive testing is called "non-destructive" because ……………………………………
+a) it detects defects without damaging or permanently altering the component.
+b) it does not require the component to be removed from the aircraft.
+c) the test equipment cannot be damaged by the test.
+d) it is performed outside the aircraft structure.
+ANSWER: a
+
+1958. The Structural Repair Manual (SRM) is used when ……………………………………
+a) damage is found on the aircraft structure and approved repair data or allowable damage limits are required.
+b) the aircraft undergoes a routine A-check inspection.
+c) avionics components are replaced on the aircraft.
+d) the weight and balance of the aircraft is recalculated.
+ANSWER: a
+
+1959. Tool calibration records must be maintained by the maintenance organisation because ……………………………………
+a) calibrated tools are required to ensure accurate measurements and correct torque application.
+b) calibration is required only for new tools when first issued.
+c) the regulatory authority requires all tools to be certificated annually.
+d) calibration prevents tools from being used by unauthorised personnel.
+ANSWER: a
+
+1960. If a hydraulic system's fluid is found to be contaminated with water, ……………………………………
+a) the fluid must be completely drained and replaced, and the system investigated to identify the source of water ingress.
+b) the water content is acceptable if below 0.5%.
+c) the water can be removed by circulating the fluid through the filter.
+d) the system is returned to service if the fluid passes a colour check.
+ANSWER: a
+
+1961. The purpose of the aircraft Technical Log is to ……………………………………
+a) record all flight hours, defects, maintenance actions, and certifications throughout the aircraft's operation.
+b) record the training hours of the maintenance personnel.
+c) provide regulatory authorities with a summary of completed maintenance checks.
+d) document the fuel uplifted at each refuelling stop.
+ANSWER: a
+
+1962. An overspeed condition in an aircraft engine is particularly dangerous because ……………………………………
+a) centrifugal forces at excessive speed can cause plastic deformation or failure of rotating components.
+b) the engine fuel metering unit may be damaged.
+c) the engine oil system cannot lubricate adequately at high speeds.
+d) the compressor blades may stall at excessive speed.
+ANSWER: a
+
+1963. Before signing a maintenance task as complete, the certifying engineer must ……………………………………
+a) personally verify that the work has been carried out correctly and all referenced documentation has been followed.
+b) ensure the aircraft has been fuelled for the next flight.
+c) confirm that the next maintenance task has been planned.
+d) receive approval from the quality manager.
+ANSWER: a
+
+1964. The purpose of aircraft ground bonding cables is to ……………………………………
+a) equalize the electrical potential between the aircraft and ground equipment to prevent static sparks.
+b) connect the aircraft to the main electrical supply on the ground.
+c) secure the aircraft to the ground during high-wind conditions.
+d) provide a return path for ground power current.
+ANSWER: a
+
+1965. A serviceable life-limited component must have ……………………………………
+a) complete and traceable maintenance history with current life remaining clearly documented.
+b) only the manufacturer's part number and serial number on a tag.
+c) a valid test certificate from the overhaul facility.
+d) the aircraft registration number it was removed from.
+ANSWER: a
+
+1966. During aircraft jacking operations, ……………………………………
+a) the aircraft must be continuously monitored and jacking pads correctly positioned to prevent structural damage.
+b) the engines must be running to maintain hydraulic pressure.
+c) the aircraft may be lowered immediately if a problem occurs.
+d) only one jack is required for stability during nose gear work.
+ANSWER: a
+
+1967. When performing maintenance on the aircraft fuel system, ……………………………………
+a) all ignition sources must be removed and the area must be ventilated to prevent accumulation of fuel vapour.
+b) the aircraft must be powered down completely.
+c) only fire extinguishers need to be on standby.
+d) the fuel system can remain pressurised during maintenance.
+ANSWER: a
+
+1968. The APU fire detection loop must be functionally tested because ……………………………………
+a) it must be confirmed to alert the crew correctly in the event of an APU fire.
+b) it is tested to verify that the extinguisher bottle pressure is correct.
+c) it ensures the APU bleed air valves are working correctly.
+d) it confirms the APU starter motor is serviceable.
+ANSWER: a
+
+1969. During composite repair curing, ……………………………………
+a) the correct temperature and cure time specified in the repair data must be maintained to ensure the repair achieves full strength.
+b) the temperature can be increased to speed up the curing process.
+c) cure time is less important than the mixing ratio of the resin.
+d) the repair can be used immediately after the adhesive sets.
+ANSWER: a
+
+1970. The Wing Fuelling Station Valve is closed after fuelling to ……………………………………
+a) prevent fuel from draining back from the tank and to isolate the fuelling connection.
+b) allow the fuel tanks to pressurize to operating pressure.
+c) prevent reverse flow to the fuel quantity indicating system.
+d) isolate the fuelling vent from the fuel tank.
+ANSWER: a
+
+1971. If an aircraft component is found to be unserviceable during inspection, ……………………………………
+a) it must be tagged as unserviceable and removed from the aircraft or clearly labelled if it cannot be immediately removed.
+b) it may remain installed if it is non-critical.
+c) it can be used for the next flight if no replacement is available.
+d) the flight crew should be informed and the decision left to them.
+ANSWER: a
+
+1972. Magnetic particle inspection can only be used on ferrous metals because ……………………………………
+a) only ferrous materials respond to a magnetic field, which is required to reveal defects using iron particles.
+b) ferrous metals have a higher defect rate than non-ferrous metals.
+c) the magnetic particles would contaminate non-ferrous materials.
+d) non-ferrous materials are too hard for the test equipment to penetrate.
+ANSWER: a
+
+1973. The purpose of the aircraft's Ram Air Turbine (RAT) is to ……………………………………
+a) provide emergency hydraulic or electrical power using airstream energy if all generators fail.
+b) cool the engine turbine section during high-power operations.
+c) supply ram air to the cabin conditioning system.
+d) provide backup bleed air for engine starting.
+ANSWER: a
+
+1974. Flight control cables must be inspected for ……………………………………
+a) wear, corrosion, broken strands, and correct tension during each scheduled inspection.
+b) correct colour coding during each A-check.
+c) correct routing through the aircraft each flight.
+d) lubrication and flexibility at each C-check only.
+ANSWER: a
+
+1975. If oil is found on avionics equipment during inspection, ……………………………………
+a) the source of the oil must be identified and rectified, and the equipment assessed for serviceability.
+b) the equipment may be cleaned and returned to service.
+c) the equipment must be replaced regardless of apparent condition.
+d) the source need not be identified if the quantity is small.
+ANSWER: a
+
+1976. "Potting compound" in avionics connectors is used to ……………………………………
+a) protect the electrical connections from moisture and vibration.
+b) lubricate the connector contacts to prevent fretting.
+c) identify the connector by colour coding.
+d) insulate the connector from the aircraft structure.
+ANSWER: a
+
+1977. The purpose of the anti-skid system is to ……………………………………
+a) prevent wheel lockup during braking by modulating hydraulic pressure to each brake.
+b) automatically apply braking on touchdown regardless of pedal pressure.
+c) distribute braking force equally between all wheels.
+d) protect the brake discs from overheating during prolonged braking.
+ANSWER: a
+
+1978. Aircraft maintenance records are retained for the required period because ……………………………………
+a) they provide evidence that the aircraft has been maintained in an airworthy condition and support traceability of all work.
+b) the manufacturer requires copies of all maintenance records.
+c) they are used to calculate the aircraft's residual value.
+d) regulatory authorities must hold copies of all maintenance records.
+ANSWER: a
+
+1979. A maintenance organisation must have a tool calibration register because ……………………………………
+a) it provides evidence that all precision tools are calibrated to the required standard and are within their validity period.
+b) calibration is required only for tools used in engine overhaul.
+c) the calibration register is submitted to the regulatory authority annually.
+d) it tracks the cost of tool calibration for financial reporting.
+ANSWER: a
+
+1980. The function of the aircraft negative pressure relief valve in the pressurization system is to ……………………………………
+a) prevent the outside air pressure from exceeding cabin pressure during rapid descent.
+b) provide emergency pressurization if the main outflow valve fails.
+c) protect the fuselage from positive differential pressure exceeding limits.
+d) vent the cabin to outside pressure during descent below 10,000 ft.
+ANSWER: a
+
+1981. Before disconnecting any oxygen system component, ……………………………………
+a) the oxygen supply must be shut off and the system depressurised.
+b) only personal protective equipment is required.
+c) the system may be depressurised by loosening the fitting slowly.
+d) the aircraft must be grounded on external power.
+ANSWER: a
+
+1982. During an aircraft skin inspection, evidence of fluid weeping through panels ……………………………………
+a) must be investigated to identify the source of the leak.
+b) is acceptable if the quantity is small.
+c) requires sealing with RTV immediately.
+d) is noted and deferred to the next major check.
+ANSWER: a
+
+1983. When performing post-maintenance inspection of electrical wiring, signs of overheating such as ……………………………………
+a) discolouration, melting, or charring of insulation indicate a circuit fault that must be investigated and rectified.
+b) slight yellowing of insulation is acceptable if the circuit is not safety-critical.
+c) discolouration indicates the wiring is operating at its rated current.
+d) melted insulation can be replaced with electrical tape as a temporary repair.
+ANSWER: a
+
+1984. The purpose of the manufacturer's Component Maintenance Manual (CMM) is to ……………………………………
+a) provide detailed instructions for overhaul, testing, and repair of individual aircraft components.
+b) provide the aircraft maintenance schedule.
+c) list all approved components for the aircraft type.
+d) document all modifications approved for the component.
+ANSWER: a
+
+1985. If an aircraft is found to have an unrecorded modification during maintenance, ……………………………………
+a) the modification must be investigated, documented, and either approved or removed before the aircraft returns to service.
+b) the modification may remain if it does not appear to affect airworthiness.
+c) the modification is approved retroactively by the maintenance organisation.
+d) the modification is noted in the technical log and the aircraft returned to service.
+ANSWER: a
+
+1986. Engine hot section inspections are performed to ……………………………………
+a) assess the condition of combustion liners, turbine blades, and nozzle guide vanes for damage, cracks, and erosion.
+b) measure engine power output during a ground run.
+c) check the condition of the engine fuel nozzles and filter.
+d) inspect the engine fire detection loop for correct operation.
+ANSWER: a
+
+1987. Aircraft ground equipment must be removed from the aircraft before engine start because ……………………………………
+a) equipment left connected or in the danger zone can be ingested or damaged, causing injury and aircraft damage.
+b) ground equipment consumes aircraft electrical power.
+c) leaving equipment connected prevents the aircraft from taxiing.
+d) the regulatory authority requires a clearance check before every engine start.
+ANSWER: a
+
+1988. If a structural repair is made to a fuselage frame, ……………………………………
+a) the repair must restore the original strength, stiffness, and load distribution of the frame.
+b) only cosmetic appearance needs to be restored.
+c) the repair is acceptable if the aircraft can sustain normal flight loads only.
+d) no inspection of the repair is required if the technician is licensed.
+ANSWER: a
+
+1989. A fuel sampling check is performed to ……………………………………
+a) verify that the fuel is of the correct type, free from contamination, and within specification.
+b) measure the fuel quantity remaining in each tank.
+c) check for fuel leaks at the fill point.
+d) calibrate the fuel quantity indicating system.
+ANSWER: a
+
+1990. When aircraft maintenance is performed during night shift, ……………………………………
+a) special attention must be paid to fatigue management and adequate lighting to reduce error risk.
+b) the same procedures apply as day shift with no additional considerations.
+c) only non-critical tasks may be performed due to reduced visibility.
+d) an additional inspector must be present for every task.
+ANSWER: a
+
+1991. The function of aircraft wheel chocks is to ……………………………………
+a) prevent the aircraft from moving inadvertently when parked or during maintenance.
+b) protect the tyres from flat spots during prolonged parking.
+c) provide an electrical ground connection to the aircraft.
+d) indicate the aircraft parking position on the apron.
+ANSWER: a
+
+1992. If a corrosion inhibiting compound (CIC) is found to have been incorrectly applied during a structure inspection, ……………………………………
+a) the area must be cleaned and the CIC correctly reapplied to ensure continued protection.
+b) the area is acceptable if the CIC is present in any quantity.
+c) the CIC may be left as applied if corrosion is not visible.
+d) the CIC application is not a critical maintenance requirement.
+ANSWER: a
+
+1993. The purpose of the landing gear door uplock is to ……………………………………
+a) secure the landing gear doors in the closed position when the gear is retracted.
+b) lock the gear doors open when the gear is extended.
+c) prevent the gear doors from opening above a certain speed.
+d) provide a backup locking system for the gear itself.
+ANSWER: a
+
+1994. When an aircraft is dispatched under the MEL with an inoperative system, ……………………………………
+a) the MEL specifies any required maintenance actions, operational restrictions, and the dispatch time limit.
+b) no further maintenance action is required until the system is repaired.
+c) the aircraft may be dispatched without informing the flight crew.
+d) the inoperative system is deferred indefinitely.
+ANSWER: a
+
+1995. Aircraft maintenance personnel must report maintenance errors because ……………………………………
+a) reporting allows the organisation to identify systemic weaknesses and prevent recurrence.
+b) reporting protects the engineer from disciplinary action.
+c) reporting is only required when an error results in a defect.
+d) the regulatory authority monitors error statistics to assign blame.
+ANSWER: a
+
+1996. The purpose of retaining maintenance records beyond the minimum required period is to ……………………………………
+a) provide a comprehensive history for resale, regulatory review, and accident investigation purposes.
+b) comply with the aircraft manufacturer's recommendation for record keeping.
+c) ensure all maintenance engineers can review past work on the aircraft.
+d) protect the maintenance organisation from legal liability.
+ANSWER: a
+
+1997. If a pitot probe is found physically damaged during a preflight inspection, ……………………………………
+a) the aircraft must be grounded until the probe is replaced and the system functionally tested.
+b) the aircraft may fly with one serviceable probe if the MEL allows.
+c) the probe can be temporarily repaired with sealant.
+d) the aircraft may fly if the alternate static port is selected.
+ANSWER: a
+
+1998. The purpose of the aircraft Wiring Diagram Manual (WDM) is to ……………………………………
+a) show the complete electrical circuit schematics for troubleshooting and repair of aircraft electrical systems.
+b) provide the approved wiring repair methods.
+c) list all electrical components installed on the aircraft.
+d) provide the load analysis for each circuit.
+ANSWER: a
+
+1999. When issuing a Certificate of Release to Service (CRS), the certifying engineer confirms that ……………………………………
+a) the maintenance work has been performed satisfactorily and the aircraft is considered airworthy.
+b) the aircraft's annual airworthiness review is complete.
+c) the flight crew is qualified to operate the aircraft type.
+d) the aircraft complies with all applicable Airworthiness Directives for the current year.
+ANSWER: a
+
+2000. The overall purpose of an aircraft maintenance programme is to ……………………………………
+a) ensure the aircraft remains in a safe, airworthy condition throughout its service life by defining the tasks, intervals, and procedures required.
+b) minimise the cost of maintenance operations.
+c) maximise aircraft availability for commercial operations.
+d) provide evidence of maintenance for resale purposes.
+ANSWER: a
+
+================================================================
+CEVAP ANAHTARI - BÖLÜM 6 DEVAM: CÜMLE TAMAMLAMA (Q1901-Q2000)
+================================================================
+1901-a  1902-a  1903-a  1904-a  1905-a  1906-a  1907-a  1908-a  1909-a  1910-a
+1911-a  1912-a  1913-a  1914-a  1915-a  1916-a  1917-a  1918-a  1919-a  1920-a
+1921-a  1922-a  1923-a  1924-a  1925-a  1926-a  1927-a  1928-a  1929-a  1930-a
+1931-a  1932-a  1933-a  1934-a  1935-a  1936-a  1937-a  1938-a  1939-a  1940-a
+1941-a  1942-a  1943-a  1944-a  1945-a  1946-a  1947-a  1948-a  1949-a  1950-a
+1951-a  1952-a  1953-a  1954-a  1955-a  1956-a  1957-a  1958-a  1959-a  1960-a
+1961-a  1962-a  1963-a  1964-a  1965-a  1966-a  1967-a  1968-a  1969-a  1970-a
+1971-a  1972-a  1973-a  1974-a  1975-a  1976-a  1977-a  1978-a  1979-a  1980-a
+1981-a  1982-a  1983-a  1984-a  1985-a  1986-a  1987-a  1988-a  1989-a  1990-a
+1991-a  1992-a  1993-a  1994-a  1995-a  1996-a  1997-a  1998-a  1999-a  2000-a

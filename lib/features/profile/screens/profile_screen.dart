@@ -1,0 +1,246 @@
+import 'package:flutter/material.dart';
+import 'package:flutter_riverpod/flutter_riverpod.dart';
+import 'package:intl/intl.dart';
+import '../../../core/constants/app_colors.dart';
+import '../../../core/constants/app_text_styles.dart';
+import '../../../core/constants/rank_constants.dart';
+import '../../../shared/providers/app_providers.dart';
+import '../../../shared/widgets/xp_progress_bar.dart';
+
+class ProfileScreen extends ConsumerWidget {
+  const ProfileScreen({super.key});
+
+  @override
+  Widget build(BuildContext context, WidgetRef ref) {
+    final profileAsync = ref.watch(userProfileProvider);
+
+    return profileAsync.when(
+      data: (profile) {
+        if (profile == null) return const SizedBox();
+        final rank = RankConstants.getRankForXp(profile.totalXp);
+
+        return Center(
+          child: ConstrainedBox(
+            constraints: const BoxConstraints(maxWidth: 480),
+            child: SingleChildScrollView(
+              padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 16),
+              child: Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: [
+                  const Text('Profile', style: AppTextStyles.heading2),
+                  const SizedBox(height: 20),
+                  // Rank badge
+                  Container(
+                    width: double.infinity,
+                    padding: const EdgeInsets.all(24),
+                    decoration: BoxDecoration(
+                      gradient: const LinearGradient(
+                        colors: [AppColors.primary, AppColors.primaryLight],
+                        begin: Alignment.topLeft,
+                        end: Alignment.bottomRight,
+                      ),
+                      borderRadius: BorderRadius.circular(20),
+                    ),
+                    child: Column(
+                      children: [
+                        Text(rank.emoji, style: const TextStyle(fontSize: 56)),
+                        const SizedBox(height: 8),
+                        Text(
+                          rank.title,
+                          style: const TextStyle(
+                            color: Colors.white,
+                            fontSize: 22,
+                            fontWeight: FontWeight.w700,
+                          ),
+                        ),
+                        const SizedBox(height: 4),
+                        Text(
+                          profile.role.replaceAll('_', ' ').toUpperCase(),
+                          style: const TextStyle(color: Colors.white70, fontSize: 12, letterSpacing: 1),
+                        ),
+                      ],
+                    ),
+                  ),
+                  const SizedBox(height: 20),
+                  // XP bar
+                  XpProgressBar(xp: profile.totalXp),
+                  const SizedBox(height: 20),
+                  // Stats grid
+                  GridView.count(
+                    shrinkWrap: true,
+                    physics: const NeverScrollableScrollPhysics(),
+                    crossAxisCount: 2,
+                    mainAxisSpacing: 12,
+                    crossAxisSpacing: 12,
+                    childAspectRatio: 1.6,
+                    children: [
+                      _StatCard(
+                        label: 'Total XP',
+                        value: profile.totalXp.toString(),
+                        icon: Icons.bolt,
+                        iconColor: AppColors.xpOrange,
+                      ),
+                      _StatCard(
+                        label: 'Streak',
+                        value: '${profile.streakDays} days',
+                        icon: Icons.local_fire_department,
+                        iconColor: AppColors.streakFlame,
+                      ),
+                      _StatCard(
+                        label: 'Level',
+                        value: profile.level.name.capitalize(),
+                        icon: Icons.signal_cellular_alt,
+                        iconColor: AppColors.primary,
+                      ),
+                      _StatCard(
+                        label: 'Exam Date',
+                        value: profile.targetExamDate != null
+                            ? DateFormat('dd MMM yyyy').format(profile.targetExamDate!)
+                            : '—',
+                        icon: Icons.calendar_today_outlined,
+                        iconColor: AppColors.textSecondary,
+                      ),
+                    ],
+                  ),
+                  if (profile.targetExamDate != null) ...[
+                    const SizedBox(height: 16),
+                    Container(
+                      padding: const EdgeInsets.symmetric(horizontal: 18, vertical: 14),
+                      decoration: BoxDecoration(
+                        color: AppColors.surfaceVariant,
+                        borderRadius: BorderRadius.circular(14),
+                      ),
+                      child: Row(
+                        children: [
+                          const Icon(Icons.timer_outlined, color: AppColors.primary, size: 22),
+                          const SizedBox(width: 12),
+                          Column(
+                            crossAxisAlignment: CrossAxisAlignment.start,
+                            children: [
+                              const Text('Days until exam', style: AppTextStyles.caption),
+                              Text(
+                                '${profile.targetExamDate!.difference(DateTime.now()).inDays} days',
+                                style: const TextStyle(
+                                  fontWeight: FontWeight.w700,
+                                  fontSize: 18,
+                                  color: AppColors.primary,
+                                ),
+                              ),
+                            ],
+                          ),
+                        ],
+                      ),
+                    ),
+                  ],
+                  const SizedBox(height: 24),
+                  const Text('Ranks', style: AppTextStyles.heading3),
+                  const SizedBox(height: 12),
+                  ...RankConstants.ranks.map((r) {
+                    final unlocked = profile.totalXp >= r.xpRequired;
+                    final isCurrent = r.title == rank.title;
+                    return Container(
+                      margin: const EdgeInsets.only(bottom: 8),
+                      padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 12),
+                      decoration: BoxDecoration(
+                        color: isCurrent ? AppColors.surfaceVariant : AppColors.surface,
+                        borderRadius: BorderRadius.circular(12),
+                        border: Border.all(
+                          color: isCurrent ? AppColors.primary : AppColors.divider,
+                          width: isCurrent ? 2 : 1,
+                        ),
+                      ),
+                      child: Row(
+                        children: [
+                          Text(r.emoji, style: TextStyle(fontSize: 24, color: unlocked ? null : const Color(0xFFD1D5DB))),
+                          const SizedBox(width: 14),
+                          Expanded(
+                            child: Column(
+                              crossAxisAlignment: CrossAxisAlignment.start,
+                              children: [
+                                Text(
+                                  r.title,
+                                  style: TextStyle(
+                                    fontWeight: FontWeight.w600,
+                                    fontSize: 14,
+                                    color: unlocked ? AppColors.textPrimary : AppColors.textHint,
+                                  ),
+                                ),
+                                Text('${r.xpRequired} XP required', style: AppTextStyles.caption),
+                              ],
+                            ),
+                          ),
+                          if (isCurrent)
+                            Container(
+                              padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 3),
+                              decoration: BoxDecoration(
+                                color: AppColors.primary,
+                                borderRadius: BorderRadius.circular(20),
+                              ),
+                              child: const Text('Current',
+                                  style: TextStyle(color: Colors.white, fontSize: 11, fontWeight: FontWeight.w600)),
+                            )
+                          else if (unlocked)
+                            const Icon(Icons.check_circle, color: AppColors.success, size: 20)
+                          else
+                            const Icon(Icons.lock_outline, color: AppColors.textHint, size: 18),
+                        ],
+                      ),
+                    );
+                  }),
+                ],
+              ),
+            ),
+          ),
+        );
+      },
+      loading: () => const Center(child: CircularProgressIndicator(color: AppColors.primary)),
+      error: (_, __) => const SizedBox(),
+    );
+  }
+}
+
+class _StatCard extends StatelessWidget {
+  final String label;
+  final String value;
+  final IconData icon;
+  final Color iconColor;
+
+  const _StatCard({
+    required this.label,
+    required this.value,
+    required this.icon,
+    required this.iconColor,
+  });
+
+  @override
+  Widget build(BuildContext context) {
+    return Container(
+      padding: const EdgeInsets.all(14),
+      decoration: BoxDecoration(
+        color: AppColors.surface,
+        borderRadius: BorderRadius.circular(14),
+        border: Border.all(color: AppColors.divider),
+      ),
+      child: Row(
+        children: [
+          Icon(icon, color: iconColor, size: 24),
+          const SizedBox(width: 10),
+          Expanded(
+            child: Column(
+              crossAxisAlignment: CrossAxisAlignment.start,
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: [
+                Text(label, style: AppTextStyles.caption),
+                Text(value, style: AppTextStyles.bodyBold, overflow: TextOverflow.ellipsis),
+              ],
+            ),
+          ),
+        ],
+      ),
+    );
+  }
+}
+
+extension on String {
+  String capitalize() => isEmpty ? this : this[0].toUpperCase() + substring(1);
+}

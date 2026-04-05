@@ -1,0 +1,6377 @@
+[
+  {
+    "id": 1001,
+    "cat": "reading",
+    "orig": 601,
+    "q": "What is the main purpose of a Detailed Inspection?",
+    "opts": [
+      "To replace damaged components",
+      "To detect damage, failure, or irregularity",
+      "To clean the surface of the aircraft",
+      "To troubleshoot system malfunctions"
+    ],
+    "ans": 0,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 1002,
+    "cat": "reading",
+    "orig": 602,
+    "q": "Which of the following is NOT necessarily required for a Detailed Inspection?",
+    "opts": [
+      "Direct source of good lighting",
+      "Inspection aids such as mirrors",
+      "Complete disassembly of the aircraft",
+      "Surface cleaning"
+    ],
+    "ans": 2,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 1003,
+    "cat": "reading",
+    "orig": 603,
+    "q": "What does a Detailed Inspection examine?",
+    "opts": [
+      "An entire aircraft at once",
+      "The aircraft's documentation",
+      "A specific item, installation, or assembly",
+      "Only the exterior of the aircraft"
+    ],
+    "ans": 2,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 1004,
+    "cat": "reading",
+    "orig": 604,
+    "q": "In a Detailed Inspection, which of the following may be required?",
+    "opts": [
+      "A test flight",
+      "Removal of all panels",
+      "Elaborate access procedures",
+      "Engine ground run"
+    ],
+    "ans": 2,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 1005,
+    "cat": "reading",
+    "orig": 605,
+    "q": "According to the passage, what supplements the available lighting during a DI?",
+    "opts": [
+      "Ultraviolet lamps",
+      "Natural sunlight",
+      "Torch lights",
+      "A direct source of good lighting"
+    ],
+    "ans": 3,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 1006,
+    "cat": "reading",
+    "orig": 606,
+    "q": "What is the purpose of wet motoring the engine?",
+    "opts": [
+      "To start the engine for the first time",
+      "To test the fuel system",
+      "To increase engine speed",
+      "To test the electrical system"
+    ],
+    "ans": 1,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 1007,
+    "cat": "reading",
+    "orig": 607,
+    "q": "During wet motoring, what is the position of the ignition systems?",
+    "opts": [
+      "Both are turned ON",
+      "One is ON and one is OFF",
+      "Both are turned OFF",
+      "The position does not matter"
+    ],
+    "ans": 2,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 1008,
+    "cat": "reading",
+    "orig": 608,
+    "q": "At what N2 speed is the HP fuel shutoff valve moved to ON?",
+    "opts": [
+      "5%",
+      "10%",
+      "15%",
+      "20%"
+    ],
+    "ans": 2,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 1009,
+    "cat": "reading",
+    "orig": 609,
+    "q": "What should be monitored during wet motoring?",
+    "opts": [
+      "The oil pressure",
+      "The engine exhaust nozzle for any sign of fuel",
+      "The cockpit instruments",
+      "The engine inlet temperature"
+    ],
+    "ans": 1,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 1010,
+    "cat": "reading",
+    "orig": 610,
+    "q": "What limits the continuation of the wet motoring test?",
+    "opts": [
+      "The fuel quantity available",
+      "The oil temperature",
+      "The starter duty cycle limitations",
+      "The ignition system timer"
+    ],
+    "ans": 2,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 1011,
+    "cat": "reading",
+    "orig": 611,
+    "q": "When can fuel system maintenance messages possibly occur?",
+    "opts": [
+      "During subsequent engine starts",
+      "During the first engine start",
+      "During cruise flight only",
+      "During the pre-flight inspection"
+    ],
+    "ans": 1,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 1012,
+    "cat": "reading",
+    "orig": 612,
+    "q": "What can cause fuel system maintenance messages?",
+    "opts": [
+      "A faulty fuel pump",
+      "Air that entered the system during the fuel drain procedure",
+      "Excessive fuel pressure",
+      "Low fuel temperature"
+    ],
+    "ans": 1,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 1013,
+    "cat": "reading",
+    "orig": 613,
+    "q": "How is the air removed from the fuel system?",
+    "opts": [
+      "Manually by the technician",
+      "By operating the fuel transfer pump",
+      "Automatically during the first engine ground run",
+      "By pressurizing the fuel system"
+    ],
+    "ans": 2,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 1014,
+    "cat": "reading",
+    "orig": 614,
+    "q": "When should the fuel system maintenance messages stop appearing?",
+    "opts": [
+      "After the first engine start",
+      "During all subsequent engine starts",
+      "After the first engine ground run",
+      "After the system is drained"
+    ],
+    "ans": 2,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 1015,
+    "cat": "reading",
+    "orig": 615,
+    "q": "According to the passage, when might fuel system messages appear again after the first run?",
+    "opts": [
+      "They will never appear again",
+      "Only if they are caused by a different reason",
+      "During every subsequent engine start",
+      "After 1000 flight hours"
+    ],
+    "ans": 1,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 1016,
+    "cat": "reading",
+    "orig": 616,
+    "q": "How many sub-systems does the aircraft communication system have?",
+    "opts": [
+      "One",
+      "Two",
+      "Three",
+      "Four"
+    ],
+    "ans": 1,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 1017,
+    "cat": "reading",
+    "orig": 617,
+    "q": "What is the service interphone used for?",
+    "opts": [
+      "Passenger announcements",
+      "Cockpit internal communication",
+      "Maintenance technician communication with cockpit or cabin",
+      "Communication between cabin crew and pilots"
+    ],
+    "ans": 2,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 1018,
+    "cat": "reading",
+    "orig": 618,
+    "q": "Where can the service interphone be used?",
+    "opts": [
+      "Only in the air",
+      "Both in the air and on the ground",
+      "Only on the ground",
+      "Only in the cockpit"
+    ],
+    "ans": 2,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 1019,
+    "cat": "reading",
+    "orig": 619,
+    "q": "According to the passage, which function can be used for passenger announcements?",
+    "opts": [
+      "Service interphone",
+      "Flight interphone",
+      "Passenger Address (PA)",
+      "Cabin interphone"
+    ],
+    "ans": 2,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 1020,
+    "cat": "reading",
+    "orig": 620,
+    "q": "How many functions does the on-board internal communication system have?",
+    "opts": [
+      "Two",
+      "Three",
+      "Four",
+      "Five"
+    ],
+    "ans": 2,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 1021,
+    "cat": "reading",
+    "orig": 621,
+    "q": "What is the main function of the AMU?",
+    "opts": [
+      "To generate navigation signals",
+      "To route signals to and from the appropriate radio or interphone system",
+      "To store flight data",
+      "To power the radio equipment"
+    ],
+    "ans": 1,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 1022,
+    "cat": "reading",
+    "orig": 622,
+    "q": "What is SELCAL?",
+    "opts": [
+      "A navigation system",
+      "A type of radio frequency",
+      "A decoding unit in the AMU",
+      "A communication protocol"
+    ],
+    "ans": 2,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 1023,
+    "cat": "reading",
+    "orig": 623,
+    "q": "What color is the CALL indication on the audio control panel?",
+    "opts": [
+      "Red",
+      "Green",
+      "Blue",
+      "Amber"
+    ],
+    "ans": 3,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 1024,
+    "cat": "reading",
+    "orig": 624,
+    "q": "What alerts the flight crew for calls from ground stations?",
+    "opts": [
+      "An audio chime only",
+      "Aural and visual indications on the audio control panel",
+      "A text message on the MCDU",
+      "A red light on the overhead panel"
+    ],
+    "ans": 1,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 1025,
+    "cat": "reading",
+    "orig": 625,
+    "q": "When PA is used from the cockpit, where does the audio signal go first after the AMU?",
+    "opts": [
+      "Directly to the cabin speakers",
+      "To the radio transmitter",
+      "To the cabin intercommunication data system director",
+      "To the cockpit voice recorder"
+    ],
+    "ans": 2,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 1026,
+    "cat": "reading",
+    "orig": 626,
+    "q": "What does the pitot probe measure?",
+    "opts": [
+      "Engine temperature",
+      "Fuel flow rate",
+      "Pitot air pressure",
+      "Cabin pressure"
+    ],
+    "ans": 2,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 1027,
+    "cat": "reading",
+    "orig": 627,
+    "q": "Why is the probe located several inches from the airplane skin?",
+    "opts": [
+      "To protect it from bird strikes",
+      "To decrease airflow turbulence effects",
+      "To make it easier to inspect",
+      "To improve the appearance of the aircraft"
+    ],
+    "ans": 1,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 1028,
+    "cat": "reading",
+    "orig": 628,
+    "q": "What is the purpose of the gasket between the probe base and the airplane structure?",
+    "opts": [
+      "To provide electrical grounding",
+      "To absorb vibration",
+      "To form a pressure seal",
+      "To mount the probe securely"
+    ],
+    "ans": 2,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 1029,
+    "cat": "reading",
+    "orig": 629,
+    "q": "What prevents ice formation on the pitot probe?",
+    "opts": [
+      "A rubber boot",
+      "A chemical de-icing fluid",
+      "An anti-icing heater",
+      "The airflow over the probe"
+    ],
+    "ans": 2,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 1030,
+    "cat": "reading",
+    "orig": 630,
+    "q": "According to the passage, what CANNOT be said about the pitot probe?",
+    "opts": [
+      "It measures air pressure",
+      "It has a built-in heater",
+      "It is flush with the aircraft skin",
+      "It faces forward"
+    ],
+    "ans": 2,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 1031,
+    "cat": "reading",
+    "orig": 631,
+    "q": "What systems does the hydraulic system provide power to?",
+    "opts": [
+      "Only the flight controls",
+      "Flight controls, landing gear, wheel brakes, and thrust reversers",
+      "Navigation and communication systems",
+      "Only the landing gear and brakes"
+    ],
+    "ans": 1,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 1032,
+    "cat": "reading",
+    "orig": 632,
+    "q": "What is the typical operating pressure of the hydraulic system?",
+    "opts": [
+      "1000 PSI",
+      "2000 PSI",
+      "3000 PSI",
+      "5000 PSI"
+    ],
+    "ans": 2,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 1033,
+    "cat": "reading",
+    "orig": 633,
+    "q": "Which of the following is NOT listed as a main hydraulic component?",
+    "opts": [
+      "Hydraulic reservoir",
+      "Engine-driven pumps",
+      "Fuel heat exchanger",
+      "Actuators"
+    ],
+    "ans": 2,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 1034,
+    "cat": "reading",
+    "orig": 634,
+    "q": "Why must hydraulic fluid be kept clean?",
+    "opts": [
+      "To prevent damage to the reservoir",
+      "To ensure reliable system operation",
+      "To meet weight restrictions",
+      "To prevent freezing at altitude"
+    ],
+    "ans": 1,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 1035,
+    "cat": "reading",
+    "orig": 635,
+    "q": "According to the passage, what is required as part of the maintenance program?",
+    "opts": [
+      "Complete fluid replacement every flight",
+      "Regular sampling and testing of the hydraulic fluid",
+      "Replacement of all seals every 100 hours",
+      "Weekly pump inspection"
+    ],
+    "ans": 1,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 1036,
+    "cat": "reading",
+    "orig": 636,
+    "q": "How is corrosion defined in the passage?",
+    "opts": [
+      "Physical damage from impact",
+      "Chemical deterioration of a metal by reaction with its environment",
+      "Damage caused by excessive heat",
+      "Mechanical wear of metal surfaces"
+    ],
+    "ans": 1,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 1037,
+    "cat": "reading",
+    "orig": 637,
+    "q": "Which of the following is NOT listed as a type of corrosion on aircraft?",
+    "opts": [
+      "Surface corrosion",
+      "Pitting corrosion",
+      "Thermal corrosion",
+      "Intergranular corrosion"
+    ],
+    "ans": 2,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 1038,
+    "cat": "reading",
+    "orig": 638,
+    "q": "What is one method of corrosion prevention mentioned?",
+    "opts": [
+      "Painting the aircraft in bright colors",
+      "Using only aluminum alloys",
+      "Application of protective coatings such as primers and topcoats",
+      "Keeping the aircraft in a pressurized hangar"
+    ],
+    "ans": 2,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 1039,
+    "cat": "reading",
+    "orig": 639,
+    "q": "Why is proper drainage design important?",
+    "opts": [
+      "To reduce aircraft weight",
+      "To prevent moisture accumulation",
+      "To improve aerodynamics",
+      "To facilitate refueling"
+    ],
+    "ans": 1,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 1040,
+    "cat": "reading",
+    "orig": 640,
+    "q": "What should be done when corrosion is found during inspection?",
+    "opts": [
+      "It should be documented only",
+      "It should be reported to the captain",
+      "It should receive early treatment",
+      "The aircraft should be grounded permanently"
+    ],
+    "ans": 2,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 1041,
+    "cat": "reading",
+    "orig": 641,
+    "q": "What must be done before fueling operations?",
+    "opts": [
+      "The captain must approve the fuel uplift",
+      "All personnel must be briefed on safety procedures",
+      "The aircraft must be weighed",
+      "All passengers must disembark"
+    ],
+    "ans": 1,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 1042,
+    "cat": "reading",
+    "orig": 642,
+    "q": "Why must the aircraft and fueling equipment be bonded and grounded?",
+    "opts": [
+      "To ensure electrical power supply",
+      "To prevent static electricity buildup",
+      "To measure fuel quantity accurately",
+      "To keep the fuel at the right temperature"
+    ],
+    "ans": 1,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 1043,
+    "cat": "reading",
+    "orig": 643,
+    "q": "What is the no-smoking distance from the aircraft during fueling?",
+    "opts": [
+      "10 feet",
+      "25 feet",
+      "50 feet",
+      "100 feet"
+    ],
+    "ans": 2,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 1044,
+    "cat": "reading",
+    "orig": 644,
+    "q": "What should be done if a fuel spill occurs?",
+    "opts": [
+      "Continue fueling and clean up afterwards",
+      "Reduce the fueling rate",
+      "Stop fueling immediately, alert the fire service, and ventilate the area",
+      "Open all aircraft doors to ventilate"
+    ],
+    "ans": 2,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 1045,
+    "cat": "reading",
+    "orig": 645,
+    "q": "What personal protective equipment must fueling agents wear?",
+    "opts": [
+      "Hard hat and safety boots only",
+      "Gloves and eye protection",
+      "Full fireproof suit",
+      "High-visibility vest only"
+    ],
+    "ans": 1,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 1046,
+    "cat": "reading",
+    "orig": 646,
+    "q": "What is the purpose of the aircraft oxygen system?",
+    "opts": [
+      "To provide fresh air during normal flight",
+      "To provide supplemental oxygen in case of cabin depressurization",
+      "To power the aircraft's emergency systems",
+      "To cool the avionics equipment"
+    ],
+    "ans": 1,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 1047,
+    "cat": "reading",
+    "orig": 647,
+    "q": "Where are the oxygen cylinders stored?",
+    "opts": [
+      "In the wing root",
+      "In the cockpit overhead panel",
+      "In the avionics bay",
+      "In the cargo hold"
+    ],
+    "ans": 2,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 1048,
+    "cat": "reading",
+    "orig": 648,
+    "q": "How is passenger oxygen provided?",
+    "opts": [
+      "From high-pressure cylinders",
+      "Through chemical oxygen generators in the overhead compartment",
+      "From the same supply as the crew",
+      "Through the air conditioning system"
+    ],
+    "ans": 1,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 1049,
+    "cat": "reading",
+    "orig": 649,
+    "q": "How long do the chemical oxygen generators typically produce oxygen?",
+    "opts": [
+      "5-8 minutes",
+      "12-22 minutes",
+      "30-40 minutes",
+      "Up to 1 hour"
+    ],
+    "ans": 1,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 1050,
+    "cat": "reading",
+    "orig": 650,
+    "q": "How is crew oxygen supplied?",
+    "opts": [
+      "From chemical generators like passengers",
+      "From a central reservoir",
+      "From high-pressure cylinders via a regulator",
+      "From the same overhead units as passengers"
+    ],
+    "ans": 2,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 1051,
+    "cat": "reading",
+    "orig": 651,
+    "q": "How does the brake system slow the aircraft?",
+    "opts": [
+      "By creating aerodynamic drag",
+      "By reversing the thrust",
+      "By converting kinetic energy into heat energy",
+      "By hydraulic pressure on the wheels"
+    ],
+    "ans": 2,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 1052,
+    "cat": "reading",
+    "orig": 652,
+    "q": "Why are carbon brakes preferred on modern aircraft?",
+    "opts": [
+      "They are cheaper than steel brakes",
+      "They are light weight and can absorb more heat than steel brakes",
+      "They last longer than any other material",
+      "They require less maintenance"
+    ],
+    "ans": 1,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 1053,
+    "cat": "reading",
+    "orig": 653,
+    "q": "When must brake temperature be monitored?",
+    "opts": [
+      "Before takeoff only",
+      "During cruise flight",
+      "After landing",
+      "During taxi to the runway"
+    ],
+    "ans": 2,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 1054,
+    "cat": "reading",
+    "orig": 654,
+    "q": "What should be done if the brake temperature exceeds the service limit?",
+    "opts": [
+      "Continue operations with caution",
+      "Apply cooling fans immediately",
+      "The aircraft must not depart until brakes cool below the limit",
+      "Request priority landing"
+    ],
+    "ans": 2,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 1055,
+    "cat": "reading",
+    "orig": 655,
+    "q": "What regular inspection is required for carbon disks?",
+    "opts": [
+      "Painting and sealing inspection",
+      "Inspection for wear and damage",
+      "Ultrasonic testing only",
+      "Electrical continuity check"
+    ],
+    "ans": 1,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 1056,
+    "cat": "reading",
+    "orig": 656,
+    "q": "Which areas are protected by the aircraft fire protection system?",
+    "opts": [
+      "Only the engines",
+      "Engine nacelles, APU, cargo compartments, and lavatories",
+      "The entire aircraft including the wings",
+      "Only the cockpit and cabin"
+    ],
+    "ans": 1,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 1057,
+    "cat": "reading",
+    "orig": 657,
+    "q": "How is fire detection accomplished?",
+    "opts": [
+      "By thermal cameras",
+      "By smoke detectors only",
+      "By temperature sensing loops or detectors in protected zones",
+      "By the crew's visual inspection"
+    ],
+    "ans": 2,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 1058,
+    "cat": "reading",
+    "orig": 658,
+    "q": "When a fire is detected, what happens in the cockpit?",
+    "opts": [
+      "An automated extinguisher activates",
+      "An audible warning sounds and a red FIRE warning light illuminates",
+      "Only a warning light illuminates",
+      "The engine shuts down automatically"
+    ],
+    "ans": 1,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 1059,
+    "cat": "reading",
+    "orig": 659,
+    "q": "How does the crew activate the fire extinguisher?",
+    "opts": [
+      "By pressing a button on the overhead panel",
+      "By turning a switch on the center console",
+      "By pressing the fire handle and rotating it",
+      "By pulling a trigger mechanism"
+    ],
+    "ans": 2,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 1060,
+    "cat": "reading",
+    "orig": 660,
+    "q": "How many fire extinguisher shots are available for each engine on most modern aircraft?",
+    "opts": [
+      "One",
+      "Two",
+      "Three",
+      "Four"
+    ],
+    "ans": 1,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 1061,
+    "cat": "reading",
+    "orig": 661,
+    "q": "What is the function of the landing gear system?",
+    "opts": [
+      "To provide aerodynamic lift",
+      "To support the aircraft on the ground and provide means for takeoff and landing",
+      "To reduce engine noise",
+      "To measure aircraft weight"
+    ],
+    "ans": 1,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 1062,
+    "cat": "reading",
+    "orig": 662,
+    "q": "How is landing gear extension and retraction controlled?",
+    "opts": [
+      "Automatically by the flight management system",
+      "By the ground crew",
+      "By the pilot through a cockpit selector",
+      "By the copilot only"
+    ],
+    "ans": 2,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 1063,
+    "cat": "reading",
+    "orig": 663,
+    "q": "How can the landing gear be extended in case of hydraulic failure?",
+    "opts": [
+      "By a backup hydraulic pump",
+      "Using an emergency system",
+      "By gravity alone",
+      "It cannot be extended without hydraulics"
+    ],
+    "ans": 1,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 1064,
+    "cat": "reading",
+    "orig": 664,
+    "q": "How is the gear down and locked position confirmed?",
+    "opts": [
+      "By an audible tone",
+      "By green indicator lights in the cockpit",
+      "By the pilot's visual inspection through a window",
+      "By the flight management computer"
+    ],
+    "ans": 1,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 1065,
+    "cat": "reading",
+    "orig": 665,
+    "q": "What must the landing gear be regularly inspected for?",
+    "opts": [
+      "Hydraulic leaks, tyre wear, and structural damage",
+      "Paint condition and cleanliness",
+      "Corrosion on the wheel hubs only",
+      "Brake fluid level only"
+    ],
+    "ans": 0,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 1066,
+    "cat": "reading",
+    "orig": 666,
+    "q": "Where is the APU located?",
+    "opts": [
+      "In the wing root",
+      "In the forward fuselage",
+      "In the tail cone of the aircraft",
+      "In the avionics bay"
+    ],
+    "ans": 2,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 1067,
+    "cat": "reading",
+    "orig": 667,
+    "q": "What does the APU provide when the main engines are not running?",
+    "opts": [
+      "Hydraulic power only",
+      "Electrical power and bleed air for air conditioning",
+      "Fuel pressure for the main engines",
+      "Navigation power only"
+    ],
+    "ans": 1,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 1068,
+    "cat": "reading",
+    "orig": 668,
+    "q": "How can the APU be started on the ground?",
+    "opts": [
+      "Only using external power",
+      "Only using battery power",
+      "Using battery power or external power supply",
+      "Only when connected to a GPU"
+    ],
+    "ans": 2,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 1069,
+    "cat": "reading",
+    "orig": 669,
+    "q": "According to the passage, how long must the crew wait after three unsuccessful APU start attempts?",
+    "opts": [
+      "30 minutes",
+      "45 minutes",
+      "At least one hour",
+      "Two hours"
+    ],
+    "ans": 2,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 1070,
+    "cat": "reading",
+    "orig": 670,
+    "q": "Which of the following APU maintenance tasks is mentioned in the passage?",
+    "opts": [
+      "Turbine blade replacement",
+      "Regular oil changes, filter replacements, and exhaust system inspection",
+      "Fuel nozzle cleaning only",
+      "Compressor wash"
+    ],
+    "ans": 1,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 1071,
+    "cat": "reading",
+    "orig": 671,
+    "q": "What does the A check involve?",
+    "opts": [
+      "Complete disassembly of the aircraft",
+      "Inspections of accessible items, lubrication, and minor repairs",
+      "Replacement of all major components",
+      "Engine overhaul only"
+    ],
+    "ans": 1,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 1072,
+    "cat": "reading",
+    "orig": 672,
+    "q": "How often is the C check typically performed?",
+    "opts": [
+      "Every 400-600 flight hours",
+      "Every 6-12 years",
+      "Every 20-24 months",
+      "Every 1000 flight hours"
+    ],
+    "ans": 2,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 1073,
+    "cat": "reading",
+    "orig": 673,
+    "q": "What is another name for the D check?",
+    "opts": [
+      "Overhaul check",
+      "Major service",
+      "Heavy maintenance visit",
+      "Complete inspection"
+    ],
+    "ans": 2,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 1074,
+    "cat": "reading",
+    "orig": 674,
+    "q": "How often is the D check performed?",
+    "opts": [
+      "Every 6 months",
+      "Every 20-24 months",
+      "Every 6-12 years",
+      "Every 3 years"
+    ],
+    "ans": 2,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 1075,
+    "cat": "reading",
+    "orig": 675,
+    "q": "According to the passage, what determines the interval between checks?",
+    "opts": [
+      "The airline's preference",
+      "Aircraft type and the operator's approved maintenance program",
+      "The age of the aircraft only",
+      "The number of flight cycles"
+    ],
+    "ans": 1,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 1076,
+    "cat": "reading",
+    "orig": 676,
+    "q": "What is the main purpose of the engine oil system?",
+    "opts": [
+      "To fuel the engine",
+      "To lubricate and cool engine bearings and gearbox components",
+      "To provide hydraulic pressure",
+      "To clean the fuel system"
+    ],
+    "ans": 1,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 1077,
+    "cat": "reading",
+    "orig": 677,
+    "q": "What does the oil filter do?",
+    "opts": [
+      "It heats the oil to operating temperature",
+      "It removes contaminants from the oil",
+      "It measures oil quantity",
+      "It pressurizes the oil system"
+    ],
+    "ans": 1,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 1078,
+    "cat": "reading",
+    "orig": 678,
+    "q": "What is the function of the scavenge system?",
+    "opts": [
+      "To pressurize the oil supply",
+      "To filter the oil",
+      "To return oil from the sumps to the reservoir",
+      "To cool the oil before it enters the engine"
+    ],
+    "ans": 2,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 1079,
+    "cat": "reading",
+    "orig": 679,
+    "q": "What must be maintained at all times during engine operation?",
+    "opts": [
+      "Maximum oil pressure",
+      "Oil temperature below 80°C",
+      "Minimum oil pressure",
+      "Oil level at maximum"
+    ],
+    "ans": 2,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 1080,
+    "cat": "reading",
+    "orig": 680,
+    "q": "What should be done if oil pressure drops below the minimum?",
+    "opts": [
+      "Reduce engine power",
+      "Switch to the backup oil pump",
+      "Shut down the engine immediately",
+      "Add more oil to the reservoir"
+    ],
+    "ans": 2,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 1081,
+    "cat": "reading",
+    "orig": 681,
+    "q": "What does MTOW stand for?",
+    "opts": [
+      "Minimum Takeoff Weight",
+      "Maximum Takeoff Weight",
+      "Measured Total Operating Weight",
+      "Maximum Total Operational Weight"
+    ],
+    "ans": 1,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 1082,
+    "cat": "reading",
+    "orig": 682,
+    "q": "What could happen if the aircraft CG is outside the approved limits?",
+    "opts": [
+      "Fuel consumption increases",
+      "The aircraft becomes noisy",
+      "The aircraft can become uncontrollable",
+      "The range is reduced"
+    ],
+    "ans": 2,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 1083,
+    "cat": "reading",
+    "orig": 683,
+    "q": "What is a loadsheet?",
+    "opts": [
+      "A document for recording fuel orders",
+      "A document recording the weight and balance calculation for each flight",
+      "A maintenance record",
+      "A passenger list"
+    ],
+    "ans": 1,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 1084,
+    "cat": "reading",
+    "orig": 684,
+    "q": "Who prepares the loadsheet?",
+    "opts": [
+      "The captain",
+      "The maintenance engineer",
+      "The dispatcher or load controller",
+      "The fueling agent"
+    ],
+    "ans": 2,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 1085,
+    "cat": "reading",
+    "orig": 685,
+    "q": "What must the captain do before takeoff regarding the loadsheet?",
+    "opts": [
+      "Sign it without review",
+      "Correct any errors",
+      "Review and accept it",
+      "File it with the authorities"
+    ],
+    "ans": 2,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 1086,
+    "cat": "reading",
+    "orig": 686,
+    "q": "What are the main power sources in the aircraft electrical system?",
+    "opts": [
+      "Solar panels and batteries only",
+      "Engine-driven generators, APU generator, and batteries",
+      "External power supply only",
+      "Fuel cells and generators"
+    ],
+    "ans": 1,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 1087,
+    "cat": "reading",
+    "orig": 687,
+    "q": "What voltages does the aircraft electrical system operate on?",
+    "opts": [
+      "24V DC and 110V AC",
+      "115V AC and 28V DC",
+      "220V AC and 12V DC",
+      "48V DC and 230V AC"
+    ],
+    "ans": 1,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 1088,
+    "cat": "reading",
+    "orig": 688,
+    "q": "What is the function of Transformer Rectifier Units (TRUs)?",
+    "opts": [
+      "To increase AC voltage",
+      "To store electrical energy",
+      "To convert AC power to DC power",
+      "To distribute power to the engines"
+    ],
+    "ans": 2,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 1089,
+    "cat": "reading",
+    "orig": 689,
+    "q": "What do circuit breakers do in the electrical system?",
+    "opts": [
+      "They generate electrical power",
+      "They store backup power",
+      "They trip to prevent damage from overloads or short circuits",
+      "They convert AC to DC power"
+    ],
+    "ans": 2,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 1090,
+    "cat": "reading",
+    "orig": 690,
+    "q": "What must be done before carrying out electrical work?",
+    "opts": [
+      "The aircraft must be depressurized",
+      "The relevant circuit breakers must be opened",
+      "The engines must be running",
+      "All personnel must leave the aircraft"
+    ],
+    "ans": 1,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 1091,
+    "cat": "reading",
+    "orig": 691,
+    "q": "What is the main source of air for the pressurization system?",
+    "opts": [
+      "RAM air from outside the aircraft",
+      "Compressed air tanks",
+      "Bleed air from the engines",
+      "The APU only"
+    ],
+    "ans": 2,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 1092,
+    "cat": "reading",
+    "orig": 692,
+    "q": "What does the pressurization controller regulate automatically?",
+    "opts": [
+      "Fuel flow and engine temperature",
+      "Cabin altitude and rate of climb and descent",
+      "Engine speed and thrust",
+      "Electrical power distribution"
+    ],
+    "ans": 1,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 1093,
+    "cat": "reading",
+    "orig": 693,
+    "q": "What is the function of the safety valve?",
+    "opts": [
+      "To maintain constant cabin temperature",
+      "To prevent the cabin pressure differential from exceeding structural limits",
+      "To provide fresh air to the cabin",
+      "To control the oxygen flow to masks"
+    ],
+    "ans": 1,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 1094,
+    "cat": "reading",
+    "orig": 694,
+    "q": "At what cabin altitude do oxygen masks deploy automatically?",
+    "opts": [
+      "10,000 feet",
+      "12,000 feet",
+      "14,000 feet",
+      "18,000 feet"
+    ],
+    "ans": 2,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 1095,
+    "cat": "reading",
+    "orig": 695,
+    "q": "What happens to the crew when there is a pressurization malfunction?",
+    "opts": [
+      "The aircraft automatically descends",
+      "The oxygen masks deploy",
+      "The malfunction is indicated to the crew",
+      "The pressurization is transferred to backup"
+    ],
+    "ans": 2,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 1096,
+    "cat": "reading",
+    "orig": 696,
+    "q": "Why must avionics equipment be cooled?",
+    "opts": [
+      "To prevent condensation",
+      "To maintain correct function within operating temperature limits",
+      "To reduce electromagnetic interference",
+      "To save electrical power"
+    ],
+    "ans": 1,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 1097,
+    "cat": "reading",
+    "orig": 697,
+    "q": "What does the avionics cooling system use to cool the equipment?",
+    "opts": [
+      "Liquid coolant",
+      "Engine oil",
+      "Forced air",
+      "Refrigerant gas"
+    ],
+    "ans": 2,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 1098,
+    "cat": "reading",
+    "orig": 698,
+    "q": "When must the cooling fans operate on the ground?",
+    "opts": [
+      "Only during engine start",
+      "Whenever the avionics are powered",
+      "Only in hot weather",
+      "Only when the APU is running"
+    ],
+    "ans": 1,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 1099,
+    "cat": "reading",
+    "orig": 699,
+    "q": "What assists cooling in flight in addition to the fans?",
+    "opts": [
+      "The air conditioning packs",
+      "Ram air",
+      "Hydraulic fluid",
+      "The pressurization system"
+    ],
+    "ans": 1,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 1100,
+    "cat": "reading",
+    "orig": 700,
+    "q": "What triggers warnings related to avionics cooling?",
+    "opts": [
+      "The flight management computer",
+      "The central maintenance system",
+      "Temperature sensors on critical avionics boxes",
+      "The crew's visual inspection"
+    ],
+    "ans": 2,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 1101,
+    "cat": "reading",
+    "orig": 701,
+    "q": "What is the main advantage of NDT?",
+    "opts": [
+      "It is faster than other inspection methods",
+      "It inspects components without causing damage",
+      "It requires no special equipment",
+      "It can be done by uncertified personnel"
+    ],
+    "ans": 1,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 1102,
+    "cat": "reading",
+    "orig": 702,
+    "q": "Which NDT method is particularly effective for detecting surface and sub-surface cracks in conductive materials?",
+    "opts": [
+      "Visual inspection",
+      "Ultrasonic testing",
+      "Eddy current testing",
+      "Magnetic particle inspection"
+    ],
+    "ans": 2,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 1103,
+    "cat": "reading",
+    "orig": 703,
+    "q": "What does ultrasonic testing use?",
+    "opts": [
+      "X-rays",
+      "Sound waves",
+      "Electromagnetic fields",
+      "Chemical reactions"
+    ],
+    "ans": 1,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 1104,
+    "cat": "reading",
+    "orig": 704,
+    "q": "Which NDT method uses X-rays?",
+    "opts": [
+      "Visual inspection",
+      "Eddy current testing",
+      "Magnetic particle inspection",
+      "Radiographic testing"
+    ],
+    "ans": 3,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 1105,
+    "cat": "reading",
+    "orig": 705,
+    "q": "What is required for all NDT methods to produce reliable results?",
+    "opts": [
+      "Specialized software",
+      "New equipment for each inspection",
+      "Properly certified inspectors and calibrated equipment",
+      "Complete disassembly of the component"
+    ],
+    "ans": 2,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 1106,
+    "cat": "reading",
+    "orig": 706,
+    "q": "Where are the fuel tanks located?",
+    "opts": [
+      "Only in the wings",
+      "Only in the fuselage",
+      "In the wings and center fuselage",
+      "In the tail section and wings"
+    ],
+    "ans": 2,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 1107,
+    "cat": "reading",
+    "orig": 707,
+    "q": "How is center of gravity fuel management achieved?",
+    "opts": [
+      "By jettisoning fuel",
+      "By transferring fuel between tanks",
+      "By adjusting fuel flow to engines",
+      "By varying fuel pump speed"
+    ],
+    "ans": 1,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 1108,
+    "cat": "reading",
+    "orig": 708,
+    "q": "How is fuel normally fed to each engine?",
+    "opts": [
+      "From the center fuselage tank",
+      "From the corresponding wing tank",
+      "Equally from all tanks",
+      "From the largest available tank"
+    ],
+    "ans": 1,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 1109,
+    "cat": "reading",
+    "orig": 709,
+    "q": "When do the standby pumps activate automatically?",
+    "opts": [
+      "During takeoff only",
+      "When external power is connected",
+      "In case of low fuel pressure",
+      "When the center tank is empty"
+    ],
+    "ans": 2,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 1110,
+    "cat": "reading",
+    "orig": 710,
+    "q": "What must be monitored to prevent fuel freezing?",
+    "opts": [
+      "Fuel quantity at the wing tanks",
+      "Fuel temperature at the engine inlet",
+      "Fuel pressure at the pumps",
+      "Fuel flow rate to the APU"
+    ],
+    "ans": 1,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 1111,
+    "cat": "reading",
+    "orig": 711,
+    "q": "What do ailerons control?",
+    "opts": [
+      "Pitch",
+      "Yaw",
+      "Roll",
+      "Speed"
+    ],
+    "ans": 2,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 1112,
+    "cat": "reading",
+    "orig": 712,
+    "q": "Which of the following is a secondary flight control?",
+    "opts": [
+      "Aileron",
+      "Elevator",
+      "Rudder",
+      "Flap"
+    ],
+    "ans": 3,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 1113,
+    "cat": "reading",
+    "orig": 713,
+    "q": "How do fly-by-wire systems transmit pilot inputs?",
+    "opts": [
+      "Through mechanical cables",
+      "Through hydraulic lines",
+      "Electronically to flight control computers",
+      "Through pneumatic tubes"
+    ],
+    "ans": 2,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 1114,
+    "cat": "reading",
+    "orig": 714,
+    "q": "What check must be performed before flight?",
+    "opts": [
+      "Engine oil level check",
+      "Full and free movement check of all flight control surfaces",
+      "Passenger weight check",
+      "Fuel temperature check"
+    ],
+    "ans": 1,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 1115,
+    "cat": "reading",
+    "orig": 715,
+    "q": "According to the passage, when must flight controls not be operated by maintenance personnel?",
+    "opts": [
+      "Never, under any circumstances",
+      "Only during engine ground runs",
+      "When technicians are working on them without an all-clear signal",
+      "During cold weather conditions"
+    ],
+    "ans": 2,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 1116,
+    "cat": "reading",
+    "orig": 716,
+    "q": "What happens when a tyre is under-inflated?",
+    "opts": [
+      "It lasts longer",
+      "It creates less heat",
+      "It increases tyre wear and generates excessive heat",
+      "It reduces friction during landing"
+    ],
+    "ans": 2,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 1117,
+    "cat": "reading",
+    "orig": 717,
+    "q": "Why does over-inflation cause problems?",
+    "opts": [
+      "It makes the tyre too soft",
+      "It reduces the tyre contact area and can cause premature failure",
+      "It increases the rolling resistance",
+      "It causes uneven tyre wear"
+    ],
+    "ans": 1,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 1118,
+    "cat": "reading",
+    "orig": 718,
+    "q": "When should tyre pressure be checked?",
+    "opts": [
+      "With the aircraft fully loaded",
+      "During a hot day only",
+      "With the aircraft jacked up and tyre at ambient temperature",
+      "Just before takeoff"
+    ],
+    "ans": 2,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 1119,
+    "cat": "reading",
+    "orig": 719,
+    "q": "What should be inspected on tyres before each flight?",
+    "opts": [
+      "Tyre brand and manufacturing date",
+      "Cuts, bulges, and excessive wear",
+      "Tyre weight and volume",
+      "Internal air composition"
+    ],
+    "ans": 1,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 1120,
+    "cat": "reading",
+    "orig": 720,
+    "q": "When must a tyre be replaced?",
+    "opts": [
+      "Every 100 landings",
+      "When the tread color changes",
+      "When wear indicators reach their limit",
+      "After every 500 hours of operation"
+    ],
+    "ans": 2,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 1121,
+    "cat": "reading",
+    "orig": 721,
+    "q": "What are the two common types of aircraft batteries mentioned?",
+    "opts": [
+      "Lithium and lead-acid",
+      "Lead-acid and nickel-cadmium",
+      "NiMH and lead-acid",
+      "Lithium-ion and NiCd"
+    ],
+    "ans": 1,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 1122,
+    "cat": "reading",
+    "orig": 722,
+    "q": "What dangerous gases can lead-acid batteries produce during charging?",
+    "opts": [
+      "Carbon dioxide and nitrogen",
+      "Oxygen and carbon monoxide",
+      "Explosive mixtures of hydrogen and oxygen",
+      "Hydrogen sulfide and oxygen"
+    ],
+    "ans": 2,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 1123,
+    "cat": "reading",
+    "orig": 723,
+    "q": "What can cause the dangerous gases from lead-acid batteries to ignite?",
+    "opts": [
+      "High humidity",
+      "Low temperature",
+      "A spark",
+      "Excessive vibration"
+    ],
+    "ans": 2,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 1124,
+    "cat": "reading",
+    "orig": 724,
+    "q": "What damage can result from deep discharge of a battery?",
+    "opts": [
+      "Electrical system overload",
+      "Permanent damage to the battery",
+      "Corrosion of the aircraft structure",
+      "Malfunction of the charging system"
+    ],
+    "ans": 1,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 1125,
+    "cat": "reading",
+    "orig": 725,
+    "q": "Where must batteries be stored?",
+    "opts": [
+      "In sealed, airtight containers",
+      "In the cockpit overhead compartment",
+      "In well-ventilated areas away from heat sources",
+      "In the refrigerated section of the hangar"
+    ],
+    "ans": 2,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 1126,
+    "cat": "reading",
+    "orig": 726,
+    "q": "After each maintenance task, what must be made in the aircraft technical log?",
+    "opts": [
+      "A sketch of the repaired area",
+      "An entry describing the work performed, part numbers, and time taken",
+      "Only the time taken for the task",
+      "The certification number of the engineer"
+    ],
+    "ans": 1,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 1127,
+    "cat": "reading",
+    "orig": 727,
+    "q": "Who must sign off the maintenance work?",
+    "opts": [
+      "The captain",
+      "The maintenance manager",
+      "The certifying engineer or authorized technician",
+      "The quality department"
+    ],
+    "ans": 2,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 1128,
+    "cat": "reading",
+    "orig": 728,
+    "q": "What types of maintenance data must be current?",
+    "opts": [
+      "Manuals only",
+      "Only airworthiness directives",
+      "Manuals, service bulletins, airworthiness directives, and engineering orders",
+      "Maintenance manuals and MEL only"
+    ],
+    "ans": 2,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 1129,
+    "cat": "reading",
+    "orig": 729,
+    "q": "What must be done with a defect that cannot be repaired immediately?",
+    "opts": [
+      "The aircraft must be grounded",
+      "It must be deferred in accordance with the MEL",
+      "It must be reported to the regulatory authority",
+      "It must be repaired before next flight in all cases"
+    ],
+    "ans": 1,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 1130,
+    "cat": "reading",
+    "orig": 730,
+    "q": "When can an aircraft be released to service?",
+    "opts": [
+      "After all tasks are complete and signed off",
+      "When no un-deferred open items remain",
+      "After the captain's approval",
+      "Only after ground operations are approved"
+    ],
+    "ans": 1,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 1131,
+    "cat": "reading",
+    "orig": 731,
+    "q": "What is required when working at height?",
+    "opts": [
+      "A safety net below the aircraft",
+      "Approved access platforms and fall protection equipment",
+      "Two people working at all times",
+      "Special tools with non-slip grips"
+    ],
+    "ans": 1,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 1132,
+    "cat": "reading",
+    "orig": 732,
+    "q": "Which of the following can cause burns and eye damage?",
+    "opts": [
+      "Hydraulic fluid, fuel, and cleaning agents",
+      "Lubrication grease only",
+      "Oxygen and nitrogen",
+      "Composite dust only"
+    ],
+    "ans": 0,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 1133,
+    "cat": "reading",
+    "orig": 733,
+    "q": "What PPE must be worn according to the passage?",
+    "opts": [
+      "Fireproof suit only",
+      "Safety boots only",
+      "Gloves, safety glasses, and protective clothing",
+      "Hard hat and high-visibility vest only"
+    ],
+    "ans": 2,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 1134,
+    "cat": "reading",
+    "orig": 734,
+    "q": "Why is hearing protection required in the hangar?",
+    "opts": [
+      "To prevent distraction",
+      "Because noise levels can exceed safe limits",
+      "During all maintenance activities",
+      "Because communication radios can interfere"
+    ],
+    "ans": 1,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 1135,
+    "cat": "reading",
+    "orig": 735,
+    "q": "What is the purpose of a tool control program?",
+    "opts": [
+      "To reduce tool costs",
+      "To prevent foreign object damage (FOD)",
+      "To ensure tools are calibrated",
+      "To track tool usage by technicians"
+    ],
+    "ans": 1,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 1136,
+    "cat": "reading",
+    "orig": 736,
+    "q": "What is the function of the turbine section?",
+    "opts": [
+      "To compress incoming air",
+      "To extract energy from hot high-pressure gas",
+      "To mix fuel with air",
+      "To cool the engine"
+    ],
+    "ans": 1,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 1137,
+    "cat": "reading",
+    "orig": 737,
+    "q": "Why are turbine blades considered highly stressed components?",
+    "opts": [
+      "They are made of brittle materials",
+      "They rotate at extremely high speeds and temperatures",
+      "They are located near the fuel nozzles",
+      "They must support the weight of the engine"
+    ],
+    "ans": 1,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 1138,
+    "cat": "reading",
+    "orig": 738,
+    "q": "Which turbine stages receive the hot gases first?",
+    "opts": [
+      "LP turbine stages",
+      "Both HP and LP simultaneously",
+      "HP turbine stages",
+      "The intermediate pressure stages"
+    ],
+    "ans": 2,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 1139,
+    "cat": "reading",
+    "orig": 739,
+    "q": "What type of inspection is used to detect cracks and erosion in the turbine section?",
+    "opts": [
+      "X-ray inspection",
+      "Borescope inspection",
+      "Ultrasonic testing",
+      "Magnetic particle inspection"
+    ],
+    "ans": 1,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 1140,
+    "cat": "reading",
+    "orig": 740,
+    "q": "How is turbine blade life measured?",
+    "opts": [
+      "In operating hours only",
+      "In distance traveled",
+      "In flight cycles",
+      "In number of engine starts"
+    ],
+    "ans": 2,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 1141,
+    "cat": "reading",
+    "orig": 741,
+    "q": "Why are composite materials used in modern aircraft?",
+    "opts": [
+      "Because they are cheaper than metals",
+      "Because of their high strength-to-weight ratio",
+      "Because they are easier to repair",
+      "Because they resist corrosion better than all metals"
+    ],
+    "ans": 1,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 1142,
+    "cat": "reading",
+    "orig": 742,
+    "q": "Which of the following is NOT listed as damage to composite structures?",
+    "opts": [
+      "Delamination",
+      "Corrosion pitting",
+      "Debonding",
+      "Moisture ingress"
+    ],
+    "ans": 1,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 1143,
+    "cat": "reading",
+    "orig": 743,
+    "q": "What must composite repairs follow?",
+    "opts": [
+      "The aircraft manufacturer's training materials",
+      "The Structural Repair Manual (SRM)",
+      "The technician's judgment",
+      "Any approved repair procedure"
+    ],
+    "ans": 1,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 1144,
+    "cat": "reading",
+    "orig": 744,
+    "q": "What can result from improper composite repairs?",
+    "opts": [
+      "Increased maintenance costs",
+      "Reduction in structural strength",
+      "Cosmetic defects only",
+      "Electrical system interference"
+    ],
+    "ans": 1,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 1145,
+    "cat": "reading",
+    "orig": 745,
+    "q": "What does the composite repair process generally involve?",
+    "opts": [
+      "Replacing the entire panel",
+      "Applying a surface coating only",
+      "Removing damaged area, preparing the surface, and applying repair plies",
+      "Welding the damaged area"
+    ],
+    "ans": 2,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 1146,
+    "cat": "reading",
+    "orig": 746,
+    "q": "What does a task card specify?",
+    "opts": [
+      "Only the estimated completion time",
+      "Tools required, materials, safety precautions, and step-by-step instructions",
+      "The name of the authorized technician",
+      "The cost of the maintenance task"
+    ],
+    "ans": 1,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 1147,
+    "cat": "reading",
+    "orig": 747,
+    "q": "What is a work order?",
+    "opts": [
+      "A document that authorizes maintenance to be carried out",
+      "A list of spare parts needed",
+      "A quality audit document",
+      "A record of previous maintenance"
+    ],
+    "ans": 0,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 1148,
+    "cat": "reading",
+    "orig": 748,
+    "q": "What must the technician do upon completing a task card?",
+    "opts": [
+      "Submit it to the maintenance manager",
+      "Discard it after copying the information",
+      "Sign it to certify the work was done correctly",
+      "Return it to the planning department"
+    ],
+    "ans": 2,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 1149,
+    "cat": "reading",
+    "orig": 749,
+    "q": "What must be done with any deviation from a task card?",
+    "opts": [
+      "It can be ignored if the work is complete",
+      "It must be recorded and referred to engineering for approval",
+      "It automatically invalidates the work order",
+      "The aircraft must be grounded"
+    ],
+    "ans": 1,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 1150,
+    "cat": "reading",
+    "orig": 750,
+    "q": "For how long must task cards be retained?",
+    "opts": [
+      "Until the next maintenance check",
+      "For one year only",
+      "For the specified period as part of maintenance records",
+      "Until the aircraft is retired"
+    ],
+    "ans": 2,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 1151,
+    "cat": "reading",
+    "orig": 1516,
+    "q": "What is the main function of the hydraulic accumulator?",
+    "opts": [
+      "To filter hydraulic fluid before it enters the actuators",
+      "To store hydraulic pressure energy for instantaneous use, to smooth pressure fluctuations, and as an emergency backup",
+      "To increase pump output during high-demand operations",
+      "To cool the hydraulic fluid during continuous operation"
+    ],
+    "ans": 0,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 1152,
+    "cat": "reading",
+    "orig": 1517,
+    "q": "What gas is used to pre-charge the hydraulic accumulator?",
+    "opts": [
+      "Compressed air",
+      "Oxygen",
+      "Dry nitrogen",
+      "Carbon dioxide"
+    ],
+    "ans": 2,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 1153,
+    "cat": "reading",
+    "orig": 1518,
+    "q": "When must the nitrogen pre-charge be checked?",
+    "opts": [
+      "Only when a hydraulic pressure fault is indicated",
+      "At specified maintenance intervals with the hydraulic system fully depressurized",
+      "During each engine run",
+      "During flight when the system is pressurized"
+    ],
+    "ans": 1,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 1154,
+    "cat": "reading",
+    "orig": 1519,
+    "q": "What happens if the nitrogen pre-charge is too high?",
+    "opts": [
+      "The accumulator may burst under pressure",
+      "The accumulator cannot accept fluid from the system and becomes ineffective",
+      "The hydraulic pump will be damaged",
+      "The fluid pressure will drop rapidly"
+    ],
+    "ans": 1,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 1155,
+    "cat": "reading",
+    "orig": 1520,
+    "q": "How is the accumulator chamber divided?",
+    "opts": [
+      "By a rigid metal partition welded in place",
+      "By a flexible diaphragm or free-floating piston",
+      "By a filter element that separates gas and fluid",
+      "By two separate inlet and outlet valves"
+    ],
+    "ans": 1,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 1156,
+    "cat": "reading",
+    "orig": 1521,
+    "q": "What are the primary functions of the engine oil system?",
+    "opts": [
+      "To provide fuel and air mixture to the combustion chamber",
+      "To reduce friction and wear, remove heat, and prevent corrosion",
+      "To regulate fuel flow to the engine",
+      "To provide hydraulic pressure to the engine control units"
+    ],
+    "ans": 1,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 1157,
+    "cat": "reading",
+    "orig": 1522,
+    "q": "What does the scavenge pump do?",
+    "opts": [
+      "Draws oil from the tank and delivers it to the engine",
+      "Returns oil from the engine to the tank via the oil cooler",
+      "Filters oil before it enters the bearings",
+      "Regulates oil pressure throughout the engine"
+    ],
+    "ans": 1,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 1158,
+    "cat": "reading",
+    "orig": 1523,
+    "q": "When should an oil quantity check be performed?",
+    "opts": [
+      "Immediately after engine shutdown",
+      "At specified time after engine shutdown to allow oil to drain back to the tank",
+      "During engine operation at idle",
+      "Only before the first flight of the day"
+    ],
+    "ans": 1,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 1159,
+    "cat": "reading",
+    "orig": 1524,
+    "q": "What should be done if oil contains metallic particles?",
+    "opts": [
+      "Continue operating as normal if the quantity is within limits",
+      "Sample the oil and send it for analysis to identify the contamination source",
+      "Immediately drain and replace the oil without analysis",
+      "Add extra oil to dilute the contamination"
+    ],
+    "ans": 1,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 1160,
+    "cat": "reading",
+    "orig": 1525,
+    "q": "Where does the oil cooler transfer excess heat?",
+    "opts": [
+      "To the outside air through a dedicated heat exchanger",
+      "To fuel or air",
+      "To the engine exhaust stream",
+      "To the hydraulic fluid system"
+    ],
+    "ans": 1,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 1161,
+    "cat": "reading",
+    "orig": 1526,
+    "q": "What is the standard frequency of the AC power generated by aircraft main generators?",
+    "opts": [
+      "50 Hz",
+      "60 Hz",
+      "400 Hz",
+      "115 Hz"
+    ],
+    "ans": 2,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 1162,
+    "cat": "reading",
+    "orig": 1527,
+    "q": "What is the function of a Transformer Rectifier Unit (TRU)?",
+    "opts": [
+      "To convert AC power to DC power",
+      "To convert DC power to AC power",
+      "To regulate the generator output frequency",
+      "To isolate the battery from the bus"
+    ],
+    "ans": 0,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 1163,
+    "cat": "reading",
+    "orig": 1528,
+    "q": "What does the Ram Air Turbine (RAT) do?",
+    "opts": [
+      "Provides APU power for engine starting",
+      "Uses airstream energy to generate emergency hydraulic or electrical power",
+      "Increases engine power during takeoff",
+      "Provides pressurized air for the environmental control system"
+    ],
+    "ans": 1,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 1164,
+    "cat": "reading",
+    "orig": 1529,
+    "q": "Why is AC power preferred on large transport aircraft?",
+    "opts": [
+      "AC is easier to generate than DC",
+      "AC can be transformed to different voltages and is more efficient for long cable runs",
+      "AC power does not require heavy cables",
+      "AC generators are lighter than DC generators"
+    ],
+    "ans": 1,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 1165,
+    "cat": "reading",
+    "orig": 1530,
+    "q": "What provides the final electrical backup if all generators fail?",
+    "opts": [
+      "The hydraulic system",
+      "The APU",
+      "The RAT",
+      "The aircraft battery"
+    ],
+    "ans": 3,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 1166,
+    "cat": "reading",
+    "orig": 1531,
+    "q": "What would cause a cooling fault annunciation on the master caution panel?",
+    "opts": [
+      "A cooling duct is broken",
+      "The cooling air flow rate falls below a threshold",
+      "The avionics bay door is open",
+      "The conditioned air supply pressure is too high"
+    ],
+    "ans": 1,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 1167,
+    "cat": "reading",
+    "orig": 1532,
+    "q": "How are avionics bays cooled on modern aircraft?",
+    "opts": [
+      "By natural convection through open panels",
+      "By conditioned air circulated from the pneumatic or ECS",
+      "By dedicated liquid cooling circuits",
+      "By engine bleed air directed to each avionics rack"
+    ],
+    "ans": 1,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 1168,
+    "cat": "reading",
+    "orig": 1533,
+    "q": "What is used to supplement avionics cooling on the ground during testing?",
+    "opts": [
+      "Additional engine bleed air",
+      "Ground cooling units connected to the aircraft",
+      "Portable electric fans",
+      "Dry ice placed near the avionics racks"
+    ],
+    "ans": 1,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 1169,
+    "cat": "reading",
+    "orig": 1534,
+    "q": "What is the consequence of incorrectly reassembling avionics cooling ducting after maintenance?",
+    "opts": [
+      "The avionics system will not power up",
+      "Inadequate cooling leading to equipment failure",
+      "Increased electrical power consumption",
+      "Reduced cabin pressurization"
+    ],
+    "ans": 1,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 1170,
+    "cat": "reading",
+    "orig": 1535,
+    "q": "After passing through the avionics bay, where does the cooling air go?",
+    "opts": [
+      "Back to the engine intake",
+      "Overboard or mixed with cabin air",
+      "To the cargo hold",
+      "To the hydraulic system heat exchanger"
+    ],
+    "ans": 1,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 1171,
+    "cat": "reading",
+    "orig": 1536,
+    "q": "How does the wing leading edge anti-icing system prevent ice accumulation?",
+    "opts": [
+      "By using electrical heating elements embedded in the leading edge",
+      "By distributing hot engine bleed air through piccolo tubes to heat the inner surface of the slat",
+      "By applying de-icing fluid from a spray system in the leading edge",
+      "By circulating hot hydraulic fluid through the leading edge structure"
+    ],
+    "ans": 1,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 1172,
+    "cat": "reading",
+    "orig": 1537,
+    "q": "What would happen if ice accumulated on the wing leading edge?",
+    "opts": [
+      "The aircraft would become heavier",
+      "The wing's aerodynamic profile would be altered and lift would be reduced",
+      "The wing would suffer structural damage",
+      "The engine would ingest ice and be damaged"
+    ],
+    "ans": 1,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 1173,
+    "cat": "reading",
+    "orig": 1538,
+    "q": "When must the anti-icing system be tested?",
+    "opts": [
+      "After every engine replacement",
+      "Before flight in forecast icing conditions",
+      "During the pre-flight walkround as a matter of routine",
+      "Only during the annual airworthiness review"
+    ],
+    "ans": 1,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 1174,
+    "cat": "reading",
+    "orig": 1539,
+    "q": "What maintenance is required after work on the bleed air supply or piccolo tube system?",
+    "opts": [
+      "Borescope inspection of the piccolo tubes",
+      "A leak check and functional test",
+      "A visual inspection of the leading edge only",
+      "An NDT inspection of the piccolo tube welds"
+    ],
+    "ans": 1,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 1175,
+    "cat": "reading",
+    "orig": 1540,
+    "q": "How are the piccolo tubes distributed along the leading edge?",
+    "opts": [
+      "They are connected at a single central point",
+      "They run along the leading edge with multiple small holes to impinge hot air on the inner surface",
+      "They are located externally on the lower surface of the slat",
+      "They use high-pressure nozzles to direct air at the leading edge tip"
+    ],
+    "ans": 1,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 1176,
+    "cat": "reading",
+    "orig": 1541,
+    "q": "What are the \"Dirty Dozen\" in aviation maintenance?",
+    "opts": [
+      "Twelve common defect types found on aircraft",
+      "Twelve common human conditions that can lead to maintenance errors",
+      "Twelve prohibited maintenance practices",
+      "Twelve critical components that require dual inspection"
+    ],
+    "ans": 1,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 1177,
+    "cat": "reading",
+    "orig": 1542,
+    "q": "Why is fatigue particularly dangerous in maintenance?",
+    "opts": [
+      "Fatigue causes technicians to rush and skip steps",
+      "Fatigue reduces concentration, slows reaction times, and impairs decision-making",
+      "Fatigue increases physical strength, leading to overtorque of fasteners",
+      "Fatigue reduces stress levels, leading to complacency"
+    ],
+    "ans": 1,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 1178,
+    "cat": "reading",
+    "orig": 1543,
+    "q": "What is a \"just culture\" in aviation maintenance organisations?",
+    "opts": [
+      "A culture where all errors are punished to deter future mistakes",
+      "A culture that encourages error reporting without fear of punishment to improve safety",
+      "A culture that blames individuals for systemic failures",
+      "A culture where only management decisions are questioned"
+    ],
+    "ans": 1,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 1179,
+    "cat": "reading",
+    "orig": 1544,
+    "q": "What is the purpose of post-maintenance inspections by a second inspector?",
+    "opts": [
+      "To verify the quality of the documentation",
+      "A critical control to catch errors, especially on critical systems",
+      "To ensure tools are accounted for",
+      "To check the inspector's licence is current"
+    ],
+    "ans": 1,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 1180,
+    "cat": "reading",
+    "orig": 1545,
+    "q": "Which of the following is NOT one of the \"Dirty Dozen\"?",
+    "opts": [
+      "Fatigue",
+      "Distraction",
+      "Corrosion",
+      "Complacency"
+    ],
+    "ans": 2,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 1181,
+    "cat": "reading",
+    "orig": 1546,
+    "q": "How can water enter aircraft fuel tanks?",
+    "opts": [
+      "Only through the refuelling connection",
+      "Through condensation, poorly sealed filler caps, or contaminated refuelling equipment",
+      "Through the fuel vent system during high-humidity conditions",
+      "Through leaking crossfeed valves"
+    ],
+    "ans": 1,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 1182,
+    "cat": "reading",
+    "orig": 1547,
+    "q": "What does microbiological contamination in fuel tanks produce?",
+    "opts": [
+      "Excess water and ice crystals",
+      "Acids, dark sediment, and corrosion to tank structure and components",
+      "Increased fuel viscosity",
+      "Explosive vapour that accumulates in the ullage"
+    ],
+    "ans": 1,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 1183,
+    "cat": "reading",
+    "orig": 1548,
+    "q": "What is the purpose of a tank sump check?",
+    "opts": [
+      "To measure the fuel quantity accurately",
+      "To drain the lowest point of the tank and inspect the sample for water and debris",
+      "To pressurise the tank for leak testing",
+      "To aerate the fuel before fuelling operations"
+    ],
+    "ans": 1,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 1184,
+    "cat": "reading",
+    "orig": 1549,
+    "q": "What can be used to control microbial growth in fuel tanks?",
+    "opts": [
+      "Nitrogen inerting of the tank",
+      "Biocide additives",
+      "UV light treatment of the fuel",
+      "Anti-static treatments applied to the tank walls"
+    ],
+    "ans": 1,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 1185,
+    "cat": "reading",
+    "orig": 1550,
+    "q": "Why is fuel contamination by incorrect fuel type extremely serious?",
+    "opts": [
+      "Incorrect fuel changes the weight of the aircraft",
+      "It can cause engine damage or failure",
+      "It invalidates the aircraft's airworthiness certificate immediately",
+      "It causes microbiological growth to accelerate"
+    ],
+    "ans": 1,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 1186,
+    "cat": "reading",
+    "orig": 1551,
+    "q": "Which NDT method is most effective for detecting corrosion under aircraft skin?",
+    "opts": [
+      "Dye penetrant inspection",
+      "Magnetic particle inspection",
+      "Eddy current testing",
+      "X-ray testing"
+    ],
+    "ans": 2,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 1187,
+    "cat": "reading",
+    "orig": 1552,
+    "q": "What type of materials can be inspected with Magnetic Particle Inspection (MPI)?",
+    "opts": [
+      "All metals including aluminium and titanium",
+      "Only ferrous (magnetic) metals",
+      "Only non-metallic composite materials",
+      "Any conductive material"
+    ],
+    "ans": 1,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 1188,
+    "cat": "reading",
+    "orig": 1553,
+    "q": "In dye penetrant inspection, what is the purpose of the developer?",
+    "opts": [
+      "To clean the surface before applying penetrant",
+      "To draw the penetrant out of cracks, making them visible",
+      "To remove the excess penetrant from the surface",
+      "To increase the surface porosity for better penetrant absorption"
+    ],
+    "ans": 1,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 1189,
+    "cat": "reading",
+    "orig": 1554,
+    "q": "What does ultrasonic testing detect?",
+    "opts": [
+      "Surface corrosion on metal surfaces",
+      "Defects that reflect high-frequency sound waves",
+      "Cracks in composite materials only",
+      "Magnetic field irregularities around cracks"
+    ],
+    "ans": 1,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 1190,
+    "cat": "reading",
+    "orig": 1555,
+    "q": "Why is X-ray testing used for complex assemblies?",
+    "opts": [
+      "It is the fastest and cheapest NDT method",
+      "It creates an image of the internal structure and can access areas where other methods cannot",
+      "It detects only surface defects",
+      "It works on non-conductive materials only"
+    ],
+    "ans": 1,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 1191,
+    "cat": "reading",
+    "orig": 1556,
+    "q": "What materials are used for modern aircraft brake discs?",
+    "opts": [
+      "Steel only",
+      "Carbon fibre composite (CFC), which is lighter and can withstand higher temperatures than steel",
+      "Titanium alloy for its corrosion resistance",
+      "Aluminium alloy to reduce weight"
+    ],
+    "ans": 1,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 1192,
+    "cat": "reading",
+    "orig": 1557,
+    "q": "Why must carbon disc brakes be handled carefully?",
+    "opts": [
+      "They are extremely heavy and can cause injury",
+      "They are brittle and can crack if dropped or subjected to impact",
+      "They contain toxic materials that require special handling",
+      "They retain heat for a long time and can cause burns"
+    ],
+    "ans": 1,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 1193,
+    "cat": "reading",
+    "orig": 1558,
+    "q": "What does the anti-skid system do?",
+    "opts": [
+      "It applies equal braking force to all wheels simultaneously",
+      "It prevents wheel lockup by modulating hydraulic pressure if wheel speed drops below a threshold",
+      "It increases braking efficiency by applying maximum pressure at all times",
+      "It controls the extension and retraction of the landing gear"
+    ],
+    "ans": 1,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 1194,
+    "cat": "reading",
+    "orig": 1559,
+    "q": "How is brake wear checked?",
+    "opts": [
+      "By measuring the temperature of the discs after landing",
+      "By measuring against wear indicator pins or disc wear limits in the maintenance manual",
+      "By visual inspection of disc surface colour",
+      "By monitoring brake pedal travel in the cockpit"
+    ],
+    "ans": 1,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 1195,
+    "cat": "reading",
+    "orig": 1560,
+    "q": "What happens if oil or grease contaminates carbon brake discs?",
+    "opts": [
+      "The discs develop surface cracks",
+      "The disc performance degrades",
+      "The disc discolours but performance is unaffected",
+      "The disc must be replaced immediately regardless of wear level"
+    ],
+    "ans": 1,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 1196,
+    "cat": "reading",
+    "orig": 1561,
+    "q": "What must be verified before connecting ground power to an aircraft?",
+    "opts": [
+      "The ground power unit is fully fuelled",
+      "The power source is compatible with the aircraft's electrical system requirements",
+      "The engines are fully shut down and cooled",
+      "The flight crew has approved the connection"
+    ],
+    "ans": 1,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 1197,
+    "cat": "reading",
+    "orig": 1562,
+    "q": "Why must the aircraft be bonded to earth during fuelling?",
+    "opts": [
+      "To prevent electrical faults in the aircraft systems",
+      "To dissipate static charges and prevent a spark that could ignite fuel vapour",
+      "To allow the fuelling rate to be measured accurately",
+      "To ensure the fuel trucks are correctly positioned"
+    ],
+    "ans": 1,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 1198,
+    "cat": "reading",
+    "orig": 1563,
+    "q": "What must happen after pushback before the aircraft is released to the crew?",
+    "opts": [
+      "The flight crew must confirm hydraulic pressure is normal",
+      "The towbar must be disconnected and the nose wheel steering reconnected",
+      "The ground power must be disconnected and stored",
+      "The chocks must be removed and the pushback vehicle reversed"
+    ],
+    "ans": 1,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 1199,
+    "cat": "reading",
+    "orig": 1564,
+    "q": "What could happen if the nose gear is turned beyond its stated steering angle limits during towing?",
+    "opts": [
+      "The aircraft's hydraulic system could be overpressurised",
+      "The nose gear could be structurally damaged",
+      "The nose gear steering system could automatically disengage",
+      "The aircraft cannot be steered and will travel in a straight line"
+    ],
+    "ans": 1,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 1200,
+    "cat": "reading",
+    "orig": 1565,
+    "q": "What is the maximum towing speed based on?",
+    "opts": [
+      "The type of ground surface",
+      "The manufacturer's specification for the aircraft",
+      "The distance to be covered",
+      "The weight of the aircraft"
+    ],
+    "ans": 1,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 1201,
+    "cat": "reading",
+    "orig": 1566,
+    "q": "What unit is commonly used to measure engine vibration?",
+    "opts": [
+      "psi (pounds per square inch)",
+      "IPS (inches per second) or similar",
+      "RPM (revolutions per minute)",
+      "Hz (hertz)"
+    ],
+    "ans": 1,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 1202,
+    "cat": "reading",
+    "orig": 1567,
+    "q": "What could an increase in engine vibration level indicate?",
+    "opts": [
+      "Excessive fuel flow",
+      "Fan or turbine blade damage, bearing wear, or rotor imbalance",
+      "A leak in the oil system",
+      "Compressor inlet contamination"
+    ],
+    "ans": 1,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 1203,
+    "cat": "reading",
+    "orig": 1568,
+    "q": "What maintenance may be required when vibration levels exceed alert thresholds?",
+    "opts": [
+      "Immediate engine shutdown and ground test",
+      "Borescope inspection, oil sampling, or rotor trim balancing",
+      "Replacement of the engine vibration sensors",
+      "Adjustment of the engine fuel flow schedule"
+    ],
+    "ans": 1,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 1204,
+    "cat": "reading",
+    "orig": 1569,
+    "q": "How is rotor trim balancing performed?",
+    "opts": [
+      "By removing and replacing individual fan blades",
+      "By adding or removing small balance weights at designated positions on the fan or compressor rotor",
+      "By adjusting the rotor bearing clearances",
+      "By applying sealant to the fan blade attachment points"
+    ],
+    "ans": 1,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 1205,
+    "cat": "reading",
+    "orig": 1570,
+    "q": "What is the benefit of regularly trending vibration data?",
+    "opts": [
+      "It allows the pilot to monitor engine health in real time",
+      "It helps identify gradual deterioration before it reaches a critical level",
+      "It reduces the need for borescope inspections",
+      "It records vibration data for insurance purposes"
+    ],
+    "ans": 1,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 1206,
+    "cat": "reading",
+    "orig": 1571,
+    "q": "What would happen if the aircraft's centre of gravity (CG) is outside limits?",
+    "opts": [
+      "The aircraft's speed would be reduced",
+      "The aircraft could become uncontrollable or structurally unsafe",
+      "Fuel consumption would increase significantly",
+      "The pressurization system would fail"
+    ],
+    "ans": 1,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 1207,
+    "cat": "reading",
+    "orig": 1572,
+    "q": "What is \"moment\" in weight and balance calculations?",
+    "opts": [
+      "The distance from the reference datum to a weight item",
+      "Weight multiplied by arm",
+      "The total weight of all items on the aircraft",
+      "The time taken to load the aircraft"
+    ],
+    "ans": 1,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 1208,
+    "cat": "reading",
+    "orig": 1573,
+    "q": "When must weight and balance calculations be completed?",
+    "opts": [
+      "Only when the aircraft is fully loaded",
+      "Before every flight",
+      "Only after a major structural repair",
+      "At each scheduled maintenance check"
+    ],
+    "ans": 1,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 1209,
+    "cat": "reading",
+    "orig": 1574,
+    "q": "What establishes the basic empty weight of an aircraft?",
+    "opts": [
+      "The maximum takeoff weight certification",
+      "It is established at manufacture and confirmed after any modification or major structural repair",
+      "It is calculated before each flight based on the fuel load",
+      "It is established annually by the regulatory authority"
+    ],
+    "ans": 1,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 1210,
+    "cat": "reading",
+    "orig": 1575,
+    "q": "Why must the maximum certificated weights never be exceeded?",
+    "opts": [
+      "Exceeding them increases fuel consumption dramatically",
+      "Exceeding them can stress structural components beyond their design limits",
+      "Exceeding them voids the aircraft insurance",
+      "Exceeding them triggers automated safety systems that ground the aircraft"
+    ],
+    "ans": 1,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 1211,
+    "cat": "reading",
+    "orig": 1576,
+    "q": "What conditions do accumulated dirt and pollutants create on aircraft skin?",
+    "opts": [
+      "Conditions that promote paint adhesion",
+      "Conditions that promote corrosion, especially in dissimilar metal joints and crevice areas",
+      "Conditions that reduce aerodynamic drag",
+      "Conditions that reduce static electricity build-up"
+    ],
+    "ans": 1,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 1212,
+    "cat": "reading",
+    "orig": 1577,
+    "q": "Where should high-pressure water jets NOT be directed during aircraft washing?",
+    "opts": [
+      "At the wing leading edges",
+      "At seals, vents, pressure-sensitive instruments, or into control surface hinge gaps",
+      "At the engine nacelles",
+      "At the landing gear bays"
+    ],
+    "ans": 1,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 1213,
+    "cat": "reading",
+    "orig": 1578,
+    "q": "What must be checked after washing the aircraft?",
+    "opts": [
+      "That the aircraft weight has not changed significantly",
+      "That all drain holes are clear",
+      "That all lighting systems are operational",
+      "That all access panels are correctly closed"
+    ],
+    "ans": 1,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 1214,
+    "cat": "reading",
+    "orig": 1579,
+    "q": "What are Corrosion Inhibiting Compounds (CICs) used for?",
+    "opts": [
+      "To remove existing corrosion from metal surfaces",
+      "To provide a protective film on specified internal structural areas",
+      "To seal structural rivets against moisture ingress",
+      "To replace the function of primer on repainted surfaces"
+    ],
+    "ans": 1,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 1215,
+    "cat": "reading",
+    "orig": 1580,
+    "q": "After finding corrosion during washing, what must be done?",
+    "opts": [
+      "The area must be immediately sanded and repainted",
+      "The corrosion must be assessed against the structural repair manual to determine if it is within limits or requires treatment/repair",
+      "The aircraft must be grounded until the corrosion is removed",
+      "The corrosion must be photographed and sent to the manufacturer for disposition"
+    ],
+    "ans": 1,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 1216,
+    "cat": "reading",
+    "orig": 1581,
+    "q": "What is the standard storage pressure for gaseous oxygen cylinders on aircraft?",
+    "opts": [
+      "500 psi",
+      "1850 psi",
+      "3000 psi",
+      "100 psi"
+    ],
+    "ans": 1,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 1217,
+    "cat": "reading",
+    "orig": 1582,
+    "q": "How does a chemical oxygen generator produce oxygen?",
+    "opts": [
+      "By electrolysis of water",
+      "By a chemical reaction initiated by a firing pin when the mask lanyard is pulled",
+      "By heating liquid oxygen to convert it to gas",
+      "By compressing ambient air and removing nitrogen"
+    ],
+    "ans": 1,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 1218,
+    "cat": "reading",
+    "orig": 1583,
+    "q": "Why are chemical oxygen generators used in passenger overhead panels?",
+    "opts": [
+      "They are cheaper than gaseous systems",
+      "They are lightweight and require no high-pressure plumbing",
+      "They produce oxygen more quickly than gaseous systems",
+      "They can supply more oxygen per unit weight than gaseous systems"
+    ],
+    "ans": 1,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 1219,
+    "cat": "reading",
+    "orig": 1584,
+    "q": "Why must oil and grease be kept away from oxygen system components?",
+    "opts": [
+      "Oil reduces the efficiency of the oxygen regulator",
+      "Oil and grease can ignite violently on contact with high-pressure oxygen",
+      "Oil contaminates the oxygen and makes it toxic",
+      "Oil reduces the pressure in the oxygen cylinders"
+    ],
+    "ans": 1,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 1220,
+    "cat": "reading",
+    "orig": 1585,
+    "q": "In which aircraft type are liquid oxygen (LOX) systems typically used?",
+    "opts": [
+      "Short-haul commuter aircraft",
+      "Military aircraft",
+      "Large commercial transport aircraft",
+      "Business jets"
+    ],
+    "ans": 1,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 1221,
+    "cat": "reading",
+    "orig": 1586,
+    "q": "What does the Fault Isolation Manual (FIM) provide?",
+    "opts": [
+      "Step-by-step maintenance procedures for scheduled tasks",
+      "Assistance to technicians in troubleshooting system faults",
+      "A breakdown of all parts by assembly and part number",
+      "Electrical circuit schematics for the aircraft systems"
+    ],
+    "ans": 1,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 1222,
+    "cat": "reading",
+    "orig": 1587,
+    "q": "What information does the Illustrated Parts Catalogue (IPC) provide?",
+    "opts": [
+      "Maintenance procedures for each system",
+      "Part identification by assembly breakdown and part number",
+      "Fault codes and their remedies",
+      "Wiring diagrams for each system"
+    ],
+    "ans": 1,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 1223,
+    "cat": "reading",
+    "orig": 1588,
+    "q": "What must a technician do upon completing a task card?",
+    "opts": [
+      "Return the task card to the planning department for filing",
+      "Sign the task card to certify the work was done in accordance with the referenced documentation",
+      "Pass the task card to the quality inspector for verification",
+      "Submit the task card to the aircraft commander"
+    ],
+    "ans": 1,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 1224,
+    "cat": "reading",
+    "orig": 1589,
+    "q": "For how long must completed task cards be retained?",
+    "opts": [
+      "For one year after the maintenance check",
+      "For the required regulatory period",
+      "Until the next scheduled maintenance check",
+      "Until the aircraft is retired"
+    ],
+    "ans": 1,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 1225,
+    "cat": "reading",
+    "orig": 1590,
+    "q": "What is the advantage of Electronic Maintenance Documentation (EMD) systems?",
+    "opts": [
+      "They reduce the number of maintenance tasks required",
+      "They improve traceability and reduce paper use",
+      "They allow maintenance to be performed without reference documents",
+      "They automatically certify completed maintenance tasks"
+    ],
+    "ans": 1,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 1226,
+    "cat": "reading",
+    "orig": 1591,
+    "q": "What are downlocks in the landing gear system?",
+    "opts": [
+      "Locks that prevent the gear from extending in flight",
+      "Mechanical devices that prevent the gear from collapsing when extended under load",
+      "Hydraulic locks that hold the gear in the retracted position",
+      "Locks activated by the cockpit gear handle"
+    ],
+    "ans": 1,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 1227,
+    "cat": "reading",
+    "orig": 1592,
+    "q": "What happens during the normal landing gear retraction sequence?",
+    "opts": [
+      "Gear retracts first, then doors open",
+      "Gear doors open, gear retracts, gear doors close",
+      "Gear retracts and doors remain open until the next extension",
+      "Gear doors close when gear is up, then doors open again"
+    ],
+    "ans": 1,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 1228,
+    "cat": "reading",
+    "orig": 1593,
+    "q": "What methods can be used for emergency landing gear extension?",
+    "opts": [
+      "Manual mechanical extension by the flight crew",
+      "Alternative hydraulic source, pneumatic pressure, or gravity (free-fall)",
+      "Engine bleed air pressure",
+      "Battery-powered electric actuators only"
+    ],
+    "ans": 1,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 1229,
+    "cat": "reading",
+    "orig": 1594,
+    "q": "What safety conditions must be met before a landing gear retraction test on the ground?",
+    "opts": [
+      "The aircraft engines must be running",
+      "The aircraft must be on jacks and the wheel well area clear of personnel",
+      "The aircraft hydraulic pressure must be at maximum",
+      "The flight crew must be in the cockpit for the test"
+    ],
+    "ans": 1,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 1230,
+    "cat": "reading",
+    "orig": 1595,
+    "q": "How is landing gear position indicated in the cockpit?",
+    "opts": [
+      "By mechanical flags visible through the cockpit windows",
+      "By proximity switches or microswitches signalling the cockpit indicator lights",
+      "By pressure sensors in the actuators",
+      "By the weight-on-wheels switch only"
+    ],
+    "ans": 1,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 1231,
+    "cat": "reading",
+    "orig": 1596,
+    "q": "What type of corrosion occurs between two dissimilar metals in electrical contact?",
+    "opts": [
+      "Pitting corrosion",
+      "Galvanic corrosion",
+      "Intergranular corrosion",
+      "Fretting corrosion"
+    ],
+    "ans": 1,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 1232,
+    "cat": "reading",
+    "orig": 1597,
+    "q": "What is intergranular corrosion?",
+    "opts": [
+      "Corrosion that forms small deep holes on the surface",
+      "Corrosion along the grain boundaries of an alloy that can seriously weaken structure while being invisible from the surface",
+      "Corrosion appearing as a network of worm-like threads under paint",
+      "Corrosion resulting from micro-motion between parts"
+    ],
+    "ans": 1,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 1233,
+    "cat": "reading",
+    "orig": 1598,
+    "q": "What type of corrosion results from micro-motion between closely fitted parts?",
+    "opts": [
+      "Galvanic corrosion",
+      "Fretting corrosion",
+      "Filiform corrosion",
+      "Exfoliation corrosion"
+    ],
+    "ans": 1,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 1234,
+    "cat": "reading",
+    "orig": 1599,
+    "q": "How is corrosion treated after removal?",
+    "opts": [
+      "By applying paint directly over the bare metal",
+      "By assessing against corrosion limits, applying conversion coating, primer, and topcoat",
+      "By welding over the corroded area",
+      "By applying a corrosion inhibiting compound only"
+    ],
+    "ans": 1,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 1235,
+    "cat": "reading",
+    "orig": 1600,
+    "q": "What distinguishes exfoliation corrosion?",
+    "opts": [
+      "It forms small pits on the metal surface",
+      "It is a type of intergranular corrosion that causes layers of the material to peel away",
+      "It occurs preferentially in weld zones",
+      "It occurs only on the outer skin of the aircraft"
+    ],
+    "ans": 1,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 1236,
+    "cat": "reading",
+    "orig": 1601,
+    "q": "What technology do most modern fuel quantity indicating systems use?",
+    "opts": [
+      "Float-type mechanical gauges",
+      "Capacitance probes that measure changes in electrical capacitance as fuel level changes",
+      "Ultrasonic sensors that measure the fuel surface level",
+      "Weight sensors mounted under the fuel tanks"
+    ],
+    "ans": 1,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 1237,
+    "cat": "reading",
+    "orig": 1602,
+    "q": "Why is the fuel quantity reading temperature-compensated?",
+    "opts": [
+      "Because fuel temperature affects aircraft performance",
+      "Because fuel density changes with temperature, affecting the capacitance calculation",
+      "Because capacitance probes are sensitive to temperature damage",
+      "Because the cockpit display would freeze in cold temperatures"
+    ],
+    "ans": 1,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 1238,
+    "cat": "reading",
+    "orig": 1603,
+    "q": "What is the purpose of the totaliser in the fuel quantity system?",
+    "opts": [
+      "To measure the fuel flow rate to each engine",
+      "To show the total fuel quantity across all tanks",
+      "To calculate the fuel burn rate",
+      "To provide a warning when fuel is low"
+    ],
+    "ans": 1,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 1239,
+    "cat": "reading",
+    "orig": 1604,
+    "q": "What maintenance tasks are involved in the FQIS?",
+    "opts": [
+      "Regular replacement of the capacitance probes",
+      "Probe resistance checks, leak checks at connections, and functional tests to verify calibration",
+      "Visual inspection of the tank interior through probe access holes",
+      "Cleaning of probe surfaces and repainting"
+    ],
+    "ans": 1,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 1240,
+    "cat": "reading",
+    "orig": 1605,
+    "q": "What could cause a fuel quantity probe to read out of range?",
+    "opts": [
+      "Excessive vibration in the wing structure",
+      "A faulty probe or fuel contamination affecting it",
+      "An oil leak into the fuel tank",
+      "Incorrect fuel type loaded into the tank"
+    ],
+    "ans": 1,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 1241,
+    "cat": "reading",
+    "orig": 1606,
+    "q": "How is cabin pressure controlled during flight?",
+    "opts": [
+      "By varying the engine bleed air supply only",
+      "By controlling the outflow valves to regulate the rate at which air is vented overboard",
+      "By adjusting the air conditioning packs",
+      "By modulating the aircraft's climb and descent rate"
+    ],
+    "ans": 1,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 1242,
+    "cat": "reading",
+    "orig": 1607,
+    "q": "What is the function of the safety relief valve in the pressurization system?",
+    "opts": [
+      "To maintain the minimum cabin pressure during descent",
+      "To protect the fuselage from overpressurisation by opening if differential pressure exceeds the maximum design limit",
+      "To provide emergency oxygen in case of pressurization loss",
+      "To supply fresh outside air when the bleed system fails"
+    ],
+    "ans": 1,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 1243,
+    "cat": "reading",
+    "orig": 1608,
+    "q": "What does the negative pressure relief valve prevent?",
+    "opts": [
+      "The cabin from depressurising too rapidly",
+      "Outside air pressure from exceeding cabin pressure during descent",
+      "The fuselage from exceeding maximum positive pressure differential",
+      "The bleed air supply from exceeding maximum pressure"
+    ],
+    "ans": 1,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 1244,
+    "cat": "reading",
+    "orig": 1609,
+    "q": "What maintenance task verifies the structural integrity of the fuselage under pressurization loading?",
+    "opts": [
+      "A functional test of the outflow valve",
+      "A pressure differential test of the aircraft fuselage structure",
+      "An inspection of the door seals",
+      "A check of the cabin pressure controller setting"
+    ],
+    "ans": 1,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 1245,
+    "cat": "reading",
+    "orig": 1610,
+    "q": "At what thresholds must cabin altitude and differential pressure warnings alert the crew?",
+    "opts": [
+      "At 8,000 ft cabin altitude only",
+      "At the correct thresholds specified in the maintenance manual, verified by functional testing",
+      "At any cabin altitude above sea level",
+      "At the pilot's discretion based on the flight conditions"
+    ],
+    "ans": 1,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 1246,
+    "cat": "reading",
+    "orig": 1611,
+    "q": "What inspection is required after a turbine engine overtemperature event?",
+    "opts": [
+      "A magnetic particle inspection of the engine casing",
+      "A borescope inspection of the combustion chamber, turbine, and nozzle guide vanes",
+      "An oil sample analysis",
+      "A visual inspection of the external engine case"
+    ],
+    "ans": 1,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 1247,
+    "cat": "reading",
+    "orig": 1612,
+    "q": "What must happen if turbine damage exceeds defined limits after an exceedance?",
+    "opts": [
+      "The engine may continue operating with enhanced monitoring",
+      "The engine must be removed and sent to an overhaul facility",
+      "The engine's temperature limit is recertified at a higher level",
+      "The aircraft is ferried to a maintenance base with the engine at reduced power"
+    ],
+    "ans": 1,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 1248,
+    "cat": "reading",
+    "orig": 1613,
+    "q": "What risk does an overspeed event pose to the engine?",
+    "opts": [
+      "Damage to the fuel nozzles",
+      "Plastic deformation of rotating components such as fan, compressor, and turbine discs",
+      "Overheating of the oil system",
+      "Seizure of the engine starter"
+    ],
+    "ans": 1,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 1249,
+    "cat": "reading",
+    "orig": 1614,
+    "q": "What information must be recorded in the engine logbook after an exceedance?",
+    "opts": [
+      "The technician's opinion on the severity of the event",
+      "The specific parameter exceeded, duration, and conditions",
+      "The engine's remaining service life",
+      "A list of all components likely to be damaged"
+    ],
+    "ans": 1,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 1250,
+    "cat": "reading",
+    "orig": 1615,
+    "q": "Why must exceedances be reported to the engine manufacturer?",
+    "opts": [
+      "For warranty claim purposes",
+      "For review and fleet trending",
+      "To receive replacement parts immediately",
+      "To update the engine's type certificate data"
+    ],
+    "ans": 1,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 1251,
+    "cat": "reading",
+    "orig": 1616,
+    "q": "What must be included in a maintenance record entry?",
+    "opts": [
+      "The engineer's personal opinion on the aircraft condition",
+      "Date, work description, documentation reference, part numbers, serial numbers, and certifying engineer signature and licence number",
+      "The aircraft's next scheduled maintenance date",
+      "The cost of the maintenance carried out"
+    ],
+    "ans": 1,
+    "diff": "hard",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 1252,
+    "cat": "reading",
+    "orig": 1617,
+    "q": "Why must the maintenance history accompany a life-limited component when transferred to another aircraft?",
+    "opts": [
+      "To allow the receiving operator to recertify the component",
+      "To maintain traceability of the component's operating life",
+      "To reduce the time required to install the component",
+      "To comply with the manufacturer's export requirements"
+    ],
+    "ans": 1,
+    "diff": "hard",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 1253,
+    "cat": "reading",
+    "orig": 1618,
+    "q": "What are the consequences of falsifying maintenance records?",
+    "opts": [
+      "A written warning from the maintenance organisation",
+      "Revocation of licences and possible criminal prosecution",
+      "Mandatory retraining of the engineer involved",
+      "A financial penalty only"
+    ],
+    "ans": 1,
+    "diff": "hard",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 1254,
+    "cat": "reading",
+    "orig": 1619,
+    "q": "How must maintenance records be kept?",
+    "opts": [
+      "Only in electronic form for easy access",
+      "Available and legible, accessible to regulatory authorities at any time",
+      "In a secure location accessible only to senior management",
+      "Retained in the aircraft at all times"
+    ],
+    "ans": 1,
+    "diff": "hard",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 1255,
+    "cat": "reading",
+    "orig": 1620,
+    "q": "What advantage do electronic maintenance record systems offer?",
+    "opts": [
+      "They replace the need for certifying engineers",
+      "They improve accessibility and auditability",
+      "They eliminate the need for regulatory oversight",
+      "They automatically generate maintenance plans"
+    ],
+    "ans": 1,
+    "diff": "hard",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 1256,
+    "cat": "reading",
+    "orig": 1621,
+    "q": "What are the three main types of hydraulic filters by location?",
+    "opts": [
+      "Main filter, standby filter, and emergency filter",
+      "Pressure filters, return filters, and case drain filters",
+      "In-line filters, reservoir filters, and actuator filters",
+      "High-pressure filters, medium-pressure filters, and low-pressure filters"
+    ],
+    "ans": 1,
+    "diff": "hard",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 1257,
+    "cat": "reading",
+    "orig": 1622,
+    "q": "How are hydraulic filter elements rated?",
+    "opts": [
+      "By their flow rate in gallons per minute",
+      "By the size of particles they capture (e.g., 3 micron or 10 micron)",
+      "By their operating pressure rating in psi",
+      "By their material composition"
+    ],
+    "ans": 1,
+    "diff": "hard",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 1258,
+    "cat": "reading",
+    "orig": 1623,
+    "q": "What indicates that a hydraulic filter element needs replacement?",
+    "opts": [
+      "A change in hydraulic fluid colour",
+      "A filter condition indicator (bypass or differential pressure indicator) showing clogging",
+      "A drop in hydraulic system pressure",
+      "An increase in hydraulic fluid temperature"
+    ],
+    "ans": 1,
+    "diff": "hard",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 1259,
+    "cat": "reading",
+    "orig": 1624,
+    "q": "What should be done if excessive metallic particles are found in a replaced filter element?",
+    "opts": [
+      "The filter element is replaced more frequently",
+      "A system investigation should be initiated to identify the source of the metal particles",
+      "The hydraulic fluid is drained and replaced",
+      "The metallic particles are noted and the system returned to service"
+    ],
+    "ans": 1,
+    "diff": "hard",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 1260,
+    "cat": "reading",
+    "orig": 1625,
+    "q": "What must be checked after replacing a hydraulic filter?",
+    "opts": [
+      "That the hydraulic fluid level in the reservoir is correct",
+      "That the system operates correctly and the filter area is leak-free",
+      "That all hydraulic actuators function correctly",
+      "That the filter bypass indicator has reset"
+    ],
+    "ans": 1,
+    "diff": "hard",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 1261,
+    "cat": "reading",
+    "orig": 1626,
+    "q": "What happens when a fire is detected in an engine nacelle?",
+    "opts": [
+      "The engine automatically shuts down",
+      "A warning light and aural alert are triggered in the cockpit",
+      "The extinguisher bottle discharges automatically",
+      "The hydraulic system is isolated immediately"
+    ],
+    "ans": 1,
+    "diff": "hard",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 1262,
+    "cat": "reading",
+    "orig": 1627,
+    "q": "What does pressing the engine fire push button do?",
+    "opts": [
+      "Discharges the fire extinguisher into the nacelle immediately",
+      "Isolates the engine from fuel, hydraulics, and electrical systems, and arms the fire extinguisher",
+      "Sends an emergency signal to ATC",
+      "Activates the APU to take over engine functions"
+    ],
+    "ans": 1,
+    "diff": "hard",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 1263,
+    "cat": "reading",
+    "orig": 1628,
+    "q": "Why do large aircraft have two extinguisher bottles per engine?",
+    "opts": [
+      "One bottle cools the engine while the other suppresses the fire",
+      "To provide a second shot if the first does not extinguish the fire",
+      "One bottle is for engine fires and one for nacelle structure fires",
+      "To comply with CAA regulations for twin-engine aircraft"
+    ],
+    "ans": 1,
+    "diff": "hard",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 1264,
+    "cat": "reading",
+    "orig": 1629,
+    "q": "How does cargo compartment fire suppression work?",
+    "opts": [
+      "Using the same high-concentration agent as engine nacelle suppression",
+      "Using a lower concentration agent delivered over time to deplete oxygen levels",
+      "Using water mist from a dedicated cargo wash system",
+      "Using halon gas released as a single burst"
+    ],
+    "ans": 1,
+    "diff": "hard",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 1265,
+    "cat": "reading",
+    "orig": 1630,
+    "q": "How is fire extinguisher bottle serviceability verified before every flight?",
+    "opts": [
+      "By weighing the bottle",
+      "By checking the pressure gauge on the bottle",
+      "By activating a test circuit",
+      "By visual inspection of the discharge indicator"
+    ],
+    "ans": 1,
+    "diff": "hard",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 1266,
+    "cat": "reading",
+    "orig": 1631,
+    "q": "What damage types can affect composite structures?",
+    "opts": [
+      "Rust, pitting, and intergranular corrosion",
+      "Surface scratches, dents, delamination, disbonds, and through-cracks",
+      "Fatigue cracks, stress corrosion, and galvanic corrosion",
+      "Wear, erosion, and surface oxidation"
+    ],
+    "ans": 1,
+    "diff": "hard",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 1267,
+    "cat": "reading",
+    "orig": 1632,
+    "q": "How is tap testing used on composite structures?",
+    "opts": [
+      "A metal pick is used to probe for cracks in the surface",
+      "The structure is tapped and a dull or hollow sound indicates delamination beneath",
+      "A calibrated instrument measures surface hardness to detect damage",
+      "The structure is struck with a hammer and the vibration frequency is measured"
+    ],
+    "ans": 1,
+    "diff": "hard",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 1268,
+    "cat": "reading",
+    "orig": 1633,
+    "q": "Why must composite structures be dried before repair?",
+    "opts": [
+      "Moisture causes the surface to become porous, preventing adhesive bonding",
+      "Moisture absorption can weaken the material and affect the quality of bonded repairs",
+      "Moisture can react with the repair resin and create toxic vapours",
+      "Moisture increases the weight of the repair patch beyond allowable limits"
+    ],
+    "ans": 1,
+    "diff": "hard",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 1269,
+    "cat": "reading",
+    "orig": 1634,
+    "q": "What is used to map the extent of delamination within a composite structure more accurately than tap testing?",
+    "opts": [
+      "X-ray inspection",
+      "Ultrasonic inspection",
+      "Eddy current testing",
+      "Dye penetrant inspection"
+    ],
+    "ans": 1,
+    "diff": "hard",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 1270,
+    "cat": "reading",
+    "orig": 1635,
+    "q": "What must composite repairs comply with?",
+    "opts": [
+      "Any repair method approved by the maintenance engineer",
+      "Approved repair schemes from the SRM or manufacturer-approved data",
+      "Military standards for composite repair",
+      "Industry standard guidelines published by the composite repair industry"
+    ],
+    "ans": 1,
+    "diff": "hard",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 1271,
+    "cat": "reading",
+    "orig": 1636,
+    "q": "What is the purpose of the fuel boost pump?",
+    "opts": [
+      "To increase fuel pressure for delivery to the passengers",
+      "To pressurise fuel for transfer and ensure positive pressure at the HP pump inlet to prevent cavitation",
+      "To regulate fuel flow to each individual combustion chamber",
+      "To provide emergency fuel supply if the main pump fails"
+    ],
+    "ans": 1,
+    "diff": "hard",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 1272,
+    "cat": "reading",
+    "orig": 1637,
+    "q": "What is the function of the fuel heater?",
+    "opts": [
+      "To heat the fuel to improve combustion efficiency",
+      "To prevent ice crystal formation in the fuel at high altitude",
+      "To reduce fuel viscosity at low temperatures",
+      "To warm the fuel before it enters the fuel metering unit"
+    ],
+    "ans": 1,
+    "diff": "hard",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 1273,
+    "cat": "reading",
+    "orig": 1638,
+    "q": "What does the Fuel Metering Unit (FMU) control?",
+    "opts": [
+      "The fuel quantity in the wing tanks",
+      "Fuel flow to the combustion chamber in response to power lever position and engine parameters",
+      "The pressure of the fuel delivered to each nozzle",
+      "The temperature of the fuel entering the combustion section"
+    ],
+    "ans": 1,
+    "diff": "hard",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 1274,
+    "cat": "reading",
+    "orig": 1639,
+    "q": "What is the function of the fuel nozzles?",
+    "opts": [
+      "To regulate the flow of fuel to the combustion chamber",
+      "To atomise the fuel to promote efficient combustion",
+      "To filter the fuel before combustion",
+      "To cool the combustion chamber walls with fuel"
+    ],
+    "ans": 1,
+    "diff": "hard",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 1275,
+    "cat": "reading",
+    "orig": 1640,
+    "q": "What maintenance is performed on fuel system components?",
+    "opts": [
+      "Only replacement at fixed intervals regardless of condition",
+      "Regular inspection, cleaning, and testing at specified intervals in the CMM",
+      "Visual inspection only during A-checks",
+      "Complete replacement at each C-check"
+    ],
+    "ans": 1,
+    "diff": "hard",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 1276,
+    "cat": "reading",
+    "orig": 1641,
+    "q": "What are the two main battery types used in commercial aviation?",
+    "opts": [
+      "Lead-acid and lithium-ion",
+      "Nickel-cadmium (NiCd) and valve-regulated lead-acid (VRLA)",
+      "Nickel-metal hydride and lithium polymer",
+      "Silver-zinc and nickel-cadmium"
+    ],
+    "ans": 1,
+    "diff": "hard",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 1277,
+    "cat": "reading",
+    "orig": 1642,
+    "q": "What is a battery capacity check?",
+    "opts": [
+      "A visual inspection of the battery case and terminals",
+      "A discharge test performed at specified intervals to ensure the battery can deliver its rated amp-hours",
+      "A measurement of the battery's open-circuit voltage",
+      "A check of the electrolyte specific gravity only"
+    ],
+    "ans": 1,
+    "diff": "hard",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 1278,
+    "cat": "reading",
+    "orig": 1643,
+    "q": "Why must battery charging be carried out in a well-ventilated area?",
+    "opts": [
+      "The charging process generates heat that must be dissipated",
+      "Gases are released during charging that could accumulate and become a fire or explosion hazard",
+      "Charging in confined spaces can cause electromagnetic interference with avionics",
+      "Regulations require ventilation to prevent damage to the charging equipment"
+    ],
+    "ans": 1,
+    "diff": "hard",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 1279,
+    "cat": "reading",
+    "orig": 1644,
+    "q": "What must be done with electrolyte spills?",
+    "opts": [
+      "Cleaned with dry cloths immediately",
+      "Neutralised with the appropriate solution before cleaning",
+      "Left to evaporate naturally in a ventilated area",
+      "Reported to the regulatory authority"
+    ],
+    "ans": 1,
+    "diff": "hard",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 1280,
+    "cat": "reading",
+    "orig": 1645,
+    "q": "What indicates that a battery should be removed from service?",
+    "opts": [
+      "The battery case shows minor surface corrosion",
+      "The battery cannot meet its rated capacity requirement during a discharge test",
+      "The battery terminals require retorquing",
+      "The battery electrolyte requires topping up"
+    ],
+    "ans": 1,
+    "diff": "hard",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 1281,
+    "cat": "reading",
+    "orig": 1646,
+    "q": "Why are aircraft tyres inflated with nitrogen instead of compressed air?",
+    "opts": [
+      "Nitrogen provides better cushioning at high landing speeds",
+      "Nitrogen is dry, preventing moisture-related corrosion, and does not support combustion",
+      "Nitrogen provides a more stable pressure across temperature changes than air",
+      "Nitrogen reduces the weight of the inflated tyre"
+    ],
+    "ans": 1,
+    "diff": "hard",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 1282,
+    "cat": "reading",
+    "orig": 1647,
+    "q": "Why must tyre pressure be checked with the aircraft on jacks or the tyre off the aircraft?",
+    "opts": [
+      "The aircraft's weight makes it unsafe to measure pressure when on the ground",
+      "The loaded condition changes the measured pressure",
+      "The tyre pressure gauge cannot be connected when the aircraft is on the ground",
+      "Nitrogen pressure is affected by the aircraft's weight on the tyre"
+    ],
+    "ans": 1,
+    "diff": "hard",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 1283,
+    "cat": "reading",
+    "orig": 1648,
+    "q": "What is the purpose of heat-sensitive fusible plugs in aircraft wheels?",
+    "opts": [
+      "To indicate to the pilot that the tyres are overheating",
+      "To release if brakes overheat, preventing tyre blowout by releasing pressure",
+      "To seal the wheel against nitrogen leakage",
+      "To prevent the tyre from deflating if the bead is damaged"
+    ],
+    "ans": 1,
+    "diff": "hard",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 1284,
+    "cat": "reading",
+    "orig": 1649,
+    "q": "How is tyre service life measured?",
+    "opts": [
+      "In flight hours and calendar months only",
+      "In landings (cycles) and calendar time",
+      "In miles or kilometres of ground rolling",
+      "In number of brake applications"
+    ],
+    "ans": 1,
+    "diff": "hard",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 1285,
+    "cat": "reading",
+    "orig": 1650,
+    "q": "Which of the following is a type of tyre damage assessed against allowable limits?",
+    "opts": [
+      "Nitrogen oxidation within the tyre",
+      "Cuts, abrasions, flat spots from locked-wheel skids, and sidewall damage",
+      "Internal delamination of the tyre body",
+      "Chemical contamination of the bead wire"
+    ],
+    "ans": 1,
+    "diff": "hard",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 1286,
+    "cat": "reading",
+    "orig": 1651,
+    "q": "Where is the APU typically located on a commercial aircraft?",
+    "opts": [
+      "In the nose cone",
+      "In the tail cone",
+      "In the main gear fairing",
+      "In the centre wing section"
+    ],
+    "ans": 1,
+    "diff": "hard",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 1287,
+    "cat": "reading",
+    "orig": 1652,
+    "q": "What does the APU provide during ground operations?",
+    "opts": [
+      "Hydraulic pressure for towing only",
+      "Electrical power and bleed air for engine starting and air conditioning",
+      "Oxygen for crew and passengers",
+      "Fuel transfer to the wing tanks"
+    ],
+    "ans": 1,
+    "diff": "hard",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 1288,
+    "cat": "reading",
+    "orig": 1653,
+    "q": "What conditions must be confirmed before starting the APU?",
+    "opts": [
+      "Main engines must be shut down and cooled",
+      "Both the fire detection and suppression systems must be confirmed serviceable",
+      "The aircraft must be connected to ground power",
+      "The APU oil level must be checked immediately before start"
+    ],
+    "ans": 1,
+    "diff": "hard",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 1289,
+    "cat": "reading",
+    "orig": 1654,
+    "q": "What is borescope inspection of the APU turbine performed to detect?",
+    "opts": [
+      "Oil leaks in the APU gearbox",
+      "Blade erosion, cracks, and other turbine section defects",
+      "Contamination in the APU air intake",
+      "Exhaust nozzle blockage"
+    ],
+    "ans": 1,
+    "diff": "hard",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 1290,
+    "cat": "reading",
+    "orig": 1655,
+    "q": "How are APU hours and cycles tracked?",
+    "opts": [
+      "Combined with the main engine hours and cycles",
+      "Separately from the main engines, with their own overhaul and life-limited part requirements",
+      "By the aircraft's main maintenance computer system",
+      "Only by calendar time intervals"
+    ],
+    "ans": 1,
+    "diff": "hard",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 1291,
+    "cat": "reading",
+    "orig": 1656,
+    "q": "What must be done before aircraft towing begins?",
+    "opts": [
+      "The pilot must be informed and seated in the cockpit",
+      "Chocks removed, gear pins removed, all doors secured, and communication plan established",
+      "The APU must be running to provide hydraulic power for steering",
+      "Ground power must be connected to the aircraft"
+    ],
+    "ans": 1,
+    "diff": "hard",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 1292,
+    "cat": "reading",
+    "orig": 1657,
+    "q": "What is the risk if the nose gear approaches its maximum steering angle during towing?",
+    "opts": [
+      "The towbar will disengage from the nose gear",
+      "Structural damage to the nose gear or the aircraft",
+      "The tow truck will lose steering control",
+      "The aircraft's wheel brakes will automatically apply"
+    ],
+    "ans": 1,
+    "diff": "hard",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 1293,
+    "cat": "reading",
+    "orig": 1658,
+    "q": "What must be done after pushback is completed?",
+    "opts": [
+      "The chocks must be inserted before the towbar is disconnected",
+      "The nose gear steering pin must be removed and nose gear steering system reconnected",
+      "The aircraft must be connected to external electrical power",
+      "The pilot must confirm the aircraft is ready for departure"
+    ],
+    "ans": 1,
+    "diff": "hard",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 1294,
+    "cat": "reading",
+    "orig": 1659,
+    "q": "What is the role of the wing walker during towing?",
+    "opts": [
+      "To control the speed of the tow tractor",
+      "To confirm clearance on each side of the aircraft",
+      "To operate the aircraft's wing flaps",
+      "To maintain communication with the control tower"
+    ],
+    "ans": 1,
+    "diff": "hard",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 1295,
+    "cat": "reading",
+    "orig": 1660,
+    "q": "Why must the correct towbar type be used for each aircraft and nose gear combination?",
+    "opts": [
+      "Different towbars have different maximum towing speeds",
+      "Using the wrong towbar can damage the nose gear attachment points or exceed structural limits",
+      "Only the correct towbar will connect to the nose gear",
+      "Incorrect towbars increase the risk of static electricity buildup"
+    ],
+    "ans": 1,
+    "diff": "hard",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 1296,
+    "cat": "reading",
+    "orig": 1661,
+    "q": "What provides the initial rotational force for starting most large turbofan engines?",
+    "opts": [
+      "An electric starter motor",
+      "An air turbine starter (ATS) driven by bleed air",
+      "A hydraulic starter using engine oil pressure",
+      "A pneumatic motor connected to the ground power unit"
+    ],
+    "ans": 1,
+    "diff": "hard",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 1297,
+    "cat": "reading",
+    "orig": 1662,
+    "q": "How does the Air Turbine Starter disengage after engine start?",
+    "opts": [
+      "The flight crew manually disengages it from the cockpit",
+      "It disengages automatically through a sprag clutch when the engine reaches self-sustaining speed",
+      "It is disengaged by closing the bleed air supply valve",
+      "It disengages when the engine reaches idle speed"
+    ],
+    "ans": 1,
+    "diff": "hard",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 1298,
+    "cat": "reading",
+    "orig": 1663,
+    "q": "What is the starter duty cycle?",
+    "opts": [
+      "The total number of starts allowed before overhaul",
+      "The allowed number of consecutive start attempts before a cooling period is required",
+      "The time from start initiation to idle speed",
+      "The maximum bleed air pressure allowed for starting"
+    ],
+    "ans": 1,
+    "diff": "hard",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 1299,
+    "cat": "reading",
+    "orig": 1664,
+    "q": "What should be done if an engine fails to light off within the specified time?",
+    "opts": [
+      "Continue cranking until the engine fires",
+      "Abort the start and motor the engine without ignition to purge unburned fuel",
+      "Increase the bleed air pressure and try again immediately",
+      "Switch to the electric starter as a backup"
+    ],
+    "ans": 1,
+    "diff": "hard",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 1300,
+    "cat": "reading",
+    "orig": 1665,
+    "q": "What happens if a start is attempted without clearing unburned fuel from the previous failed start?",
+    "opts": [
+      "The engine fails to rotate",
+      "A hot start may occur due to ignition of pooled unburned fuel",
+      "The fuel system automatically purges itself",
+      "The fuel nozzles become blocked"
+    ],
+    "ans": 1,
+    "diff": "hard",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 1301,
+    "cat": "reading",
+    "orig": 1666,
+    "q": "What is inspected on the aircraft skin during maintenance checks?",
+    "opts": [
+      "Weight and material composition",
+      "Dents, scratches, cracks, corrosion, missing fasteners, and evidence of fluid leaks",
+      "Paint colour consistency and aerodynamic finish",
+      "Electromagnetic shielding properties"
+    ],
+    "ans": 1,
+    "diff": "hard",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 1302,
+    "cat": "reading",
+    "orig": 1667,
+    "q": "When can a dent in a non-critical area be left in place?",
+    "opts": [
+      "When it is confirmed that no aerodynamic effect is caused",
+      "When it does not exceed the allowable depth and does not include cracks",
+      "When the pilot has confirmed it is acceptable",
+      "When it is more than 24 hours old and has not grown"
+    ],
+    "ans": 1,
+    "diff": "hard",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 1303,
+    "cat": "reading",
+    "orig": 1668,
+    "q": "What type of dent must always be repaired?",
+    "opts": [
+      "Any dent visible from more than 5 meters",
+      "Dents with cracks or sharp radii",
+      "Any dent deeper than 1mm",
+      "Dents in high-visibility areas"
+    ],
+    "ans": 1,
+    "diff": "hard",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 1304,
+    "cat": "reading",
+    "orig": 1669,
+    "q": "What is the reference document for dent and scratch allowable damage limits?",
+    "opts": [
+      "The Aircraft Maintenance Manual (AMM)",
+      "The Structural Repair Manual (SRM)",
+      "The Component Maintenance Manual (CMM)",
+      "The Illustrated Parts Catalogue (IPC)"
+    ],
+    "ans": 1,
+    "diff": "hard",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 1305,
+    "cat": "reading",
+    "orig": 1670,
+    "q": "What must be done when fluid weeping is found through the skin or around panels?",
+    "opts": [
+      "Clean the area and monitor for recurrence",
+      "Investigate and identify the source of the fluid",
+      "Seal with sealant as a temporary repair",
+      "Record in the technical log and defer to the next scheduled check"
+    ],
+    "ans": 1,
+    "diff": "hard",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 1306,
+    "cat": "reading",
+    "orig": 1671,
+    "q": "What is required before entering an aircraft fuel tank?",
+    "opts": [
+      "Engine shutdown and fuel drain only",
+      "A confined space risk assessment, permit to enter, atmospheric monitoring, and safety attendant",
+      "Fire extinguisher on standby and ventilation only",
+      "Supervisor approval and personal protective equipment only"
+    ],
+    "ans": 1,
+    "diff": "hard",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 1307,
+    "cat": "reading",
+    "orig": 1672,
+    "q": "What type of tools must be used inside fuel tanks?",
+    "opts": [
+      "Standard calibrated tools",
+      "Approved non-sparking type tools",
+      "Electrically insulated tools",
+      "Lightweight composite-handled tools"
+    ],
+    "ans": 1,
+    "diff": "hard",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 1308,
+    "cat": "reading",
+    "orig": 1673,
+    "q": "What electrical equipment is permitted inside fuel tanks?",
+    "opts": [
+      "Standard battery-operated tools",
+      "Intrinsically safe (IS) or explosion-proof equipment",
+      "110V power tools with residual current device protection",
+      "Equipment rated for use in wet environments"
+    ],
+    "ans": 1,
+    "diff": "hard",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 1309,
+    "cat": "reading",
+    "orig": 1674,
+    "q": "Why must workers not wear coveralls with metal zips or buttons inside fuel tanks?",
+    "opts": [
+      "Metal zips cause contamination of the fuel",
+      "Metal can cause sparks that could ignite fuel vapour",
+      "Metal zips are prohibited by fire regulations in all confined spaces",
+      "Metal objects increase the risk of electrostatic discharge from the worker's body"
+    ],
+    "ans": 1,
+    "diff": "hard",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 1310,
+    "cat": "reading",
+    "orig": 1675,
+    "q": "Why should no person work alone inside a fuel tank?",
+    "opts": [
+      "Two people are required to complete the work efficiently",
+      "Due to the confined space and vapour hazard, a person incapacitated inside needs to be rescued by a safety attendant",
+      "The permit requires two signatures from inside workers",
+      "Two workers are needed to operate the required monitoring equipment"
+    ],
+    "ans": 1,
+    "diff": "hard",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 1311,
+    "cat": "reading",
+    "orig": 1676,
+    "q": "What is the purpose of a maintenance task card?",
+    "opts": [
+      "To record the aircraft's flight history",
+      "To define each individual maintenance task and control its execution",
+      "To document the cost of maintenance operations",
+      "To record the qualifications of the maintenance team"
+    ],
+    "ans": 1,
+    "diff": "hard",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 1312,
+    "cat": "reading",
+    "orig": 1677,
+    "q": "What must a technician do if a step on a task card cannot be completed as written?",
+    "opts": [
+      "Improvise an alternative method to complete the task",
+      "Raise the issue with the maintenance supervisor before proceeding",
+      "Skip the step and note it in the comments section",
+      "Complete the adjacent steps and return to the problem step later"
+    ],
+    "ans": 1,
+    "diff": "hard",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 1313,
+    "cat": "reading",
+    "orig": 1678,
+    "q": "After completing a task card, how is it used as a maintenance record?",
+    "opts": [
+      "It is returned to the planning department for revision",
+      "It is filed as part of the maintenance record",
+      "It is discarded after the maintenance check is closed out",
+      "It is forwarded to the regulatory authority"
+    ],
+    "ans": 1,
+    "diff": "hard",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 1314,
+    "cat": "reading",
+    "orig": 1679,
+    "q": "What happens when a certifying engineer signs a task card?",
+    "opts": [
+      "They confirm that the aircraft is ready for flight",
+      "They certify that the work was done in accordance with the referenced documentation",
+      "They authorise the next maintenance task to begin",
+      "They approve the materials used for the task"
+    ],
+    "ans": 1,
+    "diff": "hard",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 1315,
+    "cat": "reading",
+    "orig": 1680,
+    "q": "If a technician cannot complete a step as written, what MUST NOT happen?",
+    "opts": [
+      "The supervisor must be called to assist",
+      "The technician must not improvise and proceed without approval",
+      "The step must be crossed out and rewritten",
+      "The task card must be returned to the planning team"
+    ],
+    "ans": 1,
+    "diff": "hard",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 1316,
+    "cat": "reading",
+    "orig": 1681,
+    "q": "What does Electrical Load Analysis (ELA) verify?",
+    "opts": [
+      "That all circuit breakers are rated correctly",
+      "That total electrical demand does not exceed available supply under all operating conditions",
+      "That all wiring is correctly identified and labelled",
+      "That the battery system can sustain all loads during engine failure"
+    ],
+    "ans": 1,
+    "diff": "hard",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 1317,
+    "cat": "reading",
+    "orig": 1682,
+    "q": "What must be done when a modification adds new electrical consumers?",
+    "opts": [
+      "Additional generators must be installed",
+      "The ELA must be updated to verify that system capacity is not exceeded",
+      "The modification must be tested in flight only",
+      "The circuit breaker panel must be replaced"
+    ],
+    "ans": 1,
+    "diff": "hard",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 1318,
+    "cat": "reading",
+    "orig": 1683,
+    "q": "What does excessive voltage drop in a circuit indicate?",
+    "opts": [
+      "The circuit breaker is too small for the load",
+      "Overloaded or faulty wiring",
+      "The generator is producing too much power",
+      "The bus bar has been incorrectly installed"
+    ],
+    "ans": 1,
+    "diff": "hard",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 1319,
+    "cat": "reading",
+    "orig": 1684,
+    "q": "What must be used for aircraft wiring repairs?",
+    "opts": [
+      "Any electrical tape that can withstand the voltage",
+      "Approved splicing techniques and materials specified in the WDM and AMM",
+      "Standard automotive wiring connectors",
+      "Heat-shrink tubing and standard solder"
+    ],
+    "ans": 1,
+    "diff": "hard",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 1320,
+    "cat": "reading",
+    "orig": 1685,
+    "q": "What does a wiring inspection look for?",
+    "opts": [
+      "Correct wire colour coding only",
+      "Chafing, broken insulation, loose connections, and evidence of overheating",
+      "Correct routing as shown in the wiring diagram",
+      "Secure attachment of wire bundles to the structure"
+    ],
+    "ans": 1,
+    "diff": "hard",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 1321,
+    "cat": "reading",
+    "orig": 1686,
+    "q": "When is a test flight typically required after maintenance?",
+    "opts": [
+      "After every maintenance check, regardless of scope",
+      "As specified in the AMM or by the certifying engineer based on the nature of the work",
+      "Only when the regulatory authority requires it",
+      "After any component is replaced on the aircraft"
+    ],
+    "ans": 1,
+    "diff": "hard",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 1322,
+    "cat": "reading",
+    "orig": 1687,
+    "q": "Which of the following maintenance activities would most likely require a test flight?",
+    "opts": [
+      "Routine tyre pressure check",
+      "Engine change or flight control rigging adjustment",
+      "Aircraft washing and corrosion treatment",
+      "Replacement of a landing light bulb"
+    ],
+    "ans": 1,
+    "diff": "hard",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 1323,
+    "cat": "reading",
+    "orig": 1688,
+    "q": "What must be completed before a test flight?",
+    "opts": [
+      "All passengers must be disembarked and cargo offloaded",
+      "A comprehensive pre-flight inspection and closure of all maintenance documentation",
+      "A fuel system pressure check and engine power assurance run",
+      "Completion of an air traffic control flight plan only"
+    ],
+    "ans": 1,
+    "diff": "hard",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 1324,
+    "cat": "reading",
+    "orig": 1689,
+    "q": "What must happen to discrepancies found during a test flight?",
+    "opts": [
+      "They are noted and presented to the customer at delivery",
+      "They must be recorded and rectified before the aircraft is released to normal service",
+      "They are deferred under the MEL for the first revenue service",
+      "Minor discrepancies may be cleared by the test pilot in the aircraft log"
+    ],
+    "ans": 1,
+    "diff": "hard",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 1325,
+    "cat": "reading",
+    "orig": 1690,
+    "q": "Who may perform a maintenance test flight?",
+    "opts": [
+      "Any qualified commercial pilot",
+      "Qualified test pilots or pilots with the appropriate authorisation for such flights",
+      "The certifying engineer if they hold a pilot's licence",
+      "Any pilot who has operated the aircraft type before"
+    ],
+    "ans": 1,
+    "diff": "hard",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 1326,
+    "cat": "reading",
+    "orig": 1691,
+    "q": "What must an aircraft skin repair restore?",
+    "opts": [
+      "Only the structural strength of the original skin",
+      "Original strength, stiffness, and aerodynamic profile",
+      "The original skin material and colour",
+      "The original fastener pattern"
+    ],
+    "ans": 1,
+    "diff": "hard",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 1327,
+    "cat": "reading",
+    "orig": 1692,
+    "q": "What is a \"flush doubler\" repair?",
+    "opts": [
+      "A repair using two layers of skin panels riveted together",
+      "A repair patch installed flush with the surface using countersunk fasteners to maintain the aerodynamic profile",
+      "A repair that replaces the damaged panel completely",
+      "A repair that adds a patch on both sides of the damage"
+    ],
+    "ans": 1,
+    "diff": "hard",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 1328,
+    "cat": "reading",
+    "orig": 1693,
+    "q": "What determines the correct repair patch specification?",
+    "opts": [
+      "The technician's experience with similar repairs",
+      "The SRM, which specifies the required material, thickness, and temper",
+      "The nearest available compatible material in stores",
+      "The aircraft manufacturer's helpline"
+    ],
+    "ans": 1,
+    "diff": "hard",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 1329,
+    "cat": "reading",
+    "orig": 1694,
+    "q": "What is checked after riveted fastener installation in a skin repair?",
+    "opts": [
+      "That the rivet pattern matches the original design",
+      "Correct driven head dimensions and edge distance",
+      "That the surface is flat and smooth",
+      "That the repair matches the surrounding paint colour"
+    ],
+    "ans": 1,
+    "diff": "hard",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 1330,
+    "cat": "reading",
+    "orig": 1695,
+    "q": "Where are aircraft skin repairs documented?",
+    "opts": [
+      "In the maintenance manual",
+      "In the structural repair log",
+      "In the technical log",
+      "In the task card only"
+    ],
+    "ans": 1,
+    "diff": "hard",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 1331,
+    "cat": "reading",
+    "orig": 1696,
+    "q": "What must be ensured when loading cargo into an aircraft?",
+    "opts": [
+      "That all cargo is the same weight to ensure balance",
+      "That the aircraft remains within weight and balance limits and cargo cannot shift during flight",
+      "That cargo is placed as far aft as possible to improve CG",
+      "That all cargo is loaded at the same time to save time"
+    ],
+    "ans": 1,
+    "diff": "hard",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 1332,
+    "cat": "reading",
+    "orig": 1697,
+    "q": "What is a \"Unit Load Device\" (ULD)?",
+    "opts": [
+      "A device that measures the weight of cargo before loading",
+      "A container or pallet that is locked into the aircraft floor with latches",
+      "A restraint system for oversized cargo",
+      "A loading tool used to move heavy cargo"
+    ],
+    "ans": 1,
+    "diff": "hard",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 1333,
+    "cat": "reading",
+    "orig": 1698,
+    "q": "What regulations govern the loading of dangerous goods?",
+    "opts": [
+      "ICAO Annex 6 — Operation of Aircraft",
+      "IATA Dangerous Goods Regulations",
+      "CAA Air Navigation Order",
+      "FAA Federal Aviation Regulations Part 121"
+    ],
+    "ans": 1,
+    "diff": "hard",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 1334,
+    "cat": "reading",
+    "orig": 1699,
+    "q": "What structural damage can result from overloaded cargo?",
+    "opts": [
+      "Damage to the main wing structure",
+      "Structural damage to the cargo floor",
+      "Damage to the fuselage frames",
+      "Damage to the overhead luggage compartments"
+    ],
+    "ans": 1,
+    "diff": "hard",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 1335,
+    "cat": "reading",
+    "orig": 1700,
+    "q": "Why can undeclared dangerous goods in cargo pose a serious safety risk?",
+    "opts": [
+      "They increase the aircraft's weight beyond allowable limits",
+      "They may not be handled correctly, packaged appropriately, or placed in the correct location, leading to fire, explosion, or toxic exposure",
+      "They prevent correct weight and balance calculations",
+      "They may contaminate other cargo"
+    ],
+    "ans": 1,
+    "diff": "hard",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 1336,
+    "cat": "reading",
+    "orig": 1701,
+    "q": "What is the primary source of hydraulic pressure on most aircraft?",
+    "opts": [
+      "Electric motor-driven pumps",
+      "Engine-driven pumps (EDPs) driven from the engine accessory gearbox",
+      "Power transfer units (PTUs)",
+      "Ram air turbine pumps"
+    ],
+    "ans": 1,
+    "diff": "hard",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 1337,
+    "cat": "reading",
+    "orig": 1702,
+    "q": "What does a Power Transfer Unit (PTU) do?",
+    "opts": [
+      "Transfers hydraulic fluid from one system to another",
+      "Transfers hydraulic power from one system to another using a motor-pump combination, without transferring fluid",
+      "Transfers electrical power to operate hydraulic pumps",
+      "Transfers hydraulic pressure to the flight controls only"
+    ],
+    "ans": 1,
+    "diff": "hard",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 1338,
+    "cat": "reading",
+    "orig": 1703,
+    "q": "When is an electric motor-driven pump (EMDP) typically used?",
+    "opts": [
+      "As the primary pump at all times",
+      "As a backup or during ground operations when engines are not running",
+      "Only in emergency conditions when the EDP fails",
+      "Only during high-demand operations such as landing gear retraction"
+    ],
+    "ans": 1,
+    "diff": "hard",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 1339,
+    "cat": "reading",
+    "orig": 1704,
+    "q": "What does engine-driven pump maintenance include?",
+    "opts": [
+      "Replacement of the pump drive shaft at each A-check",
+      "Checking for external leaks, monitoring case drain pressure and temperature, and inspecting the drive shaft seal",
+      "Replacement of the pump filter element only",
+      "Pressure testing the pump against a calibrated flow bench"
+    ],
+    "ans": 1,
+    "diff": "hard",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 1340,
+    "cat": "reading",
+    "orig": 1705,
+    "q": "How is pump serviceability verified during maintenance?",
+    "opts": [
+      "By checking the hydraulic fluid colour",
+      "By testing pump output pressure and flow against maintenance manual limits",
+      "By monitoring the cockpit hydraulic pressure gauge",
+      "By running the engine to maximum power and checking for pressure drops"
+    ],
+    "ans": 1,
+    "diff": "hard",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 1341,
+    "cat": "reading",
+    "orig": 1706,
+    "q": "How are gaseous oxygen cylinders tested for integrity?",
+    "opts": [
+      "By X-ray inspection of the cylinder wall",
+      "By visual inspection and hydrostatic testing at specified intervals",
+      "By measuring the wall thickness with ultrasound",
+      "By conducting a pressure decay test using nitrogen"
+    ],
+    "ans": 1,
+    "diff": "hard",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 1342,
+    "cat": "reading",
+    "orig": 1707,
+    "q": "Why must tools and personnel hands be clean when working on oxygen systems?",
+    "opts": [
+      "To prevent contamination that could reduce oxygen purity",
+      "Oil and grease can ignite violently in high-pressure oxygen",
+      "Grease can cause corrosion in oxygen system plumbing",
+      "Oil contamination clogs the oxygen regulators"
+    ],
+    "ans": 1,
+    "diff": "hard",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 1343,
+    "cat": "reading",
+    "orig": 1708,
+    "q": "What is the difference between continuous flow and pressure demand oxygen masks?",
+    "opts": [
+      "Continuous flow masks are for crew use, pressure demand for passengers",
+      "Continuous flow masks deliver a constant flow, while pressure demand masks are for crew at high altitude delivering oxygen on demand",
+      "Continuous flow masks operate on positive pressure, demand masks on negative pressure",
+      "There is no functional difference, only a physical difference"
+    ],
+    "ans": 1,
+    "diff": "hard",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 1344,
+    "cat": "reading",
+    "orig": 1709,
+    "q": "When must oxygen system connections be leak-tested?",
+    "opts": [
+      "Only when a leak is suspected",
+      "After any connection is opened",
+      "At each annual inspection",
+      "When the oxygen cylinder is replaced only"
+    ],
+    "ans": 1,
+    "diff": "hard",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 1345,
+    "cat": "reading",
+    "orig": 1710,
+    "q": "What is the minimum pressure requirement for oxygen cylinders?",
+    "opts": [
+      "They may be used at any pressure above atmospheric",
+      "They must be above the minimum specified pressure; below this they are recharged or replaced",
+      "They must be at maximum fill pressure before each flight",
+      "Cylinder pressure is not a maintenance concern"
+    ],
+    "ans": 1,
+    "diff": "hard",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 1346,
+    "cat": "reading",
+    "orig": 1711,
+    "q": "What is the basis for developing an aircraft maintenance programme (AMP)?",
+    "opts": [
+      "Manufacturer's recommendations, ADs, SBs, and operational experience",
+      "The operator's commercial preferences and budget constraints",
+      "Regulatory authority requirements only",
+      "Industry average maintenance intervals"
+    ],
+    "ans": 0,
+    "diff": "hard",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 1347,
+    "cat": "reading",
+    "orig": 1712,
+    "q": "How are maintenance intervals typically expressed in an AMP?",
+    "opts": [
+      "Only in calendar time",
+      "In flight hours, cycles, and calendar time",
+      "Only in flight hours",
+      "In aircraft miles flown"
+    ],
+    "ans": 1,
+    "diff": "hard",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 1348,
+    "cat": "reading",
+    "orig": 1713,
+    "q": "What is \"escalation\" in the context of maintenance intervals?",
+    "opts": [
+      "Increasing the complexity of maintenance tasks",
+      "Extending an interval beyond the standard value, based on operating experience",
+      "Upgrading the maintenance standard to a higher level",
+      "Moving a maintenance task to a heavier check"
+    ],
+    "ans": 1,
+    "diff": "hard",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 1349,
+    "cat": "reading",
+    "orig": 1714,
+    "q": "What could happen if an operator fails to comply with the AMP?",
+    "opts": [
+      "The operator receives a written warning only",
+      "The aircraft may lose its airworthiness status",
+      "The operator's insurance becomes invalid",
+      "The manufacturer withdraws technical support"
+    ],
+    "ans": 1,
+    "diff": "hard",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 1350,
+    "cat": "reading",
+    "orig": 1715,
+    "q": "Who audits AMP compliance?",
+    "opts": [
+      "The manufacturer's service representative only",
+      "The quality assurance function and the regulatory authority",
+      "The airline's finance department",
+      "The flight crew before each flight"
+    ],
+    "ans": 1,
+    "diff": "hard",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 1351,
+    "cat": "reading",
+    "orig": 1716,
+    "q": "Where do bacteria and fungi survive in an aircraft fuel tank?",
+    "opts": [
+      "Throughout the bulk fuel mass",
+      "At the fuel-water interface at the bottom of the tank",
+      "On the upper walls of the tank near the fuel vents",
+      "In the fuel transfer lines only"
+    ],
+    "ans": 1,
+    "diff": "hard",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 1352,
+    "cat": "reading",
+    "orig": 1717,
+    "q": "What is Microbial Induced Corrosion (MIC)?",
+    "opts": [
+      "Corrosion caused by dissimilar metal contact in the tank",
+      "Corrosion caused by acids produced by bacteria and fungi as metabolic byproducts",
+      "Corrosion caused by water contamination in the fuel",
+      "Corrosion caused by incorrect fuel type being loaded"
+    ],
+    "ans": 1,
+    "diff": "hard",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 1353,
+    "cat": "reading",
+    "orig": 1718,
+    "q": "How is MIC treated in fuel tanks?",
+    "opts": [
+      "By installing a nitrogen inert system",
+      "By draining, cleaning, applying biocide, and inspecting for structural damage",
+      "By adding anti-freeze to the fuel",
+      "By sealing the fuel tank completely to prevent further moisture ingress"
+    ],
+    "ans": 1,
+    "diff": "hard",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 1354,
+    "cat": "reading",
+    "orig": 1719,
+    "q": "When pitting corrosion is found in a fuel tank, what is the next step?",
+    "opts": [
+      "Seal the pitted area with fuel tank sealant",
+      "Measure the pitting depth and assess against allowable limits in the SRM",
+      "Replace the panel without further assessment",
+      "Apply anti-corrosion primer directly over the pitting"
+    ],
+    "ans": 1,
+    "diff": "hard",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 1355,
+    "cat": "reading",
+    "orig": 1720,
+    "q": "How do corrosion inhibitors added to fuel help?",
+    "opts": [
+      "They prevent water from entering the tank",
+      "They reduce the rate of corrosion on the tank surfaces",
+      "They kill bacteria and fungi in the fuel",
+      "They prevent sediment from settling at the bottom of the tank"
+    ],
+    "ans": 1,
+    "diff": "hard",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 1356,
+    "cat": "reading",
+    "orig": 1721,
+    "q": "How are pilot inputs transmitted in a mechanical flight control system?",
+    "opts": [
+      "Through hydraulic actuators only",
+      "Through cables, pulleys, and rods to move the control surfaces",
+      "Through electrical wiring to flight control computers",
+      "Through a combination of hydraulic and pneumatic actuators"
+    ],
+    "ans": 1,
+    "diff": "hard",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 1357,
+    "cat": "reading",
+    "orig": 1722,
+    "q": "What is envelope protection in a fly-by-wire system?",
+    "opts": [
+      "A physical barrier preventing flight crew from over-controlling",
+      "A function that prevents the pilot from commanding movements that exceed structural or aerodynamic limits",
+      "An emergency system that limits control surface travel in turbulence",
+      "A software protection that records all control inputs"
+    ],
+    "ans": 1,
+    "diff": "hard",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 1358,
+    "cat": "reading",
+    "orig": 1723,
+    "q": "What maintenance is performed on fly-by-wire systems?",
+    "opts": [
+      "Regular cable tension checks and pulley lubrication",
+      "Functional testing of sensors, computers, and actuators, and software version verification",
+      "Rigging adjustments to maintain correct neutral positions",
+      "Inspection of control surface hinge bushings"
+    ],
+    "ans": 1,
+    "diff": "hard",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 1359,
+    "cat": "reading",
+    "orig": 1724,
+    "q": "What must be performed after any work on a flight control system?",
+    "opts": [
+      "A pressure test of the hydraulic actuators",
+      "A full range of movement check to verify correct operation before return to service",
+      "A functional test of the autopilot system",
+      "An aerodynamic assessment of the control surface profile"
+    ],
+    "ans": 1,
+    "diff": "hard",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 1360,
+    "cat": "reading",
+    "orig": 1725,
+    "q": "What does a rigging check of mechanical flight controls verify?",
+    "opts": [
+      "That the hydraulic actuators are correctly installed",
+      "That correct control surface positions and movement ranges are maintained",
+      "That the control surface materials meet specification",
+      "That the fly-by-wire computers are correctly interfaced with the mechanical backup"
+    ],
+    "ans": 1,
+    "diff": "hard",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 1361,
+    "cat": "reading",
+    "orig": 1726,
+    "q": "What is the primary source of pneumatic pressure on most large jet aircraft?",
+    "opts": [
+      "Dedicated compressors driven by the APU",
+      "Bleed air from the engine compressor stages",
+      "High-pressure hydraulic air reservoirs",
+      "Ground air supply units"
+    ],
+    "ans": 1,
+    "diff": "hard",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 1362,
+    "cat": "reading",
+    "orig": 1727,
+    "q": "Why are precoolers used in the bleed air system?",
+    "opts": [
+      "To increase the pressure of bleed air before it enters the cabin",
+      "To reduce the temperature of bleed air before it enters the pneumatic manifold",
+      "To filter contamination from the bleed air supply",
+      "To separate moisture from the bleed air"
+    ],
+    "ans": 1,
+    "diff": "hard",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 1363,
+    "cat": "reading",
+    "orig": 1728,
+    "q": "What does the overpressure protection system do in the pneumatic system?",
+    "opts": [
+      "It increases pressure to maintain supply during high demand",
+      "It closes supply valves if bleed air pressure exceeds limits to protect the distribution system",
+      "It redirects excess pressure to the cabin pressurization system",
+      "It activates the APU to provide backup bleed air"
+    ],
+    "ans": 1,
+    "diff": "hard",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 1364,
+    "cat": "reading",
+    "orig": 1729,
+    "q": "What damage can hot air leaks in the bleed air system cause?",
+    "opts": [
+      "Contamination of the fuel system",
+      "Significant structural damage if undetected",
+      "Overpressurisation of the aircraft cabin",
+      "Loss of thrust on the affected engine"
+    ],
+    "ans": 1,
+    "diff": "hard",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 1365,
+    "cat": "reading",
+    "orig": 1730,
+    "q": "What does maintenance of the pneumatic system include?",
+    "opts": [
+      "Replacement of all bleed air valves at fixed intervals",
+      "Inspection of ducts for hot air leaks, testing of sensors and PRSOVs, and checking duct couplings",
+      "Calibration of the cockpit pressure gauges",
+      "Replacement of the engine bleed air manifold at each C-check"
+    ],
+    "ans": 1,
+    "diff": "hard",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 1366,
+    "cat": "reading",
+    "orig": 1731,
+    "q": "What are the four pillars of an SMS?",
+    "opts": [
+      "Quality, safety, training, and documentation",
+      "Safety policy, safety risk management, safety assurance, and safety promotion",
+      "Hazard identification, risk assessment, risk control, and safety monitoring",
+      "Procedures, documentation, auditing, and training"
+    ],
+    "ans": 1,
+    "diff": "hard",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 1367,
+    "cat": "reading",
+    "orig": 1732,
+    "q": "What is the role of safety assurance in SMS?",
+    "opts": [
+      "To identify new hazards in the organisation",
+      "To monitor and measure safety performance to ensure controls remain effective",
+      "To train personnel in safety procedures",
+      "To investigate accidents and incidents"
+    ],
+    "ans": 1,
+    "diff": "hard",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 1368,
+    "cat": "reading",
+    "orig": 1733,
+    "q": "What is essential for an effective SMS in a maintenance organisation?",
+    "opts": [
+      "A strict punitive culture for all errors",
+      "An open reporting culture where personnel report errors without fear of punishment",
+      "A separate safety team independent of the maintenance organisation",
+      "A computerised SMS software system"
+    ],
+    "ans": 1,
+    "diff": "hard",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 1369,
+    "cat": "reading",
+    "orig": 1734,
+    "q": "What is the role of hazard reports submitted by maintenance personnel?",
+    "opts": [
+      "They are reviewed and archived for regulatory compliance",
+      "They are a key input to the SMS hazard identification process",
+      "They are used only to discipline the personnel who reported the hazard",
+      "They are forwarded to the aircraft manufacturer for information"
+    ],
+    "ans": 1,
+    "diff": "hard",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 1370,
+    "cat": "reading",
+    "orig": 1735,
+    "q": "Why must safety be prioritised over production pressures?",
+    "opts": [
+      "Regulations require safety to always take priority",
+      "Production pressures are a known contributor to maintenance errors and safety compromises",
+      "Safety is always more cost-effective in the long run",
+      "Production schedules are the responsibility of the operations department, not maintenance"
+    ],
+    "ans": 1,
+    "diff": "hard",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 1371,
+    "cat": "reading",
+    "orig": 1736,
+    "q": "What is the main difference between Jet A and Jet A-1?",
+    "opts": [
+      "Jet A-1 is designed for military aircraft, Jet A for civilian",
+      "Jet A-1 has a lower freeze point than Jet A, making it preferred for long-range international operations",
+      "Jet A has higher energy density than Jet A-1",
+      "Jet A-1 contains biocide additives; Jet A does not"
+    ],
+    "ans": 1,
+    "diff": "hard",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 1372,
+    "cat": "reading",
+    "orig": 1737,
+    "q": "What is AVGAS used for?",
+    "opts": [
+      "Turboprop aircraft",
+      "Piston-engine aircraft",
+      "Business jet aircraft",
+      "Turbofan engines at low altitudes"
+    ],
+    "ans": 1,
+    "diff": "hard",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 1373,
+    "cat": "reading",
+    "orig": 1738,
+    "q": "Why is misfuelling extremely dangerous?",
+    "opts": [
+      "AVGAS is more expensive than jet fuel",
+      "Incorrect fuel types can cause engine damage or failure and may cause fire",
+      "Misfuelling causes the fuel quantity gauges to read incorrectly",
+      "Different fuel types have different tank compatibility"
+    ],
+    "ans": 1,
+    "diff": "hard",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 1374,
+    "cat": "reading",
+    "orig": 1739,
+    "q": "What must be checked before fuelling an aircraft?",
+    "opts": [
+      "That the fuel bowser is connected to earth",
+      "The fuel type, batch number, and quality documentation",
+      "That the aircraft engines are shut down",
+      "The fuel tank capacity remaining"
+    ],
+    "ans": 1,
+    "diff": "hard",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 1375,
+    "cat": "reading",
+    "orig": 1740,
+    "q": "Where must fuel uplifted be recorded?",
+    "opts": [
+      "In the fuel operator's daily log",
+      "In the aircraft technical log",
+      "In the loadsheet only",
+      "In the fuel bowser's calibration record"
+    ],
+    "ans": 1,
+    "diff": "hard",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  }
+]

@@ -1,0 +1,17 @@
+Uygulama planı
+
+- Bu uygulama standart havacılık ingilizcesi grammer sınavlarından esinlenilmiş olup, kullanıcılara gerçek ve hazırlayıcı bir sınav deneyimi sunuyor.
+
+Uygulama Planı:
+- girişte bir uçak eğitim seti ve havacılık alanı sektörünün işine maximum yarıaycak bilgileri kullanıcıdan form olarak alıyoruz.
+-Form bittikten sonra kullanıcıya uygulamamnın öne çıkan gerekli özelliklerini sunarak aylık planlar sunuyorum, soru sınav ve ders sayısı sınırlamaları gibi (Şimdilik üye ol kısmını üye ol butonuna basında atlayalım biz üyelik ve ödeme yöntemlerini sonra çözücez)
+-Daha sonra ufak bir seviye ölçme sınavı ile kullanıcıya kişiletriilmiş havacılık ingilizcesi grammer ders rotası oluşturuyoruz
+-dosyanın bulunduğu jklasörde daha önce oluşturduğumuz soruların listesi var 2000 tane soru bunları kademeli oalrak kolaydan zora bir seviye rolleri belirleyerek denem sınavında da bunları test edicez
+-ana sayfada da sınavlar, dersler gibi yerler bulunacak ve tabi ki kullanıcının profil sayfaası da olacak rütbesi, puanları vs. aynı dfuolingo gibi
+
+Arkaplan
+
+- uygulama flutterla yazılabilir uygun olursa ve altyapı ideme yöntemleri ve hesaplra giriş yapma gibi özelliklere açık olmalı
+- Bu bir mobil uygulama olacak
+- Şimdilik logo kısımlarına bir uçak sembolü iconu koyalım sonra logo ayarlıyacağım
+- Ve uygulamayı tarayıcıdan kolayca test edebileyim

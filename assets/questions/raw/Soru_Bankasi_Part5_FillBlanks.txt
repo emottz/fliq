@@ -1,0 +1,1471 @@
+================================================================
+HAVA ARACI BAKIM PERSONELİ YABANCI DİL SINAVI
+SORU BANKASI - BÖLÜM 5: BOŞLUK DOLDURMA (FILL IN THE BLANKS)
+375 SORU
+================================================================
+
+--- TEK CÜMLE BOŞLUK DOLDURMA (SINGLE SENTENCE) ---
+
+751. The throttle control system is ………… electrical; it includes separate throttle control lever assemblies.
+a) partially
+b) fully
+c) half
+d) semi
+ANSWER: a
+
+752. It ………… separate throttle control lever assemblies, one for each engine.
+a) inclines
+b) innates
+c) internalizes
+d) includes
+ANSWER: d
+
+753. ………… throttle control lever drives one throttle control unit.
+a) Each
+b) Every
+c) None
+d) Some
+ANSWER: a
+
+754. The unit ………… under the center pedestal.
+a) locates
+b) is located
+c) are located
+d) is locating
+ANSWER: b
+
+755. Each ………… of the Electronic Engine Control receives the position signal.
+a) tube
+b) device
+c) channel
+d) barrier
+ANSWER: c
+
+756. Maintenance facilities that replace heat sinks ………… return the carbon heat sinks to the applicable distributor.
+a) would
+b) must
+c) could
+d) will
+ANSWER: b
+
+757. Lead-acid batteries can produce explosive mixtures while ………… charge or discharge.
+a) at
+b) under
+c) in
+d) on
+ANSWER: b
+
+758. If the engine ………… recently, check the temperature in the combustion chamber area.
+a) ran
+b) have been running
+c) has been run
+d) was running
+ANSWER: c
+
+759. All aural alerts must be ………… through the headsets.
+a) audible
+b) auditory
+c) loud
+d) auditable
+ANSWER: a
+
+760. If there ………… an airflow at the ram air outlet, do the fault isolation procedure.
+a) have
+b) is
+c) will be
+d) are
+ANSWER: b
+
+761. At engine manufacture, it ………… customary to provide bolts with reduced pitch diameter.
+a) may be
+b) will be
+c) to be
+d) is
+ANSWER: d
+
+762. It is customary ………… bolts with reduced pitch diameter for use in hot sections.
+a) to provide
+b) is providing
+c) is provided
+d) providing
+ANSWER: a
+
+763. This will ………… the possibility of bolt and nut seizure.
+a) increase
+b) shrink
+c) minimize
+d) expand
+ANSWER: c
+
+764. This is standard practice for locations ………… parts are subjected to high temperatures.
+a) when
+b) where
+c) which
+d) who
+ANSWER: b
+
+765. Parts ………… temperatures in excess of 500 degree F.
+a) is subjected to
+b) are subjecting to
+c) subject to
+d) are subjected to
+ANSWER: d
+
+766. Put a wet brake assembly in a warm location for sufficient time to let the water ………….
+a) evaporate
+b) evaporated
+c) evaporating
+d) is evaporated
+ANSWER: a
+
+767. Cadmium that ………… can cause kidney or reproductive system disease.
+a) is swallowed
+b) is swallowing
+c) swallowed
+d) swallows
+ANSWER: a
+
+768. On in-service aircraft, some isolated cracks ………… discovered on plate assemblies at 3633 flights.
+a) has been
+b) have been
+c) has
+d) have
+ANSWER: b
+
+769. The justifications include information necessary to show compliance ………… applicable CS-MMEL paragraphs.
+a) in
+b) with
+c) to
+d) under
+ANSWER: b
+
+770. You must wait for a minimum of one hour before you ………… or try ………… the APU again.
+a) start / start
+b) starting / to start
+c) to start / start
+d) start / to start
+ANSWER: d
+
+771. Unit Zones ………… by the number of the Units of the Major Zones.
+a) identified
+b) are identified
+c) have identified
+d) identify
+ANSWER: b
+
+772. If an access door or panel ………… in more than one zone, the lowest zone number applicable ………….
+a) is / is used
+b) is being / are used
+c) has / has been used
+d) has / has used
+ANSWER: a
+
+773. The clearance to edges ………… more than 300 times of the glass cloth thickness.
+a) could be
+b) have to be
+c) should be
+d) must be
+ANSWER: d
+
+774. The busbars ………… 115V AC to the electrically ………… seats.
+a) supply / operating
+b) supply / operated
+c) will supply / operated
+d) are supplied / operating
+ANSWER: b
+
+775. Put a warning notice in the cockpit ………… persons not to operate the flight controls.
+a) to have told
+b) telling
+c) to tell
+d) tells
+ANSWER: b
+
+776. The pretreatment of a material ………… the corrosion resistant properties and ………… a good surface for the bond.
+a) increases / provides
+b) increase / providing
+c) increases / will provide
+d) increasing / provides
+ANSWER: a
+
+777. The procedure ………… to remove paint coatings from metallic materials.
+a) can use
+b) could use
+c) could be used
+d) can be used
+ANSWER: d
+
+778. All axial loads from the engine ………… to the pylon through the forward mount.
+a) transferring
+b) transferred
+c) are transferred
+d) are transferred to
+ANSWER: c
+
+779. When an engine is dry motored, the starter ………… to turn the HP rotor.
+a) is engaging
+b) is engaged
+c) engages
+d) engaged
+ANSWER: b
+
+780. Any contamination found in the oil ………… for investigation.
+a) shall keep
+b) should be kept
+c) should keep
+d) must keep
+ANSWER: b
+
+781. The Extinguisher ………… in any attitude.
+a) may be stored
+b) must be stored
+c) have to be
+d) should be stored
+ANSWER: b
+
+782. Lead-acid batteries ………… sulfuric acid which ………… severe burns to body tissue.
+a) contained / causing
+b) contain / must cause
+c) to contain / caused
+d) contain / can cause
+ANSWER: d
+
+783. Any compartment that ………… expected to flood under light impact ………… used.
+a) is / should not be
+b) may be / should be
+c) may not be / should not be
+d) may not be / should be
+ANSWER: a
+
+784. It is recommended ………… an additional regulator on high pressure nitrogen sources.
+a) to install
+b) installing
+c) to install to prevent
+d) installing to prevent
+ANSWER: a
+
+785. Parts and materials ………… ………… from operators' stock.
+a) are to be supplied
+b) will supply
+c) have supplied
+d) are supplying
+ANSWER: a
+
+786. Make sure that the power indicator light on the galley panel ………….
+a) to go off
+b) goes off
+c) go off
+d) is going off
+ANSWER: b
+
+787. 'Combustible Material' ………… the material which is capable of ………… fire and burning.
+a) means / to catch
+b) to mean / to catch
+c) meaning / catching
+d) means / catching
+ANSWER: d
+
+788. A seat with an inoperative restraint system ………… inoperative.
+a) is considered
+b) are considered
+c) are to be considered
+d) considered
+ANSWER: a
+
+789. When you do work on the fuel system wiring, you ………… test equipment that ………….
+a) may use / is approving
+b) will use / is approved
+c) must use / is approved
+d) must use / is approving
+ANSWER: c
+
+790. Inlet air pressure ………… the pressure probe and ………… into chamber (A).
+a) will enter / is flowed
+b) enters / flows
+c) is entered / flows
+d) enters / is flowed
+ANSWER: b
+
+791. Make sure ………… that the probes, the engine, and the APU ………… cool before installation.
+a) Do / is
+b) Get / are
+c) Make / are
+d) Have / isn't
+ANSWER: c
+
+792. If the probes are ………… there is a risk of injury.
+a) hot
+b) cold
+c) mild
+d) cool
+ANSWER: a
+
+793. In some procedures, a NOTE statement will include ………… or dimensional limits.
+a) inquiries
+b) inspirations
+c) inspectors
+d) instructions
+ANSWER: d
+
+794. If a NOTE statement ………… instructions or dimensional limits, then it is necessary to obey this information.
+a) includes
+b) will include
+c) is included
+d) included
+ANSWER: a
+
+795. Keep brake assemblies in storage ………… rain, snow, or dew.
+a) out under
+b) away from
+c) within
+d) up above
+ANSWER: b
+
+796. If installation is correct, no further action ………….
+a) is not required
+b) requires
+c) is required
+d) required
+ANSWER: c
+
+797. If an inoperative armrest will hinder an emergency evacuation, it ………… removed.
+a) should be
+b) should have been
+c) could be
+d) could have been
+ANSWER: a
+
+798. All equipment removed during a maintenance operation ………… be examined before re-installation.
+a) will have to
+b) must also have been
+c) must also be
+d) must also
+ANSWER: c
+
+799. ………… the battery stays connected during parking, the loads will decrease the battery charge.
+a) If
+b) When
+c) Unless
+d) Although
+ANSWER: a
+
+800. If a part, tool, or object falls into the engine, the assembly process ………… stop until found.
+a) should not
+b) cannot
+c) must
+d) will
+ANSWER: c
+
+801. The basic cylinder of all types of extinguisher ………… of a seamless aluminum cylindrical container.
+a) is consisted
+b) consisted
+c) consists
+d) consist
+ANSWER: c
+
+802. ………… special materials are required for cleaning.
+a) No
+b) Every
+c) A
+d) Some
+ANSWER: a
+
+803. After you touch cadmium plated parts, clean your hands before you ………… or smoke.
+a) eating
+b) eat
+c) ate
+d) to eat
+ANSWER: b
+
+804. The dust can cause ………… on all filter elements.
+a) contaminated
+b) contamination
+c) contaminant
+d) contaminate
+ANSWER: b
+
+805. The pilot must report the ………… encounter of this event.
+a) suspected
+b) suspect
+c) suspecting
+d) susceptible
+ANSWER: a
+
+806. After 1 hour, use fog or foam on the wheel to decrease the ………….
+a) temperature
+b) temperate
+c) temperament
+d) tempt
+ANSWER: a
+
+807. Lift the ………… blankets sufficiently to complete a correct general visual inspection.
+a) insulate
+b) insolution
+c) insoluble
+d) insulation
+ANSWER: d
+
+808. Remove the ………… cabin-attendant seat.
+a) wall-mountain
+b) wall-mounted
+c) well-maintained
+d) well-mourned
+ANSWER: b
+
+809. Bolts, washers, and nuts hold ………… wheel half assemblies together.
+a) this
+b) that
+c) there
+d) these
+ANSWER: d
+
+810. The brake temperature ………… monitors the brake temperature.
+a) sensor
+b) sensory
+c) sense
+d) sensers
+ANSWER: a
+
+811. Look for bubbles at ………… of those areas are to examine for leaks.
+a) once
+b) single
+c) each
+d) double
+ANSWER: c
+
+812. The number of passengers must be ………… to 165 passengers.
+a) limiting
+b) limited
+c) limitation
+d) limitless
+ANSWER: b
+
+813. No electrical power will be ………… from the auxiliary power unit generator.
+a) availability
+b) allowable
+c) available
+d) allow
+ANSWER: c
+
+814. Examine and repair the wires ………… the applicable electrical connectors.
+a) off
+b) bulk
+c) sulk
+d) between
+ANSWER: d
+
+815. After you ………… the wiring, repair the wiring.
+a) exam
+b) examine
+c) exact
+d) extra
+ANSWER: b
+
+816. Put the seat unit ………… position on the seat tracks.
+a) in
+b) off
+c) as
+d) by
+ANSWER: a
+
+817. Count and ………… the utilized tools.
+a) verification
+b) verified
+c) verify
+d) vivificated
+ANSWER: c
+
+818. Reinstall the shelves, panels, ceiling panels affected ………… this modification.
+a) but
+b) by
+c) as
+d) both
+ANSWER: b
+
+819. When all the letters of the alphabet ………… up for the first letter, the sequence starts again with letter A.
+a) Has been used
+b) Has used
+c) Have used
+d) Have been used
+ANSWER: d
+
+820. A WARNING tells the operator that injury or death is possible, if the operator ………… obey the specified instruction.
+a) does
+b) does not
+c) would
+d) would not
+ANSWER: b
+
+821. If a broken fastener ………… replace it by a new one of the same part number.
+a) is detected,
+b) detects,
+c) is detecting,
+d) has detected,
+ANSWER: a
+
+822. Additional maintenance task ………… ………… depending on the failure modes.
+a) might require
+b) may require
+c) may be required
+d) was required
+ANSWER: c
+
+823. If the test ………… the maintenance message, replace the recirculation valve.
+a) give
+b) gives
+c) gave
+d) given
+ANSWER: b
+
+824. The fan ………… 6 seconds after approximately, then the warning light goes off.
+a) will operate
+b) has operated
+c) operate
+d) can operate
+ANSWER: a (or d - "will operate" for future event after a condition)
+
+825. Major sub-zones are ………… by the ten of the major zones.
+a) identified
+b) identification
+c) identity
+d) identifying
+ANSWER: a
+
+826. Park the aircraft on a ………… surface.
+a) smooth
+b) curved
+c) rough
+d) bumpy
+ANSWER: a
+
+827. You must obey the applicable safety precautions ………… serious injury in a wheel explosion.
+a) to celebrate
+b) to prevent
+c) to cause
+d) to persist
+ANSWER: b
+
+828. Install battery terminal protectors ………… the battery is not connected in the aircraft.
+a) whenever
+b) wherever
+c) whichever
+d) whoever
+ANSWER: a
+
+829. Each chapter/system is further divided ………… sections/subsystems.
+a) above
+b) into
+c) on
+d) under
+ANSWER: b
+
+830. These precautions will ………… the risk of contamination and damage to the electrical wiring.
+a) incline
+b) decline
+c) increase
+d) decrease
+ANSWER: d
+
+831. All calendar days are considered to run ………… from the day of discovery.
+a) simultaneously
+b) in a random order
+c) consecutively
+d) spontaneously
+ANSWER: c
+
+832. If there is a short circuit, you will cause damage to the serviceable computer when you ………… the units.
+a) displace
+b) purchase
+c) swap
+d) use
+ANSWER: c
+
+833. The drag is normally approx. 40 lbf.in. The ………… maximum is 107 lbf.in.
+a) forbidden
+b) mandatory
+c) allowed
+d) permitted
+ANSWER: d
+
+834. When the heat sink assembly is fully ………… the set of five thin stator disks are replaced.
+a) worn,
+b) fulling worn,
+c) fully worn,
+d) worn out,
+ANSWER: a
+
+835. If the center tank is full, the high-level sensor ………… be overridden.
+a) may
+b) must
+c) have to
+d) should not
+ANSWER: a
+
+836. When the disconnection is not possible, ………… side the flight control check can be performed on the operative side.
+a) out one
+b) only one
+c) off one
+d) on one
+ANSWER: d
+
+837. Make sure the waste tank has been serviced and the vacuum blower ………… not in operation.
+a) are
+b) were
+c) is
+d) has
+ANSWER: c
+
+838. Before drilling holes for installation, present the bracket to be sure ………… it is possible for a crew to see the front face.
+a) where
+b) which
+c) that
+d) those
+ANSWER: c
+
+839. It ………… obstruct the fuel injectors and ………… cause an engine shutdown.
+a) would / could
+b) might / was
+c) may / can
+d) will / is
+ANSWER: c
+
+840. Lightning ………… some areas more frequently than others.
+a) hit
+b) hits
+c) hitter
+d) hitting
+ANSWER: b
+
+841. An inspection is ………… when the aircraft has been involved in an excessive maneuver.
+a) require
+b) requires
+c) required
+d) requiring
+ANSWER: c
+
+842. This procedure ………… not cause the strength of the part to decrease.
+a) must
+b) maybe
+c) mustn't
+d) mayn't
+ANSWER: c
+
+843. A carbon disk ………… no cracks longer than 1.6 mm.
+a) have
+b) haven't
+c) hasn't
+d) has
+ANSWER: d
+
+844. Discard the wheel half with corrosion that is ………… than the repair limit.
+a) most
+b) many
+c) much
+d) more
+ANSWER: d
+
+845. The gage is ………… determine the attitude of the airplane on the ground.
+a) use to
+b) used to
+c) using to
+d) uses to
+ANSWER: b
+
+846. The fuel in the associated outer tank ………… considered as not usable for flight planning.
+a) is
+b) are
+c) were
+d) can
+ANSWER: a
+
+847. There is a 30 second delay before the message ………… show.
+a) would
+b) will
+c) was
+d) were
+ANSWER: b
+
+848. The seat shoulder harness ………… into the reel so that the harness is no longer adjustable.
+a) have not retracted
+b) have now retract
+c) has not retracted
+d) has not retract
+ANSWER: c
+
+849. If you find seal interference and you think it is "minor" the engine ………… serviceable.
+a) is
+b) are
+c) were
+d) will
+ANSWER: a
+
+850. This can cause "thermal" shock to the ………… parts.
+a) stressed
+b) stress
+c) stressing
+d) stresses
+ANSWER: a
+
+--- PARAGRAF TABANLI BOŞLUK DOLDURMA (PASSAGE-BASED) ---
+
+METİN: "The pitot probe measures pitot air pressure. The pitot probe port points forward 851) ………… pitot pressure. The probe 852) ………… several inches from the airplane skin 853) ………… airflow turbulence effects. A base plate contains the electrical and pressure connectors. A gasket is 854) ………… the probe base and the airplane structure to form a pressure seal. An anti-icing heater 855) ………… in the probe to prevent ice."
+
+851. a) to measure
+     b) measuring
+     c) measured
+     d) measures
+ANSWER: a
+
+852. a) locates
+     b) is located
+     c) are located
+     d) was locating
+ANSWER: b
+
+853. a) to decrease
+     b) decreasing
+     c) decreased
+     d) decrease
+ANSWER: a
+
+854. a) above
+     b) beyond
+     c) between
+     d) within
+ANSWER: c
+
+855. a) locates
+     b) locate
+     c) is located
+     d) are locating
+ANSWER: c
+
+METİN: "The single aisle aircraft communication system 856) ………… two sub-systems: radio communication, and onboard communication. The radio communication systems 857) ………… for communications to and from the aircraft. The on-board internal communication system 858) ………… into 4 functions: service interphone (on ground 859) ………… for maintenance technician communication, flight interphone for cockpit internal communication, Passenger Address (PA) from the cockpit 860) ………… passenger announcements, and cabin interphone for cabin crew communication."
+
+856. a) having
+     b) has
+     c) have
+     d) had
+ANSWER: b
+
+857. a) use
+     b) are used
+     c) used
+     d) using
+ANSWER: b
+
+858. a) divides
+     b) is divided
+     c) are divided
+     d) dividing
+ANSWER: b
+
+859. a) always
+     b) never
+     c) only
+     d) sometimes
+ANSWER: c
+
+860. a) for
+     b) to
+     c) with
+     d) at
+ANSWER: a
+
+METİN: "The heart of the audio system 861) ………… the Audio Management Unit (AMU). The AMU 862) ………… the signals generated by the crew and directs the signals to and from the appropriate radio or interphone system. The AMU has a decoding unit 863) ………… Selective Calling (SELCAL). It lets aural and visual indications on the audio control panel with an amber CALL indication 864) ………… the flight crew for calls from ground stations. 865) ………… the Passenger Address function is used from cockpit, the audio signal is routed via the AMU to the cabin intercommunication data system director."
+
+861. a) are
+     b) were
+     c) is
+     d) has
+ANSWER: c
+
+862. a) route
+     b) routes
+     c) routing
+     d) routed
+ANSWER: b
+
+863. a) call
+     b) calling
+     c) called
+     d) is called
+ANSWER: c
+
+864. a) to alert
+     b) alerting
+     c) alert
+     d) alerted
+ANSWER: a
+
+865. a) Although
+     b) Unless
+     c) When
+     d) Before
+ANSWER: c
+
+METİN: "Wet motoring the engine 866) ………… to test the fuel system. When an engine 867) ………… the two ignition systems 868) ………… and the starter is engaged to turn the HP rotor to 15%-20% N2. At N2 = 15%, the HP fuel shutoff valve control lever 869) ………… to ON and the engine exhaust nozzle 870) ………… for any sign of fuel."
+
+866. a) is necessary
+     b) are necessary
+     c) necessary
+     d) necessitate
+ANSWER: a
+
+867. a) is wet motored,
+     b) wet motors,
+     c) are wet motored,
+     d) wet motoring,
+ANSWER: a
+
+868. a) turning OFF
+     b) are turned OFF
+     c) turned OFF
+     d) is turning OFF
+ANSWER: b
+
+869. a) moves
+     b) is moved
+     c) moving
+     d) moved
+ANSWER: b
+
+870. a) carefully monitors
+     b) is carefully monitored
+     c) carefully monitored
+     d) has carefully monitored
+ANSWER: b
+
+METİN: "Maintenance messages related to the fuel system 871) ………… possibly occur during the first engine start. The cause of these messages 872) ………… air that went into the system during the related fuel drain procedure. This air 873) ………… automatically during the first engine ground run. Thus, during subsequent engine starts the messages 874) ………… show again, 875) ………… they are caused differently."
+
+871. a) could
+     b) should
+     c) can
+     d) must
+ANSWER: c
+
+872. a) can be
+     b) is
+     c) are
+     d) will be
+ANSWER: a
+
+873. a) removes
+     b) will be removed
+     c) will remove
+     d) has removed
+ANSWER: b
+
+874. a) should not
+     b) must not
+     c) can not
+     d) would not
+ANSWER: a
+
+875. a) since
+     b) although
+     c) unless
+     d) while
+ANSWER: c
+
+METİN: "Corrosion is the chemical 876) ………… of a metal by reaction with its environment. On aircraft, corrosion 877) ………… structural integrity and cause safety issues. The main types of corrosion found on aircraft 878) ………… surface corrosion, pitting corrosion, intergranular corrosion, and stress corrosion cracking. Prevention methods 879) ………… the application of protective coatings such as primers and topcoats, the use of corrosion inhibiting compounds, and proper drainage design 880) ………… moisture accumulation."
+
+876. a) deteriorate
+     b) deterioration
+     c) deteriorating
+     d) deteriorated
+ANSWER: b
+
+877. a) can seriously affect
+     b) serious affects
+     c) seriously effecting
+     d) can serious affect
+ANSWER: a
+
+878. a) included
+     b) is included
+     c) include
+     d) includes
+ANSWER: c
+
+879. a) included
+     b) include
+     c) includes
+     d) including
+ANSWER: b
+
+880. a) to prevent
+     b) preventing
+     c) prevents
+     d) prevented
+ANSWER: a
+
+METİN: "The aircraft oxygen system 881) ………… supplemental oxygen to the crew and passengers in case of cabin depressurization. The system consists of oxygen cylinders stored in the avionics bay, pressure regulators, distribution lines, and crew masks. Passenger oxygen 882) ………… by chemical oxygen generators located in the overhead compartment. When activated, the generators 883) ………… oxygen through a chemical reaction for approximately 12-22 minutes. Crew oxygen 884) ………… from high-pressure cylinders via a regulator. If the oxygen system 885) ………… pressurized, masks will deploy automatically."
+
+881. a) provide
+     b) provides
+     c) providing
+     d) is providing
+ANSWER: b
+
+882. a) provides
+     b) is provided
+     c) providing
+     d) are providing
+ANSWER: b
+
+883. a) produce
+     b) produces
+     c) is produced
+     d) are produced
+ANSWER: a
+
+884. a) supply
+     b) is supplied
+     c) supplies
+     d) supplying
+ANSWER: b
+
+885. a) is not
+     b) are not
+     c) was not
+     d) were not
+ANSWER: a
+
+METİN: "The aircraft brake system 886) ………… the kinetic energy of the moving aircraft into heat energy to slow the aircraft. Carbon brakes 887) ………… on modern commercial aircraft due to their light weight and ability to absorb more heat than steel brakes. The brake temperature 888) ………… after landing to prevent damage from overheating. If the brake temperature indicator shows a temperature 889) ………… the service limit, the aircraft 890) ………… until the brakes have cooled."
+
+886. a) converted
+     b) converts
+     c) converting
+     d) is converted
+ANSWER: b
+
+887. a) commonly used
+     b) are commonly used
+     c) common use
+     d) is commonly used
+ANSWER: b
+
+888. a) must monitor
+     b) must be monitored
+     c) monitored
+     d) monitoring
+ANSWER: b
+
+889. a) below
+     b) under
+     c) above
+     d) within
+ANSWER: c
+
+890. a) must not depart
+     b) should depart
+     c) must depart
+     d) could depart
+ANSWER: a
+
+METİN: "The aircraft hydraulic system 891) ………… power to operate various systems including flight controls, landing gear, wheel brakes, and thrust reversers. The system uses hydraulic fluid under high 892) ………… (typically 3000 PSI) to generate force. The main components 893) ………… a hydraulic reservoir, engine-driven pumps, electric motor-driven pumps for backup, actuators, and control valves. Hydraulic fluid must be 894) ………… clean and free from contamination. Regular sampling and testing of the hydraulic fluid 895) ………… as part of the maintenance program."
+
+891. a) provide
+     b) providing
+     c) provides
+     d) provided
+ANSWER: c
+
+892. a) force
+     b) temperature
+     c) pressure
+     d) speed
+ANSWER: c
+
+893. a) included
+     b) includes
+     c) include
+     d) including
+ANSWER: c
+
+894. a) kept
+     b) keep
+     c) keeping
+     d) keeps
+ANSWER: a
+
+895. a) require
+     b) is required
+     c) requires
+     d) required
+ANSWER: b
+
+METİN: "Composite materials 896) ………… increasingly used in modern aircraft structures due to their high strength-to-weight ratio. Damage to composite structures can include delamination, debonding, impact damage, and moisture ingress. Repairs 897) ………… carried out strictly in accordance with the Structural Repair Manual (SRM). Prior to repair, the damage 898) ………… and categorized. Most composite repairs 899) ………… removing the damaged area, preparing the surface, and applying repair plies 900) ………… the correct sequence."
+
+896. a) has been
+     b) are
+     c) is
+     d) were
+ANSWER: b
+
+897. a) should be
+     b) must
+     c) must be
+     d) should
+ANSWER: c
+
+898. a) assesses
+     b) must assess
+     c) is assessed
+     d) must be assessed
+ANSWER: d
+
+899. a) involves
+     b) involving
+     c) involved
+     d) involve
+ANSWER: a
+
+900. a) at
+     b) in
+     c) on
+     d) by
+ANSWER: b
+
+METİN: "Non-Destructive Testing (NDT) 901) ………… to inspect aircraft structures and components without causing damage. Common NDT methods 902) ………… in aviation include visual inspection, eddy current testing, ultrasonic testing, and radiographic testing. Eddy current testing 903) ………… effective for detecting surface and sub-surface cracks in conductive materials. Ultrasonic testing uses sound waves 904) ………… internal flaws. All NDT methods 905) ………… properly certified inspectors and calibrated equipment."
+
+901. a) uses
+     b) is used
+     c) are used
+     d) use
+ANSWER: b
+
+902. a) use
+     b) used
+     c) using
+     d) uses
+ANSWER: b
+
+903. a) particularly is
+     b) is particularly
+     c) particularly are
+     d) are particularly
+ANSWER: b
+
+904. a) detecting
+     b) detected
+     c) to detect
+     d) detect
+ANSWER: c
+
+905. a) requires
+     b) require
+     c) is required
+     d) required
+ANSWER: b
+
+METİN: "Aircraft maintenance checks are categorized 906) ………… different levels of inspection. The A check 907) ………… approximately every 400-600 flight hours and involves inspections of accessible items. The C check is a more detailed inspection 908) ………… every 20-24 months. The D check or heavy maintenance visit is the most comprehensive inspection 909) ………… every 6-12 years. The interval 910) ………… by aircraft type and the operator's approved maintenance program."
+
+906. a) to
+     b) into
+     c) in
+     d) for
+ANSWER: b
+
+907. a) is performed
+     b) performs
+     c) performed
+     d) performing
+ANSWER: a
+
+908. a) perform
+     b) performing
+     c) performed
+     d) to be performed
+ANSWER: c
+
+909. a) perform
+     b) performs
+     c) performed
+     d) is performed
+ANSWER: c
+
+910. a) varies
+     b) varied
+     c) is varied
+     d) varying
+ANSWER: a
+
+METİN: "The APU 911) ………… a small gas turbine engine located in the tail cone of the aircraft. It 912) ………… electrical power and bleed air for air conditioning when the main engines are not running. The APU can 913) ………… on the ground using battery power or from the aircraft's external power supply. After three unsuccessful start attempts, the crew 914) ………… at least one hour before making another attempt. The APU 915) ………… a fire detection and suppression system."
+
+911. a) are
+     b) is
+     c) were
+     d) has
+ANSWER: b
+
+912. a) provide
+     b) providing
+     c) provided
+     d) provides
+ANSWER: d
+
+913. a) start
+     b) be started
+     c) starting
+     d) starts
+ANSWER: b
+
+914. a) must wait
+     b) waits
+     c) waited
+     d) must have wait
+ANSWER: a
+
+915. a) having
+     b) has
+     c) have
+     d) had
+ANSWER: b
+
+METİN: "Accurate and complete maintenance documentation 916) ………… a legal requirement and a safety necessity. After each maintenance task, the technician 917) ………… an entry in the aircraft technical log. The certifying engineer 918) ………… the work. All maintenance data, including manuals and service bulletins, 919) ………… current and accessible. Any defect found but not repaired 920) ………… in accordance with the operator's minimum equipment list."
+
+916. a) are
+     b) is
+     c) were
+     d) has
+ANSWER: b
+
+917. a) must make
+     b) must be made
+     c) makes
+     d) making
+ANSWER: a
+
+918. a) must sign off
+     b) signs off
+     c) must be signed off
+     d) is signing off
+ANSWER: a
+
+919. a) must
+     b) must be
+     c) must kept
+     d) must keep
+ANSWER: b
+
+920. a) must defer
+     b) defers
+     c) must be deferred
+     d) deferring
+ANSWER: c
+
+METİN: "Before fueling operations, all personnel 921) ………… on safety procedures. The aircraft and fueling equipment 922) ………… and grounded to prevent static electricity buildup. No smoking 923) ………… within 50 feet of the aircraft during fueling. All ignition sources 924) ………… eliminated. If a fuel spill 925) ………… stop fueling immediately, alert the fire service, and ventilate the area."
+
+921. a) must be briefed
+     b) must brief
+     c) briefing
+     d) briefs
+ANSWER: a
+
+922. a) must be properly bonded
+     b) must properly bond
+     c) properly bonding
+     d) properly bonds
+ANSWER: a
+
+923. a) permitted
+     b) is permitted
+     c) is not permitted
+     d) not permits
+ANSWER: c
+
+924. a) must eliminated
+     b) must be eliminated
+     c) eliminating
+     d) eliminate
+ANSWER: b
+
+925. a) occur,
+     b) occurs,
+     c) occurred,
+     d) has occurred,
+ANSWER: b
+
+METİN: "Aircraft tyres 926) ………… at the correct inflation pressure. Under-inflation 927) ………… tyre wear and generates excessive heat. Over-inflation 928) ………… the tyre contact area and can cause premature failure. Tyre pressure 929) ………… with the aircraft unloaded. Tyres 930) ………… for cuts, bulges, and excessive wear before each flight."
+
+926. a) must maintained
+     b) must be maintained
+     c) maintaining
+     d) maintain
+ANSWER: b
+
+927. a) increases
+     b) increase
+     c) increased
+     d) increasing
+ANSWER: a
+
+928. a) reduce
+     b) reduces
+     c) reduced
+     d) reducing
+ANSWER: b
+
+929. a) must check
+     b) must be checked
+     c) checking
+     d) checks
+ANSWER: b
+
+930. a) must inspect
+     b) inspected
+     c) must be inspected
+     d) inspecting
+ANSWER: c
+
+METİN: "The engine oil system 931) ………… and cools the engine bearings and gearbox components. The oil 932) ………… in a reservoir and circulated by an engine-driven pump. Oil 933) ………… through a filter to remove contaminants before reaching the components. The scavenge system 934) ………… the oil from the sumps back to the reservoir. Oil temperature and pressure 935) ………… continuously monitored and displayed on the cockpit instruments."
+
+931. a) lubricate
+     b) lubricates
+     c) lubricating
+     d) lubricated
+ANSWER: b
+
+932. a) is stored
+     b) stores
+     c) store
+     d) stored
+ANSWER: a
+
+933. a) passes
+     b) pass
+     c) is passed
+     d) passing
+ANSWER: a
+
+934. a) return
+     b) returning
+     c) returns
+     d) returned
+ANSWER: c
+
+935. a) is
+     b) are
+     c) was
+     d) were
+ANSWER: b
+
+METİN: "Aircraft weight and balance 936) ………… a critical safety consideration. The total weight of the aircraft 937) ………… the maximum takeoff weight. The center of gravity (CG) 938) ………… within the approved envelope for all phases of flight. An aircraft that is out of CG limits 939) ………… uncontrollable. The captain 940) ………… and accept the loadsheet before takeoff."
+
+936. a) are
+     b) were
+     c) is
+     d) have been
+ANSWER: c
+
+937. a) must not exceeding
+     b) must not exceed
+     c) must exceeding
+     d) must exceed
+ANSWER: b
+
+938. a) must remain
+     b) must remains
+     c) must remaining
+     d) must be remaining
+ANSWER: a
+
+939. a) become
+     b) becomes
+     c) can become
+     d) will become
+ANSWER: c
+
+940. a) must review
+     b) must to review
+     c) reviewing
+     d) must reviewed
+ANSWER: a
+
+METİN: "The aircraft electrical system 941) ………… generates, converts, and distributes electrical power. Power sources include engine-driven generators, the APU generator, and batteries. The electrical system 942) ………… on 115V AC and 28V DC. AC power 943) ………… by the engine generators and converted to DC by transformer rectifier units. The batteries 944) ………… backup power in the event of a complete generator failure. All electrical work 945) ………… with the relevant circuit breakers open."
+
+941. a) generate
+     b) generating
+     c) generates
+     d) generated
+ANSWER: c
+
+942. a) operate
+     b) operating
+     c) operated
+     d) operates
+ANSWER: d
+
+943. a) generate
+     b) is generated
+     c) are generated
+     d) generating
+ANSWER: b
+
+944. a) provide
+     b) providing
+     c) provided
+     d) provides
+ANSWER: a
+
+945. a) must carry out
+     b) must be carried out
+     c) carrying out
+     d) carried out
+ANSWER: b
+
+METİN: "The aircraft fire protection system 946) ………… to detect and extinguish fires. Fire detection 947) ………… by temperature sensing loops installed in the protected zones. When a fire 948) ………… an audible warning sounds in the cockpit and a red FIRE warning light 949) ………… The crew can then activate the fire extinguisher by pressing the fire handle and 950) ………… it to discharge the agent."
+
+946. a) design
+     b) is designed
+     c) are designed
+     d) designing
+ANSWER: b
+
+947. a) accomplish
+     b) is accomplished
+     c) accomplishes
+     d) accomplishing
+ANSWER: b
+
+948. a) detected,
+     b) is detected,
+     c) detects,
+     d) detecting,
+ANSWER: b
+
+949. a) illuminate.
+     b) illuminates.
+     c) illuminated.
+     d) illuminating.
+ANSWER: b
+
+950. a) rotate
+     b) rotated
+     c) rotating
+     d) to rotate
+ANSWER: c
+
+METİN: "The landing gear system 951) ………… the aircraft on the ground and provides the means for takeoff and landing. Landing gear extension and retraction 952) ………… by the pilot through a cockpit selector. In the event of hydraulic failure, the landing gear 953) ………… using an emergency system. The gear down and locked position 954) ………… by green indicator lights. The landing gear 955) ………… regularly for hydraulic leaks, tyre wear, and structural damage."
+
+951. a) support
+     b) supporting
+     c) supports
+     d) supported
+ANSWER: c
+
+952. a) control
+     b) is controlled
+     c) controlling
+     d) controls
+ANSWER: b
+
+953. a) can extended
+     b) extending
+     c) can be extended
+     d) extends
+ANSWER: c
+
+954. a) confirms
+     b) confirmed
+     c) is confirmed
+     d) confirming
+ANSWER: c
+
+955. a) must inspect
+     b) must be inspected
+     c) inspecting
+     d) inspects
+ANSWER: b
+
+METİN: "Aircraft maintenance involves many hazards 956) ………… must be controlled. Working at height requires the use of approved access platforms and fall protection equipment. Chemicals such as hydraulic fluid, fuel, and cleaning agents 957) ………… burns, skin irritation, and eye damage. Personal protective equipment (PPE) including gloves, safety glasses, and protective clothing 958) ………… All tools used during maintenance 959) ………… from the aircraft before it is returned to service. A tool control program 960) ………… to prevent foreign object damage."
+
+956. a) whom
+     b) where
+     c) that
+     d) which
+ANSWER: c
+
+957. a) caused
+     b) can cause
+     c) causing
+     d) causes
+ANSWER: b
+
+958. a) must wear.
+     b) must be worn.
+     c) worn.
+     d) wearing.
+ANSWER: b
+
+959. a) must account for and removed
+     b) must be accounted for and removed
+     c) must account and remove
+     d) must accounting and removing
+ANSWER: b
+
+960. a) is essential
+     b) are essential
+     c) essential
+     d) essentially
+ANSWER: a
+
+METİN: "The turbine section of a gas turbine engine 961) ………… energy from the hot gas stream produced by the combustion process. The turbine blades rotate at extremely high speeds and temperatures, 962) ………… them one of the most highly stressed components. High-pressure (HP) turbine stages are the first 963) ………… the hot gases from the combustion chamber. Regular borescope inspections 964) ………… to detect cracks, erosion, and tip rubs. Turbine blades 965) ………… a finite life limit measured in flight cycles."
+
+961. a) extract
+     b) extracts
+     c) extracting
+     d) extracted
+ANSWER: b
+
+962. a) makes
+     b) making
+     c) made
+     d) make
+ANSWER: b
+
+963. a) receive
+     b) to receive
+     c) receiving
+     d) received
+ANSWER: b
+
+964. a) require
+     b) are required
+     c) required
+     d) requiring
+ANSWER: b
+
+965. a) having
+     b) have
+     c) has
+     d) had
+ANSWER: c
+
+================================================================
+CEVAP ANAHTARI - BÖLÜM 5: BOŞLUK DOLDURMA
+================================================================
+751-a 752-d 753-a 754-b 755-c 756-b 757-b 758-c 759-a 760-b
+761-d 762-a 763-c 764-b 765-d 766-a 767-a 768-b 769-b 770-d
+771-b 772-a 773-d 774-b 775-b 776-a 777-d 778-c 779-b 780-b
+781-b 782-d 783-a 784-a 785-a 786-b 787-d 788-a 789-c 790-b
+791-c 792-a 793-d 794-a 795-b 796-c 797-a 798-c 799-a 800-c
+801-c 802-a 803-b 804-b 805-a 806-a 807-d 808-b 809-d 810-a
+811-c 812-b 813-c 814-d 815-b 816-a 817-c 818-b 819-d 820-b
+821-a 822-c 823-b 824-a 825-a 826-a 827-b 828-a 829-b 830-d
+831-c 832-c 833-d 834-a 835-a 836-d 837-c 838-c 839-c 840-b
+841-c 842-c 843-d 844-d 845-b 846-a 847-b 848-c 849-a 850-a
+851-a 852-b 853-a 854-c 855-c 856-b 857-b 858-b 859-c 860-a
+861-c 862-b 863-c 864-a 865-c 866-a 867-a 868-b 869-b 870-b
+871-c 872-a 873-b 874-a 875-c 876-b 877-a 878-c 879-b 880-a
+881-b 882-b 883-a 884-b 885-a 886-b 887-b 888-b 889-c 890-a
+891-c 892-c 893-c 894-a 895-b 896-b 897-c 898-d 899-a 900-b
+901-b 902-b 903-b 904-c 905-b 906-b 907-a 908-c 909-c 910-a
+911-b 912-d 913-b 914-a 915-b 916-b 917-a 918-a 919-b 920-c
+921-a 922-a 923-c 924-b 925-b 926-b 927-a 928-b 929-b 930-c
+931-b 932-a 933-a 934-c 935-b 936-c 937-b 938-a 939-c 940-a
+941-c 942-d 943-b 944-a 945-b 946-b 947-b 948-b 949-b 950-c
+951-c 952-b 953-c 954-c 955-b 956-c 957-b 958-b 959-b 960-a
+961-b 962-b 963-b 964-b 965-c

@@ -1,0 +1,1443 @@
+================================================================
+HAVA ARACI BAKIM PERSONELİ YABANCI DİL SINAVI
+SORU BANKASI - BÖLÜM 3 DEVAM: ÇEVİRİ (TRANSLATION)
+200 SORU — Q1316-Q1515
+================================================================
+
+--- BÖLÜM A: İNGİLİZCEDEN TÜRKÇEYE ÇEVİRİ (English → Turkish) ---
+
+1316. "The hydraulic system must be depressurized before any line disconnection."
+a) Herhangi bir hat bağlantısının kesilmesinden önce hidrolik sistem basınçsız hale getirilmelidir.
+b) Hidrolik sisteme bağlantı kesilmeden önce basınç uygulanmalıdır.
+c) Hidrolik hat bağlantısı yapılmadan önce sistem kontrol edilmelidir.
+d) Hidrolik sistem bağlantısı yüksek basınçta kesilmelidir.
+ANSWER: a
+
+1317. "All maintenance personnel must be aware of the fire hazards associated with aircraft fuelling operations."
+a) Tüm bakım personeli, uçak yakıt ikmali operasyonlarıyla ilgili yangın tehlikelerinden haberdar olmalıdır.
+b) Bakım personeli, yangın söndürücü sistemlerin bakımını yapmalıdır.
+c) Personel, yakıt ikmali sırasında yangın sistemini test etmelidir.
+d) Yangın tehlikeleri yakıt sistemleri tarafından engellenir.
+ANSWER: a
+
+1318. "The aircraft must not be flown if any airworthiness directive applicable to it has not been complied with."
+a) Geçerli herhangi bir uçuşa elverişlilik direktifi yerine getirilmemişse uçak uçurulmamalıdır.
+b) Uçak, uçuşa elverişlilik direktifleri olmadan da uçurulabilir.
+c) Direktifler yerine getirilmeden uçak uçuşa elverişlidir.
+d) Uçuşa elverişlilik direktifleri yalnızca büyük bakımlarda uygulanır.
+ANSWER: a
+
+1319. "Torque values specified in the maintenance manual must be applied with a calibrated torque wrench."
+a) Bakım kılavuzunda belirtilen tork değerleri, kalibre edilmiş bir tork anahtarıyla uygulanmalıdır.
+b) Tork değerleri, herhangi bir anahtarla uygulanabilir.
+c) Tork anahtarı yalnızca motor bakımında kullanılır.
+d) Bakım kılavuzundaki tork değerleri tahmindir.
+ANSWER: a
+
+1320. "The borescope inspection revealed signs of blade erosion in the turbine section."
+a) Borescope muayenesi, türbin bölümünde kanat aşınması belirtilerini ortaya koydu.
+b) Borescope muayenesi türbin kanatlarının mükemmel durumda olduğunu gösterdi.
+c) Türbin bölümündeki borescope kanat hasarını gizler.
+d) Türbin kanat aşınması yalnızca dışarıdan görünür.
+ANSWER: a
+
+1321. "Composite repair procedures require strict adherence to cure temperatures and cure times."
+a) Kompozit onarım prosedürleri, kürleme sıcaklıkları ve sürelerine sıkı şekilde uyulmasını gerektirir.
+b) Kompozit onarımlar, herhangi bir sıcaklıkta gerçekleştirilebilir.
+c) Kompozit onarım için pişirme süresi önemli değildir.
+d) Kompozit parçalar kürleme gerektirmez.
+ANSWER: a
+
+1322. "The nose wheel steering system is controlled by the pilot's rudder pedals and a nose wheel steering tiller."
+a) Burun tekerleri direksiyon sistemi, pilotun dümenci pedalları ve bir burun tekerleri direksiyon kolu tarafından kontrol edilir.
+b) Burun tekerleri yalnızca kalkış sırasında kontrol edilir.
+c) Dümenci pedalları yalnızca dikey stabilizatörü kontrol eder.
+d) Burun tekerleri direksiyon sistemi otomatik çalışır.
+ANSWER: a
+
+1323. "Oxygen system components must be kept free of oil and grease contamination at all times."
+a) Oksijen sistemi bileşenleri her zaman yağ ve gres kirliliğinden uzak tutulmalıdır.
+b) Oksijen sistemleri düzenli olarak yağlanmalıdır.
+c) Oksijen hortumları gresle kaplanmalıdır.
+d) Oksijen sistemleri yağ bulunduğunda daha iyi çalışır.
+ANSWER: a
+
+1324. "The aircraft must be electrically bonded to the fuel bowser before refuelling begins."
+a) Yakıt ikmali başlamadan önce uçak, yakıt arabacına elektriksel olarak bağlanmalıdır.
+b) Yakıt ikmali tamamlandıktan sonra uçak bağlanabilir.
+c) Elektriksel bağlama yalnızca tehlikeli hava koşullarında gereklidir.
+d) Yakıt arabası uçaktan uzakta tutulmalıdır.
+ANSWER: a
+
+1325. "The aircraft logbook must be updated after every flight to record flight times and any defects observed."
+a) Her uçuştan sonra uçak kütüğü, uçuş sürelerini ve gözlemlenen arızaları kaydetmek üzere güncellenmelidir.
+b) Uçak kütüğü yalnızca arıza olduğunda güncellenir.
+c) Uçuş süreleri ayrı bir kayıt formuna yazılır.
+d) Uçak kütüğü yılda bir kez güncellenir.
+ANSWER: a
+
+1326. "The aircraft pressurization system maintains cabin altitude at a comfortable level during flight."
+a) Uçak basınçlandırma sistemi, uçuş sırasında kabin irtifasını konforlu bir seviyede tutar.
+b) Basınçlandırma sistemi yalnızca dış basınç düşük olduğunda çalışır.
+c) Kabin irtifası uçuş sırasında sürekli değişir.
+d) Basınçlandırma sistemi yalnızca yolcular için tasarlanmıştır.
+ANSWER: a
+
+1327. "Ice formation on the pitot probes will lead to incorrect airspeed indication in the cockpit."
+a) Pitot problarındaki buz oluşumu, kokpitte yanlış hava hızı göstergesine yol açar.
+b) Pitot problarındaki buz oluşumu uçuşu etkilemez.
+c) Buz, pitot problarında hava hızı ölçümünü iyileştirir.
+d) Buz oluşumu yalnızca statik portları etkiler.
+ANSWER: a
+
+1328. "The landing gear extension system incorporates both hydraulic and emergency free-fall modes."
+a) İniş takımı uzatma sistemi, hem hidrolik hem de acil durum serbest düşüş modlarını içerir.
+b) İniş takımı yalnızca hidrolik olarak uzatılabilir.
+c) Acil durum modu, iniş takımının geri çekilmesi için tasarlanmıştır.
+d) İniş takımı uzatma sistemi güç gerektirmez.
+ANSWER: a
+
+1329. "Engine oil consumption is monitored and compared against the manufacturer's specification at each service."
+a) Motor yağı tüketimi, her serviste izlenir ve üretici spesifikasyonuyla karşılaştırılır.
+b) Motor yağı tüketimi yalnızca büyük bakımlarda kontrol edilir.
+c) Yağ tüketimi uçuş sırasında izlenir.
+d) Üretici spesifikasyonları yağ tüketimini belirtmez.
+ANSWER: a
+
+1330. "The fire detection loop must be functionally tested to confirm correct operation before return to service."
+a) Yangın algılama çevriminin servise dönmeden önce doğru çalışmasını onaylamak için işlevsel olarak test edilmesi gerekir.
+b) Yangın algılama çevrimi görsel incelemeyle test edilir.
+c) Yangın algılama testi yalnızca büyük bakımlarda gereklidir.
+d) Yangın algılama çevrimleri fabrikada test edilir ve sahada test gerekmez.
+ANSWER: a
+
+1331. "Maintenance personnel must use the correct grade of oil specified for each individual engine type."
+a) Bakım personeli, her motor tipi için belirtilen doğru yağ derecesini kullanmalıdır.
+b) Motor yağı derecesi tüm motorlar için aynıdır.
+c) Herhangi bir onaylı motor yağı herhangi bir motorla birlikte kullanılabilir.
+d) Yağ derecesi yalnızca sıcak iklimler için önemlidir.
+ANSWER: a
+
+1332. "Before performing a wheel change, ensure that the aircraft is properly supported on jacks."
+a) Tekerlek değişimi gerçekleştirmeden önce uçağın jacks üzerinde doğru şekilde desteklendiğinden emin olun.
+b) Tekerlek değişimi uçak yerde dururken gerçekleştirilebilir.
+c) Jacks kullanımı yalnızca ağır bakım için gereklidir.
+d) Tekerlek değişimi için uçak askıya alınmamalıdır.
+ANSWER: a
+
+1333. "The aircraft skin must be inspected for cracks, dents, and corrosion at each scheduled maintenance check."
+a) Uçak gövdesi, her planlı bakım kontrolünde çatlaklar, göçükler ve korozyon açısından incelenmelidir.
+b) Gövde incelemesi yalnızca ağır çarpma sonrasında gereklidir.
+c) Korozyon incelemesi yalnızca deniz kıyısı operasyonlarında zorunludur.
+d) Dış muayeneler sadece uçuştan önce yapılır.
+ANSWER: a
+
+1334. "The engine nacelle fire suppression system is activated by the fire push button in the cockpit."
+a) Motor gondol yangın bastırma sistemi, kokpitteki yangın basma düğmesiyle etkinleştirilir.
+b) Yangın bastırma sistemi motor aşırı ısındığında otomatik olarak etkinleşir.
+c) Motor yangın bastırma sistemi yalnızca yer ekibi tarafından etkinleştirilebilir.
+d) Yangın bastırma sistemi sürekli basınç altında tutulur.
+ANSWER: a
+
+1335. "A detailed inspection of the braking system must be carried out following any reported brake overheat."
+a) Bildirilen herhangi bir fren aşırı ısınmasının ardından fren sisteminin ayrıntılı muayenesi yapılmalıdır.
+b) Fren aşırı ısınması standart bir operasyonel durumdur ve inceleme gerektirmez.
+c) Fren muayenesi yalnızca yıllık kontrollerde yapılır.
+d) Aşırı ısınan frenler görsel olarak yeterince kontrol edilebilir.
+ANSWER: a
+
+--- BÖLÜM B: TÜRKÇEDEN İNGİLİZCEYE ÇEVİRİ (Turkish → English) ---
+
+1336. "Tüm güvenlik önlemleri, bakım çalışmaları başlamadan önce yerinde olmalıdır."
+a) All safety precautions must be in place before maintenance work begins.
+b) Safety precautions are applied after maintenance work is completed.
+c) Maintenance begins while safety checks are still underway.
+d) Safety precautions are optional during routine maintenance.
+ANSWER: a
+
+1337. "Bir bileşen, onaylı parça veritabanında mevcut olan bir parça numarası olmadan uçağa takılamaz."
+a) A component cannot be installed on the aircraft without a part number that exists in the approved parts database.
+b) Components may be installed without checking the approved parts database.
+c) The parts database is consulted only for new aircraft types.
+d) Part numbers are assigned after installation.
+ANSWER: a
+
+1338. "Gizli korozyon, şüpheli alanlarda x-ışını veya ultrasonik test ile tespit edilebilir."
+a) Hidden corrosion can be detected in suspect areas by X-ray or ultrasonic testing.
+b) Hidden corrosion is visible under normal lighting conditions.
+c) X-ray testing is not permitted on aircraft structures.
+d) Ultrasonic testing can only detect surface corrosion.
+ANSWER: a
+
+1339. "Motor sıcaklık sınırlarını aşan herhangi bir olay, olay raporlama sistemine bildirilmelidir."
+a) Any event exceeding engine temperature limits must be reported to the incident reporting system.
+b) Engine overtemperature events are only reported if they exceed twice the limit.
+c) Temperature limit exceedances are recorded in the flight log only.
+d) Engine temperature events do not require documentation.
+ANSWER: a
+
+1340. "Yakıt sistemi bileşenleri, yangın tehlikesini azaltmak için statik elektrik deşarjı açısından periyodik olarak kontrol edilmelidir."
+a) Fuel system components should be periodically checked for static electricity discharge to reduce fire hazard.
+b) Static electricity in fuel systems is not considered a fire hazard.
+c) Static electricity checks are performed only during heavy maintenance.
+d) Fuel system bonding is checked visually during a preflight inspection.
+ANSWER: a
+
+1341. "İniş takımı kapı contaları, sızıntı belirtisi olup olmadığını belirlemek için her C kontrolünde değiştirilmelidir."
+a) Landing gear door seals should be replaced at each C-check to determine if there are signs of leakage.
+b) Landing gear door seals are replaced only if visible damage is found.
+c) Door seals are a hard-time component replaced regardless of condition.
+d) Landing gear door seals require replacement every 100 cycles only.
+ANSWER: a
+
+1342. "Pistte çalışma sırasında tüm araçlar ve ekipman, aktif uçuş yolunun dışında tutulmalıdır."
+a) During runway operations, all vehicles and equipment must be kept clear of the active runway.
+b) Vehicles may enter the runway if the control tower is notified.
+c) Equipment may be stored on inactive runways.
+d) Runway safety is the responsibility of the pilot, not ground crew.
+ANSWER: a
+
+1343. "Uçak muayenesi sırasında tüm bulunan bozukluklar, teknik kütüğe kaydedilmeli ve yetkili mühendise bildirilmelidir."
+a) All discrepancies found during aircraft inspection must be recorded in the technical log and reported to the authorised engineer.
+b) Minor discrepancies may be ignored during routine inspection.
+c) Discrepancies are only reported if they affect the next flight.
+d) The technical log is updated only after major maintenance.
+ANSWER: a
+
+1344. "Çalışan motor yakınında çalışırken, personel motor hava girişinden güvenli bir mesafede durmalıdır."
+a) When working near a running engine, personnel must stand at a safe distance from the engine air intake.
+b) Personnel may stand near the engine intake if wearing hearing protection.
+c) There is no safety distance required near engine intakes.
+d) Engine intakes are only hazardous at full power.
+ANSWER: a
+
+1345. "Ekipman bakım kılavuzu, bileşenin test, kurulum ve arıza giderme prosedürleri için başvuru dokümanıdır."
+a) The component maintenance manual is the reference document for the component's test, installation, and troubleshooting procedures.
+b) The component maintenance manual is only used by the manufacturer.
+c) Troubleshooting procedures are found in the aircraft flight manual.
+d) Installation procedures are contained in the illustrated parts catalogue.
+ANSWER: a
+
+1346. "Bir motor değişiminin ardından, motoru servise sokmadan önce bir zemin koşturma ve sızdırmazlık kontrolü yapılmalıdır."
+a) After an engine change, a ground run and leak check must be carried out before the engine is put into service.
+b) Ground runs are performed only after major overhauls.
+c) An engine may be put into service immediately after installation.
+d) Leak checks are performed during the first flight after engine change.
+ANSWER: a
+
+1347. "Bakım sonrası tüm alet hesapları, yetkili mühendis tarafından kişisel olarak doğrulanmalıdır."
+a) All tool counts after maintenance must be personally verified by the authorised engineer.
+b) Tool counts are the responsibility of the apprentice technician.
+c) Tools are counted only at the beginning and end of each shift.
+d) Tool accountability is not required for small tools.
+ANSWER: a
+
+1348. "Hava aracı teknik kayıtları, son uçuştan itibaren en az iki yıl süreyle saklanmalıdır."
+a) Aircraft technical records must be retained for at least two years from the date of the last entry.
+b) Technical records may be discarded after each maintenance check.
+c) Technical records are kept for one year after the aircraft is retired.
+d) Aircraft records retention period is determined by the operator.
+ANSWER: a
+
+1349. "Hidrolik akışkan, kirlilik testi başarısız olursa tamamen boşaltılmalı ve yenisiyle değiştirilmelidir."
+a) If the contamination test fails, the hydraulic fluid must be completely drained and replaced with new fluid.
+b) Contaminated hydraulic fluid can be filtered and reused.
+c) Hydraulic fluid contamination is checked only visually.
+d) Contaminated fluid is diluted with fresh fluid to restore serviceability.
+ANSWER: a
+
+1350. "Yüksek gerilim sistemleri üzerinde çalışmadan önce güç izolasyonu doğrulanmalı ve bir LOTO (kilit açma/etiketleme) prosedürü uygulanmalıdır."
+a) Before working on high voltage systems, power isolation must be verified and a LOTO (lockout/tagout) procedure applied.
+b) LOTO procedures are optional for low-risk electrical tasks.
+c) High voltage systems may remain energized if the area is marked.
+d) Power isolation is confirmed only after the work is completed.
+ANSWER: a
+
+1351. "Amper saatlik kapasitesi azalmış bir pil, servisten çıkarılmalı ve kapasitesi eski haline getirilene kadar uçakta kullanılmamalıdır."
+a) A battery with reduced amp-hour capacity must be removed from service and not used on the aircraft until its capacity is restored.
+b) A battery with reduced capacity may continue in service if the reduction is less than 20%.
+c) Battery capacity is checked only during scheduled overhaul.
+d) Reduced battery capacity is acceptable for short-haul operations.
+ANSWER: a
+
+1352. "Bileşenin raf ömrü dolmuşsa, görünür durumu ne olursa olsun kullanılmamalıdır."
+a) If the component's shelf life has expired, it must not be used regardless of its apparent condition.
+b) An expired component may be used if it passes a visual inspection.
+c) Shelf life is a guideline only and components may be used beyond it.
+d) Expired components are returned to the manufacturer for recertification.
+ANSWER: a
+
+1353. "Bir sıvı sızıntısı fark edildiğinde, sıvının türü önce tanımlanmalı, ardından uygun onarım prosedürü uygulanmalıdır."
+a) When a fluid leak is noticed, the type of fluid must first be identified, then the appropriate repair procedure applied.
+b) All fluid leaks are treated the same regardless of type.
+c) Small fluid leaks may be wiped away and not reported.
+d) Fluid leak repairs can be performed without identifying the fluid source.
+ANSWER: a
+
+1354. "Uçuş kontrol yüzeyleri değiştirildikten sonra, trimi ayarlamak için bir uçuş testi gerekli olabilir."
+a) After flight control surfaces are replaced, a flight test may be required to adjust the trim.
+b) Flight control replacement does not require a functional check.
+c) Trim adjustment is performed only during passenger flights.
+d) Flight tests are performed only after engine replacements.
+ANSWER: a
+
+1355. "Yangın söndürücü şişesinin basıncı belirtilen sınırların dışına çıkarsa, şişe yeniden doldurulana veya değiştirilinceye kadar sistem kullanılamaz sayılır."
+a) If the fire extinguisher bottle pressure falls outside specified limits, the system is considered unserviceable until the bottle is recharged or replaced.
+b) Fire extinguisher bottles are considered serviceable if pressure is within 10% of the limit.
+c) Pressure is checked only during scheduled maintenance checks.
+d) A low-pressure fire extinguisher may remain in service for one more flight.
+ANSWER: a
+
+1356. "Tüm bakım görevleri, tamamlanmadan önce uygun lisansa sahip bir teknisyen tarafından imzalanmalıdır."
+a) All maintenance tasks must be signed off by a technician holding the appropriate licence before they are considered complete.
+b) Maintenance tasks may be signed off by any member of the maintenance team.
+c) Signing off is only required for airworthiness-critical tasks.
+d) Apprentices may sign off tasks they have completed under supervision.
+ANSWER: a
+
+1357. "Uçak yeniden servise alınmadan önce, tüm açılan paneller ve erişim kapakları kapatılmalı ve güvenceye alınmalıdır."
+a) Before the aircraft is returned to service, all opened panels and access doors must be closed and secured.
+b) Panel closures are verified only during the post-flight check.
+c) Access doors are secured after the aircraft is towed to the gate.
+d) Panels may be left open for the next inspection if within 24 hours.
+ANSWER: a
+
+1358. "Bakım kayıtlarında yapılan değişiklikler, orijinal girişin okunabilir kalması için düzeltilmelidir."
+a) Corrections in maintenance records must be made so that the original entry remains legible.
+b) Incorrect entries may be obscured with correction fluid.
+c) Maintenance record corrections require a new entry only.
+d) Incorrect data in maintenance records may be deleted electronically.
+ANSWER: a
+
+1359. "Uçak teknik arıza nedeniyle gecikirse, tüm gecikmeler ve alınan düzeltici önlemler belgelenmelidir."
+a) If the aircraft is delayed due to a technical defect, all delays and corrective actions taken must be documented.
+b) Technical delays are only recorded if they exceed one hour.
+c) Delay documentation is the responsibility of the flight crew only.
+d) Corrective actions are documented only if the defect recurs.
+ANSWER: a
+
+1360. "Tüm kompozit onarımlar, yapısal bütünlüğün korunması için onaylı onarım şemalarına uygun şekilde yapılmalıdır."
+a) All composite repairs must be performed in accordance with approved repair schemes to preserve structural integrity.
+b) Composite repairs may be performed using any epoxy resin available.
+c) Structural integrity is not a consideration for minor composite repairs.
+d) Approved repair schemes are used only for primary structure.
+ANSWER: a
+
+1361. "Serbest düşüş iniş takımı uzatma sistemi, birincil hidrolik sistemin arızalanması durumunda kullanılır."
+a) The free-fall landing gear extension system is used in the event of primary hydraulic system failure.
+b) The free-fall system is used for normal landing gear extension.
+c) Free-fall systems are tested only during simulator training.
+d) The free-fall landing gear system uses a backup pump.
+ANSWER: a
+
+1362. "Bakım çalışması sırasında tüm Yabancı Cisim Hasarı (FOD) riski en aza indirilmeli ve her iş vardiyasının bitiminde alan temizliği yapılmalıdır."
+a) All Foreign Object Damage (FOD) risk must be minimised during maintenance work and area cleaning carried out at the end of each work shift.
+b) FOD prevention is the sole responsibility of the quality inspector.
+c) Area cleaning is only required in the engine run-up bay.
+d) FOD checks are performed before the first flight of the day only.
+ANSWER: a
+
+1363. "Bir batarya şarj istasyonunun yakınında kıvılcım çıkaran alet kullanımından kaçınılmalıdır; çünkü şarj edilen pillerin hidrojen gazı ürettiği bilinmektedir."
+a) The use of spark-producing tools near a battery charging station should be avoided, as batteries being charged are known to produce hydrogen gas.
+b) Hydrogen gas is only produced by aircraft batteries at high temperatures.
+c) Spark-producing tools may be used near charging batteries if ventilated.
+d) Battery charging areas require only a no-smoking sign.
+ANSWER: a
+
+1364. "Görev kartları, her adımın tamamlandıktan sonra işaretlenip imzalanmasını sağlamak için kullanılır."
+a) Task cards are used to ensure that each step is checked off and signed after completion.
+b) Task cards are only used for complex maintenance tasks.
+c) Task card signatures are required only for airworthiness items.
+d) Task cards are optional if the technician is experienced.
+ANSWER: a
+
+1365. "Motorun servis kılavuzunda belirtilen yağlama noktaları, her 'A' kontrolünde yağlanmalıdır."
+a) The lubrication points specified in the engine servicing manual must be lubricated at each 'A' check.
+b) Engine lubrication points are lubricated only at overhaul.
+c) Lubrication intervals are determined by the technician's judgement.
+d) Engine lubrication is not included in the 'A' check scope.
+ANSWER: a
+
+--- BÖLÜM C: BAĞLAMSAL ÇEVİRİ (Contextual Translation) ---
+
+1366. Which English sentence best translates: "Korozyon tespit edilirse, onarım veya değiştirme için uygun prosedüre bakınız."
+a) If corrosion is detected, refer to the appropriate procedure for repair or replacement.
+b) Corrosion must be detected before any repair can proceed.
+c) If repairs are needed, refer to the corrosion section of the manual.
+d) Corrosion repair procedures are found in the structural repair manual only.
+ANSWER: a
+
+1367. Which English sentence best translates: "Motor çalışırken tekerleklerin önüne takoz yerleştirin."
+a) Place wheel chocks in front of the wheels before starting the engine.
+b) Place wheel chocks under the aircraft after the engine has stopped.
+c) Remove wheel chocks after the engine reaches idle.
+d) Wheel chocks are not required when engine is running.
+ANSWER: a
+
+1368. Which Turkish sentence best translates: "Do not use petroleum-based products on oxygen system components."
+a) Oksijen sistemi bileşenlerinde petrol bazlı ürünler kullanmayın.
+b) Oksijen sisteminde yalnızca petrol bazlı ürünler kullanın.
+c) Petrol bazlı ürünler tüm uçak sistemleri için uygundur.
+d) Oksijen sistemi ürünleri petrol bazlıdır.
+ANSWER: a
+
+1369. Which Turkish sentence best translates: "Ensure the safety pin is removed before the landing gear is retracted."
+a) İniş takımı geri çekilmeden önce güvenlik piminin çıkarıldığından emin olun.
+b) İniş takımı geri çekildikten sonra güvenlik pimini takın.
+c) Güvenlik pimi iniş takımı uzatıldığında çıkarılır.
+d) Güvenlik pimi yalnızca yer bakımında çıkarılır.
+ANSWER: a
+
+1370. Which Turkish sentence best translates: "The aircraft must be supported on jacks before the landing gear is retracted for maintenance purposes."
+a) İniş takımı bakım amaçlı geri çekilmeden önce uçak jacks üzerinde desteklenmelidir.
+b) İniş takımı bakımı uçak yerde dururken yapılabilir.
+c) Jacks kullanımı yalnızca büyük bakımlarda gereklidir.
+d) İniş takımı geri çekilmeden önce kaldırılmamalıdır.
+ANSWER: a
+
+1371. Which English sentence best translates: "Yakıt tanklarındaki herhangi bir sızıntı, araştırılıncaya kadar uçağı yerden kaldırmayı önler."
+a) Any fuel tank leak grounds the aircraft until investigated.
+b) Fuel tank leaks are acceptable if below the maintenance limit.
+c) Aircraft may fly with minor fuel leaks if the crew is informed.
+d) Fuel leaks are investigated after the next scheduled maintenance.
+ANSWER: a
+
+1372. Which English sentence best translates: "Hidrolik sistem değişikliklerinden sonra sızıntı testi zorunludur."
+a) A leak test is mandatory after hydraulic system modifications.
+b) Hydraulic leak tests are performed at the manufacturer's discretion.
+c) Hydraulic tests are only required after new aircraft delivery.
+d) Leak tests are optional for minor hydraulic modifications.
+ANSWER: a
+
+1373. Which Turkish sentence best translates: "All electrical power must be removed from the aircraft before work begins on the fuel system."
+a) Yakıt sistemi üzerinde çalışmaya başlamadan önce uçaktaki tüm elektrik gücü kesilmelidir.
+b) Yakıt sistemi çalışmaları sırasında elektrik güvence altına alınır.
+c) Elektrik gücü yalnızca motor çalışırken yakıt sisteminden kaldırılır.
+d) Yakıt sistemi çalışmaları sırasında elektriğe gerek yoktur.
+ANSWER: a
+
+1374. Which Turkish sentence best translates: "The cargo hold must be cleared of all personnel before pressurization testing."
+a) Basınçlandırma testinden önce kargo ambarı tüm personelden boşaltılmalıdır.
+b) Kargo ambarı basınçlandırma testi sırasında dolu olabilir.
+c) Basınçlandırma testleri yalnızca uçuş sırasında yapılır.
+d) Personel, basınçlandırma testi sırasında kargo ambarında gözlem yapabilir.
+ANSWER: a
+
+1375. Which English sentence best translates: "Motor bakımı sırasında çıkarılan tüm parçalar uygun şekilde etiketlenmeli ve depolanmalıdır."
+a) All parts removed during engine maintenance must be properly tagged and stored.
+b) Parts removed during maintenance may be placed on the floor temporarily.
+c) Tagging of removed parts is optional for experienced technicians.
+d) Engine parts are returned to stores without tagging if reusable.
+ANSWER: a
+
+1376. Which Turkish sentence best translates: "Nitrogen must be used to inflate aircraft tyres, not compressed air."
+a) Uçak lastiklerini şişirmek için basınçlı hava değil azot kullanılmalıdır.
+b) Uçak lastikleri basınçlı havayla şişirilir.
+c) Lastik şişirme için azot veya hava kullanılabilir.
+d) Uçak lastikleri yalnızca büyük bakımlarda şişirilir.
+ANSWER: a
+
+1377. Which English sentence best translates: "Uçak aydınlatma sistemleri, servis öncesi tam anlamıyla işlevsel olmalıdır."
+a) Aircraft lighting systems must be fully functional before service.
+b) Non-essential aircraft lighting may be inoperative during service.
+c) Aircraft lighting is checked only during night operations.
+d) Lighting systems are tested at the beginning of each week.
+ANSWER: a
+
+1378. Which Turkish sentence best translates: "The flight control rigging must be checked and adjusted after any major structural repair."
+a) Herhangi bir büyük yapısal onarımdan sonra uçuş kontrol rigging'i kontrol edilmeli ve ayarlanmalıdır.
+b) Yapısal onarımdan sonra uçuş kontrolü rigging'i değiştirilir.
+c) Büyük onarımlar uçuş kontrol rigging'ini etkilemez.
+d) Uçuş kontrol rigging'i yalnızca yıllık bakımda kontrol edilir.
+ANSWER: a
+
+1379. Which English sentence best translates: "Bakım kılavuzundaki prosedürler herhangi bir şüphe durumunda uygulanacak prosedürlerdir."
+a) The procedures in the maintenance manual are the procedures to be applied in case of any doubt.
+b) Procedures in the maintenance manual are optional guidelines.
+c) Maintenance manuals are consulted only for complex tasks.
+d) Technicians may substitute their own procedures if more efficient.
+ANSWER: a
+
+1380. Which Turkish sentence best translates: "Any modification to the aircraft structure must be approved by the design organisation before work begins."
+a) Uçak yapısında herhangi bir değişiklik, çalışma başlamadan önce tasarım kuruluşu tarafından onaylanmalıdır.
+b) Yapısal değişiklikler onaysız gerçekleştirilebilir ancak sonradan belgelenmelidir.
+c) Hafif yapısal değişiklikler onay gerektirmez.
+d) Tasarım onayı yalnızca yeni tip uçaklarda gereklidir.
+ANSWER: a
+
+1381. Which English sentence best translates: "Servise döndürmeden önce tüm ekipman kapakları ve paneller yerlerine takılmalı ve güvence altına alınmalıdır."
+a) Before return to service, all equipment covers and panels must be installed and secured.
+b) Panels are secured after the first post-maintenance flight.
+c) Equipment covers are optional if the aircraft is operated in dry conditions.
+d) Panel installation is verified only by the quality inspector.
+ANSWER: a
+
+1382. Which Turkish sentence best translates: "The anti-icing system must be tested before flight in forecast icing conditions."
+a) Buzlanma tahmin edilen koşullarda uçuştan önce buz önleme sistemi test edilmelidir.
+b) Buz önleme sistemi yalnızca buzlanma karşılaşıldığında test edilir.
+c) Buz önleme testi uçuş sırasında gerçekleştirilir.
+d) Buz önleme sistemi uçuş ekibinin takdirine bırakılmıştır.
+ANSWER: a
+
+1383. Which English sentence best translates: "Uçak, yapısal hasarı önlemek için izin verilen maksimum zemin hızını aşmamalıdır."
+a) The aircraft must not exceed the maximum allowable ground speed to prevent structural damage.
+b) Maximum ground speed limits apply only during high-wind conditions.
+c) Structural damage from towing is covered under the operator's insurance.
+d) Towing speed is at the discretion of the towing crew.
+ANSWER: a
+
+1384. Which Turkish sentence best translates: "Carbon brake discs must be handled with care as they are fragile and sensitive to contamination."
+a) Karbon fren diskleri kırılgan ve kirliliğe hassas olduğundan dikkatli kullanılmalıdır.
+b) Karbon fren diskleri hasara karşı dayanıklıdır.
+c) Karbon diskler herhangi bir temizleyici maddeyle temizlenebilir.
+d) Karbon fren disklerinin bakımı özel alet gerektirmez.
+ANSWER: a
+
+1385. Which English sentence best translates: "Uçak büyük bakıma girerken, tüm bileşen yaşam sınırı değerleri gözden geçirilmeli ve kaydedilmelidir."
+a) When the aircraft enters heavy maintenance, all component life limit values must be reviewed and recorded.
+b) Life limit reviews are performed only for engine components.
+c) Component life limits are tracked automatically by the aircraft system.
+d) Life limit records are updated only during C-checks.
+ANSWER: a
+
+1386. Which Turkish sentence best translates: "The Technical Log must accompany the aircraft at all times during commercial operation."
+a) Teknik kütük, ticari operasyon sırasında uçakla her zaman birlikte bulunmalıdır.
+b) Teknik kütük, uçuş sırasında yerde tutulabilir.
+c) Teknik kütük yalnızca uluslararası uçuşlarda gereklidir.
+d) Teknik kütük elektronik olarak tutulursa fiziksel kopya gerekmez.
+ANSWER: a
+
+1387. Which English sentence best translates: "Yüksek basınçlı silindirler, kullanımdan önce hasara veya korozyona karşı kontrol edilmelidir."
+a) High pressure cylinders must be checked for damage or corrosion before use.
+b) High pressure cylinders are inspected only after hydrostatic testing.
+c) Cylinder inspection is performed only at the overhaul facility.
+d) High pressure cylinders are exempt from corrosion checks.
+ANSWER: a
+
+1388. Which Turkish sentence best translates: "Brake wear indicators must be checked at the intervals specified in the maintenance schedule."
+a) Fren aşınma göstergeleri, bakım programında belirtilen aralıklarda kontrol edilmelidir.
+b) Fren aşınma göstergeleri yalnızca fren değişiminde kontrol edilir.
+c) Fren kontrolü uçuş ekibinin preflight görevi kapsamındadır.
+d) Fren aşınma göstergeleri görsel kontrol yerine basınç testiyle belirlenir.
+ANSWER: a
+
+1389. Which English sentence best translates: "Herhangi bir gizli düzeltmeyi onaylamak için, tamir belgeleri imzalanmadan önce tasarım otoritesinden izin alınmalıdır."
+a) To approve any concealed repair, permission must be obtained from the design authority before repair documents are signed.
+b) Concealed repairs may be approved by the maintenance engineer directly.
+c) Design authority approval is required only for primary structure repairs.
+d) Repair documents may be signed before obtaining design authority approval.
+ANSWER: a
+
+1390. Which Turkish sentence best translates: "Engine mounts must be inspected for cracks, distortion, and corrosion at each C-check."
+a) Her C-kontrolünde motor bağlantı noktaları çatlaklar, bozulma ve korozyon açısından incelenmelidir.
+b) Motor bağlantı noktası kontrolü yalnızca motor değişiminde yapılır.
+c) Motor bağlantı noktası incelemesi borescope gerektirmez.
+d) Motor bağlantı noktaları görsel olarak incelenemeyen bileşenlerdir.
+ANSWER: a
+
+1391. "The flight data recorder must be removed and read out at defined intervals to verify correct operation."
+a) Uçuş veri kaydedici, doğru çalışmayı doğrulamak için belirli aralıklarda çıkarılmalı ve okunmalıdır.
+b) Uçuş veri kaydedici yalnızca kaza sonrasında çıkarılır.
+c) Uçuş veri kaydedici verileri uçuş sırasında okunur.
+d) Uçuş veri kaydedicileri bakım gerektirmez.
+ANSWER: a
+
+1392. "Cabin pressure differential must not exceed the maximum design limit under any operational condition."
+a) Kabin basınç farkı, herhangi bir operasyonel koşul altında maksimum tasarım sınırını aşmamalıdır.
+b) Kabin basıncı yolcu sayısına göre ayarlanır.
+c) Maksimum tasarım basıncı yalnızca testlerde aşılabilir.
+d) Basınç farkı sınırları yalnızca acil durum prosedürlerinde uygulanır.
+ANSWER: a
+
+1393. "The APU should only be started if the fire detection and suppression system are serviceable."
+a) APU yalnızca yangın algılama ve bastırma sistemi servis edilebilir durumdaysa çalıştırılmalıdır.
+b) APU her koşulda çalıştırılabilir.
+c) APU yangın sistemi arızalıyken çalıştırılabilir.
+d) APU başlatma prosedürleri yangın sisteminden bağımsızdır.
+ANSWER: a
+
+1394. "Structural repairs must restore the original strength, stiffness, and aerodynamic profile of the damaged area."
+a) Yapısal onarımlar, hasarlı alanın orijinal mukavemet, sertlik ve aerodinamik profilini geri kazandırmalıdır.
+b) Yapısal onarımların yalnızca yapının gücünü geri kazandırması yeterlidir.
+c) Aerodinamik profil küçük yapısal onarımlarda göz ardı edilebilir.
+d) Yapısal onarımlar sertliği artırabilir ama mukavemeti değiştiremez.
+ANSWER: a
+
+1395. "Dangerous goods carried in aircraft must be declared by the shipper and accepted by the operator in accordance with IATA regulations."
+a) Uçakta taşınan tehlikeli maddeler, IATA yönetmeliklerine uygun olarak gönderici tarafından beyan edilmeli ve operatör tarafından kabul edilmelidir.
+b) Tehlikeli maddeler beyan edilmeden taşınabilir.
+c) IATA yönetmelikleri yalnızca uluslararası uçuşlar için geçerlidir.
+d) Tehlikeli madde beyanı operatörün sorumluluğundadır, gönderici değil.
+ANSWER: a
+
+1396. "Ground power should only be connected to the aircraft after confirming no fuel spill or vapour is present."
+a) Yer gücü, yakıt sızıntısı veya buharı bulunmadığını doğruladıktan sonra uçağa bağlanmalıdır.
+b) Yer gücü bağlantısı yakıt ikmali ile eş zamanlı yapılabilir.
+c) Yer gücü, yakıt ikmali tamamlandıktan hemen sonra bağlanır.
+d) Yakıt buharı varlığında yer gücü bağlanabilir.
+ANSWER: a
+
+1397. "Non-destructive testing of a component should be performed before its return to service after a repair."
+a) Bir bileşenin onarım sonrasında servise dönmeden önce tahribatsız muayenesi yapılmalıdır.
+b) NDT yalnızca fabrika üretimi sırasında uygulanır.
+c) Onarım sonrası NDT yalnızca birincil yapısal parçalar için gereklidir.
+d) Bileşenler, NDT yapılmadan servise alınabilir.
+ANSWER: a
+
+1398. "Component installation must be carried out by a licensed technician and recorded in the aircraft maintenance record."
+a) Bileşen kurulumu, lisanslı bir teknisyen tarafından gerçekleştirilmeli ve uçak bakım kaydına kaydedilmelidir.
+b) Bileşen kurulumu herhangi bir teknisyen tarafından yapılabilir.
+c) Bakım kayıtları kurulumdan iki gün sonra güncellenir.
+d) Lisanslı teknisyen gereksinimi yalnızca büyük bileşenler için geçerlidir.
+ANSWER: a
+
+1399. "The maintenance organisation must maintain a calibration register for all precision measuring tools."
+a) Bakım kuruluşu, tüm hassas ölçüm aletleri için bir kalibrasyon kaydı tutmalıdır.
+b) Kalibrasyon kayıtları yalnızca torque anahtarları için tutulur.
+c) Ölçüm aleti kalibrasyonu mühendislerin takdirine bırakılmıştır.
+d) Kalibrasyon kaydı yalnızca yetkili muayene birimlerinde tutulur.
+ANSWER: a
+
+1400. "All personnel working on or near aircraft must wear appropriate personal protective equipment."
+a) Uçak üzerinde veya yakınında çalışan tüm personel uygun kişisel koruyucu ekipman giymelidir.
+b) Kişisel koruyucu ekipman yalnızca tehlikeli maddeler çalışılırken gereklidir.
+c) Deneyimli teknisyenler kişisel koruyucu ekipman kullanımından muaftır.
+d) Koruyucu ekipman gereksinimleri ülkeden ülkeye değişir.
+ANSWER: a
+
+1401. "Hydraulic pump output pressure must be checked and compared against the maintenance manual limits."
+a) Hidrolik pompa çıkış basıncı kontrol edilmeli ve bakım kılavuzu sınırlarıyla karşılaştırılmalıdır.
+b) Pompa çıkış basıncı yalnızca sistem arızasında kontrol edilir.
+c) Hidrolik basınç sınırları sabit olup kontrol gerektirmez.
+d) Pompa basıncı yalnızca büyük bakımlarda kontrol edilir.
+ANSWER: a
+
+1402. "The tyre pressure must be set with the aircraft on jacks or the tyre assembly removed."
+a) Lastik basıncı, uçak jacksta asılıyken veya lastik takımı sökülmüşken ayarlanmalıdır.
+b) Lastik basıncı uçak zemin üzerindeyken ayarlanabilir.
+c) Lastik basıncı yalnızca tam yük durumunda kontrol edilir.
+d) Lastik basıncı düzenlemesi her zaman uçak indiğinde yapılır.
+ANSWER: a
+
+1403. "Electrical bonding resistance must be measured and fall within the limits specified in the maintenance manual."
+a) Elektriksel bağlama direnci ölçülmeli ve bakım kılavuzunda belirtilen sınırlar içinde olmalıdır.
+b) Elektriksel bağlama direnci görsel olarak kontrol edilir.
+c) Bağlama direnci sınırları her operatör tarafından belirlenir.
+d) Elektriksel bağlama testi yalnızca büyük bakımlarda yapılır.
+ANSWER: a
+
+1404. "Avionics equipment must be protected from electrostatic discharge during removal, handling, and installation."
+a) Aviyonik ekipman, sökme, taşıma ve kurulum sırasında elektrostatik deşarjdan korunmalıdır.
+b) Aviyonik ekipman elektrostatik deşarjdan korunmaya gerek duymaz.
+c) Elektrostatik koruma yalnızca yeni ekipman için gereklidir.
+d) Aviyonik ekipman metal kutularda depolanarak yeterince korunur.
+ANSWER: a
+
+1405. "Aircraft weighing must be performed in a draft-free hangar to ensure accurate results."
+a) Uçak tartımı, doğru sonuçlar elde etmek için hava akıntısı olmayan bir hangarda gerçekleştirilmelidir.
+b) Uçak tartımı yalnızca açık havada yapılabilir.
+c) Tartım sırasında rüzgar sonuçları etkilemez.
+d) Uçak tartımı operasyonel alanda yapılabilir.
+ANSWER: a
+
+1406. "Fuel system inspection panels must be sealed with approved sealant after maintenance to prevent fuel leakage."
+a) Yakıt sistemi inceleme panelleri, yakıt sızıntısını önlemek için bakım sonrasında onaylı sealant ile kapatılmalıdır.
+b) İnceleme panelleri basit yapışkanteyple kapatılabilir.
+c) Yakıt sistemi panelleri bakımdan sonra açık bırakılabilir.
+d) Sealant uygulaması yalnızca büyük bakımlarda gereklidir.
+ANSWER: a
+
+1407. "The hydraulic system pressure relief valve prevents the system from exceeding the maximum design pressure."
+a) Hidrolik sistem basınç tahliye valfi, sistemin maksimum tasarım basıncını aşmasını engeller.
+b) Basınç tahliye valfi, sistemin minimum basıncını korur.
+c) Basınç tahliye valfi yalnızca acil durumlarda açılır.
+d) Hidrolik basınç sınırları yalnızca tahliye valfleriyle değil, pompalar tarafından da kontrol edilir.
+ANSWER: a
+
+1408. "The aircraft must be towed only by qualified personnel using approved towing equipment."
+a) Uçak yalnızca onaylı çekme ekipmanı kullanarak nitelikli personel tarafından çekilmelidir.
+b) Herhangi bir araç çekme aracı olarak kullanılabilir.
+c) Uçak çekme herhangi bir yerde personel tarafından yapılabilir.
+d) Çekme ekipmanı onayına gerek yoktur.
+ANSWER: a
+
+1409. "Oxygen cylinders must be stored vertically and secured against falling."
+a) Oksijen tüpleri dikey olarak depolanmalı ve düşmeye karşı güvence altına alınmalıdır.
+b) Oksijen tüpleri yatay olarak depolanabilir.
+c) Oksijen tüpleri herhangi bir pozisyonda depolanabilir.
+d) Oksijen depolama yalnızca büyük bakım sırasında düzenlenir.
+ANSWER: a
+
+1410. "All electrical fuses and circuit breakers must be replaced with components of the correct ampere rating."
+a) Tüm elektrik sigortaları ve devre kesiciler doğru amper değerinde bileşenlerle değiştirilmelidir.
+b) Sigortalar daha yüksek değerli bileşenlerle değiştirilebilir.
+c) Devre kesici değeri geçici onarımlar için değiştirilebilir.
+d) Fuse değeri yalnızca üretici tarafından değiştirilir.
+ANSWER: a
+
+--- BÖLÜM D: TEKNIK CÜMLE ÇEVİRİSİ (Technical Sentence Translation) ---
+
+1411. Translate: "İniş takımı geri çekilmeden önce, düşme önleme pimleri çıkarılmalıdır."
+a) Before the landing gear is retracted, the anti-drop pins must be removed.
+b) After the landing gear retracts, the pins must be removed.
+c) Landing gear pins are installed after retraction.
+d) Anti-drop pins prevent the landing gear from extending.
+ANSWER: a
+
+1412. Translate: "Engine oil level check must be performed within the time frame specified after engine shutdown."
+a) Motor yağı seviye kontrolü, motor kapatıldıktan sonra belirtilen süre içinde yapılmalıdır.
+b) Motor yağı seviyesi yalnızca motor çalışırken kontrol edilir.
+c) Yağ seviyesi kontrolü motor kapatılmadan önce yapılır.
+d) Motor yağı seviye kontrolünün zamanlaması önemli değildir.
+ANSWER: a
+
+1413. Translate: "Pnömatik sistem, bakım çalışmalarına başlamadan önce tamamen boşaltılmalıdır."
+a) The pneumatic system must be fully depressurized before maintenance work begins.
+b) The pneumatic system must be pressurized before maintenance.
+c) Maintenance may begin while the pneumatic system is still pressurized.
+d) The pneumatic system depressurization is performed during maintenance.
+ANSWER: a
+
+1414. Translate: "A friction lock must be applied to all cockpit controls before leaving the aircraft unattended."
+a) Uçak başıboş bırakılmadan önce tüm kokpit kontrol elemanlarına sürtünme kilidi uygulanmalıdır.
+b) Sürtünme kilidi yalnızca uzun süreli park için gereklidir.
+c) Kokpit kontrolleri yalnızca otopark kilidiyle güvence altına alınır.
+d) Sürtünme kilitleri uçuş sırasında uygulanır.
+ANSWER: a
+
+1415. Translate: "Hidrolik sistem pompaları, baypas valfi açık konumdayken çalıştırılmamalıdır."
+a) Hydraulic system pumps must not be operated when the bypass valve is in the open position.
+b) Hydraulic pumps may be operated with the bypass valve open.
+c) Bypass valves have no effect on pump operation.
+d) Pumps must be stopped when the bypass valve is closed.
+ANSWER: a
+
+1416. Translate: "Aircraft weight and balance must be confirmed before every flight."
+a) Her uçuştan önce uçak ağırlık ve dengesi teyit edilmelidir.
+b) Ağırlık ve denge yalnızca ilk uçuşta kontrol edilir.
+c) Uçak dengesi yalnızca yük değişikliklerinde kontrol edilir.
+d) Ağırlık ve denge hesaplamaları uçuş sırasında yapılır.
+ANSWER: a
+
+1417. Translate: "Yanıcı sıvılar yalnızca onaylı güvenli kaplarda depolanmalı ve etiketlenmelidir."
+a) Flammable liquids must only be stored in approved safety containers and labelled.
+b) Flammable liquids may be stored in any sealed container.
+c) Flammable liquids require labelling only in public areas.
+d) Approved containers are required only for aviation fuel storage.
+ANSWER: a
+
+1418. Translate: "The de-icing fluid must be applied at the correct concentration to be effective."
+a) Buz çözücü sıvı, etkili olabilmesi için doğru konsantrasyonda uygulanmalıdır.
+b) Buz çözücü sıvı her zaman saf olarak uygulanır.
+c) Konsantrasyon buz çözücü sıvı etkinliğini etkilemez.
+d) Buz çözücü sıvı yalnızca kanatlara uygulanır.
+ANSWER: a
+
+1419. Translate: "Geri çekme sırasında iniş takımı kapı kilitlerinin çalışmasını doğrulamak için mekanik fonksiyon testi yapılmalıdır."
+a) A mechanical function test must be performed to verify the operation of the landing gear door locks during retraction.
+b) Landing gear door locks are tested only on initial installation.
+c) Door lock function testing is performed visually.
+d) Mechanical tests are performed only after reported gear problems.
+ANSWER: a
+
+1420. Translate: "All work performed on life-limited components must be recorded with component serial number and current life status."
+a) Ömür sınırlı bileşenler üzerinde gerçekleştirilen tüm işler, bileşen seri numarası ve mevcut ömür durumu ile birlikte kaydedilmelidir.
+b) Ömür sınırlı bileşenler yalnızca seri numaralarıyla kaydedilir.
+c) Ömür durumu yalnızca bileşen değişiminde kaydedilir.
+d) Bileşen ömür kayıtları yalnızca büyük bakımlarda tutulur.
+ANSWER: a
+
+--- BÖLÜM E: EK ÇEVİRİ SORULARI ---
+
+1421. "The aircraft must be secured against inadvertent movement before any maintenance begins."
+a) Herhangi bir bakım başlamadan önce uçak kasıtsız harekete karşı güvence altına alınmalıdır.
+b) Uçak güvenliği bakım personelinin sorumluluğunda değildir.
+c) Kasıtsız hareket önlemi yalnızca rüzgarlı koşullarda gereklidir.
+d) Uçakları güvence altına almak için takozlar yeterlidir.
+ANSWER: a
+
+1422. "Electrical bonding straps that are broken or corroded must be replaced immediately."
+a) Kırık veya korozif elektrik bağlama kayışları derhal değiştirilmelidir.
+b) Kırık bağlama kayışları onarılabilir ve yeniden kullanılabilir.
+c) Korozif bağlama kayışları temizlenerek servis kullanılmaya devam edilebilir.
+d) Bağlama kayışları yalnızca yakıt sistemi yakınındaki sistemlerde önemlidir.
+ANSWER: a
+
+1423. "The seal around an access panel must be replaced if found cracked, hardened, or damaged."
+a) Erişim paneli etrafındaki conta, çatlak, sertleşmiş veya hasarlı bulunursa değiştirilmelidir.
+b) Hasarlı contalar onarılabilir ve yeniden kullanılabilir.
+c) Contalar yalnızca yakıt sistemi erişim panellerinde önemlidir.
+d) Erişim paneli contaları yalnızca büyük bakımlarda kontrol edilir.
+ANSWER: a
+
+1424. "Hydraulic fluid must be sampled and analysed at the intervals specified in the maintenance programme."
+a) Hidrolik sıvı, bakım programında belirtilen aralıklarda numune alınarak analiz edilmelidir.
+b) Hidrolik sıvı yalnızca renk değişikliğinde analiz edilir.
+c) Hidrolik sıvı analizi yalnızca sisteme büyük bakım yapıldığında gereklidir.
+d) Bakım programı hidrolik sıvı numune alma programını belirtmez.
+ANSWER: a
+
+1425. "Crew oxygen pressure must be within the specified range to ensure adequate supply for the entire flight."
+a) Mürettebat oksijen basıncı, tüm uçuş süresince yeterli arzı sağlamak için belirtilen aralıkta olmalıdır.
+b) Oksijen basıncı yalnızca uzun uçuşlar için belirtilen aralıkta olmalıdır.
+c) Oksijen basıncı minimum sınırın üzerinde olduğu sürece yeterlidir.
+d) Mürettebat oksijen, yedek sistem aracılığıyla ayarlanabilir.
+ANSWER: a
+
+1426. "Repair instructions must be followed precisely; any deviation requires engineering approval."
+a) Onarım talimatları tam olarak takip edilmelidir; herhangi bir sapma mühendislik onayı gerektirir.
+b) Onarım talimatlarından onay alınmadan sapılabilir.
+c) Mühendislik onayı yalnızca yapısal onarımlar için gereklidir.
+d) Talimatlardan küçük sapmalar kabul edilebilir.
+ANSWER: a
+
+1427. "Following an aircraft washing, all drain holes and vents must be checked to ensure they are clear."
+a) Uçak yıkamasının ardından, tüm tahliye delikleri ve havalandırmaların açık olduğundan emin olmak için kontrol edilmelidir.
+b) Tahliye delikleri yalnızca ağır yağıştan sonra kontrol edilir.
+c) Uçak yıkama prosedürleri tahliye delik kontrolü gerektirmez.
+d) Havalandırma kontrolü yalnızca basınçlandırma sırasında yapılır.
+ANSWER: a
+
+1428. "The aircraft position and anti-collision lights must be operational for night operations."
+a) Uçak konum ve çarpışma önleme ışıkları gece operasyonları için çalışır durumda olmalıdır.
+b) Gece operasyonlarında yalnızca navigasyon ışıkları gereklidir.
+c) Çarpışma önleme ışıkları yalnızca kalkış ve iniş için etkinleştirilir.
+d) Işık gereklilikleri uçuş ekibinin takdirine bırakılmıştır.
+ANSWER: a
+
+1429. "Any distortion or bending of a propeller blade exceeding limits requires removal and return to the overhaul facility."
+a) Sınırları aşan herhangi bir pervane kanadı bozulması veya eğilmesi, söküm ve revizyon tesisine iade gerektirir.
+b) Hafif pervane deformasyonu sahada onarılabilir.
+c) Pervane hasarı yalnızca görsel incelemeyle değerlendirilir.
+d) Sınır değerleri aşılmadan önce pervaneler serviste kalabilir.
+ANSWER: a
+
+1430. "Cabin pressure controller settings must be checked and adjusted in accordance with the AMM after replacement."
+a) Kabin basınç kontrolörü ayarları, değişimden sonra AMM'ye uygun olarak kontrol edilmeli ve ayarlanmalıdır.
+b) Kabin basınç kontrolörü ayarları değişim gerektirmez.
+c) Basınç kontrolörü ayarlamaları yalnızca uçuş testinde yapılır.
+d) Kabin basınç kontrolörü fabrika ayarlıdır ve değişim gerektirmez.
+ANSWER: a
+
+1431. "Fuel filter elements must be replaced at the intervals stated in the aircraft maintenance schedule."
+a) Yakıt filtresi elemanları, uçak bakım programında belirtilen aralıklarda değiştirilmelidir.
+b) Yakıt filtresi elemanları yalnızca filtrenin tıkandığı zaman değiştirilir.
+c) Yakıt filtre değişim aralıkları pilotun tercihinedir.
+d) Yakıt filtresi elemanları ömür boyu kullanım için tasarlanmıştır.
+ANSWER: a
+
+1432. "Engine compressor stall can be caused by inlet guide vane malfunction or fuel flow irregularities."
+a) Motor kompresör durması, giriş yol kılavuz kanat arızası veya yakıt akışı düzensizlikleri tarafından neden olabilir.
+b) Kompresör durması yalnızca kalkış sırasında meydana gelir.
+c) Kompresör durması yalnızca motor fanlarda görülür.
+d) Yakıt akışı kompresör durmalarını etkilemez.
+ANSWER: a
+
+1433. "Aircraft records that have been falsified or altered without authorisation are a serious regulatory offence."
+a) İzinsiz tahrif edilmiş veya değiştirilmiş uçak kayıtları ciddi bir düzenleyici ihlaldir.
+b) Bakım kayıtları herhangi bir nedenle değiştirilebilir.
+c) Küçük hataları düzeltmek için kayıtlara değişiklik yapmak kabul edilebilir.
+d) Kayıt değişiklikleri yalnızca yetkili mühendis tarafından yapıldığında ihlal oluşturmaz.
+ANSWER: a
+
+1434. "The emergency evacuation slides must be armed when the aircraft doors are closed for flight."
+a) Acil tahliye kaydırakları, uçuş için uçak kapıları kapatıldığında silahlı konuma getirilmelidir.
+b) Acil tahliye kaydırakları yalnızca uzun uçuşlar için silahlı konuma getirilir.
+c) Kaydırak aktivasyonu kabinin kararına bırakılmıştır.
+d) Acil kaydıraklar her zaman hazır konumdadır.
+ANSWER: a
+
+1435. "Damaged heat shield blankets on the engine nacelle must be replaced before the aircraft is returned to service."
+a) Motor gondolundaki hasarlı ısı kalkanı örtüler, uçak servise dönmeden önce değiştirilmelidir.
+b) Hasarlı ısı kalkanları geçici olarak bantlanabilir.
+c) Isı kalkanı hasarı yalnızca C-kontrollerinde değerlendirilir.
+d) Küçük ısı kalkanı hasarları kabul edilebilirdir.
+ANSWER: a
+
+1436. "The aircraft battery must be fully charged and tested before each return to service after a long storage period."
+a) Uzun bir depolama süresinin ardından her servise dönmeden önce uçak pili tam olarak şarj edilmeli ve test edilmelidir.
+b) Depolama sonrası pil testi yalnızca bir yıldan uzun süreli depolama için gereklidir.
+c) Pil servise dönmeden önce test edilmeden takılabilir.
+d) Depolama sonrası şarj isteğe bağlıdır.
+ANSWER: a
+
+1437. "A function test of all warning systems must be carried out after maintenance that could affect their operation."
+a) Çalışmalarını etkileyebilecek bakımdan sonra tüm uyarı sistemlerinin işlevsel testi yapılmalıdır.
+b) Uyarı sistemi testi yalnızca sistemin bizzat bakımı yapıldığında gereklidir.
+c) Uyarı sistemi testleri yalnızca ilk uçuşta gerçekleştirilir.
+d) İşlevsel testler yalnızca büyük bakımlarda gereklidir.
+ANSWER: a
+
+1438. "If a ground run is required after maintenance, the area must be checked for personnel and equipment clearance."
+a) Bakım sonrası zemin koşturma gerekiyorsa, alan personel ve ekipman tahliyesi için kontrol edilmelidir.
+b) Zemin koşturma sırasında personel yakınında bulunabilir.
+c) Zemin koşturma alan kontrolü yalnızca tam güçte koşturmalar için gereklidir.
+d) Alan tahliyesi pilot tarafından onaylanır.
+ANSWER: a
+
+1439. "If a component is found damaged beyond repair limits, it must be permanently removed from service and rendered unfit for use."
+a) Bir bileşen onarım sınırlarının ötesinde hasarlı bulunursa, kalıcı olarak hizmet dışı bırakılmalı ve kullanıma elverişsiz hale getirilmelidir.
+b) Onarım sınırlarını aşan bileşenler daha sonra kullanım için depolanabilir.
+c) Hasarlı bileşenler alternatif kullanımlar için satılabilir.
+d) Onarım sınırlarının ötesindeki hasarlar değerlendirme için üreticiye gönderilir.
+ANSWER: a
+
+1440. "Maintenance personnel must complete human factors training as part of their initial and recurrent training programme."
+a) Bakım personeli, başlangıç ve periyodik eğitim programlarının bir parçası olarak insan faktörleri eğitimini tamamlamalıdır.
+b) İnsan faktörleri eğitimi yalnızca kaza sonrasında zorunludur.
+c) İnsan faktörleri eğitimi isteğe bağlı bir sertifika programıdır.
+d) Deneyimli teknisyenler insan faktörleri eğitiminden muaftır.
+ANSWER: a
+
+--- EK SORULAR (Q1441-Q1515) ---
+
+1441. "The pressurization outflow valve controls the rate at which cabin air is vented overboard."
+a) Basınçlandırma çıkış valfi, kabin havasının dışarıya verilme hızını kontrol eder.
+b) Basınçlandırma valfi kabin havasını motor kompresörüne gönderir.
+c) Çıkış valfi kabin basıncını artırmak için kullanılır.
+d) Çıkış valfi yalnızca acil durumlarda açılır.
+ANSWER: a
+
+1442. "Brake accumulator pressure must be sufficient to provide the required number of brake applications after hydraulic failure."
+a) Fren akümülatör basıncı, hidrolik arızasından sonra gerekli fren uygulama sayısını sağlamak için yeterli olmalıdır.
+b) Fren akümülatörü yalnızca normal fren operasyonu için kullanılır.
+c) Fren akümülatörü basıncı yalnızca sistem arızasında kontrol edilir.
+d) Fren akümülatörü yedek bir sistem olmayıp birincil sistemi güçlendirir.
+ANSWER: a
+
+1443. Translate to English: "Kokpit ses kaydedicisi, orijinal ses kalitesini korumak için periyodik olarak test edilmelidir."
+a) The cockpit voice recorder must be periodically tested to maintain the original sound quality.
+b) The cockpit voice recorder is only tested after an incident.
+c) Cockpit voice recorder testing is optional.
+d) The cockpit voice recorder sound quality is not a maintenance concern.
+ANSWER: a
+
+1444. Translate to Turkish: "Wing fuel tank access panels must be resealed with approved sealant after inspection."
+a) Kanat yakıt tankı erişim panelleri incelemenin ardından onaylı sealant ile yeniden kapatılmalıdır.
+b) Erişim panelleri incelemenin ardından açık bırakılabilir.
+c) Sealant yeniden uygulaması yalnızca sızıntı bulunduğunda gereklidir.
+d) Yakıt tankı erişim panelleri kalıcı olarak kapatılmıştır.
+ANSWER: a
+
+1445. Translate to English: "Tüm uçak bakım kayıtları tam ve okunabilir olmalı ve yetkili imza içermelidir."
+a) All aircraft maintenance records must be complete, legible, and contain the authorised signature.
+b) Maintenance records are valid without signatures if typed.
+c) Maintenance records may be brief and do not require signatures.
+d) Authorised signatures are only required for airworthiness-critical tasks.
+ANSWER: a
+
+1446. "Nose gear shimmy can indicate worn shimmy damper, incorrect tyre pressure, or wheel imbalance."
+a) Ön iniş takımı titrimi, aşınmış shimmy sönümleyici, yanlış lastik basıncı veya tekerlek dengesizliğini gösterebilir.
+b) Ön iniş takımı titrimi her zaman lastik değişimi gerektirir.
+c) Shimmy yalnızca iniş sırasında oluşur.
+d) Shimmy sönümleyici arızası motor titrimine neden olur.
+ANSWER: a
+
+1447. "Ground test equipment must be calibrated and within its validity period before being used for maintenance testing."
+a) Yer test ekipmanı, bakım testleri için kullanılmadan önce kalibre edilmiş ve geçerlilik süresi içinde olmalıdır.
+b) Kalibrasyon süresi dolmuş ekipman acil durum testlerinde kullanılabilir.
+c) Yer test ekipmanı operatörün takdirine göre kalibre edilir.
+d) Test ekipmanı kalibrasyonu yalnızca doğruluk kritik parametreler için gereklidir.
+ANSWER: a
+
+1448. Translate: "Uçak teknik kaydından çıkarılan arızalar, yetkili mühendis tarafından imzalanmadan kapatılmış sayılmaz."
+a) Defects removed from the aircraft technical log are not considered closed until signed off by the authorised engineer.
+b) Defects are closed as soon as the repair is complete.
+c) Defect closure requires only the technician's signature.
+d) Defects in the technical log are cleared automatically at the next scheduled check.
+ANSWER: a
+
+1449. Translate to Turkish: "Composite structures must not be drilled or repaired without reference to the approved repair schemes."
+a) Kompozit yapılar, onaylı onarım şemalarına başvurulmadan delinmemeli veya onarılmamalıdır.
+b) Kompozit yapılar herhangi bir matkap tipiyle delinebilir.
+c) Onaylı şemalar yalnızca primer yapı için gereklidir.
+d) Onarım şeması başvurusu yalnızca büyük hasarlar için zorunludur.
+ANSWER: a
+
+1450. Translate to English: "Yangın söndürücü tüpleri kullanıldıktan sonra şarj edilmeden önce muayene ve onay için yetkili arıza giderme merkezine gönderilmelidir."
+a) After use, fire extinguisher bottles must be sent to an authorised servicing centre for inspection and approval before being recharged.
+b) Fire extinguisher bottles may be recharged in the field after use.
+c) Used fire extinguisher bottles are disposed of without recharging.
+d) Recharging fire extinguisher bottles is a routine maintenance task.
+ANSWER: a
+
+1451. "The aircraft must not be dispatched with a system or component in an inoperative state unless covered by the MEL."
+a) Uçak, MEL kapsamında olmadıkça bir sistem veya bileşen çalışmaz durumdayken görevlendirilmemelidir.
+b) Uçak, herhangi bir çalışmaz sistem varken dispatch edilebilir.
+c) MEL gerekliliği yalnızca büyük sistemler için geçerlidir.
+d) Sistemin durumu yalnızca uçuş ekibinin tercihine bırakılmıştır.
+ANSWER: a
+
+1452. "Before any welding is performed on or near an aircraft, all fuel must be removed and the area purged."
+a) Uçak üzerinde veya yakınında herhangi bir kaynak yapılmadan önce, tüm yakıt çıkarılmalı ve alan temizlenmelidir.
+b) Kaynak yalnızca yakıt tanklarından uzakta yapılabilir.
+c) Yakıt bulunan uçaklarda kaynak kısa süreli olarak yapılabilir.
+d) Uçaklarda kaynak işlemi gerçekleştirilemez.
+ANSWER: a
+
+1453. "All serviceable rotable components must be stored in an appropriate environment to maintain their condition."
+a) Tüm servis edilebilir döndürülebilir bileşenler, durumlarını korumak için uygun bir ortamda depolanmalıdır.
+b) Döndürülebilir bileşenler herhangi bir depolama koşulunda tutulabilir.
+c) Yalnızca elektronik bileşenler uygun depolama ortamı gerektirir.
+d) Depolama ortamı koşulları bileşen ömrünü etkilemez.
+ANSWER: a
+
+1454. "Hydraulic actuator seals must be replaced whenever the actuator is disassembled for any reason."
+a) Hidrolik aktüatör contaları, aktüatörün herhangi bir nedenle söküldüğü her durumda değiştirilmelidir.
+b) Contalar yalnızca sızıntı belirtisi varsa değiştirilir.
+c) Aktüatör söküldüğünde contalar tekrar kullanılabilir.
+d) Conta değişimi yalnızca büyük bakımlarda gereklidir.
+ANSWER: a
+
+1455. "Fuel vent lines must be kept clear to prevent pressurization of the fuel tanks beyond design limits."
+a) Yakıt havalandırma hatları, yakıt tanklarının tasarım sınırları ötesinde basınçlandırılmasını önlemek için açık tutulmalıdır.
+b) Yakıt havalandırma hatları basınç değişikliklerine karşı kapalı tutulmalıdır.
+c) Yakıt tankları havalandırma hattı olmadan çalışabilir.
+d) Havalandırma hatları yalnızca yakıt ikmali sırasında açılır.
+ANSWER: a
+
+1456. "The environmental control system supplies fresh, conditioned air to the cockpit and cabin throughout the flight."
+a) Çevre kontrol sistemi, uçuş boyunca kokpit ve kabine taze, koşullandırılmış hava sağlar.
+b) Çevre kontrol sistemi yalnızca yolcu yüklü uçuşlarda çalışır.
+c) Kokpit havası kabin havasından ayrı bir sistemle sağlanır.
+d) Çevre kontrol sistemi yalnızca basınçlandırma sisteminin bir parçasıdır.
+ANSWER: a
+
+1457. "Engine trend monitoring data collected during flight is used to detect early signs of engine deterioration."
+a) Uçuş sırasında toplanan motor trend izleme verileri, motor bozulmasının erken belirtilerini tespit etmek için kullanılır.
+b) Motor trend verileri yalnızca arıza sonrası analiz için toplanır.
+c) Motor trend izleme verileri yalnızca büyük bakımlarda analiz edilir.
+d) Trend verisi yalnızca motor kapasitesini değerlendirmek için kullanılır.
+ANSWER: a
+
+1458. Translate: "Tüm belgelenmiş güç kesintileri, uygulanabilir prosedürlere uygun olarak kaydedilmeli ve soruşturulmalıdır."
+a) All documented power interruptions must be recorded and investigated in accordance with applicable procedures.
+b) Power interruptions are recorded only if they affect the flight.
+c) Power interruption investigations are optional if no damage occurred.
+d) Power interruptions are investigated only by the OEM.
+ANSWER: a
+
+1459. "Landing gear retraction test must only be carried out with the aircraft on jacks and the wheel well area clear of personnel."
+a) İniş takımı geri çekme testi, yalnızca uçak jacksta olduğunda ve tekerlek yuvası alanı personelden arındırıldığında gerçekleştirilmelidir.
+b) İniş takımı geri çekme testi uçak yerde dururken yapılabilir.
+c) Tekerlek yuvası alanı personelden arındırılması gerekmez.
+d) Geri çekme testi yalnızca yeni uçaklarda gereklidir.
+ANSWER: a
+
+1460. "During aircraft jacking operations, the aircraft must be monitored continuously for any unexpected movement."
+a) Uçak kriko kaldırma işlemleri sırasında, uçak beklenmedik hareketler için sürekli izlenmelidir.
+b) Kriko kaldırma işlemleri sırasında sürekli izleme gerekmez.
+c) Kriko kaldırma işlemleri sırasında uçak sabit konumdadır.
+d) İzleme yalnızca büyük kaldırma operasyonlarında gereklidir.
+ANSWER: a
+
+--- Q1461-Q1515 (Devam) ---
+
+1461. "Fuel crossfeed valves must be cycled at the intervals specified to ensure continued correct operation."
+a) Yakıt çapraz besleme valfleri, sürekli doğru çalışmayı sağlamak için belirtilen aralıklarda döngüye sokulmalıdır.
+b) Çapraz besleme valfleri yalnızca arıza durumunda test edilir.
+c) Yakıt valfleri test edilmeden açık konumda bırakılabilir.
+d) Çapraz besleme valfi döngüsü yalnızca büyük bakımlarda yapılır.
+ANSWER: a
+
+1462. "Static wicks on control surfaces must be inspected for damage and replaced if found broken or missing."
+a) Kontrol yüzeyleri üzerindeki statik wick'ler hasara karşı incelenmalı ve kırık veya eksik bulunursa değiştirilmelidir.
+b) Statik wick'ler yalnızca görsel inceleme gerektirir.
+c) Statik wick'ler bakımın dışında tutulur.
+d) Statik wick hasarı uçuş performansını etkilemez.
+ANSWER: a
+
+1463. "The aircraft technical log entry must identify the defect, the corrective action taken, and the certifying technician."
+a) Uçak teknik kütüğü girişi, arızayı, alınan düzeltici eylemi ve onaylayan teknisyeni tanımlamalıdır.
+b) Teknik kütük yalnızca arızayı kaydetmelidir.
+c) Düzeltici eylem kaydı yalnızca büyük arızalar için gereklidir.
+d) Teknisyen kimliği yalnızca yönetim talep ettiğinde kaydedilir.
+ANSWER: a
+
+1464. "After a birdstrike, the affected areas including engine inlet, leading edges, and windshield must be inspected."
+a) Kuş çarpmasından sonra motor girişi, ön kenarlar ve ön cam dahil etkilenen alanlar incelenmelidir.
+b) Birdstrike incelemesi yalnızca motoru etkileyen çarpmalar için gereklidir.
+c) Ön cam çarpmanın etkisinden bağımsız olarak birdstrike'ta değiştirilir.
+d) Birdstrike prosedürleri yalnızca yolcu uçaklarına uygulanır.
+ANSWER: a
+
+1465. "Pressure relief plugs on aircraft wheels must be replaced when heat-sensitive fusible plugs have been actuated."
+a) Isıya duyarlı erir tıpalar devreye girdiğinde uçak tekerleklerindeki basınç tahliye tıpaları değiştirilmelidir.
+b) Erir tıpalar bir kez kullanıldıktan sonra yeniden kullanılabilir.
+c) Basınç tahliye tıpaları yalnızca lastik değişiminde kontrol edilir.
+d) Erir tıpa aktivasyonu lastik basıncını otomatik olarak geri yükler.
+ANSWER: a
+
+1466. "Flight crew must be informed of any deferred defect before departure to ensure situational awareness."
+a) Herhangi bir ertelenmiş arızadan önce, durum farkındalığını sağlamak için uçuş ekibinin kalkıştan önce bilgilendirilmesi gerekir.
+b) Ertelenmiş arızalar yalnızca teknik kütüğe kaydedilir.
+c) Uçuş ekibi yalnızca uçuş esnasında önemli arızalar hakkında bilgilendirilir.
+d) Ertelenmiş arızaların uçuş ekibine bildirilmesi zorunlu değildir.
+ANSWER: a
+
+1467. "Hydraulic return line filters must be replaced at the hours/cycles specified in the maintenance schedule."
+a) Hidrolik dönüş hattı filtreleri, bakım programında belirtilen saat/çevrimlerde değiştirilmelidir.
+b) Hidrolik dönüş filtreleri yalnızca tıkandığında değiştirilir.
+c) Hidrolik dönüş filtresi değişimi opsiyoneldir.
+d) Hidrolik filtreler yalnızca büyük bakımlarda değiştirilir.
+ANSWER: a
+
+1468. "A post-maintenance inspection by a second independent inspector is required for tasks identified as critical."
+a) Kritik olarak tanımlanan görevler için ikinci bağımsız bir müfettiş tarafından bakım sonrası muayene gereklidir.
+b) Bağımsız ikinci muayene yalnızca müşteri talep ettiğinde gereklidir.
+c) Kritik bakım görevleri bağımsız doğrulama gerektirmez.
+d) İkinci müfettiş gereksinimi yalnızca büyük bakımlarda uygulanır.
+ANSWER: a
+
+1469. "The aircraft maintenance programme must be approved by the competent authority and followed strictly."
+a) Uçak bakım programı, yetkili otorite tarafından onaylanmalı ve titizlikle takip edilmelidir.
+b) Bakım programı operator tarafından hazırlanır ve onay gerekmez.
+c) Bakım programı önerilen bir kılavuzdur ve kesin değildir.
+d) Bakım programı yalnızca uluslararası operasyonlar için gereklidir.
+ANSWER: a
+
+1470. "Aircraft maintenance training records must be retained for a period specified by the regulatory authority."
+a) Uçak bakım eğitim kayıtları, düzenleyici otorite tarafından belirlenen süre boyunca saklanmalıdır.
+b) Eğitim kayıtları kişisel tercihle imha edilebilir.
+c) Eğitim kayıtları yalnızca lisans yenileme için tutulur.
+d) Düzenleyici otorite eğitim kayıtlarını düzenlemez.
+ANSWER: a
+
+1471. "The fire suppression agent quantity in engine fire extinguisher bottles must be within limits before every flight."
+a) Motor yangın söndürücü tüplerindeki yangın bastırma madde miktarı, her uçuştan önce sınırlar içinde olmalıdır.
+b) Yangın söndürücü tüp miktarı yalnızca haftalık kontrollerde kontrol edilir.
+c) Yangın söndürücü miktarı yalnızca büyük bakımlarda kritiktir.
+d) Kısmi dolu yangın söndürücü tüpler kabul edilebilir.
+ANSWER: a
+
+1472. "Avionics cooling system faults must be investigated promptly to prevent overheating and equipment failure."
+a) Aviyonik soğutma sistemi arızaları, aşırı ısınma ve ekipman arızasını önlemek için derhal araştırılmalıdır.
+b) Soğutma sistemi arızaları yalnızca sıcak iklim operasyonlarında kritiktir.
+c) Aviyonik soğutma sistemi arızaları kısa uçuşlarda göz ardı edilebilir.
+d) Ekipman arızası yalnızca tam soğutma arızasından kaynaklanır.
+ANSWER: a
+
+1473. "Pressure relief valves must be tested at the intervals specified to ensure they open at the correct set pressure."
+a) Basınç tahliye valfleri, doğru ayar basıncında açıldıklarını doğrulamak için belirtilen aralıklarda test edilmelidir.
+b) Basınç tahliye valf testleri yalnızca arıza şüphesinde yapılır.
+c) Tahliye valfleri fabrikada kalibre edilmiştir ve saha testine gerek yoktur.
+d) Tahliye valf testi özel ekipman gerektirmez.
+ANSWER: a
+
+1474. "Aircraft maintenance organisations must have procedures to prevent the installation of counterfeit or unapproved parts."
+a) Uçak bakım kuruluşlarının sahte veya onaysız parçaların takılmasını önlemek için prosedürleri olmalıdır.
+b) Uçakta kullanılan tüm parçaların onaylı olduğu varsayılır.
+c) Sahte parça tespiti yalnızca kalite denetçilerinin sorumluluğundadır.
+d) Onaysız parça kurulumu yalnızca yeni tip uçaklarda risktir.
+ANSWER: a
+
+1475. "The maintenance release must clearly state the maintenance standard applied, the references used, and the scope of the work."
+a) Bakım serbest bırakması, uygulanan bakım standardını, kullanılan referansları ve işin kapsamını açıkça belirtmelidir.
+b) Bakım serbest bırakması yalnızca tamamlanan bakım listesini içermelidir.
+c) Bakım referansları yalnızca karmaşık işler için kaydedilir.
+d) Bakım kapsamı teknik kütükte belgelenir, serbest bırakma belgelerinde değil.
+ANSWER: a
+
+1476. "Before releasing the aircraft after maintenance, the certifying engineer must confirm that all work has been completed and documented."
+a) Uçağı bakım sonrası serbest bırakmadan önce, onaylayan mühendis tüm işlerin tamamlandığını ve belgelendiğini doğrulamalıdır.
+b) İşlerin tamamlanması kontrolü gece vardiyasında opsiyoneldir.
+c) Onaylayan mühendis yalnızca belgelemeyi kontrol eder.
+d) Uçak serbest bırakma onayı çalışma ekip liderinin sorumluluğundadır.
+ANSWER: a
+
+1477. "Fuel sample bottles must be clean and dry before taking a fuel sample for analysis."
+a) Yakıt numunesini analiz için almadan önce numune şişeleri temiz ve kuru olmalıdır.
+b) Yakıt numunesi şişeleri temizlenmeden tekrar kullanılabilir.
+c) Yakıt numuneleri herhangi bir kapta alınabilir.
+d) Yakıt numunesi analizi yalnızca yakıt ikmali arızalarında gereklidir.
+ANSWER: a
+
+1478. "Towing limits for aircraft speed over uneven ground must not be exceeded to prevent structural damage."
+a) Düzensiz zeminde uçak hızı çekme sınırları, yapısal hasarı önlemek için aşılmamalıdır.
+b) Zemin tipi çekme hızlarını etkilemez.
+c) Çekme hızları yalnızca havaalanı kuralları tarafından belirlenir.
+d) Yapısal hasar çekme sırasında yalnızca aşırı yüklerde oluşur.
+ANSWER: a
+
+1479. "Replacement parts must be installed within any limitations specified by the manufacturer."
+a) Yedek parçalar, üretici tarafından belirlenen kısıtlamalar dahilinde takılmalıdır.
+b) Yedek parçalar herhangi bir sıraya göre takılabilir.
+c) Üretici kısıtlamaları yalnızca engine parçaları için geçerlidir.
+d) Yedek parça kısıtlamaları üretici tercihleri olup yasal bağlayıcılığı yoktur.
+ANSWER: a
+
+1480. "Defect rectification must be completed before the aircraft is released for the next flight unless covered by the MEL or CDL."
+a) Arıza giderimi, MEL veya CDL kapsamında olmadıkça uçak bir sonraki uçuş için serbest bırakılmadan önce tamamlanmalıdır.
+b) Arıza giderimi bir sonraki planlı bakıma ertelenebilir.
+c) MEL tüm sistem arızalarını kapsamaktadır.
+d) CDL yalnızca uçuş kontrol yüzeylerindeki hasarlar için geçerlidir.
+ANSWER: a
+
+1481. "Engine cowlings must be latched and secured before any engine run."
+a) Herhangi bir motor koşturmasından önce motor kapakları mandallı ve güvenceli olmalıdır.
+b) Motor kapakları yalnızca çalışma sırasında değil, uçuş sırasında kapatılır.
+c) Motor kapakları tam güçlü koşturmalar için açık bırakılabilir.
+d) Motor çalıştırma, kapaklar açıkken güvenli şekilde yapılabilir.
+ANSWER: a
+
+1482. "Jacking pads must be inspected for damage and correctly positioned before jacking begins."
+a) Kriko kaldırma başlamadan önce kriko pedleri hasara karşı incelenmeli ve doğru konumda yerleştirilmelidir.
+b) Kriko pedleri her bakımda değiştirilir.
+c) Kriko pedi konumu uçak tipine göre değişmez.
+d) Kriko pedleri kaldırma sırasında herhangi bir konuma yerleştirilebilir.
+ANSWER: a
+
+1483. "Leak check of repaired fuel system components must be carried out before the fuel system is returned to normal operation."
+a) Onarılan yakıt sistemi bileşenlerinin sızıntı kontrolü, yakıt sistemi normal çalışmaya döndürülmeden önce yapılmalıdır.
+b) Sızıntı kontrolü yalnızca tam yakıt sistemi değişiminde gereklidir.
+c) Yakıt sistemi sızıntı kontrolü uçuş sırasında yapılabilir.
+d) Onarılan bileşenler için sızıntı kontrolü isteğe bağlıdır.
+ANSWER: a
+
+1484. "Hydraulic tubing that shows signs of kinking or collapse must be replaced, not straightened."
+a) Kıvrılma veya çökme belirtisi gösteren hidrolik boru, düzeltilmemeli, değiştirilmelidir.
+b) Kıvrılmış hidrolik borular ısıtılarak düzeltilebilir.
+c) Hafif hidrolik boru kıvrılmaları kabul edilebilir sınırlar dahilindedir.
+d) Hidrolik boru kıvrılması yalnızca basınç düşüşüne neden olur.
+ANSWER: a
+
+1485. "Work orders must clearly specify the scope of work, applicable references, and any special precautions required."
+a) İş emirleri, işin kapsamını, uygulanabilir referansları ve gerekli özel önlemleri açıkça belirtmelidir.
+b) İş emirleri yalnızca görev listesini içermelidir.
+c) Özel önlemler yalnızca tehlikeli görevler için gereklidir.
+d) Referanslar deneyimli teknisyenler için iş emirlerinde belirtilmez.
+ANSWER: a
+
+1486. "After a repair on the fuel tank, a fuel leak check must be performed at operating pressure."
+a) Yakıt tankında bir onarımdan sonra, operasyonel basınçta bir yakıt sızıntı testi yapılmalıdır.
+b) Yakıt tankı onarımından sonra sızıntı testi gerekmez.
+c) Yakıt sızıntı testi yalnızca görsel incelemeyle yapılabilir.
+d) Operasyonel basınç testi yalnızca büyük bakım tesislerinde yapılabilir.
+ANSWER: a
+
+1487. "Hydraulic fluid compatibility must be verified before mixing fluids from different manufacturers."
+a) Farklı üreticilerin sıvılarını karıştırmadan önce hidrolik sıvı uyumluluğu doğrulanmalıdır.
+b) Onaylı tüm hidrolik sıvılar birbirleriyle uyumludur.
+c) Farklı marka hidrolik sıvılar karıştırılabilir ancak renklerinin farklı olmaması gerekir.
+d) Hidrolik sıvı uyumluluğu yalnızca üretici değişikliklerinde kritiktir.
+ANSWER: a
+
+1488. "Aircraft that exceed the maximum landing weight limit must undergo a special inspection before the next flight."
+a) Maksimum iniş ağırlığı sınırını aşan uçaklar, bir sonraki uçuştan önce özel bir incelemeden geçmelidir.
+b) Maksimum iniş ağırlığı sınırı aşımı yalnızca kayıt altına alınır.
+c) Ağır iniş prosedürleri aşırı yük iniş durumunu kapsamaktadır.
+d) Maksimum iniş ağırlığı sınırı yalnızca kargo uçaklarına uygulanır.
+ANSWER: a
+
+1489. "Anti-corrosion treatment must be applied to all bare metal areas exposed during maintenance."
+a) Bakım sırasında açıkta kalan tüm çıplak metal alanlara korozyon önleyici uygulama yapılmalıdır.
+b) Korozyon önleyici yalnızca dış yüzeylere uygulanır.
+c) Korozyon önleyici tedavi yalnızca deniz kıyısı operasyonlarında gereklidir.
+d) Yapısal metaller korozyona karşı doğal dirençleri nedeniyle tedavi gerektirmez.
+ANSWER: a
+
+1490. "Wing inspection covers must be replaced and sealed following any fuel tank inspection or maintenance."
+a) Kanat muayene kapakları, herhangi bir yakıt tankı muayenesi veya bakımının ardından değiştirilmeli ve kapatılmalıdır.
+b) Kanat inceleme kapakları muayeneden sonra açık bırakılabilir.
+c) Yakıt tankı muayenesi sırasında kanat kapakları çıkarılmaz.
+d) Kanat kapakları yalnızca tam yakıt tankı değişiminde kapatılır.
+ANSWER: a
+
+1491. Translate: "Kargo kompartımanı yangın algılama sistemi, uçak servis dışında olsa bile işlevsel olmalıdır."
+a) The cargo compartment fire detection system must be functional even when the aircraft is out of service.
+b) Fire detection systems are tested only when in operation.
+c) Cargo fire detection is optional during ground operations.
+d) Fire detection systems are deactivated during maintenance.
+ANSWER: a
+
+1492. Translate: "Approved tool kits must be used for each category of maintenance work to ensure correct tools are available."
+a) Her bakım çalışması kategorisi için doğru aletlerin mevcut olduğundan emin olmak amacıyla onaylı alet setleri kullanılmalıdır.
+b) Teknisyenler bakım işlemleri için kişisel aletlerini kullanabilir.
+c) Alet setleri yalnızca motor bakımında zorunludur.
+d) Aynı alet seti tüm bakım kategorileri için kullanılabilir.
+ANSWER: a
+
+1493. "The pilot must be informed of the aircraft's serviceability status before accepting the aircraft for flight."
+a) Pilot, uçuş için uçağı kabul etmeden önce uçağın servis durumu hakkında bilgilendirilmelidir.
+b) Pilot uçağı kabul ettikten sonra servis durumu kontrol edilir.
+c) Servis durumu yalnızca mürettebat şefi tarafından değerlendirilir.
+d) Pilot servis durumunu teknik kütükten kendi başına kontrol eder.
+ANSWER: a
+
+1494. "NDT methods used must be appropriate for the material type and the defect being sought."
+a) Kullanılan NDT yöntemleri, malzeme tipi ve aranan hata için uygun olmalıdır.
+b) Tüm NDT yöntemleri tüm malzeme tipleri için eşit derecede etkilidir.
+c) NDT yöntemi seçimi teknisyenin tercihine bırakılmıştır.
+d) NDT yalnızca metal malzemelere uygulanabilir.
+ANSWER: a
+
+1495. "Repair of pressure vessel components requires specific certification and must follow approved procedures."
+a) Basınç kabı bileşenlerinin onarımı belirli sertifikasyon gerektirir ve onaylı prosedürleri izlemelidir.
+b) Basınç kabı onarımı herhangi bir lisanslı teknisyen tarafından yapılabilir.
+c) Onaylı prosedürler yalnızca yeni uçak tiplerine uygulanır.
+d) Basınç kabı onarımı her zaman üretici tarafından yapılmalıdır.
+ANSWER: a
+
+1496. "The flight manual supplement must be consulted before flying with any aircraft modification that affects performance."
+a) Performansı etkileyen herhangi bir uçak modifikasyonuyla uçmadan önce uçuş kılavuzu eki incelenmelidir.
+b) Performans etkileri yalnızca büyük modifikasyonlar için değerlendirilir.
+c) Uçuş kılavuzu eki yalnızca operatörün talebiyle incelenir.
+d) Modifikasyonlar performansı etkilemiyorsa belgelenmez.
+ANSWER: a
+
+1497. "Hydraulic system components must be thoroughly rinsed after any repair involving soldered or welded joints."
+a) Lehimli veya kaynaklı bağlantı içeren herhangi bir onarımdan sonra hidrolik sistem bileşenleri iyice durulanmalıdır.
+b) Hidrolik bileşenler onarımdan sonra durulanmadan kullanılabilir.
+c) Durulama yalnızca büyük hidrolik bileşenler için gereklidir.
+d) Lehimleme ve kaynak hidrolik sistemlerde kullanılmaz.
+ANSWER: a
+
+1498. "Pitot heat must be tested for correct operation before flight in potential icing conditions."
+a) Potansiyel buzlanma koşullarında uçuştan önce pitot ısıtmanın doğru çalışması test edilmelidir.
+b) Pitot ısıtma testi yalnızca kış sezonunda gereklidir.
+c) Pitot ısıtma otomatik çalışır ve test gerekmez.
+d) Pitot ısıtma testi büyük bakımlarda yapılır.
+ANSWER: a
+
+1499. "After landing gear retraction test, the gear must be extended and downlocked before the aircraft is lowered off jacks."
+a) İniş takımı geri çekme testinden sonra, uçak jacktan indirilmeden önce takım uzatılmalı ve aşağı kilitlenmelidir.
+b) İniş takımı geri çekme testi sırasında takım geri çekilmiş konumda bırakılabilir.
+c) Uçak, iniş takımı geri çekilmiş halde jacktan indirilebilir.
+d) Jacktan indirmeden önce yalnızca görsel kontrol yeterlidir.
+ANSWER: a
+
+1500. "Any maintenance carried out during a short turnaround must be documented before the aircraft departs."
+a) Kısa bekleme süresi sırasında yapılan herhangi bir bakım, uçak hareket etmeden önce belgelenmelidir.
+b) Kısa bekleme bakımı bir sonraki güne kadar belgelenebilir.
+c) Kısa bekleme sırasında yalnızca yakıt ikmali kayıtları tutulur.
+d) Bekleme bakımı belgeleme zorunluluğundan muaftır.
+ANSWER: a
+
+1501. Translate: "Uçakta herhangi bir yetkisiz değişiklik yapılması, tip sertifikasının geçerliliğini etkileyebilir."
+a) Any unauthorised modification to the aircraft may affect the validity of the type certificate.
+b) Unauthorised modifications are permitted if they improve safety.
+c) The type certificate is not affected by structural modifications.
+d) Modifications affect only the aircraft's airworthiness certificate.
+ANSWER: a
+
+1502. Translate: "Wheel brake temperature monitoring systems alert the crew to brake overheat conditions."
+a) Tekerlek fren sıcaklığı izleme sistemleri, mürettebatı fren aşırı ısınma koşulları hakkında uyarır.
+b) Fren sıcaklığı izleme sistemleri yalnızca yer ekibine alarm verir.
+c) Fren aşırı ısınması yalnızca uzun iniş pistleri için bir sorundur.
+d) Tekerlek fren sıcaklığı yalnızca elle kontrol edilebilir.
+ANSWER: a
+
+1503. "Engine bleed air supply must be shut off before engine maintenance is carried out."
+a) Motor bleed hava beslemesi, motor bakımı yapılmadan önce kapatılmalıdır.
+b) Bleed hava bakım sırasında açık bırakılabilir.
+c) Motor bleed kapatma yalnızca bleed sistemi bakımında gereklidir.
+d) Bleed hava kapatma uçuşta yapılır.
+ANSWER: a
+
+1504. "Following a hard landing, the aircraft must undergo an inspection before the next flight."
+a) Sert inişin ardından, bir sonraki uçuştan önce uçak bir incelemeden geçmelidir.
+b) Sert iniş incelemeleri büyük bakım sırasında yapılır.
+c) Sert iniş incelemeleri yalnızca pilot talep ederse yapılır.
+d) Bir uçak sert inişten sonra derhal göreve devam edebilir.
+ANSWER: a
+
+1505. "Weight and balance calculations are the joint responsibility of the loading team and the flight crew."
+a) Ağırlık ve denge hesaplamaları yükleme ekibi ve uçuş mürettebatının ortak sorumluluğundadır.
+b) Ağırlık ve denge hesaplamaları yalnızca yükleme ekibinin sorumluluğundadır.
+c) Ağırlık ve denge hesaplamaları yalnızca kaptan pilotun sorumluluğundadır.
+d) Ağırlık ve denge otomatik olarak hesaplanır ve insan müdahalesi gerekmez.
+ANSWER: a
+
+1506. "Aircraft must be grounded if the Certificate of Airworthiness has expired."
+a) Uçuşa elverişlilik sertifikası süresi dolmuşsa uçak yerden kaldırılmamalıdır.
+b) Süresi dolmuş sertifikalarla uçaklar kısa uçuşlara çıkabilir.
+c) Uçuşa elverişlilik sertifikası yalnızca uluslararası uçuşlarda gereklidir.
+d) Sertifika süresi dolmuşsa operatör onayıyla uçuşa devam edilebilir.
+ANSWER: a
+
+1507. "Engine power assurance check ensures that engine performance is within the required limits."
+a) Motor güç güvence kontrolü, motor performansının gerekli sınırlar içinde olduğunu sağlar.
+b) Motor güç güvence kontrolü yalnızca yeni motorlarda yapılır.
+c) Motor güç kontrolü uçuş sırasında gerçekleştirilir.
+d) Motor performans kontrolü yalnızca büyük bakımlarda yapılır.
+ANSWER: a
+
+1508. "The oxygen masks must be checked for correct seating and sealing before every flight."
+a) Oksijen maskeleri her uçuştan önce doğru oturma ve sızdırmazlık açısından kontrol edilmelidir.
+b) Oksijen maskesi kontrolü yalnızca uzun uçuşlarda gereklidir.
+c) Oksijen maskeleri yalnızca yolcu güvenlik brifingi sırasında kontrol edilir.
+d) Oksijen maskesi sızdırmazlık testi yalnızca büyük bakımlarda yapılır.
+ANSWER: a
+
+1509. "Engine fuel nozzles must be cleaned and flow-tested at the overhaul intervals specified in the CMM."
+a) Motor yakıt nozulları, CMM'de belirtilen revizyon aralıklarında temizlenmeli ve akış testi yapılmalıdır.
+b) Motor yakıt nozulları yalnızca tıkandıklarında temizlenir.
+c) Yakıt nozulu testi yalnızca motor arızasında gereklidir.
+d) Nozul temizliği pilot tarafından belirtilen aralıklarda yapılır.
+ANSWER: a
+
+1510. "Maintenance personnel must not work when fatigued, as this increases the risk of errors."
+a) Bakım personeli yorgun olduğunda çalışmamalıdır, çünkü bu hata riskini artırır.
+b) Yorgun personel küçük görevleri tamamlayabilir.
+c) Yorgunluk yalnızca karmaşık görevlerde risk oluşturur.
+d) Yorgunluk yönetimi personelin bireysel sorumluluğundadır.
+ANSWER: a
+
+1511. "The maintenance organisation must have a system for detecting and reporting maintenance errors."
+a) Bakım kuruluşunun bakım hatalarını tespit etmek ve raporlamak için bir sistemi olmalıdır.
+b) Hata raporlama yalnızca büyük kazalar için gereklidir.
+c) Bakım hataları yalnızca kalite müfettişlerine bildirilir.
+d) Hata raporlama sistemi kurulması zorunlu değildir.
+ANSWER: a
+
+1512. "Composite repairs must match the original layup orientation to restore structural properties."
+a) Kompozit onarımlar, yapısal özellikleri geri kazandırmak için orijinal laminat yönlendirmesiyle eşleşmelidir.
+b) Kompozit onarımlarda laminat yönlendirmesi kritik değildir.
+c) Kompozit onarımlar herhangi bir tabaka yönlendirmesiyle yapılabilir.
+d) Laminat yönlendirmesi yalnızca birincil yapı kompozit onarımında kritiktir.
+ANSWER: a
+
+1513. "Aircraft dispatch requires confirmation that all required documents, including the technical log, are on board."
+a) Uçak görevlendirmesi, teknik kütük dahil tüm gerekli belgelerin uçakta olduğunun onaylanmasını gerektirir.
+b) Teknik kütük yalnızca uçuştan sonra teslim edilir.
+c) Uçak belgeleri uçuş sırasında elektronik formda saklanabilir.
+d) Gerekli belgeler yalnızca uluslararası uçuşlar için uçakta bulundurulmalıdır.
+ANSWER: a
+
+1514. "Fuel tank entry requires a confined space permit and continuous atmospheric monitoring for fuel vapour."
+a) Yakıt tankı girişi, kapalı alan izni ve yakıt buharı için sürekli atmosfer izleme gerektirir.
+b) Yakıt tankı girişi yalnızca tam gaz maskesi gerektirmektedir.
+c) Kapalı alan izni yalnızca büyük uçak yakıt tanklarında gereklidir.
+d) Atmosfer izlemesi yalnızca ilk girişte yapılır.
+ANSWER: a
+
+1515. "After any maintenance involving the flight control system, a full range of movement check and rigging verification must be performed."
+a) Uçuş kontrol sistemi dahil herhangi bir bakımdan sonra tam hareket aralığı kontrolü ve rigging doğrulaması yapılmalıdır.
+b) Uçuş kontrol hareket kontrolü yalnızca büyük onarımlar için gereklidir.
+c) Rigging doğrulaması yalnızca uçuş sırasında kontrol edilebilir.
+d) Uçuş kontrol sistemi bakımı sonrası kontrol isteğe bağlıdır.
+ANSWER: a
+
+================================================================
+CEVAP ANAHTARI - BÖLÜM 3 DEVAM: ÇEVİRİ (Q1316-Q1515)
+================================================================
+1316-a  1317-a  1318-a  1319-a  1320-a  1321-a  1322-a  1323-a  1324-a  1325-a
+1326-a  1327-a  1328-a  1329-a  1330-a  1331-a  1332-a  1333-a  1334-a  1335-a
+1336-a  1337-a  1338-a  1339-a  1340-a  1341-a  1342-a  1343-a  1344-a  1345-a
+1346-a  1347-a  1348-a  1349-a  1350-a  1351-a  1352-a  1353-a  1354-a  1355-a
+1356-a  1357-a  1358-a  1359-a  1360-a  1361-a  1362-a  1363-a  1364-a  1365-a
+1366-a  1367-a  1368-a  1369-a  1370-a  1371-a  1372-a  1373-a  1374-a  1375-a
+1376-a  1377-a  1378-a  1379-a  1380-a  1381-a  1382-a  1383-a  1384-a  1385-a
+1386-a  1387-a  1388-a  1389-a  1390-a  1391-a  1392-a  1393-a  1394-a  1395-a
+1396-a  1397-a  1398-a  1399-a  1400-a  1401-a  1402-a  1403-a  1404-a  1405-a
+1406-a  1407-a  1408-a  1409-a  1410-a  1411-a  1412-a  1413-a  1414-a  1415-a
+1416-a  1417-a  1418-a  1419-a  1420-a  1421-a  1422-a  1423-a  1424-a  1425-a
+1426-a  1427-a  1428-a  1429-a  1430-a  1431-a  1432-a  1433-a  1434-a  1435-a
+1436-a  1437-a  1438-a  1439-a  1440-a  1441-a  1442-a  1443-a  1444-a  1445-a
+1446-a  1447-a  1448-a  1449-a  1450-a  1451-a  1452-a  1453-a  1454-a  1455-a
+1456-a  1457-a  1458-a  1459-a  1460-a  1461-a  1462-a  1463-a  1464-a  1465-a
+1466-a  1467-a  1468-a  1469-a  1470-a  1471-a  1472-a  1473-a  1474-a  1475-a
+1476-a  1477-a  1478-a  1479-a  1480-a  1481-a  1482-a  1483-a  1484-a  1485-a
+1486-a  1487-a  1488-a  1489-a  1490-a  1491-a  1492-a  1493-a  1494-a  1495-a
+1496-a  1497-a  1498-a  1499-a  1500-a  1501-a  1502-a  1503-a  1504-a  1505-a
+1506-a  1507-a  1508-a  1509-a  1510-a  1511-a  1512-a  1513-a  1514-a  1515-a

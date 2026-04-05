@@ -1,0 +1,1256 @@
+================================================================
+HAVA ARACI BAKIM PERSONELİ YABANCI DİL SINAVI
+SORU BANKASI - BÖLÜM 3: ÇEVİRİ (TRANSLATION)
+375 SORU
+================================================================
+
+--- İNGİLİZCEDEN TÜRKÇEYE ÇEVİRİ (ENGLISH TO TURKISH) ---
+
+426. Do not weld engine components while they are installed on the airframe, because there is a risk of fire.
+a) Motor parçaları uçak gövdesine takılıysa kaynak yapılmamalıdır, çünkü yangın riski vardır.
+b) Motor parçalarını uçak gövdesine takılıyken lehimlemeyin, çünkü yangın çıkabilir.
+c) Motor parçalarını uçak gövdesine takılıyken kaynak yapmayın, çünkü yangın riski vardır.
+d) Yangın riskinden ötürü motor parçalarını uçak gövdesine takılıyken lehimlemeyin.
+ANSWER: c
+
+427. For the standard torque values, the term "tighten" is generally used in the procedures.
+a) Prosedürlerde standart tork değerleri için kullanılan "sıkma" terimi genel bir terimdir.
+b) Standart tork değerleri için prosedürlerde "sıkma" terimi genellikle kullanılır.
+c) Standart tork değerleri için prosedürler genellikle "sıkma" terimini kullanır.
+d) Genel tork değerleri için prosedürlerde "sıkma" terimi kullanılır.
+ANSWER: b
+
+428. These materials are dangerous: they are poisonous, flammable, and skin irritants.
+a) Bu malzemeler tehlikelidir: zehirlenebilir, yanabilir, cildinizi tahriş edebilirler.
+b) Bu malzemeler tehlikeli olabilir: zehirli, alevlenebilir ve cildi tahriş edicidirler.
+c) Zehirli, yanıcı ve tahriş edici oldukları için bu malzemeler tehlikelidir.
+d) Bu malzemeler tehlikelidir: zehirli, alevlenebilir ve cildi tahriş edicidirler.
+ANSWER: d
+
+429. Remove the ground support and maintenance equipment, the special and standard tools and all other items.
+a) Yer destek ve bakım ekipmanları, özel ve standart takımlar ve diğer tüm öğeler sökülmelidir.
+b) Yer destek ve bakım ekipmanlarıyla birlikte özel ve standart takımları ve diğer tüm öğeleri sökün.
+c) Yer destek ve bakım ekipmanlarını, özel ve standart takımları ve diğer tüm öğeleri sökün.
+d) Yer destek ve bakım ekipmanları, özel ve standart takımlar ve diğer tüm öğelerin sökülmesi gerekmektedir.
+ANSWER: c
+
+430. There are no signs of delamination of the composite structure.
+a) Kompozit yapıda bazı delaminasyon belirtileri yoktur.
+b) Kompozit yapıda herhangi bir delaminasyon belirtisi yoktur.
+c) Kompozit yapıda herhangi bir delaminasyon belirtisi bulunamamıştır.
+d) Kompozit yapı herhangi bir delaminasyon belirtisi göstermemektedir.
+ANSWER: b
+
+431. If you do not do this, overheat of the computers can occur.
+a) Eğer bunu yapmazsanız, bilgisayarlarda aşırı ısınma meydana gelebilir.
+b) Eğer bu yapılmazsa bilgisayarlar aşırı ısınabilir.
+c) Eğer bunu yapmazsanız, bilgisayarlarda aşırı ısınma meydana gelir.
+d) Bu işlem yapılmazsa, bilgisayarlar aşırı ısınabilir.
+ANSWER: a
+
+432. If no crack is detected, perform subsequent inspections every 1000 flights.
+a) Eğer herhangi bir çatlama tespit edilmezse, takip eden denetimler her 1000 uçuşta bir yapılmalıdır.
+b) Eğer hiçbir çatlama tespit edilmezse, her 1000 uçuşta bir takip eden denetimleri gerçekleştirin.
+c) Eğer hiçbir çatlama tespit edilmezse, sonraki denetimler her 1000 uçuşta bir yapılmalıdır.
+d) Eğer çatlak yoksa, takip eden denetimleri her 1000 uçuşta bir gerçekleştirin.
+ANSWER: b
+
+433. Unless it is specifically allowed by the MMEL, an inoperative item should not be removed.
+a) MMEL'de özellikle izin verilmediği sürece, işlevi durmuş bir parça sökülemez.
+b) İşlevsiz bir parça, MMEL tarafından açıkça izin verilmedikçe sökülmemelidir.
+c) MMEL tarafından spesifik olarak izin verilmediği sürece, işlemeyen bir parça sökülmemelidir.
+d) MMEL tarafından spesifik olarak izin verilmediği sürece, kullanılmayan bir parça sökülmemelidir.
+ANSWER: c
+
+434. Any crew interphone station that is operative may be used.
+a) Çalışan herhangi bir mürettebat telsiz hattını kullanabilirsiniz.
+b) Çalışan herhangi bir mürettebat telsiz hattı kullanılır.
+c) Kullanılacak mürettebat telsiz hattı sadece çalışır durumda olanlardan seçilmelidir.
+d) Çalışan herhangi bir mürettebat telsiz hattı kullanılabilir.
+ANSWER: d
+
+435. If the test confirms the fault, do the operational test of the lights.
+a) Eğer test hatayı doğrularsa, ışıkların operasyonel testini yapın.
+b) Hata doğrulandığı takdirde, ışıkların operasyonel testi yapılmalıdır.
+c) Eğer test hatayı doğrularsa, ışıkların operasyonel testi yapılır.
+d) Eğer hata testle doğrulanmışsa, ışıkların operasyonel testini yapın.
+ANSWER: a
+
+436. Similar doors on opposite sides of the aircraft have the same letter identifier.
+a) Uçağın karşılıklı yan taraflarındaki kapılar aynı harf koduna sahiptir.
+b) Uçaktaki karşı taraflardaki benzer kapılar aynı harf kodu ile tanımlanmıştır.
+c) Uçağın karşılıklı yanlarındaki benzer kapılar aynı harf tanımlayıcısına sahiptir.
+d) Uçağın karşılıklı yan taraflarındaki benzer kapılar aynı harf koduyla tanımlanır.
+ANSWER: c
+
+437. Discharge heads should be clean and free from foreign objects.
+a) Tahliye başlıkları temiz ve yabancı cisimlerden arınmış olmalıdır.
+b) Tahliye başlıkları temiz ve yabancı cisimlerden arınmış olacaktır.
+c) Tahliye başlıkları temizlenmeli ve yabancı cisimlerden arındırılmalıdır.
+d) Tahliye başlıkları temiz olmalı ve yabancı cisimler arındırılmalıdır.
+ANSWER: a
+
+438. Additional certification requirements may impose additional restrictions.
+a) Ek sertifikasyon gereklilikleri, ek kısıtlamaları uygulama ihtiyacı doğurabilir.
+b) Ek sertifikasyon gereksinimleri ek kısıtlayıcı şartlar talep edebilir.
+c) Ek sertifikasyon gereklilikleri ek kısıtlamaları beraberinde getirir.
+d) Ek sertifikasyon gereklilikleri ek kısıtlamalar getirebilir.
+ANSWER: d
+
+439. Set the test set at a location forward of the airplane and 45 degrees from the centerline.
+a) Testi uçağın önünde ve uçağın merkez hattından 45 derece uzakta bir konuma koyun.
+b) Test setini uçağın önünde ve uçağın merkez hattından 45 derece uzakta bir konuma yerleştirin.
+c) Test setini uçağın önünde veya uçağın merkezinden 45 derece uzakta bir konuma ayarlayın.
+d) Testi uçağın önüne veya uçağın merkez hattından 45 derece uzakta bir konuma yerleştirin.
+ANSWER: b
+
+440. This leakage test is done to make sure the connections are tight and there are no large leaks.
+a) Bu testi, bağlantıların sıkı olduğundan ve büyük kaçak olmadığından emin olmak için yapın.
+b) Bu kaçak testi, bağlantıların sıkı olduğundan ve büyük kaçak olmadığından emin olmak için yapılır.
+c) Bu kaçak testini, bağlantıların sıkı olduğundan ve herhangi bir kaçak olmadığından emin olmak için yapın.
+d) Bu test, bağlantıların sıkı olduğundan ve herhangi bir kaçak olmadığından emin olmak için yapılır.
+ANSWER: b
+
+441. A temperature lower than -57 Celsius degrees can damage the valve.
+a) -57 santigrat dereceden daha düşük bir sıcaklık valfe zarar verebilir.
+b) -57 santigrat derecedeki bir sıcaklık valfe zarar verebilir.
+c) -57 santigrat dereceden daha yüksek bir sıcaklık valfe zarar verebilir.
+d) -57 santigrat derecedeki herhangi bir sıcaklık valfe zarar verebilir.
+ANSWER: a
+
+442. Use the control lever to extend the wing surface.
+a) Kanat yüzeyini genişletmek için kontrol kolu kullanılır.
+b) Kanat yüzeyini kontrol kolunu kullanıp genişletebilirsiniz.
+c) Kanat yüzeyini genişletmek için kontrol kolunu kullanın.
+d) Kanat alanını genişletmek için kontrol kolunu kullanabilirsiniz.
+ANSWER: c
+
+443. Clean the valve stem and port.
+a) Valf gövdesini veya girişi temiz tutun.
+b) Valf gövdesini ve girişi temizleyebilirsiniz.
+c) Valf gövdesini ve girişi temizlemeniz gerekir.
+d) Valf gövdesini ve girişi temizleyin.
+ANSWER: d
+
+444. LOW OIL PRESSURE lights and associated generator low oil pressure switches may be inoperative.
+a) DÜŞÜK YAĞ BASINCI ışıkları ve ilgili jeneratör düşük yağ basıncı anahtarları çalışmıyor.
+b) DÜŞÜK YAĞ BASINCI ışıkları ya da ilgili jeneratör düşük yağ basıncı anahtarları çalışmayabilir.
+c) DÜŞÜK YAĞ BASINCI ışıkları veya ilgili jeneratör düşük yağ basıncı anahtarlarından biri çalışmıyor olabilir.
+d) DÜŞÜK YAĞ BASINCI ışıkları ve ilgili jeneratör düşük yağ basıncı anahtarları çalışmıyor olabilir.
+ANSWER: d
+
+445. Examine the hydraulic connections for leaks and the security of attachments.
+a) Hidrolikleri kaçak ve bağlantıların güvenliği açısından inceleyin.
+b) Hidrolik bağlantıları kaçak ve güvenlik açısından inceleyin.
+c) Hidrolik bağlantıları kaçak ve bağlantıların güvenliği açısından inceleyin.
+d) Hidrolik bağlantı kaçakları veya bağlantıların güvenliği incelenmelidir.
+ANSWER: c
+
+446. Set the test switch on the overhead maintenance panel to the ON position.
+a) Baş üstü bakım panelindeki test anahtarını AÇIK konumuna getirin.
+b) Baş üstü bakım panelindeki anahtarı AÇIK konumuna getirin.
+c) Bakım panelindeki test anahtarını AÇIK konumuna getirin.
+d) Bakım panelindeki test anahtarını AÇIN.
+ANSWER: a
+
+447. Damage that is more than 50% of one thread or 10% of two or more threads of the ignition lead cable coupling nuts is not permitted.
+a) Ateşleme kablosu bağlantısının bir dişinin %50'sinden veya iki veya daha fazla dişinin %10'undan fazla hasar kabul edilebilir.
+b) Ateşleme kablosu bağlantı somunlarının bir dişinin %50'sinden ve iki veya daha fazla dişinin %10'undan fazla hasar kabul edilemez.
+c) Ateşleme kablosu bağlantısının bir dişinin %50'sinden ve iki veya daha fazla dişinin %10'undan fazla hasara izin verilir.
+d) Ateşleme kablosu bağlantı somunlarının bir dişinin %50'sinden veya iki veya daha fazla dişinin %10'undan fazla hasara izin verilmez.
+ANSWER: d
+
+448. Apply filler material to repaired areas with a depth more than 0.13 mm.
+a) 0,13 mm'den fazla derinliğe sahip tamir edilmiş alanlara dolgu malzemesi uygulamanız önerilir.
+b) 0,13 mm'den fazla derinliğe sahip tamir edilmiş alanlara dolgu malzemesi uygulayın.
+c) 0,13 mm'den fazla derinliğe sahip alanlara dolgu malzemesi uygulanması gerekebilir.
+d) Tamir edilen ve derinliği 0,13 mm'yi aşan tüm alanlara dolgu malzemesi ekleyin.
+ANSWER: b
+
+449. Make sure that there is a minimum of 2.54 mm clearance between equipment to prevent chafing.
+a) Ekipmanlar arasında minimum 2,54 mm boşluk olduğundan emin olmak için sürtünmeyi önleyin.
+b) Sürtünmeyi önlemek amacıyla ekipmanlar arasında minimum 2,54 mm boşluk bırakılmalıdır.
+c) Sürtünmeyi önlemek için ekipmanlar arasında minimum 2,54 mm boşluk olduğundan emin olun.
+d) Ekipmanlar arasında 2,54 mm boşluk olması sürtünmeyi önlemek için zorunludur.
+ANSWER: c
+
+450. Replace the portable oxygen module in the cockpit.
+a) Kokpitteki portatif oksijen modülünü değiştirmelisiniz.
+b) Kokpitteki portatif oksijen modülü değiştirilmelidir.
+c) Kokpitteki portatif oksijen modülünü değiştirin.
+d) Portatif oksijen modülünü kokpite takın.
+ANSWER: c
+
+451. Maintenance facilities that replace heat sinks must return the carbon heat sinks to an applicable Goodrich Distributor.
+a) Isı emicileri değiştiren bakım tesisleri karbon ısı emicilerini uygun Goodrich Distribütörüne iade etmelidir.
+b) Isı emicileri değiştiren bakım tesisleri karbon ısı emicilerini bir Goodrich Distribütörüne iade etmek zorundadır.
+c) Bakım tesisleri ısı emicileri değiştirdiklerinde, karbon ısı emicileri uygun Goodrich Distribütörüne iade edilmeli.
+d) Isı emicileri değiştiren bakım tesislerinin karbon ısı emicilerini uygun bir Goodrich Distribütörüne iade etmesi zorunludur.
+ANSWER: d
+
+452. Lead-acid batteries can produce explosive mixtures of hydrogen and oxygen while under charge or discharge, which can explode if ignited.
+a) Kurşun asit piller şarj veya deşarj sırasında patlayıcı hidrojen ve oksijen karışımları üretebilir; bunlar ateşlenirse patlayabilir.
+b) Kurşun asit piller şarj veya deşarj altında hidrojen ve oksijen üretebilir ve bunlar patlamalara yol açabilir.
+c) Kurşun asit pillerin şarj veya deşarjı sırasında patlayıcı hidrojen ve oksijen karışımları oluşabilir.
+d) Şarj veya deşarj sırasında patlayıcı karışımlar üreten kurşun asit piller tehlikelidir.
+ANSWER: a
+
+453. You must obey the wiring standard practices to ensure proper electrical fault isolation.
+a) Uygun elektrik arıza izolasyonunu sağlamak için kablolama standart uygulamalarına uyulması gerekmektedir.
+b) Uygun elektrik arıza izolasyonunu sağlamak için kablolama standart uygulamalarına uymak zorundasınız.
+c) Uygun elektrik arıza izolasyonunu sağlamak için kablolama standart uygulamalarına uymalısınız.
+d) Uygun elektrik arıza izolasyonunu sağlamak için kablolama standart uygulamalarına uymanız gerekir.
+ANSWER: b
+
+454. Keep brake assemblies in a dry location or in a container that can keep the brake assembly dry.
+a) Fren aksamlarını kuru bir yerde veya fren aksamını kuru tutabilecek bir konteynırda tutun.
+b) Fren aksamları kuru bir yerde veya kuru bir konteynırda saklanmalıdır.
+c) Fren aksamlarını her zaman kuru tutmak için uygun depolama koşulları sağlayın.
+d) Kuru bir yerde veya fren aksamı için uygun konteynırda saklama zorunludur.
+ANSWER: a
+
+455. The washers should be obtained directly from the manufacturer.
+a) Contalar doğrudan üreticiden satın alınmalıdır.
+b) Contalar sadece üreticiden temin edilmelidir.
+c) Contaları doğrudan üreticiden temin edin.
+d) Contaların üreticiden temin edilmesi tavsiye edilmektedir.
+ANSWER: a
+
+456. Any high-frequency eddy current equipment may be used provided that it meets the requirements of this procedure.
+a) Bu prosedürün gerekliliklerini karşılaması koşuluyla herhangi bir yüksek frekanslı eddy akımı ekipmanı kullanılacaktır.
+b) Bu prosedürün gerekliliklerini karşılaması koşuluyla herhangi bir yüksek frekanslı eddy akımı ekipmanı kullanılabilir.
+c) Bu prosedürün gerekliliklerini karşılaması koşuluyla herhangi bir yüksek frekanslı eddy akımı ekipmanı kullanılır.
+d) Bu prosedürün gerekliliklerini karşılaması koşuluyla herhangi bir yüksek frekanslı eddy akımı ekipmanını kullanabilirsiniz.
+ANSWER: b
+
+457. If you do the resistance check from the avionics compartment, you must disconnect all the transducers, but not the one in test.
+a) Direnç kontrolünü aviyonik bölmeden yaparsanız, test edilen hariç tüm transdüserlerin bağlantısını kesmeniz gerekir.
+b) Direnç kontrolü aviyonik bölmeden yapılırsa, test edilen hariç tüm transdüserlerin bağlantısının kesilmesi gerekir.
+c) Direnç kontrolünü aviyonik bölmeden yaparsanız, test edilen hariç tüm transdüserlerin bağlantısını yapmanız gerekir.
+d) Direnç kontrolünü aviyonik bölmeden yapsaydınız, test edilen hariç tüm transdüserlerin bağlantısını kesmeniz gerekirdi.
+ANSWER: a
+
+458. Fire extinguishant can cause damage to carbon disks.
+a) Yangın söndürücünün kullanımı karbon disklere zarar verebilir.
+b) Yangın söndürücüler karbon diskler için potansiyel bir hasar riski taşır.
+c) Yangın söndürücü karbon disklere zarar verebilir.
+d) Karbon diskler yangın söndürücüden zarar görebilir.
+ANSWER: c
+
+459. Ordering parts with a zero in the part number can cause some issues for customers.
+a) Parça numarasında sıfır olan parçaların siparişleri, müşteriler için bazı sorunlara neden olmaktadır.
+b) Parça numarasında sıfır bulunan parça siparişleri müşteriler için sorun yaratabilir.
+c) Müşteriler, parça numarasında sıfır bulunan parçaları sipariş ederken sorunlarla karşılaşabilir.
+d) Parça numarasında sıfır olan parçaların siparişi bazı müşteri sorunlarına neden olabilir.
+ANSWER: a
+
+460. If the installation is correct, no further action is required.
+a) Montaj doğruysa, başka bir işlem gerekmemektedir.
+b) Kurulum doğru ise herhangi bir ek işlem gerekmez.
+c) Eğer montaj doğru yapılmışsa, ek işlem yapılmasına gerek yoktur.
+d) Montaj doğru şekilde yapıldıysa, başka bir işlem yapılmak zorunda değildir.
+ANSWER: a
+
+461. The basic cylinder of all types of extinguisher consists of a seamless aluminum cylindrical container.
+a) Tüm yangın söndürücü türlerinin temel silindiri dikişsiz alüminyum silindirik bir kaptan oluşur.
+b) Yangın söndürücülerin temel silindiri dikişsiz alüminyum bir kaptır.
+c) Tüm yangın söndürücü tipleri temel silindir olarak dikişsiz alüminyum kap kullanır.
+d) Yangın söndürücülerin temel silindiri dikişsiz bir alüminyum silindirik kaptan meydana gelmektedir.
+ANSWER: a
+
+462. After you touch cadmium plated parts, clean your hands before you eat or smoke.
+a) Kadmiyum kaplı parçalara dokunduktan sonra yemek yemeden veya sigara içmeden önce ellerinizi temizleyin.
+b) Kadmiyum kaplı parçalara dokunursanız, elleri mutlaka yıkayın.
+c) Kadmiyum kaplı parçalarla çalıştıktan sonra yemek ve sigara içmekten kaçının.
+d) Kadmiyum kaplı parçalara dokunduktan sonra yemek veya sigara içmeden önce ellerinizi yıkayın.
+ANSWER: d (note: a and d are essentially same, d is cleaner translation)
+
+463. NOTE: All equipment removed to get access during a maintenance operation must also be examined before re-installation.
+a) NOT: Bakım operasyonu sırasında erişim sağlamak için sökülen tüm ekipman, yeniden takılmadan önce de muayene edilmek zorundadır.
+b) NOT: Bakım operasyonu sırasında sökülen ekipman muayene edilmeksizin yeniden takılabilir.
+c) NOT: Bakım sırasında sökülen ekipmanın yeniden takılmadan muayene edilmesi tavsiye edilir.
+d) NOT: Bakım operasyonu sırasında erişim sağlamak için sökülen ekipmanlar yeniden takılmadan önce incelenebilir.
+ANSWER: a
+
+464. If the battery stays connected during parking, the loads that are permanently connected will decrease the battery charge to a very low level.
+a) Pil park sırasında bağlı kalırsa, kalıcı olarak bağlı yükler pil şarjını çok düşük bir seviyeye indirecektir.
+b) Park süresince pil bağlı kalırsa, daima bağlı yükler pili boşaltacaktır.
+c) Pil park halinde bağlı kaldığı takdirde, sabit bağlı yükler pil şarjını oldukça düşürecektir.
+d) Eğer pil park sırasında bağlı tutulursa, kalıcı yükler şarjı neredeyse tamamen bitirecektir.
+ANSWER: a
+
+465. If a part, tool, or object falls into the engine, the assembly process must stop until the fallen articles are found.
+a) Bir parça, alet veya nesne motora düşerse, düşen eşyalar bulunana kadar montaj işlemi durmalıdır.
+b) Motora herhangi bir nesne düştüğünde montaj hemen durdurulmalı ve nesne bulunmalıdır.
+c) Bir parça veya alet motora düşerse, montaj işlemi mümkün olan en kısa sürede sürdürülmelidir.
+d) Motora düşen parça veya aletlerin bulunması durumunda montaj işlemine devam edilebilir.
+ANSWER: a
+
+466. Make sure that the power indicator light on the galley panel goes off.
+a) Galeri panelindeki güç gösterge ışığının söndüğünden emin olun.
+b) Galeri panelindeki güç gösterge ışığının yandığından emin olun.
+c) Galeri panelindeki güç gösterge ışığını kapatın.
+d) Galeri panelindeki güç gösterge ışığını kontrol edin.
+ANSWER: a
+
+467. The pretreatment of a material increases the corrosion resistant properties and provides a good surface for the bond of paint coatings.
+a) Bir malzemenin ön işlemi korozyon direnci özelliklerini artırır ve boya kaplamalarının bağlanması için iyi bir yüzey sağlar.
+b) Ön işlem, malzemenin korozyon direncini artırabilir ve boya için yüzey hazırlar.
+c) Malzeme ön işlemi korozyon direncini artırır ve boya için yüzey hazırlamayı sağlar.
+d) Bir malzemenin ön işlemi, korozyon direncini ve boya yapışmasını iyileştirir.
+ANSWER: a
+
+468. The procedure can be used to remove paint coatings from metallic materials as an alternative to chemical paint stripping.
+a) Prosedür, kimyasal boya soyma işlemine alternatif olarak metalik malzemelerden boya kaplamalarını kaldırmak için kullanılabilir.
+b) Bu prosedür, kimyasal boya çözücülere alternatif olarak metal yüzeylerden boya kaldırmak için uygulanabilir.
+c) Prosedür, metalik malzemelerden boya kaldırmak için kimyasal alternatiflere karşı kullanılır.
+d) Metalik malzemelerde kimyasal boya soymanın yerine bu prosedür uygulanabilir.
+ANSWER: a
+
+469. All axial loads from the engine are transferred to the pylon through the forward mount while side and vertical loads are transferred by both mounts.
+a) Motordan gelen tüm eksenel yükler, ön montaj aracılığıyla pilona aktarılırken yanal ve dikey yükler her iki montaj tarafından aktarılır.
+b) Eksenel yükler ön tutturma aracılığıyla pilona iletilir; yan ve dikey yükler ise her iki tutturma tarafından taşınır.
+c) Motor yükleri ön montaj ile pilona aktarılırken, diğer yükler her iki montaj tarafından taşınır.
+d) Eksenel yükler ön montajdan pilona iletilir; yanal yükler ise her iki montaj tarafından aktarılır.
+ANSWER: a
+
+470. It is recommended to install an additional regulator or pressure relief device on high pressure nitrogen sources to prevent incorrect regulation.
+a) Yanlış basınç düzenlemesini önlemek için yüksek basınçlı nitrojen kaynaklarına ek bir regülatör veya basınç tahliye cihazı kurulması tavsiye edilmektedir.
+b) Yüksek basınçlı nitrojen kaynaklarına ek bir regülatör takılması yanlış düzenlemeyi önler.
+c) Yanlış düzenlemeyi önlemek amacıyla yüksek basınçlı nitrojen kaynaklarına ek bir tahliye cihazı takılması önerilmektedir.
+d) Yüksek basınçlı nitrojen kaynaklarına ek basınç tahliye cihazı veya regülatör kurulumu önerilir.
+ANSWER: a
+
+471. Carbon disks can be damaged by the use of fire extinguishant.
+a) Yangın söndürücü kullanımı karbon disklere zarar verebilir.
+b) Karbon diskler yangın söndürücü ile hasar görebilir.
+c) Yangın söndürücü karbon disklere zarar verir.
+d) Yangın söndürücünün kullanımı karbon disklerde hasara neden olabilir.
+ANSWER: d
+
+472. Put a warning notice in the cockpit telling persons not to operate the flight controls.
+a) Uçuş kumandalarını çalıştırmamaları için kokpite bir uyarı bildirisi asın.
+b) Uçuş kumandalarının çalıştırılmaması için kokpite uyarı notu koyun.
+c) Kişilere uçuş kumandalarını çalıştırmamaları için kokpite bir uyarı notu yerleştirin.
+d) Kokpite, uçuş kumandalarının çalıştırılmamasını bildiren bir uyarı notu koyun.
+ANSWER: d
+
+473. Make sure the probes, the engine, and the APU are cool before installation of the protective devices.
+a) Probları, motoru ve APU'yu soğumaya bırakın, ardından koruyucu cihazları takın.
+b) Koruyucu cihazların montajından önce probların, motorun ve APU'nun soğuduğundan emin olun.
+c) Problar ve APU soğuduğunda koruyucu cihazları monte edin.
+d) Motor ve APU soğumadan koruyucu cihazları takmayın.
+ANSWER: b
+
+474. Do not weld the engine components while they are installed, because there is a risk of fire.
+a) Yangın riski olduğundan, motor parçaları takılıyken kaynak yapmayın.
+b) Motor parçaları monte haldeyken kaynak yapmak tehlikelidir.
+c) Yangın riski nedeniyle motor bileşenlerine kaynak yapılmamalıdır.
+d) Motor bileşenleri takılıyken kaynak yapmak yangına neden olabilir.
+ANSWER: a
+
+475. If the securing plate and its attaching hardware are already attached to the main body of the mounting cradle, remove them.
+a) Sabitleme plakası ve bağlantı donanımı montaj yatağının ana gövdesine mevcutta takılıysa, bunları çıkarın.
+b) Sabitleme plakası ve donanımı montaj yatağına takılıysa sökülmelidir.
+c) Sabitleme plakası montaj yatağının ana gövdesinde mevcutsa çıkarın.
+d) Montaj yatağının ana gövdesine takılı sabitleme plakasını ve donanımını söküp çıkarın.
+ANSWER: a
+
+476. The justifications include information necessary to show compliance with applicable CS-MMEL paragraphs.
+a) Gerekçeler, uygulanabilir CS-MMEL paragraflarıyla uyumu göstermek için gerekli bilgileri içerir.
+b) Gerekçelerde CS-MMEL uyumunu kanıtlamak için gerekli bilgiler yer almaktadır.
+c) Uygulanabilir CS-MMEL paragraflarına uyum için gerekli bilgiler gerekçelerde bulunmaktadır.
+d) CS-MMEL uyumunu göstermek için gereken bilgiler gerekçelerde yer almalıdır.
+ANSWER: a
+
+477. Any contamination found in the oil that comes out from the scavenge screen inspection plug housing should be kept for investigation.
+a) Yağ giderme filtresi inceleme tapası kovanından çıkan yagtaki kirlilik araştırma için saklanmalıdır.
+b) Savurma filtresi inceleme tapa kovanından çıkan yağdaki herhangi bir kirlilik araştırma için saklanmalıdır.
+c) Tarama ekranı muayene tapası muhafazasından çıkan yağda bulunan kirlilik soruşturma için muhafaza edilmelidir.
+d) Tarama ekranı inceleme tapası muhafazasından çıkan yağdaki her türlü kirlilik araştırma için saklanmalıdır.
+ANSWER: d
+
+478. Cadmium that is swallowed can cause kidney or reproductive system disease.
+a) Yutulmuş kadmiyum böbrek veya üreme sistemi hastalığına neden olabilir.
+b) Yutulmak üzere olan kadmiyum böbrek hasarına yol açabilir.
+c) Kadmiyum yutulduğunda böbrek hastalığı riski taşır.
+d) Kadmiyumun yutulması böbrek veya üreme sistemi hastalığı riskini artırır.
+ANSWER: a
+
+479. On in-service aircraft, in zone 124, some isolated cracks have been discovered on plate assemblies of nose landing gear door uplock assembly at 3633 flights.
+a) Hizmet içi uçaklarda, bölge 124'te, burun iniş takımı kapağı kilitleme aksamının plaka aksamlarında 3633 uçuşta bazı izole çatlaklar tespit edilmiştir.
+b) 3633 uçuştan sonra, bölge 124'te burun iniş takımı kapağı kilit aksamında bazı çatlaklar görülmüştür.
+c) Servis uçaklarında bölge 124'te, 3633 uçuşta burun iniş takımı kapısı kilitleme aksamının plakaları üzerinde bazı izole çatlaklar keşfedilmiştir.
+d) Bölge 124'te 3633 uçuş sonrasında bazı çatlaklar bulunmuştur.
+ANSWER: c
+
+480. These are parameters requiring a full label on the output label.
+a) Bunlar, çıktı etiketi üzerinde tam bir etiket gerektiren parametrelerdir.
+b) Parametreler, çıktı etiketi üzerinde tam bir etiket gerektirir.
+c) Parametreler için çıktı etiketi üzerinde tam bir etiket gerekir.
+d) Çıktı etiketi üzerinde tam bir etiket varsa parametreler vardır.
+ANSWER: a
+
+481. The emergency shutdown procedure must only be used when abnormal conditions occur.
+a) Anormal koşullar oluştuğunda yalnızca acil durum kapatma prosedürü kullanılmalıdır.
+b) Acil durum kapatma prosedürü yalnızca anormal koşullar ortaya çıktığında kullanılmalıdır.
+c) Anormal durumlar meydana geldiğinde acil durum kapatma prosedürü uygulanmak zorundadır.
+d) Yalnızca anormal koşullar mevcut olduğunda acil kapatma prosedürü devreye sokulmalıdır.
+ANSWER: b
+
+482. The busbars supply 115V AC to the electrically operated seats and the passenger portable electronic devices.
+a) Bara hatları, elektrikle çalışan koltuklara ve yolcu taşınabilir elektronik cihazlara 115V AC sağlar.
+b) Busbarlar, elektrikle çalıştırılan koltuklara ve yolcuların taşınabilir elektronik cihazlarına 115V AC iletir.
+c) Bara hatları elektrikli koltuklar ve taşınabilir cihazlara 115 volt AC temin etmektedir.
+d) 115V AC, busbarlar aracılığıyla elektrikle çalışan koltuk ve taşınabilir elektronik cihazlara sağlanmaktadır.
+ANSWER: b
+
+483. Maintenance messages related to the fuel system can possibly occur during the first engine start.
+a) Yakıt sistemiyle ilgili bakım mesajları ilk motor çalıştırma sırasında ortaya çıkabilir.
+b) İlk motor çalıştırma sırasında yakıt sistemine ilişkin bakım mesajları oluşabilir.
+c) Yakıt sistemi bakım mesajları yalnızca ilk çalıştırma sırasında görülür.
+d) İlk motor çalıştırmada yakıt sistemi mesajları muhtemelen belireceKtir.
+ANSWER: b
+
+484. When all the letters of the alphabet have been used up for the first letter identifier, the sequence starts again with letter A.
+a) Alfabe harflerinin tamamı ilk harf tanımlayıcı için kullanıldığında, sıra A harfiyle yeniden başlar.
+b) Alfabe harfleri ilk tanımlayıcı için bittiğinde, A harfinden tekrar başlanır.
+c) Tüm alfabe harfleri kullanıldığında sıralama A harfiyle yeniden başlatılır.
+d) Alfabe harfleri harf tanımlayıcı için tükendiğinde dizi A harfinden itibaren yenilenir.
+ANSWER: a
+
+485. You must wait for a minimum of one hour after the third time, before you start or try to start the APU again.
+a) Üçüncü denemeden sonra APU'yu yeniden başlatmayı denemeden önce en az bir saat beklemelisiniz.
+b) APU'yu yeniden başlatmaya çalışmadan önce üçüncü denemeden itibaren en az bir saat beklemeniz gerekir.
+c) Üçüncü çalıştırma denemesinin ardından APU'yu yeniden başlatmadan veya başlatmayı denemeden önce en az bir saat beklemelisiniz.
+d) APU üçüncü kez başlatılamazsa, bir saat bekledikten sonra tekrar deneme yapılabilir.
+ANSWER: c
+
+--- TÜRKÇEDEN İNGİLİZCEYE ÇEVİRİ (TURKISH TO ENGLISH) ---
+
+486. Korozyonun ilk belirtisi, kanadın dış yüzeylerindeki dairesel şekilli lekeler veya izlerdir.
+a) The initial sign of corrosion manifests in circular-shaped stains or marks on the exterior surfaces of the blade.
+b) The primary indicators of corrosion are circular marks or stains on the outer surfaces of the blade.
+c) The first indication of corrosion is circular shaped stains or markings on the blade outer surfaces.
+d) The first indication of corrosion may be circular shaped stains or markings on the blade outer surfaces.
+ANSWER: c
+
+487. Montaj prosedürünü kolaylaştırmak için, tüm cıvata ve somunlar gevşek bir şekilde monte edilmelidir.
+a) To make the assembly procedure easier, it is recommended to assemble all bolts and nuts loosely.
+b) Loose assembly of all bolts and nuts can facilitate the assembly procedure.
+c) The ease of the assembly procedure can be improved by loosely assembling all bolts and nuts.
+d) To ease the assembly procedure, all bolts and nuts should be assembled loosely.
+ANSWER: d
+
+488. Marş türbini harici olarak sağlanan hava ile harekete geçirilir.
+a) The starting turbine is driven by externally supplied air.
+b) The external air supply drives the starting turbine.
+c) The starter turbine is driven by externally supplied air.
+d) The starter turbine is driven by internally supplied air.
+ANSWER: c
+
+489. Yangın söndürücü karbon disklere zarar verebilir.
+a) Carbon disks can be damaged by the use of fire extinguishant.
+b) Fire extinguishants have the potential to cause damage to carbon disks.
+c) Fire extinguishant can cause damage to carbon disks.
+d) Fire extinguishant causes damage to carbon disks.
+ANSWER: c
+
+490. Fren aksamlarını kuru bir yerde veya fren aksamını kuru tutabilecek bir konteynırda tutun.
+a) Brake assemblies should be kept dry and stored in a dry location or container.
+b) For optimal storage of brake assemblies, they should be kept in a dry place or container.
+c) Keep brake assemblies in a dry location or in a container that can keep the brake assembly dry.
+d) Keep brake assemblies in a dry area or container to ensure they stay dry.
+ANSWER: c
+
+491. Contalar doğrudan üreticiden satın alınmalıdır.
+a) The washers are to be purchased direct from the manufacturer.
+b) The washers should be obtained directly from the manufacturer.
+c) Purchasing the washers directly from the manufacturer is the only option.
+d) Direct purchase of the washers is required from the manufacturer.
+ANSWER: b
+
+492. Eğer hiçbir çatlak tespit edilmezse, her 1000 uçuşta bir takip eden denetimleri gerçekleştirin.
+a) If any crack is not detected, perform subsequent inspections every 1000 flights.
+b) If no crack is detected, perform subsequent inspections every 1000 flights.
+c) Unless any crack is detected, do the subsequent inspections every 1000 flights.
+d) Perform the subsequent inspections every 1000 flights if no crack was detected.
+ANSWER: b
+
+493. Uçağın karşılıklı yanlarındaki benzer kapılar aynı harf tanımlayıcısına sahiptir.
+a) Similar doors on opposite sides of the aircraft have the same letter identifier.
+b) Doors on opposite sides of the aircraft have the same letter code.
+c) The similar doors on opposite sides share the same letter.
+d) Aircraft doors on opposite sides are identified with the same letter.
+ANSWER: a
+
+494. Bu prosedürün gerekliliklerini karşılaması koşuluyla herhangi bir yüksek frekanslı eddy akımı ekipmanı kullanılabilir.
+a) This procedure's requirements must be met before any high-frequency eddy current equipment is used.
+b) Any high-frequency eddy current equipment may be used provided that it meets the requirements of this procedure.
+c) High-frequency eddy current equipment can be used as long as it fulfills the procedure requirements.
+d) Any high-frequency eddy current equipment is allowed if it meets the applicable requirements.
+ANSWER: b
+
+495. Ek sertifikasyon gereklilikleri ek kısıtlamalar getirebilir.
+a) Every certification requirement imposes additional restrictions.
+b) Additional certification requirements may impose additional restrictions.
+c) Additional certification requirements impose additional restrictions.
+d) Certification requirements can result in additional restrictions always.
+ANSWER: b
+
+496. Oksijen gösterge rölesi, elektronik ekipman bölmesindeki bağlantı kutusu 23'tedir.
+a) The oxygen indication relay is in junction box 23 in the electronics equipment compartment.
+b) The oxygen indication relay can be found in junction box 23 in the electronics equipment compartment.
+c) The oxygen indication relay is positioned in junction box 23 in the electronics equipment compartment.
+d) The oxygen indication relay is located at junction box 23 of the avionics bay.
+ANSWER: a
+
+497. Uçağı krikolar üzerinde tartmak için, uçağın eğim açısının sıfır derece olması gerekir.
+a) While weighing the aircraft the aircraft cannot have a pitch altitude on jacks.
+b) To weigh the aircraft on jacks, the aircraft must have a pitch attitude of zero degrees.
+c) To weigh the aircraft on jacks, the aircraft's pitch altitude must be set to zero degrees.
+d) While weighing the aircraft on jacks, the aircraft must have a pitch attitude of zero degrees.
+ANSWER: b
+
+498. Sürtünmeyi önlemek için ekipmanlar arasında minimum 2,54 mm boşluk olduğundan emin olun.
+a) Make sure that there is a minimum of 2.54 mm clearance between equipment to prevent chafing.
+b) There should be a minimum of 2.54 mm clearance between equipment to prevent chafing.
+c) A minimum of 2.54 mm clearance is needed between equipment in order to preserve chafing.
+d) Make sure that there is a clearance of 2.54 mm between equipment to preserve chafing.
+ANSWER: a
+
+499. Kokpitteki portatif oksijen modülünü değiştirin.
+a) Replacing the portable oxygen module in the cockpit.
+b) The portable oxygen module must be replaced in the cockpit.
+c) Replace the portable oxygen module in the cockpit.
+d) You should replace the portable oxygen module in the cockpit.
+ANSWER: c
+
+500. Bazı otopilot kurulumları uçuş direktörünün çalışır halde olmasına bağlı değildir ve temel hareket modları hala mevcut olabilir.
+a) Every autopilot installation does not depend on flight director being operative, and basic attitude modes may still be available.
+b) Some autopilot installations are not dependent on flight director being operative, and basic attitude modes may still be available.
+c) Some autopilot installations do not depend on flight director being operative, and basic attitude modes may still be available.
+d) Some autopilot installations are not dependent on flight director being operative, but basic attitude modes may still be available.
+ANSWER: b
+
+501. Kadmiyum kaplamalı parçalara dokunmadan veya bakım yapmadan önce aşağıdaki uyarılara uyun.
+a) Obey the warnings below before you touch or do maintenance on parts that are cadmium plated.
+b) It is recommended to obey the warnings below before you touch or do maintenance on cadmium plated parts.
+c) Obey the warnings below as you touch or do maintenance on parts that are cadmium plated.
+d) It is a must to obey the warnings below before you touch or do maintenance on cadmium plated parts.
+ANSWER: a
+
+502. Bazı parçalarda, asbest içeren materyal, bir yapıştırıcı içinde olabilir.
+a) In some parts, the material that contains asbestos may be within an adhesive.
+b) In certain parts, the material that contains asbestos may be within an adhesive.
+c) In some parts, the material that contains asbestos must be within an adhesive.
+d) In some parts, the material that is contained asbestos may be with an adhesive.
+ANSWER: a
+
+503. Ön camın montajından sonra güvenlik klipslerini ve etiketleri çıkarın ve devre şalterlerini belirtilen şekilde kapatın.
+a) Remove the safety clips and tags, and close the circuit breakers specially after the installation of the windshield.
+b) Remove the safety clips and tags as specified, and close the circuit breakers after the installation of the windshield.
+c) Remove the safety clips and tags, and close the circuit breakers as specified after the installation of the windshield.
+d) As specified, remove the safety clips and tags, and close the circuit breakers after the installation of the windshield.
+ANSWER: c
+
+504. Eğer sabitleme plakası ve bağlantı donanımı montaj yatağının ana gövdesine mevcutta takılıysa, bunları çıkarın.
+a) If the securing plate and its attaching hardware are already attached to the main body of the mounting cradle, remove them.
+b) Should the securing plate and its attaching hardware already be affixed to the main body of the mounting cradle, they must be removed.
+c) In case the mounting cradle's main body has already been fitted with the securing plate and the connecting hardware, you should remove them.
+d) If the main body of the mounting cradle has the securing plate and attaching hardware in place, they should be removed.
+ANSWER: a
+
+505. Parça numarasında sıfır olan parçaların siparişleri, müşteriler için bazı sorunlara neden olmaktadır.
+a) Ordering parts with a zero in the part number can cause some issues for customers.
+b) Orders for parts with the zero in the part number causes some problems for customers.
+c) Customers may face problems when trying to order parts that have a zero in their part numbers.
+d) The presence of a zero in a part number can cause some problems for customers placing orders.
+ANSWER: a
+
+506. Derinliği 0,13 mm'den fazla olan tamir edilmiş alanlara dolgu malzemesi uygulayın.
+a) You should apply filler material to repaired areas with a depth more than 0.13mm.
+b) Apply filler material to repaired areas with a depth more than 0.13mm.
+c) Applying filler material to repaired areas with a depth more than 0.13 mm is necessary.
+d) Filler material must be applied to repaired areas with a depth more than 0.13mm.
+ANSWER: b
+
+507. Kaplama için, katmanın eşit, ince taneli olduğundan ve lens tutucu aksamında çatlama göstermediğinden emin olmak için bir kontrol yapın.
+a) For plating, do a check to make sure that the layer is constant, fine-grained, and does not show cracking on the lens retainer assy.
+b) For plating, do a check to make sure that the layer is consistent, coarse-grained, and does not show cracking on the lens retainer.
+c) For plating, perform a check to ensure the layer is even, fine-grained and free from cracks on the lens retainer assembly.
+d) Check the plating layer for evenness, fine grain and absence of cracks on the lens retainer assembly.
+ANSWER: a
+
+508. Valf gövdesini ve girişi temizleyin.
+a) Clean the valve stem or port.
+b) Clean the valve stem and port.
+c) The valve stem and port must be cleaned.
+d) You should clean the valve stem and port.
+ANSWER: b
+
+509. Direnç kontrolünü aviyonik bölmeden yaparsanız, test edilen hariç tüm transdüserlerin bağlantısını kesmeniz gerekir.
+a) If you do the resistance check from the avionics compartment, you must disconnect all the transducers, but not the one in test.
+b) When the resistance check is performed from the avionics compartment, all transducers except the one being tested must be disconnected.
+c) The resistance check from the avionics compartment requires disconnection of all transducers except the one under test.
+d) You must disconnect all transducers except the one being tested when performing the resistance check from the avionics compartment.
+ANSWER: a
+
+510. Test setini uçağın önünde ve uçağın merkez hattından 45 derece uzakta bir konuma yerleştirin.
+a) Set the test set at a location forward of the airplane and 45 degrees from the centreline.
+b) Position the test set ahead of the airplane and 45 degrees from the aircraft centreline.
+c) Set the test set at a location forward of the airplane and 45 degrees from the centerline of the airplane.
+d) Place the test set forward of the aircraft at a 45-degree angle from the centreline.
+ANSWER: c
+
+511. Tahliye başlıkları temiz ve yabancı cisimlerden arınmış olmalıdır.
+a) Discharge heads should be clean and free from foreign objects.
+b) Discharge heads should be cleaned and freed from foreign objects.
+c) Discharge heads must be cleaned and any foreign objects removed.
+d) Discharge heads should stay clean and without foreign objects.
+ANSWER: a
+
+512. Bu kaçak testi, bağlantıların sıkı olduğundan ve büyük kaçak olmadığından emin olmak için yapılır.
+a) This test is done to make sure the connections are tight and there are no large leaks.
+b) This leakage test is done to make sure the connections are tight and there are no large leaks.
+c) This leakage test is performed to verify tight connections and absence of major leaks.
+d) The leakage test verifies that connections are properly sealed and no significant leaks exist.
+ANSWER: b
+
+513. Hidrolik bağlantıları kaçak ve bağlantıların güvenliği açısından inceleyin.
+a) Inspect the hydraulic connections for leaks and attachment security.
+b) Examine the hydraulic connections for leaks and the security of attachments.
+c) Check the hydraulic connections for any signs of leakage and loose attachments.
+d) Inspect hydraulic connections for leakage and ensure attachment security.
+ANSWER: b
+
+514. Baş üstü bakım panelindeki test anahtarını AÇIK konumuna getirin.
+a) Set the test switch on the overhead maintenance panel to the ON position.
+b) Move the overhead panel test switch to ON.
+c) Place the maintenance panel test switch in the ON position.
+d) Activate the test switch on the overhead maintenance panel.
+ANSWER: a
+
+515. -57 santigrat dereceden daha düşük bir sıcaklık, valfe zarar verebilir.
+a) A temperature lower than -57 Celsius degrees can damage the valve.
+b) A temperature of -57 Celsius degrees can damage the valve.
+c) A temperature higher than -57 Celsius degrees can damage the valve.
+d) Any temperature at -57 Celsius degrees can damage the valve.
+ANSWER: a
+
+516. Kanat yüzeyini genişletmek için kontrol kolunu kullanın.
+a) The control lever is used to extend the wing surface.
+b) Use the control lever to extend the wing surface.
+c) You can use the control lever to extend the wing surface.
+d) Using the control lever extends the wing surface.
+ANSWER: b
+
+517. DÜŞÜK YAĞ BASINCI ışıkları ve ilgili jeneratör düşük yağ basıncı anahtarları çalışmıyor olabilir.
+a) LOW OIL PRESSURE lights and associated generator low oil pressure switches may be inoperative.
+b) LOW OIL PRESSURE lights or associated generator low oil pressure switches may be inoperative.
+c) LOW OIL PRESSURE lights and associated generator low oil pressure switches are inoperative.
+d) LOW OIL PRESSURE lights and the relevant generator low oil pressure switches could be faulty.
+ANSWER: a
+
+518. Ateşleme kablosu bağlantı somunlarının bir dişinin %50'sinden veya iki veya daha fazla dişinin %10'undan fazla hasara izin verilmez.
+a) Damage that is more than 50% of one thread and 10% of two or more threads of the ignition lead cable coupling nuts is not permitted.
+b) Damage that is more than 50% of one thread or 10% of two or more threads of the ignition lead cable coupling nuts is not permitted.
+c) Damage up to 50% of one thread or 10% of two or more threads of the ignition cable coupling nuts is permitted.
+d) The ignition lead cable coupling nuts allow no more than 50% damage on one thread or 10% on two threads.
+ANSWER: b
+
+519. İşlemi gerçekleştirmek için gereken tüm ekipman listesi aşağıda verilmiştir.
+a) All equipment needed to perform the task is listed below.
+b) A list of all required equipment to perform the operation is given below.
+c) The list of required equipment for performing the operation is provided below.
+d) Below is a list of all the equipment required to perform the procedure.
+ANSWER: d
+
+520. Motor parçaları yüksek sıcaklıklara maruz kaldığında, bu parçalar çatlama veya bozulma riskiyle karşı karşıya kalır.
+a) When engine components are exposed to high temperatures, these parts face the risk of cracking or deterioration.
+b) Engine parts that are exposed to high temperatures may crack or deteriorate.
+c) High temperature exposure of engine components creates cracking and deterioration risks.
+d) Engine components exposed to high temperatures are at risk of cracking or failure.
+ANSWER: a
+
+521. Uçak üzerinde çalışmadan önce tüm gerekli güvenlik önlemlerini alın.
+a) Before working on the aircraft, take all necessary safety precautions.
+b) All necessary safety measures must be in place before commencing work on the aircraft.
+c) Prior to aircraft maintenance, ensure all safety precautions are followed.
+d) It is necessary to take all safety precautions before performing work on the aircraft.
+ANSWER: a
+
+522. Yakıt sistemiyle ilgili bakım mesajları ilk motor çalıştırma sırasında ortaya çıkabilir.
+a) Fuel system maintenance messages can possibly occur during the first engine start.
+b) Maintenance messages related to fuel systems may appear during initial engine start.
+c) Maintenance messages related to the fuel system can possibly occur during the first engine start.
+d) The first engine start may generate fuel system maintenance messages.
+ANSWER: c
+
+523. Kalıcı bağlı yükler, park sırasında pil bağlı kalırsa pil şarjını çok düşük bir seviyeye indirecektir.
+a) The loads permanently connected will drain the battery to very low levels if it remains connected during parking.
+b) If the battery stays connected during parking, the loads that are permanently connected will decrease the battery charge to a very low level.
+c) Permanently connected loads will lower the battery charge significantly if the battery remains connected while parked.
+d) The permanently connected loads will discharge the battery if it is not disconnected during parking.
+ANSWER: b
+
+524. Motor kuru olarak döndürüldüğünde, marş sistemi HP rotoru döndürmek için devreye girer.
+a) When the engine is dry motored, the starter engages to turn the HP rotor.
+b) When an engine is dry motored, the starter is engaged to turn the HP rotor.
+c) The starter engages the HP rotor during dry motoring of the engine.
+d) During dry motoring, the starter motor rotates the HP rotor.
+ANSWER: b
+
+525. Boş çalışma devresi sınırlarına uygun olarak teste devam edilebilir.
+a) The test can be continued according to the duty cycle limitations.
+b) The test can be continued in accordance with starter duty cycle limitations.
+c) Testing may proceed within the limits of the starter duty cycle.
+d) Continuation of the test must comply with the duty cycle limitations.
+ANSWER: b
+
+526. Bakım teknisyeninin uçakla ilgili herhangi bir anormalliği teknik kayıt defterine girmesi gerekir.
+a) The maintenance technician needs to enter any abnormality related to the aircraft in the technical log.
+b) Any aircraft abnormality must be recorded in the technical logbook by the maintenance technician.
+c) The maintenance technician must enter any aircraft-related abnormality in the technical logbook.
+d) Abnormalities related to the aircraft must be recorded by the maintenance technician.
+ANSWER: c
+
+527. Tüm eksensel yükler ön montaj aracılığıyla pilona aktarılırken yan ve dikey yükler her iki montaj tarafından taşınır.
+a) All axial loads are transferred to the pylon through the forward mount while side and vertical loads are carried by both mounts.
+b) All axial loads from the engine are transferred to the pylon through the forward mount while side and vertical loads are transferred by both mounts.
+c) The forward mount transfers all axial loads to the pylon; side and vertical loads are shared by both mounts.
+d) Axial loads go to the pylon via the forward mount while the other loads are split between both mounts.
+ANSWER: b
+
+528. Eğer test hatayı doğrularsa, ilgili sistemin işlevsel testini yapın.
+a) If the test confirms the fault, perform the operational test of the related system.
+b) If the test verifies the failure, do the functional test of the related system.
+c) Should the test confirm the fault, perform the related system's functional test.
+d) If the test confirms the fault, do the operational test of the related system.
+ANSWER: d
+
+529. Yüksek basınçlı nitrojen kaynaklarına hatalı regülasyonu önlemek için ek bir regülatör veya basınç tahliye cihazı takılması tavsiye edilmektedir.
+a) It is recommended to install an additional regulator or pressure relief device on high pressure nitrogen sources to prevent incorrect regulation.
+b) An additional regulator or pressure relief device should be installed on high pressure nitrogen sources.
+c) Installing an extra regulator on high pressure nitrogen sources is recommended to prevent incorrect regulation.
+d) To prevent incorrect regulation, additional pressure relief devices should be installed on nitrogen sources.
+ANSWER: a
+
+530. Kadmiyumun yutulması böbrek veya üreme sistemi hastalığına neden olabilir.
+a) Swallowing cadmium can cause kidney or reproductive system disease.
+b) Cadmium that is swallowed can cause kidney or reproductive system disease.
+c) If cadmium is swallowed, it may cause kidney or reproductive system disease.
+d) Cadmium, when ingested, can lead to kidney or reproductive system damage.
+ANSWER: b
+
+531. Uçağı park halinde bırakmadan önce tüm yakıt sistem vanaları kapatılmalıdır.
+a) All fuel system valves should be closed before parking the aircraft.
+b) Before parking the aircraft, close all fuel system valves.
+c) All fuel system valves must be closed prior to parking the aircraft.
+d) Prior to parking, ensure all fuel system valves are in the closed position.
+ANSWER: c
+
+532. Yağ basıncı minimum sınırın altına düşerse motoru hemen kapatın.
+a) If the oil pressure falls below the minimum limit, immediately shut down the engine.
+b) Shut down the engine immediately when the oil pressure drops below minimum.
+c) The engine must be shut down immediately if oil pressure falls below the minimum limit.
+d) When oil pressure falls below minimum, immediate engine shutdown is required.
+ANSWER: a
+
+533. Yakıt sistemi üzerinde çalışırken tüm ateşleme kaynaklarının uzaklaştırıldığından emin olun.
+a) When working on the fuel system, make sure all ignition sources have been removed.
+b) Ensure all ignition sources are removed when working on the fuel system.
+c) All ignition sources must be removed before working on the fuel system.
+d) Before fuel system maintenance, verify that all ignition sources have been removed.
+ANSWER: a
+
+534. Hidrolik rezervuarın seviyesi, motor çalıştırılmadan önce kontrol edilmelidir.
+a) The hydraulic reservoir level must be checked before the engine is started.
+b) Check the hydraulic reservoir level prior to engine start.
+c) The level of the hydraulic reservoir should be verified before starting the engine.
+d) Before starting the engine, the hydraulic reservoir level should be inspected.
+ANSWER: a
+
+535. Titanyum bileşenlere kaynak yapılması özel prosedürler gerektirir.
+a) Welding titanium components requires special procedures.
+b) Special procedures are required for welding titanium components.
+c) Welding on titanium components necessitates the use of special procedures.
+d) To weld titanium components, special procedures must be followed.
+ANSWER: b
+
+536. Lastik havasını kontrol etmeden önce uçak ağırlıktan kurtarılmış olmalıdır.
+a) Before checking tyre pressure, the aircraft must be jacked clear of the ground.
+b) The aircraft must be clear of the ground before the tyre pressure is checked.
+c) Tyre inflation check must be done with the aircraft jacked up.
+d) Before checking tyre pressure, the aircraft should be unloaded of weight.
+ANSWER: b
+
+537. Fren sıcaklığı indikatörü sarı rengi gösteriyorsa, kalıcı hasarı önlemek için uçak beklemelidir.
+a) If the brake temperature indicator shows amber, the aircraft must wait to prevent permanent damage.
+b) When the brake temperature indicator shows amber, the aircraft should wait to prevent permanent damage.
+c) An amber brake temperature indication requires the aircraft to wait to avoid permanent damage.
+d) If the brake temperature indicator shows yellow, the aircraft must wait to prevent permanent damage.
+ANSWER: b
+
+538. Tüm yapısal onarımlar, yetkili mühendislik otoritesi tarafından onaylanmalıdır.
+a) All structural repairs must be approved by the authorized engineering authority.
+b) The authorized engineering authority must approve all structural repairs.
+c) Any structural repair requires approval from the designated engineering authority.
+d) All structural repairs should be submitted for approval to the engineering authority.
+ANSWER: a
+
+539. Kompozit yapı onarımı, yüzeyin uygun şekilde hazırlanmasını ve temizlenmesini gerektirir.
+a) Composite structure repair requires the surface to be properly prepared and cleaned.
+b) Repairing composite structures requires proper surface preparation and cleaning.
+c) Proper preparation and cleaning of the surface is required for composite repair.
+d) The composite structure repair process requires appropriate surface preparation and cleanliness.
+ANSWER: b
+
+540. Bakım sırasında uçağa zarar verilmesini önlemek için zemin destek ekipmanı doğru şekilde konumlandırılmalıdır.
+a) To prevent aircraft damage during maintenance, ground support equipment must be properly positioned.
+b) Ground support equipment must be correctly positioned to avoid damage to the aircraft during maintenance.
+c) Proper positioning of ground support equipment prevents damage to the aircraft during maintenance operations.
+d) During maintenance, ground support equipment should be placed correctly to prevent aircraft damage.
+ANSWER: b
+
+541. Giriş kapısı kilitleme mekanizması doğru çalışıyorsa, kapı kolayca açılabilir.
+a) If the entry door locking mechanism works correctly, the door can be opened easily.
+b) The entry door can be opened easily if the locking mechanism is working correctly.
+c) When the entry door locking mechanism operates correctly, the door opens easily.
+d) A correctly functioning entry door locking mechanism allows the door to be opened easily.
+ANSWER: a
+
+542. Motor gövdesindeki çatlaklar, görsel inspeksiyonla tespit edilebilir.
+a) Cracks in the engine casing can be detected by visual inspection.
+b) Visual inspection can detect cracks in the engine casing.
+c) Cracks in the engine housing can be found through visual inspection.
+d) By visual inspection, cracks in the engine body can be identified.
+ANSWER: a
+
+543. Yangın söndürme sistemi, aktivasyon için kullanılan bir patlatma cihazı içerir.
+a) The fire suppression system contains an explosive device used for activation.
+b) The fire extinguishing system contains an explosive device used for activation.
+c) The fire suppression system includes a squib used for activation.
+d) The fire extinguishing system includes a squib that is used to initiate discharge.
+ANSWER: d
+
+544. Uçuş ekibinin görev bölümü el kitabına bakınız.
+a) Refer to the flight crew operations manual.
+b) See the flight operations manual for crew responsibilities.
+c) Consult the flight crew operations manual.
+d) Refer to the flight crew duty manual.
+ANSWER: a
+
+545. Tüm bakım kayıtları doğru ve tam olmalıdır.
+a) All maintenance records must be accurate and complete.
+b) All maintenance records should be accurate and complete.
+c) Maintenance records must be kept accurate and complete.
+d) The accuracy and completeness of maintenance records is required.
+ANSWER: a
+
+546. Uçak servis dışı bırakılmadan önce uçuşa elverişlilik belgesi iptal edilmelidir.
+a) The airworthiness certificate must be cancelled before the aircraft is taken out of service.
+b) Before taking the aircraft out of service, the certificate of airworthiness should be cancelled.
+c) The airworthiness certificate should be revoked before the aircraft is grounded.
+d) Grounding the aircraft requires the cancellation of the airworthiness certificate.
+ANSWER: a
+
+547. Bu parçaların her biri farklı bir amaç için tasarlanmıştır.
+a) These parts are each designed for a different purpose.
+b) Each of these parts is designed for a different purpose.
+c) Each part among these has been designed for a different purpose.
+d) All of these parts serve different purposes by design.
+ANSWER: b
+
+548. Bakım planının uygulanmasından sorumlu kişi teknik direktördür.
+a) The person responsible for implementing the maintenance program is the technical director.
+b) The technical director is responsible for implementing the maintenance plan.
+c) Responsibility for implementing the maintenance schedule belongs to the technical director.
+d) The technical director has responsibility for the maintenance plan implementation.
+ANSWER: b
+
+549. Eğer parça değiştirilmesi gerekiyorsa, aynı parça numaralı yeni bir parça kullanın.
+a) If the part needs to be replaced, use a new part with the same part number.
+b) When replacement is required, use a new part bearing the same part number.
+c) If part replacement is necessary, a new part with an identical part number should be used.
+d) Should the part require replacement, install a new one with the same part number.
+ANSWER: a
+
+550. Tüm bağlantı noktaları sızdırmazlık testinden önce temizlenmiş olmalıdır.
+a) All connection points must be cleaned prior to the leak test.
+b) All connection points should be cleaned before performing the leakage test.
+c) All ports must have been cleaned before the leakage test is performed.
+d) Prior to the sealing test, ensure all connection ports are clean.
+ANSWER: c
+
+551. Boşlukta herhangi bir kir veya artık bulunmamalıdır.
+a) There must be no dirt or residue in the cavity.
+b) The cavity should be free from any dirt or residue.
+c) No dirt or residue should be present in the cavity.
+d) The cavity must be clean and free from any residue.
+ANSWER: a
+
+552. Motor giriş kanalı, yabancı cisim girişini önlemek için her uçuş öncesinde kontrol edilmelidir.
+a) The engine inlet duct must be inspected before every flight to prevent foreign object entry.
+b) Before every flight, the engine inlet must be checked to prevent foreign object ingestion.
+c) The engine intake duct should be inspected prior to each flight to prevent foreign object damage.
+d) Each flight requires a pre-flight check of the engine inlet to prevent foreign object entry.
+ANSWER: c
+
+553. Uçak mürettebatı, acil durum ekipmanlarının yerini ve kullanımını bilmelidir.
+a) The flight crew must know the location and use of emergency equipment.
+b) Aircraft crew should know where emergency equipment is located and how to use it.
+c) The aircraft crew must know the location and operation of emergency equipment.
+d) Emergency equipment location and usage must be known by all crew members.
+ANSWER: c
+
+554. Yakıt miktarı, belirtilen işaretten yüzde beş daha az olmamalıdır.
+a) The fuel quantity must not be less than five percent below the indicated mark.
+b) Fuel quantity must not be less than five percent of the indicated mark.
+c) The fuel quantity should not be more than five percent below the required mark.
+d) Fuel quantity must not fall more than five percent below the specified mark.
+ANSWER: d
+
+555. Yağ değişiminden sonra motoru çalıştırmadan önce yağ seviyesini kontrol edin.
+a) After an oil change, check the oil level before starting the engine.
+b) After changing the oil, the oil level must be checked before the engine is started.
+c) Before starting the engine after an oil change, verify the oil level.
+d) Check the oil level after the oil change and before running the engine.
+ANSWER: c
+
+556. Pilot koltukları ileri/geri pozisyona göre kolayca ayarlanabilir.
+a) The pilot seats can be easily adjusted to the forward/aft position.
+b) Pilot seats are easily adjustable in the forward and aft directions.
+c) The pilot seats can easily be adjusted forward or aft.
+d) Pilot seats are designed to be easily adjusted forward and aft.
+ANSWER: a
+
+557. Giriş kapısının kilidi, kapı tam olarak kapalı konumda olduğunda etkinleşir.
+a) The entry door lock is activated when the door is in the fully closed position.
+b) When the door reaches the fully closed position, the entry door lock activates.
+c) The entry door lock activates when the door is fully closed.
+d) The entry door locking mechanism engages when the door reaches the fully closed position.
+ANSWER: a
+
+558. Üst kanat yüzeyindeki çatlaklar boyunca çatlama ilerleme analizi yapılmalıdır.
+a) Crack propagation analysis should be performed along cracks on the upper wing surface.
+b) An analysis of crack propagation along the upper wing surface must be conducted.
+c) Crack propagation analysis must be performed for cracks along the upper wing surface.
+d) Cracks on the upper wing surface require crack propagation analysis.
+ANSWER: c
+
+559. Motor bakım kayıtları, uçuş saatlerine göre güncel tutulmalıdır.
+a) Engine maintenance records must be kept up to date in terms of flight hours.
+b) Engine maintenance records should be current based on flight hours.
+c) Maintenance records for the engine must be kept current according to flight hours.
+d) Engine maintenance records must be updated in accordance with flight hours.
+ANSWER: d
+
+560. Tüm emniyet pimlerinin yerinde olduğunu doğrulayın.
+a) Verify that all safety pins are in place.
+b) Make sure all safety pins are installed.
+c) Check all safety pins for correct installation.
+d) Confirm that every safety pin is properly installed.
+ANSWER: a
+
+561. Yangın söndürücünün basınç göstergesi yeşil alanda olmalıdır.
+a) The pressure gauge of the fire extinguisher should be in the green range.
+b) The fire extinguisher's pressure gauge must indicate in the green sector.
+c) The fire extinguisher pressure gauge should read within the green range.
+d) The fire extinguisher pressure gauge should show a reading in the green zone.
+ANSWER: d
+
+562. Kabin basıncı kontrol sistemi, kabinin yolcular için kabul edilebilir irtifada tutulmasını sağlar.
+a) The cabin pressurization control system ensures the cabin is maintained at an acceptable altitude for passengers.
+b) The cabin pressure control system keeps the cabin at an acceptable altitude for passengers.
+c) The pressurization control system maintains the cabin altitude at a level acceptable for passengers.
+d) The cabin pressure control system ensures the cabin is maintained at an altitude acceptable for the passengers.
+ANSWER: d
+
+563. İniş takımı çekilmeden önce, iniş takımı kapılarının tam olarak açık olduğunu doğrulayın.
+a) Before retracting the landing gear, verify that the landing gear doors are fully open.
+b) Verify that the landing gear doors are fully open before the landing gear is retracted.
+c) Prior to landing gear retraction, confirm that the landing gear doors are completely open.
+d) Before retracting the landing gear, make sure all landing gear doors are fully open.
+ANSWER: d
+
+564. Gövde strüktürel onarımı için uygun onaylı verileri kullandığınızdan emin olun.
+a) Make sure to use the applicable approved data for fuselage structural repair.
+b) Ensure you use the appropriate approved data for fuselage structural repair.
+c) Use the applicable approved data for the fuselage structural repair.
+d) For fuselage structural repair, use the correct approved data.
+ANSWER: c
+
+565. Prosedür tamamlandıktan sonra uçak servis durumuna döndürülebilir.
+a) After the procedure is completed, the aircraft can be returned to service status.
+b) The aircraft can be returned to service after the procedure is completed.
+c) Once the procedure is complete, the aircraft may be returned to service.
+d) Following completion of the procedure, the aircraft is cleared to return to service.
+ANSWER: c
+
+566. Yakıt sistemi bileşenleri temizlenmeden önce tüm bağlantılar kesilmelidir.
+a) All connections must be disconnected before cleaning the fuel system components.
+b) Before cleaning the fuel system components, all connections must be disconnected.
+c) All connections should be disconnected prior to cleaning fuel system components.
+d) Fuel system components must have all connections removed before cleaning.
+ANSWER: b
+
+567. Uçağın zemin hattı muayenesi, her uçuştan önce yapılmalıdır.
+a) The aircraft ground line inspection must be performed before every flight.
+b) A ground line inspection of the aircraft should be done before each flight.
+c) The ground inspection of the aircraft must be conducted before each flight.
+d) An aircraft pre-flight ground inspection must be carried out before every flight.
+ANSWER: d
+
+568. Her bakım görevinin tamamlanmasından sonra teknik kayıtlar imzalanmalıdır.
+a) Technical records must be signed after each maintenance task is completed.
+b) After completing each maintenance task, the technical records must be signed off.
+c) The technical records must be signed after completion of each maintenance task.
+d) Signing off technical records is required after every maintenance task completion.
+ANSWER: c
+
+569. Uçuş kontrol yüzeyleri, standart boyutlar ve durumlara göre ayarlanmalıdır.
+a) Flight control surfaces must be adjusted according to standard dimensions and conditions.
+b) The flight control surfaces should be set to standard dimensions and conditions.
+c) Flight control surfaces must be adjusted to standard dimensions and conditions.
+d) Standard dimensions and conditions must be used when adjusting flight control surfaces.
+ANSWER: c
+
+570. Güç kesilirse sistem otomatik olarak yedek moda geçer.
+a) If power is lost, the system will automatically switch to backup mode.
+b) The system automatically switches to backup mode when power is cut.
+c) Should power be cut, the system switches automatically to backup mode.
+d) If power is interrupted, the system automatically enters backup mode.
+ANSWER: a
+
+571. Motor ateşleme sistemi, motor çalışırken devre dışı bırakılmamalıdır.
+a) The engine ignition system must not be deactivated while the engine is running.
+b) The engine ignition system should not be disabled when the engine is operating.
+c) Do not deactivate the engine ignition system while the engine is running.
+d) The engine ignition system must not be switched off while the engine is in operation.
+ANSWER: d
+
+572. Bakım planının süresi dolduğunda, uçak hizmet dışı bırakılmak zorundadır.
+a) When the maintenance schedule expires, the aircraft must be taken out of service.
+b) If the maintenance program expires, the aircraft must be grounded.
+c) The aircraft must be taken out of service when the maintenance schedule runs out.
+d) When the maintenance plan period ends, the aircraft is required to be grounded.
+ANSWER: a
+
+573. Yangın dedektörü testi, yangın söndürme sistemini aktive etmeden yapılabilir.
+a) The fire detector test can be done without activating the fire extinguishing system.
+b) Fire detector testing can be performed without triggering the fire suppression system.
+c) The fire detector can be tested without activating the fire extinguisher system.
+d) Fire detector testing is possible without activating the fire suppression system.
+ANSWER: d
+
+574. Pistonlu bir motorun performansı, sıkıştırma oranına bağlıdır.
+a) The performance of a piston engine depends on the compression ratio.
+b) A piston engine's performance is dependent on its compression ratio.
+c) Compression ratio determines the performance of a piston engine.
+d) The compression ratio of a piston engine directly affects its performance.
+ANSWER: a
+
+575. İniş takımı kapılarının tam olarak kapandığını kontrol edin.
+a) Check that the landing gear doors are fully closed.
+b) Verify that the landing gear doors close completely.
+c) Make sure the landing gear doors are completely closed.
+d) Ensure the landing gear doors have fully closed.
+ANSWER: a
+
+576. Tüm güvenlik ekipmanları, yolcuların erişebileceği bir yerde bulunmalıdır.
+a) All safety equipment must be located where passengers can access it.
+b) All safety equipment must be in a location accessible to passengers.
+c) Safety equipment must be placed where passengers can reach it.
+d) All safety equipment should be accessible to passengers.
+ANSWER: b
+
+577. Yakıt sızıntısı tespit edilirse, motoru hemen kapatın ve yakıt vanasını kapatın.
+a) If a fuel leak is detected, immediately shut down the engine and close the fuel valve.
+b) Detect a fuel leak and immediately shut down the engine and the fuel valve.
+c) When a fuel leak is found, shut down the engine and close the fuel valve immediately.
+d) Upon detecting a fuel leak, immediately shut down the engine and close the fuel valve.
+ANSWER: d
+
+578. Oksijen sisteminin baskı göstergesi her zaman operasyonel limitlerin içinde olmalıdır.
+a) The pressure indicator of the oxygen system must always be within operational limits.
+b) The oxygen system's pressure gauge must always indicate within operational limits.
+c) The oxygen system pressure indicator should always be within the operational limits.
+d) Operational limits must always be indicated on the oxygen system pressure gauge.
+ANSWER: b
+
+579. Motor yağı değişimi, zamanında yapılması gereken zorunlu bir bakım görevidir.
+a) Engine oil change is a mandatory maintenance task that must be performed on time.
+b) Changing the engine oil is a required maintenance task that must be done on schedule.
+c) Engine oil change is a compulsory maintenance task which must be completed on time.
+d) The engine oil change is an essential maintenance task requiring timely completion.
+ANSWER: a
+
+580. Uçuş kontrol yüzeyleri yalnızca yetkili bakım personeli tarafından ayarlanmalıdır.
+a) Flight control surfaces should only be adjusted by authorized maintenance personnel.
+b) Only authorized maintenance personnel must adjust the flight control surfaces.
+c) Flight control surfaces must only be adjusted by authorized maintenance personnel.
+d) Only qualified and authorized maintenance technicians may adjust flight control surfaces.
+ANSWER: c
+
+581. Çıkarılan tüm parçalar yeniden takılmadan önce kontrol edilmelidir.
+a) All removed parts should be inspected before being reinstalled.
+b) All removed parts must be inspected before reinstallation.
+c) Before reinstallation, all removed components must be checked.
+d) Parts that are removed must be inspected before they are put back.
+ANSWER: b
+
+582. Uçak bakımı, bakım organizasyonu onay kapsamı dahilinde yapılmalıdır.
+a) Aircraft maintenance must be carried out within the scope of the maintenance organization approval.
+b) Maintenance of the aircraft must be performed within the scope of the maintenance organization's approval.
+c) The aircraft maintenance must be conducted within the scope of the approved maintenance organization.
+d) Maintenance work on the aircraft should be within the scope of the maintenance organization approval.
+ANSWER: b
+
+583. Hasar tespit edildiği takdirde yapısal onarım el kitabına başvurun.
+a) If damage is found, refer to the structural repair manual.
+b) Refer to the structural repair manual if damage is detected.
+c) When damage is found, the structural repair manual should be consulted.
+d) The structural repair manual must be consulted when damage is found.
+ANSWER: b
+
+584. Yağlama, motor parçaları arasındaki sürtünmeyi azaltmak için gereklidir.
+a) Lubrication is necessary to reduce friction between engine parts.
+b) Lubrication reduces friction between engine components and is therefore necessary.
+c) It is necessary to lubricate engine parts to reduce friction between them.
+d) Friction between engine parts is reduced by lubrication, which is essential.
+ANSWER: a
+
+585. Pilot kontrol panelindeki tüm anahtarların doğru konumda olduğunu doğrulayın.
+a) Verify that all switches on the pilot control panel are in the correct position.
+b) Make sure all switches on the pilot control panel are correctly positioned.
+c) Confirm that all switches on the pilot's control panel are in the right position.
+d) Check that every switch on the pilot control panel is correctly set.
+ANSWER: a
+
+586. Yakıt tankı kapasitesi, onaylanmış uçuş kütlesini aşmamalıdır.
+a) The fuel tank capacity must not exceed the approved flight mass.
+b) Fuel tank capacity should not go beyond the approved operating weight.
+c) The fuel load must not exceed the approved weight limits.
+d) Fuel quantity must stay within approved operating weight limits.
+ANSWER: a
+
+587. Gelişmiş bakım teknolojileri, uçak güvenilirliğini önemli ölçüde artırmıştır.
+a) Advanced maintenance technologies have significantly increased aircraft reliability.
+b) Advanced maintenance technology has considerably improved aircraft reliability.
+c) Aircraft reliability has been greatly increased by advanced maintenance technologies.
+d) Advanced maintenance technologies have greatly improved aircraft reliability.
+ANSWER: d
+
+588. Tüm uyarı etiketleri uçakta görünür ve okunabilir olmalıdır.
+a) All warning labels must be visible and legible on the aircraft.
+b) Warning labels on the aircraft must be visible and readable.
+c) All warning labels must be visible and readable on the aircraft.
+d) Warning labels on the aircraft must be clearly visible and legible.
+ANSWER: d
+
+589. Enerji tasarrufu sağlamak için gereksiz elektrik yüklerini kapatın.
+a) Turn off unnecessary electrical loads to save energy.
+b) Switch off unnecessary electrical loads to conserve energy.
+c) To save energy, turn off all non-essential electrical loads.
+d) To conserve energy, deactivate unnecessary electrical loads.
+ANSWER: a
+
+590. Motor sıcaklığı, soğutma süresine ve çevresel koşullara bağlı olarak değişir.
+a) Engine temperature varies depending on cooling time and environmental conditions.
+b) The engine temperature changes based on cooling duration and environmental conditions.
+c) Engine temperature depends on the cooling time and surrounding conditions.
+d) The engine temperature is affected by cooling time and environmental conditions.
+ANSWER: a
+
+591. Fren sistemi, uçağın belirtilen durma mesafesi içinde durabilmesini sağlamalıdır.
+a) The brake system must ensure the aircraft can stop within the specified stopping distance.
+b) The braking system should allow the aircraft to stop within the required distance.
+c) The aircraft's brake system must ensure stopping within the specified distance.
+d) The brake system must allow the aircraft to stop within the prescribed stopping distance.
+ANSWER: a
+
+592. Bakım esnasında uçak, dengesini korumak için krikolarla desteklenmelidir.
+a) During maintenance, the aircraft must be supported by jacks to maintain its balance.
+b) The aircraft should be supported with jacks during maintenance to maintain stability.
+c) During maintenance, the aircraft must be stabilized using jacks.
+d) Jacks must support the aircraft during maintenance to keep it balanced.
+ANSWER: a
+
+593. Bakım teknisyenlerinin tüm giriş ve çıkış kapılarının temiz ve açık olmasını sağlaması gerekir.
+a) Maintenance technicians must ensure all entry and exit doors are clean and clear.
+b) All entry and exit doors must be kept clean and unobstructed by maintenance technicians.
+c) Maintenance technicians need to ensure that all entry and exit doors are clean and unobstructed.
+d) It is the responsibility of maintenance technicians to keep entry and exit doors clean and clear.
+ANSWER: c
+
+594. Motor çalışma süresi, günlük uçuş saatlerine göre takip edilmelidir.
+a) Engine operating time should be tracked according to daily flight hours.
+b) Engine operating hours should be monitored based on daily flight hours.
+c) Daily flight hours determine how engine operating time is tracked.
+d) The engine's operating time must be monitored in line with daily flight hours.
+ANSWER: d
+
+595. Hava filtresi, belirtilen bakım aralıklarında değiştirilmelidir.
+a) The air filter should be replaced at the specified maintenance intervals.
+b) The air filter must be replaced at the specified maintenance intervals.
+c) Replace the air filter at the specified maintenance intervals.
+d) Air filters must be changed at the maintenance intervals specified.
+ANSWER: b
+
+596. Uçağın ağırlık merkezi, kalkış için onaylı sınırlar içinde olmalıdır.
+a) The aircraft's center of gravity must be within the approved limits for takeoff.
+b) For takeoff, the aircraft center of gravity must be within the approved envelope.
+c) The aircraft center of gravity must fall within the approved takeoff limits.
+d) Center of gravity must be within approved limits at takeoff.
+ANSWER: a
+
+597. Motor montajından sonra motor tüm testleri başarıyla geçmelidir.
+a) After engine installation, the engine must pass all required tests successfully.
+b) The engine must successfully pass all tests after it has been installed.
+c) Following engine installation, all tests must be completed successfully by the engine.
+d) All tests must be passed after engine installation.
+ANSWER: a
+
+598. Bakım müdürü, bakım faaliyetlerinin uygulanmasından sorumludur.
+a) The maintenance manager is responsible for the implementation of maintenance activities.
+b) Maintenance activities implementation is the responsibility of the maintenance manager.
+c) The maintenance manager has the responsibility for implementing maintenance activities.
+d) Responsibility for maintenance activities lies with the maintenance manager.
+ANSWER: a
+
+599. İniş takımı retraksiyon sistemi, her büyük periyodik bakım sırasında test edilmelidir.
+a) The landing gear retraction system must be tested during each major periodic maintenance.
+b) The landing gear retraction system should be tested at each major maintenance check.
+c) Each major periodic maintenance must include a test of the landing gear retraction system.
+d) The landing gear retraction system must be tested during every major overhaul.
+ANSWER: a
+
+600. Hava aracı yer desteği ekipmanı, uçak hareket etmeden önce kaldırılmalıdır.
+a) Aircraft ground support equipment must be removed before the aircraft moves.
+b) Before the aircraft moves, ground support equipment must be removed.
+c) Ground support equipment must be removed from the aircraft prior to movement.
+d) All ground support equipment must be cleared before the aircraft is moved.
+ANSWER: d
+
+================================================================
+CEVAP ANAHTARI - BÖLÜM 3: ÇEVİRİ
+================================================================
+426-c 427-b 428-d 429-c 430-b 431-a 432-b 433-c 434-d 435-a
+436-c 437-a 438-d 439-b 440-b 441-a 442-c 443-d 444-d 445-c
+446-a 447-d 448-b 449-c 450-c 451-d 452-a 453-b 454-a 455-a
+456-b 457-a 458-c 459-a 460-a 461-a 462-d 463-a 464-a 465-a
+466-a 467-a 468-a 469-a 470-a 471-d 472-d 473-b 474-a 475-a
+476-a 477-d 478-a 479-c 480-a 481-b 482-b 483-b 484-a 485-c
+486-c 487-d 488-c 489-c 490-c 491-b 492-b 493-a 494-b 495-b
+496-a 497-b 498-a 499-c 500-b 501-a 502-a 503-c 504-a 505-a
+506-b 507-a 508-b 509-a 510-c 511-a 512-b 513-b 514-a 515-a
+516-b 517-a 518-b 519-d 520-a 521-a 522-c 523-b 524-b 525-b
+526-c 527-b 528-d 529-a 530-b 531-c 532-a 533-a 534-a 535-b
+536-b 537-b 538-a 539-b 540-b 541-a 542-a 543-d 544-a 545-a
+546-a 547-b 548-b 549-a 550-c 551-a 552-c 553-c 554-d 555-c
+556-a 557-a 558-c 559-d 560-a 561-d 562-d 563-d 564-c 565-c
+566-b 567-d 568-c 569-c 570-a 571-d 572-a 573-d 574-a 575-a
+576-b 577-d 578-b 579-a 580-c 581-b 582-b 583-b 584-a 585-a
+586-a 587-d 588-d 589-a 590-a 591-a 592-a 593-c 594-d 595-b
+596-a 597-a 598-a 599-a 600-d

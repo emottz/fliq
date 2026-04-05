@@ -1,0 +1,4252 @@
+[
+  {
+    "id": 1646,
+    "cat": "sentence_completion",
+    "orig": 966,
+    "q": "Do a visual inspection of the upper and ……………………………………………………………",
+    "opts": [
+      "inner surfaces of the inner and outer flaps for distortion.",
+      "in surfaces of the inner and outer flaps for distortion.",
+      "of surfaces of the inner and outer flaps for distortion.",
+      "overly surfaces of the inner and outer flaps for distortion."
+    ],
+    "ans": 0,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 1647,
+    "cat": "sentence_completion",
+    "orig": 967,
+    "q": "If you find damage during an inspection and if it is necessary to disconnect or remove components, ……………………………………………………………",
+    "opts": [
+      "do a functional test of the related system after re-assembly.",
+      "do a functional test before re-assembly.",
+      "you should write a report only.",
+      "the aircraft is unserviceable."
+    ],
+    "ans": 0,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 1648,
+    "cat": "sentence_completion",
+    "orig": 968,
+    "q": "………………………………………………………………, refer to the Structural Repair Manual.",
+    "opts": [
+      "If there was any damage to the aircraft structure",
+      "If there are any damage to the aircraft structure",
+      "If there is any damage to the aircraft structure",
+      "If there were some damage to the aircraft structure"
+    ],
+    "ans": 2,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 1649,
+    "cat": "sentence_completion",
+    "orig": 969,
+    "q": "Complete a correct general visual inspection ……………………………………………………………",
+    "opts": [
+      "necessarily without removal of the wiring and ducting.",
+      "as necessary without removal of the wiring and ducting.",
+      "as necessary as without removal of the wiring and ducting.",
+      "as necessarily as without removal of the wiring and ducting."
+    ],
+    "ans": 1,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 1650,
+    "cat": "sentence_completion",
+    "orig": 970,
+    "q": "……………………………………………………………a loose inflation valve stem to the correct torque.",
+    "opts": [
+      "Remove the tire and tighten",
+      "Removed the tire and tight",
+      "Remove the tire and tightening",
+      "Removed the tire and tightened"
+    ],
+    "ans": 0,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 1651,
+    "cat": "sentence_completion",
+    "orig": 971,
+    "q": "When the heat sink assembly is fully worn, ……………………………………………………………",
+    "opts": [
+      "the set of five thin stator disks or four thin rotor disks are replaced.",
+      "they should be continued in use until completely failed.",
+      "the entire brake assembly must be replaced.",
+      "only the stator disks need replacing."
+    ],
+    "ans": 0,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 1652,
+    "cat": "sentence_completion",
+    "orig": 972,
+    "q": "If the center tank is full, ……………………………………………………………",
+    "opts": [
+      "the high-level sensory may be overridden.",
+      "the high-level sensor may are overridden.",
+      "the high-level sensor may overridden.",
+      "the high-level sensor may be overridden."
+    ],
+    "ans": 3,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 1653,
+    "cat": "sentence_completion",
+    "orig": 973,
+    "q": "When the disconnection is not possible, ……………………………………………………………on the operative side.",
+    "opts": [
+      "out one side the flight control check can be performed",
+      "only on one side the flight control check can be performed",
+      "off one side the flight control check can be performed",
+      "one side the flight control check can be performed"
+    ],
+    "ans": 1,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 1654,
+    "cat": "sentence_completion",
+    "orig": 974,
+    "q": "Make sure the waste tank has been serviced and …………………………………………………when you do the steps that follow.",
+    "opts": [
+      "the vacuum blower are not in operation",
+      "the vacuum blower were not in operation",
+      "the vacuum blower is not in operation",
+      "the vacuum blower has not in operation"
+    ],
+    "ans": 2,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 1655,
+    "cat": "sentence_completion",
+    "orig": 975,
+    "q": "Before drilling holes for installation, present the ELT bracket to be sure ……………………………………",
+    "opts": [
+      "where it was possible for a crew to see the electronic front face with the control.",
+      "which it is possibly for a crew to see the electronic front face with the control.",
+      "that it is possible for a crew to see the electronic front face with the control.",
+      "those it is possible for a crew to see the electronic front face with the control."
+    ],
+    "ans": 2,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 1656,
+    "cat": "sentence_completion",
+    "orig": 976,
+    "q": "If you find damage during inspection and if it is necessary to disconnect components, ……………………………………",
+    "opts": [
+      "do a functional test of the related system after re-assembly.",
+      "report it to the quality department only.",
+      "the aircraft should be grounded immediately.",
+      "continue work without notifying anyone."
+    ],
+    "ans": 0,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 1657,
+    "cat": "sentence_completion",
+    "orig": 977,
+    "q": "Make sure all safety pins are installed before towing, because ……………………………………",
+    "opts": [
+      "safety pins prevent accidental gear retraction.",
+      "safety pins are only decorative items.",
+      "safety pins are not required for towing.",
+      "safety pins must be removed before towing."
+    ],
+    "ans": 0,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 1658,
+    "cat": "sentence_completion",
+    "orig": 978,
+    "q": "The aircraft must not be dispatched if ……………………………………",
+    "opts": [
+      "the crew have been thoroughly briefed.",
+      "all maintenance tasks have been completed.",
+      "there are any un-deferred open items on the technical log.",
+      "the fuel has been loaded to the correct amount."
+    ],
+    "ans": 2,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 1659,
+    "cat": "sentence_completion",
+    "orig": 979,
+    "q": "When performing a borescope inspection, ……………………………………",
+    "opts": [
+      "the engine must be at operating temperature.",
+      "the engine must be shut down and cooled.",
+      "the aircraft must be in flight.",
+      "only the exterior of the engine is examined."
+    ],
+    "ans": 1,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 1660,
+    "cat": "sentence_completion",
+    "orig": 980,
+    "q": "Before entering the fuel tank, ……………………………………",
+    "opts": [
+      "ensure the tank is properly ventilated and purged of fuel vapors.",
+      "fill the tank to capacity.",
+      "connect the electrical bonding cables.",
+      "check the fuel temperature."
+    ],
+    "ans": 0,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 1661,
+    "cat": "sentence_completion",
+    "orig": 981,
+    "q": "If the oil pressure drops below the minimum during engine operation, ……………………………………",
+    "opts": [
+      "reduce the engine to idle power only.",
+      "write it in the logbook after landing.",
+      "shut down the engine immediately.",
+      "increase the engine speed to build pressure."
+    ],
+    "ans": 2,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 1662,
+    "cat": "sentence_completion",
+    "orig": 982,
+    "q": "To verify that the landing gear is down and locked, ……………………………………",
+    "opts": [
+      "the crew should look out the window.",
+      "check that all three green indicator lights are illuminated.",
+      "the tower controller must confirm visually.",
+      "the landing gear selector must be in the down position."
+    ],
+    "ans": 1,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 1663,
+    "cat": "sentence_completion",
+    "orig": 983,
+    "q": "When the brake temperature exceeds the service limit after landing, ……………………………………",
+    "opts": [
+      "the aircraft may depart immediately.",
+      "the aircraft must wait until the brakes cool to below the limit.",
+      "only the hot brake unit needs replacing.",
+      "fan cooling must be applied for 10 minutes."
+    ],
+    "ans": 1,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 1664,
+    "cat": "sentence_completion",
+    "orig": 984,
+    "q": "Before you operate the flight controls for inspection, ……………………………………",
+    "opts": [
+      "ensure no technicians are working on them.",
+      "the aircraft must be in the hangar.",
+      "all passengers must be seated.",
+      "the engines must be running."
+    ],
+    "ans": 0,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 1665,
+    "cat": "sentence_completion",
+    "orig": 985,
+    "q": "If a fuel leak is detected, ……………………………………",
+    "opts": [
+      "stop fueling and alert the fire service.",
+      "continue fueling until the tanks are full.",
+      "reduce the fuel flow rate.",
+      "add more bonding cables."
+    ],
+    "ans": 0,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 1666,
+    "cat": "sentence_completion",
+    "orig": 986,
+    "q": "The aircraft can be released to service only when ……………………………………",
+    "opts": [
+      "all maintenance tasks are signed off and no open items remain.",
+      "the captain approves.",
+      "the ground handling is complete.",
+      "the fueling is finished."
+    ],
+    "ans": 0,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 1667,
+    "cat": "sentence_completion",
+    "orig": 987,
+    "q": "If corrosion is found during inspection, ……………………………………",
+    "opts": [
+      "it must be treated immediately and the area sealed.",
+      "it can be painted over without treatment.",
+      "the aircraft is permanently grounded.",
+      "the corrosion inhibitor is applied later."
+    ],
+    "ans": 0,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 1668,
+    "cat": "sentence_completion",
+    "orig": 988,
+    "q": "After removing a component for repair, ……………………………………",
+    "opts": [
+      "it must be inspected before reinstallation.",
+      "it should be stored without labeling.",
+      "it may be discarded if damaged.",
+      "it can be returned to stock immediately."
+    ],
+    "ans": 0,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 1669,
+    "cat": "sentence_completion",
+    "orig": 989,
+    "q": "Torque wrenches must be calibrated ……………………………………",
+    "opts": [
+      "only when a new one is purchased.",
+      "after they are accidentally dropped.",
+      "at the specified intervals to ensure accuracy.",
+      "every ten years."
+    ],
+    "ans": 2,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 1670,
+    "cat": "sentence_completion",
+    "orig": 990,
+    "q": "All tools must be accounted for before the aircraft is returned to service because ……………………………………",
+    "opts": [
+      "tools are expensive and must be tracked.",
+      "a missing tool could cause foreign object damage.",
+      "the maintenance manual requires a tool count.",
+      "tools might be lost in the hangar."
+    ],
+    "ans": 1,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 1671,
+    "cat": "sentence_completion",
+    "orig": 991,
+    "q": "Before performing any electrical maintenance work, ……………………………………",
+    "opts": [
+      "the relevant circuit breakers must be opened and collared.",
+      "all passengers must disembark.",
+      "the aircraft must be in the hangar.",
+      "the engineer must obtain a permit."
+    ],
+    "ans": 0,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 1672,
+    "cat": "sentence_completion",
+    "orig": 992,
+    "q": "The maintenance manual must be ……………………………………",
+    "opts": [
+      "the latest revision before use.",
+      "printed in color.",
+      "stored in the hangar only.",
+      "available in the captain's library."
+    ],
+    "ans": 0,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 1673,
+    "cat": "sentence_completion",
+    "orig": 993,
+    "q": "If a defect cannot be repaired before the next flight, ……………………………………",
+    "opts": [
+      "it must be deferred in accordance with the MEL.",
+      "the aircraft must be permanently grounded.",
+      "the captain may decide to fly.",
+      "the regulator must be informed immediately."
+    ],
+    "ans": 0,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 1674,
+    "cat": "sentence_completion",
+    "orig": 994,
+    "q": "The oxygen system should be tested ……………………………………",
+    "opts": [
+      "by performing a high-pressure leak test.",
+      "by filling it with nitrogen.",
+      "in accordance with the maintenance schedule.",
+      "only when a fault is indicated."
+    ],
+    "ans": 2,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 1675,
+    "cat": "sentence_completion",
+    "orig": 995,
+    "q": "When performing a ground run after engine maintenance, ……………………………………",
+    "opts": [
+      "the aircraft must be properly chocked and restrained.",
+      "all personnel must leave the area.",
+      "the engine must be at idle power only.",
+      "the aircraft must be positioned into the wind only."
+    ],
+    "ans": 0,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 1676,
+    "cat": "sentence_completion",
+    "orig": 996,
+    "q": "In the event of a pressurization failure, ……………………………………",
+    "opts": [
+      "oxygen masks will deploy automatically at 14,000 feet cabin altitude.",
+      "the aircraft will depressurize slowly.",
+      "the crew will manually distribute oxygen masks.",
+      "the aircraft must land immediately at any available airport."
+    ],
+    "ans": 0,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 1677,
+    "cat": "sentence_completion",
+    "orig": 997,
+    "q": "Before the aircraft is weighed, ……………………………………",
+    "opts": [
+      "it must be positioned at a level pitch attitude of zero degrees.",
+      "it must have a full fuel load.",
+      "the engines must be running.",
+      "all passengers must be on board."
+    ],
+    "ans": 0,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 1678,
+    "cat": "sentence_completion",
+    "orig": 998,
+    "q": "The ELT must be inspected to ensure ……………………………………",
+    "opts": [
+      "it is accessible and securely mounted.",
+      "the battery has been recently replaced.",
+      "the frequency is set correctly.",
+      "the antenna is properly attached."
+    ],
+    "ans": 0,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 1679,
+    "cat": "sentence_completion",
+    "orig": 999,
+    "q": "If the engine fails to start after three attempts, ……………………………………",
+    "opts": [
+      "wait at least one hour before the next attempt.",
+      "try a fourth time immediately.",
+      "replace the fuel control unit.",
+      "call for engineering support only."
+    ],
+    "ans": 0,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 1680,
+    "cat": "sentence_completion",
+    "orig": 1000,
+    "q": "The hydraulic system must be depressurized before ……………………………………",
+    "opts": [
+      "any maintenance work is carried out on hydraulic components.",
+      "the aircraft is dispatched.",
+      "the fuel tanks are filled.",
+      "the aircraft enters the hangar."
+    ],
+    "ans": 0,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 1681,
+    "cat": "sentence_completion",
+    "orig": 1001,
+    "q": "If a WARNING notice is displayed in the maintenance manual, ……………………………………",
+    "opts": [
+      "the operator must strictly obey the instruction to avoid injury or death.",
+      "it is a recommendation only.",
+      "it applies only to the engineer.",
+      "it may be disregarded for experienced technicians."
+    ],
+    "ans": 0,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 1682,
+    "cat": "sentence_completion",
+    "orig": 1002,
+    "q": "The fuel tank sump drain valve must be opened ……………………………………",
+    "opts": [
+      "to drain any water that has accumulated in the fuel.",
+      "to increase fuel flow to the engine.",
+      "during flight to check for contamination.",
+      "only during a C-check."
+    ],
+    "ans": 0,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 1683,
+    "cat": "sentence_completion",
+    "orig": 1003,
+    "q": "After the aircraft has been struck by lightning, ……………………………………",
+    "opts": [
+      "a thorough inspection of the aircraft and systems must be performed.",
+      "only the avionics need to be checked.",
+      "the aircraft can continue service without inspection.",
+      "the exterior paint must be repaired."
+    ],
+    "ans": 0,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 1684,
+    "cat": "sentence_completion",
+    "orig": 1004,
+    "q": "The aircraft must be bonded to the fueling vehicle before fueling to ……………………………………",
+    "opts": [
+      "prevent static electricity discharge and spark generation.",
+      "ensure the correct fuel grade is loaded.",
+      "comply with weight and balance requirements.",
+      "avoid spilling fuel."
+    ],
+    "ans": 0,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 1685,
+    "cat": "sentence_completion",
+    "orig": 1005,
+    "q": "If a composite panel shows delamination, ……………………………………",
+    "opts": [
+      "repair must be carried out in accordance with the Structural Repair Manual.",
+      "it can be repainted to prevent further damage.",
+      "it is acceptable if less than 50% delaminated.",
+      "it can be glued back in place using any adhesive."
+    ],
+    "ans": 0,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 1686,
+    "cat": "sentence_completion",
+    "orig": 1006,
+    "q": "The borescope inspection of the engine turbine section is used to ……………………………………",
+    "opts": [
+      "detect cracks, erosion, and tip rubs without removing the engine.",
+      "measure engine performance parameters.",
+      "check the fuel flow to the combustion chamber.",
+      "inspect the engine externally."
+    ],
+    "ans": 0,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 1687,
+    "cat": "sentence_completion",
+    "orig": 1007,
+    "q": "When operating the flaps to the full extension position, ……………………………………",
+    "opts": [
+      "ensure no personnel or equipment are in the flap movement area.",
+      "the aircraft must be airborne.",
+      "the hydraulic system must be manually pressurized.",
+      "only one pilot is required."
+    ],
+    "ans": 0,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 1688,
+    "cat": "sentence_completion",
+    "orig": 1008,
+    "q": "A detailed inspection requires ……………………………………",
+    "opts": [
+      "intensive examination using direct lighting and inspection aids.",
+      "only a visual check from a distance.",
+      "complete disassembly of the aircraft.",
+      "NDT equipment only."
+    ],
+    "ans": 0,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 1689,
+    "cat": "sentence_completion",
+    "orig": 1009,
+    "q": "The aircraft technical log must be completed ……………………………………",
+    "opts": [
+      "after every maintenance task and before the aircraft is dispatched.",
+      "only at the end of the working day.",
+      "monthly by the maintenance manager.",
+      "after every flight by the captain only."
+    ],
+    "ans": 0,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 1690,
+    "cat": "sentence_completion",
+    "orig": 1010,
+    "q": "Before towing the aircraft, ……………………………………",
+    "opts": [
+      "all safety pins must be installed and a tow bar connected.",
+      "the engines must be running.",
+      "the fuel tanks must be full.",
+      "the aircraft weight must be checked."
+    ],
+    "ans": 0,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 1691,
+    "cat": "sentence_completion",
+    "orig": 1011,
+    "q": "If an inoperative item is found on the aircraft, ……………………………………",
+    "opts": [
+      "it must be deferred, placarded, or repaired in accordance with the MEL.",
+      "the flight can continue without action.",
+      "the captain can decide to ignore it.",
+      "the aircraft is automatically grounded."
+    ],
+    "ans": 0,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 1692,
+    "cat": "sentence_completion",
+    "orig": 1012,
+    "q": "The cargo hold smoke detector must be tested ……………………………………",
+    "opts": [
+      "in accordance with the maintenance schedule to ensure it is functional.",
+      "only before the first flight of the day.",
+      "by exposing it to real smoke.",
+      "only during C-checks."
+    ],
+    "ans": 0,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 1693,
+    "cat": "sentence_completion",
+    "orig": 1013,
+    "q": "After replacing a hydraulic seal, ……………………………………",
+    "opts": [
+      "a leak check must be performed at the system operating pressure.",
+      "no further action is required.",
+      "the aircraft can be dispatched without testing.",
+      "the maintenance log entry is optional."
+    ],
+    "ans": 0,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 1694,
+    "cat": "sentence_completion",
+    "orig": 1014,
+    "q": "The emergency locator transmitter (ELT) must be tested ……………………………………",
+    "opts": [
+      "in accordance with the manufacturer's instructions and the maintenance schedule.",
+      "after every flight.",
+      "only when the battery is replaced.",
+      "in real emergency situations only."
+    ],
+    "ans": 0,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 1695,
+    "cat": "sentence_completion",
+    "orig": 1015,
+    "q": "When replacing the aircraft windshield, ……………………………………",
+    "opts": [
+      "all safety clips and tags must be removed and circuit breakers set as specified.",
+      "the aircraft must be pressurized to test the seal.",
+      "only a certified glasscutter may perform the work.",
+      "no maintenance manual is required."
+    ],
+    "ans": 0,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 1696,
+    "cat": "sentence_completion",
+    "orig": 1016,
+    "q": "If the aircraft's weight exceeds the MTOW, ……………………………………",
+    "opts": [
+      "the flight must not depart until the excess weight is removed.",
+      "the captain may authorize departure at pilot's discretion.",
+      "performance calculations must be updated.",
+      "additional fuel must be loaded."
+    ],
+    "ans": 0,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 1697,
+    "cat": "sentence_completion",
+    "orig": 1017,
+    "q": "The center of gravity must be within the approved envelope because ……………………………………",
+    "opts": [
+      "an aircraft outside CG limits can become uncontrollable.",
+      "it is required only for passenger comfort.",
+      "it affects the fuel consumption only.",
+      "it is required for fuel distribution."
+    ],
+    "ans": 0,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 1698,
+    "cat": "sentence_completion",
+    "orig": 1018,
+    "q": "When servicing a nitrogen-charged strut, ……………………………………",
+    "opts": [
+      "only approved nitrogen must be used and pressure must be set to the specified value.",
+      "compressed air can be used as an alternative.",
+      "any inert gas can be used.",
+      "the pressure is not critical."
+    ],
+    "ans": 0,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 1699,
+    "cat": "sentence_completion",
+    "orig": 1019,
+    "q": "The maintenance engineer must verify that ……………………………………",
+    "opts": [
+      "all components are correctly installed and no items are missing before closing the panels.",
+      "the aircraft is washed before dispatch.",
+      "all passengers are on board.",
+      "the captain has reviewed the fuel load."
+    ],
+    "ans": 0,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 1700,
+    "cat": "sentence_completion",
+    "orig": 1020,
+    "q": "If a tool is found missing after maintenance, ……………………………………",
+    "opts": [
+      "the aircraft must be inspected to locate the tool before dispatch.",
+      "a new tool must be ordered immediately.",
+      "the maintenance log must be updated only.",
+      "the aircraft can be dispatched after a visual check."
+    ],
+    "ans": 0,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 1701,
+    "cat": "sentence_completion",
+    "orig": 1021,
+    "q": "The hydraulic reservoir level must be checked ……………………………………",
+    "opts": [
+      "before every flight as part of the pre-flight inspection.",
+      "only during scheduled maintenance.",
+      "after every 100 landings.",
+      "only when a hydraulic leak is suspected."
+    ],
+    "ans": 0,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 1702,
+    "cat": "sentence_completion",
+    "orig": 1022,
+    "q": "When performing NDT on a component, ……………………………………",
+    "opts": [
+      "the inspector must be properly certified and use calibrated equipment.",
+      "any available equipment may be used.",
+      "no special training is required.",
+      "the component must be removed from the aircraft."
+    ],
+    "ans": 0,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 1703,
+    "cat": "sentence_completion",
+    "orig": 1023,
+    "q": "Before signing off a maintenance task, the engineer must ……………………………………",
+    "opts": [
+      "verify that the work was performed correctly and all items are reinstalled.",
+      "obtain approval from the captain.",
+      "submit the task card to planning.",
+      "order a replacement part."
+    ],
+    "ans": 0,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 1704,
+    "cat": "sentence_completion",
+    "orig": 1024,
+    "q": "If the oxygen cylinder pressure is below the minimum service limit, ……………………………………",
+    "opts": [
+      "the cylinder must be recharged or replaced before the aircraft is dispatched.",
+      "the aircraft can fly with reduced oxygen capacity.",
+      "only long-haul flights are affected.",
+      "the captain may approve departure."
+    ],
+    "ans": 0,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 1705,
+    "cat": "sentence_completion",
+    "orig": 1025,
+    "q": "During a ground run after engine replacement, ……………………………………",
+    "opts": [
+      "the oil pressure, temperature, and vibration levels must be monitored.",
+      "only the fuel flow needs to be checked.",
+      "the aircraft must be cleared for flight immediately.",
+      "the engine oil does not need to be checked."
+    ],
+    "ans": 0,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 1706,
+    "cat": "sentence_completion",
+    "orig": 1026,
+    "q": "When a CAUTION notice is given in the maintenance manual, ……………………………………",
+    "opts": [
+      "the instruction must be followed to prevent equipment or aircraft damage.",
+      "it is only advisory and may be ignored.",
+      "it applies to passengers only.",
+      "it is less important than a NOTE."
+    ],
+    "ans": 0,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 1707,
+    "cat": "sentence_completion",
+    "orig": 1027,
+    "q": "The aircraft must be grounded if ……………………………………",
+    "opts": [
+      "any damage exceeds the limits specified in the structural repair manual.",
+      "the weather is too cold.",
+      "the maintenance engineer is unavailable.",
+      "the fuel load is at minimum."
+    ],
+    "ans": 0,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 1708,
+    "cat": "sentence_completion",
+    "orig": 1028,
+    "q": "An engine borescope inspection must be performed ……………………………………",
+    "opts": [
+      "at the intervals specified in the maintenance program and after hard landings.",
+      "before every flight.",
+      "only during D-checks.",
+      "by the engine manufacturer only."
+    ],
+    "ans": 0,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 1709,
+    "cat": "sentence_completion",
+    "orig": 1029,
+    "q": "Before applying a structural repair, ……………………………………",
+    "opts": [
+      "the damage must be assessed and the area prepared according to the SRM.",
+      "the paint must be removed from the entire aircraft.",
+      "the aircraft must be in heavy maintenance.",
+      "only the engineer's judgment is required."
+    ],
+    "ans": 0,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 1710,
+    "cat": "sentence_completion",
+    "orig": 1030,
+    "q": "The APU bleed air supply is used ……………………………………",
+    "opts": [
+      "for air conditioning and engine starting when the main engines are not running.",
+      "to fuel the main engines.",
+      "to pressurize the hydraulic system.",
+      "to inflate the landing gear tyres."
+    ],
+    "ans": 0,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 1711,
+    "cat": "sentence_completion",
+    "orig": 1031,
+    "q": "If hydraulic fluid is found to be contaminated, ……………………………………",
+    "opts": [
+      "the system must be flushed and refilled with clean approved fluid.",
+      "it can still be used until the next scheduled change.",
+      "only the filter needs to be replaced.",
+      "the aircraft can continue to fly with degraded performance."
+    ],
+    "ans": 0,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 1712,
+    "cat": "sentence_completion",
+    "orig": 1032,
+    "q": "After a bird strike, the aircraft must ……………………………………",
+    "opts": [
+      "be inspected for structural damage and engine damage before the next flight.",
+      "continue the flight and be inspected at the destination.",
+      "be immediately grounded for a major overhaul.",
+      "only have the windshield replaced."
+    ],
+    "ans": 0,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 1713,
+    "cat": "sentence_completion",
+    "orig": 1033,
+    "q": "When the aircraft is parked for more than 7 days, ……………………………………",
+    "opts": [
+      "a periodic ground check must be performed according to the maintenance program.",
+      "the fuel tanks must be drained.",
+      "all avionics must be removed.",
+      "the aircraft must be placed in the hangar."
+    ],
+    "ans": 0,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 1714,
+    "cat": "sentence_completion",
+    "orig": 1034,
+    "q": "The fire detection system must be tested ……………………………………",
+    "opts": [
+      "to confirm it is functional before the aircraft is returned to service after maintenance.",
+      "only by the fire department.",
+      "using real fire sources.",
+      "during flight only."
+    ],
+    "ans": 0,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 1715,
+    "cat": "sentence_completion",
+    "orig": 1035,
+    "q": "When tightening structural fasteners, ……………………………………",
+    "opts": [
+      "the correct torque values specified in the AMM must be applied.",
+      "the technician's judgment about tightness is sufficient.",
+      "any standard torque value may be used.",
+      "the bolts must be tightened as much as possible."
+    ],
+    "ans": 0,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 1716,
+    "cat": "sentence_completion",
+    "orig": 1036,
+    "q": "The aircraft pressurization test must be performed ……………………………………",
+    "opts": [
+      "after any maintenance that could affect the fuselage pressure integrity.",
+      "before every flight.",
+      "only after a C-check.",
+      "only when a pressurization fault is indicated."
+    ],
+    "ans": 0,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 1717,
+    "cat": "sentence_completion",
+    "orig": 1037,
+    "q": "If the emergency evacuation slide is deployed inadvertently, ……………………………………",
+    "opts": [
+      "it must be repacked and inspected before the aircraft is returned to service.",
+      "it can be folded back manually.",
+      "the aircraft is permanently grounded.",
+      "it is acceptable if the slide is still intact."
+    ],
+    "ans": 0,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 1718,
+    "cat": "sentence_completion",
+    "orig": 1038,
+    "q": "The landing gear safety pins must be installed ……………………………………",
+    "opts": [
+      "before any work is performed on the landing gear to prevent inadvertent retraction.",
+      "only during C-checks.",
+      "to hold the doors open.",
+      "after the aircraft is towed."
+    ],
+    "ans": 0,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 1719,
+    "cat": "sentence_completion",
+    "orig": 1039,
+    "q": "If an airworthiness directive is applicable to the aircraft, ……………………………………",
+    "opts": [
+      "it must be complied with before the next flight or within the specified time limit.",
+      "the airline may apply for an exemption without limitation.",
+      "it is advisory only and may be deferred indefinitely.",
+      "it applies only to new aircraft."
+    ],
+    "ans": 0,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 1720,
+    "cat": "sentence_completion",
+    "orig": 1040,
+    "q": "Carbon brake wear must be measured ……………………………………",
+    "opts": [
+      "at the intervals specified in the maintenance manual using the approved gauge.",
+      "visually by the engineer.",
+      "only when a brake anomaly is reported.",
+      "annually regardless of flight cycles."
+    ],
+    "ans": 0,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 1721,
+    "cat": "sentence_completion",
+    "orig": 1041,
+    "q": "When storing the aircraft for an extended period, ……………………………………",
+    "opts": [
+      "the aircraft must be protected in accordance with the storage procedures.",
+      "the fuel must be completely drained.",
+      "the engines must be run daily.",
+      "all hydraulic fluid must be removed."
+    ],
+    "ans": 0,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 1722,
+    "cat": "sentence_completion",
+    "orig": 1042,
+    "q": "If the EEC detects an engine fault during operation, ……………………………………",
+    "opts": [
+      "it will adjust engine parameters to maintain safe operation and alert the crew.",
+      "the engine will shut down immediately.",
+      "no action is needed.",
+      "the technician must restart the engine manually."
+    ],
+    "ans": 0,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 1723,
+    "cat": "sentence_completion",
+    "orig": 1043,
+    "q": "To prevent accidental engine starting during maintenance, ……………………………………",
+    "opts": [
+      "the ignition circuit breakers must be opened and collared.",
+      "the fuel must be turned off.",
+      "only a warning sign is needed.",
+      "the starter motor must be disconnected."
+    ],
+    "ans": 0,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 1724,
+    "cat": "sentence_completion",
+    "orig": 1044,
+    "q": "The anti-collision light must function correctly because ……………………………………",
+    "opts": [
+      "it is required to indicate the aircraft's position to other aircraft and ground vehicles.",
+      "it improves the aesthetic appearance of the aircraft.",
+      "it is required only at night.",
+      "it is required only for IFR flights."
+    ],
+    "ans": 0,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 1725,
+    "cat": "sentence_completion",
+    "orig": 1045,
+    "q": "When performing a maintenance task in a fuel tank, ……………………………………",
+    "opts": [
+      "continuous atmospheric monitoring for fuel vapor must be maintained.",
+      "the tank can be entered without special precautions.",
+      "the aircraft must be airborne for ventilation.",
+      "no PPE is required for short duration tasks."
+    ],
+    "ans": 0,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 1726,
+    "cat": "sentence_completion",
+    "orig": 1046,
+    "q": "The test equipment used during avionics maintenance must ……………………………………",
+    "opts": [
+      "be calibrated and approved for the specific test to be performed.",
+      "be the latest commercially available model.",
+      "be provided by the OEM only.",
+      "be the same manufacturer as the avionics unit being tested."
+    ],
+    "ans": 0,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 1727,
+    "cat": "sentence_completion",
+    "orig": 1047,
+    "q": "Before replacing an aircraft tyre, ……………………………………",
+    "opts": [
+      "the wheel must be deflated and the aircraft jacked to relieve the tyre of weight.",
+      "the new tyre must be heated to expand it.",
+      "the brake assembly must always be removed first.",
+      "the wheel must be removed from the hangar first."
+    ],
+    "ans": 0,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 1728,
+    "cat": "sentence_completion",
+    "orig": 1048,
+    "q": "If the aircraft has been in a lightning strike, ……………………………………",
+    "opts": [
+      "all fuel vents must be checked for damage in addition to the general inspection.",
+      "only the avionics must be checked.",
+      "the aircraft can continue in service without inspection.",
+      "only external paint damage is expected."
+    ],
+    "ans": 0,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 1729,
+    "cat": "sentence_completion",
+    "orig": 1049,
+    "q": "A serviceable component is one that ……………………………………",
+    "opts": [
+      "meets all the applicable serviceability requirements and is fit for installation.",
+      "has never been used.",
+      "has been cleaned.",
+      "is less than 10 years old."
+    ],
+    "ans": 0,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 1730,
+    "cat": "sentence_completion",
+    "orig": 1050,
+    "q": "To ensure the repair of a composite structure is correct, ……………………………………",
+    "opts": [
+      "the repair must be inspected using the approved NDT method after curing.",
+      "the color of the repair must match the original.",
+      "only a visual inspection is required.",
+      "the aircraft can be returned to service immediately after repair."
+    ],
+    "ans": 0,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 1731,
+    "cat": "sentence_completion",
+    "orig": 1051,
+    "q": "When the aircraft returns from a long flight, ……………………………………",
+    "opts": [
+      "all reported defects must be entered in the technical log and addressed.",
+      "a full A-check must be performed.",
+      "the fuel tanks must be refilled immediately.",
+      "the flight crew must sign the aircraft log."
+    ],
+    "ans": 0,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 1732,
+    "cat": "sentence_completion",
+    "orig": 1052,
+    "q": "To avoid damage when removing an avionic box, ……………………………………",
+    "opts": [
+      "the relevant circuit breakers must be opened before disconnecting the connectors.",
+      "the avionics cooling must be switched off.",
+      "the aircraft must be on ground power.",
+      "the box may be unplugged while powered."
+    ],
+    "ans": 0,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 1733,
+    "cat": "sentence_completion",
+    "orig": 1053,
+    "q": "Before performing a weight and balance check, ……………………………………",
+    "opts": [
+      "the aircraft must be in the approved weighing configuration.",
+      "the aircraft must have a full load of passengers.",
+      "the fuel tanks must be full.",
+      "the landing gear must be retracted."
+    ],
+    "ans": 0,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 1734,
+    "cat": "sentence_completion",
+    "orig": 1054,
+    "q": "The aircraft battery must be replaced when ……………………………………",
+    "opts": [
+      "the capacity falls below the minimum specified capacity limit.",
+      "it is more than two years old.",
+      "the aircraft undergoes a D-check.",
+      "the electrolyte shows any coloring."
+    ],
+    "ans": 0,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 1735,
+    "cat": "sentence_completion",
+    "orig": 1055,
+    "q": "If an airworthiness directive (AD) requires inspection within 50 flight hours, ……………………………………",
+    "opts": [
+      "the inspection must be completed before the 50th flight hour after the AD effective date.",
+      "the inspection can be deferred to the next C-check.",
+      "the AD can be waived if no defects are expected.",
+      "the inspection is optional if the aircraft is within the warranty period."
+    ],
+    "ans": 0,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 1736,
+    "cat": "sentence_completion",
+    "orig": 1056,
+    "q": "The cargo compartment liner must be inspected for ……………………………………",
+    "opts": [
+      "fire damage, corrosion, and structural condition at each scheduled check.",
+      "color fading and staining only.",
+      "size and dimensions.",
+      "weight compliance."
+    ],
+    "ans": 0,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 1737,
+    "cat": "sentence_completion",
+    "orig": 1057,
+    "q": "When performing maintenance on a fly-by-wire aircraft's flight control computer, ……………………………………",
+    "opts": [
+      "the relevant flight control buses must be powered down and the maintenance mode selected.",
+      "the aircraft can be maintained while flying.",
+      "only software engineers can perform the task.",
+      "no special precautions are required."
+    ],
+    "ans": 0,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 1738,
+    "cat": "sentence_completion",
+    "orig": 1058,
+    "q": "The tailplane incidence angle must be set correctly because ……………………………………",
+    "opts": [
+      "it directly affects the aircraft's pitch trim for takeoff.",
+      "it affects the fuel consumption only.",
+      "it is required for aesthetic purposes.",
+      "it only matters during cruise flight."
+    ],
+    "ans": 0,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 1739,
+    "cat": "sentence_completion",
+    "orig": 1059,
+    "q": "When performing the engine oil sample analysis, ……………………………………",
+    "opts": [
+      "the results must be compared against the baseline to detect abnormal wear.",
+      "any discoloration is acceptable.",
+      "only viscosity needs to be measured.",
+      "the sample can be taken during engine operation."
+    ],
+    "ans": 0,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 1740,
+    "cat": "sentence_completion",
+    "orig": 1060,
+    "q": "If the maintenance manual is not available, ……………………………………",
+    "opts": [
+      "the maintenance task must not be started until the manual is obtained.",
+      "the engineer may proceed based on experience.",
+      "a copy from another aircraft can be used.",
+      "the captain may authorize the task."
+    ],
+    "ans": 0,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 1741,
+    "cat": "sentence_completion",
+    "orig": 1061,
+    "q": "Engine trend monitoring data must be reviewed ……………………………………",
+    "opts": [
+      "regularly to detect any deterioration in engine performance before it becomes a problem.",
+      "only after an engine failure.",
+      "during the annual inspection only.",
+      "by the engine manufacturer."
+    ],
+    "ans": 0,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 1742,
+    "cat": "sentence_completion",
+    "orig": 1062,
+    "q": "If the aircraft is parked in extreme cold weather, ……………………………………",
+    "opts": [
+      "cold weather maintenance procedures including engine and system pre-heating must be followed.",
+      "the aircraft cannot be maintained.",
+      "only the engines need to be heated.",
+      "the aircraft must be moved indoors before any maintenance."
+    ],
+    "ans": 0,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 1743,
+    "cat": "sentence_completion",
+    "orig": 1063,
+    "q": "After a hard landing, the aircraft must ……………………………………",
+    "opts": [
+      "be inspected in accordance with the hard landing inspection procedure before the next flight.",
+      "be sent to the hangar only if damage is visible.",
+      "be refueled and continue service.",
+      "have only the undercarriage inspected."
+    ],
+    "ans": 0,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 1744,
+    "cat": "sentence_completion",
+    "orig": 1064,
+    "q": "All electrical connectors in the fuel tank must be ……………………………………",
+    "opts": [
+      "intrinsically safe and approved for use in a flammable atmosphere.",
+      "waterproof only.",
+      "standard commercial grade.",
+      "stainless steel."
+    ],
+    "ans": 0,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 1745,
+    "cat": "sentence_completion",
+    "orig": 1065,
+    "q": "If a flight control surface is found to be out of the specified range, ……………………………………",
+    "opts": [
+      "it must be rigged to the correct position before the aircraft is dispatched.",
+      "the aircraft can be dispatched with the crew informed.",
+      "only a placard is required.",
+      "the surface must be replaced immediately."
+    ],
+    "ans": 0,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 1746,
+    "cat": "sentence_completion",
+    "orig": 1066,
+    "q": "Before performing any work near the aircraft engines, ……………………………………",
+    "opts": [
+      "the engines must be shut down and the ignition disabled.",
+      "only a warning sign is required.",
+      "personnel may work with engines running if careful.",
+      "only the fuel must be turned off."
+    ],
+    "ans": 0,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 1747,
+    "cat": "sentence_completion",
+    "orig": 1067,
+    "q": "The cargo door seal must be inspected to ensure ……………………………………",
+    "opts": [
+      "it forms a complete pressure seal with no gaps or damage.",
+      "it is the correct color.",
+      "it has been lubricated.",
+      "it is the same brand as the original."
+    ],
+    "ans": 0,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 1748,
+    "cat": "sentence_completion",
+    "orig": 1068,
+    "q": "A component that has reached its life limit must ……………………………………",
+    "opts": [
+      "be removed from service and replaced regardless of its apparent condition.",
+      "be inspected before being removed.",
+      "continue to be used if it passes inspection.",
+      "be submitted to the manufacturer for review."
+    ],
+    "ans": 0,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 1749,
+    "cat": "sentence_completion",
+    "orig": 1069,
+    "q": "To prevent ice accretion on the aircraft, ……………………………………",
+    "opts": [
+      "de-icing or anti-icing treatment must be applied within the holdover time limits.",
+      "the aircraft must be kept in a heated hangar at all times.",
+      "only the wings need to be treated.",
+      "the treatment can be applied during the takeoff roll."
+    ],
+    "ans": 0,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 1750,
+    "cat": "sentence_completion",
+    "orig": 1070,
+    "q": "The instrument panel must be inspected for ……………………………………",
+    "opts": [
+      "cracks, loose instruments, and legibility of all markings.",
+      "dust and dirt only.",
+      "color of the panel.",
+      "the age of the instruments."
+    ],
+    "ans": 0,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 1751,
+    "cat": "sentence_completion",
+    "orig": 1071,
+    "q": "Before replacing the main landing gear actuator, ……………………………………",
+    "opts": [
+      "the landing gear must be on safety pins and the hydraulic system depressurized.",
+      "only the hydraulic pressure must be reduced.",
+      "the aircraft must be on jacks without safety pins.",
+      "the actuator can be replaced with the system pressurized."
+    ],
+    "ans": 0,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 1752,
+    "cat": "sentence_completion",
+    "orig": 1072,
+    "q": "After installing a new engine, ……………………………………",
+    "opts": [
+      "a series of ground tests must be performed before the aircraft is cleared for flight.",
+      "the aircraft can be immediately dispatched.",
+      "only the oil needs to be checked.",
+      "a single engine idle run is sufficient."
+    ],
+    "ans": 0,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 1753,
+    "cat": "sentence_completion",
+    "orig": 1073,
+    "q": "When performing work in a confined space on the aircraft, ……………………………………",
+    "opts": [
+      "adequate ventilation must be provided and atmospheric testing performed.",
+      "no special precautions are required.",
+      "only one person at a time should enter.",
+      "the work must be completed within 30 minutes."
+    ],
+    "ans": 0,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 1754,
+    "cat": "sentence_completion",
+    "orig": 1074,
+    "q": "The radio altimeter antenna must be inspected to ensure ……………………………………",
+    "opts": [
+      "it is secure, undamaged, and correctly connected.",
+      "it is the correct color.",
+      "it is positioned at the correct angle.",
+      "it has been painted."
+    ],
+    "ans": 0,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 1755,
+    "cat": "sentence_completion",
+    "orig": 1075,
+    "q": "When closing access panels after maintenance, ……………………………………",
+    "opts": [
+      "all panels must be secured with the correct fasteners torqued to the specified value.",
+      "any available fasteners may be used.",
+      "the panels do not need to be torqued.",
+      "only the exterior panels need fasteners."
+    ],
+    "ans": 0,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 1756,
+    "cat": "sentence_completion",
+    "orig": 1076,
+    "q": "The pressurization safety valve must be tested to ensure ……………………………………",
+    "opts": [
+      "it opens at the correct differential pressure setting.",
+      "it is watertight.",
+      "it can be operated manually.",
+      "it is the correct color."
+    ],
+    "ans": 0,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 1757,
+    "cat": "sentence_completion",
+    "orig": 1077,
+    "q": "When the aircraft is prepared for a ferry flight, ……………………………………",
+    "opts": [
+      "a special ferry permit may be required if the aircraft is not fully airworthy.",
+      "all defects must be fully repaired.",
+      "only one engine is required to be serviceable.",
+      "the captain makes all airworthiness decisions."
+    ],
+    "ans": 0,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 1758,
+    "cat": "sentence_completion",
+    "orig": 1078,
+    "q": "If composite debris is found in the cabin, ……………………………………",
+    "opts": [
+      "it must be reported and the source identified to assess any structural damage.",
+      "it can be swept away without investigation.",
+      "it is not a maintenance concern.",
+      "only the cabin needs to be cleaned."
+    ],
+    "ans": 0,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 1759,
+    "cat": "sentence_completion",
+    "orig": 1079,
+    "q": "The pitot-static system must be leak-tested ……………………………………",
+    "opts": [
+      "after any maintenance that could affect its integrity, including probe replacement.",
+      "before every flight.",
+      "only during A-checks.",
+      "only when the altimeter is replaced."
+    ],
+    "ans": 0,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 1760,
+    "cat": "sentence_completion",
+    "orig": 1080,
+    "q": "When the aircraft returns from a C-check, ……………………………………",
+    "opts": [
+      "a test flight may be required to verify the correct function of all systems.",
+      "it can be dispatched immediately.",
+      "only the engines need to be test-run.",
+      "a passenger flight is sufficient as a test."
+    ],
+    "ans": 0,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 1761,
+    "cat": "sentence_completion",
+    "orig": 1081,
+    "q": "The aircraft's VHF radio must be tested ……………………………………",
+    "opts": [
+      "for transmit and receive function before dispatch.",
+      "only when a fault is reported.",
+      "annually during the D-check.",
+      "only for frequency range."
+    ],
+    "ans": 0,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 1762,
+    "cat": "sentence_completion",
+    "orig": 1082,
+    "q": "When a new part is installed, ……………………………………",
+    "opts": [
+      "the part number, serial number, and work order reference must be recorded.",
+      "only the part number is required.",
+      "no record is necessary for minor parts.",
+      "the date of installation is the only required entry."
+    ],
+    "ans": 0,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 1763,
+    "cat": "sentence_completion",
+    "orig": 1083,
+    "q": "The aircraft maintenance program must be ……………………………………",
+    "opts": [
+      "approved by the relevant regulatory authority before being implemented.",
+      "determined by the airline only.",
+      "based on the manufacturer's recommendations only.",
+      "reviewed every 10 years."
+    ],
+    "ans": 0,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 1764,
+    "cat": "sentence_completion",
+    "orig": 1084,
+    "q": "If the aircraft skin shows multiple impact damages from hail, ……………………………………",
+    "opts": [
+      "all dents must be measured and compared with the allowable damage limits in the SRM.",
+      "only dents larger than 25mm need to be measured.",
+      "the aircraft can fly if no holes are present.",
+      "a visual check is sufficient."
+    ],
+    "ans": 0,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 1765,
+    "cat": "sentence_completion",
+    "orig": 1085,
+    "q": "Before the aircraft is cleared for flight after a maintenance check, ……………………………………",
+    "opts": [
+      "all items on the work order must be signed off with no open items remaining.",
+      "the captain must inspect the aircraft.",
+      "the ground crew must approve the dispatch.",
+      "the engineering manager must sign the work order."
+    ],
+    "ans": 0,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 1766,
+    "cat": "sentence_completion",
+    "orig": 1086,
+    "q": "The main engine fire handle must be tested to verify ……………………………………",
+    "opts": [
+      "it correctly activates the fire suppression system and operates without restriction.",
+      "it is properly painted red.",
+      "it is accessible from outside the aircraft.",
+      "it can be operated with one hand only."
+    ],
+    "ans": 0,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 1767,
+    "cat": "sentence_completion",
+    "orig": 1087,
+    "q": "If the aircraft's angle of attack sensor is replaced, ……………………………………",
+    "opts": [
+      "a stall warning test must be performed to confirm correct operation.",
+      "no functional test is required.",
+      "a visual inspection of the sensor is sufficient.",
+      "the sensor can be tested during the next flight."
+    ],
+    "ans": 0,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 1768,
+    "cat": "sentence_completion",
+    "orig": 1088,
+    "q": "When maintaining the aircraft electrical bonding, ……………………………………",
+    "opts": [
+      "all bonding connections must be checked for correct resistance values.",
+      "only the connections that are visibly corroded need checking.",
+      "resistance measurement is not required.",
+      "bonding is only checked during a D-check."
+    ],
+    "ans": 0,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 1769,
+    "cat": "sentence_completion",
+    "orig": 1089,
+    "q": "All modifications to the aircraft structure must be ……………………………………",
+    "opts": [
+      "approved by the design authority and documented in the aircraft records.",
+      "authorized by the maintenance engineer only.",
+      "carried out within the hangar.",
+      "completed during C-checks only."
+    ],
+    "ans": 0,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 1770,
+    "cat": "sentence_completion",
+    "orig": 1090,
+    "q": "The avionics software must be updated ……………………………………",
+    "opts": [
+      "in accordance with the applicable service bulletins and approved procedures.",
+      "whenever a new version is available.",
+      "only by the original manufacturer.",
+      "during A-checks only."
+    ],
+    "ans": 0,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 1771,
+    "cat": "sentence_completion",
+    "orig": 1091,
+    "q": "If the aircraft's nose wheel steering is found to be unresponsive, ……………………………………",
+    "opts": [
+      "it must be investigated and repaired before the aircraft is towed or taxied.",
+      "the aircraft may be towed slowly.",
+      "manual steering is acceptable for short distances.",
+      "only a logbook entry is required."
+    ],
+    "ans": 0,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 1772,
+    "cat": "sentence_completion",
+    "orig": 1092,
+    "q": "The emergency equipment items, including life rafts and first aid kits, must be ……………………………………",
+    "opts": [
+      "inspected for serviceability and completeness at the specified intervals.",
+      "replaced after every flight.",
+      "inspected only before long-haul flights.",
+      "maintained by the cabin crew only."
+    ],
+    "ans": 0,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 1773,
+    "cat": "sentence_completion",
+    "orig": 1093,
+    "q": "When the weather radar system is being maintained, ……………………………………",
+    "opts": [
+      "the radar must not be operated in the hangar due to the radiation hazard.",
+      "the system can be operated at reduced power.",
+      "only a qualified avionics engineer can test it.",
+      "no special precautions are required."
+    ],
+    "ans": 0,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 1774,
+    "cat": "sentence_completion",
+    "orig": 1094,
+    "q": "If a hydraulic pipe shows signs of chafing damage, ……………………………………",
+    "opts": [
+      "it must be inspected and repaired or replaced before the system is pressurized.",
+      "chafing is acceptable if less than 10% of the pipe surface.",
+      "a temporary tape repair is acceptable.",
+      "the pipe can be used until it leaks."
+    ],
+    "ans": 0,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 1775,
+    "cat": "sentence_completion",
+    "orig": 1095,
+    "q": "Before performing a fuel system test, ……………………………………",
+    "opts": [
+      "all electrical bonding must be verified and all ignition sources removed.",
+      "only the fuel quantity must be checked.",
+      "the test can be performed with all normal electrical systems powered.",
+      "no special precautions are required."
+    ],
+    "ans": 0,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 1776,
+    "cat": "sentence_completion",
+    "orig": 1096,
+    "q": "When performing an engine hot section inspection, ……………………………………",
+    "opts": [
+      "the engine must be cooled sufficiently and the correct borescope procedure followed.",
+      "the engine can be inspected immediately after shutdown.",
+      "no cooling period is required for the inspection.",
+      "only the exterior of the hot section needs inspection."
+    ],
+    "ans": 0,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 1777,
+    "cat": "sentence_completion",
+    "orig": 1097,
+    "q": "The aircraft nose wheel tyre must be replaced when ……………………………………",
+    "opts": [
+      "the tread depth reaches the wear indicator limit specified in the maintenance manual.",
+      "it shows any sign of discoloration.",
+      "it has been used for 500 flight hours.",
+      "the tyre age exceeds 2 years."
+    ],
+    "ans": 0,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 1778,
+    "cat": "sentence_completion",
+    "orig": 1098,
+    "q": "When the aircraft is exposed to a volcanic ash cloud, ……………………………………",
+    "opts": [
+      "a thorough inspection of all engines and airframe must be performed before returning to service.",
+      "only the engines need to be inspected.",
+      "a visual wash of the aircraft is sufficient.",
+      "the aircraft can continue normally if no performance changes are noted."
+    ],
+    "ans": 0,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 1779,
+    "cat": "sentence_completion",
+    "orig": 1099,
+    "q": "If the aircraft's static discharge wicks are found damaged, ……………………………………",
+    "opts": [
+      "they must be replaced to ensure correct discharge of static electricity.",
+      "they can be trimmed and reused.",
+      "they are non-essential and can remain damaged.",
+      "a placard is sufficient."
+    ],
+    "ans": 0,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 1780,
+    "cat": "sentence_completion",
+    "orig": 1100,
+    "q": "The oxygen system charging equipment must be ……………………………………",
+    "opts": [
+      "approved for oxygen use and free from oil or grease contamination.",
+      "any standard gas charging equipment.",
+      "nitrogen rated.",
+      "verified to be the same brand as the oxygen system."
+    ],
+    "ans": 0,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 1781,
+    "cat": "sentence_completion",
+    "orig": 1101,
+    "q": "When performing maintenance on the aircraft's fuel vent system, ……………………………………",
+    "opts": [
+      "all vents must be checked to be clear of obstruction and correctly installed.",
+      "only the main vent needs to be checked.",
+      "vent inspection is optional.",
+      "vents can be blocked temporarily during maintenance."
+    ],
+    "ans": 0,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 1782,
+    "cat": "sentence_completion",
+    "orig": 1102,
+    "q": "If the aircraft requires a special repair not covered by the SRM, ……………………………………",
+    "opts": [
+      "an engineering order must be raised and the repair approved by the design authority.",
+      "the engineer may use his best judgment.",
+      "any composite repair technique can be applied.",
+      "the repair can be made using standard aircraft repair methods."
+    ],
+    "ans": 0,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 1783,
+    "cat": "sentence_completion",
+    "orig": 1103,
+    "q": "Before releasing the aircraft to service after a major component replacement, ……………………………………",
+    "opts": [
+      "the installation must be inspected by an independent certifying engineer.",
+      "only the installing engineer needs to verify the work.",
+      "a test flight is always required.",
+      "the captain must inspect the replacement."
+    ],
+    "ans": 0,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 1784,
+    "cat": "sentence_completion",
+    "orig": 1104,
+    "q": "The aircraft's exterior surfaces must be kept clean because ……………………………………",
+    "opts": [
+      "contamination can affect aerodynamic performance and hide structural damage.",
+      "airlines require it for aesthetic reasons.",
+      "regulatory authorities require daily washing.",
+      "it is a passenger service requirement."
+    ],
+    "ans": 0,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 1785,
+    "cat": "sentence_completion",
+    "orig": 1105,
+    "q": "When signing a maintenance release, the certifying engineer is declaring that ……………………………………",
+    "opts": [
+      "the maintenance has been carried out in accordance with the approved data and the aircraft is airworthy.",
+      "the aircraft is ready for painting.",
+      "the aircraft has passed all scheduled inspections.",
+      "the work will be checked again at the next scheduled stop."
+    ],
+    "ans": 0,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 1786,
+    "cat": "sentence_completion",
+    "orig": 1106,
+    "q": "If moisture is found in the avionics bay, ……………………………………",
+    "opts": [
+      "the source must be identified and the equipment dried and inspected before dispatch.",
+      "the aircraft can fly if the bay is ventilated.",
+      "only affected units need to be checked.",
+      "a note in the logbook is sufficient."
+    ],
+    "ans": 0,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 1787,
+    "cat": "sentence_completion",
+    "orig": 1107,
+    "q": "Ground vibration testing of the aircraft structure must be performed ……………………………………",
+    "opts": [
+      "when required by the maintenance program or after major structural repairs.",
+      "before every flight.",
+      "only during D-checks.",
+      "only after engine changes."
+    ],
+    "ans": 0,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 1788,
+    "cat": "sentence_completion",
+    "orig": 1108,
+    "q": "The aircraft fuel tank vent tube must be ……………………………………",
+    "opts": [
+      "inspected for blockage and correct installation to ensure proper fuel system operation.",
+      "visually checked from outside the aircraft only.",
+      "replaced annually.",
+      "installed pointing into the airflow."
+    ],
+    "ans": 0,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 1789,
+    "cat": "sentence_completion",
+    "orig": 1109,
+    "q": "If the aircraft has been in a flood or water immersion event, ……………………………………",
+    "opts": [
+      "a comprehensive water damage inspection of all systems must be performed before return to service.",
+      "only the landing gear area needs inspection.",
+      "the aircraft can be used after drying.",
+      "only the avionics bay needs to be inspected."
+    ],
+    "ans": 0,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 1790,
+    "cat": "sentence_completion",
+    "orig": 1110,
+    "q": "The last maintenance action on a component must be ……………………………………",
+    "opts": [
+      "traceable through the maintenance records to ensure accountability.",
+      "recorded only if a defect was found.",
+      "stored in the engineer's personal records.",
+      "summarized in the captain's report."
+    ],
+    "ans": 0,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 1791,
+    "cat": "sentence_completion",
+    "orig": 1111,
+    "q": "When a structural fastener is replaced with an oversize fastener, ……………………………………",
+    "opts": [
+      "the repair must be documented and approved as an authorized repair.",
+      "only the installation is to be noted.",
+      "no documentation is required for oversize fasteners.",
+      "the repair is automatically approved by use."
+    ],
+    "ans": 0,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 1792,
+    "cat": "sentence_completion",
+    "orig": 1112,
+    "q": "The fuel tank sump must be drained ……………………………………",
+    "opts": [
+      "at each pre-flight inspection to check for and remove water contamination.",
+      "only during A-checks.",
+      "weekly during scheduled maintenance.",
+      "only when water contamination is suspected."
+    ],
+    "ans": 0,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 1793,
+    "cat": "sentence_completion",
+    "orig": 1113,
+    "q": "If the aircraft is involved in a runway excursion, ……………………………………",
+    "opts": [
+      "a thorough inspection of the landing gear, brakes, and structure must be performed.",
+      "only the brakes need to be inspected.",
+      "the aircraft can be dispatched if no visible damage is found.",
+      "only the tires need to be replaced."
+    ],
+    "ans": 0,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 1794,
+    "cat": "sentence_completion",
+    "orig": 1114,
+    "q": "The aircraft maintenance log must be retained for ……………………………………",
+    "opts": [
+      "the minimum period required by the applicable regulations.",
+      "ten years only.",
+      "the life of the aircraft.",
+      "five years after the aircraft is retired."
+    ],
+    "ans": 0,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 1795,
+    "cat": "sentence_completion",
+    "orig": 1115,
+    "q": "Non-essential consumable items that exceed their expiry date must ……………………………………",
+    "opts": [
+      "be removed from the aircraft and replaced before the next flight.",
+      "be used until visually degraded.",
+      "be authorized for use by the engineer.",
+      "be reported to the manufacturer."
+    ],
+    "ans": 0,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 1796,
+    "cat": "sentence_completion",
+    "orig": 1901,
+    "q": "If an engine experiences an overtemperature event, ……………………………………",
+    "opts": [
+      "a borescope inspection of the turbine section must be performed before return to service.",
+      "the engine may be returned to service if the cockpit indication returns to normal.",
+      "the event must be reported to the crew after the flight.",
+      "no inspection is required if the exceedance was brief."
+    ],
+    "ans": 0,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 1797,
+    "cat": "sentence_completion",
+    "orig": 1902,
+    "q": "Before entering a fuel tank for maintenance, ……………………………………",
+    "opts": [
+      "a confined space permit and atmospheric monitoring must be in place.",
+      "only verbal permission from the supervisor is required.",
+      "the area must be ventilated for 30 minutes only.",
+      "the technician may enter alone if the tank has been drained."
+    ],
+    "ans": 0,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 1798,
+    "cat": "sentence_completion",
+    "orig": 1903,
+    "q": "Aircraft tyres are inflated with nitrogen rather than compressed air because ……………………………………",
+    "opts": [
+      "nitrogen is dry and does not support combustion.",
+      "nitrogen provides more cushioning at high landing speeds.",
+      "compressed air is too expensive for aviation use.",
+      "nitrogen is lighter than air, reducing tyre weight."
+    ],
+    "ans": 0,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 1799,
+    "cat": "sentence_completion",
+    "orig": 1904,
+    "q": "When a hydraulic system component is replaced, ……………………………………",
+    "opts": [
+      "the system must be leak-tested before the aircraft returns to service.",
+      "the hydraulic fluid need not be changed unless visibly contaminated.",
+      "a pressure test is optional if the component is a direct replacement.",
+      "no functional test is required for minor components."
+    ],
+    "ans": 0,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 1800,
+    "cat": "sentence_completion",
+    "orig": 1905,
+    "q": "A maintenance task card is used to ……………………………………",
+    "opts": [
+      "define, control, and document each individual maintenance task.",
+      "record the aircraft's flight hours and cycles only.",
+      "authorize the maintenance organisation to carry out work.",
+      "provide a cost estimate for each maintenance task."
+    ],
+    "ans": 0,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 1801,
+    "cat": "sentence_completion",
+    "orig": 1906,
+    "q": "If carbon brake discs become contaminated with oil or grease, ……………………………………",
+    "opts": [
+      "their braking performance is degraded and they must be replaced.",
+      "they can be cleaned with a solvent and returned to service.",
+      "their performance is unaffected below the wear limit.",
+      "the contamination is acceptable if detected before the next flight."
+    ],
+    "ans": 0,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 1802,
+    "cat": "sentence_completion",
+    "orig": 1907,
+    "q": "After a hard landing, ……………………………………",
+    "opts": [
+      "a specific inspection of the landing gear, structure, and surrounding systems must be performed.",
+      "the aircraft may continue in service if no vibration was felt.",
+      "only the landing gear tyres need to be inspected.",
+      "the inspection is deferred to the next scheduled C-check."
+    ],
+    "ans": 0,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 1803,
+    "cat": "sentence_completion",
+    "orig": 1908,
+    "q": "The aircraft's centre of gravity must remain within limits throughout the flight because ……………………………………",
+    "opts": [
+      "a CG outside limits can make the aircraft uncontrollable or structurally unsafe.",
+      "exceeding CG limits increases fuel burn.",
+      "the pressurization system depends on CG being within range.",
+      "CG outside limits triggers autopilot disconnection."
+    ],
+    "ans": 0,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 1804,
+    "cat": "sentence_completion",
+    "orig": 1909,
+    "q": "Electrical bonding straps that are broken or corroded must ……………………………………",
+    "opts": [
+      "be replaced immediately to restore electrical continuity.",
+      "be cleaned and retested before further action.",
+      "be monitored at the next scheduled inspection.",
+      "be replaced only if the resistance exceeds 10 ohms."
+    ],
+    "ans": 0,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 1805,
+    "cat": "sentence_completion",
+    "orig": 1910,
+    "q": "Before performing any maintenance on a high-voltage electrical system, ……………………………………",
+    "opts": [
+      "power isolation must be verified and a lockout/tagout procedure applied.",
+      "the system may remain energized if the area is properly marked.",
+      "verbal confirmation from the pilot is sufficient authorization.",
+      "a qualified electrician must be present as an observer only."
+    ],
+    "ans": 0,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 1806,
+    "cat": "sentence_completion",
+    "orig": 1911,
+    "q": "The fire suppression system on an aircraft engine ……………………………………",
+    "opts": [
+      "is activated by the engine fire push button in the cockpit, which isolates the engine and arms the extinguisher.",
+      "discharges automatically when the fire detection loop detects heat.",
+      "can only be activated by ground personnel.",
+      "provides unlimited fire suppression capacity."
+    ],
+    "ans": 0,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 1807,
+    "cat": "sentence_completion",
+    "orig": 1912,
+    "q": "If metallic particles are found in a hydraulic filter during replacement, ……………………………………",
+    "opts": [
+      "a system investigation must be initiated to identify the source.",
+      "the particles are noted and the system returned to service.",
+      "the hydraulic fluid is replaced and no further action is needed.",
+      "the filter replacement interval is shortened to 50 hours."
+    ],
+    "ans": 0,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 1808,
+    "cat": "sentence_completion",
+    "orig": 1913,
+    "q": "Avionics equipment must be protected from electrostatic discharge because ……………………………………",
+    "opts": [
+      "static electricity can damage sensitive electronic components.",
+      "static electricity reduces the battery life of avionics units.",
+      "electrostatic discharge can cause shorts in the aircraft wiring.",
+      "avionics are required by law to be stored in antistatic environments."
+    ],
+    "ans": 0,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 1809,
+    "cat": "sentence_completion",
+    "orig": 1914,
+    "q": "The Aircraft Maintenance Manual (AMM) must be consulted because ……………………………………",
+    "opts": [
+      "it provides the approved step-by-step procedures for all maintenance tasks.",
+      "it contains the aircraft's flight performance data.",
+      "it is the only source of spare parts information.",
+      "it replaces the need for maintenance personnel qualifications."
+    ],
+    "ans": 0,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 1810,
+    "cat": "sentence_completion",
+    "orig": 1915,
+    "q": "During aircraft fuelling operations, the aircraft must be bonded to the fuel bowser because ……………………………………",
+    "opts": [
+      "this dissipates static electricity and reduces the risk of igniting fuel vapour.",
+      "it ensures the fuel flow rate is measured accurately.",
+      "it prevents contamination of the fuel during transfer.",
+      "it is a requirement of the refuelling contract."
+    ],
+    "ans": 0,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 1811,
+    "cat": "sentence_completion",
+    "orig": 1916,
+    "q": "A borescope inspection is used to ……………………………………",
+    "opts": [
+      "visually inspect internal engine components without major disassembly.",
+      "measure fuel flow through the engine fuel nozzles.",
+      "check hydraulic pressure inside the actuators.",
+      "inspect the external surface of the engine fan blades."
+    ],
+    "ans": 0,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 1812,
+    "cat": "sentence_completion",
+    "orig": 1917,
+    "q": "If the nitrogen pre-charge in a hydraulic accumulator is found too low, ……………………………………",
+    "opts": [
+      "the accumulator's capacity is reduced and it must be recharged to the specified pressure.",
+      "the accumulator is serviceable if the hydraulic pressure remains normal.",
+      "the aircraft may continue in service with enhanced monitoring.",
+      "the nitrogen charge is supplemented with compressed air."
+    ],
+    "ans": 0,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 1813,
+    "cat": "sentence_completion",
+    "orig": 1918,
+    "q": "When an aircraft undergoes a D-check (heavy maintenance visit), ……………………………………",
+    "opts": [
+      "the aircraft is fully disassembled to allow comprehensive structural inspection of the entire airframe.",
+      "only the engines and landing gear are overhauled.",
+      "the check is limited to electrical and avionics systems.",
+      "the check is performed on a sample of aircraft in the fleet only."
+    ],
+    "ans": 0,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 1814,
+    "cat": "sentence_completion",
+    "orig": 1919,
+    "q": "The purpose of the Illustrated Parts Catalogue (IPC) is to ……………………………………",
+    "opts": [
+      "identify parts by assembly breakdown and part number for ordering and installation.",
+      "provide step-by-step maintenance procedures for each system.",
+      "list the electrical schematic of each aircraft system.",
+      "provide the aircraft's structural repair limits."
+    ],
+    "ans": 0,
+    "diff": "hard",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 1815,
+    "cat": "sentence_completion",
+    "orig": 1920,
+    "q": "A component that has a \"hard time\" life limit ……………………………………",
+    "opts": [
+      "must be replaced or overhauled at a fixed interval regardless of its apparent condition.",
+      "must be replaced only when it shows signs of wear.",
+      "may be extended beyond its limit if an inspection confirms it is serviceable.",
+      "has no condition monitoring requirements."
+    ],
+    "ans": 0,
+    "diff": "hard",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 1816,
+    "cat": "sentence_completion",
+    "orig": 1921,
+    "q": "Before an aircraft is released to service after maintenance, the certifying engineer must ……………………………………",
+    "opts": [
+      "confirm that all maintenance work has been correctly completed and documented.",
+      "check that the aircraft has sufficient fuel for the next flight.",
+      "ensure the flight crew is aware of the maintenance performed.",
+      "verify that all passengers have boarded the aircraft."
+    ],
+    "ans": 0,
+    "diff": "hard",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 1817,
+    "cat": "sentence_completion",
+    "orig": 1922,
+    "q": "The purpose of the MEL (Minimum Equipment List) is to ……………………………………",
+    "opts": [
+      "allow the aircraft to dispatch with defined inoperative systems or components under controlled conditions.",
+      "list all equipment that must be operational for every flight.",
+      "define the minimum maintenance tools required for each check.",
+      "specify the minimum qualifications for maintenance personnel."
+    ],
+    "ans": 0,
+    "diff": "hard",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 1818,
+    "cat": "sentence_completion",
+    "orig": 1923,
+    "q": "If a tyre shows a flat spot caused by a locked-wheel skid, ……………………………………",
+    "opts": [
+      "it must be assessed against the allowable damage limits and may need to be replaced.",
+      "it can be returned to service if the flat spot is smooth.",
+      "it is serviceable if the wheel passes a visual balance check.",
+      "it need only be replaced if the aircraft has a reported shimmy on the next landing."
+    ],
+    "ans": 0,
+    "diff": "hard",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 1819,
+    "cat": "sentence_completion",
+    "orig": 1924,
+    "q": "Delamination in a composite structure ……………………………………",
+    "opts": [
+      "is separation of layers within the material that may not be visible from the surface and requires NDT to assess.",
+      "is a surface defect that can be repaired with surface filler.",
+      "is always visible as a raised blister on the surface.",
+      "can be corrected by applying pressure and adhesive."
+    ],
+    "ans": 0,
+    "diff": "hard",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 1820,
+    "cat": "sentence_completion",
+    "orig": 1925,
+    "q": "Engine trend monitoring is used to ……………………………………",
+    "opts": [
+      "detect early signs of engine deterioration by analysing performance data over time.",
+      "record the engine's total accumulated hours for logbook purposes.",
+      "calculate the engine's remaining service life.",
+      "monitor fuel efficiency during normal cruise flight."
+    ],
+    "ans": 0,
+    "diff": "hard",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 1821,
+    "cat": "sentence_completion",
+    "orig": 1926,
+    "q": "Before an aircraft can be towed, ……………………………………",
+    "opts": [
+      "chocks must be removed, gear pins removed, all panels secured, and a clear communication plan established.",
+      "the pilot must confirm the tow from the cockpit.",
+      "the aircraft must have all engines running.",
+      "the fuelling operation must be completed."
+    ],
+    "ans": 0,
+    "diff": "hard",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 1822,
+    "cat": "sentence_completion",
+    "orig": 1927,
+    "q": "The function of the pitot heat system is to ……………………………………",
+    "opts": [
+      "prevent ice from forming on the pitot probe, which would cause incorrect airspeed indication.",
+      "heat the windshield to prevent ice accumulation.",
+      "provide warm air to the static ports to prevent condensation.",
+      "regulate the temperature of the pitot system pressure lines."
+    ],
+    "ans": 0,
+    "diff": "hard",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 1823,
+    "cat": "sentence_completion",
+    "orig": 1928,
+    "q": "When performing a weight and balance calculation, the \"moment\" is determined by ……………………………………",
+    "opts": [
+      "multiplying the weight of each item by its arm (distance from the reference datum).",
+      "dividing the total aircraft weight by the distance between the CG and the datum.",
+      "adding the weight of all items to the basic empty weight.",
+      "subtracting the zero fuel weight from the maximum takeoff weight."
+    ],
+    "ans": 0,
+    "diff": "hard",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 1824,
+    "cat": "sentence_completion",
+    "orig": 1929,
+    "q": "During a pressurization test of the aircraft fuselage structure, ……………………………………",
+    "opts": [
+      "the structural integrity of the fuselage under pressurization loading is verified.",
+      "only the door seals and window seals are checked.",
+      "the test is performed only if a pressurization warning has occurred.",
+      "the aircraft is pressurized to twice the normal differential pressure."
+    ],
+    "ans": 0,
+    "diff": "hard",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 1825,
+    "cat": "sentence_completion",
+    "orig": 1930,
+    "q": "Replacement parts installed on an aircraft must ……………………………………",
+    "opts": [
+      "have a valid serviceable release certificate and traceable part history.",
+      "only be from the same manufacturer as the part they replace.",
+      "be visually inspected by the pilot before installation.",
+      "be re-certified by the maintenance organisation before use."
+    ],
+    "ans": 0,
+    "diff": "hard",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 1826,
+    "cat": "sentence_completion",
+    "orig": 1931,
+    "q": "If an aircraft exceeds its maximum landing weight on landing, ……………………………………",
+    "opts": [
+      "a special inspection must be performed before the next flight.",
+      "the aircraft may continue in service if no structural damage is visible.",
+      "the flight crew must complete an incident report and no further action is needed.",
+      "the landing gear only needs to be inspected."
+    ],
+    "ans": 0,
+    "diff": "hard",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 1827,
+    "cat": "sentence_completion",
+    "orig": 1932,
+    "q": "The function of the aircraft bleed air precooler is to ……………………………………",
+    "opts": [
+      "reduce the temperature of the bleed air before it enters the pneumatic distribution manifold.",
+      "increase the pressure of bleed air for engine starting.",
+      "cool the cabin air before it is delivered to passengers.",
+      "regulate bleed air flow to the anti-icing system."
+    ],
+    "ans": 0,
+    "diff": "hard",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 1828,
+    "cat": "sentence_completion",
+    "orig": 1933,
+    "q": "A \"squawk\" as used by aircraft maintenance personnel refers to ……………………………………",
+    "opts": [
+      "a defect or malfunction reported by the flight crew for maintenance action.",
+      "a type of radio communication between the aircraft and ATC.",
+      "a specific warning tone activated by the aircraft's GPWS.",
+      "a maintenance schedule item."
+    ],
+    "ans": 0,
+    "diff": "hard",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 1829,
+    "cat": "sentence_completion",
+    "orig": 1934,
+    "q": "FOD (Foreign Object Debris/Damage) prevention in maintenance requires ……………………………………",
+    "opts": [
+      "accounting for all tools and materials before and after each maintenance task.",
+      "using only approved tools from the tool store.",
+      "conducting a walkround of the aircraft after every maintenance action.",
+      "keeping all work areas clean at the end of the maintenance check."
+    ],
+    "ans": 0,
+    "diff": "hard",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 1830,
+    "cat": "sentence_completion",
+    "orig": 1935,
+    "q": "When locking wire is installed on a critical fastener, ……………………………………",
+    "opts": [
+      "it must be routed so that loosening the fastener causes the wire to tighten.",
+      "the wire must be routed away from any moving parts.",
+      "the wire must be installed before the fastener is torqued.",
+      "the wire must be attached to an adjacent structure for support."
+    ],
+    "ans": 0,
+    "diff": "hard",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 1831,
+    "cat": "sentence_completion",
+    "orig": 1936,
+    "q": "A \"Certificate of Release to Service\" (CRS) ……………………………………",
+    "opts": [
+      "is issued by the certifying engineer to confirm the aircraft is airworthy following maintenance.",
+      "is issued by the regulatory authority after annual inspection.",
+      "is issued to approve the use of a new component type.",
+      "is issued by the manufacturer after delivery of a new aircraft."
+    ],
+    "ans": 0,
+    "diff": "hard",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 1832,
+    "cat": "sentence_completion",
+    "orig": 1937,
+    "q": "A hydraulic system bypass valve open position means ……………………………………",
+    "opts": [
+      "fluid flows around a restriction, which may indicate a blocked component or open test valve.",
+      "the system has been isolated for maintenance.",
+      "the pump is operating at maximum output.",
+      "the accumulator is fully charged and the excess pressure is relieved."
+    ],
+    "ans": 0,
+    "diff": "hard",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 1833,
+    "cat": "sentence_completion",
+    "orig": 1938,
+    "q": "If an aircraft is struck by lightning, ……………………………………",
+    "opts": [
+      "specific inspections covering lightning entry/exit points, fuel system, avionics, and flight controls must be completed before return to service.",
+      "the aircraft may continue operations if no pilot report of damage is received.",
+      "only the antenna and avionics need to be checked.",
+      "the aircraft is inspected at the next scheduled check."
+    ],
+    "ans": 0,
+    "diff": "hard",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 1834,
+    "cat": "sentence_completion",
+    "orig": 1939,
+    "q": "The purpose of the Safety Management System (SMS) in a maintenance organisation is to ……………………………………",
+    "opts": [
+      "systematically identify, assess, and mitigate safety risks through a structured process.",
+      "investigate accidents after they occur.",
+      "ensure all maintenance is completed on schedule.",
+      "provide a training framework for new technicians."
+    ],
+    "ans": 0,
+    "diff": "hard",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 1835,
+    "cat": "sentence_completion",
+    "orig": 1940,
+    "q": "When performing an NDT inspection, the method selected must ……………………………………",
+    "opts": [
+      "be appropriate for the material type and the type of defect being sought.",
+      "be the most cost-effective method available.",
+      "always include both ultrasonic and visual inspection.",
+      "be the method with which the technician is most familiar."
+    ],
+    "ans": 0,
+    "diff": "hard",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 1836,
+    "cat": "sentence_completion",
+    "orig": 1941,
+    "q": "Before releasing the aircraft after a C-check, ……………………………………",
+    "opts": [
+      "all task cards must be signed off, all components reinstalled, and a comprehensive functional check performed.",
+      "a test flight must always be performed.",
+      "the regulatory authority must inspect the aircraft.",
+      "all major components must be sent for calibration."
+    ],
+    "ans": 0,
+    "diff": "hard",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 1837,
+    "cat": "sentence_completion",
+    "orig": 1942,
+    "q": "Engine-driven hydraulic pumps (EDPs) are driven from ……………………………………",
+    "opts": [
+      "the engine accessory gearbox and are the primary source of hydraulic pressure.",
+      "the APU bleed air system.",
+      "the aircraft electrical bus.",
+      "the engine thrust reverser system."
+    ],
+    "ans": 0,
+    "diff": "hard",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 1838,
+    "cat": "sentence_completion",
+    "orig": 1943,
+    "q": "When using dye penetrant inspection, the developer is applied to ……………………………………",
+    "opts": [
+      "draw penetrant out of any cracks, making them visible as coloured indications.",
+      "clean the surface before the penetrant is applied.",
+      "set the penetrant permanently in any defects found.",
+      "increase the surface porosity for better penetrant absorption."
+    ],
+    "ans": 0,
+    "diff": "hard",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 1839,
+    "cat": "sentence_completion",
+    "orig": 1944,
+    "q": "If the fire extinguisher bottle pressure on an engine is below the minimum limit, ……………………………………",
+    "opts": [
+      "the system is unserviceable and must be recharged or replaced before the next flight.",
+      "the aircraft may fly for one more sector with crew awareness.",
+      "a lower pressure is acceptable if the temperature is low.",
+      "the bottle is acceptable if the other bottle is fully charged."
+    ],
+    "ans": 0,
+    "diff": "hard",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 1840,
+    "cat": "sentence_completion",
+    "orig": 1945,
+    "q": "During an aircraft painting operation, ……………………………………",
+    "opts": [
+      "masking must protect all areas not to be painted, and overspray must be prevented from reaching critical areas.",
+      "the aircraft must be fully fuelled to prevent moisture ingress.",
+      "all access panels must be removed to ensure full coverage.",
+      "the aircraft must be in the pressurized condition during painting."
+    ],
+    "ans": 0,
+    "diff": "hard",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 1841,
+    "cat": "sentence_completion",
+    "orig": 1946,
+    "q": "The Fault Isolation Manual (FIM) provides ……………………………………",
+    "opts": [
+      "systematic troubleshooting guidance to identify the cause of faults in aircraft systems.",
+      "the step-by-step procedures for replacing faulty components.",
+      "a list of all faults that have been recorded on the aircraft fleet.",
+      "the approved tools for testing each aircraft system."
+    ],
+    "ans": 0,
+    "diff": "hard",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 1842,
+    "cat": "sentence_completion",
+    "orig": 1947,
+    "q": "Pitting corrosion in aluminium structures is particularly concerning because ……………………………………",
+    "opts": [
+      "the small pits can be deeper than they appear and can grow into cracks under fatigue loading.",
+      "pitting always requires immediate structural replacement.",
+      "pitting corrosion cannot be detected by visual inspection.",
+      "pitting corrosion affects only cosmetic surfaces."
+    ],
+    "ans": 0,
+    "diff": "hard",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 1843,
+    "cat": "sentence_completion",
+    "orig": 1948,
+    "q": "When a new Aircraft Maintenance Programme (AMP) revision is issued, ……………………………………",
+    "opts": [
+      "the operator must update their maintenance procedures to comply with the new revision.",
+      "the revision takes effect only after the next scheduled C-check.",
+      "the revision applies only to new aircraft entering the fleet.",
+      "the operator may continue with the previous revision until the next renewal."
+    ],
+    "ans": 0,
+    "diff": "hard",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 1844,
+    "cat": "sentence_completion",
+    "orig": 1949,
+    "q": "A \"dry bay\" in aircraft structure is an area where ……………………………………",
+    "opts": [
+      "no flammable fluids are permitted, to reduce fire risk.",
+      "the aircraft dehumidification system vents dry air.",
+      "all drains are sealed to prevent moisture entry.",
+      "fuel tank access is prohibited for maintenance."
+    ],
+    "ans": 0,
+    "diff": "hard",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 1845,
+    "cat": "sentence_completion",
+    "orig": 1950,
+    "q": "If a maintenance organisation fails to maintain its required certifications and approvals, ……………………………………",
+    "opts": [
+      "it may lose the authorisation to release aircraft to service.",
+      "it must immediately ground all aircraft it has signed for.",
+      "all maintenance work performed becomes automatically invalid.",
+      "the regulatory authority issues a warning but no operational impact occurs."
+    ],
+    "ans": 0,
+    "diff": "hard",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 1846,
+    "cat": "sentence_completion",
+    "orig": 1951,
+    "q": "Aircraft battery electrolyte spills must be ……………………………………",
+    "opts": [
+      "neutralised with the appropriate solution before cleaning, as the electrolyte is corrosive.",
+      "cleaned with dry cloths immediately without any treatment.",
+      "reported to the regulatory authority within 24 hours.",
+      "sealed with sealant to prevent further spread."
+    ],
+    "ans": 0,
+    "diff": "hard",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 1847,
+    "cat": "sentence_completion",
+    "orig": 1952,
+    "q": "The purpose of the outflow valve in the pressurization system is to ……………………………………",
+    "opts": [
+      "control the rate at which cabin air is vented overboard, thereby maintaining the desired differential pressure.",
+      "supply fresh outside air to the cabin.",
+      "shut off the bleed air supply to the cabin if pressure exceeds limits.",
+      "provide a safety relief function if the fuselage is overpressurised."
+    ],
+    "ans": 0,
+    "diff": "hard",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 1848,
+    "cat": "sentence_completion",
+    "orig": 1953,
+    "q": "Wing anti-icing using bleed air is more effective than de-icing fluid because ……………………………………",
+    "opts": [
+      "bleed air provides continuous heating, preventing ice formation rather than removing ice after it forms.",
+      "bleed air is available on all aircraft types.",
+      "de-icing fluid degrades quickly at high altitude.",
+      "bleed air uses less energy than the de-icing system."
+    ],
+    "ans": 0,
+    "diff": "hard",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 1849,
+    "cat": "sentence_completion",
+    "orig": 1954,
+    "q": "The purpose of the crew oxygen demand mask is to ……………………………………",
+    "opts": [
+      "deliver oxygen on demand to crew members at high altitude when cabin pressure is lost.",
+      "provide supplemental oxygen during normal flight above 10,000 ft.",
+      "supply 100% oxygen to crew throughout all flight phases.",
+      "replace the function of the aircraft pressurization system."
+    ],
+    "ans": 0,
+    "diff": "hard",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 1850,
+    "cat": "sentence_completion",
+    "orig": 1955,
+    "q": "An aircraft that is operated outside of its Approved Maintenance Programme without authorisation ……………………………………",
+    "opts": [
+      "may be considered unairworthy and be grounded by the regulatory authority.",
+      "can continue operations if no defects are found.",
+      "must undergo an additional inspection to return to compliance.",
+      "will have its Certificate of Airworthiness automatically suspended."
+    ],
+    "ans": 0,
+    "diff": "hard",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 1851,
+    "cat": "sentence_completion",
+    "orig": 1956,
+    "q": "When an engine is motored without ignition after a failed start, the purpose is to ……………………………………",
+    "opts": [
+      "purge unburned fuel from the combustion section to prevent a hot start on the next attempt.",
+      "cool the turbine section after a high-power run.",
+      "dry the engine of any residual moisture after storage.",
+      "check that the starter is functioning correctly before the next start attempt."
+    ],
+    "ans": 0,
+    "diff": "hard",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 1852,
+    "cat": "sentence_completion",
+    "orig": 1957,
+    "q": "Non-destructive testing is called \"non-destructive\" because ……………………………………",
+    "opts": [
+      "it detects defects without damaging or permanently altering the component.",
+      "it does not require the component to be removed from the aircraft.",
+      "the test equipment cannot be damaged by the test.",
+      "it is performed outside the aircraft structure."
+    ],
+    "ans": 0,
+    "diff": "hard",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 1853,
+    "cat": "sentence_completion",
+    "orig": 1958,
+    "q": "The Structural Repair Manual (SRM) is used when ……………………………………",
+    "opts": [
+      "damage is found on the aircraft structure and approved repair data or allowable damage limits are required.",
+      "the aircraft undergoes a routine A-check inspection.",
+      "avionics components are replaced on the aircraft.",
+      "the weight and balance of the aircraft is recalculated."
+    ],
+    "ans": 0,
+    "diff": "hard",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 1854,
+    "cat": "sentence_completion",
+    "orig": 1959,
+    "q": "Tool calibration records must be maintained by the maintenance organisation because ……………………………………",
+    "opts": [
+      "calibrated tools are required to ensure accurate measurements and correct torque application.",
+      "calibration is required only for new tools when first issued.",
+      "the regulatory authority requires all tools to be certificated annually.",
+      "calibration prevents tools from being used by unauthorised personnel."
+    ],
+    "ans": 0,
+    "diff": "hard",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 1855,
+    "cat": "sentence_completion",
+    "orig": 1960,
+    "q": "If a hydraulic system's fluid is found to be contaminated with water, ……………………………………",
+    "opts": [
+      "the fluid must be completely drained and replaced, and the system investigated to identify the source of water ingress.",
+      "the water content is acceptable if below 0.5%.",
+      "the water can be removed by circulating the fluid through the filter.",
+      "the system is returned to service if the fluid passes a colour check."
+    ],
+    "ans": 0,
+    "diff": "hard",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 1856,
+    "cat": "sentence_completion",
+    "orig": 1961,
+    "q": "The purpose of the aircraft Technical Log is to ……………………………………",
+    "opts": [
+      "record all flight hours, defects, maintenance actions, and certifications throughout the aircraft's operation.",
+      "record the training hours of the maintenance personnel.",
+      "provide regulatory authorities with a summary of completed maintenance checks.",
+      "document the fuel uplifted at each refuelling stop."
+    ],
+    "ans": 0,
+    "diff": "hard",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 1857,
+    "cat": "sentence_completion",
+    "orig": 1962,
+    "q": "An overspeed condition in an aircraft engine is particularly dangerous because ……………………………………",
+    "opts": [
+      "centrifugal forces at excessive speed can cause plastic deformation or failure of rotating components.",
+      "the engine fuel metering unit may be damaged.",
+      "the engine oil system cannot lubricate adequately at high speeds.",
+      "the compressor blades may stall at excessive speed."
+    ],
+    "ans": 0,
+    "diff": "hard",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 1858,
+    "cat": "sentence_completion",
+    "orig": 1963,
+    "q": "Before signing a maintenance task as complete, the certifying engineer must ……………………………………",
+    "opts": [
+      "personally verify that the work has been carried out correctly and all referenced documentation has been followed.",
+      "ensure the aircraft has been fuelled for the next flight.",
+      "confirm that the next maintenance task has been planned.",
+      "receive approval from the quality manager."
+    ],
+    "ans": 0,
+    "diff": "hard",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 1859,
+    "cat": "sentence_completion",
+    "orig": 1964,
+    "q": "The purpose of aircraft ground bonding cables is to ……………………………………",
+    "opts": [
+      "equalize the electrical potential between the aircraft and ground equipment to prevent static sparks.",
+      "connect the aircraft to the main electrical supply on the ground.",
+      "secure the aircraft to the ground during high-wind conditions.",
+      "provide a return path for ground power current."
+    ],
+    "ans": 0,
+    "diff": "hard",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 1860,
+    "cat": "sentence_completion",
+    "orig": 1965,
+    "q": "A serviceable life-limited component must have ……………………………………",
+    "opts": [
+      "complete and traceable maintenance history with current life remaining clearly documented.",
+      "only the manufacturer's part number and serial number on a tag.",
+      "a valid test certificate from the overhaul facility.",
+      "the aircraft registration number it was removed from."
+    ],
+    "ans": 0,
+    "diff": "hard",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 1861,
+    "cat": "sentence_completion",
+    "orig": 1966,
+    "q": "During aircraft jacking operations, ……………………………………",
+    "opts": [
+      "the aircraft must be continuously monitored and jacking pads correctly positioned to prevent structural damage.",
+      "the engines must be running to maintain hydraulic pressure.",
+      "the aircraft may be lowered immediately if a problem occurs.",
+      "only one jack is required for stability during nose gear work."
+    ],
+    "ans": 0,
+    "diff": "hard",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 1862,
+    "cat": "sentence_completion",
+    "orig": 1967,
+    "q": "When performing maintenance on the aircraft fuel system, ……………………………………",
+    "opts": [
+      "all ignition sources must be removed and the area must be ventilated to prevent accumulation of fuel vapour.",
+      "the aircraft must be powered down completely.",
+      "only fire extinguishers need to be on standby.",
+      "the fuel system can remain pressurised during maintenance."
+    ],
+    "ans": 0,
+    "diff": "hard",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 1863,
+    "cat": "sentence_completion",
+    "orig": 1968,
+    "q": "The APU fire detection loop must be functionally tested because ……………………………………",
+    "opts": [
+      "it must be confirmed to alert the crew correctly in the event of an APU fire.",
+      "it is tested to verify that the extinguisher bottle pressure is correct.",
+      "it ensures the APU bleed air valves are working correctly.",
+      "it confirms the APU starter motor is serviceable."
+    ],
+    "ans": 0,
+    "diff": "hard",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 1864,
+    "cat": "sentence_completion",
+    "orig": 1969,
+    "q": "During composite repair curing, ……………………………………",
+    "opts": [
+      "the correct temperature and cure time specified in the repair data must be maintained to ensure the repair achieves full strength.",
+      "the temperature can be increased to speed up the curing process.",
+      "cure time is less important than the mixing ratio of the resin.",
+      "the repair can be used immediately after the adhesive sets."
+    ],
+    "ans": 0,
+    "diff": "hard",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 1865,
+    "cat": "sentence_completion",
+    "orig": 1970,
+    "q": "The Wing Fuelling Station Valve is closed after fuelling to ……………………………………",
+    "opts": [
+      "prevent fuel from draining back from the tank and to isolate the fuelling connection.",
+      "allow the fuel tanks to pressurize to operating pressure.",
+      "prevent reverse flow to the fuel quantity indicating system.",
+      "isolate the fuelling vent from the fuel tank."
+    ],
+    "ans": 0,
+    "diff": "hard",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 1866,
+    "cat": "sentence_completion",
+    "orig": 1971,
+    "q": "If an aircraft component is found to be unserviceable during inspection, ……………………………………",
+    "opts": [
+      "it must be tagged as unserviceable and removed from the aircraft or clearly labelled if it cannot be immediately removed.",
+      "it may remain installed if it is non-critical.",
+      "it can be used for the next flight if no replacement is available.",
+      "the flight crew should be informed and the decision left to them."
+    ],
+    "ans": 0,
+    "diff": "hard",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 1867,
+    "cat": "sentence_completion",
+    "orig": 1972,
+    "q": "Magnetic particle inspection can only be used on ferrous metals because ……………………………………",
+    "opts": [
+      "only ferrous materials respond to a magnetic field, which is required to reveal defects using iron particles.",
+      "ferrous metals have a higher defect rate than non-ferrous metals.",
+      "the magnetic particles would contaminate non-ferrous materials.",
+      "non-ferrous materials are too hard for the test equipment to penetrate."
+    ],
+    "ans": 0,
+    "diff": "hard",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 1868,
+    "cat": "sentence_completion",
+    "orig": 1973,
+    "q": "The purpose of the aircraft's Ram Air Turbine (RAT) is to ……………………………………",
+    "opts": [
+      "provide emergency hydraulic or electrical power using airstream energy if all generators fail.",
+      "cool the engine turbine section during high-power operations.",
+      "supply ram air to the cabin conditioning system.",
+      "provide backup bleed air for engine starting."
+    ],
+    "ans": 0,
+    "diff": "hard",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 1869,
+    "cat": "sentence_completion",
+    "orig": 1974,
+    "q": "Flight control cables must be inspected for ……………………………………",
+    "opts": [
+      "wear, corrosion, broken strands, and correct tension during each scheduled inspection.",
+      "correct colour coding during each A-check.",
+      "correct routing through the aircraft each flight.",
+      "lubrication and flexibility at each C-check only."
+    ],
+    "ans": 0,
+    "diff": "hard",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 1870,
+    "cat": "sentence_completion",
+    "orig": 1975,
+    "q": "If oil is found on avionics equipment during inspection, ……………………………………",
+    "opts": [
+      "the source of the oil must be identified and rectified, and the equipment assessed for serviceability.",
+      "the equipment may be cleaned and returned to service.",
+      "the equipment must be replaced regardless of apparent condition.",
+      "the source need not be identified if the quantity is small."
+    ],
+    "ans": 0,
+    "diff": "hard",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 1871,
+    "cat": "sentence_completion",
+    "orig": 1976,
+    "q": "\"Potting compound\" in avionics connectors is used to ……………………………………",
+    "opts": [
+      "protect the electrical connections from moisture and vibration.",
+      "lubricate the connector contacts to prevent fretting.",
+      "identify the connector by colour coding.",
+      "insulate the connector from the aircraft structure."
+    ],
+    "ans": 0,
+    "diff": "hard",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 1872,
+    "cat": "sentence_completion",
+    "orig": 1977,
+    "q": "The purpose of the anti-skid system is to ……………………………………",
+    "opts": [
+      "prevent wheel lockup during braking by modulating hydraulic pressure to each brake.",
+      "automatically apply braking on touchdown regardless of pedal pressure.",
+      "distribute braking force equally between all wheels.",
+      "protect the brake discs from overheating during prolonged braking."
+    ],
+    "ans": 0,
+    "diff": "hard",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 1873,
+    "cat": "sentence_completion",
+    "orig": 1978,
+    "q": "Aircraft maintenance records are retained for the required period because ……………………………………",
+    "opts": [
+      "they provide evidence that the aircraft has been maintained in an airworthy condition and support traceability of all work.",
+      "the manufacturer requires copies of all maintenance records.",
+      "they are used to calculate the aircraft's residual value.",
+      "regulatory authorities must hold copies of all maintenance records."
+    ],
+    "ans": 0,
+    "diff": "hard",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 1874,
+    "cat": "sentence_completion",
+    "orig": 1979,
+    "q": "A maintenance organisation must have a tool calibration register because ……………………………………",
+    "opts": [
+      "it provides evidence that all precision tools are calibrated to the required standard and are within their validity period.",
+      "calibration is required only for tools used in engine overhaul.",
+      "the calibration register is submitted to the regulatory authority annually.",
+      "it tracks the cost of tool calibration for financial reporting."
+    ],
+    "ans": 0,
+    "diff": "hard",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 1875,
+    "cat": "sentence_completion",
+    "orig": 1980,
+    "q": "The function of the aircraft negative pressure relief valve in the pressurization system is to ……………………………………",
+    "opts": [
+      "prevent the outside air pressure from exceeding cabin pressure during rapid descent.",
+      "provide emergency pressurization if the main outflow valve fails.",
+      "protect the fuselage from positive differential pressure exceeding limits.",
+      "vent the cabin to outside pressure during descent below 10,000 ft."
+    ],
+    "ans": 0,
+    "diff": "hard",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 1876,
+    "cat": "sentence_completion",
+    "orig": 1981,
+    "q": "Before disconnecting any oxygen system component, ……………………………………",
+    "opts": [
+      "the oxygen supply must be shut off and the system depressurised.",
+      "only personal protective equipment is required.",
+      "the system may be depressurised by loosening the fitting slowly.",
+      "the aircraft must be grounded on external power."
+    ],
+    "ans": 0,
+    "diff": "hard",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 1877,
+    "cat": "sentence_completion",
+    "orig": 1982,
+    "q": "During an aircraft skin inspection, evidence of fluid weeping through panels ……………………………………",
+    "opts": [
+      "must be investigated to identify the source of the leak.",
+      "is acceptable if the quantity is small.",
+      "requires sealing with RTV immediately.",
+      "is noted and deferred to the next major check."
+    ],
+    "ans": 0,
+    "diff": "hard",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 1878,
+    "cat": "sentence_completion",
+    "orig": 1983,
+    "q": "When performing post-maintenance inspection of electrical wiring, signs of overheating such as ……………………………………",
+    "opts": [
+      "discolouration, melting, or charring of insulation indicate a circuit fault that must be investigated and rectified.",
+      "slight yellowing of insulation is acceptable if the circuit is not safety-critical.",
+      "discolouration indicates the wiring is operating at its rated current.",
+      "melted insulation can be replaced with electrical tape as a temporary repair."
+    ],
+    "ans": 0,
+    "diff": "hard",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 1879,
+    "cat": "sentence_completion",
+    "orig": 1984,
+    "q": "The purpose of the manufacturer's Component Maintenance Manual (CMM) is to ……………………………………",
+    "opts": [
+      "provide detailed instructions for overhaul, testing, and repair of individual aircraft components.",
+      "provide the aircraft maintenance schedule.",
+      "list all approved components for the aircraft type.",
+      "document all modifications approved for the component."
+    ],
+    "ans": 0,
+    "diff": "hard",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 1880,
+    "cat": "sentence_completion",
+    "orig": 1985,
+    "q": "If an aircraft is found to have an unrecorded modification during maintenance, ……………………………………",
+    "opts": [
+      "the modification must be investigated, documented, and either approved or removed before the aircraft returns to service.",
+      "the modification may remain if it does not appear to affect airworthiness.",
+      "the modification is approved retroactively by the maintenance organisation.",
+      "the modification is noted in the technical log and the aircraft returned to service."
+    ],
+    "ans": 0,
+    "diff": "hard",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 1881,
+    "cat": "sentence_completion",
+    "orig": 1986,
+    "q": "Engine hot section inspections are performed to ……………………………………",
+    "opts": [
+      "assess the condition of combustion liners, turbine blades, and nozzle guide vanes for damage, cracks, and erosion.",
+      "measure engine power output during a ground run.",
+      "check the condition of the engine fuel nozzles and filter.",
+      "inspect the engine fire detection loop for correct operation."
+    ],
+    "ans": 0,
+    "diff": "hard",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 1882,
+    "cat": "sentence_completion",
+    "orig": 1987,
+    "q": "Aircraft ground equipment must be removed from the aircraft before engine start because ……………………………………",
+    "opts": [
+      "equipment left connected or in the danger zone can be ingested or damaged, causing injury and aircraft damage.",
+      "ground equipment consumes aircraft electrical power.",
+      "leaving equipment connected prevents the aircraft from taxiing.",
+      "the regulatory authority requires a clearance check before every engine start."
+    ],
+    "ans": 0,
+    "diff": "hard",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 1883,
+    "cat": "sentence_completion",
+    "orig": 1988,
+    "q": "If a structural repair is made to a fuselage frame, ……………………………………",
+    "opts": [
+      "the repair must restore the original strength, stiffness, and load distribution of the frame.",
+      "only cosmetic appearance needs to be restored.",
+      "the repair is acceptable if the aircraft can sustain normal flight loads only.",
+      "no inspection of the repair is required if the technician is licensed."
+    ],
+    "ans": 0,
+    "diff": "hard",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 1884,
+    "cat": "sentence_completion",
+    "orig": 1989,
+    "q": "A fuel sampling check is performed to ……………………………………",
+    "opts": [
+      "verify that the fuel is of the correct type, free from contamination, and within specification.",
+      "measure the fuel quantity remaining in each tank.",
+      "check for fuel leaks at the fill point.",
+      "calibrate the fuel quantity indicating system."
+    ],
+    "ans": 0,
+    "diff": "hard",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 1885,
+    "cat": "sentence_completion",
+    "orig": 1990,
+    "q": "When aircraft maintenance is performed during night shift, ……………………………………",
+    "opts": [
+      "special attention must be paid to fatigue management and adequate lighting to reduce error risk.",
+      "the same procedures apply as day shift with no additional considerations.",
+      "only non-critical tasks may be performed due to reduced visibility.",
+      "an additional inspector must be present for every task."
+    ],
+    "ans": 0,
+    "diff": "hard",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 1886,
+    "cat": "sentence_completion",
+    "orig": 1991,
+    "q": "The function of aircraft wheel chocks is to ……………………………………",
+    "opts": [
+      "prevent the aircraft from moving inadvertently when parked or during maintenance.",
+      "protect the tyres from flat spots during prolonged parking.",
+      "provide an electrical ground connection to the aircraft.",
+      "indicate the aircraft parking position on the apron."
+    ],
+    "ans": 0,
+    "diff": "hard",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 1887,
+    "cat": "sentence_completion",
+    "orig": 1992,
+    "q": "If a corrosion inhibiting compound (CIC) is found to have been incorrectly applied during a structure inspection, ……………………………………",
+    "opts": [
+      "the area must be cleaned and the CIC correctly reapplied to ensure continued protection.",
+      "the area is acceptable if the CIC is present in any quantity.",
+      "the CIC may be left as applied if corrosion is not visible.",
+      "the CIC application is not a critical maintenance requirement."
+    ],
+    "ans": 0,
+    "diff": "hard",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 1888,
+    "cat": "sentence_completion",
+    "orig": 1993,
+    "q": "The purpose of the landing gear door uplock is to ……………………………………",
+    "opts": [
+      "secure the landing gear doors in the closed position when the gear is retracted.",
+      "lock the gear doors open when the gear is extended.",
+      "prevent the gear doors from opening above a certain speed.",
+      "provide a backup locking system for the gear itself."
+    ],
+    "ans": 0,
+    "diff": "hard",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 1889,
+    "cat": "sentence_completion",
+    "orig": 1994,
+    "q": "When an aircraft is dispatched under the MEL with an inoperative system, ……………………………………",
+    "opts": [
+      "the MEL specifies any required maintenance actions, operational restrictions, and the dispatch time limit.",
+      "no further maintenance action is required until the system is repaired.",
+      "the aircraft may be dispatched without informing the flight crew.",
+      "the inoperative system is deferred indefinitely."
+    ],
+    "ans": 0,
+    "diff": "hard",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 1890,
+    "cat": "sentence_completion",
+    "orig": 1995,
+    "q": "Aircraft maintenance personnel must report maintenance errors because ……………………………………",
+    "opts": [
+      "reporting allows the organisation to identify systemic weaknesses and prevent recurrence.",
+      "reporting protects the engineer from disciplinary action.",
+      "reporting is only required when an error results in a defect.",
+      "the regulatory authority monitors error statistics to assign blame."
+    ],
+    "ans": 0,
+    "diff": "hard",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 1891,
+    "cat": "sentence_completion",
+    "orig": 1996,
+    "q": "The purpose of retaining maintenance records beyond the minimum required period is to ……………………………………",
+    "opts": [
+      "provide a comprehensive history for resale, regulatory review, and accident investigation purposes.",
+      "comply with the aircraft manufacturer's recommendation for record keeping.",
+      "ensure all maintenance engineers can review past work on the aircraft.",
+      "protect the maintenance organisation from legal liability."
+    ],
+    "ans": 0,
+    "diff": "hard",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 1892,
+    "cat": "sentence_completion",
+    "orig": 1997,
+    "q": "If a pitot probe is found physically damaged during a preflight inspection, ……………………………………",
+    "opts": [
+      "the aircraft must be grounded until the probe is replaced and the system functionally tested.",
+      "the aircraft may fly with one serviceable probe if the MEL allows.",
+      "the probe can be temporarily repaired with sealant.",
+      "the aircraft may fly if the alternate static port is selected."
+    ],
+    "ans": 0,
+    "diff": "hard",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 1893,
+    "cat": "sentence_completion",
+    "orig": 1998,
+    "q": "The purpose of the aircraft Wiring Diagram Manual (WDM) is to ……………………………………",
+    "opts": [
+      "show the complete electrical circuit schematics for troubleshooting and repair of aircraft electrical systems.",
+      "provide the approved wiring repair methods.",
+      "list all electrical components installed on the aircraft.",
+      "provide the load analysis for each circuit."
+    ],
+    "ans": 0,
+    "diff": "hard",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 1894,
+    "cat": "sentence_completion",
+    "orig": 1999,
+    "q": "When issuing a Certificate of Release to Service (CRS), the certifying engineer confirms that ……………………………………",
+    "opts": [
+      "the maintenance work has been performed satisfactorily and the aircraft is considered airworthy.",
+      "the aircraft's annual airworthiness review is complete.",
+      "the flight crew is qualified to operate the aircraft type.",
+      "the aircraft complies with all applicable Airworthiness Directives for the current year."
+    ],
+    "ans": 0,
+    "diff": "hard",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 1895,
+    "cat": "sentence_completion",
+    "orig": 2000,
+    "q": "The overall purpose of an aircraft maintenance programme is to ……………………………………",
+    "opts": [
+      "ensure the aircraft remains in a safe, airworthy condition throughout its service life by defining the tasks, intervals, and procedures required.",
+      "minimise the cost of maintenance operations.",
+      "maximise aircraft availability for commercial operations.",
+      "provide evidence of maintenance for resale purposes."
+    ],
+    "ans": 0,
+    "diff": "hard",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  }
+]

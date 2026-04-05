@@ -1,0 +1,4252 @@
+[
+  {
+    "id": 1,
+    "cat": "grammar",
+    "orig": 1,
+    "q": "The hydraulic pump ………… by the engine through a gearbox.",
+    "opts": [
+      "drives",
+      "is driven",
+      "are driven",
+      "driving"
+    ],
+    "ans": 0,
+    "diff": "easy",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 2,
+    "cat": "grammar",
+    "orig": 2,
+    "q": "All maintenance tasks ………… in accordance with the Aircraft Maintenance Manual.",
+    "opts": [
+      "perform",
+      "must perform",
+      "must be performed",
+      "must performing"
+    ],
+    "ans": 2,
+    "diff": "easy",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 3,
+    "cat": "grammar",
+    "orig": 3,
+    "q": "The fuel filter ………… every 500 flight hours under normal operating conditions.",
+    "opts": [
+      "replaces",
+      "is replaced",
+      "are replaced",
+      "replacing"
+    ],
+    "ans": 1,
+    "diff": "easy",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 4,
+    "cat": "grammar",
+    "orig": 4,
+    "q": "The engine ………… before any maintenance work begins on the fuel system.",
+    "opts": [
+      "must shut down",
+      "must be shut down",
+      "should shutting down",
+      "would shut down"
+    ],
+    "ans": 1,
+    "diff": "easy",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 5,
+    "cat": "grammar",
+    "orig": 5,
+    "q": "The warning notice ………… in the cockpit to prevent operation of flight controls during maintenance.",
+    "opts": [
+      "places",
+      "placed",
+      "must be placed",
+      "must place"
+    ],
+    "ans": 2,
+    "diff": "easy",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 6,
+    "cat": "grammar",
+    "orig": 6,
+    "q": "All contaminated parts ………… for laboratory analysis.",
+    "opts": [
+      "should keep",
+      "should be kept",
+      "keeping",
+      "must keep"
+    ],
+    "ans": 1,
+    "diff": "easy",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 7,
+    "cat": "grammar",
+    "orig": 7,
+    "q": "The oxygen cylinders ………… in accordance with the applicable service bulletin.",
+    "opts": [
+      "are tested",
+      "test",
+      "testing",
+      "has tested"
+    ],
+    "ans": 0,
+    "diff": "easy",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 8,
+    "cat": "grammar",
+    "orig": 8,
+    "q": "After maintenance, all access panels ………… with the specified fasteners.",
+    "opts": [
+      "must close",
+      "must be closed",
+      "should close",
+      "would close"
+    ],
+    "ans": 1,
+    "diff": "easy",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 9,
+    "cat": "grammar",
+    "orig": 9,
+    "q": "The brake assembly ………… in a dry location to prevent moisture damage.",
+    "opts": [
+      "should store",
+      "should be stored",
+      "stores",
+      "storing"
+    ],
+    "ans": 1,
+    "diff": "easy",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 10,
+    "cat": "grammar",
+    "orig": 10,
+    "q": "Electrical connections ………… with a continuity meter before the system is powered up.",
+    "opts": [
+      "check",
+      "are checked",
+      "checked",
+      "have check"
+    ],
+    "ans": 1,
+    "diff": "easy",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 11,
+    "cat": "grammar",
+    "orig": 11,
+    "q": "The landing gear retraction test ………… at least once before the aircraft returns to service.",
+    "opts": [
+      "must perform",
+      "must be performed",
+      "performs",
+      "performing"
+    ],
+    "ans": 1,
+    "diff": "easy",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 12,
+    "cat": "grammar",
+    "orig": 12,
+    "q": "All torque values ………… as specified in the maintenance manual.",
+    "opts": [
+      "apply",
+      "applied",
+      "must be applied",
+      "must apply"
+    ],
+    "ans": 2,
+    "diff": "easy",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 13,
+    "cat": "grammar",
+    "orig": 13,
+    "q": "The hydraulic fluid sample ………… from the reservoir during the scheduled check.",
+    "opts": [
+      "takes",
+      "is taken",
+      "are taking",
+      "have taken"
+    ],
+    "ans": 1,
+    "diff": "easy",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 14,
+    "cat": "grammar",
+    "orig": 14,
+    "q": "The engine oil ………… at every scheduled maintenance interval.",
+    "opts": [
+      "changes",
+      "is changed",
+      "are changed",
+      "changing"
+    ],
+    "ans": 1,
+    "diff": "easy",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 15,
+    "cat": "grammar",
+    "orig": 15,
+    "q": "Safety pins ………… from the landing gear before the aircraft tows.",
+    "opts": [
+      "remove",
+      "must be removed",
+      "must remove",
+      "removes"
+    ],
+    "ans": 1,
+    "diff": "easy",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 16,
+    "cat": "grammar",
+    "orig": 16,
+    "q": "The avionics equipment ………… in the electronics bay below the cockpit.",
+    "opts": [
+      "locates",
+      "is located",
+      "are locating",
+      "locate"
+    ],
+    "ans": 1,
+    "diff": "easy",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 17,
+    "cat": "grammar",
+    "orig": 17,
+    "q": "Carbon brake disks ………… using the approved procedure described in the CMM.",
+    "opts": [
+      "inspects",
+      "are inspected",
+      "inspect",
+      "inspecting"
+    ],
+    "ans": 1,
+    "diff": "easy",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 18,
+    "cat": "grammar",
+    "orig": 18,
+    "q": "The fire extinguisher ………… in the aft equipment bay at all times.",
+    "opts": [
+      "must store",
+      "must be stored",
+      "stores",
+      "storing"
+    ],
+    "ans": 1,
+    "diff": "easy",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 19,
+    "cat": "grammar",
+    "orig": 19,
+    "q": "All wire bundles ………… from sharp edges to prevent chafing damage.",
+    "opts": [
+      "route away",
+      "are routed away",
+      "routing away",
+      "routes away"
+    ],
+    "ans": 1,
+    "diff": "easy",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 20,
+    "cat": "grammar",
+    "orig": 20,
+    "q": "The APU ………… only by qualified maintenance personnel.",
+    "opts": [
+      "operates",
+      "is operated",
+      "operating",
+      "operated"
+    ],
+    "ans": 1,
+    "diff": "easy",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 21,
+    "cat": "grammar",
+    "orig": 21,
+    "q": "The pressure test ………… after every valve replacement.",
+    "opts": [
+      "conducts",
+      "is conducted",
+      "conducting",
+      "conduct"
+    ],
+    "ans": 1,
+    "diff": "easy",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 22,
+    "cat": "grammar",
+    "orig": 22,
+    "q": "The nitrogen charge ………… to the specified pressure before flight.",
+    "opts": [
+      "restores",
+      "must be restored",
+      "restoring",
+      "must restore"
+    ],
+    "ans": 1,
+    "diff": "easy",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 23,
+    "cat": "grammar",
+    "orig": 23,
+    "q": "Defective components ………… with parts of the same part number.",
+    "opts": [
+      "replace",
+      "are replaced",
+      "replacing",
+      "have replace"
+    ],
+    "ans": 1,
+    "diff": "easy",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 24,
+    "cat": "grammar",
+    "orig": 24,
+    "q": "The circuit breakers ………… before any electrical work is carried out.",
+    "opts": [
+      "open",
+      "must be opened",
+      "must open",
+      "opens"
+    ],
+    "ans": 1,
+    "diff": "easy",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 25,
+    "cat": "grammar",
+    "orig": 25,
+    "q": "The pitot tubes ………… from ice accumulation by the anti-icing heater.",
+    "opts": [
+      "protect",
+      "are protected",
+      "protecting",
+      "protects"
+    ],
+    "ans": 1,
+    "diff": "easy",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 26,
+    "cat": "grammar",
+    "orig": 26,
+    "q": "The fuel tank ………… of any residual fuel before entering for inspection.",
+    "opts": [
+      "must drain",
+      "must be drained",
+      "drains",
+      "drained"
+    ],
+    "ans": 1,
+    "diff": "easy",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 27,
+    "cat": "grammar",
+    "orig": 27,
+    "q": "The composite structure ………… for delamination using ultrasonic testing.",
+    "opts": [
+      "examines",
+      "is examined",
+      "examine",
+      "has examine"
+    ],
+    "ans": 1,
+    "diff": "easy",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 28,
+    "cat": "grammar",
+    "orig": 28,
+    "q": "All ground support equipment ………… before engine start.",
+    "opts": [
+      "removes",
+      "must be removed",
+      "must remove",
+      "removing"
+    ],
+    "ans": 1,
+    "diff": "easy",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 29,
+    "cat": "grammar",
+    "orig": 29,
+    "q": "The thrust reverser ………… in the open position during landing.",
+    "opts": [
+      "deploys",
+      "is deployed",
+      "deploy",
+      "deploying"
+    ],
+    "ans": 1,
+    "diff": "easy",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 30,
+    "cat": "grammar",
+    "orig": 30,
+    "q": "Loose rivets ………… using a rivet gun and approved repair procedure.",
+    "opts": [
+      "replace",
+      "are replaced",
+      "replacing",
+      "replaces"
+    ],
+    "ans": 1,
+    "diff": "easy",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 31,
+    "cat": "grammar",
+    "orig": 31,
+    "q": "The oil pressure ………… on the engine instrument panel during ground run.",
+    "opts": [
+      "monitors",
+      "is monitored",
+      "monitoring",
+      "monitorings"
+    ],
+    "ans": 1,
+    "diff": "easy",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 32,
+    "cat": "grammar",
+    "orig": 32,
+    "q": "The aircraft ………… on level ground before the fuel quantity check.",
+    "opts": [
+      "parks",
+      "must be parked",
+      "must park",
+      "parking"
+    ],
+    "ans": 1,
+    "diff": "easy",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 33,
+    "cat": "grammar",
+    "orig": 33,
+    "q": "Contaminated hydraulic fluid ………… and replaced with fresh fluid.",
+    "opts": [
+      "drains",
+      "must be drained",
+      "must drain",
+      "draining"
+    ],
+    "ans": 1,
+    "diff": "easy",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 34,
+    "cat": "grammar",
+    "orig": 34,
+    "q": "The corrosion ………… with an approved chemical treatment after removal.",
+    "opts": [
+      "treats",
+      "is treated",
+      "treating",
+      "treated"
+    ],
+    "ans": 1,
+    "diff": "easy",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 35,
+    "cat": "grammar",
+    "orig": 35,
+    "q": "Inspection records ………… in the aircraft logbook after each maintenance task.",
+    "opts": [
+      "enter",
+      "must be entered",
+      "must enter",
+      "entering"
+    ],
+    "ans": 1,
+    "diff": "easy",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 36,
+    "cat": "grammar",
+    "orig": 36,
+    "q": "The tail rotor blades ………… for erosion damage at every 100-hour inspection.",
+    "opts": [
+      "inspects",
+      "are inspected",
+      "inspect",
+      "inspecting"
+    ],
+    "ans": 1,
+    "diff": "easy",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 37,
+    "cat": "grammar",
+    "orig": 37,
+    "q": "The torque wrench ………… before use to ensure accuracy.",
+    "opts": [
+      "calibrates",
+      "must be calibrated",
+      "must calibrate",
+      "calibrating"
+    ],
+    "ans": 1,
+    "diff": "easy",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 38,
+    "cat": "grammar",
+    "orig": 38,
+    "q": "Hazardous materials ………… in approved containers with proper labeling.",
+    "opts": [
+      "store",
+      "must be stored",
+      "must store",
+      "storing"
+    ],
+    "ans": 1,
+    "diff": "easy",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 39,
+    "cat": "grammar",
+    "orig": 39,
+    "q": "The fuel nozzles ………… on a flow bench to verify correct spray pattern.",
+    "opts": [
+      "test",
+      "are tested",
+      "testing",
+      "has test"
+    ],
+    "ans": 1,
+    "diff": "easy",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 40,
+    "cat": "grammar",
+    "orig": 40,
+    "q": "The aircraft structure ………… from corrosion with approved protective coatings.",
+    "opts": [
+      "protects",
+      "is protected",
+      "protecting",
+      "protects"
+    ],
+    "ans": 1,
+    "diff": "easy",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 41,
+    "cat": "grammar",
+    "orig": 41,
+    "q": "Maintenance facilities that replace heat sinks ………… return the carbon disks to the approved distributor.",
+    "opts": [
+      "would",
+      "must",
+      "could",
+      "may"
+    ],
+    "ans": 1,
+    "diff": "easy",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 42,
+    "cat": "grammar",
+    "orig": 42,
+    "q": "You ………… wear protective gloves when handling hydraulic fluid.",
+    "opts": [
+      "may",
+      "would",
+      "must",
+      "could"
+    ],
+    "ans": 2,
+    "diff": "easy",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 43,
+    "cat": "grammar",
+    "orig": 43,
+    "q": "The engine ………… be started in this condition without risk of damage.",
+    "opts": [
+      "should not",
+      "must",
+      "could",
+      "will"
+    ],
+    "ans": 0,
+    "diff": "easy",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 44,
+    "cat": "grammar",
+    "orig": 44,
+    "q": "If the oil level is low, the aircraft ………… not depart until the level is restored.",
+    "opts": [
+      "could",
+      "would",
+      "may",
+      "must"
+    ],
+    "ans": 3,
+    "diff": "easy",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 45,
+    "cat": "grammar",
+    "orig": 45,
+    "q": "Additional maintenance tasks ………… be required depending on the failure mode.",
+    "opts": [
+      "must",
+      "will",
+      "may",
+      "shall"
+    ],
+    "ans": 2,
+    "diff": "easy",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 46,
+    "cat": "grammar",
+    "orig": 46,
+    "q": "The emergency shutdown procedure ………… only be used when abnormal conditions occur.",
+    "opts": [
+      "could",
+      "should",
+      "would",
+      "might"
+    ],
+    "ans": 1,
+    "diff": "easy",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 47,
+    "cat": "grammar",
+    "orig": 47,
+    "q": "The crew ………… obey all safety precautions before entering the fuel tank.",
+    "opts": [
+      "may",
+      "could",
+      "must",
+      "would"
+    ],
+    "ans": 2,
+    "diff": "easy",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 48,
+    "cat": "grammar",
+    "orig": 48,
+    "q": "The fire extinguisher ………… be stored in any attitude.",
+    "opts": [
+      "must",
+      "may",
+      "would",
+      "should"
+    ],
+    "ans": 1,
+    "diff": "easy",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 49,
+    "cat": "grammar",
+    "orig": 49,
+    "q": "A WARNING tells the operator that injury or death ………… if the instruction is not obeyed.",
+    "opts": [
+      "is possible",
+      "would occur",
+      "could not",
+      "must"
+    ],
+    "ans": 0,
+    "diff": "easy",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 50,
+    "cat": "grammar",
+    "orig": 50,
+    "q": "The hydraulic system pressure ………… not exceed 3000 PSI during normal operation.",
+    "opts": [
+      "would",
+      "could",
+      "must",
+      "may"
+    ],
+    "ans": 2,
+    "diff": "easy",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 51,
+    "cat": "grammar",
+    "orig": 51,
+    "q": "You ………… use approved test equipment when working on the fuel system wiring.",
+    "opts": [
+      "would",
+      "could",
+      "might",
+      "must"
+    ],
+    "ans": 3,
+    "diff": "easy",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 52,
+    "cat": "grammar",
+    "orig": 52,
+    "q": "If the crack length exceeds the limit, the part ………… be replaced immediately.",
+    "opts": [
+      "could",
+      "might",
+      "must",
+      "would"
+    ],
+    "ans": 2,
+    "diff": "easy",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 53,
+    "cat": "grammar",
+    "orig": 53,
+    "q": "Lead-acid batteries ………… produce explosive mixtures of hydrogen and oxygen while charging.",
+    "opts": [
+      "could",
+      "must",
+      "can",
+      "should"
+    ],
+    "ans": 2,
+    "diff": "easy",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 54,
+    "cat": "grammar",
+    "orig": 54,
+    "q": "The technician ………… inform the supervisor before beginning any unscheduled maintenance.",
+    "opts": [
+      "might",
+      "should",
+      "would",
+      "could"
+    ],
+    "ans": 1,
+    "diff": "easy",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 55,
+    "cat": "grammar",
+    "orig": 55,
+    "q": "A broken fastener, if detected, ………… be replaced by a new one of the same part number.",
+    "opts": [
+      "could",
+      "might",
+      "should",
+      "must"
+    ],
+    "ans": 2,
+    "diff": "easy",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 56,
+    "cat": "grammar",
+    "orig": 56,
+    "q": "You ………… wait at least one hour before attempting to restart the APU after three failed starts.",
+    "opts": [
+      "may",
+      "could",
+      "must",
+      "would"
+    ],
+    "ans": 2,
+    "diff": "easy",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 57,
+    "cat": "grammar",
+    "orig": 57,
+    "q": "The wheel assembly ………… be inspected for cracks before every flight.",
+    "opts": [
+      "would",
+      "might",
+      "could",
+      "must"
+    ],
+    "ans": 3,
+    "diff": "easy",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 58,
+    "cat": "grammar",
+    "orig": 58,
+    "q": "Any inoperative item ………… only be removed if specifically allowed by the MMEL.",
+    "opts": [
+      "would",
+      "could",
+      "should",
+      "may"
+    ],
+    "ans": 2,
+    "diff": "easy",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 59,
+    "cat": "grammar",
+    "orig": 59,
+    "q": "You ………… not remove safety pins while the aircraft is pressurized.",
+    "opts": [
+      "would",
+      "could",
+      "must",
+      "might"
+    ],
+    "ans": 2,
+    "diff": "easy",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 60,
+    "cat": "grammar",
+    "orig": 60,
+    "q": "An additional pressure regulator ………… be installed on high pressure nitrogen sources to prevent incorrect regulation.",
+    "opts": [
+      "would",
+      "must",
+      "should",
+      "could"
+    ],
+    "ans": 2,
+    "diff": "easy",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 61,
+    "cat": "grammar",
+    "orig": 61,
+    "q": "Cadmium-plated parts ………… cause kidney disease if swallowed.",
+    "opts": [
+      "must",
+      "could",
+      "would",
+      "should"
+    ],
+    "ans": 1,
+    "diff": "easy",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 62,
+    "cat": "grammar",
+    "orig": 62,
+    "q": "The engine ………… be motored without engaging the ignition to purge residual fuel.",
+    "opts": [
+      "can",
+      "must",
+      "would",
+      "should"
+    ],
+    "ans": 0,
+    "diff": "easy",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 63,
+    "cat": "grammar",
+    "orig": 63,
+    "q": "If the brake temperature indicator shows amber, the aircraft ………… depart after a cooling period.",
+    "opts": [
+      "could",
+      "must not",
+      "would",
+      "may"
+    ],
+    "ans": 3,
+    "diff": "easy",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 64,
+    "cat": "grammar",
+    "orig": 64,
+    "q": "Any crew interphone station that is operative ………… be used during emergency situations.",
+    "opts": [
+      "could",
+      "would",
+      "may",
+      "shall"
+    ],
+    "ans": 2,
+    "diff": "easy",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 65,
+    "cat": "grammar",
+    "orig": 65,
+    "q": "Technicians ………… clean their hands after touching cadmium-plated parts before eating or smoking.",
+    "opts": [
+      "would",
+      "could",
+      "might",
+      "must"
+    ],
+    "ans": 3,
+    "diff": "easy",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 66,
+    "cat": "grammar",
+    "orig": 66,
+    "q": "A seat with an inoperative restraint system ………… be considered inoperative until repaired.",
+    "opts": [
+      "could",
+      "would",
+      "must",
+      "might"
+    ],
+    "ans": 2,
+    "diff": "easy",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 67,
+    "cat": "grammar",
+    "orig": 67,
+    "q": "The aircraft ………… return to service until all open items on the work order are closed.",
+    "opts": [
+      "could not",
+      "might not",
+      "may not",
+      "must not"
+    ],
+    "ans": 3,
+    "diff": "easy",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 68,
+    "cat": "grammar",
+    "orig": 68,
+    "q": "The technician ………… refer to the applicable service bulletin for the latest maintenance data.",
+    "opts": [
+      "would",
+      "could",
+      "should",
+      "might"
+    ],
+    "ans": 2,
+    "diff": "easy",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 69,
+    "cat": "grammar",
+    "orig": 69,
+    "q": "The fuel quantity ………… be checked before every departure to ensure sufficient reserves.",
+    "opts": [
+      "would",
+      "could",
+      "might",
+      "must"
+    ],
+    "ans": 3,
+    "diff": "easy",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 70,
+    "cat": "grammar",
+    "orig": 70,
+    "q": "Preloaded bolts ………… be reused after removal; they must be replaced with new ones.",
+    "opts": [
+      "must not",
+      "could not",
+      "should not",
+      "would not"
+    ],
+    "ans": 2,
+    "diff": "easy",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 71,
+    "cat": "grammar",
+    "orig": 71,
+    "q": "If there ………… an obstruction in the drain mast, clean it with the approved procedure.",
+    "opts": [
+      "are",
+      "is",
+      "were",
+      "have"
+    ],
+    "ans": 1,
+    "diff": "easy",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 72,
+    "cat": "grammar",
+    "orig": 72,
+    "q": "The hydraulic actuator ………… be bench tested before installation on the aircraft.",
+    "opts": [
+      "must",
+      "would",
+      "could",
+      "might"
+    ],
+    "ans": 0,
+    "diff": "easy",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 73,
+    "cat": "grammar",
+    "orig": 73,
+    "q": "Worn brake pads ………… cause extended stopping distances and reduced braking efficiency.",
+    "opts": [
+      "must",
+      "would",
+      "could",
+      "should"
+    ],
+    "ans": 2,
+    "diff": "easy",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 74,
+    "cat": "grammar",
+    "orig": 74,
+    "q": "The avionics cooling fan ………… operate continuously when the aircraft is powered on the ground.",
+    "opts": [
+      "must",
+      "should",
+      "could",
+      "would"
+    ],
+    "ans": 0,
+    "diff": "easy",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 75,
+    "cat": "grammar",
+    "orig": 75,
+    "q": "The pressurization controller ………… be tested in the manual mode before flight.",
+    "opts": [
+      "could",
+      "would",
+      "should",
+      "might"
+    ],
+    "ans": 2,
+    "diff": "easy",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 76,
+    "cat": "grammar",
+    "orig": 76,
+    "q": "All modifications to the aircraft ………… be approved by the relevant authority before embodiment.",
+    "opts": [
+      "could",
+      "might",
+      "must",
+      "would"
+    ],
+    "ans": 2,
+    "diff": "easy",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 77,
+    "cat": "grammar",
+    "orig": 77,
+    "q": "The deicing fluid ………… be applied according to the holdover time chart for the prevailing conditions.",
+    "opts": [
+      "would",
+      "could",
+      "might",
+      "must"
+    ],
+    "ans": 3,
+    "diff": "easy",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 78,
+    "cat": "grammar",
+    "orig": 78,
+    "q": "Without proper bonding, static charge ………… build up and cause a spark in the fuel tank.",
+    "opts": [
+      "must",
+      "can",
+      "would",
+      "should"
+    ],
+    "ans": 1,
+    "diff": "easy",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 79,
+    "cat": "grammar",
+    "orig": 79,
+    "q": "The aircraft ………… be weighed at the intervals specified in the weight and balance manual.",
+    "opts": [
+      "could",
+      "should",
+      "might",
+      "would"
+    ],
+    "ans": 1,
+    "diff": "easy",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 80,
+    "cat": "grammar",
+    "orig": 80,
+    "q": "Any contamination found in the oil ………… be kept for investigation by the engine manufacturer.",
+    "opts": [
+      "should",
+      "could",
+      "might",
+      "would"
+    ],
+    "ans": 0,
+    "diff": "easy",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 81,
+    "cat": "grammar",
+    "orig": 81,
+    "q": "If the engine ………… recently, check the temperature in the combustion chamber with a metal probe.",
+    "opts": [
+      "ran",
+      "has been run",
+      "was running",
+      "have been running"
+    ],
+    "ans": 1,
+    "diff": "easy",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 82,
+    "cat": "grammar",
+    "orig": 82,
+    "q": "If you find a crack longer than the maximum allowable limit, ………… the component.",
+    "opts": [
+      "replacing",
+      "replaced",
+      "replace",
+      "to replace"
+    ],
+    "ans": 2,
+    "diff": "easy",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 83,
+    "cat": "grammar",
+    "orig": 83,
+    "q": "If the oil temperature ………… the red line, shut down the engine immediately.",
+    "opts": [
+      "exceeds",
+      "exceeded",
+      "is exceeding",
+      "would exceed"
+    ],
+    "ans": 0,
+    "diff": "easy",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 84,
+    "cat": "grammar",
+    "orig": 84,
+    "q": "If there ………… no airflow at the ram air outlet, do the fault isolation procedure.",
+    "opts": [
+      "have",
+      "are",
+      "is",
+      "was"
+    ],
+    "ans": 2,
+    "diff": "easy",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 85,
+    "cat": "grammar",
+    "orig": 85,
+    "q": "If the battery ………… connected during parking, the loads will decrease the battery charge to a very low level.",
+    "opts": [
+      "stays",
+      "stayed",
+      "will stay",
+      "would stay"
+    ],
+    "ans": 0,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 86,
+    "cat": "grammar",
+    "orig": 86,
+    "q": "If the test ………… the fault, perform the operational test of the related system.",
+    "opts": [
+      "confirmed",
+      "confirms",
+      "will confirm",
+      "confirming"
+    ],
+    "ans": 1,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 87,
+    "cat": "grammar",
+    "orig": 87,
+    "q": "If a part, tool, or object ………… into the engine, the assembly process must stop until it is found.",
+    "opts": [
+      "fell",
+      "falls",
+      "will fall",
+      "has fallen"
+    ],
+    "ans": 1,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 88,
+    "cat": "grammar",
+    "orig": 88,
+    "q": "If an inoperative armrest ………… an emergency evacuation, it should be removed.",
+    "opts": [
+      "will hinder",
+      "hindered",
+      "hinders",
+      "would hinder"
+    ],
+    "ans": 2,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 89,
+    "cat": "grammar",
+    "orig": 89,
+    "q": "If the center tank ………… full, the high-level sensor may be overridden.",
+    "opts": [
+      "were",
+      "is",
+      "will be",
+      "would be"
+    ],
+    "ans": 1,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 90,
+    "cat": "grammar",
+    "orig": 90,
+    "q": "If you ………… to do this, the computers may overheat and fail.",
+    "opts": [
+      "will fail",
+      "failed",
+      "fail",
+      "would fail"
+    ],
+    "ans": 2,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 91,
+    "cat": "grammar",
+    "orig": 91,
+    "q": "If a broken fastener ………… during inspection, replace it immediately.",
+    "opts": [
+      "is detected",
+      "detects",
+      "detected",
+      "has detecting"
+    ],
+    "ans": 0,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 92,
+    "cat": "grammar",
+    "orig": 92,
+    "q": "If the test set ………… a fault in the wiring harness, refer to the troubleshooting guide.",
+    "opts": [
+      "indicates",
+      "indicated",
+      "is indicating",
+      "will indicate"
+    ],
+    "ans": 0,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 93,
+    "cat": "grammar",
+    "orig": 93,
+    "q": "If there ………… moisture in the oxygen system, purge the lines with dry nitrogen.",
+    "opts": [
+      "are",
+      "is",
+      "were",
+      "was"
+    ],
+    "ans": 1,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 94,
+    "cat": "grammar",
+    "orig": 94,
+    "q": "If the hydraulic reservoir level ………… below the minimum mark, do not operate the system.",
+    "opts": [
+      "drops",
+      "dropped",
+      "will drop",
+      "is dropping"
+    ],
+    "ans": 0,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 95,
+    "cat": "grammar",
+    "orig": 95,
+    "q": "If an access door or panel ………… in more than one zone, the lowest zone number is used.",
+    "opts": [
+      "is",
+      "was",
+      "are",
+      "were"
+    ],
+    "ans": 0,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 96,
+    "cat": "grammar",
+    "orig": 96,
+    "q": "If the seal ………… damaged during disassembly, it must be replaced before reassembly.",
+    "opts": [
+      "is",
+      "was",
+      "will be",
+      "were"
+    ],
+    "ans": 0,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 97,
+    "cat": "grammar",
+    "orig": 97,
+    "q": "If no crack ………… during inspection, perform the next inspection at 1000 flight cycles.",
+    "opts": [
+      "is detected",
+      "detects",
+      "detected",
+      "detect"
+    ],
+    "ans": 0,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 98,
+    "cat": "grammar",
+    "orig": 98,
+    "q": "If the test ………… the maintenance message, replace the faulty component.",
+    "opts": [
+      "confirmed",
+      "confirms",
+      "confirming",
+      "has confirming"
+    ],
+    "ans": 1,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 99,
+    "cat": "grammar",
+    "orig": 99,
+    "q": "If the wheel assembly ………… out of balance, vibration will occur during high-speed taxi.",
+    "opts": [
+      "are",
+      "is",
+      "were",
+      "will be"
+    ],
+    "ans": 1,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 100,
+    "cat": "grammar",
+    "orig": 100,
+    "q": "If the compartment ………… expected to flood under light impact, it should not be used.",
+    "opts": [
+      "is",
+      "are",
+      "was",
+      "were"
+    ],
+    "ans": 0,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 101,
+    "cat": "grammar",
+    "orig": 101,
+    "q": "If the engine oil pressure ………… the minimum during ground run, shut down immediately.",
+    "opts": [
+      "is below",
+      "was below",
+      "will below",
+      "were below"
+    ],
+    "ans": 0,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 102,
+    "cat": "grammar",
+    "orig": 102,
+    "q": "If you ………… the wiring diagram incorrectly, the system may malfunction.",
+    "opts": [
+      "interpreted",
+      "interpret",
+      "are interpreting",
+      "will interpret"
+    ],
+    "ans": 1,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 103,
+    "cat": "grammar",
+    "orig": 103,
+    "q": "If the circuit breaker ………… out during normal operation, investigate the cause before resetting.",
+    "opts": [
+      "trips",
+      "tripped",
+      "will trip",
+      "has tripped"
+    ],
+    "ans": 0,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 104,
+    "cat": "grammar",
+    "orig": 104,
+    "q": "If there is a short circuit, you ………… damage to the serviceable computer when you swap the units.",
+    "opts": [
+      "cause",
+      "would cause",
+      "will cause",
+      "caused"
+    ],
+    "ans": 2,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 105,
+    "cat": "grammar",
+    "orig": 105,
+    "q": "If the aircraft ………… on a slope greater than 3 degrees, the fuel quantity reading may be inaccurate.",
+    "opts": [
+      "parks",
+      "is parked",
+      "was parked",
+      "will park"
+    ],
+    "ans": 1,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 106,
+    "cat": "grammar",
+    "orig": 106,
+    "q": "If the disconnection ………… possible, perform the flight control check on one side only.",
+    "opts": [
+      "is not",
+      "were not",
+      "was not",
+      "will not be"
+    ],
+    "ans": 0,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 107,
+    "cat": "grammar",
+    "orig": 107,
+    "q": "If the oxygen pressure ………… below the service limit, refill the cylinder.",
+    "opts": [
+      "falls",
+      "fell",
+      "will fall",
+      "has fallen"
+    ],
+    "ans": 0,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 108,
+    "cat": "grammar",
+    "orig": 108,
+    "q": "If the strut ………… fully extended on the ground, check for hydraulic fluid loss.",
+    "opts": [
+      "is not",
+      "was not",
+      "were not",
+      "will not be"
+    ],
+    "ans": 0,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 109,
+    "cat": "grammar",
+    "orig": 109,
+    "q": "If the battery ………… removed from the aircraft, install terminal protectors immediately.",
+    "opts": [
+      "is",
+      "was",
+      "will be",
+      "were"
+    ],
+    "ans": 0,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 110,
+    "cat": "grammar",
+    "orig": 110,
+    "q": "If corrosion ………… on the wing skin, treat and seal the area before applying primer.",
+    "opts": [
+      "finds",
+      "found",
+      "is found",
+      "has find"
+    ],
+    "ans": 2,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 111,
+    "cat": "grammar",
+    "orig": 111,
+    "q": "The maintenance team ………… the hydraulic system for three hours when the fault was isolated.",
+    "opts": [
+      "tests",
+      "tested",
+      "has been testing",
+      "had been testing"
+    ],
+    "ans": 3,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 112,
+    "cat": "grammar",
+    "orig": 112,
+    "q": "The aircraft ………… a major overhaul last year and is currently in service.",
+    "opts": [
+      "has undergone",
+      "underwent",
+      "undergoes",
+      "was undergoing"
+    ],
+    "ans": 1,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 113,
+    "cat": "grammar",
+    "orig": 113,
+    "q": "The fuel pressure ………… fluctuating since the last flight, so the pump must be replaced.",
+    "opts": [
+      "is",
+      "was",
+      "has been",
+      "had been"
+    ],
+    "ans": 2,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 114,
+    "cat": "grammar",
+    "orig": 114,
+    "q": "The engineer ………… the repair manual carefully before beginning the procedure.",
+    "opts": [
+      "reads",
+      "read",
+      "has read",
+      "was reading"
+    ],
+    "ans": 1,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 115,
+    "cat": "grammar",
+    "orig": 115,
+    "q": "On in-service aircraft, some isolated cracks ………… discovered on the nose landing gear door.",
+    "opts": [
+      "has been",
+      "have been",
+      "was",
+      "were"
+    ],
+    "ans": 1,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 116,
+    "cat": "grammar",
+    "orig": 116,
+    "q": "The technician ………… the engine for 20 minutes when he noticed an oil leak.",
+    "opts": [
+      "ran",
+      "runs",
+      "has been running",
+      "had been running"
+    ],
+    "ans": 3,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 117,
+    "cat": "grammar",
+    "orig": 117,
+    "q": "The aircraft ………… the 10,000-hour inspection last month and is cleared for flight.",
+    "opts": [
+      "completes",
+      "completed",
+      "has completed",
+      "is completing"
+    ],
+    "ans": 1,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 118,
+    "cat": "grammar",
+    "orig": 118,
+    "q": "The flight crew ………… the unusual engine behavior in the technical log after landing.",
+    "opts": [
+      "records",
+      "recorded",
+      "has recorded",
+      "was recording"
+    ],
+    "ans": 1,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 119,
+    "cat": "grammar",
+    "orig": 119,
+    "q": "The maintenance schedule shows that the next A-check ………… in 200 flight hours.",
+    "opts": [
+      "is due",
+      "was due",
+      "has been due",
+      "had been due"
+    ],
+    "ans": 0,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 120,
+    "cat": "grammar",
+    "orig": 120,
+    "q": "The inspector ………… three cracks in the fuselage during the most recent detailed inspection.",
+    "opts": [
+      "finds",
+      "found",
+      "has found",
+      "had been finding"
+    ],
+    "ans": 1,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 121,
+    "cat": "grammar",
+    "orig": 121,
+    "q": "The APU ………… successfully before the aircraft was released from maintenance.",
+    "opts": [
+      "tests",
+      "tested",
+      "was tested",
+      "is tested"
+    ],
+    "ans": 2,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 122,
+    "cat": "grammar",
+    "orig": 122,
+    "q": "Engine components ………… at regular intervals to detect signs of fatigue or wear.",
+    "opts": [
+      "inspected",
+      "are inspecting",
+      "are inspected",
+      "have inspected"
+    ],
+    "ans": 2,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 123,
+    "cat": "grammar",
+    "orig": 123,
+    "q": "Since the last overhaul, the aircraft ………… over 5,000 hours without any major defects.",
+    "opts": [
+      "flies",
+      "flew",
+      "has flown",
+      "had flown"
+    ],
+    "ans": 2,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 124,
+    "cat": "grammar",
+    "orig": 124,
+    "q": "The maintenance manual ………… in 2023 to include the latest service bulletins.",
+    "opts": [
+      "revised",
+      "was revised",
+      "has revised",
+      "is revising"
+    ],
+    "ans": 1,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 125,
+    "cat": "grammar",
+    "orig": 125,
+    "q": "The technician ………… on the landing gear when the hangar lights failed.",
+    "opts": [
+      "works",
+      "worked",
+      "was working",
+      "has been working"
+    ],
+    "ans": 2,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 126,
+    "cat": "grammar",
+    "orig": 126,
+    "q": "The fan blade ………… its fatigue life limit and must be retired from service.",
+    "opts": [
+      "reaches",
+      "reached",
+      "has reached",
+      "is reaching"
+    ],
+    "ans": 2,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 127,
+    "cat": "grammar",
+    "orig": 127,
+    "q": "By the time the aircraft arrives at the gate, the ground crew ………… the equipment in position.",
+    "opts": [
+      "places",
+      "placed",
+      "will have placed",
+      "has placed"
+    ],
+    "ans": 2,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 128,
+    "cat": "grammar",
+    "orig": 128,
+    "q": "The technician ………… the aircraft for two hours before finding the fault.",
+    "opts": [
+      "was troubleshooting",
+      "troubleshoots",
+      "has troubleshot",
+      "troubleshot"
+    ],
+    "ans": 0,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 129,
+    "cat": "grammar",
+    "orig": 129,
+    "q": "The paint ………… from the composite structure using the approved non-chemical method.",
+    "opts": [
+      "removes",
+      "was removed",
+      "has removed",
+      "is removing"
+    ],
+    "ans": 1,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 130,
+    "cat": "grammar",
+    "orig": 130,
+    "q": "Engine serial number data ………… not changed since the engine was originally certified.",
+    "opts": [
+      "were",
+      "are",
+      "has",
+      "have"
+    ],
+    "ans": 2,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 131,
+    "cat": "grammar",
+    "orig": 131,
+    "q": "The crew ………… the first officer's seat for 30 minutes when they realized it was unserviceable.",
+    "opts": [
+      "adjust",
+      "adjusted",
+      "had been adjusting",
+      "was adjusting"
+    ],
+    "ans": 2,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 132,
+    "cat": "grammar",
+    "orig": 132,
+    "q": "The weather radar ………… erratic readings before it was replaced on the last check.",
+    "opts": [
+      "gives",
+      "was giving",
+      "has given",
+      "had been giving"
+    ],
+    "ans": 3,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 133,
+    "cat": "grammar",
+    "orig": 133,
+    "q": "Fuel system maintenance messages ………… possibly occur during the first engine start after a fuel drain.",
+    "opts": [
+      "can",
+      "could",
+      "would",
+      "might"
+    ],
+    "ans": 0,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 134,
+    "cat": "grammar",
+    "orig": 134,
+    "q": "The aircraft ………… in the maintenance hangar for the past two weeks undergoing structural repairs.",
+    "opts": [
+      "is",
+      "was",
+      "has been",
+      "had been"
+    ],
+    "ans": 2,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 135,
+    "cat": "grammar",
+    "orig": 135,
+    "q": "The new procedure ………… into the maintenance manual after the last revision cycle.",
+    "opts": [
+      "incorporates",
+      "incorporated",
+      "was incorporated",
+      "has incorporated"
+    ],
+    "ans": 2,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 136,
+    "cat": "grammar",
+    "orig": 136,
+    "q": "The landing gear retraction time ………… measured during the last functional check.",
+    "opts": [
+      "is",
+      "was",
+      "has been",
+      "had been"
+    ],
+    "ans": 1,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 137,
+    "cat": "grammar",
+    "orig": 137,
+    "q": "The overheat detection system ………… serviceably since the last maintenance action.",
+    "opts": [
+      "operates",
+      "has been operating",
+      "was operating",
+      "operated"
+    ],
+    "ans": 1,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 138,
+    "cat": "grammar",
+    "orig": 138,
+    "q": "The fuel jettison system ………… tested in accordance with the approved procedure.",
+    "opts": [
+      "should be",
+      "must test",
+      "testing",
+      "tests"
+    ],
+    "ans": 0,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 139,
+    "cat": "grammar",
+    "orig": 139,
+    "q": "All defects ………… in the aircraft technical log before the aircraft is returned to service.",
+    "opts": [
+      "must record",
+      "must be recorded",
+      "records",
+      "recorded"
+    ],
+    "ans": 1,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 140,
+    "cat": "grammar",
+    "orig": 140,
+    "q": "The maintenance controller ………… the hangar team of the schedule change an hour ago.",
+    "opts": [
+      "informs",
+      "has informed",
+      "was informing",
+      "informed"
+    ],
+    "ans": 3,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 141,
+    "cat": "grammar",
+    "orig": 141,
+    "q": "The location ………… the hydraulic reservoir is situated is accessible through panel 84L.",
+    "opts": [
+      "when",
+      "where",
+      "which",
+      "who"
+    ],
+    "ans": 1,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 142,
+    "cat": "grammar",
+    "orig": 142,
+    "q": "The technician ………… replaced the fuel pump has 15 years of experience.",
+    "opts": [
+      "who",
+      "which",
+      "where",
+      "when"
+    ],
+    "ans": 0,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 143,
+    "cat": "grammar",
+    "orig": 143,
+    "q": "It is standard practice for locations ………… parts are subjected to temperatures in excess of 500°F.",
+    "opts": [
+      "when",
+      "who",
+      "where",
+      "which"
+    ],
+    "ans": 2,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 144,
+    "cat": "grammar",
+    "orig": 144,
+    "q": "The part number ………… is listed in the IPC is the approved replacement part.",
+    "opts": [
+      "who",
+      "when",
+      "where",
+      "that"
+    ],
+    "ans": 3,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 145,
+    "cat": "grammar",
+    "orig": 145,
+    "q": "The access door ………… is identified by number 811 is located on the left side of the fuselage.",
+    "opts": [
+      "who",
+      "where",
+      "that",
+      "when"
+    ],
+    "ans": 2,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 146,
+    "cat": "grammar",
+    "orig": 146,
+    "q": "The procedure ………… is described in AMM Chapter 28 must be followed exactly.",
+    "opts": [
+      "who",
+      "where",
+      "which",
+      "when"
+    ],
+    "ans": 2,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 147,
+    "cat": "grammar",
+    "orig": 147,
+    "q": "The engine zone ………… the repair was performed showed no signs of recurrence.",
+    "opts": [
+      "who",
+      "which",
+      "when",
+      "where"
+    ],
+    "ans": 3,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 148,
+    "cat": "grammar",
+    "orig": 148,
+    "q": "Any contamination ………… is found in the oil must be analyzed by the manufacturer.",
+    "opts": [
+      "who",
+      "when",
+      "that",
+      "where"
+    ],
+    "ans": 2,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 149,
+    "cat": "grammar",
+    "orig": 149,
+    "q": "The seat ………… the inoperative seatbelt was found must be placarded.",
+    "opts": [
+      "where",
+      "that",
+      "which",
+      "when"
+    ],
+    "ans": 0,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 150,
+    "cat": "grammar",
+    "orig": 150,
+    "q": "The inspector ………… carried out the borescope inspection found no damage.",
+    "opts": [
+      "which",
+      "that",
+      "where",
+      "when"
+    ],
+    "ans": 1,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 151,
+    "cat": "grammar",
+    "orig": 151,
+    "q": "The hydraulic component ………… was replaced showed signs of internal leakage.",
+    "opts": [
+      "when",
+      "where",
+      "that",
+      "who"
+    ],
+    "ans": 2,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 152,
+    "cat": "grammar",
+    "orig": 152,
+    "q": "The MEL item ………… the aircraft is dispatched under must be complied with during flight.",
+    "opts": [
+      "which",
+      "that",
+      "under which",
+      "where"
+    ],
+    "ans": 2,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 153,
+    "cat": "grammar",
+    "orig": 153,
+    "q": "The maintenance record ………… shows the last engine replacement date is in the aircraft file.",
+    "opts": [
+      "who",
+      "where",
+      "when",
+      "that"
+    ],
+    "ans": 3,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 154,
+    "cat": "grammar",
+    "orig": 154,
+    "q": "The compartment ………… the avionics equipment is located must be kept clean and dry.",
+    "opts": [
+      "when",
+      "where",
+      "that",
+      "which"
+    ],
+    "ans": 1,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 155,
+    "cat": "grammar",
+    "orig": 155,
+    "q": "The tool ………… was used for the torque check must be calibrated and traceable.",
+    "opts": [
+      "who",
+      "where",
+      "that",
+      "when"
+    ],
+    "ans": 2,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 156,
+    "cat": "grammar",
+    "orig": 156,
+    "q": "The zone ………… the corrosion was found is treated with an approved inhibitor.",
+    "opts": [
+      "who",
+      "that",
+      "when",
+      "where"
+    ],
+    "ans": 3,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 157,
+    "cat": "grammar",
+    "orig": 157,
+    "q": "The manual ………… is referenced must be the latest revision.",
+    "opts": [
+      "that",
+      "who",
+      "where",
+      "when"
+    ],
+    "ans": 0,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 158,
+    "cat": "grammar",
+    "orig": 158,
+    "q": "The aircraft ………… registration marks are visible on the fuselage is currently in heavy maintenance.",
+    "opts": [
+      "which",
+      "whose",
+      "that",
+      "where"
+    ],
+    "ans": 1,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 159,
+    "cat": "grammar",
+    "orig": 159,
+    "q": "The service bulletin ………… covers this repair was issued in 2022.",
+    "opts": [
+      "who",
+      "when",
+      "where",
+      "that"
+    ],
+    "ans": 3,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 160,
+    "cat": "grammar",
+    "orig": 160,
+    "q": "The engineer ………… expertise is in avionics will carry out the line replacement unit test.",
+    "opts": [
+      "whose",
+      "who",
+      "which",
+      "that"
+    ],
+    "ans": 0,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 161,
+    "cat": "grammar",
+    "orig": 161,
+    "q": "The procedure ………… paint coatings from metallic materials is described in the SRM.",
+    "opts": [
+      "removes",
+      "to remove",
+      "removing",
+      "is removed"
+    ],
+    "ans": 1,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 162,
+    "cat": "grammar",
+    "orig": 162,
+    "q": "The technician avoided ………… on the composite surface with bare hands to prevent contamination.",
+    "opts": [
+      "to walk",
+      "walks",
+      "walked",
+      "walking"
+    ],
+    "ans": 3,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 163,
+    "cat": "grammar",
+    "orig": 163,
+    "q": "The supervisor recommended ………… an additional regulator on the high pressure nitrogen source.",
+    "opts": [
+      "to install",
+      "installing",
+      "install",
+      "installed"
+    ],
+    "ans": 1,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 164,
+    "cat": "grammar",
+    "orig": 164,
+    "q": "It is important ………… all safety equipment before entering the fuel tank.",
+    "opts": [
+      "wear",
+      "wearing",
+      "to wear",
+      "wore"
+    ],
+    "ans": 2,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 165,
+    "cat": "grammar",
+    "orig": 165,
+    "q": "The engineer finished ………… the engine logbook before signing off the work order.",
+    "opts": [
+      "updating",
+      "to update",
+      "update",
+      "updated"
+    ],
+    "ans": 0,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 166,
+    "cat": "grammar",
+    "orig": 166,
+    "q": "The technician failed ………… the oxygen system pressure within the required limits.",
+    "opts": [
+      "maintaining",
+      "maintained",
+      "to maintain",
+      "maintain"
+    ],
+    "ans": 2,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 167,
+    "cat": "grammar",
+    "orig": 167,
+    "q": "The procedure requires ………… the torque wrench before use.",
+    "opts": [
+      "to calibrate",
+      "calibrated",
+      "calibrating",
+      "calibrate"
+    ],
+    "ans": 2,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 168,
+    "cat": "grammar",
+    "orig": 168,
+    "q": "It is recommended ………… a detailed inspection after a hard landing event.",
+    "opts": [
+      "performing",
+      "performed",
+      "to perform",
+      "performs"
+    ],
+    "ans": 2,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 169,
+    "cat": "grammar",
+    "orig": 169,
+    "q": "The technician considered ………… the avionics unit before ordering a replacement.",
+    "opts": [
+      "test",
+      "to test",
+      "testing",
+      "tested"
+    ],
+    "ans": 2,
+    "diff": "hard",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 170,
+    "cat": "grammar",
+    "orig": 170,
+    "q": "It is customary ………… bolts with reduced pitch diameter in the hot section of engines.",
+    "opts": [
+      "to provide",
+      "providing",
+      "provided",
+      "provide"
+    ],
+    "ans": 0,
+    "diff": "hard",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 171,
+    "cat": "grammar",
+    "orig": 171,
+    "q": "Put a warning notice in the cockpit ………… persons not to operate the flight controls.",
+    "opts": [
+      "telling",
+      "to tell",
+      "told",
+      "tells"
+    ],
+    "ans": 0,
+    "diff": "hard",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 172,
+    "cat": "grammar",
+    "orig": 172,
+    "q": "The team stopped ………… for lunch after completing the hydraulic system test.",
+    "opts": [
+      "to work",
+      "working",
+      "worked",
+      "work"
+    ],
+    "ans": 1,
+    "diff": "hard",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 173,
+    "cat": "grammar",
+    "orig": 173,
+    "q": "The engineer remembered ………… the part number in the maintenance log.",
+    "opts": [
+      "recording",
+      "recorded",
+      "to record",
+      "records"
+    ],
+    "ans": 2,
+    "diff": "hard",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 174,
+    "cat": "grammar",
+    "orig": 174,
+    "q": "The supervisor allowed the technician ………… the brake assembly unassisted.",
+    "opts": [
+      "replacing",
+      "replaced",
+      "replace",
+      "to replace"
+    ],
+    "ans": 3,
+    "diff": "hard",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 175,
+    "cat": "grammar",
+    "orig": 175,
+    "q": "The manual instructs you ………… the engine before performing any work on the fuel injectors.",
+    "opts": [
+      "to run",
+      "running",
+      "ran",
+      "run"
+    ],
+    "ans": 0,
+    "diff": "hard",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 176,
+    "cat": "grammar",
+    "orig": 176,
+    "q": "The hydraulic system ………… pressurized requires special safety precautions.",
+    "opts": [
+      "is",
+      "are",
+      "being",
+      "been"
+    ],
+    "ans": 2,
+    "diff": "hard",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 177,
+    "cat": "grammar",
+    "orig": 177,
+    "q": "The maintenance controller arranged for ………… the aircraft into the hangar overnight.",
+    "opts": [
+      "tow",
+      "to tow",
+      "towing",
+      "towed"
+    ],
+    "ans": 2,
+    "diff": "hard",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 178,
+    "cat": "grammar",
+    "orig": 178,
+    "q": "Combustible material means the material ………… capable of catching fire and burning.",
+    "opts": [
+      "is",
+      "was",
+      "being",
+      "been"
+    ],
+    "ans": 2,
+    "diff": "hard",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 179,
+    "cat": "grammar",
+    "orig": 179,
+    "q": "The inspector denied ………… the fault before it led to an in-flight incident.",
+    "opts": [
+      "to notice",
+      "noticing",
+      "noticed",
+      "notice"
+    ],
+    "ans": 1,
+    "diff": "hard",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 180,
+    "cat": "grammar",
+    "orig": 180,
+    "q": "The purpose of wet ………… the engine is to test the fuel system integrity.",
+    "opts": [
+      "motoring",
+      "motored",
+      "motor",
+      "to motor"
+    ],
+    "ans": 0,
+    "diff": "hard",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 181,
+    "cat": "grammar",
+    "orig": 181,
+    "q": "The aircraft must comply ………… applicable airworthiness directives.",
+    "opts": [
+      "to",
+      "with",
+      "in",
+      "for"
+    ],
+    "ans": 1,
+    "diff": "hard",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 182,
+    "cat": "grammar",
+    "orig": 182,
+    "q": "Lead-acid batteries can produce explosive gases while ………… charge.",
+    "opts": [
+      "at",
+      "under",
+      "on",
+      "in"
+    ],
+    "ans": 1,
+    "diff": "hard",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 183,
+    "cat": "grammar",
+    "orig": 183,
+    "q": "Refer ………… the applicable service bulletin for the latest information.",
+    "opts": [
+      "at",
+      "into",
+      "to",
+      "on"
+    ],
+    "ans": 2,
+    "diff": "hard",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 184,
+    "cat": "grammar",
+    "orig": 184,
+    "q": "The fuel filter must be replaced ………… 500 flight hours.",
+    "opts": [
+      "in",
+      "on",
+      "every",
+      "each"
+    ],
+    "ans": 2,
+    "diff": "hard",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 185,
+    "cat": "grammar",
+    "orig": 185,
+    "q": "The justifications include information ………… compliance with the applicable CS-MMEL paragraphs.",
+    "opts": [
+      "in",
+      "for",
+      "to",
+      "with"
+    ],
+    "ans": 1,
+    "diff": "hard",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 186,
+    "cat": "grammar",
+    "orig": 186,
+    "q": "Apply corrosion preventive compound ………… all exposed metal surfaces.",
+    "opts": [
+      "in",
+      "on",
+      "at",
+      "by"
+    ],
+    "ans": 1,
+    "diff": "hard",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 187,
+    "cat": "grammar",
+    "orig": 187,
+    "q": "The aircraft is dispatched ………… the provisions of the MEL.",
+    "opts": [
+      "by",
+      "under",
+      "in",
+      "with"
+    ],
+    "ans": 1,
+    "diff": "hard",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 188,
+    "cat": "grammar",
+    "orig": 188,
+    "q": "The damage was ………… the allowable repair limits and required a structural repair.",
+    "opts": [
+      "below",
+      "under",
+      "beyond",
+      "within"
+    ],
+    "ans": 2,
+    "diff": "hard",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 189,
+    "cat": "grammar",
+    "orig": 189,
+    "q": "Put the engine ………… ground idle before performing the vibration check.",
+    "opts": [
+      "at",
+      "in",
+      "on",
+      "to"
+    ],
+    "ans": 0,
+    "diff": "hard",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 190,
+    "cat": "grammar",
+    "orig": 190,
+    "q": "The brake temperature must be below 150°C prior ………… departure.",
+    "opts": [
+      "at",
+      "to",
+      "for",
+      "in"
+    ],
+    "ans": 1,
+    "diff": "hard",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 191,
+    "cat": "grammar",
+    "orig": 191,
+    "q": "Parts and materials are to be supplied ………… the operator's own stock where possible.",
+    "opts": [
+      "in",
+      "to",
+      "from",
+      "on"
+    ],
+    "ans": 2,
+    "diff": "hard",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 192,
+    "cat": "grammar",
+    "orig": 192,
+    "q": "The oxygen mask must be ………… reach of all occupants.",
+    "opts": [
+      "at",
+      "in",
+      "within",
+      "on"
+    ],
+    "ans": 2,
+    "diff": "hard",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 193,
+    "cat": "grammar",
+    "orig": 193,
+    "q": "The wheel assembly was found ………… of balance during the functional check.",
+    "opts": [
+      "away",
+      "out",
+      "off",
+      "without"
+    ],
+    "ans": 1,
+    "diff": "hard",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 194,
+    "cat": "grammar",
+    "orig": 194,
+    "q": "All work was carried out ………… accordance with the approved data.",
+    "opts": [
+      "to",
+      "by",
+      "in",
+      "with"
+    ],
+    "ans": 2,
+    "diff": "hard",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 195,
+    "cat": "grammar",
+    "orig": 195,
+    "q": "The aircraft is parked ………… stand 24 awaiting the spare part delivery.",
+    "opts": [
+      "in",
+      "at",
+      "on",
+      "by"
+    ],
+    "ans": 2,
+    "diff": "hard",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 196,
+    "cat": "grammar",
+    "orig": 196,
+    "q": "Keep brake assemblies ………… rain, snow, or dew.",
+    "opts": [
+      "out of",
+      "away from",
+      "from",
+      "without"
+    ],
+    "ans": 1,
+    "diff": "hard",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 197,
+    "cat": "grammar",
+    "orig": 197,
+    "q": "The engine vibration level was measured ………… 0.3 inches per second.",
+    "opts": [
+      "in",
+      "at",
+      "on",
+      "for"
+    ],
+    "ans": 1,
+    "diff": "hard",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 198,
+    "cat": "grammar",
+    "orig": 198,
+    "q": "The maintenance task was completed ………… two hours ahead of schedule.",
+    "opts": [
+      "by",
+      "until",
+      "in",
+      "within"
+    ],
+    "ans": 3,
+    "diff": "hard",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 199,
+    "cat": "grammar",
+    "orig": 199,
+    "q": "Tighten the bolt ………… the specified torque value shown in the AMM.",
+    "opts": [
+      "in",
+      "on",
+      "to",
+      "by"
+    ],
+    "ans": 2,
+    "diff": "hard",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 200,
+    "cat": "grammar",
+    "orig": 200,
+    "q": "The hydraulic fluid level should be checked ………… a daily basis.",
+    "opts": [
+      "in",
+      "on",
+      "at",
+      "by"
+    ],
+    "ans": 1,
+    "diff": "hard",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 201,
+    "cat": "grammar",
+    "orig": 201,
+    "q": "Discard the wheel half with corrosion or damage that is ………… than the repair limit.",
+    "opts": [
+      "much",
+      "more",
+      "most",
+      "many"
+    ],
+    "ans": 1,
+    "diff": "hard",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 202,
+    "cat": "grammar",
+    "orig": 202,
+    "q": "The composite repair must be ………… than the original structure in terms of strength.",
+    "opts": [
+      "stronger",
+      "strongest",
+      "strong",
+      "more strong"
+    ],
+    "ans": 0,
+    "diff": "hard",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 203,
+    "cat": "grammar",
+    "orig": 203,
+    "q": "The ………… critical area for corrosion inspection is the lower fuselage bilge area.",
+    "opts": [
+      "more",
+      "most",
+      "much",
+      "many"
+    ],
+    "ans": 1,
+    "diff": "hard",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 204,
+    "cat": "grammar",
+    "orig": 204,
+    "q": "Using synthetic oil results in ………… wear on engine components than mineral oil.",
+    "opts": [
+      "less",
+      "least",
+      "few",
+      "fewer"
+    ],
+    "ans": 0,
+    "diff": "hard",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 205,
+    "cat": "grammar",
+    "orig": 205,
+    "q": "The anti-ice system is ………… efficient when the outside air temperature is near 0°C.",
+    "opts": [
+      "less",
+      "least",
+      "few",
+      "fewer"
+    ],
+    "ans": 0,
+    "diff": "hard",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 206,
+    "cat": "grammar",
+    "orig": 206,
+    "q": "The revised procedure is ………… straightforward than the previous one.",
+    "opts": [
+      "more",
+      "most",
+      "much",
+      "many"
+    ],
+    "ans": 0,
+    "diff": "hard",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 207,
+    "cat": "grammar",
+    "orig": 207,
+    "q": "The ………… accessible inspection point on the engine is the borescope port.",
+    "opts": [
+      "easy",
+      "easier",
+      "easiest",
+      "most easy"
+    ],
+    "ans": 2,
+    "diff": "hard",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 208,
+    "cat": "grammar",
+    "orig": 208,
+    "q": "Carbon brake disks are ………… lighter than steel disks for the same stopping performance.",
+    "opts": [
+      "considerable",
+      "considerably",
+      "most considerable",
+      "considerablest"
+    ],
+    "ans": 1,
+    "diff": "hard",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 209,
+    "cat": "grammar",
+    "orig": 209,
+    "q": "The ………… common cause of hydraulic system failure is contaminated fluid.",
+    "opts": [
+      "more",
+      "many",
+      "most",
+      "much"
+    ],
+    "ans": 2,
+    "diff": "hard",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 210,
+    "cat": "grammar",
+    "orig": 210,
+    "q": "The newer brake design has ………… heat capacity than the older version.",
+    "opts": [
+      "greater",
+      "greatest",
+      "more great",
+      "the greatest"
+    ],
+    "ans": 0,
+    "diff": "hard",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 211,
+    "cat": "grammar",
+    "orig": 211,
+    "q": "The busbars ………… 115V AC to the electrically ………… seats.",
+    "opts": [
+      "supply / operating",
+      "supply / operated",
+      "are supplied / operating",
+      "will supply / operating"
+    ],
+    "ans": 1,
+    "diff": "hard",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 212,
+    "cat": "grammar",
+    "orig": 212,
+    "q": "Lead-acid batteries ………… sulfuric acid which ………… severe burns to body tissue.",
+    "opts": [
+      "contained / causing",
+      "contain / can cause",
+      "contain / must cause",
+      "to contain / caused"
+    ],
+    "ans": 1,
+    "diff": "hard",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 213,
+    "cat": "grammar",
+    "orig": 213,
+    "q": "When an engine is dry motored, the starter ………… to turn the HP rotor.",
+    "opts": [
+      "is engaging",
+      "is engaged",
+      "engages",
+      "engaged"
+    ],
+    "ans": 1,
+    "diff": "hard",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 214,
+    "cat": "grammar",
+    "orig": 214,
+    "q": "All axial loads from the engine ………… to the pylon through the forward mount.",
+    "opts": [
+      "are transferred",
+      "transferring",
+      "transferred",
+      "transfer"
+    ],
+    "ans": 0,
+    "diff": "hard",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 215,
+    "cat": "grammar",
+    "orig": 215,
+    "q": "Any compartment that ………… expected to flood under light impact ………… used.",
+    "opts": [
+      "is / should not be",
+      "may be / should be",
+      "may not be / should not be",
+      "may not be / should be"
+    ],
+    "ans": 0,
+    "diff": "hard",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 216,
+    "cat": "grammar",
+    "orig": 216,
+    "q": "The pretreatment of a material ………… the corrosion resistant properties and ………… a good surface for the bond of the paint.",
+    "opts": [
+      "increases / provides",
+      "increase / providing",
+      "increases / will provide",
+      "increasing / provides"
+    ],
+    "ans": 0,
+    "diff": "hard",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 217,
+    "cat": "grammar",
+    "orig": 217,
+    "q": "Make sure that the power indicator light on the galley panel ………….",
+    "opts": [
+      "to go off",
+      "goes off",
+      "go off",
+      "is going off"
+    ],
+    "ans": 1,
+    "diff": "hard",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 218,
+    "cat": "grammar",
+    "orig": 218,
+    "q": "'Combustible material' ………… the material which is capable of ………… fire and burning.",
+    "opts": [
+      "means / to catch",
+      "to mean / to catch",
+      "meaning / catching",
+      "means / catching"
+    ],
+    "ans": 3,
+    "diff": "hard",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 219,
+    "cat": "grammar",
+    "orig": 219,
+    "q": "A seat with an inoperative or missing occupant restraint system ………… inoperative.",
+    "opts": [
+      "is considered",
+      "are considered",
+      "are to be considered",
+      "considered"
+    ],
+    "ans": 0,
+    "diff": "hard",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 220,
+    "cat": "grammar",
+    "orig": 220,
+    "q": "Any contamination found in the oil that comes out from the scavenge screen ………… for investigation.",
+    "opts": [
+      "shall keep",
+      "should be kept",
+      "should keep",
+      "must keep"
+    ],
+    "ans": 1,
+    "diff": "hard",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 221,
+    "cat": "grammar",
+    "orig": 221,
+    "q": "Parts and materials ………… ………… from operators' stock.",
+    "opts": [
+      "are to be supplied",
+      "will supply",
+      "have supplied",
+      "are supplying"
+    ],
+    "ans": 0,
+    "diff": "hard",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 222,
+    "cat": "grammar",
+    "orig": 222,
+    "q": "All axial loads from the engine ………… to the pylon through the forward mount while side and vertical loads ………… by both mounts.",
+    "opts": [
+      "transferring / are transferred",
+      "transferred / transferring",
+      "are transferred / are transferred",
+      "are transferred / transferring"
+    ],
+    "ans": 2,
+    "diff": "hard",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 223,
+    "cat": "grammar",
+    "orig": 223,
+    "q": "You must wait for a minimum of one hour after the third time, before you ………… or try ………… the APU again.",
+    "opts": [
+      "start / start",
+      "starting / to start",
+      "to start / start",
+      "start / to start"
+    ],
+    "ans": 3,
+    "diff": "hard",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 224,
+    "cat": "grammar",
+    "orig": 224,
+    "q": "The procedure ………… to remove paint coatings from metallic materials as an alternative to chemical stripping.",
+    "opts": [
+      "can use",
+      "could use",
+      "could be used",
+      "can be used"
+    ],
+    "ans": 3,
+    "diff": "hard",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 225,
+    "cat": "grammar",
+    "orig": 225,
+    "q": "When you do work on the fuel system wiring, you ………… test equipment that ………….",
+    "opts": [
+      "may use / is approving",
+      "will use / is approved",
+      "must use / is approved",
+      "must use / is approving"
+    ],
+    "ans": 2,
+    "diff": "hard",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 226,
+    "cat": "grammar",
+    "orig": 226,
+    "q": "Unit Zones ………… by the number of the Units of the Major Zones.",
+    "opts": [
+      "identified",
+      "are identified",
+      "have identified",
+      "identify"
+    ],
+    "ans": 1,
+    "diff": "hard",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 227,
+    "cat": "grammar",
+    "orig": 227,
+    "q": "The clearance to edges ………… more than 300 times of the glass cloth thickness.",
+    "opts": [
+      "could be",
+      "have to be",
+      "should be",
+      "must be"
+    ],
+    "ans": 3,
+    "diff": "hard",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 228,
+    "cat": "grammar",
+    "orig": 228,
+    "q": "The technician must ………… the safety precautions carefully before ………… the fuel tank.",
+    "opts": [
+      "read / enter",
+      "reading / entering",
+      "read / entering",
+      "reads / enters"
+    ],
+    "ans": 2,
+    "diff": "hard",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 229,
+    "cat": "grammar",
+    "orig": 229,
+    "q": "There is a 30-second delay before the maintenance message ………… on the MCDU.",
+    "opts": [
+      "will show",
+      "shows",
+      "showed",
+      "is showing"
+    ],
+    "ans": 1,
+    "diff": "hard",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 230,
+    "cat": "grammar",
+    "orig": 230,
+    "q": "A WARNING tells the operator that injury or death ………… possible if the operator ………… obey the specified instruction.",
+    "opts": [
+      "is / does not",
+      "are / does not",
+      "is / will not",
+      "was / did not"
+    ],
+    "ans": 0,
+    "diff": "hard",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 231,
+    "cat": "grammar",
+    "orig": 231,
+    "q": "If an access door or panel ………… in more than one zone, the lowest zone number applicable ………….",
+    "opts": [
+      "is / is used",
+      "is being / are used",
+      "has / has been used",
+      "has / has used"
+    ],
+    "ans": 0,
+    "diff": "hard",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 232,
+    "cat": "grammar",
+    "orig": 232,
+    "q": "The seat shoulder harness ………… into the reel so that the harness is no longer adjustable.",
+    "opts": [
+      "have not retracted",
+      "have now retract",
+      "has not retracted",
+      "has not retract"
+    ],
+    "ans": 2,
+    "diff": "hard",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 233,
+    "cat": "grammar",
+    "orig": 233,
+    "q": "Lightning ………… some areas more frequently than others.",
+    "opts": [
+      "hit",
+      "hits",
+      "hitter",
+      "hitting"
+    ],
+    "ans": 1,
+    "diff": "hard",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 234,
+    "cat": "grammar",
+    "orig": 234,
+    "q": "An inspection ………… when the aircraft has been involved in an excessive maneuver.",
+    "opts": [
+      "require",
+      "requires",
+      "required",
+      "is required"
+    ],
+    "ans": 3,
+    "diff": "hard",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 235,
+    "cat": "grammar",
+    "orig": 235,
+    "q": "The fuel in the associated outer tank ………… considered as not usable for flight planning.",
+    "opts": [
+      "is",
+      "are",
+      "were",
+      "can"
+    ],
+    "ans": 0,
+    "diff": "hard",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 236,
+    "cat": "grammar",
+    "orig": 236,
+    "q": "The gage ………… to determine the attitude of the airplane prior to a fuel quantity check.",
+    "opts": [
+      "use to",
+      "used to",
+      "is used to",
+      "using to"
+    ],
+    "ans": 2,
+    "diff": "hard",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 237,
+    "cat": "grammar",
+    "orig": 237,
+    "q": "The seat shoulder harness ………… into the reel so the harness is no longer adjustable.",
+    "opts": [
+      "has not retracted",
+      "have retracted",
+      "will retract",
+      "was retracting"
+    ],
+    "ans": 0,
+    "diff": "hard",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 238,
+    "cat": "grammar",
+    "orig": 238,
+    "q": "Any high-frequency eddy current equipment ………… used provided that it meets the requirements.",
+    "opts": [
+      "may be",
+      "must",
+      "should",
+      "would be"
+    ],
+    "ans": 0,
+    "diff": "hard",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 239,
+    "cat": "grammar",
+    "orig": 239,
+    "q": "If installation ………… correct, no further action ………… required.",
+    "opts": [
+      "is / is",
+      "was / was",
+      "is / is not",
+      "will be / will be"
+    ],
+    "ans": 0,
+    "diff": "hard",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 240,
+    "cat": "grammar",
+    "orig": 240,
+    "q": "Additional certification requirements ………… impose additional restrictions on the operator.",
+    "opts": [
+      "must",
+      "will",
+      "may",
+      "should"
+    ],
+    "ans": 2,
+    "diff": "hard",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 241,
+    "cat": "grammar",
+    "orig": 241,
+    "q": "After you touch cadmium plated parts, clean your hands before you ………… or smoke.",
+    "opts": [
+      "eating",
+      "eat",
+      "ate",
+      "to eat"
+    ],
+    "ans": 1,
+    "diff": "hard",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 242,
+    "cat": "grammar",
+    "orig": 242,
+    "q": "Make sure the probes, the engine, and the APU ………… cool before installation of the protective devices.",
+    "opts": [
+      "is",
+      "are",
+      "isn't",
+      "aren't"
+    ],
+    "ans": 1,
+    "diff": "hard",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 243,
+    "cat": "grammar",
+    "orig": 243,
+    "q": "It ………… customary to provide bolts with reduced pitch diameter for use in hot sections of engines.",
+    "opts": [
+      "may be",
+      "will be",
+      "is",
+      "to be"
+    ],
+    "ans": 2,
+    "diff": "hard",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 244,
+    "cat": "grammar",
+    "orig": 244,
+    "q": "The drag ………… normally approximately 40 lbf.in; the permitted maximum ………… 107 lbf.in.",
+    "opts": [
+      "is / is",
+      "are / is",
+      "is / are",
+      "was / is"
+    ],
+    "ans": 0,
+    "diff": "hard",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 245,
+    "cat": "grammar",
+    "orig": 245,
+    "q": "Maintenance messages related to the fuel system can possibly ………… during the first engine start.",
+    "opts": [
+      "occur",
+      "occurred",
+      "occurs",
+      "occurring"
+    ],
+    "ans": 0,
+    "diff": "hard",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 246,
+    "cat": "grammar",
+    "orig": 246,
+    "q": "The clearance to edges should ………… more than 300 times the glass cloth thickness.",
+    "opts": [
+      "is",
+      "not be",
+      "be",
+      "are"
+    ],
+    "ans": 2,
+    "diff": "hard",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 247,
+    "cat": "grammar",
+    "orig": 247,
+    "q": "The aircraft ………… not dispatched under MEL items ………… impose a passenger restriction without a placard.",
+    "opts": [
+      "must / which",
+      "should / that",
+      "must / that",
+      "may / when"
+    ],
+    "ans": 2,
+    "diff": "hard",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 248,
+    "cat": "grammar",
+    "orig": 248,
+    "q": "All calendar days ………… considered to run consecutively from the day of discovery.",
+    "opts": [
+      "must be",
+      "are",
+      "were",
+      "should"
+    ],
+    "ans": 1,
+    "diff": "hard",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 249,
+    "cat": "grammar",
+    "orig": 249,
+    "q": "The fuel manifold ………… metered fuel flow from the HMU to the 30 fuel nozzles.",
+    "opts": [
+      "deliver",
+      "delivered",
+      "delivers",
+      "delivering"
+    ],
+    "ans": 2,
+    "diff": "hard",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 250,
+    "cat": "grammar",
+    "orig": 250,
+    "q": "The inspection ………… complete before the aircraft is released for the next flight.",
+    "opts": [
+      "must be",
+      "has be",
+      "is being",
+      "was being"
+    ],
+    "ans": 0,
+    "diff": "hard",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  }
+]

@@ -1,0 +1,1800 @@
+================================================================
+HAVA ARACI BAKIM PERSONELİ YABANCI DİL SINAVI
+SORU BANKASI - BÖLÜM 4 DEVAM: PARAGRAF/OKUMA (READING COMPREHENSION)
+225 SORU — Q1516-Q1740
+(45 Paragraf × 5 Soru)
+================================================================
+
+--- PASSAGE 31: HYDRAULIC ACCUMULATOR ---
+
+The hydraulic accumulator is a pressure storage device in an aircraft hydraulic system. It consists of a sealed cylinder divided into two chambers by a flexible diaphragm or a free-floating piston. One chamber is pre-charged with dry nitrogen gas, and the other chamber is connected to the hydraulic system. When hydraulic pressure increases, fluid compresses the nitrogen charge. The stored pressure energy can then be used to supply instantaneous high-pressure fluid to operate actuators, smooth out pressure fluctuations, and provide an emergency backup source of hydraulic pressure if the pump fails. The nitrogen pre-charge pressure must be checked at specified intervals using a calibrated nitrogen charging kit, with the hydraulic system fully depressurized. If the pre-charge is low, the accumulator's capacity is reduced; if it is too high, the accumulator cannot accept fluid from the system and becomes ineffective.
+
+1516. What is the main function of the hydraulic accumulator?
+a) To filter hydraulic fluid before it enters the actuators
+b) To store hydraulic pressure energy for instantaneous use, to smooth pressure fluctuations, and as an emergency backup
+c) To increase pump output during high-demand operations
+d) To cool the hydraulic fluid during continuous operation
+ANSWER: b
+
+1517. What gas is used to pre-charge the hydraulic accumulator?
+a) Compressed air
+b) Oxygen
+c) Dry nitrogen
+d) Carbon dioxide
+ANSWER: c
+
+1518. When must the nitrogen pre-charge be checked?
+a) Only when a hydraulic pressure fault is indicated
+b) At specified maintenance intervals with the hydraulic system fully depressurized
+c) During each engine run
+d) During flight when the system is pressurized
+ANSWER: b
+
+1519. What happens if the nitrogen pre-charge is too high?
+a) The accumulator may burst under pressure
+b) The accumulator cannot accept fluid from the system and becomes ineffective
+c) The hydraulic pump will be damaged
+d) The fluid pressure will drop rapidly
+ANSWER: b
+
+1520. How is the accumulator chamber divided?
+a) By a rigid metal partition welded in place
+b) By a flexible diaphragm or free-floating piston
+c) By a filter element that separates gas and fluid
+d) By two separate inlet and outlet valves
+ANSWER: b
+
+--- PASSAGE 32: ENGINE OIL SYSTEM ---
+
+The engine lubrication system provides clean, cooled oil to all moving parts of the engine to reduce friction and wear, remove heat, and prevent corrosion. The system typically comprises an oil tank, a pressure pump, a scavenge pump, filters, and an oil cooler. Oil is drawn from the tank by the pressure pump and delivered at regulated pressure through filters to the engine bearings, gearbox, and other components. After passing through the engine, the scavenge pump returns the oil to the tank via the oil cooler, where excess heat is transferred to fuel or air. An oil quantity check is performed within a specified time after engine shutdown to allow oil to drain back to the tank. Consumption is monitored and compared against the aircraft manufacturer's specification. Oil that is contaminated, discoloured, or contains metallic particles should be sampled and sent for analysis to identify the source of the contamination.
+
+1521. What are the primary functions of the engine oil system?
+a) To provide fuel and air mixture to the combustion chamber
+b) To reduce friction and wear, remove heat, and prevent corrosion
+c) To regulate fuel flow to the engine
+d) To provide hydraulic pressure to the engine control units
+ANSWER: b
+
+1522. What does the scavenge pump do?
+a) Draws oil from the tank and delivers it to the engine
+b) Returns oil from the engine to the tank via the oil cooler
+c) Filters oil before it enters the bearings
+d) Regulates oil pressure throughout the engine
+ANSWER: b
+
+1523. When should an oil quantity check be performed?
+a) Immediately after engine shutdown
+b) At specified time after engine shutdown to allow oil to drain back to the tank
+c) During engine operation at idle
+d) Only before the first flight of the day
+ANSWER: b
+
+1524. What should be done if oil contains metallic particles?
+a) Continue operating as normal if the quantity is within limits
+b) Sample the oil and send it for analysis to identify the contamination source
+c) Immediately drain and replace the oil without analysis
+d) Add extra oil to dilute the contamination
+ANSWER: b
+
+1525. Where does the oil cooler transfer excess heat?
+a) To the outside air through a dedicated heat exchanger
+b) To fuel or air
+c) To the engine exhaust stream
+d) To the hydraulic fluid system
+ANSWER: b
+
+--- PASSAGE 33: AIRCRAFT ELECTRICAL GENERATION ---
+
+Aircraft electrical power is generated by alternators or generators driven by the engines and, on many modern aircraft, by a dedicated auxiliary power unit (APU) generator. AC (alternating current) systems are more common on large transport aircraft because AC power can be transformed to different voltages and is more efficient for long cable runs. The main generators produce AC power at a constant frequency of 400 Hz, regulated by integrated drive generators (IDGs) or constant speed drives (CSDs). DC (direct current) power is produced by transformer rectifier units (TRUs) from the AC bus and is used for avionics, batteries, and other DC consumers. In the event of all generator failures, the aircraft can extend a ram air turbine (RAT) that uses airstream energy to generate emergency hydraulic or electrical power. Battery power provides a final backup, though it is limited in capacity and duration.
+
+1526. What is the standard frequency of the AC power generated by aircraft main generators?
+a) 50 Hz
+b) 60 Hz
+c) 400 Hz
+d) 115 Hz
+ANSWER: c
+
+1527. What is the function of a Transformer Rectifier Unit (TRU)?
+a) To convert AC power to DC power
+b) To convert DC power to AC power
+c) To regulate the generator output frequency
+d) To isolate the battery from the bus
+ANSWER: a
+
+1528. What does the Ram Air Turbine (RAT) do?
+a) Provides APU power for engine starting
+b) Uses airstream energy to generate emergency hydraulic or electrical power
+c) Increases engine power during takeoff
+d) Provides pressurized air for the environmental control system
+ANSWER: b
+
+1529. Why is AC power preferred on large transport aircraft?
+a) AC is easier to generate than DC
+b) AC can be transformed to different voltages and is more efficient for long cable runs
+c) AC power does not require heavy cables
+d) AC generators are lighter than DC generators
+ANSWER: b
+
+1530. What provides the final electrical backup if all generators fail?
+a) The hydraulic system
+b) The APU
+c) The RAT
+d) The aircraft battery
+ANSWER: d
+
+--- PASSAGE 34: AVIONICS COOLING ---
+
+Avionics equipment generates heat during operation and requires effective cooling to maintain reliable performance and prevent premature failure. Modern aircraft use dedicated avionics cooling systems that circulate conditioned air through the avionics bays. The conditioned air is supplied from the aircraft's pneumatic or environmental control system, passes through the avionics bay, and is either exhausted overboard or mixed with cabin air. The flow rate of cooling air is monitored and, if it falls below a threshold, a cooling fault is annunciated on the master caution panel. On the ground, cooling may be supplemented by ground cooling units connected to the aircraft during maintenance when avionics are powered up for testing. Technicians must ensure that all avionics cooling ducting and flow sensors are reconnected correctly after maintenance, as incorrect reassembly can lead to inadequate cooling and equipment failure.
+
+1531. What would cause a cooling fault annunciation on the master caution panel?
+a) A cooling duct is broken
+b) The cooling air flow rate falls below a threshold
+c) The avionics bay door is open
+d) The conditioned air supply pressure is too high
+ANSWER: b
+
+1532. How are avionics bays cooled on modern aircraft?
+a) By natural convection through open panels
+b) By conditioned air circulated from the pneumatic or ECS
+c) By dedicated liquid cooling circuits
+d) By engine bleed air directed to each avionics rack
+ANSWER: b
+
+1533. What is used to supplement avionics cooling on the ground during testing?
+a) Additional engine bleed air
+b) Ground cooling units connected to the aircraft
+c) Portable electric fans
+d) Dry ice placed near the avionics racks
+ANSWER: b
+
+1534. What is the consequence of incorrectly reassembling avionics cooling ducting after maintenance?
+a) The avionics system will not power up
+b) Inadequate cooling leading to equipment failure
+c) Increased electrical power consumption
+d) Reduced cabin pressurization
+ANSWER: b
+
+1535. After passing through the avionics bay, where does the cooling air go?
+a) Back to the engine intake
+b) Overboard or mixed with cabin air
+c) To the cargo hold
+d) To the hydraulic system heat exchanger
+ANSWER: b
+
+--- PASSAGE 35: WING ANTI-ICING SYSTEM ---
+
+The wing leading edge anti-icing system on many transport aircraft uses hot bleed air from the engine compressor to heat the leading edge slats. This prevents the accumulation of ice, which would alter the wing's aerodynamic profile and reduce lift. The bleed air is distributed through piccolo tubes running along the leading edge, which have multiple small holes allowing the hot air to impinge on the inner surface of the slat. On some aircraft, the anti-icing system is fully automatic and activates when the ice detection system senses icing conditions. On others, the crew selects the system manually. The anti-icing system must be tested before flight in forecast icing conditions. During maintenance, after any work on the bleed air supply or piccolo tube system, a leak check and functional test must be performed. Damage to the leading edge such as dents or cracks must be assessed against the structural repair manual to determine acceptability.
+
+1536. How does the wing leading edge anti-icing system prevent ice accumulation?
+a) By using electrical heating elements embedded in the leading edge
+b) By distributing hot engine bleed air through piccolo tubes to heat the inner surface of the slat
+c) By applying de-icing fluid from a spray system in the leading edge
+d) By circulating hot hydraulic fluid through the leading edge structure
+ANSWER: b
+
+1537. What would happen if ice accumulated on the wing leading edge?
+a) The aircraft would become heavier
+b) The wing's aerodynamic profile would be altered and lift would be reduced
+c) The wing would suffer structural damage
+d) The engine would ingest ice and be damaged
+ANSWER: b
+
+1538. When must the anti-icing system be tested?
+a) After every engine replacement
+b) Before flight in forecast icing conditions
+c) During the pre-flight walkround as a matter of routine
+d) Only during the annual airworthiness review
+ANSWER: b
+
+1539. What maintenance is required after work on the bleed air supply or piccolo tube system?
+a) Borescope inspection of the piccolo tubes
+b) A leak check and functional test
+c) A visual inspection of the leading edge only
+d) An NDT inspection of the piccolo tube welds
+ANSWER: b
+
+1540. How are the piccolo tubes distributed along the leading edge?
+a) They are connected at a single central point
+b) They run along the leading edge with multiple small holes to impinge hot air on the inner surface
+c) They are located externally on the lower surface of the slat
+d) They use high-pressure nozzles to direct air at the leading edge tip
+ANSWER: b
+
+--- PASSAGE 36: MAINTENANCE ERROR AND HUMAN FACTORS ---
+
+Maintenance errors are a significant contributor to aviation accidents and incidents. Research into human factors in maintenance has identified twelve common conditions that can lead to errors, often referred to as the "Dirty Dozen". These include lack of communication, complacency, lack of knowledge, distraction, lack of teamwork, fatigue, lack of resources, pressure, lack of assertiveness, stress, lack of awareness, and norms (unwritten rules). Fatigue is particularly dangerous as it reduces concentration, slows reaction times, and impairs decision-making. Organisations address these risks through training, procedural discipline, checklists, and a just culture that encourages error reporting without fear of punishment. Post-maintenance inspections by a second inspector are a critical control, especially for tasks involving critical systems. The goal is not simply to avoid blame, but to understand why errors occur and to put systemic defences in place to prevent recurrence.
+
+1541. What are the "Dirty Dozen" in aviation maintenance?
+a) Twelve common defect types found on aircraft
+b) Twelve common human conditions that can lead to maintenance errors
+c) Twelve prohibited maintenance practices
+d) Twelve critical components that require dual inspection
+ANSWER: b
+
+1542. Why is fatigue particularly dangerous in maintenance?
+a) Fatigue causes technicians to rush and skip steps
+b) Fatigue reduces concentration, slows reaction times, and impairs decision-making
+c) Fatigue increases physical strength, leading to overtorque of fasteners
+d) Fatigue reduces stress levels, leading to complacency
+ANSWER: b
+
+1543. What is a "just culture" in aviation maintenance organisations?
+a) A culture where all errors are punished to deter future mistakes
+b) A culture that encourages error reporting without fear of punishment to improve safety
+c) A culture that blames individuals for systemic failures
+d) A culture where only management decisions are questioned
+ANSWER: b
+
+1544. What is the purpose of post-maintenance inspections by a second inspector?
+a) To verify the quality of the documentation
+b) A critical control to catch errors, especially on critical systems
+c) To ensure tools are accounted for
+d) To check the inspector's licence is current
+ANSWER: b
+
+1545. Which of the following is NOT one of the "Dirty Dozen"?
+a) Fatigue
+b) Distraction
+c) Corrosion
+d) Complacency
+ANSWER: c
+
+--- PASSAGE 37: FUEL SYSTEM CONTAMINATION ---
+
+Fuel contamination is a major concern in aircraft operations and maintenance. Common contaminants include water, microbiological growth (fungi and bacteria), sediment, and mixing of incompatible fuel types. Water can enter the fuel tanks through condensation as the aircraft descends into warmer humid air, through poorly sealed filler caps, or through contaminated refuelling equipment. Water in aviation fuel can cause fuel system icing in the delivery lines at altitude and can support microbiological growth on the tank surfaces. Microbiological contamination produces acids, dark sediment, and can cause corrosion to tank structure and fuel system components. Regular tank sump checks, in which the lowest point of the tank is drained and the sample inspected for water and debris, are a primary defence. Biocide additives may be used in some aircraft to control microbial growth. Fuel contamination by incorrect fuel type is extremely serious and can cause engine damage or failure.
+
+1546. How can water enter aircraft fuel tanks?
+a) Only through the refuelling connection
+b) Through condensation, poorly sealed filler caps, or contaminated refuelling equipment
+c) Through the fuel vent system during high-humidity conditions
+d) Through leaking crossfeed valves
+ANSWER: b
+
+1547. What does microbiological contamination in fuel tanks produce?
+a) Excess water and ice crystals
+b) Acids, dark sediment, and corrosion to tank structure and components
+c) Increased fuel viscosity
+d) Explosive vapour that accumulates in the ullage
+ANSWER: b
+
+1548. What is the purpose of a tank sump check?
+a) To measure the fuel quantity accurately
+b) To drain the lowest point of the tank and inspect the sample for water and debris
+c) To pressurise the tank for leak testing
+d) To aerate the fuel before fuelling operations
+ANSWER: b
+
+1549. What can be used to control microbial growth in fuel tanks?
+a) Nitrogen inerting of the tank
+b) Biocide additives
+c) UV light treatment of the fuel
+d) Anti-static treatments applied to the tank walls
+ANSWER: b
+
+1550. Why is fuel contamination by incorrect fuel type extremely serious?
+a) Incorrect fuel changes the weight of the aircraft
+b) It can cause engine damage or failure
+c) It invalidates the aircraft's airworthiness certificate immediately
+d) It causes microbiological growth to accelerate
+ANSWER: b
+
+--- PASSAGE 38: STRUCTURAL INSPECTION METHODS ---
+
+Aircraft structures are inspected using a variety of methods depending on the type of material and the type of defect being sought. Visual inspection is the most basic method and is used to identify obvious damage, corrosion, and loose fasteners. Dye penetrant inspection (DPI) is used to find surface-breaking cracks in non-porous materials such as aluminium and stainless steel. The component is cleaned, penetrant fluid is applied, excess is removed, and developer is applied to draw out the penetrant from any cracks, making them visible. Magnetic particle inspection (MPI) is used on ferrous (magnetic) metals and reveals both surface and near-surface defects using a magnetic field and iron particles. Ultrasonic testing sends high-frequency sound waves through the material; defects reflect the waves back, creating indications on the display. Eddy current testing uses electromagnetic induction to detect cracks in conductive materials and is particularly effective for detecting corrosion under aircraft skin. X-ray testing creates an image of the internal structure and is used to inspect complex assemblies, welds, and areas where other methods cannot access.
+
+1551. Which NDT method is most effective for detecting corrosion under aircraft skin?
+a) Dye penetrant inspection
+b) Magnetic particle inspection
+c) Eddy current testing
+d) X-ray testing
+ANSWER: c
+
+1552. What type of materials can be inspected with Magnetic Particle Inspection (MPI)?
+a) All metals including aluminium and titanium
+b) Only ferrous (magnetic) metals
+c) Only non-metallic composite materials
+d) Any conductive material
+ANSWER: b
+
+1553. In dye penetrant inspection, what is the purpose of the developer?
+a) To clean the surface before applying penetrant
+b) To draw the penetrant out of cracks, making them visible
+c) To remove the excess penetrant from the surface
+d) To increase the surface porosity for better penetrant absorption
+ANSWER: b
+
+1554. What does ultrasonic testing detect?
+a) Surface corrosion on metal surfaces
+b) Defects that reflect high-frequency sound waves
+c) Cracks in composite materials only
+d) Magnetic field irregularities around cracks
+ANSWER: b
+
+1555. Why is X-ray testing used for complex assemblies?
+a) It is the fastest and cheapest NDT method
+b) It creates an image of the internal structure and can access areas where other methods cannot
+c) It detects only surface defects
+d) It works on non-conductive materials only
+ANSWER: b
+
+--- PASSAGE 39: BRAKE SYSTEM MAINTENANCE ---
+
+The aircraft brake system provides deceleration during landing, directional control during ground manoeuvring, and parking. Most large aircraft use multiple disc brakes with hydraulically actuated pistons that press the brake discs together when the pilot applies pedal pressure. Carbon fibre composite (CFC) brake discs are used on many modern aircraft because they are lighter than steel and can withstand higher operating temperatures. However, carbon discs must be handled carefully as they are brittle and can crack if dropped or subjected to impact. Carbon disc performance also degrades if they become contaminated with oil, grease, or water. At each maintenance check, brake wear must be measured against the wear indicator pins or disc wear limits in the maintenance manual. When wear exceeds limits, the brake assembly must be replaced. The anti-skid system prevents wheel lockup by modulating hydraulic pressure to each brake if wheel speed drops below a threshold related to aircraft speed.
+
+1556. What materials are used for modern aircraft brake discs?
+a) Steel only
+b) Carbon fibre composite (CFC), which is lighter and can withstand higher temperatures than steel
+c) Titanium alloy for its corrosion resistance
+d) Aluminium alloy to reduce weight
+ANSWER: b
+
+1557. Why must carbon disc brakes be handled carefully?
+a) They are extremely heavy and can cause injury
+b) They are brittle and can crack if dropped or subjected to impact
+c) They contain toxic materials that require special handling
+d) They retain heat for a long time and can cause burns
+ANSWER: b
+
+1558. What does the anti-skid system do?
+a) It applies equal braking force to all wheels simultaneously
+b) It prevents wheel lockup by modulating hydraulic pressure if wheel speed drops below a threshold
+c) It increases braking efficiency by applying maximum pressure at all times
+d) It controls the extension and retraction of the landing gear
+ANSWER: b
+
+1559. How is brake wear checked?
+a) By measuring the temperature of the discs after landing
+b) By measuring against wear indicator pins or disc wear limits in the maintenance manual
+c) By visual inspection of disc surface colour
+d) By monitoring brake pedal travel in the cockpit
+ANSWER: b
+
+1560. What happens if oil or grease contaminates carbon brake discs?
+a) The discs develop surface cracks
+b) The disc performance degrades
+c) The disc discolours but performance is unaffected
+d) The disc must be replaced immediately regardless of wear level
+ANSWER: b
+
+--- PASSAGE 40: AIRCRAFT GROUND HANDLING ---
+
+Aircraft ground handling encompasses all activities on the ground from the time an aircraft arrives until it departs. This includes aircraft marshalling, ground power connection, aircraft chocking, fuelling, catering, loading, pushback, and towing. Ground handling must be performed by trained and authorised personnel to prevent damage to the aircraft or injury to personnel. When connecting ground power to an aircraft, the power source must be verified as compatible with the aircraft's electrical system requirements before connection. During fuelling, the aircraft must be bonded to earth to dissipate static charges. The maximum towing speed must not be exceeded, and the aircraft's nose gear must not be turned beyond its stated steering angle limits. During pushback, a qualified operator must ensure clear communication with the flight crew before and during the manoeuvre. After pushback, the towbar must be correctly disconnected and the aircraft's nose wheel steering reconnected before releasing the aircraft to the crew.
+
+1561. What must be verified before connecting ground power to an aircraft?
+a) The ground power unit is fully fuelled
+b) The power source is compatible with the aircraft's electrical system requirements
+c) The engines are fully shut down and cooled
+d) The flight crew has approved the connection
+ANSWER: b
+
+1562. Why must the aircraft be bonded to earth during fuelling?
+a) To prevent electrical faults in the aircraft systems
+b) To dissipate static charges and prevent a spark that could ignite fuel vapour
+c) To allow the fuelling rate to be measured accurately
+d) To ensure the fuel trucks are correctly positioned
+ANSWER: b
+
+1563. What must happen after pushback before the aircraft is released to the crew?
+a) The flight crew must confirm hydraulic pressure is normal
+b) The towbar must be disconnected and the nose wheel steering reconnected
+c) The ground power must be disconnected and stored
+d) The chocks must be removed and the pushback vehicle reversed
+ANSWER: b
+
+1564. What could happen if the nose gear is turned beyond its stated steering angle limits during towing?
+a) The aircraft's hydraulic system could be overpressurised
+b) The nose gear could be structurally damaged
+c) The nose gear steering system could automatically disengage
+d) The aircraft cannot be steered and will travel in a straight line
+ANSWER: b
+
+1565. What is the maximum towing speed based on?
+a) The type of ground surface
+b) The manufacturer's specification for the aircraft
+c) The distance to be covered
+d) The weight of the aircraft
+ANSWER: b
+
+--- PASSAGE 41: ENGINE VIBRATION MONITORING ---
+
+Engine vibration monitoring (EVM) is a condition monitoring technique used to detect developing mechanical faults in aircraft engines. Sensors called accelerometers are mounted on the engine case and measure vibration levels in units called IPS (inches per second) or similar. The readings are displayed in the cockpit or recorded by the engine health monitoring system. An increase in vibration level may indicate fan or turbine blade damage, bearing wear, rotor imbalance, or other mechanical deterioration. When vibration levels exceed alert thresholds, maintenance action is required, which may include a borescope inspection of the fan or turbine stages, oil sampling and analysis for metal particles, or rotor trim balancing. Rotor trim balancing corrects small rotor imbalances by adding or removing small balance weights at designated positions on the fan or compressor rotor. Regular trending of vibration data helps maintenance engineers identify gradual deterioration before it reaches a critical level.
+
+1566. What unit is commonly used to measure engine vibration?
+a) psi (pounds per square inch)
+b) IPS (inches per second) or similar
+c) RPM (revolutions per minute)
+d) Hz (hertz)
+ANSWER: b
+
+1567. What could an increase in engine vibration level indicate?
+a) Excessive fuel flow
+b) Fan or turbine blade damage, bearing wear, or rotor imbalance
+c) A leak in the oil system
+d) Compressor inlet contamination
+ANSWER: b
+
+1568. What maintenance may be required when vibration levels exceed alert thresholds?
+a) Immediate engine shutdown and ground test
+b) Borescope inspection, oil sampling, or rotor trim balancing
+c) Replacement of the engine vibration sensors
+d) Adjustment of the engine fuel flow schedule
+ANSWER: b
+
+1569. How is rotor trim balancing performed?
+a) By removing and replacing individual fan blades
+b) By adding or removing small balance weights at designated positions on the fan or compressor rotor
+c) By adjusting the rotor bearing clearances
+d) By applying sealant to the fan blade attachment points
+ANSWER: b
+
+1570. What is the benefit of regularly trending vibration data?
+a) It allows the pilot to monitor engine health in real time
+b) It helps identify gradual deterioration before it reaches a critical level
+c) It reduces the need for borescope inspections
+d) It records vibration data for insurance purposes
+ANSWER: b
+
+--- PASSAGE 42: WEIGHT AND BALANCE FUNDAMENTALS ---
+
+Weight and balance management is critical to the safe operation of any aircraft. The maximum certificated weights (maximum takeoff weight, maximum landing weight, maximum zero fuel weight) must never be exceeded, as exceeding them can stress structural components beyond their design limits. The centre of gravity (CG) must remain within the forward and aft limits throughout the flight, as a CG outside these limits can make the aircraft uncontrollable or structurally unsafe. The basic empty weight of the aircraft is established at manufacture and confirmed after any modification or major structural repair. This weight, combined with the weights of fuel, crew, passengers, and cargo, gives the total weight. The arm (distance from a reference datum to each weight item) and moment (weight × arm) calculations determine the CG position. Weight and balance calculations must be completed and verified before every flight, and are typically documented on a load sheet that accompanies the aircraft.
+
+1571. What would happen if the aircraft's centre of gravity (CG) is outside limits?
+a) The aircraft's speed would be reduced
+b) The aircraft could become uncontrollable or structurally unsafe
+c) Fuel consumption would increase significantly
+d) The pressurization system would fail
+ANSWER: b
+
+1572. What is "moment" in weight and balance calculations?
+a) The distance from the reference datum to a weight item
+b) Weight multiplied by arm
+c) The total weight of all items on the aircraft
+d) The time taken to load the aircraft
+ANSWER: b
+
+1573. When must weight and balance calculations be completed?
+a) Only when the aircraft is fully loaded
+b) Before every flight
+c) Only after a major structural repair
+d) At each scheduled maintenance check
+ANSWER: b
+
+1574. What establishes the basic empty weight of an aircraft?
+a) The maximum takeoff weight certification
+b) It is established at manufacture and confirmed after any modification or major structural repair
+c) It is calculated before each flight based on the fuel load
+d) It is established annually by the regulatory authority
+ANSWER: b
+
+1575. Why must the maximum certificated weights never be exceeded?
+a) Exceeding them increases fuel consumption dramatically
+b) Exceeding them can stress structural components beyond their design limits
+c) Exceeding them voids the aircraft insurance
+d) Exceeding them triggers automated safety systems that ground the aircraft
+ANSWER: b
+
+--- PASSAGE 43: AIRCRAFT WASHING AND CORROSION PREVENTION ---
+
+Regular aircraft washing is an important part of a corrosion prevention programme. Accumulated dirt, exhaust deposits, road salt, and industrial pollutants on the aircraft skin create conditions that promote corrosion, especially in dissimilar metal joints and crevice areas. Washing procedures are specified in the aircraft maintenance manual and typically use approved aircraft washing compounds and clean water. High-pressure water jets must not be directed at seals, vents, pressure-sensitive instruments, or into control surface hinge gaps. After washing, the aircraft must be dried to prevent water pooling and checked to ensure all drain holes are clear. Corrosion inhibiting compounds (CICs) are applied to specified internal structural areas to provide a protective film. Any corrosion found during washing or subsequent inspection must be assessed against the structural repair manual to determine whether it is within acceptable limits or requires treatment or structural repair.
+
+1576. What conditions do accumulated dirt and pollutants create on aircraft skin?
+a) Conditions that promote paint adhesion
+b) Conditions that promote corrosion, especially in dissimilar metal joints and crevice areas
+c) Conditions that reduce aerodynamic drag
+d) Conditions that reduce static electricity build-up
+ANSWER: b
+
+1577. Where should high-pressure water jets NOT be directed during aircraft washing?
+a) At the wing leading edges
+b) At seals, vents, pressure-sensitive instruments, or into control surface hinge gaps
+c) At the engine nacelles
+d) At the landing gear bays
+ANSWER: b
+
+1578. What must be checked after washing the aircraft?
+a) That the aircraft weight has not changed significantly
+b) That all drain holes are clear
+c) That all lighting systems are operational
+d) That all access panels are correctly closed
+ANSWER: b
+
+1579. What are Corrosion Inhibiting Compounds (CICs) used for?
+a) To remove existing corrosion from metal surfaces
+b) To provide a protective film on specified internal structural areas
+c) To seal structural rivets against moisture ingress
+d) To replace the function of primer on repainted surfaces
+ANSWER: b
+
+1580. After finding corrosion during washing, what must be done?
+a) The area must be immediately sanded and repainted
+b) The corrosion must be assessed against the structural repair manual to determine if it is within limits or requires treatment/repair
+c) The aircraft must be grounded until the corrosion is removed
+d) The corrosion must be photographed and sent to the manufacturer for disposition
+ANSWER: b
+
+--- PASSAGE 44: OXYGEN SYSTEM TYPES ---
+
+Aircraft oxygen systems are designed to supply oxygen to crew and passengers at high altitude where ambient oxygen partial pressure is insufficient for normal physiological function. There are three main types of oxygen systems used in aviation: gaseous oxygen systems using high-pressure cylinders, chemical oxygen generators (solid state), and liquid oxygen systems. Gaseous systems store oxygen at high pressure (typically 1850 psi) in green cylinders. When activated, a regulator reduces the pressure for delivery to masks. Chemical oxygen generators produce oxygen by a chemical reaction initiated by a firing pin mechanism when the passenger pulls the mask lanyard. These are used in passenger overhead panels because they are lightweight and require no high-pressure plumbing. Liquid oxygen (LOX) systems are used in military aircraft; liquid oxygen is converted to gaseous oxygen by passing through a heat exchanger before delivery. All oxygen system components must be kept completely free of oil and grease, as these materials can ignite violently on contact with high-pressure oxygen.
+
+1581. What is the standard storage pressure for gaseous oxygen cylinders on aircraft?
+a) 500 psi
+b) 1850 psi
+c) 3000 psi
+d) 100 psi
+ANSWER: b
+
+1582. How does a chemical oxygen generator produce oxygen?
+a) By electrolysis of water
+b) By a chemical reaction initiated by a firing pin when the mask lanyard is pulled
+c) By heating liquid oxygen to convert it to gas
+d) By compressing ambient air and removing nitrogen
+ANSWER: b
+
+1583. Why are chemical oxygen generators used in passenger overhead panels?
+a) They are cheaper than gaseous systems
+b) They are lightweight and require no high-pressure plumbing
+c) They produce oxygen more quickly than gaseous systems
+d) They can supply more oxygen per unit weight than gaseous systems
+ANSWER: b
+
+1584. Why must oil and grease be kept away from oxygen system components?
+a) Oil reduces the efficiency of the oxygen regulator
+b) Oil and grease can ignite violently on contact with high-pressure oxygen
+c) Oil contaminates the oxygen and makes it toxic
+d) Oil reduces the pressure in the oxygen cylinders
+ANSWER: b
+
+1585. In which aircraft type are liquid oxygen (LOX) systems typically used?
+a) Short-haul commuter aircraft
+b) Military aircraft
+c) Large commercial transport aircraft
+d) Business jets
+ANSWER: b
+
+--- PASSAGE 45: MAINTENANCE DOCUMENTATION SYSTEMS ---
+
+Effective maintenance documentation is the foundation of aircraft airworthiness management. Maintenance organisations use various types of documents to plan, control, and record maintenance activities. The Aircraft Maintenance Manual (AMM) provides step-by-step procedures for all maintenance tasks. The Illustrated Parts Catalogue (IPC) identifies parts by assembly breakdown and part number. The Fault Isolation Manual (FIM) assists technicians in troubleshooting system faults. The Wiring Diagram Manual (WDM) shows electrical circuit schematics. Task cards (also called job cards or work packages) are derived from these source documents and issued to technicians for each maintenance task. Upon completion, technicians sign the task card to certify that the work was done in accordance with the referenced documentation. Completed task cards are retained as maintenance records for the required regulatory period. Electronic Maintenance Documentation (EMD) systems are increasingly used to manage this process digitally, improving traceability and reducing paper.
+
+1586. What does the Fault Isolation Manual (FIM) provide?
+a) Step-by-step maintenance procedures for scheduled tasks
+b) Assistance to technicians in troubleshooting system faults
+c) A breakdown of all parts by assembly and part number
+d) Electrical circuit schematics for the aircraft systems
+ANSWER: b
+
+1587. What information does the Illustrated Parts Catalogue (IPC) provide?
+a) Maintenance procedures for each system
+b) Part identification by assembly breakdown and part number
+c) Fault codes and their remedies
+d) Wiring diagrams for each system
+ANSWER: b
+
+1588. What must a technician do upon completing a task card?
+a) Return the task card to the planning department for filing
+b) Sign the task card to certify the work was done in accordance with the referenced documentation
+c) Pass the task card to the quality inspector for verification
+d) Submit the task card to the aircraft commander
+ANSWER: b
+
+1589. For how long must completed task cards be retained?
+a) For one year after the maintenance check
+b) For the required regulatory period
+c) Until the next scheduled maintenance check
+d) Until the aircraft is retired
+ANSWER: b
+
+1590. What is the advantage of Electronic Maintenance Documentation (EMD) systems?
+a) They reduce the number of maintenance tasks required
+b) They improve traceability and reduce paper use
+c) They allow maintenance to be performed without reference documents
+d) They automatically certify completed maintenance tasks
+ANSWER: b
+
+--- PASSAGE 46: LANDING GEAR RETRACTION SYSTEM ---
+
+The landing gear retraction and extension system operates the landing gear between the extended (down and locked) and retracted (up and locked) positions. The system uses hydraulic actuators to drive the gear and gear doors. Position is sensed by proximity switches or microswitches that signal the cockpit indicator lights. In the extended position, the gear is held by mechanical downlocks that prevent collapse under load. In the retracted position, uplocks secure the gear in the wheel well. The normal retraction sequence is: gear doors open, gear retracts, gear doors close. On extension: gear doors open, gear extends and locks down, gear doors close (some aircraft doors remain open when gear is down). In the event of hydraulic failure, most aircraft provide an emergency extension system that uses either hydraulic pressure from an alternative source, pneumatic pressure, or gravity (free-fall) to lower the gear. Retraction tests on the ground must only be performed with the aircraft on jacks and the wheel well area clear.
+
+1591. What are downlocks in the landing gear system?
+a) Locks that prevent the gear from extending in flight
+b) Mechanical devices that prevent the gear from collapsing when extended under load
+c) Hydraulic locks that hold the gear in the retracted position
+d) Locks activated by the cockpit gear handle
+ANSWER: b
+
+1592. What happens during the normal landing gear retraction sequence?
+a) Gear retracts first, then doors open
+b) Gear doors open, gear retracts, gear doors close
+c) Gear retracts and doors remain open until the next extension
+d) Gear doors close when gear is up, then doors open again
+ANSWER: b
+
+1593. What methods can be used for emergency landing gear extension?
+a) Manual mechanical extension by the flight crew
+b) Alternative hydraulic source, pneumatic pressure, or gravity (free-fall)
+c) Engine bleed air pressure
+d) Battery-powered electric actuators only
+ANSWER: b
+
+1594. What safety conditions must be met before a landing gear retraction test on the ground?
+a) The aircraft engines must be running
+b) The aircraft must be on jacks and the wheel well area clear of personnel
+c) The aircraft hydraulic pressure must be at maximum
+d) The flight crew must be in the cockpit for the test
+ANSWER: b
+
+1595. How is landing gear position indicated in the cockpit?
+a) By mechanical flags visible through the cockpit windows
+b) By proximity switches or microswitches signalling the cockpit indicator lights
+c) By pressure sensors in the actuators
+d) By the weight-on-wheels switch only
+ANSWER: b
+
+--- PASSAGE 47: CORROSION TYPES AND TREATMENT ---
+
+Corrosion is the deterioration of a material due to chemical or electrochemical reaction with its environment. In aircraft maintenance, several types of corrosion are encountered. Uniform attack corrosion occurs over a broad area. Pitting corrosion forms small, deep holes that can be more damaging than they appear. Intergranular corrosion occurs along the grain boundaries of an alloy, particularly in certain aluminium alloys, and can seriously weaken a structure while being invisible from the surface. Filiform corrosion appears as a network of worm-like threads under paint or other coatings. Galvanic corrosion occurs when two dissimilar metals are in electrical contact in the presence of an electrolyte. Exfoliation corrosion is a type of intergranular corrosion that causes layers to peel away. Fretting corrosion results from the micro-motion between closely fitted parts. Treatment involves removal of the corrosion by mechanical or chemical means, assessment against corrosion limits, application of a conversion coating, primer, and topcoat.
+
+1596. What type of corrosion occurs between two dissimilar metals in electrical contact?
+a) Pitting corrosion
+b) Galvanic corrosion
+c) Intergranular corrosion
+d) Fretting corrosion
+ANSWER: b
+
+1597. What is intergranular corrosion?
+a) Corrosion that forms small deep holes on the surface
+b) Corrosion along the grain boundaries of an alloy that can seriously weaken structure while being invisible from the surface
+c) Corrosion appearing as a network of worm-like threads under paint
+d) Corrosion resulting from micro-motion between parts
+ANSWER: b
+
+1598. What type of corrosion results from micro-motion between closely fitted parts?
+a) Galvanic corrosion
+b) Fretting corrosion
+c) Filiform corrosion
+d) Exfoliation corrosion
+ANSWER: b
+
+1599. How is corrosion treated after removal?
+a) By applying paint directly over the bare metal
+b) By assessing against corrosion limits, applying conversion coating, primer, and topcoat
+c) By welding over the corroded area
+d) By applying a corrosion inhibiting compound only
+ANSWER: b
+
+1600. What distinguishes exfoliation corrosion?
+a) It forms small pits on the metal surface
+b) It is a type of intergranular corrosion that causes layers of the material to peel away
+c) It occurs preferentially in weld zones
+d) It occurs only on the outer skin of the aircraft
+ANSWER: b
+
+--- PASSAGE 48: FUEL QUANTITY INDICATING SYSTEM ---
+
+The aircraft fuel quantity indicating system (FQIS) measures the fuel load in each tank and displays it on cockpit indicators. Most modern systems use capacitance probes located inside the fuel tanks. The electrical capacitance of the probe changes as the fuel level rises and falls, since fuel has a different dielectric constant than air. This change in capacitance is used to calculate fuel quantity, corrected for fuel density (temperature compensated). A totaliser shows the total fuel quantity across all tanks. In addition to the main capacitance system, some aircraft have float-type mechanical gauges accessible through access panels in the wing to confirm minimum fuel quantity. FQIS accuracy depends on probe cleanliness and correct calibration. Maintenance tasks include probe resistance checks, leak checks at probe connections, and system functional tests to verify calibration across the full range. If a probe indicates out of range, it may be faulty or affected by fuel contamination.
+
+1601. What technology do most modern fuel quantity indicating systems use?
+a) Float-type mechanical gauges
+b) Capacitance probes that measure changes in electrical capacitance as fuel level changes
+c) Ultrasonic sensors that measure the fuel surface level
+d) Weight sensors mounted under the fuel tanks
+ANSWER: b
+
+1602. Why is the fuel quantity reading temperature-compensated?
+a) Because fuel temperature affects aircraft performance
+b) Because fuel density changes with temperature, affecting the capacitance calculation
+c) Because capacitance probes are sensitive to temperature damage
+d) Because the cockpit display would freeze in cold temperatures
+ANSWER: b
+
+1603. What is the purpose of the totaliser in the fuel quantity system?
+a) To measure the fuel flow rate to each engine
+b) To show the total fuel quantity across all tanks
+c) To calculate the fuel burn rate
+d) To provide a warning when fuel is low
+ANSWER: b
+
+1604. What maintenance tasks are involved in the FQIS?
+a) Regular replacement of the capacitance probes
+b) Probe resistance checks, leak checks at connections, and functional tests to verify calibration
+c) Visual inspection of the tank interior through probe access holes
+d) Cleaning of probe surfaces and repainting
+ANSWER: b
+
+1605. What could cause a fuel quantity probe to read out of range?
+a) Excessive vibration in the wing structure
+b) A faulty probe or fuel contamination affecting it
+c) An oil leak into the fuel tank
+d) Incorrect fuel type loaded into the tank
+ANSWER: b
+
+--- PASSAGE 49: PRESSURIZATION SYSTEM MAINTENANCE ---
+
+The aircraft pressurization system maintains the cabin at a comfortable pressure altitude even as the aircraft climbs to cruising altitude. The system uses engine bleed air or dedicated electric compressors to supply conditioned air to the cabin. Outflow valves, controlled automatically or manually, regulate the rate at which air is vented overboard to maintain the desired cabin pressure differential. Safety relief valves protect the fuselage from overpressurisation by opening if the differential pressure exceeds the maximum design limit. Negative pressure relief valves prevent outside air pressure from exceeding cabin pressure during descent. Maintenance tasks include inspection of door seals and window seals, functional tests of the outflow and safety relief valves, and checking the condition and setting of the cabin pressure controller. Cabin altitude and differential pressure warnings must be tested to confirm they alert the crew at the correct thresholds. A pressure differential test of the aircraft fuselage structure is performed periodically to verify structural integrity.
+
+1606. How is cabin pressure controlled during flight?
+a) By varying the engine bleed air supply only
+b) By controlling the outflow valves to regulate the rate at which air is vented overboard
+c) By adjusting the air conditioning packs
+d) By modulating the aircraft's climb and descent rate
+ANSWER: b
+
+1607. What is the function of the safety relief valve in the pressurization system?
+a) To maintain the minimum cabin pressure during descent
+b) To protect the fuselage from overpressurisation by opening if differential pressure exceeds the maximum design limit
+c) To provide emergency oxygen in case of pressurization loss
+d) To supply fresh outside air when the bleed system fails
+ANSWER: b
+
+1608. What does the negative pressure relief valve prevent?
+a) The cabin from depressurising too rapidly
+b) Outside air pressure from exceeding cabin pressure during descent
+c) The fuselage from exceeding maximum positive pressure differential
+d) The bleed air supply from exceeding maximum pressure
+ANSWER: b
+
+1609. What maintenance task verifies the structural integrity of the fuselage under pressurization loading?
+a) A functional test of the outflow valve
+b) A pressure differential test of the aircraft fuselage structure
+c) An inspection of the door seals
+d) A check of the cabin pressure controller setting
+ANSWER: b
+
+1610. At what thresholds must cabin altitude and differential pressure warnings alert the crew?
+a) At 8,000 ft cabin altitude only
+b) At the correct thresholds specified in the maintenance manual, verified by functional testing
+c) At any cabin altitude above sea level
+d) At the pilot's discretion based on the flight conditions
+ANSWER: b
+
+--- PASSAGE 50: TURBINE ENGINE INSPECTION AFTER EXCEEDANCE ---
+
+Turbine engines have strict operating limits for temperatures, speeds, and pressures. If any of these limits are exceeded during operation, specific inspection and investigation procedures must be followed before the engine is returned to service. An overtemperature event (hot start, thermal exceedance) requires a borescope inspection of the combustion chamber, turbine, and nozzle guide vanes. Inspection criteria are provided in the Engine Overhaul Manual (EOM) or Engine Shop Manual. If damage is found within the defined limits, engine operation may continue. If damage exceeds limits, the engine must be removed and sent to an overhaul facility. An overspeed event requires an inspection of the fan, compressor, and turbine disc integrity, as excess speed can cause plastic deformation of rotating components. An exceedance must be recorded in the engine logbook with the specific parameter exceeded, duration, and conditions. All exceedances must be reported to the engine manufacturer for review and fleet trending.
+
+1611. What inspection is required after a turbine engine overtemperature event?
+a) A magnetic particle inspection of the engine casing
+b) A borescope inspection of the combustion chamber, turbine, and nozzle guide vanes
+c) An oil sample analysis
+d) A visual inspection of the external engine case
+ANSWER: b
+
+1612. What must happen if turbine damage exceeds defined limits after an exceedance?
+a) The engine may continue operating with enhanced monitoring
+b) The engine must be removed and sent to an overhaul facility
+c) The engine's temperature limit is recertified at a higher level
+d) The aircraft is ferried to a maintenance base with the engine at reduced power
+ANSWER: b
+
+1613. What risk does an overspeed event pose to the engine?
+a) Damage to the fuel nozzles
+b) Plastic deformation of rotating components such as fan, compressor, and turbine discs
+c) Overheating of the oil system
+d) Seizure of the engine starter
+ANSWER: b
+
+1614. What information must be recorded in the engine logbook after an exceedance?
+a) The technician's opinion on the severity of the event
+b) The specific parameter exceeded, duration, and conditions
+c) The engine's remaining service life
+d) A list of all components likely to be damaged
+ANSWER: b
+
+1615. Why must exceedances be reported to the engine manufacturer?
+a) For warranty claim purposes
+b) For review and fleet trending
+c) To receive replacement parts immediately
+d) To update the engine's type certificate data
+ANSWER: b
+
+--- PASSAGE 51: AIRCRAFT RECORDS AND TRACEABILITY ---
+
+Aircraft maintenance records provide a complete history of all maintenance actions performed on the aircraft throughout its service life. Each maintenance record entry must include the date, description of work, reference to the applicable documentation, part numbers and serial numbers of components installed or removed, and the signature and licence number of the certifying engineer. Components that have life limits (such as engine discs, landing gear actuators, and flight control components) must have their operating lives tracked in dedicated component records. When a component is transferred to another aircraft, its complete maintenance history must accompany it to maintain traceability. Falsification of maintenance records is a serious offence under aviation regulations and can result in the revocation of licences and criminal prosecution. Regulatory authorities may inspect maintenance records at any time, and records must be available and legible. Many operators are transitioning to electronic record systems to improve accessibility and auditability, but the same accuracy standards apply.
+
+1616. What must be included in a maintenance record entry?
+a) The engineer's personal opinion on the aircraft condition
+b) Date, work description, documentation reference, part numbers, serial numbers, and certifying engineer signature and licence number
+c) The aircraft's next scheduled maintenance date
+d) The cost of the maintenance carried out
+ANSWER: b
+
+1617. Why must the maintenance history accompany a life-limited component when transferred to another aircraft?
+a) To allow the receiving operator to recertify the component
+b) To maintain traceability of the component's operating life
+c) To reduce the time required to install the component
+d) To comply with the manufacturer's export requirements
+ANSWER: b
+
+1618. What are the consequences of falsifying maintenance records?
+a) A written warning from the maintenance organisation
+b) Revocation of licences and possible criminal prosecution
+c) Mandatory retraining of the engineer involved
+d) A financial penalty only
+ANSWER: b
+
+1619. How must maintenance records be kept?
+a) Only in electronic form for easy access
+b) Available and legible, accessible to regulatory authorities at any time
+c) In a secure location accessible only to senior management
+d) Retained in the aircraft at all times
+ANSWER: b
+
+1620. What advantage do electronic maintenance record systems offer?
+a) They replace the need for certifying engineers
+b) They improve accessibility and auditability
+c) They eliminate the need for regulatory oversight
+d) They automatically generate maintenance plans
+ANSWER: b
+
+--- PASSAGE 52: HYDRAULIC FILTER MAINTENANCE ---
+
+Hydraulic filters remove contamination from hydraulic fluid to protect system components from wear and blockage. There are several types of filters in an aircraft hydraulic system: pressure filters in the supply lines, return filters in the return lines, and case drain filters on the pump outlets. Filter elements are usually made of fine wire mesh or pleated paper and are rated by the size of particles they capture (e.g., 3 micron or 10 micron). Most modern aircraft have filter condition indicators (bypass indicators or differential pressure indicators) that show when the filter element is clogged and needs replacement. When the filter is replaced, the used element is inspected for contamination type and quantity, which can give valuable diagnostic information about system condition. If excessive metallic particles are found, a system investigation should be initiated to identify the source. After filter replacement, the system must be operated and the filter area checked for leaks.
+
+1621. What are the three main types of hydraulic filters by location?
+a) Main filter, standby filter, and emergency filter
+b) Pressure filters, return filters, and case drain filters
+c) In-line filters, reservoir filters, and actuator filters
+d) High-pressure filters, medium-pressure filters, and low-pressure filters
+ANSWER: b
+
+1622. How are hydraulic filter elements rated?
+a) By their flow rate in gallons per minute
+b) By the size of particles they capture (e.g., 3 micron or 10 micron)
+c) By their operating pressure rating in psi
+d) By their material composition
+ANSWER: b
+
+1623. What indicates that a hydraulic filter element needs replacement?
+a) A change in hydraulic fluid colour
+b) A filter condition indicator (bypass or differential pressure indicator) showing clogging
+c) A drop in hydraulic system pressure
+d) An increase in hydraulic fluid temperature
+ANSWER: b
+
+1624. What should be done if excessive metallic particles are found in a replaced filter element?
+a) The filter element is replaced more frequently
+b) A system investigation should be initiated to identify the source of the metal particles
+c) The hydraulic fluid is drained and replaced
+d) The metallic particles are noted and the system returned to service
+ANSWER: b
+
+1625. What must be checked after replacing a hydraulic filter?
+a) That the hydraulic fluid level in the reservoir is correct
+b) That the system operates correctly and the filter area is leak-free
+c) That all hydraulic actuators function correctly
+d) That the filter bypass indicator has reset
+ANSWER: b
+
+--- PASSAGE 53: AIRCRAFT FIRE PROTECTION SYSTEM ---
+
+The aircraft fire protection system is designed to detect and suppress fires in the engine nacelles, APU bay, and cargo compartments. Fire detection loops consisting of sensing elements are routed around each protected zone. When a fire or overheat condition is detected, a warning light and aural alert are triggered in the cockpit. The pilot initiates fire suppression by pressing the engine fire push button, which isolates the engine from fuel, hydraulics, and electrical systems, and arms the fire extinguisher. Pressing the fire bottle discharge handle releases the extinguisher agent into the nacelle through spray bars. Most large aircraft have two extinguisher bottles per engine to provide a second shot if the first does not extinguish the fire. The fire suppression agent quantity (pressure) in each bottle must be verified before every flight and the detection loop tested at each maintenance check. Cargo compartment fire detection relies on smoke detectors, and cargo fire suppression uses a lower concentration agent delivered over time to deplete oxygen levels.
+
+1626. What happens when a fire is detected in an engine nacelle?
+a) The engine automatically shuts down
+b) A warning light and aural alert are triggered in the cockpit
+c) The extinguisher bottle discharges automatically
+d) The hydraulic system is isolated immediately
+ANSWER: b
+
+1627. What does pressing the engine fire push button do?
+a) Discharges the fire extinguisher into the nacelle immediately
+b) Isolates the engine from fuel, hydraulics, and electrical systems, and arms the fire extinguisher
+c) Sends an emergency signal to ATC
+d) Activates the APU to take over engine functions
+ANSWER: b
+
+1628. Why do large aircraft have two extinguisher bottles per engine?
+a) One bottle cools the engine while the other suppresses the fire
+b) To provide a second shot if the first does not extinguish the fire
+c) One bottle is for engine fires and one for nacelle structure fires
+d) To comply with CAA regulations for twin-engine aircraft
+ANSWER: b
+
+1629. How does cargo compartment fire suppression work?
+a) Using the same high-concentration agent as engine nacelle suppression
+b) Using a lower concentration agent delivered over time to deplete oxygen levels
+c) Using water mist from a dedicated cargo wash system
+d) Using halon gas released as a single burst
+ANSWER: b
+
+1630. How is fire extinguisher bottle serviceability verified before every flight?
+a) By weighing the bottle
+b) By checking the pressure gauge on the bottle
+c) By activating a test circuit
+d) By visual inspection of the discharge indicator
+ANSWER: b
+
+--- PASSAGE 54: COMPOSITE STRUCTURE DAMAGE ASSESSMENT ---
+
+Composite structures used in modern aircraft, such as carbon fibre reinforced polymer (CFRP) panels, require different damage assessment methods compared to metal structures. Damage to composite structures includes surface scratches, dents, delamination, disbonds, and through-cracks. Not all damage is visible externally; delamination (separation of layers) may be present beneath an apparently undamaged surface. Tap testing is a simple method where the structure is tapped with a coin or dedicated tap tool and the sound is compared; a dull or hollow sound indicates delamination. Ultrasonic inspection is more accurate and can map the extent of delamination within the material. Moisture absorption can weaken composite materials and affect the quality of bonded repairs. Before any repair, the damaged area must be dried if moisture is present. Repairs must restore the original strength and aerodynamic profile. Repair design must comply with approved repair schemes from the aircraft structure repair manual (SRM) or manufacturer-approved data.
+
+1631. What damage types can affect composite structures?
+a) Rust, pitting, and intergranular corrosion
+b) Surface scratches, dents, delamination, disbonds, and through-cracks
+c) Fatigue cracks, stress corrosion, and galvanic corrosion
+d) Wear, erosion, and surface oxidation
+ANSWER: b
+
+1632. How is tap testing used on composite structures?
+a) A metal pick is used to probe for cracks in the surface
+b) The structure is tapped and a dull or hollow sound indicates delamination beneath
+c) A calibrated instrument measures surface hardness to detect damage
+d) The structure is struck with a hammer and the vibration frequency is measured
+ANSWER: b
+
+1633. Why must composite structures be dried before repair?
+a) Moisture causes the surface to become porous, preventing adhesive bonding
+b) Moisture absorption can weaken the material and affect the quality of bonded repairs
+c) Moisture can react with the repair resin and create toxic vapours
+d) Moisture increases the weight of the repair patch beyond allowable limits
+ANSWER: b
+
+1634. What is used to map the extent of delamination within a composite structure more accurately than tap testing?
+a) X-ray inspection
+b) Ultrasonic inspection
+c) Eddy current testing
+d) Dye penetrant inspection
+ANSWER: b
+
+1635. What must composite repairs comply with?
+a) Any repair method approved by the maintenance engineer
+b) Approved repair schemes from the SRM or manufacturer-approved data
+c) Military standards for composite repair
+d) Industry standard guidelines published by the composite repair industry
+ANSWER: b
+
+--- PASSAGE 55: ENGINE FUEL SYSTEM COMPONENTS ---
+
+The aircraft engine fuel system delivers filtered, pressurised fuel at the correct flow rate and pressure to the fuel nozzles in the combustion chamber. Key components include the fuel tank, fuel boost pump, fuel filter, fuel heater, high-pressure fuel pump, fuel metering unit (FMU), and fuel nozzles. The fuel boost pump pressurises fuel for transfer from the wing tanks to the engine and ensures a positive pressure at the inlet of the high-pressure pump to prevent cavitation. The fuel filter removes particles that could damage the high-pressure pump and metering unit. A fuel heater uses bleed air or oil heat to prevent ice crystal formation in the fuel at high altitude. The fuel metering unit (FMU) controls fuel flow to the combustion chamber in response to power lever position and engine parameters. Fuel nozzles atomise the fuel to promote efficient combustion. Fuel system components require regular inspection, cleaning, and testing at specified intervals in the CMM.
+
+1636. What is the purpose of the fuel boost pump?
+a) To increase fuel pressure for delivery to the passengers
+b) To pressurise fuel for transfer and ensure positive pressure at the HP pump inlet to prevent cavitation
+c) To regulate fuel flow to each individual combustion chamber
+d) To provide emergency fuel supply if the main pump fails
+ANSWER: b
+
+1637. What is the function of the fuel heater?
+a) To heat the fuel to improve combustion efficiency
+b) To prevent ice crystal formation in the fuel at high altitude
+c) To reduce fuel viscosity at low temperatures
+d) To warm the fuel before it enters the fuel metering unit
+ANSWER: b
+
+1638. What does the Fuel Metering Unit (FMU) control?
+a) The fuel quantity in the wing tanks
+b) Fuel flow to the combustion chamber in response to power lever position and engine parameters
+c) The pressure of the fuel delivered to each nozzle
+d) The temperature of the fuel entering the combustion section
+ANSWER: b
+
+1639. What is the function of the fuel nozzles?
+a) To regulate the flow of fuel to the combustion chamber
+b) To atomise the fuel to promote efficient combustion
+c) To filter the fuel before combustion
+d) To cool the combustion chamber walls with fuel
+ANSWER: b
+
+1640. What maintenance is performed on fuel system components?
+a) Only replacement at fixed intervals regardless of condition
+b) Regular inspection, cleaning, and testing at specified intervals in the CMM
+c) Visual inspection only during A-checks
+d) Complete replacement at each C-check
+ANSWER: b
+
+--- PASSAGE 56: AIRCRAFT BATTERY MAINTENANCE ---
+
+Aircraft batteries are essential for starting the APU, providing emergency electrical power, and operating critical systems during ground operations. Two main types are used in commercial aviation: nickel-cadmium (NiCd) and valve-regulated lead-acid (VRLA) batteries. NiCd batteries offer high discharge rates and long service life but require regular capacity checks and electrolyte level maintenance. VRLA batteries are sealed and maintenance-free in normal operation but still require capacity testing. Battery capacity checks (discharge tests) are performed at specified intervals to ensure the battery can deliver its rated amp-hours. A battery that cannot meet its capacity requirement must be removed from service. Battery charging must be carried out in a well-ventilated area as gases are released during charging. Battery vent caps must be inspected for blockage. Terminals must be kept clean and free from corrosion and must be tightened to the specified torque. Electrolyte spills must be neutralised with the appropriate solution before cleaning.
+
+1641. What are the two main battery types used in commercial aviation?
+a) Lead-acid and lithium-ion
+b) Nickel-cadmium (NiCd) and valve-regulated lead-acid (VRLA)
+c) Nickel-metal hydride and lithium polymer
+d) Silver-zinc and nickel-cadmium
+ANSWER: b
+
+1642. What is a battery capacity check?
+a) A visual inspection of the battery case and terminals
+b) A discharge test performed at specified intervals to ensure the battery can deliver its rated amp-hours
+c) A measurement of the battery's open-circuit voltage
+d) A check of the electrolyte specific gravity only
+ANSWER: b
+
+1643. Why must battery charging be carried out in a well-ventilated area?
+a) The charging process generates heat that must be dissipated
+b) Gases are released during charging that could accumulate and become a fire or explosion hazard
+c) Charging in confined spaces can cause electromagnetic interference with avionics
+d) Regulations require ventilation to prevent damage to the charging equipment
+ANSWER: b
+
+1644. What must be done with electrolyte spills?
+a) Cleaned with dry cloths immediately
+b) Neutralised with the appropriate solution before cleaning
+c) Left to evaporate naturally in a ventilated area
+d) Reported to the regulatory authority
+ANSWER: b
+
+1645. What indicates that a battery should be removed from service?
+a) The battery case shows minor surface corrosion
+b) The battery cannot meet its rated capacity requirement during a discharge test
+c) The battery terminals require retorquing
+d) The battery electrolyte requires topping up
+ANSWER: b
+
+--- PASSAGE 57: AIRCRAFT TYRE MAINTENANCE ---
+
+Aircraft tyres must withstand very high loads during takeoff, landing, and ground manoeuvring and operate at high speeds and under heavy braking. They are constructed with multiple plies of reinforced cords (nylon or aramid) embedded in rubber, and are designed as bias-ply or radial-ply construction. Tyres are inflated with nitrogen, not compressed air, because nitrogen is dry (preventing moisture-related corrosion inside the wheel) and does not support combustion. Tyre pressure must be checked with the aircraft on jacks or with the tyre off the aircraft, as the loaded condition changes the measured pressure. Tyre wear must be assessed by measuring tread depth and checking for tread wear indicators. Cuts, abrasions, bead damage, flat spots from locked wheel skids, and sidewall damage are all assessed against the allowable damage limits in the maintenance manual. Tyre service life is measured in both landings (cycles) and calendar time. Heat-sensitive fusible plugs in the wheels release if the brakes overheat, preventing tyre blowout.
+
+1646. Why are aircraft tyres inflated with nitrogen instead of compressed air?
+a) Nitrogen provides better cushioning at high landing speeds
+b) Nitrogen is dry, preventing moisture-related corrosion, and does not support combustion
+c) Nitrogen provides a more stable pressure across temperature changes than air
+d) Nitrogen reduces the weight of the inflated tyre
+ANSWER: b
+
+1647. Why must tyre pressure be checked with the aircraft on jacks or the tyre off the aircraft?
+a) The aircraft's weight makes it unsafe to measure pressure when on the ground
+b) The loaded condition changes the measured pressure
+c) The tyre pressure gauge cannot be connected when the aircraft is on the ground
+d) Nitrogen pressure is affected by the aircraft's weight on the tyre
+ANSWER: b
+
+1648. What is the purpose of heat-sensitive fusible plugs in aircraft wheels?
+a) To indicate to the pilot that the tyres are overheating
+b) To release if brakes overheat, preventing tyre blowout by releasing pressure
+c) To seal the wheel against nitrogen leakage
+d) To prevent the tyre from deflating if the bead is damaged
+ANSWER: b
+
+1649. How is tyre service life measured?
+a) In flight hours and calendar months only
+b) In landings (cycles) and calendar time
+c) In miles or kilometres of ground rolling
+d) In number of brake applications
+ANSWER: b
+
+1650. Which of the following is a type of tyre damage assessed against allowable limits?
+a) Nitrogen oxidation within the tyre
+b) Cuts, abrasions, flat spots from locked-wheel skids, and sidewall damage
+c) Internal delamination of the tyre body
+d) Chemical contamination of the bead wire
+ANSWER: b
+
+--- PASSAGE 58: APU (AUXILIARY POWER UNIT) MAINTENANCE ---
+
+The Auxiliary Power Unit (APU) is a small gas turbine engine typically located in the tail cone of the aircraft. It provides self-sufficient ground electrical power and bleed air for engine starting, air conditioning, and pressurization when main engines are not running. The APU has its own lubrication system, fuel feed from the aircraft fuel system, and fire protection system. APU maintenance includes oil level and condition checks, air intake and exhaust inspection, oil system filter replacement, and borescope inspection of the turbine at specified intervals. The APU fire detection loop and extinguisher system must be tested at each maintenance check. APU hours and cycles are tracked separately from the main engines and have their own overhaul and life-limited part requirements. The APU should only be started if both the fire detection and suppression systems are confirmed serviceable. An APU start should always be performed with the APU door open and the exhaust area clear.
+
+1651. Where is the APU typically located on a commercial aircraft?
+a) In the nose cone
+b) In the tail cone
+c) In the main gear fairing
+d) In the centre wing section
+ANSWER: b
+
+1652. What does the APU provide during ground operations?
+a) Hydraulic pressure for towing only
+b) Electrical power and bleed air for engine starting and air conditioning
+c) Oxygen for crew and passengers
+d) Fuel transfer to the wing tanks
+ANSWER: b
+
+1653. What conditions must be confirmed before starting the APU?
+a) Main engines must be shut down and cooled
+b) Both the fire detection and suppression systems must be confirmed serviceable
+c) The aircraft must be connected to ground power
+d) The APU oil level must be checked immediately before start
+ANSWER: b
+
+1654. What is borescope inspection of the APU turbine performed to detect?
+a) Oil leaks in the APU gearbox
+b) Blade erosion, cracks, and other turbine section defects
+c) Contamination in the APU air intake
+d) Exhaust nozzle blockage
+ANSWER: b
+
+1655. How are APU hours and cycles tracked?
+a) Combined with the main engine hours and cycles
+b) Separately from the main engines, with their own overhaul and life-limited part requirements
+c) By the aircraft's main maintenance computer system
+d) Only by calendar time intervals
+ANSWER: b
+
+--- PASSAGE 59: AIRCRAFT TOWING AND PUSHBACK SAFETY ---
+
+Aircraft towing and pushback are ground operations that carry significant risk of aircraft structural damage if not performed correctly. Before towing, the aircraft must be thoroughly prepared: chocks removed, gear pins removed (if installed), all access doors and panels secured, marshalling lights operational, and a clear communication plan established between the tow crew and flight crew. The towbar must be the correct type for the aircraft and nose gear, and it must be connected within the nose gear steering angle limits. During towing, a qualified operator must steer the nose gear within limits at all times, and a wing walker must confirm clearance on each side. If the nose gear approaches its maximum steering angle, the tow must stop immediately. After tow or pushback, the nose gear steering pin must be removed, the nose gear steering system reconnected, and the correct bypass pin configuration restored. Failure to restore correct configuration can lead to loss of steering on subsequent departure.
+
+1656. What must be done before aircraft towing begins?
+a) The pilot must be informed and seated in the cockpit
+b) Chocks removed, gear pins removed, all doors secured, and communication plan established
+c) The APU must be running to provide hydraulic power for steering
+d) Ground power must be connected to the aircraft
+ANSWER: b
+
+1657. What is the risk if the nose gear approaches its maximum steering angle during towing?
+a) The towbar will disengage from the nose gear
+b) Structural damage to the nose gear or the aircraft
+c) The tow truck will lose steering control
+d) The aircraft's wheel brakes will automatically apply
+ANSWER: b
+
+1658. What must be done after pushback is completed?
+a) The chocks must be inserted before the towbar is disconnected
+b) The nose gear steering pin must be removed and nose gear steering system reconnected
+c) The aircraft must be connected to external electrical power
+d) The pilot must confirm the aircraft is ready for departure
+ANSWER: b
+
+1659. What is the role of the wing walker during towing?
+a) To control the speed of the tow tractor
+b) To confirm clearance on each side of the aircraft
+c) To operate the aircraft's wing flaps
+d) To maintain communication with the control tower
+ANSWER: b
+
+1660. Why must the correct towbar type be used for each aircraft and nose gear combination?
+a) Different towbars have different maximum towing speeds
+b) Using the wrong towbar can damage the nose gear attachment points or exceed structural limits
+c) Only the correct towbar will connect to the nose gear
+d) Incorrect towbars increase the risk of static electricity buildup
+ANSWER: b
+
+--- PASSAGE 60: ENGINE STARTER SYSTEM ---
+
+Aircraft engines are started using a starter system that provides the initial rotational force to spool up the engine for ignition and combustion to occur. Most large turbofan engines use an air turbine starter (ATS) driven by bleed air from the APU, ground air supply, or a running engine. The ATS converts high-pressure bleed air to rotational force through a turbine wheel, which is connected to the engine via a gearbox. Once the engine reaches a self-sustaining speed, the starter automatically disengages through a sprag clutch. The starter duty cycle (the allowed number of consecutive start attempts before a cooling period is required) must be observed to prevent starter overheating. If an engine fails to light off within the specified time, the start must be aborted and the engine allowed to drain of unburned fuel (motoring without ignition) to prevent a hot start on the next attempt. Electric starters are used on smaller turbine engines.
+
+1661. What provides the initial rotational force for starting most large turbofan engines?
+a) An electric starter motor
+b) An air turbine starter (ATS) driven by bleed air
+c) A hydraulic starter using engine oil pressure
+d) A pneumatic motor connected to the ground power unit
+ANSWER: b
+
+1662. How does the Air Turbine Starter disengage after engine start?
+a) The flight crew manually disengages it from the cockpit
+b) It disengages automatically through a sprag clutch when the engine reaches self-sustaining speed
+c) It is disengaged by closing the bleed air supply valve
+d) It disengages when the engine reaches idle speed
+ANSWER: b
+
+1663. What is the starter duty cycle?
+a) The total number of starts allowed before overhaul
+b) The allowed number of consecutive start attempts before a cooling period is required
+c) The time from start initiation to idle speed
+d) The maximum bleed air pressure allowed for starting
+ANSWER: b
+
+1664. What should be done if an engine fails to light off within the specified time?
+a) Continue cranking until the engine fires
+b) Abort the start and motor the engine without ignition to purge unburned fuel
+c) Increase the bleed air pressure and try again immediately
+d) Switch to the electric starter as a backup
+ANSWER: b
+
+1665. What happens if a start is attempted without clearing unburned fuel from the previous failed start?
+a) The engine fails to rotate
+b) A hot start may occur due to ignition of pooled unburned fuel
+c) The fuel system automatically purges itself
+d) The fuel nozzles become blocked
+ANSWER: b
+
+--- PASSAGE 61: AIRCRAFT SKIN INSPECTION ---
+
+The aircraft skin forms the outer aerodynamic surface and, together with the underlying structure, carries significant structural loads. During maintenance checks, the skin is inspected for dents, scratches, cracks, corrosion, missing fasteners, and evidence of fluid leaks. Allowable damage limits are specified in the aircraft's Structural Repair Manual (SRM) for dents and scratches, beyond which a repair or replacement is required. Small dents in non-critical areas that do not exceed the allowable depth and do not include cracks may often be left in place. However, dents with cracks or sharp radii must be repaired. Skin panels are attached to the underlying structure with rivets or screws. Missing, loose, or damaged fasteners must be replaced. Any corrosion found must be assessed for depth and extent and treated in accordance with the approved corrosion treatment procedure. Evidence of fuel, oil, or hydraulic fluid weeping through the skin or around panels must be investigated and the source identified.
+
+1666. What is inspected on the aircraft skin during maintenance checks?
+a) Weight and material composition
+b) Dents, scratches, cracks, corrosion, missing fasteners, and evidence of fluid leaks
+c) Paint colour consistency and aerodynamic finish
+d) Electromagnetic shielding properties
+ANSWER: b
+
+1667. When can a dent in a non-critical area be left in place?
+a) When it is confirmed that no aerodynamic effect is caused
+b) When it does not exceed the allowable depth and does not include cracks
+c) When the pilot has confirmed it is acceptable
+d) When it is more than 24 hours old and has not grown
+ANSWER: b
+
+1668. What type of dent must always be repaired?
+a) Any dent visible from more than 5 meters
+b) Dents with cracks or sharp radii
+c) Any dent deeper than 1mm
+d) Dents in high-visibility areas
+ANSWER: b
+
+1669. What is the reference document for dent and scratch allowable damage limits?
+a) The Aircraft Maintenance Manual (AMM)
+b) The Structural Repair Manual (SRM)
+c) The Component Maintenance Manual (CMM)
+d) The Illustrated Parts Catalogue (IPC)
+ANSWER: b
+
+1670. What must be done when fluid weeping is found through the skin or around panels?
+a) Clean the area and monitor for recurrence
+b) Investigate and identify the source of the fluid
+c) Seal with sealant as a temporary repair
+d) Record in the technical log and defer to the next scheduled check
+ANSWER: b
+
+--- PASSAGE 62: FUEL TANK SAFETY ---
+
+Working in and around aircraft fuel tanks is one of the most hazardous activities in aircraft maintenance. Fuel vapours are flammable and can accumulate in the tank even when apparently empty. Entry to a fuel tank requires a confined space risk assessment, a permit to enter, continuous atmospheric monitoring for fuel vapour and oxygen levels, and the presence of a safety attendant outside the tank at all times. All ignition sources must be removed from the area. Tools used inside fuel tanks must be of the approved non-sparking type. Electrical equipment used must be certified intrinsically safe (IS) or explosion-proof. Fuel tank entry personnel must wear appropriate personal protective equipment, including coveralls without metal zips or buttons (which could cause sparks), and intrinsically safe lighting. Recovery equipment and emergency procedures must be in place before entry. Due to the confined space and vapour hazard, no person should work alone inside a fuel tank.
+
+1671. What is required before entering an aircraft fuel tank?
+a) Engine shutdown and fuel drain only
+b) A confined space risk assessment, permit to enter, atmospheric monitoring, and safety attendant
+c) Fire extinguisher on standby and ventilation only
+d) Supervisor approval and personal protective equipment only
+ANSWER: b
+
+1672. What type of tools must be used inside fuel tanks?
+a) Standard calibrated tools
+b) Approved non-sparking type tools
+c) Electrically insulated tools
+d) Lightweight composite-handled tools
+ANSWER: b
+
+1673. What electrical equipment is permitted inside fuel tanks?
+a) Standard battery-operated tools
+b) Intrinsically safe (IS) or explosion-proof equipment
+c) 110V power tools with residual current device protection
+d) Equipment rated for use in wet environments
+ANSWER: b
+
+1674. Why must workers not wear coveralls with metal zips or buttons inside fuel tanks?
+a) Metal zips cause contamination of the fuel
+b) Metal can cause sparks that could ignite fuel vapour
+c) Metal zips are prohibited by fire regulations in all confined spaces
+d) Metal objects increase the risk of electrostatic discharge from the worker's body
+ANSWER: b
+
+1675. Why should no person work alone inside a fuel tank?
+a) Two people are required to complete the work efficiently
+b) Due to the confined space and vapour hazard, a person incapacitated inside needs to be rescued by a safety attendant
+c) The permit requires two signatures from inside workers
+d) Two workers are needed to operate the required monitoring equipment
+ANSWER: b
+
+--- PASSAGE 63: MAINTENANCE TASK CARDS ---
+
+Maintenance task cards (also called job cards or work packages) are the primary work-control documents used in aircraft maintenance. They are derived from the approved maintenance documentation (AMM, CMM, SRM, etc.) and define each individual maintenance task. A task card includes: the aircraft type and registration, the task reference number, the applicable maintenance manual reference, a step-by-step description of the work to be done, the required tools, materials, and equipment, any special precautions, and sign-off boxes for each step. The task card system ensures that all required tasks are issued and completed. Each step is checked off and initialled by the technician performing it. Upon completion, the certifying engineer signs the task card to certify the work is done in accordance with the referenced documentation. Task cards are then filed as part of the maintenance record. If a step cannot be completed as written, the issue must be raised with the maintenance supervisor before proceeding.
+
+1676. What is the purpose of a maintenance task card?
+a) To record the aircraft's flight history
+b) To define each individual maintenance task and control its execution
+c) To document the cost of maintenance operations
+d) To record the qualifications of the maintenance team
+ANSWER: b
+
+1677. What must a technician do if a step on a task card cannot be completed as written?
+a) Improvise an alternative method to complete the task
+b) Raise the issue with the maintenance supervisor before proceeding
+c) Skip the step and note it in the comments section
+d) Complete the adjacent steps and return to the problem step later
+ANSWER: b
+
+1678. After completing a task card, how is it used as a maintenance record?
+a) It is returned to the planning department for revision
+b) It is filed as part of the maintenance record
+c) It is discarded after the maintenance check is closed out
+d) It is forwarded to the regulatory authority
+ANSWER: b
+
+1679. What happens when a certifying engineer signs a task card?
+a) They confirm that the aircraft is ready for flight
+b) They certify that the work was done in accordance with the referenced documentation
+c) They authorise the next maintenance task to begin
+d) They approve the materials used for the task
+ANSWER: b
+
+1680. If a technician cannot complete a step as written, what MUST NOT happen?
+a) The supervisor must be called to assist
+b) The technician must not improvise and proceed without approval
+c) The step must be crossed out and rewritten
+d) The task card must be returned to the planning team
+ANSWER: b
+
+--- PASSAGE 64: AIRCRAFT ELECTRICAL LOAD ANALYSIS ---
+
+Aircraft electrical systems must be designed and maintained to handle all electrical loads without exceeding the capacity of the generators, buses, or wiring. Electrical load analysis (ELA) is performed to verify that the total demand does not exceed the available supply under all operating conditions, including normal, abnormal, and emergency. Each generator has a rated output (e.g., 90 kVA), and the combined loads of all electrical consumers must not exceed this rating. Bus voltage must remain within specified limits under all load conditions; excessive voltage drop indicates overloaded or faulty wiring. When modifications are made that add new electrical consumers, the ELA must be updated to verify that system capacity is not exceeded. Wiring inspection looks for chafing, broken insulation, loose connections, and evidence of overheating (discolouration). Any damaged wiring must be repaired using approved methods — splicing techniques and materials specified in the WDM and AMM.
+
+1681. What does Electrical Load Analysis (ELA) verify?
+a) That all circuit breakers are rated correctly
+b) That total electrical demand does not exceed available supply under all operating conditions
+c) That all wiring is correctly identified and labelled
+d) That the battery system can sustain all loads during engine failure
+ANSWER: b
+
+1682. What must be done when a modification adds new electrical consumers?
+a) Additional generators must be installed
+b) The ELA must be updated to verify that system capacity is not exceeded
+c) The modification must be tested in flight only
+d) The circuit breaker panel must be replaced
+ANSWER: b
+
+1683. What does excessive voltage drop in a circuit indicate?
+a) The circuit breaker is too small for the load
+b) Overloaded or faulty wiring
+c) The generator is producing too much power
+d) The bus bar has been incorrectly installed
+ANSWER: b
+
+1684. What must be used for aircraft wiring repairs?
+a) Any electrical tape that can withstand the voltage
+b) Approved splicing techniques and materials specified in the WDM and AMM
+c) Standard automotive wiring connectors
+d) Heat-shrink tubing and standard solder
+ANSWER: b
+
+1685. What does a wiring inspection look for?
+a) Correct wire colour coding only
+b) Chafing, broken insulation, loose connections, and evidence of overheating
+c) Correct routing as shown in the wiring diagram
+d) Secure attachment of wire bundles to the structure
+ANSWER: b
+
+--- PASSAGE 65: POST-MAINTENANCE TEST FLIGHT ---
+
+A test flight may be required after maintenance to verify that the aircraft and its systems are functioning correctly before it returns to normal service. Not all maintenance requires a test flight; the requirement is specified in the aircraft maintenance manual or by the certifying engineer based on the nature of the work. Typical reasons for a test flight include: following an engine change, after flight control rigging adjustments, following avionics system replacement or modification, after major structural repairs, and after a prolonged storage period. The test flight is performed by qualified test pilots or pilots with the appropriate authorisation for such flights. Prior to the test flight, a comprehensive pre-flight inspection must be completed and all maintenance documentation must be closed out. The test flight procedure specifies the checks and parameters to be verified. Any discrepancy found during the test flight must be recorded and rectified before the aircraft is released to normal service.
+
+1686. When is a test flight typically required after maintenance?
+a) After every maintenance check, regardless of scope
+b) As specified in the AMM or by the certifying engineer based on the nature of the work
+c) Only when the regulatory authority requires it
+d) After any component is replaced on the aircraft
+ANSWER: b
+
+1687. Which of the following maintenance activities would most likely require a test flight?
+a) Routine tyre pressure check
+b) Engine change or flight control rigging adjustment
+c) Aircraft washing and corrosion treatment
+d) Replacement of a landing light bulb
+ANSWER: b
+
+1688. What must be completed before a test flight?
+a) All passengers must be disembarked and cargo offloaded
+b) A comprehensive pre-flight inspection and closure of all maintenance documentation
+c) A fuel system pressure check and engine power assurance run
+d) Completion of an air traffic control flight plan only
+ANSWER: b
+
+1689. What must happen to discrepancies found during a test flight?
+a) They are noted and presented to the customer at delivery
+b) They must be recorded and rectified before the aircraft is released to normal service
+c) They are deferred under the MEL for the first revenue service
+d) Minor discrepancies may be cleared by the test pilot in the aircraft log
+ANSWER: b
+
+1690. Who may perform a maintenance test flight?
+a) Any qualified commercial pilot
+b) Qualified test pilots or pilots with the appropriate authorisation for such flights
+c) The certifying engineer if they hold a pilot's licence
+d) Any pilot who has operated the aircraft type before
+ANSWER: b
+
+--- PASSAGE 66: AIRCRAFT SKIN REPAIR CONCEPTS ---
+
+Aircraft skin repairs must restore the structure to its original strength, stiffness, and aerodynamic profile. The primary method for repairing damaged aluminium skin is the "flush doubler" or "patch" repair, in which a metal repair patch is installed over the damage, either on the inner or outer surface. Flush repairs maintain the aerodynamic profile by using a countersunk fastener pattern. The patch must be designed to maintain the load paths through the structure and must be of the correct material specification, thickness, and temper as specified in the SRM. Riveted repairs are most common, but bonded repairs are also used for certain applications. The damaged area must be prepared by removing all loose material, treating any corrosion, and ensuring the surface is clean and dry before applying the repair. After repair, the fastener installation must be checked for correct driven head dimensions and edge distance. All repairs are documented in the structural repair log.
+
+1691. What must an aircraft skin repair restore?
+a) Only the structural strength of the original skin
+b) Original strength, stiffness, and aerodynamic profile
+c) The original skin material and colour
+d) The original fastener pattern
+ANSWER: b
+
+1692. What is a "flush doubler" repair?
+a) A repair using two layers of skin panels riveted together
+b) A repair patch installed flush with the surface using countersunk fasteners to maintain the aerodynamic profile
+c) A repair that replaces the damaged panel completely
+d) A repair that adds a patch on both sides of the damage
+ANSWER: b
+
+1693. What determines the correct repair patch specification?
+a) The technician's experience with similar repairs
+b) The SRM, which specifies the required material, thickness, and temper
+c) The nearest available compatible material in stores
+d) The aircraft manufacturer's helpline
+ANSWER: b
+
+1694. What is checked after riveted fastener installation in a skin repair?
+a) That the rivet pattern matches the original design
+b) Correct driven head dimensions and edge distance
+c) That the surface is flat and smooth
+d) That the repair matches the surrounding paint colour
+ANSWER: b
+
+1695. Where are aircraft skin repairs documented?
+a) In the maintenance manual
+b) In the structural repair log
+c) In the technical log
+d) In the task card only
+ANSWER: b
+
+--- PASSAGE 67: CARGO LOADING AND RESTRAINT ---
+
+Cargo carried in aircraft cargo compartments must be loaded, distributed, and restrained in accordance with the aircraft's loading manual to ensure the aircraft remains within weight and balance limits and that cargo cannot shift during flight. Cargo loading is governed by maximum floor loading limits (in pounds or kilograms per square foot), compartment maximum weights, and overall maximum payload. Cargo must be secured using nets, straps, or locks rated for the forces that can be experienced during flight, including turbulence and emergency manoeuvres. Unit load devices (ULDs) such as containers and pallets are locked into the aircraft floor with latches. Dangerous goods must be loaded in accordance with IATA Dangerous Goods Regulations, with appropriate segregation from incompatible goods. Overloaded cargo or cargo loaded outside the allowable floor loading limits can cause structural damage to the cargo floor. Undeclared dangerous goods in cargo can pose a serious safety risk.
+
+1696. What must be ensured when loading cargo into an aircraft?
+a) That all cargo is the same weight to ensure balance
+b) That the aircraft remains within weight and balance limits and cargo cannot shift during flight
+c) That cargo is placed as far aft as possible to improve CG
+d) That all cargo is loaded at the same time to save time
+ANSWER: b
+
+1697. What is a "Unit Load Device" (ULD)?
+a) A device that measures the weight of cargo before loading
+b) A container or pallet that is locked into the aircraft floor with latches
+c) A restraint system for oversized cargo
+d) A loading tool used to move heavy cargo
+ANSWER: b
+
+1698. What regulations govern the loading of dangerous goods?
+a) ICAO Annex 6 — Operation of Aircraft
+b) IATA Dangerous Goods Regulations
+c) CAA Air Navigation Order
+d) FAA Federal Aviation Regulations Part 121
+ANSWER: b
+
+1699. What structural damage can result from overloaded cargo?
+a) Damage to the main wing structure
+b) Structural damage to the cargo floor
+c) Damage to the fuselage frames
+d) Damage to the overhead luggage compartments
+ANSWER: b
+
+1700. Why can undeclared dangerous goods in cargo pose a serious safety risk?
+a) They increase the aircraft's weight beyond allowable limits
+b) They may not be handled correctly, packaged appropriately, or placed in the correct location, leading to fire, explosion, or toxic exposure
+c) They prevent correct weight and balance calculations
+d) They may contaminate other cargo
+ANSWER: b
+
+--- PASSAGE 68: HYDRAULIC PUMP TYPES AND MAINTENANCE ---
+
+Aircraft hydraulic systems use different types of pumps depending on the required performance and redundancy. Engine-driven pumps (EDPs) are the primary source of hydraulic pressure and are driven from the engine accessory gearbox. Electric motor-driven pumps (EMDPs) are used for backup or ground operations when engines are not running. Air-driven pumps (PTU — power transfer unit) transfer hydraulic power from one system to another using a hydraulic motor-pump combination, without transferring fluid between systems. Ram air turbine pumps deploy a small turbine into the airstream in emergencies to provide backup hydraulic pressure. Engine-driven pump maintenance includes checking for external leaks, monitoring case drain pressure and temperature, and inspecting the drive shaft seal. Electric pump maintenance includes checking motor current draw and insulation resistance. Pump output pressure and flow are tested against the maintenance manual limits to verify serviceability.
+
+1701. What is the primary source of hydraulic pressure on most aircraft?
+a) Electric motor-driven pumps
+b) Engine-driven pumps (EDPs) driven from the engine accessory gearbox
+c) Power transfer units (PTUs)
+d) Ram air turbine pumps
+ANSWER: b
+
+1702. What does a Power Transfer Unit (PTU) do?
+a) Transfers hydraulic fluid from one system to another
+b) Transfers hydraulic power from one system to another using a motor-pump combination, without transferring fluid
+c) Transfers electrical power to operate hydraulic pumps
+d) Transfers hydraulic pressure to the flight controls only
+ANSWER: b
+
+1703. When is an electric motor-driven pump (EMDP) typically used?
+a) As the primary pump at all times
+b) As a backup or during ground operations when engines are not running
+c) Only in emergency conditions when the EDP fails
+d) Only during high-demand operations such as landing gear retraction
+ANSWER: b
+
+1704. What does engine-driven pump maintenance include?
+a) Replacement of the pump drive shaft at each A-check
+b) Checking for external leaks, monitoring case drain pressure and temperature, and inspecting the drive shaft seal
+c) Replacement of the pump filter element only
+d) Pressure testing the pump against a calibrated flow bench
+ANSWER: b
+
+1705. How is pump serviceability verified during maintenance?
+a) By checking the hydraulic fluid colour
+b) By testing pump output pressure and flow against maintenance manual limits
+c) By monitoring the cockpit hydraulic pressure gauge
+d) By running the engine to maximum power and checking for pressure drops
+ANSWER: b
+
+--- PASSAGE 69: OXYGEN SYSTEM MAINTENANCE ---
+
+Aircraft oxygen systems require careful maintenance to ensure oxygen is available in the correct quantity and purity for emergency use. Gaseous oxygen cylinders must be visually inspected for corrosion, dents, and damage, and hydrostatically tested at intervals specified in the regulatory requirements. Oxygen system components must be completely free of oil and grease contamination, as these can ignite violently in high-pressure oxygen. All tools and personnel hands must be clean and free from grease when working on oxygen systems. Cylinder pressure must be within the specified limits; cylinders with pressure below the minimum are recharged or replaced. Oxygen masks and regulators are functionally tested to ensure the correct flow rate is delivered at the appropriate altitude. Continuous flow masks are simpler and less expensive, while pressure demand masks are used for crew at high altitudes, delivering oxygen on demand. Oxygen system plumbing must be inspected for corrosion, damage, and leaks, and connections must be leak-tested after any opening.
+
+1706. How are gaseous oxygen cylinders tested for integrity?
+a) By X-ray inspection of the cylinder wall
+b) By visual inspection and hydrostatic testing at specified intervals
+c) By measuring the wall thickness with ultrasound
+d) By conducting a pressure decay test using nitrogen
+ANSWER: b
+
+1707. Why must tools and personnel hands be clean when working on oxygen systems?
+a) To prevent contamination that could reduce oxygen purity
+b) Oil and grease can ignite violently in high-pressure oxygen
+c) Grease can cause corrosion in oxygen system plumbing
+d) Oil contamination clogs the oxygen regulators
+ANSWER: b
+
+1708. What is the difference between continuous flow and pressure demand oxygen masks?
+a) Continuous flow masks are for crew use, pressure demand for passengers
+b) Continuous flow masks deliver a constant flow, while pressure demand masks are for crew at high altitude delivering oxygen on demand
+c) Continuous flow masks operate on positive pressure, demand masks on negative pressure
+d) There is no functional difference, only a physical difference
+ANSWER: b
+
+1709. When must oxygen system connections be leak-tested?
+a) Only when a leak is suspected
+b) After any connection is opened
+c) At each annual inspection
+d) When the oxygen cylinder is replaced only
+ANSWER: b
+
+1710. What is the minimum pressure requirement for oxygen cylinders?
+a) They may be used at any pressure above atmospheric
+b) They must be above the minimum specified pressure; below this they are recharged or replaced
+c) They must be at maximum fill pressure before each flight
+d) Cylinder pressure is not a maintenance concern
+ANSWER: b
+
+--- PASSAGE 70: MAINTENANCE PROGRAMME CONTROL ---
+
+An approved aircraft maintenance programme (AMP) is a document that defines the maintenance tasks, intervals, and procedures required to keep an aircraft airworthy throughout its operating life. The AMP is developed based on the aircraft manufacturer's maintenance planning document (MPD), Airworthiness Directives (ADs), Service Bulletins (SBs), and operational experience. The programme must be approved by the competent regulatory authority. Maintenance intervals are expressed in flight hours, cycles, and calendar time. For certain tasks, escalation (extending the interval) may be approved based on operating experience and condition monitoring data. The AMP is subject to periodic revision as new data becomes available, and operators must ensure they are working to the current approved revision. Failure to comply with the AMP may result in the aircraft losing its airworthiness status. An audit of the AMP compliance is regularly performed by the quality assurance function and by the regulatory authority.
+
+1711. What is the basis for developing an aircraft maintenance programme (AMP)?
+a) Manufacturer's recommendations, ADs, SBs, and operational experience
+b) The operator's commercial preferences and budget constraints
+c) Regulatory authority requirements only
+d) Industry average maintenance intervals
+ANSWER: a
+
+1712. How are maintenance intervals typically expressed in an AMP?
+a) Only in calendar time
+b) In flight hours, cycles, and calendar time
+c) Only in flight hours
+d) In aircraft miles flown
+ANSWER: b
+
+1713. What is "escalation" in the context of maintenance intervals?
+a) Increasing the complexity of maintenance tasks
+b) Extending an interval beyond the standard value, based on operating experience
+c) Upgrading the maintenance standard to a higher level
+d) Moving a maintenance task to a heavier check
+ANSWER: b
+
+1714. What could happen if an operator fails to comply with the AMP?
+a) The operator receives a written warning only
+b) The aircraft may lose its airworthiness status
+c) The operator's insurance becomes invalid
+d) The manufacturer withdraws technical support
+ANSWER: b
+
+1715. Who audits AMP compliance?
+a) The manufacturer's service representative only
+b) The quality assurance function and the regulatory authority
+c) The airline's finance department
+d) The flight crew before each flight
+ANSWER: b
+
+--- Q1716-Q1740 (Additional Reading Comprehension) ---
+
+Read the following passage and answer questions 1716-1720:
+
+PASSAGE 71: CORROSION IN AIRCRAFT FUEL TANKS
+
+Corrosion in aircraft fuel tanks is a significant maintenance concern and can compromise structural integrity and fuel system reliability. Aluminium fuel tanks are susceptible to pitting corrosion, particularly at low points where water and sediment accumulate. Microbial corrosion (MIC) occurs when bacteria and fungi in the tank produce acids as metabolic byproducts. These microorganisms can survive in the fuel-water interface at the bottom of the tank. Regular fuel sump checks and tank inspections detect accumulation of sediment, water, and biological growth. Treatment involves draining, cleaning, biocide application, and inspection for structural damage. Any pitting corrosion found must be measured and assessed against the allowable limits in the SRM. Deep pitting may require structural repair or panel replacement. Corrosion inhibitors added to the fuel also help to reduce the rate of corrosion.
+
+1716. Where do bacteria and fungi survive in an aircraft fuel tank?
+a) Throughout the bulk fuel mass
+b) At the fuel-water interface at the bottom of the tank
+c) On the upper walls of the tank near the fuel vents
+d) In the fuel transfer lines only
+ANSWER: b
+
+1717. What is Microbial Induced Corrosion (MIC)?
+a) Corrosion caused by dissimilar metal contact in the tank
+b) Corrosion caused by acids produced by bacteria and fungi as metabolic byproducts
+c) Corrosion caused by water contamination in the fuel
+d) Corrosion caused by incorrect fuel type being loaded
+ANSWER: b
+
+1718. How is MIC treated in fuel tanks?
+a) By installing a nitrogen inert system
+b) By draining, cleaning, applying biocide, and inspecting for structural damage
+c) By adding anti-freeze to the fuel
+d) By sealing the fuel tank completely to prevent further moisture ingress
+ANSWER: b
+
+1719. When pitting corrosion is found in a fuel tank, what is the next step?
+a) Seal the pitted area with fuel tank sealant
+b) Measure the pitting depth and assess against allowable limits in the SRM
+c) Replace the panel without further assessment
+d) Apply anti-corrosion primer directly over the pitting
+ANSWER: b
+
+1720. How do corrosion inhibitors added to fuel help?
+a) They prevent water from entering the tank
+b) They reduce the rate of corrosion on the tank surfaces
+c) They kill bacteria and fungi in the fuel
+d) They prevent sediment from settling at the bottom of the tank
+ANSWER: b
+
+Read the following passage and answer questions 1721-1725:
+
+PASSAGE 72: AIRCRAFT FLIGHT CONTROL SYSTEMS
+
+Modern aircraft use either mechanical, fly-by-wire, or hybrid flight control systems to translate pilot inputs into control surface movements. In mechanical systems, pilot inputs are transmitted through cables, pulleys, and rods to move the control surfaces. These systems require regular rigging checks to maintain correct control surface positions and movement ranges. Fly-by-wire (FBW) systems replace most mechanical linkages with electrical wiring, with computers processing pilot inputs and commanding actuators. FBW systems provide envelope protection, preventing the pilot from commanding movements that exceed the aircraft's structural or aerodynamic limits. Maintenance of FBW systems involves functional testing of sensors, computers, and actuators, as well as software version verification. After any work on flight control systems — mechanical or FBW — a full range of movement check must be performed to verify correct operation before return to service.
+
+1721. How are pilot inputs transmitted in a mechanical flight control system?
+a) Through hydraulic actuators only
+b) Through cables, pulleys, and rods to move the control surfaces
+c) Through electrical wiring to flight control computers
+d) Through a combination of hydraulic and pneumatic actuators
+ANSWER: b
+
+1722. What is envelope protection in a fly-by-wire system?
+a) A physical barrier preventing flight crew from over-controlling
+b) A function that prevents the pilot from commanding movements that exceed structural or aerodynamic limits
+c) An emergency system that limits control surface travel in turbulence
+d) A software protection that records all control inputs
+ANSWER: b
+
+1723. What maintenance is performed on fly-by-wire systems?
+a) Regular cable tension checks and pulley lubrication
+b) Functional testing of sensors, computers, and actuators, and software version verification
+c) Rigging adjustments to maintain correct neutral positions
+d) Inspection of control surface hinge bushings
+ANSWER: b
+
+1724. What must be performed after any work on a flight control system?
+a) A pressure test of the hydraulic actuators
+b) A full range of movement check to verify correct operation before return to service
+c) A functional test of the autopilot system
+d) An aerodynamic assessment of the control surface profile
+ANSWER: b
+
+1725. What does a rigging check of mechanical flight controls verify?
+a) That the hydraulic actuators are correctly installed
+b) That correct control surface positions and movement ranges are maintained
+c) That the control surface materials meet specification
+d) That the fly-by-wire computers are correctly interfaced with the mechanical backup
+ANSWER: b
+
+Read the following passage and answer questions 1726-1730:
+
+PASSAGE 73: AIRCRAFT PNEUMATIC SYSTEMS
+
+Aircraft pneumatic systems use compressed air as a working fluid for a range of functions. On most large jet aircraft, bleed air from the engine compressor stages is the primary source of pneumatic pressure. This bleed air, after pressure regulation and temperature conditioning, is used for cabin air supply, wing anti-icing, engine starting, thrust reversers, and other actuators. Precoolers reduce the temperature of bleed air before it enters the pneumatic manifold. Pressure regulating and shutoff valves (PRSOVs) control the pressure and flow of bleed air. If bleed air temperature or pressure exceeds limits, the overheat and overpressure protection systems close the supply valves to protect the distribution system. Maintenance includes inspection of bleed air ducts for hot air leaks, testing of temperature sensors and PRSOVs, and checking duct couplings and clamps. Hot air leaks in the bleed air system can cause significant structural damage if undetected.
+
+1726. What is the primary source of pneumatic pressure on most large jet aircraft?
+a) Dedicated compressors driven by the APU
+b) Bleed air from the engine compressor stages
+c) High-pressure hydraulic air reservoirs
+d) Ground air supply units
+ANSWER: b
+
+1727. Why are precoolers used in the bleed air system?
+a) To increase the pressure of bleed air before it enters the cabin
+b) To reduce the temperature of bleed air before it enters the pneumatic manifold
+c) To filter contamination from the bleed air supply
+d) To separate moisture from the bleed air
+ANSWER: b
+
+1728. What does the overpressure protection system do in the pneumatic system?
+a) It increases pressure to maintain supply during high demand
+b) It closes supply valves if bleed air pressure exceeds limits to protect the distribution system
+c) It redirects excess pressure to the cabin pressurization system
+d) It activates the APU to provide backup bleed air
+ANSWER: b
+
+1729. What damage can hot air leaks in the bleed air system cause?
+a) Contamination of the fuel system
+b) Significant structural damage if undetected
+c) Overpressurisation of the aircraft cabin
+d) Loss of thrust on the affected engine
+ANSWER: b
+
+1730. What does maintenance of the pneumatic system include?
+a) Replacement of all bleed air valves at fixed intervals
+b) Inspection of ducts for hot air leaks, testing of sensors and PRSOVs, and checking duct couplings
+c) Calibration of the cockpit pressure gauges
+d) Replacement of the engine bleed air manifold at each C-check
+ANSWER: b
+
+Read the following passage and answer questions 1731-1735:
+
+PASSAGE 74: SAFETY MANAGEMENT IN MAINTENANCE
+
+A Safety Management System (SMS) in a maintenance organisation provides a systematic approach to identifying, assessing, and mitigating safety risks. The four pillars of SMS are: safety policy, safety risk management, safety assurance, and safety promotion. Safety risk management involves hazard identification, risk assessment, and the implementation of risk controls. Safety assurance involves monitoring and measuring safety performance to ensure that controls remain effective. Hazard reports submitted by maintenance personnel are a key input to the SMS. An open reporting culture where personnel report errors and near-misses without fear of punishment is essential for an effective SMS. Senior management commitment to safety is fundamental; safety must be prioritised over production pressures. Regular safety audits assess the effectiveness of the SMS and identify areas for improvement.
+
+1731. What are the four pillars of an SMS?
+a) Quality, safety, training, and documentation
+b) Safety policy, safety risk management, safety assurance, and safety promotion
+c) Hazard identification, risk assessment, risk control, and safety monitoring
+d) Procedures, documentation, auditing, and training
+ANSWER: b
+
+1732. What is the role of safety assurance in SMS?
+a) To identify new hazards in the organisation
+b) To monitor and measure safety performance to ensure controls remain effective
+c) To train personnel in safety procedures
+d) To investigate accidents and incidents
+ANSWER: b
+
+1733. What is essential for an effective SMS in a maintenance organisation?
+a) A strict punitive culture for all errors
+b) An open reporting culture where personnel report errors without fear of punishment
+c) A separate safety team independent of the maintenance organisation
+d) A computerised SMS software system
+ANSWER: b
+
+1734. What is the role of hazard reports submitted by maintenance personnel?
+a) They are reviewed and archived for regulatory compliance
+b) They are a key input to the SMS hazard identification process
+c) They are used only to discipline the personnel who reported the hazard
+d) They are forwarded to the aircraft manufacturer for information
+ANSWER: b
+
+1735. Why must safety be prioritised over production pressures?
+a) Regulations require safety to always take priority
+b) Production pressures are a known contributor to maintenance errors and safety compromises
+c) Safety is always more cost-effective in the long run
+d) Production schedules are the responsibility of the operations department, not maintenance
+ANSWER: b
+
+Read the following passage and answer questions 1736-1740:
+
+PASSAGE 75: AIRCRAFT FUEL TYPES AND SPECIFICATIONS
+
+Aviation fuels must meet strict specifications to ensure safe, reliable engine operation across the operating range. Jet A and Jet A-1 are the most widely used turbine fuels in commercial aviation. Jet A-1 has a lower freeze point (-47°C) than Jet A (-40°C), making it preferred for long-range international operations where aircraft may be exposed to extreme cold. Jet B is a wider-cut fuel used in some military and cold-weather operations. AVGAS (aviation gasoline) is used in piston-engine aircraft. Jet fuels must meet specifications for freeze point, flash point, density, viscosity, thermal stability, and lubricity. Misfuelling (filling a turbine aircraft with AVGAS or vice versa) is extremely dangerous. Before fuelling, the fuel type, batch number, and quality documentation must be checked by the fuelling operator. Fuel uplifted must be recorded in the technical log.
+
+1736. What is the main difference between Jet A and Jet A-1?
+a) Jet A-1 is designed for military aircraft, Jet A for civilian
+b) Jet A-1 has a lower freeze point than Jet A, making it preferred for long-range international operations
+c) Jet A has higher energy density than Jet A-1
+d) Jet A-1 contains biocide additives; Jet A does not
+ANSWER: b
+
+1737. What is AVGAS used for?
+a) Turboprop aircraft
+b) Piston-engine aircraft
+c) Business jet aircraft
+d) Turbofan engines at low altitudes
+ANSWER: b
+
+1738. Why is misfuelling extremely dangerous?
+a) AVGAS is more expensive than jet fuel
+b) Incorrect fuel types can cause engine damage or failure and may cause fire
+c) Misfuelling causes the fuel quantity gauges to read incorrectly
+d) Different fuel types have different tank compatibility
+ANSWER: b
+
+1739. What must be checked before fuelling an aircraft?
+a) That the fuel bowser is connected to earth
+b) The fuel type, batch number, and quality documentation
+c) That the aircraft engines are shut down
+d) The fuel tank capacity remaining
+ANSWER: b
+
+1740. Where must fuel uplifted be recorded?
+a) In the fuel operator's daily log
+b) In the aircraft technical log
+c) In the loadsheet only
+d) In the fuel bowser's calibration record
+ANSWER: b
+
+================================================================
+CEVAP ANAHTARI - BÖLÜM 4 DEVAM: OKUMA (Q1516-Q1740)
+================================================================
+1516-b  1517-c  1518-b  1519-b  1520-b  1521-b  1522-b  1523-b  1524-b  1525-b
+1526-c  1527-a  1528-b  1529-b  1530-d  1531-b  1532-b  1533-b  1534-b  1535-b
+1536-b  1537-b  1538-b  1539-b  1540-b  1541-b  1542-b  1543-b  1544-b  1545-c
+1546-b  1547-b  1548-b  1549-b  1550-b  1551-c  1552-b  1553-b  1554-b  1555-b
+1556-b  1557-b  1558-b  1559-b  1560-b  1561-b  1562-b  1563-b  1564-b  1565-b
+1566-b  1567-b  1568-b  1569-b  1570-b  1571-b  1572-b  1573-b  1574-b  1575-b
+1576-b  1577-b  1578-b  1579-b  1580-b  1581-b  1582-b  1583-b  1584-b  1585-b
+1586-b  1587-b  1588-b  1589-b  1590-b  1591-b  1592-b  1593-b  1594-b  1595-b
+1596-b  1597-b  1598-b  1599-b  1600-b  1601-b  1602-b  1603-b  1604-b  1605-b
+1606-b  1607-b  1608-b  1609-b  1610-b  1611-b  1612-b  1613-b  1614-b  1615-b
+1616-b  1617-b  1618-b  1619-b  1620-b  1621-b  1622-b  1623-b  1624-b  1625-b
+1626-b  1627-b  1628-b  1629-b  1630-b  1631-b  1632-b  1633-b  1634-b  1635-b
+1636-b  1637-b  1638-b  1639-b  1640-b  1641-b  1642-b  1643-b  1644-b  1645-b
+1646-b  1647-b  1648-b  1649-b  1650-b  1651-b  1652-b  1653-b  1654-b  1655-b
+1656-b  1657-b  1658-b  1659-b  1660-b  1661-b  1662-b  1663-b  1664-b  1665-b
+1666-b  1667-b  1668-b  1669-b  1670-b  1671-b  1672-b  1673-b  1674-b  1675-b
+1676-b  1677-b  1678-b  1679-b  1680-b  1681-b  1682-b  1683-b  1684-b  1685-b
+1686-b  1687-b  1688-b  1689-b  1690-b  1691-b  1692-b  1693-b  1694-b  1695-b
+1696-b  1697-b  1698-b  1699-b  1700-b  1701-b  1702-b  1703-b  1704-b  1705-b
+1706-b  1707-b  1708-b  1709-b  1710-b  1711-a  1712-b  1713-b  1714-b  1715-b
+1716-b  1717-b  1718-b  1719-b  1720-b  1721-b  1722-b  1723-b  1724-b  1725-b
+1726-b  1727-b  1728-b  1729-b  1730-b  1731-b  1732-b  1733-b  1734-b  1735-b
+1736-b  1737-b  1738-b  1739-b  1740-b

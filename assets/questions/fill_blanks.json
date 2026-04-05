@@ -1,0 +1,4477 @@
+[
+  {
+    "id": 1376,
+    "cat": "fill_blanks",
+    "orig": 751,
+    "q": "The throttle control system is ………… electrical; it includes separate throttle control lever assemblies.",
+    "opts": [
+      "partially",
+      "fully",
+      "half",
+      "semi"
+    ],
+    "ans": 0,
+    "diff": "easy",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 1377,
+    "cat": "fill_blanks",
+    "orig": 752,
+    "q": "It ………… separate throttle control lever assemblies, one for each engine.",
+    "opts": [
+      "inclines",
+      "innates",
+      "internalizes",
+      "includes"
+    ],
+    "ans": 3,
+    "diff": "easy",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 1378,
+    "cat": "fill_blanks",
+    "orig": 753,
+    "q": "………… throttle control lever drives one throttle control unit.",
+    "opts": [
+      "Each",
+      "Every",
+      "None",
+      "Some"
+    ],
+    "ans": 0,
+    "diff": "easy",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 1379,
+    "cat": "fill_blanks",
+    "orig": 754,
+    "q": "The unit ………… under the center pedestal.",
+    "opts": [
+      "locates",
+      "is located",
+      "are located",
+      "is locating"
+    ],
+    "ans": 1,
+    "diff": "easy",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 1380,
+    "cat": "fill_blanks",
+    "orig": 755,
+    "q": "Each ………… of the Electronic Engine Control receives the position signal.",
+    "opts": [
+      "tube",
+      "device",
+      "channel",
+      "barrier"
+    ],
+    "ans": 2,
+    "diff": "easy",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 1381,
+    "cat": "fill_blanks",
+    "orig": 756,
+    "q": "Maintenance facilities that replace heat sinks ………… return the carbon heat sinks to the applicable distributor.",
+    "opts": [
+      "would",
+      "must",
+      "could",
+      "will"
+    ],
+    "ans": 1,
+    "diff": "easy",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 1382,
+    "cat": "fill_blanks",
+    "orig": 757,
+    "q": "Lead-acid batteries can produce explosive mixtures while ………… charge or discharge.",
+    "opts": [
+      "at",
+      "under",
+      "in",
+      "on"
+    ],
+    "ans": 1,
+    "diff": "easy",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 1383,
+    "cat": "fill_blanks",
+    "orig": 758,
+    "q": "If the engine ………… recently, check the temperature in the combustion chamber area.",
+    "opts": [
+      "ran",
+      "have been running",
+      "has been run",
+      "was running"
+    ],
+    "ans": 2,
+    "diff": "easy",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 1384,
+    "cat": "fill_blanks",
+    "orig": 759,
+    "q": "All aural alerts must be ………… through the headsets.",
+    "opts": [
+      "audible",
+      "auditory",
+      "loud",
+      "auditable"
+    ],
+    "ans": 0,
+    "diff": "easy",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 1385,
+    "cat": "fill_blanks",
+    "orig": 760,
+    "q": "If there ………… an airflow at the ram air outlet, do the fault isolation procedure.",
+    "opts": [
+      "have",
+      "is",
+      "will be",
+      "are"
+    ],
+    "ans": 1,
+    "diff": "easy",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 1386,
+    "cat": "fill_blanks",
+    "orig": 761,
+    "q": "At engine manufacture, it ………… customary to provide bolts with reduced pitch diameter.",
+    "opts": [
+      "may be",
+      "will be",
+      "to be",
+      "is"
+    ],
+    "ans": 3,
+    "diff": "easy",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 1387,
+    "cat": "fill_blanks",
+    "orig": 762,
+    "q": "It is customary ………… bolts with reduced pitch diameter for use in hot sections.",
+    "opts": [
+      "to provide",
+      "is providing",
+      "is provided",
+      "providing"
+    ],
+    "ans": 0,
+    "diff": "easy",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 1388,
+    "cat": "fill_blanks",
+    "orig": 763,
+    "q": "This will ………… the possibility of bolt and nut seizure.",
+    "opts": [
+      "increase",
+      "shrink",
+      "minimize",
+      "expand"
+    ],
+    "ans": 2,
+    "diff": "easy",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 1389,
+    "cat": "fill_blanks",
+    "orig": 764,
+    "q": "This is standard practice for locations ………… parts are subjected to high temperatures.",
+    "opts": [
+      "when",
+      "where",
+      "which",
+      "who"
+    ],
+    "ans": 1,
+    "diff": "easy",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 1390,
+    "cat": "fill_blanks",
+    "orig": 765,
+    "q": "Parts ………… temperatures in excess of 500 degree F.",
+    "opts": [
+      "is subjected to",
+      "are subjecting to",
+      "subject to",
+      "are subjected to"
+    ],
+    "ans": 3,
+    "diff": "easy",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 1391,
+    "cat": "fill_blanks",
+    "orig": 766,
+    "q": "Put a wet brake assembly in a warm location for sufficient time to let the water ………….",
+    "opts": [
+      "evaporate",
+      "evaporated",
+      "evaporating",
+      "is evaporated"
+    ],
+    "ans": 0,
+    "diff": "easy",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 1392,
+    "cat": "fill_blanks",
+    "orig": 767,
+    "q": "Cadmium that ………… can cause kidney or reproductive system disease.",
+    "opts": [
+      "is swallowed",
+      "is swallowing",
+      "swallowed",
+      "swallows"
+    ],
+    "ans": 0,
+    "diff": "easy",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 1393,
+    "cat": "fill_blanks",
+    "orig": 768,
+    "q": "On in-service aircraft, some isolated cracks ………… discovered on plate assemblies at 3633 flights.",
+    "opts": [
+      "has been",
+      "have been",
+      "has",
+      "have"
+    ],
+    "ans": 1,
+    "diff": "easy",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 1394,
+    "cat": "fill_blanks",
+    "orig": 769,
+    "q": "The justifications include information necessary to show compliance ………… applicable CS-MMEL paragraphs.",
+    "opts": [
+      "in",
+      "with",
+      "to",
+      "under"
+    ],
+    "ans": 1,
+    "diff": "easy",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 1395,
+    "cat": "fill_blanks",
+    "orig": 770,
+    "q": "You must wait for a minimum of one hour before you ………… or try ………… the APU again.",
+    "opts": [
+      "start / start",
+      "starting / to start",
+      "to start / start",
+      "start / to start"
+    ],
+    "ans": 3,
+    "diff": "easy",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 1396,
+    "cat": "fill_blanks",
+    "orig": 771,
+    "q": "Unit Zones ………… by the number of the Units of the Major Zones.",
+    "opts": [
+      "identified",
+      "are identified",
+      "have identified",
+      "identify"
+    ],
+    "ans": 1,
+    "diff": "easy",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 1397,
+    "cat": "fill_blanks",
+    "orig": 772,
+    "q": "If an access door or panel ………… in more than one zone, the lowest zone number applicable ………….",
+    "opts": [
+      "is / is used",
+      "is being / are used",
+      "has / has been used",
+      "has / has used"
+    ],
+    "ans": 0,
+    "diff": "easy",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 1398,
+    "cat": "fill_blanks",
+    "orig": 773,
+    "q": "The clearance to edges ………… more than 300 times of the glass cloth thickness.",
+    "opts": [
+      "could be",
+      "have to be",
+      "should be",
+      "must be"
+    ],
+    "ans": 3,
+    "diff": "easy",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 1399,
+    "cat": "fill_blanks",
+    "orig": 774,
+    "q": "The busbars ………… 115V AC to the electrically ………… seats.",
+    "opts": [
+      "supply / operating",
+      "supply / operated",
+      "will supply / operated",
+      "are supplied / operating"
+    ],
+    "ans": 1,
+    "diff": "easy",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 1400,
+    "cat": "fill_blanks",
+    "orig": 775,
+    "q": "Put a warning notice in the cockpit ………… persons not to operate the flight controls.",
+    "opts": [
+      "to have told",
+      "telling",
+      "to tell",
+      "tells"
+    ],
+    "ans": 1,
+    "diff": "easy",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 1401,
+    "cat": "fill_blanks",
+    "orig": 776,
+    "q": "The pretreatment of a material ………… the corrosion resistant properties and ………… a good surface for the bond.",
+    "opts": [
+      "increases / provides",
+      "increase / providing",
+      "increases / will provide",
+      "increasing / provides"
+    ],
+    "ans": 0,
+    "diff": "easy",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 1402,
+    "cat": "fill_blanks",
+    "orig": 777,
+    "q": "The procedure ………… to remove paint coatings from metallic materials.",
+    "opts": [
+      "can use",
+      "could use",
+      "could be used",
+      "can be used"
+    ],
+    "ans": 3,
+    "diff": "easy",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 1403,
+    "cat": "fill_blanks",
+    "orig": 778,
+    "q": "All axial loads from the engine ………… to the pylon through the forward mount.",
+    "opts": [
+      "transferring",
+      "transferred",
+      "are transferred",
+      "are transferred to"
+    ],
+    "ans": 2,
+    "diff": "easy",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 1404,
+    "cat": "fill_blanks",
+    "orig": 779,
+    "q": "When an engine is dry motored, the starter ………… to turn the HP rotor.",
+    "opts": [
+      "is engaging",
+      "is engaged",
+      "engages",
+      "engaged"
+    ],
+    "ans": 1,
+    "diff": "easy",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 1405,
+    "cat": "fill_blanks",
+    "orig": 780,
+    "q": "Any contamination found in the oil ………… for investigation.",
+    "opts": [
+      "shall keep",
+      "should be kept",
+      "should keep",
+      "must keep"
+    ],
+    "ans": 1,
+    "diff": "easy",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 1406,
+    "cat": "fill_blanks",
+    "orig": 781,
+    "q": "The Extinguisher ………… in any attitude.",
+    "opts": [
+      "may be stored",
+      "must be stored",
+      "have to be",
+      "should be stored"
+    ],
+    "ans": 1,
+    "diff": "easy",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 1407,
+    "cat": "fill_blanks",
+    "orig": 782,
+    "q": "Lead-acid batteries ………… sulfuric acid which ………… severe burns to body tissue.",
+    "opts": [
+      "contained / causing",
+      "contain / must cause",
+      "to contain / caused",
+      "contain / can cause"
+    ],
+    "ans": 3,
+    "diff": "easy",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 1408,
+    "cat": "fill_blanks",
+    "orig": 783,
+    "q": "Any compartment that ………… expected to flood under light impact ………… used.",
+    "opts": [
+      "is / should not be",
+      "may be / should be",
+      "may not be / should not be",
+      "may not be / should be"
+    ],
+    "ans": 0,
+    "diff": "easy",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 1409,
+    "cat": "fill_blanks",
+    "orig": 784,
+    "q": "It is recommended ………… an additional regulator on high pressure nitrogen sources.",
+    "opts": [
+      "to install",
+      "installing",
+      "to install to prevent",
+      "installing to prevent"
+    ],
+    "ans": 0,
+    "diff": "easy",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 1410,
+    "cat": "fill_blanks",
+    "orig": 785,
+    "q": "Parts and materials ………… ………… from operators' stock.",
+    "opts": [
+      "are to be supplied",
+      "will supply",
+      "have supplied",
+      "are supplying"
+    ],
+    "ans": 0,
+    "diff": "easy",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 1411,
+    "cat": "fill_blanks",
+    "orig": 786,
+    "q": "Make sure that the power indicator light on the galley panel ………….",
+    "opts": [
+      "to go off",
+      "goes off",
+      "go off",
+      "is going off"
+    ],
+    "ans": 1,
+    "diff": "easy",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 1412,
+    "cat": "fill_blanks",
+    "orig": 787,
+    "q": "'Combustible Material' ………… the material which is capable of ………… fire and burning.",
+    "opts": [
+      "means / to catch",
+      "to mean / to catch",
+      "meaning / catching",
+      "means / catching"
+    ],
+    "ans": 3,
+    "diff": "easy",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 1413,
+    "cat": "fill_blanks",
+    "orig": 788,
+    "q": "A seat with an inoperative restraint system ………… inoperative.",
+    "opts": [
+      "is considered",
+      "are considered",
+      "are to be considered",
+      "considered"
+    ],
+    "ans": 0,
+    "diff": "easy",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 1414,
+    "cat": "fill_blanks",
+    "orig": 789,
+    "q": "When you do work on the fuel system wiring, you ………… test equipment that ………….",
+    "opts": [
+      "may use / is approving",
+      "will use / is approved",
+      "must use / is approved",
+      "must use / is approving"
+    ],
+    "ans": 2,
+    "diff": "easy",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 1415,
+    "cat": "fill_blanks",
+    "orig": 790,
+    "q": "Inlet air pressure ………… the pressure probe and ………… into chamber (A).",
+    "opts": [
+      "will enter / is flowed",
+      "enters / flows",
+      "is entered / flows",
+      "enters / is flowed"
+    ],
+    "ans": 1,
+    "diff": "easy",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 1416,
+    "cat": "fill_blanks",
+    "orig": 791,
+    "q": "Make sure ………… that the probes, the engine, and the APU ………… cool before installation.",
+    "opts": [
+      "Do / is",
+      "Get / are",
+      "Make / are",
+      "Have / isn't"
+    ],
+    "ans": 2,
+    "diff": "easy",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 1417,
+    "cat": "fill_blanks",
+    "orig": 792,
+    "q": "If the probes are ………… there is a risk of injury.",
+    "opts": [
+      "hot",
+      "cold",
+      "mild",
+      "cool"
+    ],
+    "ans": 0,
+    "diff": "easy",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 1418,
+    "cat": "fill_blanks",
+    "orig": 793,
+    "q": "In some procedures, a NOTE statement will include ………… or dimensional limits.",
+    "opts": [
+      "inquiries",
+      "inspirations",
+      "inspectors",
+      "instructions"
+    ],
+    "ans": 3,
+    "diff": "easy",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 1419,
+    "cat": "fill_blanks",
+    "orig": 794,
+    "q": "If a NOTE statement ………… instructions or dimensional limits, then it is necessary to obey this information.",
+    "opts": [
+      "includes",
+      "will include",
+      "is included",
+      "included"
+    ],
+    "ans": 0,
+    "diff": "easy",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 1420,
+    "cat": "fill_blanks",
+    "orig": 795,
+    "q": "Keep brake assemblies in storage ………… rain, snow, or dew.",
+    "opts": [
+      "out under",
+      "away from",
+      "within",
+      "up above"
+    ],
+    "ans": 1,
+    "diff": "easy",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 1421,
+    "cat": "fill_blanks",
+    "orig": 796,
+    "q": "If installation is correct, no further action ………….",
+    "opts": [
+      "is not required",
+      "requires",
+      "is required",
+      "required"
+    ],
+    "ans": 2,
+    "diff": "easy",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 1422,
+    "cat": "fill_blanks",
+    "orig": 797,
+    "q": "If an inoperative armrest will hinder an emergency evacuation, it ………… removed.",
+    "opts": [
+      "should be",
+      "should have been",
+      "could be",
+      "could have been"
+    ],
+    "ans": 0,
+    "diff": "easy",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 1423,
+    "cat": "fill_blanks",
+    "orig": 798,
+    "q": "All equipment removed during a maintenance operation ………… be examined before re-installation.",
+    "opts": [
+      "will have to",
+      "must also have been",
+      "must also be",
+      "must also"
+    ],
+    "ans": 2,
+    "diff": "easy",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 1424,
+    "cat": "fill_blanks",
+    "orig": 799,
+    "q": "………… the battery stays connected during parking, the loads will decrease the battery charge.",
+    "opts": [
+      "If",
+      "When",
+      "Unless",
+      "Although"
+    ],
+    "ans": 0,
+    "diff": "easy",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 1425,
+    "cat": "fill_blanks",
+    "orig": 800,
+    "q": "If a part, tool, or object falls into the engine, the assembly process ………… stop until found.",
+    "opts": [
+      "should not",
+      "cannot",
+      "must",
+      "will"
+    ],
+    "ans": 2,
+    "diff": "easy",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 1426,
+    "cat": "fill_blanks",
+    "orig": 801,
+    "q": "The basic cylinder of all types of extinguisher ………… of a seamless aluminum cylindrical container.",
+    "opts": [
+      "is consisted",
+      "consisted",
+      "consists",
+      "consist"
+    ],
+    "ans": 2,
+    "diff": "easy",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 1427,
+    "cat": "fill_blanks",
+    "orig": 802,
+    "q": "………… special materials are required for cleaning.",
+    "opts": [
+      "No",
+      "Every",
+      "A",
+      "Some"
+    ],
+    "ans": 0,
+    "diff": "easy",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 1428,
+    "cat": "fill_blanks",
+    "orig": 803,
+    "q": "After you touch cadmium plated parts, clean your hands before you ………… or smoke.",
+    "opts": [
+      "eating",
+      "eat",
+      "ate",
+      "to eat"
+    ],
+    "ans": 1,
+    "diff": "easy",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 1429,
+    "cat": "fill_blanks",
+    "orig": 804,
+    "q": "The dust can cause ………… on all filter elements.",
+    "opts": [
+      "contaminated",
+      "contamination",
+      "contaminant",
+      "contaminate"
+    ],
+    "ans": 1,
+    "diff": "easy",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 1430,
+    "cat": "fill_blanks",
+    "orig": 805,
+    "q": "The pilot must report the ………… encounter of this event.",
+    "opts": [
+      "suspected",
+      "suspect",
+      "suspecting",
+      "susceptible"
+    ],
+    "ans": 0,
+    "diff": "easy",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 1431,
+    "cat": "fill_blanks",
+    "orig": 806,
+    "q": "After 1 hour, use fog or foam on the wheel to decrease the ………….",
+    "opts": [
+      "temperature",
+      "temperate",
+      "temperament",
+      "tempt"
+    ],
+    "ans": 0,
+    "diff": "easy",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 1432,
+    "cat": "fill_blanks",
+    "orig": 807,
+    "q": "Lift the ………… blankets sufficiently to complete a correct general visual inspection.",
+    "opts": [
+      "insulate",
+      "insolution",
+      "insoluble",
+      "insulation"
+    ],
+    "ans": 3,
+    "diff": "easy",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 1433,
+    "cat": "fill_blanks",
+    "orig": 808,
+    "q": "Remove the ………… cabin-attendant seat.",
+    "opts": [
+      "wall-mountain",
+      "wall-mounted",
+      "well-maintained",
+      "well-mourned"
+    ],
+    "ans": 1,
+    "diff": "easy",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 1434,
+    "cat": "fill_blanks",
+    "orig": 809,
+    "q": "Bolts, washers, and nuts hold ………… wheel half assemblies together.",
+    "opts": [
+      "this",
+      "that",
+      "there",
+      "these"
+    ],
+    "ans": 3,
+    "diff": "easy",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 1435,
+    "cat": "fill_blanks",
+    "orig": 810,
+    "q": "The brake temperature ………… monitors the brake temperature.",
+    "opts": [
+      "sensor",
+      "sensory",
+      "sense",
+      "sensers"
+    ],
+    "ans": 0,
+    "diff": "easy",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 1436,
+    "cat": "fill_blanks",
+    "orig": 811,
+    "q": "Look for bubbles at ………… of those areas are to examine for leaks.",
+    "opts": [
+      "once",
+      "single",
+      "each",
+      "double"
+    ],
+    "ans": 2,
+    "diff": "easy",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 1437,
+    "cat": "fill_blanks",
+    "orig": 812,
+    "q": "The number of passengers must be ………… to 165 passengers.",
+    "opts": [
+      "limiting",
+      "limited",
+      "limitation",
+      "limitless"
+    ],
+    "ans": 1,
+    "diff": "easy",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 1438,
+    "cat": "fill_blanks",
+    "orig": 813,
+    "q": "No electrical power will be ………… from the auxiliary power unit generator.",
+    "opts": [
+      "availability",
+      "allowable",
+      "available",
+      "allow"
+    ],
+    "ans": 2,
+    "diff": "easy",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 1439,
+    "cat": "fill_blanks",
+    "orig": 814,
+    "q": "Examine and repair the wires ………… the applicable electrical connectors.",
+    "opts": [
+      "off",
+      "bulk",
+      "sulk",
+      "between"
+    ],
+    "ans": 3,
+    "diff": "easy",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 1440,
+    "cat": "fill_blanks",
+    "orig": 815,
+    "q": "After you ………… the wiring, repair the wiring.",
+    "opts": [
+      "exam",
+      "examine",
+      "exact",
+      "extra"
+    ],
+    "ans": 1,
+    "diff": "easy",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 1441,
+    "cat": "fill_blanks",
+    "orig": 816,
+    "q": "Put the seat unit ………… position on the seat tracks.",
+    "opts": [
+      "in",
+      "off",
+      "as",
+      "by"
+    ],
+    "ans": 0,
+    "diff": "easy",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 1442,
+    "cat": "fill_blanks",
+    "orig": 817,
+    "q": "Count and ………… the utilized tools.",
+    "opts": [
+      "verification",
+      "verified",
+      "verify",
+      "vivificated"
+    ],
+    "ans": 2,
+    "diff": "easy",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 1443,
+    "cat": "fill_blanks",
+    "orig": 818,
+    "q": "Reinstall the shelves, panels, ceiling panels affected ………… this modification.",
+    "opts": [
+      "but",
+      "by",
+      "as",
+      "both"
+    ],
+    "ans": 1,
+    "diff": "easy",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 1444,
+    "cat": "fill_blanks",
+    "orig": 819,
+    "q": "When all the letters of the alphabet ………… up for the first letter, the sequence starts again with letter A.",
+    "opts": [
+      "Has been used",
+      "Has used",
+      "Have used",
+      "Have been used"
+    ],
+    "ans": 3,
+    "diff": "easy",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 1445,
+    "cat": "fill_blanks",
+    "orig": 820,
+    "q": "A WARNING tells the operator that injury or death is possible, if the operator ………… obey the specified instruction.",
+    "opts": [
+      "does",
+      "does not",
+      "would",
+      "would not"
+    ],
+    "ans": 1,
+    "diff": "easy",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 1446,
+    "cat": "fill_blanks",
+    "orig": 821,
+    "q": "If a broken fastener ………… replace it by a new one of the same part number.",
+    "opts": [
+      "is detected,",
+      "detects,",
+      "is detecting,",
+      "has detected,"
+    ],
+    "ans": 0,
+    "diff": "easy",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 1447,
+    "cat": "fill_blanks",
+    "orig": 822,
+    "q": "Additional maintenance task ………… ………… depending on the failure modes.",
+    "opts": [
+      "might require",
+      "may require",
+      "may be required",
+      "was required"
+    ],
+    "ans": 2,
+    "diff": "easy",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 1448,
+    "cat": "fill_blanks",
+    "orig": 823,
+    "q": "If the test ………… the maintenance message, replace the recirculation valve.",
+    "opts": [
+      "give",
+      "gives",
+      "gave",
+      "given"
+    ],
+    "ans": 1,
+    "diff": "easy",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 1449,
+    "cat": "fill_blanks",
+    "orig": 824,
+    "q": "The fan ………… 6 seconds after approximately, then the warning light goes off.",
+    "opts": [
+      "will operate",
+      "has operated",
+      "operate",
+      "can operate"
+    ],
+    "ans": 0,
+    "diff": "easy",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 1450,
+    "cat": "fill_blanks",
+    "orig": 825,
+    "q": "Major sub-zones are ………… by the ten of the major zones.",
+    "opts": [
+      "identified",
+      "identification",
+      "identity",
+      "identifying"
+    ],
+    "ans": 0,
+    "diff": "easy",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 1451,
+    "cat": "fill_blanks",
+    "orig": 826,
+    "q": "Park the aircraft on a ………… surface.",
+    "opts": [
+      "smooth",
+      "curved",
+      "rough",
+      "bumpy"
+    ],
+    "ans": 0,
+    "diff": "easy",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 1452,
+    "cat": "fill_blanks",
+    "orig": 827,
+    "q": "You must obey the applicable safety precautions ………… serious injury in a wheel explosion.",
+    "opts": [
+      "to celebrate",
+      "to prevent",
+      "to cause",
+      "to persist"
+    ],
+    "ans": 1,
+    "diff": "easy",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 1453,
+    "cat": "fill_blanks",
+    "orig": 828,
+    "q": "Install battery terminal protectors ………… the battery is not connected in the aircraft.",
+    "opts": [
+      "whenever",
+      "wherever",
+      "whichever",
+      "whoever"
+    ],
+    "ans": 0,
+    "diff": "easy",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 1454,
+    "cat": "fill_blanks",
+    "orig": 829,
+    "q": "Each chapter/system is further divided ………… sections/subsystems.",
+    "opts": [
+      "above",
+      "into",
+      "on",
+      "under"
+    ],
+    "ans": 1,
+    "diff": "easy",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 1455,
+    "cat": "fill_blanks",
+    "orig": 830,
+    "q": "These precautions will ………… the risk of contamination and damage to the electrical wiring.",
+    "opts": [
+      "incline",
+      "decline",
+      "increase",
+      "decrease"
+    ],
+    "ans": 3,
+    "diff": "easy",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 1456,
+    "cat": "fill_blanks",
+    "orig": 831,
+    "q": "All calendar days are considered to run ………… from the day of discovery.",
+    "opts": [
+      "simultaneously",
+      "in a random order",
+      "consecutively",
+      "spontaneously"
+    ],
+    "ans": 2,
+    "diff": "easy",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 1457,
+    "cat": "fill_blanks",
+    "orig": 832,
+    "q": "If there is a short circuit, you will cause damage to the serviceable computer when you ………… the units.",
+    "opts": [
+      "displace",
+      "purchase",
+      "swap",
+      "use"
+    ],
+    "ans": 2,
+    "diff": "easy",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 1458,
+    "cat": "fill_blanks",
+    "orig": 833,
+    "q": "The drag is normally approx. 40 lbf.in. The ………… maximum is 107 lbf.in.",
+    "opts": [
+      "forbidden",
+      "mandatory",
+      "allowed",
+      "permitted"
+    ],
+    "ans": 3,
+    "diff": "easy",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 1459,
+    "cat": "fill_blanks",
+    "orig": 834,
+    "q": "When the heat sink assembly is fully ………… the set of five thin stator disks are replaced.",
+    "opts": [
+      "worn,",
+      "fulling worn,",
+      "fully worn,",
+      "worn out,"
+    ],
+    "ans": 0,
+    "diff": "easy",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 1460,
+    "cat": "fill_blanks",
+    "orig": 835,
+    "q": "If the center tank is full, the high-level sensor ………… be overridden.",
+    "opts": [
+      "may",
+      "must",
+      "have to",
+      "should not"
+    ],
+    "ans": 0,
+    "diff": "easy",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 1461,
+    "cat": "fill_blanks",
+    "orig": 836,
+    "q": "When the disconnection is not possible, ………… side the flight control check can be performed on the operative side.",
+    "opts": [
+      "out one",
+      "only one",
+      "off one",
+      "on one"
+    ],
+    "ans": 3,
+    "diff": "easy",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 1462,
+    "cat": "fill_blanks",
+    "orig": 837,
+    "q": "Make sure the waste tank has been serviced and the vacuum blower ………… not in operation.",
+    "opts": [
+      "are",
+      "were",
+      "is",
+      "has"
+    ],
+    "ans": 2,
+    "diff": "easy",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 1463,
+    "cat": "fill_blanks",
+    "orig": 838,
+    "q": "Before drilling holes for installation, present the bracket to be sure ………… it is possible for a crew to see the front face.",
+    "opts": [
+      "where",
+      "which",
+      "that",
+      "those"
+    ],
+    "ans": 2,
+    "diff": "easy",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 1464,
+    "cat": "fill_blanks",
+    "orig": 839,
+    "q": "It ………… obstruct the fuel injectors and ………… cause an engine shutdown.",
+    "opts": [
+      "would / could",
+      "might / was",
+      "may / can",
+      "will / is"
+    ],
+    "ans": 2,
+    "diff": "easy",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 1465,
+    "cat": "fill_blanks",
+    "orig": 840,
+    "q": "Lightning ………… some areas more frequently than others.",
+    "opts": [
+      "hit",
+      "hits",
+      "hitter",
+      "hitting"
+    ],
+    "ans": 1,
+    "diff": "easy",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 1466,
+    "cat": "fill_blanks",
+    "orig": 841,
+    "q": "An inspection is ………… when the aircraft has been involved in an excessive maneuver.",
+    "opts": [
+      "require",
+      "requires",
+      "required",
+      "requiring"
+    ],
+    "ans": 2,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 1467,
+    "cat": "fill_blanks",
+    "orig": 842,
+    "q": "This procedure ………… not cause the strength of the part to decrease.",
+    "opts": [
+      "must",
+      "maybe",
+      "mustn't",
+      "mayn't"
+    ],
+    "ans": 2,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 1468,
+    "cat": "fill_blanks",
+    "orig": 843,
+    "q": "A carbon disk ………… no cracks longer than 1.6 mm.",
+    "opts": [
+      "have",
+      "haven't",
+      "hasn't",
+      "has"
+    ],
+    "ans": 3,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 1469,
+    "cat": "fill_blanks",
+    "orig": 844,
+    "q": "Discard the wheel half with corrosion that is ………… than the repair limit.",
+    "opts": [
+      "most",
+      "many",
+      "much",
+      "more"
+    ],
+    "ans": 3,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 1470,
+    "cat": "fill_blanks",
+    "orig": 845,
+    "q": "The gage is ………… determine the attitude of the airplane on the ground.",
+    "opts": [
+      "use to",
+      "used to",
+      "using to",
+      "uses to"
+    ],
+    "ans": 1,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 1471,
+    "cat": "fill_blanks",
+    "orig": 846,
+    "q": "The fuel in the associated outer tank ………… considered as not usable for flight planning.",
+    "opts": [
+      "is",
+      "are",
+      "were",
+      "can"
+    ],
+    "ans": 0,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 1472,
+    "cat": "fill_blanks",
+    "orig": 847,
+    "q": "There is a 30 second delay before the message ………… show.",
+    "opts": [
+      "would",
+      "will",
+      "was",
+      "were"
+    ],
+    "ans": 1,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 1473,
+    "cat": "fill_blanks",
+    "orig": 848,
+    "q": "The seat shoulder harness ………… into the reel so that the harness is no longer adjustable.",
+    "opts": [
+      "have not retracted",
+      "have now retract",
+      "has not retracted",
+      "has not retract"
+    ],
+    "ans": 2,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 1474,
+    "cat": "fill_blanks",
+    "orig": 849,
+    "q": "If you find seal interference and you think it is \"minor\" the engine ………… serviceable.",
+    "opts": [
+      "is",
+      "are",
+      "were",
+      "will"
+    ],
+    "ans": 0,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 1475,
+    "cat": "fill_blanks",
+    "orig": 850,
+    "q": "This can cause \"thermal\" shock to the ………… parts.",
+    "opts": [
+      "stressed",
+      "stress",
+      "stressing",
+      "stresses"
+    ],
+    "ans": 0,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 1476,
+    "cat": "fill_blanks",
+    "orig": 851,
+    "q": "a) to measure",
+    "opts": [
+      "measuring",
+      "measured",
+      "measures"
+    ],
+    "ans": 0,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 1477,
+    "cat": "fill_blanks",
+    "orig": 852,
+    "q": "a) locates",
+    "opts": [
+      "is located",
+      "are located",
+      "was locating"
+    ],
+    "ans": 1,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 1478,
+    "cat": "fill_blanks",
+    "orig": 853,
+    "q": "a) to decrease",
+    "opts": [
+      "decreasing",
+      "decreased",
+      "decrease"
+    ],
+    "ans": 0,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 1479,
+    "cat": "fill_blanks",
+    "orig": 854,
+    "q": "a) above",
+    "opts": [
+      "beyond",
+      "between",
+      "within"
+    ],
+    "ans": 2,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 1480,
+    "cat": "fill_blanks",
+    "orig": 855,
+    "q": "a) locates",
+    "opts": [
+      "locate",
+      "is located",
+      "are locating"
+    ],
+    "ans": 2,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 1481,
+    "cat": "fill_blanks",
+    "orig": 856,
+    "q": "a) having",
+    "opts": [
+      "has",
+      "have",
+      "had"
+    ],
+    "ans": 1,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 1482,
+    "cat": "fill_blanks",
+    "orig": 857,
+    "q": "a) use",
+    "opts": [
+      "are used",
+      "used",
+      "using"
+    ],
+    "ans": 1,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 1483,
+    "cat": "fill_blanks",
+    "orig": 858,
+    "q": "a) divides",
+    "opts": [
+      "is divided",
+      "are divided",
+      "dividing"
+    ],
+    "ans": 1,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 1484,
+    "cat": "fill_blanks",
+    "orig": 859,
+    "q": "a) always",
+    "opts": [
+      "never",
+      "only",
+      "sometimes"
+    ],
+    "ans": 2,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 1485,
+    "cat": "fill_blanks",
+    "orig": 860,
+    "q": "a) for",
+    "opts": [
+      "to",
+      "with",
+      "at"
+    ],
+    "ans": 0,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 1486,
+    "cat": "fill_blanks",
+    "orig": 861,
+    "q": "a) are",
+    "opts": [
+      "were",
+      "is",
+      "has"
+    ],
+    "ans": 2,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 1487,
+    "cat": "fill_blanks",
+    "orig": 862,
+    "q": "a) route",
+    "opts": [
+      "routes",
+      "routing",
+      "routed"
+    ],
+    "ans": 1,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 1488,
+    "cat": "fill_blanks",
+    "orig": 863,
+    "q": "a) call",
+    "opts": [
+      "calling",
+      "called",
+      "is called"
+    ],
+    "ans": 2,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 1489,
+    "cat": "fill_blanks",
+    "orig": 864,
+    "q": "a) to alert",
+    "opts": [
+      "alerting",
+      "alert",
+      "alerted"
+    ],
+    "ans": 0,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 1490,
+    "cat": "fill_blanks",
+    "orig": 865,
+    "q": "a) Although",
+    "opts": [
+      "Unless",
+      "When",
+      "Before"
+    ],
+    "ans": 2,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 1491,
+    "cat": "fill_blanks",
+    "orig": 866,
+    "q": "a) is necessary",
+    "opts": [
+      "are necessary",
+      "necessary",
+      "necessitate"
+    ],
+    "ans": 0,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 1492,
+    "cat": "fill_blanks",
+    "orig": 867,
+    "q": "a) is wet motored,",
+    "opts": [
+      "wet motors,",
+      "are wet motored,",
+      "wet motoring,"
+    ],
+    "ans": 0,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 1493,
+    "cat": "fill_blanks",
+    "orig": 868,
+    "q": "a) turning OFF",
+    "opts": [
+      "are turned OFF",
+      "turned OFF",
+      "is turning OFF"
+    ],
+    "ans": 1,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 1494,
+    "cat": "fill_blanks",
+    "orig": 869,
+    "q": "a) moves",
+    "opts": [
+      "is moved",
+      "moving",
+      "moved"
+    ],
+    "ans": 1,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 1495,
+    "cat": "fill_blanks",
+    "orig": 870,
+    "q": "a) carefully monitors",
+    "opts": [
+      "is carefully monitored",
+      "carefully monitored",
+      "has carefully monitored"
+    ],
+    "ans": 1,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 1496,
+    "cat": "fill_blanks",
+    "orig": 871,
+    "q": "a) could",
+    "opts": [
+      "should",
+      "can",
+      "must"
+    ],
+    "ans": 2,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 1497,
+    "cat": "fill_blanks",
+    "orig": 872,
+    "q": "a) can be",
+    "opts": [
+      "is",
+      "are",
+      "will be"
+    ],
+    "ans": 0,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 1498,
+    "cat": "fill_blanks",
+    "orig": 873,
+    "q": "a) removes",
+    "opts": [
+      "will be removed",
+      "will remove",
+      "has removed"
+    ],
+    "ans": 1,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 1499,
+    "cat": "fill_blanks",
+    "orig": 874,
+    "q": "a) should not",
+    "opts": [
+      "must not",
+      "can not",
+      "would not"
+    ],
+    "ans": 0,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 1500,
+    "cat": "fill_blanks",
+    "orig": 875,
+    "q": "a) since",
+    "opts": [
+      "although",
+      "unless",
+      "while"
+    ],
+    "ans": 2,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 1501,
+    "cat": "fill_blanks",
+    "orig": 876,
+    "q": "a) deteriorate",
+    "opts": [
+      "deterioration",
+      "deteriorating",
+      "deteriorated"
+    ],
+    "ans": 1,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 1502,
+    "cat": "fill_blanks",
+    "orig": 877,
+    "q": "a) can seriously affect",
+    "opts": [
+      "serious affects",
+      "seriously effecting",
+      "can serious affect"
+    ],
+    "ans": 0,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 1503,
+    "cat": "fill_blanks",
+    "orig": 878,
+    "q": "a) included",
+    "opts": [
+      "is included",
+      "include",
+      "includes"
+    ],
+    "ans": 2,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 1504,
+    "cat": "fill_blanks",
+    "orig": 879,
+    "q": "a) included",
+    "opts": [
+      "include",
+      "includes",
+      "including"
+    ],
+    "ans": 1,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 1505,
+    "cat": "fill_blanks",
+    "orig": 880,
+    "q": "a) to prevent",
+    "opts": [
+      "preventing",
+      "prevents",
+      "prevented"
+    ],
+    "ans": 0,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 1506,
+    "cat": "fill_blanks",
+    "orig": 881,
+    "q": "a) provide",
+    "opts": [
+      "provides",
+      "providing",
+      "is providing"
+    ],
+    "ans": 1,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 1507,
+    "cat": "fill_blanks",
+    "orig": 882,
+    "q": "a) provides",
+    "opts": [
+      "is provided",
+      "providing",
+      "are providing"
+    ],
+    "ans": 1,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 1508,
+    "cat": "fill_blanks",
+    "orig": 883,
+    "q": "a) produce",
+    "opts": [
+      "produces",
+      "is produced",
+      "are produced"
+    ],
+    "ans": 0,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 1509,
+    "cat": "fill_blanks",
+    "orig": 884,
+    "q": "a) supply",
+    "opts": [
+      "is supplied",
+      "supplies",
+      "supplying"
+    ],
+    "ans": 1,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 1510,
+    "cat": "fill_blanks",
+    "orig": 885,
+    "q": "a) is not",
+    "opts": [
+      "are not",
+      "was not",
+      "were not"
+    ],
+    "ans": 0,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 1511,
+    "cat": "fill_blanks",
+    "orig": 886,
+    "q": "a) converted",
+    "opts": [
+      "converts",
+      "converting",
+      "is converted"
+    ],
+    "ans": 1,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 1512,
+    "cat": "fill_blanks",
+    "orig": 887,
+    "q": "a) commonly used",
+    "opts": [
+      "are commonly used",
+      "common use",
+      "is commonly used"
+    ],
+    "ans": 1,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 1513,
+    "cat": "fill_blanks",
+    "orig": 888,
+    "q": "a) must monitor",
+    "opts": [
+      "must be monitored",
+      "monitored",
+      "monitoring"
+    ],
+    "ans": 1,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 1514,
+    "cat": "fill_blanks",
+    "orig": 889,
+    "q": "a) below",
+    "opts": [
+      "under",
+      "above",
+      "within"
+    ],
+    "ans": 2,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 1515,
+    "cat": "fill_blanks",
+    "orig": 890,
+    "q": "a) must not depart",
+    "opts": [
+      "should depart",
+      "must depart",
+      "could depart"
+    ],
+    "ans": 0,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 1516,
+    "cat": "fill_blanks",
+    "orig": 891,
+    "q": "a) provide",
+    "opts": [
+      "providing",
+      "provides",
+      "provided"
+    ],
+    "ans": 2,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 1517,
+    "cat": "fill_blanks",
+    "orig": 892,
+    "q": "a) force",
+    "opts": [
+      "temperature",
+      "pressure",
+      "speed"
+    ],
+    "ans": 2,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 1518,
+    "cat": "fill_blanks",
+    "orig": 893,
+    "q": "a) included",
+    "opts": [
+      "includes",
+      "include",
+      "including"
+    ],
+    "ans": 2,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 1519,
+    "cat": "fill_blanks",
+    "orig": 894,
+    "q": "a) kept",
+    "opts": [
+      "keep",
+      "keeping",
+      "keeps"
+    ],
+    "ans": 0,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 1520,
+    "cat": "fill_blanks",
+    "orig": 895,
+    "q": "a) require",
+    "opts": [
+      "is required",
+      "requires",
+      "required"
+    ],
+    "ans": 1,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 1521,
+    "cat": "fill_blanks",
+    "orig": 896,
+    "q": "a) has been",
+    "opts": [
+      "are",
+      "is",
+      "were"
+    ],
+    "ans": 1,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 1522,
+    "cat": "fill_blanks",
+    "orig": 897,
+    "q": "a) should be",
+    "opts": [
+      "must",
+      "must be",
+      "should"
+    ],
+    "ans": 2,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 1523,
+    "cat": "fill_blanks",
+    "orig": 898,
+    "q": "a) assesses",
+    "opts": [
+      "must assess",
+      "is assessed",
+      "must be assessed"
+    ],
+    "ans": 3,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 1524,
+    "cat": "fill_blanks",
+    "orig": 899,
+    "q": "a) involves",
+    "opts": [
+      "involving",
+      "involved",
+      "involve"
+    ],
+    "ans": 0,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 1525,
+    "cat": "fill_blanks",
+    "orig": 900,
+    "q": "a) at",
+    "opts": [
+      "in",
+      "on",
+      "by"
+    ],
+    "ans": 1,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 1526,
+    "cat": "fill_blanks",
+    "orig": 901,
+    "q": "a) uses",
+    "opts": [
+      "is used",
+      "are used",
+      "use"
+    ],
+    "ans": 1,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 1527,
+    "cat": "fill_blanks",
+    "orig": 902,
+    "q": "a) use",
+    "opts": [
+      "used",
+      "using",
+      "uses"
+    ],
+    "ans": 1,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 1528,
+    "cat": "fill_blanks",
+    "orig": 903,
+    "q": "a) particularly is",
+    "opts": [
+      "is particularly",
+      "particularly are",
+      "are particularly"
+    ],
+    "ans": 1,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 1529,
+    "cat": "fill_blanks",
+    "orig": 904,
+    "q": "a) detecting",
+    "opts": [
+      "detected",
+      "to detect",
+      "detect"
+    ],
+    "ans": 2,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 1530,
+    "cat": "fill_blanks",
+    "orig": 905,
+    "q": "a) requires",
+    "opts": [
+      "require",
+      "is required",
+      "required"
+    ],
+    "ans": 1,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 1531,
+    "cat": "fill_blanks",
+    "orig": 906,
+    "q": "a) to",
+    "opts": [
+      "into",
+      "in",
+      "for"
+    ],
+    "ans": 1,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 1532,
+    "cat": "fill_blanks",
+    "orig": 907,
+    "q": "a) is performed",
+    "opts": [
+      "performs",
+      "performed",
+      "performing"
+    ],
+    "ans": 0,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 1533,
+    "cat": "fill_blanks",
+    "orig": 908,
+    "q": "a) perform",
+    "opts": [
+      "performing",
+      "performed",
+      "to be performed"
+    ],
+    "ans": 2,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 1534,
+    "cat": "fill_blanks",
+    "orig": 909,
+    "q": "a) perform",
+    "opts": [
+      "performs",
+      "performed",
+      "is performed"
+    ],
+    "ans": 2,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 1535,
+    "cat": "fill_blanks",
+    "orig": 910,
+    "q": "a) varies",
+    "opts": [
+      "varied",
+      "is varied",
+      "varying"
+    ],
+    "ans": 0,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 1536,
+    "cat": "fill_blanks",
+    "orig": 911,
+    "q": "a) are",
+    "opts": [
+      "is",
+      "were",
+      "has"
+    ],
+    "ans": 1,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 1537,
+    "cat": "fill_blanks",
+    "orig": 912,
+    "q": "a) provide",
+    "opts": [
+      "providing",
+      "provided",
+      "provides"
+    ],
+    "ans": 3,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 1538,
+    "cat": "fill_blanks",
+    "orig": 913,
+    "q": "a) start",
+    "opts": [
+      "be started",
+      "starting",
+      "starts"
+    ],
+    "ans": 1,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 1539,
+    "cat": "fill_blanks",
+    "orig": 914,
+    "q": "a) must wait",
+    "opts": [
+      "waits",
+      "waited",
+      "must have wait"
+    ],
+    "ans": 0,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 1540,
+    "cat": "fill_blanks",
+    "orig": 915,
+    "q": "a) having",
+    "opts": [
+      "has",
+      "have",
+      "had"
+    ],
+    "ans": 1,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 1541,
+    "cat": "fill_blanks",
+    "orig": 916,
+    "q": "a) are",
+    "opts": [
+      "is",
+      "were",
+      "has"
+    ],
+    "ans": 1,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 1542,
+    "cat": "fill_blanks",
+    "orig": 917,
+    "q": "a) must make",
+    "opts": [
+      "must be made",
+      "makes",
+      "making"
+    ],
+    "ans": 0,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 1543,
+    "cat": "fill_blanks",
+    "orig": 918,
+    "q": "a) must sign off",
+    "opts": [
+      "signs off",
+      "must be signed off",
+      "is signing off"
+    ],
+    "ans": 0,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 1544,
+    "cat": "fill_blanks",
+    "orig": 919,
+    "q": "a) must",
+    "opts": [
+      "must be",
+      "must kept",
+      "must keep"
+    ],
+    "ans": 1,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 1545,
+    "cat": "fill_blanks",
+    "orig": 920,
+    "q": "a) must defer",
+    "opts": [
+      "defers",
+      "must be deferred",
+      "deferring"
+    ],
+    "ans": 2,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 1546,
+    "cat": "fill_blanks",
+    "orig": 921,
+    "q": "a) must be briefed",
+    "opts": [
+      "must brief",
+      "briefing",
+      "briefs"
+    ],
+    "ans": 0,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 1547,
+    "cat": "fill_blanks",
+    "orig": 922,
+    "q": "a) must be properly bonded",
+    "opts": [
+      "must properly bond",
+      "properly bonding",
+      "properly bonds"
+    ],
+    "ans": 0,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 1548,
+    "cat": "fill_blanks",
+    "orig": 923,
+    "q": "a) permitted",
+    "opts": [
+      "is permitted",
+      "is not permitted",
+      "not permits"
+    ],
+    "ans": 2,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 1549,
+    "cat": "fill_blanks",
+    "orig": 924,
+    "q": "a) must eliminated",
+    "opts": [
+      "must be eliminated",
+      "eliminating",
+      "eliminate"
+    ],
+    "ans": 1,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 1550,
+    "cat": "fill_blanks",
+    "orig": 925,
+    "q": "a) occur,",
+    "opts": [
+      "occurs,",
+      "occurred,",
+      "has occurred,"
+    ],
+    "ans": 1,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 1551,
+    "cat": "fill_blanks",
+    "orig": 926,
+    "q": "a) must maintained",
+    "opts": [
+      "must be maintained",
+      "maintaining",
+      "maintain"
+    ],
+    "ans": 1,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 1552,
+    "cat": "fill_blanks",
+    "orig": 927,
+    "q": "a) increases",
+    "opts": [
+      "increase",
+      "increased",
+      "increasing"
+    ],
+    "ans": 0,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 1553,
+    "cat": "fill_blanks",
+    "orig": 928,
+    "q": "a) reduce",
+    "opts": [
+      "reduces",
+      "reduced",
+      "reducing"
+    ],
+    "ans": 1,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 1554,
+    "cat": "fill_blanks",
+    "orig": 929,
+    "q": "a) must check",
+    "opts": [
+      "must be checked",
+      "checking",
+      "checks"
+    ],
+    "ans": 1,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 1555,
+    "cat": "fill_blanks",
+    "orig": 930,
+    "q": "a) must inspect",
+    "opts": [
+      "inspected",
+      "must be inspected",
+      "inspecting"
+    ],
+    "ans": 2,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 1556,
+    "cat": "fill_blanks",
+    "orig": 931,
+    "q": "a) lubricate",
+    "opts": [
+      "lubricates",
+      "lubricating",
+      "lubricated"
+    ],
+    "ans": 1,
+    "diff": "hard",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 1557,
+    "cat": "fill_blanks",
+    "orig": 932,
+    "q": "a) is stored",
+    "opts": [
+      "stores",
+      "store",
+      "stored"
+    ],
+    "ans": 0,
+    "diff": "hard",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 1558,
+    "cat": "fill_blanks",
+    "orig": 933,
+    "q": "a) passes",
+    "opts": [
+      "pass",
+      "is passed",
+      "passing"
+    ],
+    "ans": 0,
+    "diff": "hard",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 1559,
+    "cat": "fill_blanks",
+    "orig": 934,
+    "q": "a) return",
+    "opts": [
+      "returning",
+      "returns",
+      "returned"
+    ],
+    "ans": 2,
+    "diff": "hard",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 1560,
+    "cat": "fill_blanks",
+    "orig": 935,
+    "q": "a) is",
+    "opts": [
+      "are",
+      "was",
+      "were"
+    ],
+    "ans": 1,
+    "diff": "hard",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 1561,
+    "cat": "fill_blanks",
+    "orig": 936,
+    "q": "a) are",
+    "opts": [
+      "were",
+      "is",
+      "have been"
+    ],
+    "ans": 2,
+    "diff": "hard",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 1562,
+    "cat": "fill_blanks",
+    "orig": 937,
+    "q": "a) must not exceeding",
+    "opts": [
+      "must not exceed",
+      "must exceeding",
+      "must exceed"
+    ],
+    "ans": 1,
+    "diff": "hard",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 1563,
+    "cat": "fill_blanks",
+    "orig": 938,
+    "q": "a) must remain",
+    "opts": [
+      "must remains",
+      "must remaining",
+      "must be remaining"
+    ],
+    "ans": 0,
+    "diff": "hard",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 1564,
+    "cat": "fill_blanks",
+    "orig": 939,
+    "q": "a) become",
+    "opts": [
+      "becomes",
+      "can become",
+      "will become"
+    ],
+    "ans": 2,
+    "diff": "hard",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 1565,
+    "cat": "fill_blanks",
+    "orig": 940,
+    "q": "a) must review",
+    "opts": [
+      "must to review",
+      "reviewing",
+      "must reviewed"
+    ],
+    "ans": 0,
+    "diff": "hard",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 1566,
+    "cat": "fill_blanks",
+    "orig": 941,
+    "q": "a) generate",
+    "opts": [
+      "generating",
+      "generates",
+      "generated"
+    ],
+    "ans": 2,
+    "diff": "hard",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 1567,
+    "cat": "fill_blanks",
+    "orig": 942,
+    "q": "a) operate",
+    "opts": [
+      "operating",
+      "operated",
+      "operates"
+    ],
+    "ans": 3,
+    "diff": "hard",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 1568,
+    "cat": "fill_blanks",
+    "orig": 943,
+    "q": "a) generate",
+    "opts": [
+      "is generated",
+      "are generated",
+      "generating"
+    ],
+    "ans": 1,
+    "diff": "hard",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 1569,
+    "cat": "fill_blanks",
+    "orig": 944,
+    "q": "a) provide",
+    "opts": [
+      "providing",
+      "provided",
+      "provides"
+    ],
+    "ans": 0,
+    "diff": "hard",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 1570,
+    "cat": "fill_blanks",
+    "orig": 945,
+    "q": "a) must carry out",
+    "opts": [
+      "must be carried out",
+      "carrying out",
+      "carried out"
+    ],
+    "ans": 1,
+    "diff": "hard",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 1571,
+    "cat": "fill_blanks",
+    "orig": 946,
+    "q": "a) design",
+    "opts": [
+      "is designed",
+      "are designed",
+      "designing"
+    ],
+    "ans": 1,
+    "diff": "hard",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 1572,
+    "cat": "fill_blanks",
+    "orig": 947,
+    "q": "a) accomplish",
+    "opts": [
+      "is accomplished",
+      "accomplishes",
+      "accomplishing"
+    ],
+    "ans": 1,
+    "diff": "hard",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 1573,
+    "cat": "fill_blanks",
+    "orig": 948,
+    "q": "a) detected,",
+    "opts": [
+      "is detected,",
+      "detects,",
+      "detecting,"
+    ],
+    "ans": 1,
+    "diff": "hard",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 1574,
+    "cat": "fill_blanks",
+    "orig": 949,
+    "q": "a) illuminate.",
+    "opts": [
+      "illuminates.",
+      "illuminated.",
+      "illuminating."
+    ],
+    "ans": 1,
+    "diff": "hard",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 1575,
+    "cat": "fill_blanks",
+    "orig": 950,
+    "q": "a) rotate",
+    "opts": [
+      "rotated",
+      "rotating",
+      "to rotate"
+    ],
+    "ans": 2,
+    "diff": "hard",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 1576,
+    "cat": "fill_blanks",
+    "orig": 951,
+    "q": "a) support",
+    "opts": [
+      "supporting",
+      "supports",
+      "supported"
+    ],
+    "ans": 2,
+    "diff": "hard",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 1577,
+    "cat": "fill_blanks",
+    "orig": 952,
+    "q": "a) control",
+    "opts": [
+      "is controlled",
+      "controlling",
+      "controls"
+    ],
+    "ans": 1,
+    "diff": "hard",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 1578,
+    "cat": "fill_blanks",
+    "orig": 953,
+    "q": "a) can extended",
+    "opts": [
+      "extending",
+      "can be extended",
+      "extends"
+    ],
+    "ans": 2,
+    "diff": "hard",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 1579,
+    "cat": "fill_blanks",
+    "orig": 954,
+    "q": "a) confirms",
+    "opts": [
+      "confirmed",
+      "is confirmed",
+      "confirming"
+    ],
+    "ans": 2,
+    "diff": "hard",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 1580,
+    "cat": "fill_blanks",
+    "orig": 955,
+    "q": "a) must inspect",
+    "opts": [
+      "must be inspected",
+      "inspecting",
+      "inspects"
+    ],
+    "ans": 1,
+    "diff": "hard",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 1581,
+    "cat": "fill_blanks",
+    "orig": 956,
+    "q": "a) whom",
+    "opts": [
+      "where",
+      "that",
+      "which"
+    ],
+    "ans": 2,
+    "diff": "hard",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 1582,
+    "cat": "fill_blanks",
+    "orig": 957,
+    "q": "a) caused",
+    "opts": [
+      "can cause",
+      "causing",
+      "causes"
+    ],
+    "ans": 1,
+    "diff": "hard",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 1583,
+    "cat": "fill_blanks",
+    "orig": 958,
+    "q": "a) must wear.",
+    "opts": [
+      "must be worn.",
+      "worn.",
+      "wearing."
+    ],
+    "ans": 1,
+    "diff": "hard",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 1584,
+    "cat": "fill_blanks",
+    "orig": 959,
+    "q": "a) must account for and removed",
+    "opts": [
+      "must be accounted for and removed",
+      "must account and remove",
+      "must accounting and removing"
+    ],
+    "ans": 1,
+    "diff": "hard",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 1585,
+    "cat": "fill_blanks",
+    "orig": 960,
+    "q": "a) is essential",
+    "opts": [
+      "are essential",
+      "essential",
+      "essentially"
+    ],
+    "ans": 0,
+    "diff": "hard",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 1586,
+    "cat": "fill_blanks",
+    "orig": 961,
+    "q": "a) extract",
+    "opts": [
+      "extracts",
+      "extracting",
+      "extracted"
+    ],
+    "ans": 1,
+    "diff": "hard",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 1587,
+    "cat": "fill_blanks",
+    "orig": 962,
+    "q": "a) makes",
+    "opts": [
+      "making",
+      "made",
+      "make"
+    ],
+    "ans": 1,
+    "diff": "hard",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 1588,
+    "cat": "fill_blanks",
+    "orig": 963,
+    "q": "a) receive",
+    "opts": [
+      "to receive",
+      "receiving",
+      "received"
+    ],
+    "ans": 1,
+    "diff": "hard",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 1589,
+    "cat": "fill_blanks",
+    "orig": 964,
+    "q": "a) require",
+    "opts": [
+      "are required",
+      "required",
+      "requiring"
+    ],
+    "ans": 1,
+    "diff": "hard",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 1590,
+    "cat": "fill_blanks",
+    "orig": 965,
+    "q": "a) having",
+    "opts": [
+      "have",
+      "has",
+      "had"
+    ],
+    "ans": 2,
+    "diff": "hard",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 1591,
+    "cat": "fill_blanks",
+    "orig": 1741,
+    "q": "The aircraft must be __________ before maintenance begins on the hydraulic system.",
+    "opts": [
+      "refuelled",
+      "depressurized",
+      "towed",
+      "weighed"
+    ],
+    "ans": 0,
+    "diff": "hard",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 1592,
+    "cat": "fill_blanks",
+    "orig": 1742,
+    "q": "Carbon brake discs must be kept free from oil and grease __________.",
+    "opts": [
+      "occasionally",
+      "contamination",
+      "pressure",
+      "temperature"
+    ],
+    "ans": 1,
+    "diff": "hard",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 1593,
+    "cat": "fill_blanks",
+    "orig": 1743,
+    "q": "All electrical power must be removed before working on the __________ system.",
+    "opts": [
+      "oxygen",
+      "fuel",
+      "heating",
+      "pressurization"
+    ],
+    "ans": 1,
+    "diff": "hard",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 1594,
+    "cat": "fill_blanks",
+    "orig": 1744,
+    "q": "Engine oil consumption should be __________ at each service interval.",
+    "opts": [
+      "increased",
+      "monitored",
+      "reduced",
+      "ignored"
+    ],
+    "ans": 1,
+    "diff": "hard",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 1595,
+    "cat": "fill_blanks",
+    "orig": 1745,
+    "q": "The hydraulic reservoir level must be __________ before each flight.",
+    "opts": [
+      "filled",
+      "checked",
+      "drained",
+      "replaced"
+    ],
+    "ans": 1,
+    "diff": "hard",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 1596,
+    "cat": "fill_blanks",
+    "orig": 1746,
+    "q": "Anti-corrosion treatment must be applied to all __________ metal surfaces exposed during maintenance.",
+    "opts": [
+      "painted",
+      "bare",
+      "polished",
+      "sealed"
+    ],
+    "ans": 1,
+    "diff": "hard",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 1597,
+    "cat": "fill_blanks",
+    "orig": 1747,
+    "q": "Landing gear downlock pins must be __________ before the gear is retracted.",
+    "opts": [
+      "installed",
+      "removed",
+      "painted",
+      "greased"
+    ],
+    "ans": 1,
+    "diff": "hard",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 1598,
+    "cat": "fill_blanks",
+    "orig": 1748,
+    "q": "A __________ test must be performed on the fire detection loop at each maintenance check.",
+    "opts": [
+      "pressure",
+      "functional",
+      "visual",
+      "leak"
+    ],
+    "ans": 1,
+    "diff": "hard",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 1599,
+    "cat": "fill_blanks",
+    "orig": 1749,
+    "q": "Aircraft tyres are inflated with __________ to prevent moisture-related corrosion.",
+    "opts": [
+      "compressed air",
+      "nitrogen",
+      "oxygen",
+      "argon"
+    ],
+    "ans": 1,
+    "diff": "hard",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 1600,
+    "cat": "fill_blanks",
+    "orig": 1750,
+    "q": "Borescope inspection allows technicians to view __________ components without disassembly.",
+    "opts": [
+      "external",
+      "internal",
+      "structural",
+      "electrical"
+    ],
+    "ans": 1,
+    "diff": "hard",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 1601,
+    "cat": "fill_blanks",
+    "orig": 1751,
+    "q": "The __________ manual provides step-by-step procedures for all aircraft maintenance tasks.",
+    "opts": [
+      "flight",
+      "maintenance",
+      "weight",
+      "loading"
+    ],
+    "ans": 1,
+    "diff": "hard",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 1602,
+    "cat": "fill_blanks",
+    "orig": 1752,
+    "q": "Non-sparking tools must be used when working __________ fuel tanks.",
+    "opts": [
+      "near",
+      "inside",
+      "above",
+      "below"
+    ],
+    "ans": 1,
+    "diff": "hard",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 1603,
+    "cat": "fill_blanks",
+    "orig": 1753,
+    "q": "The torque __________ must be calibrated before use on critical fasteners.",
+    "opts": [
+      "driver",
+      "wrench",
+      "pliers",
+      "spanner"
+    ],
+    "ans": 1,
+    "diff": "hard",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 1604,
+    "cat": "fill_blanks",
+    "orig": 1754,
+    "q": "A __________ inspection by a second independent inspector is required for critical maintenance tasks.",
+    "opts": [
+      "visual",
+      "duplicate",
+      "verbal",
+      "general"
+    ],
+    "ans": 1,
+    "diff": "hard",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 1605,
+    "cat": "fill_blanks",
+    "orig": 1755,
+    "q": "Engine __________ temperature exceedances must be recorded in the engine logbook.",
+    "opts": [
+      "oil",
+      "exhaust gas",
+      "coolant",
+      "hydraulic"
+    ],
+    "ans": 1,
+    "diff": "hard",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 1606,
+    "cat": "fill_blanks",
+    "orig": 1756,
+    "q": "The aircraft must be on __________ before the landing gear is retracted for maintenance.",
+    "opts": [
+      "blocks",
+      "jacks",
+      "stands",
+      "wheels"
+    ],
+    "ans": 1,
+    "diff": "hard",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 1607,
+    "cat": "fill_blanks",
+    "orig": 1757,
+    "q": "All maintenance __________ must be retained for the period specified by the regulatory authority.",
+    "opts": [
+      "tools",
+      "records",
+      "personnel",
+      "manuals"
+    ],
+    "ans": 1,
+    "diff": "hard",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 1608,
+    "cat": "fill_blanks",
+    "orig": 1758,
+    "q": "The __________ power unit provides electrical power and bleed air on the ground when engines are not running.",
+    "opts": [
+      "emergency",
+      "auxiliary",
+      "main",
+      "standby"
+    ],
+    "ans": 1,
+    "diff": "hard",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 1609,
+    "cat": "fill_blanks",
+    "orig": 1759,
+    "q": "Composite repair patches must be designed to match the original __________ orientation of the material.",
+    "opts": [
+      "colour",
+      "layup",
+      "weight",
+      "thickness"
+    ],
+    "ans": 1,
+    "diff": "hard",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 1610,
+    "cat": "fill_blanks",
+    "orig": 1760,
+    "q": "The aircraft fire extinguisher bottle pressure must be __________ before every flight.",
+    "opts": [
+      "increased",
+      "verified",
+      "reduced",
+      "replaced"
+    ],
+    "ans": 1,
+    "diff": "hard",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 1611,
+    "cat": "fill_blanks",
+    "orig": 1761,
+    "q": "Engine bleed air is used for aircraft __________ to maintain a comfortable cabin altitude.",
+    "opts": [
+      "cooling",
+      "pressurization",
+      "fuelling",
+      "starting"
+    ],
+    "ans": 1,
+    "diff": "hard",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 1612,
+    "cat": "fill_blanks",
+    "orig": 1762,
+    "q": "Before entering a fuel tank, a __________ to enter must be obtained.",
+    "opts": [
+      "certificate",
+      "permit",
+      "licence",
+      "waiver"
+    ],
+    "ans": 1,
+    "diff": "hard",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 1613,
+    "cat": "fill_blanks",
+    "orig": 1763,
+    "q": "Hydraulic fluid __________ must be checked and compared against the maintenance manual limits at each service.",
+    "opts": [
+      "colour",
+      "contamination",
+      "temperature",
+      "quantity"
+    ],
+    "ans": 1,
+    "diff": "hard",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 1614,
+    "cat": "fill_blanks",
+    "orig": 1764,
+    "q": "The aircraft's weight and __________ must be confirmed before every flight.",
+    "opts": [
+      "fuel",
+      "balance",
+      "speed",
+      "altitude"
+    ],
+    "ans": 1,
+    "diff": "hard",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 1615,
+    "cat": "fill_blanks",
+    "orig": 1765,
+    "q": "A __________ is used to prevent fasteners from rotating loose in a critical installation.",
+    "opts": [
+      "lubricant",
+      "locking wire",
+      "sealant",
+      "torque wrench"
+    ],
+    "ans": 1,
+    "diff": "hard",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 1616,
+    "cat": "fill_blanks",
+    "orig": 1766,
+    "q": "__________ corrosion occurs when two dissimilar metals are in electrical contact with an electrolyte present.",
+    "opts": [
+      "Pitting",
+      "Galvanic",
+      "Fretting",
+      "Uniform"
+    ],
+    "ans": 1,
+    "diff": "hard",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 1617,
+    "cat": "fill_blanks",
+    "orig": 1767,
+    "q": "All maintenance personnel must complete __________ training as part of their recurrent training programme.",
+    "opts": [
+      "flight",
+      "human factors",
+      "fire fighting",
+      "aerodynamics"
+    ],
+    "ans": 1,
+    "diff": "hard",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 1618,
+    "cat": "fill_blanks",
+    "orig": 1768,
+    "q": "A __________ test on the oxygen system verifies the correct flow rate is delivered at altitude.",
+    "opts": [
+      "pressure",
+      "functional",
+      "leak",
+      "visual"
+    ],
+    "ans": 1,
+    "diff": "hard",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 1619,
+    "cat": "fill_blanks",
+    "orig": 1769,
+    "q": "Aircraft technical records must be __________ and available for inspection by the regulatory authority.",
+    "opts": [
+      "confidential",
+      "legible",
+      "encrypted",
+      "archived"
+    ],
+    "ans": 1,
+    "diff": "hard",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 1620,
+    "cat": "fill_blanks",
+    "orig": 1770,
+    "q": "The Minimum Equipment List (MEL) allows dispatch with certain __________ items.",
+    "opts": [
+      "serviceable",
+      "inoperative",
+      "damaged",
+      "expired"
+    ],
+    "ans": 1,
+    "diff": "hard",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 1621,
+    "cat": "fill_blanks",
+    "orig": 1771,
+    "q": "Hydraulic actuator __________ must be replaced when the actuator is disassembled for any reason.",
+    "opts": [
+      "pistons",
+      "seals",
+      "housings",
+      "bolts"
+    ],
+    "ans": 1,
+    "diff": "hard",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 1622,
+    "cat": "fill_blanks",
+    "orig": 1772,
+    "q": "During aircraft towing, the nose gear must not exceed its stated __________ angle limit.",
+    "opts": [
+      "pitch",
+      "steering",
+      "braking",
+      "camber"
+    ],
+    "ans": 1,
+    "diff": "hard",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 1623,
+    "cat": "fill_blanks",
+    "orig": 1773,
+    "q": "The __________ is used to verify the electrical resistance of a bonding strap.",
+    "opts": [
+      "oscilloscope",
+      "bonding tester/milliohmmeter",
+      "voltmeter",
+      "ammeter"
+    ],
+    "ans": 1,
+    "diff": "hard",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 1624,
+    "cat": "fill_blanks",
+    "orig": 1774,
+    "q": "Structural repairs must restore the original __________ and aerodynamic profile of the damaged area.",
+    "opts": [
+      "colour",
+      "strength",
+      "texture",
+      "marking"
+    ],
+    "ans": 1,
+    "diff": "hard",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 1625,
+    "cat": "fill_blanks",
+    "orig": 1775,
+    "q": "Engine __________ monitoring data is used to detect early signs of deterioration.",
+    "opts": [
+      "noise",
+      "trend",
+      "fuel",
+      "speed"
+    ],
+    "ans": 1,
+    "diff": "hard",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 1626,
+    "cat": "fill_blanks",
+    "orig": 1776,
+    "q": "Before any welding on or near an aircraft, all fuel must be __________ from the area.",
+    "opts": [
+      "checked",
+      "removed",
+      "measured",
+      "inspected"
+    ],
+    "ans": 1,
+    "diff": "hard",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 1627,
+    "cat": "fill_blanks",
+    "orig": 1777,
+    "q": "A __________ check drains the lowest point of the fuel tank to check for water and sediment.",
+    "opts": [
+      "quantity",
+      "sump",
+      "pressure",
+      "visual"
+    ],
+    "ans": 1,
+    "diff": "hard",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 1628,
+    "cat": "fill_blanks",
+    "orig": 1778,
+    "q": "The aircraft Certificate of __________ must be current for the aircraft to fly legally.",
+    "opts": [
+      "Registration",
+      "Airworthiness",
+      "Maintenance",
+      "Insurance"
+    ],
+    "ans": 1,
+    "diff": "hard",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 1629,
+    "cat": "fill_blanks",
+    "orig": 1779,
+    "q": "Oxygen cylinders must be stored __________ and secured against falling.",
+    "opts": [
+      "horizontally",
+      "vertically",
+      "diagonally",
+      "inverted"
+    ],
+    "ans": 1,
+    "diff": "hard",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 1630,
+    "cat": "fill_blanks",
+    "orig": 1780,
+    "q": "The __________ Catalogue lists all aircraft parts by assembly breakdown and part number.",
+    "opts": [
+      "Maintenance",
+      "Illustrated Parts",
+      "Fault Isolation",
+      "Wiring Diagram"
+    ],
+    "ans": 1,
+    "diff": "hard",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 1631,
+    "cat": "fill_blanks",
+    "orig": 1781,
+    "q": "The __________ prevents backflow of hydraulic fluid when a pump fails.",
+    "opts": [
+      "relief valve",
+      "check valve",
+      "selector valve",
+      "shutoff valve"
+    ],
+    "ans": 1,
+    "diff": "hard",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 1632,
+    "cat": "fill_blanks",
+    "orig": 1782,
+    "q": "After a birdstrike, __________ areas including engine inlet and leading edges must be inspected.",
+    "opts": [
+      "all external",
+      "affected",
+      "structural",
+      "pressurized"
+    ],
+    "ans": 1,
+    "diff": "hard",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 1633,
+    "cat": "fill_blanks",
+    "orig": 1783,
+    "q": "Heat sensitive __________ plugs in aircraft wheels release to prevent tyre blowout after brake overheating.",
+    "opts": [
+      "safety",
+      "fusible",
+      "pressure",
+      "drain"
+    ],
+    "ans": 1,
+    "diff": "hard",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 1634,
+    "cat": "fill_blanks",
+    "orig": 1784,
+    "q": "A component that has exceeded its __________ limit must be removed regardless of apparent condition.",
+    "opts": [
+      "warranty",
+      "life",
+      "service",
+      "storage"
+    ],
+    "ans": 1,
+    "diff": "hard",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 1635,
+    "cat": "fill_blanks",
+    "orig": 1785,
+    "q": "Fuel __________ lines must be kept clear to prevent pressurisation of tanks beyond design limits.",
+    "opts": [
+      "fill",
+      "vent",
+      "feed",
+      "transfer"
+    ],
+    "ans": 1,
+    "diff": "hard",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 1636,
+    "cat": "fill_blanks",
+    "orig": 1786,
+    "q": "The __________ system removes contamination from hydraulic fluid to protect components from wear.",
+    "opts": [
+      "isolation",
+      "filtration",
+      "pressurization",
+      "cooling"
+    ],
+    "ans": 1,
+    "diff": "hard",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 1637,
+    "cat": "fill_blanks",
+    "orig": 1787,
+    "q": "Before signing a task card, the certifying engineer must confirm the work was done in accordance with the __________ documentation.",
+    "opts": [
+      "planned",
+      "referenced",
+      "archived",
+      "optional"
+    ],
+    "ans": 1,
+    "diff": "hard",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 1638,
+    "cat": "fill_blanks",
+    "orig": 1788,
+    "q": "A __________ leak in the pressurization system can cause rapid loss of cabin pressure.",
+    "opts": [
+      "small",
+      "major",
+      "slow",
+      "external"
+    ],
+    "ans": 1,
+    "diff": "hard",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 1639,
+    "cat": "fill_blanks",
+    "orig": 1789,
+    "q": "During a __________ inspection, detailed examination of internal structure is required.",
+    "opts": [
+      "transit",
+      "detailed",
+      "preflight",
+      "turnaround"
+    ],
+    "ans": 1,
+    "diff": "hard",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 1640,
+    "cat": "fill_blanks",
+    "orig": 1790,
+    "q": "The aircraft's nose wheel steering must be __________ after a tow before releasing the aircraft to the crew.",
+    "opts": [
+      "tested",
+      "reconnected",
+      "adjusted",
+      "lubricated"
+    ],
+    "ans": 1,
+    "diff": "hard",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 1641,
+    "cat": "fill_blanks",
+    "orig": 1791,
+    "q": "Electrical wiring showing signs of __________ insulation must be repaired using approved materials.",
+    "opts": [
+      "correct",
+      "damaged",
+      "old",
+      "clean"
+    ],
+    "ans": 1,
+    "diff": "hard",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 1642,
+    "cat": "fill_blanks",
+    "orig": 1792,
+    "q": "Tool __________ is critical to preventing foreign object damage during maintenance.",
+    "opts": [
+      "calibration",
+      "accountability",
+      "storage",
+      "cleaning"
+    ],
+    "ans": 1,
+    "diff": "hard",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 1643,
+    "cat": "fill_blanks",
+    "orig": 1793,
+    "q": "The __________ of a repair must be assessed against allowable limits in the SRM before treatment.",
+    "opts": [
+      "colour",
+      "extent",
+      "weight",
+      "location"
+    ],
+    "ans": 1,
+    "diff": "hard",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 1644,
+    "cat": "fill_blanks",
+    "orig": 1794,
+    "q": "Dangerous goods must be declared by the __________ and accepted by the operator before loading.",
+    "opts": [
+      "pilot",
+      "shipper",
+      "handler",
+      "agent"
+    ],
+    "ans": 1,
+    "diff": "hard",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 1645,
+    "cat": "fill_blanks",
+    "orig": 1795,
+    "q": "A __________ attendant must be present outside a confined space whenever personnel are working inside.",
+    "opts": [
+      "fire",
+      "safety",
+      "quality",
+      "maintenance"
+    ],
+    "ans": 1,
+    "diff": "hard",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  }
+]

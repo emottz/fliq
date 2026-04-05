@@ -1,0 +1,1802 @@
+================================================================
+HAVA ARACI BAKIM PERSONELİ YABANCI DİL SINAVI
+SORU BANKASI - BÖLÜM 1: DİL BİLGİSİ (GRAMMAR)
+250 SORU
+================================================================
+
+--- PASSİF YAPI (PASSIVE VOICE) ---
+
+1. The hydraulic pump ………… by the engine through a gearbox.
+a) drives
+b) is driven
+c) are driven
+d) driving
+ANSWER: b
+
+2. All maintenance tasks ………… in accordance with the Aircraft Maintenance Manual.
+a) perform
+b) must perform
+c) must be performed
+d) must performing
+ANSWER: c
+
+3. The fuel filter ………… every 500 flight hours under normal operating conditions.
+a) replaces
+b) is replaced
+c) are replaced
+d) replacing
+ANSWER: b
+
+4. The engine ………… before any maintenance work begins on the fuel system.
+a) must shut down
+b) must be shut down
+c) should shutting down
+d) would shut down
+ANSWER: b
+
+5. The warning notice ………… in the cockpit to prevent operation of flight controls during maintenance.
+a) places
+b) placed
+c) must be placed
+d) must place
+ANSWER: c
+
+6. All contaminated parts ………… for laboratory analysis.
+a) should keep
+b) should be kept
+c) keeping
+d) must keep
+ANSWER: b
+
+7. The oxygen cylinders ………… in accordance with the applicable service bulletin.
+a) are tested
+b) test
+c) testing
+d) has tested
+ANSWER: a
+
+8. After maintenance, all access panels ………… with the specified fasteners.
+a) must close
+b) must be closed
+c) should close
+d) would close
+ANSWER: b
+
+9. The brake assembly ………… in a dry location to prevent moisture damage.
+a) should store
+b) should be stored
+c) stores
+d) storing
+ANSWER: b
+
+10. Electrical connections ………… with a continuity meter before the system is powered up.
+a) check
+b) are checked
+c) checked
+d) have check
+ANSWER: b
+
+11. The landing gear retraction test ………… at least once before the aircraft returns to service.
+a) must perform
+b) must be performed
+c) performs
+d) performing
+ANSWER: b
+
+12. All torque values ………… as specified in the maintenance manual.
+a) apply
+b) applied
+c) must be applied
+d) must apply
+ANSWER: c
+
+13. The hydraulic fluid sample ………… from the reservoir during the scheduled check.
+a) takes
+b) is taken
+c) are taking
+d) have taken
+ANSWER: b
+
+14. The engine oil ………… at every scheduled maintenance interval.
+a) changes
+b) is changed
+c) are changed
+d) changing
+ANSWER: b
+
+15. Safety pins ………… from the landing gear before the aircraft tows.
+a) remove
+b) must be removed
+c) must remove
+d) removes
+ANSWER: b
+
+16. The avionics equipment ………… in the electronics bay below the cockpit.
+a) locates
+b) is located
+c) are locating
+d) locate
+ANSWER: b
+
+17. Carbon brake disks ………… using the approved procedure described in the CMM.
+a) inspects
+b) are inspected
+c) inspect
+d) inspecting
+ANSWER: b
+
+18. The fire extinguisher ………… in the aft equipment bay at all times.
+a) must store
+b) must be stored
+c) stores
+d) storing
+ANSWER: b
+
+19. All wire bundles ………… from sharp edges to prevent chafing damage.
+a) route away
+b) are routed away
+c) routing away
+d) routes away
+ANSWER: b
+
+20. The APU ………… only by qualified maintenance personnel.
+a) operates
+b) is operated
+c) operating
+d) operated
+ANSWER: b
+
+21. The pressure test ………… after every valve replacement.
+a) conducts
+b) is conducted
+c) conducting
+d) conduct
+ANSWER: b
+
+22. The nitrogen charge ………… to the specified pressure before flight.
+a) restores
+b) must be restored
+c) restoring
+d) must restore
+ANSWER: b
+
+23. Defective components ………… with parts of the same part number.
+a) replace
+b) are replaced
+c) replacing
+d) have replace
+ANSWER: b
+
+24. The circuit breakers ………… before any electrical work is carried out.
+a) open
+b) must be opened
+c) must open
+d) opens
+ANSWER: b
+
+25. The pitot tubes ………… from ice accumulation by the anti-icing heater.
+a) protect
+b) are protected
+c) protecting
+d) protects
+ANSWER: b
+
+26. The fuel tank ………… of any residual fuel before entering for inspection.
+a) must drain
+b) must be drained
+c) drains
+d) drained
+ANSWER: b
+
+27. The composite structure ………… for delamination using ultrasonic testing.
+a) examines
+b) is examined
+c) examine
+d) has examine
+ANSWER: b
+
+28. All ground support equipment ………… before engine start.
+a) removes
+b) must be removed
+c) must remove
+d) removing
+ANSWER: b
+
+29. The thrust reverser ………… in the open position during landing.
+a) deploys
+b) is deployed
+c) deploy
+d) deploying
+ANSWER: b
+
+30. Loose rivets ………… using a rivet gun and approved repair procedure.
+a) replace
+b) are replaced
+c) replacing
+d) replaces
+ANSWER: b
+
+31. The oil pressure ………… on the engine instrument panel during ground run.
+a) monitors
+b) is monitored
+c) monitoring
+d) monitorings
+ANSWER: b
+
+32. The aircraft ………… on level ground before the fuel quantity check.
+a) parks
+b) must be parked
+c) must park
+d) parking
+ANSWER: b
+
+33. Contaminated hydraulic fluid ………… and replaced with fresh fluid.
+a) drains
+b) must be drained
+c) must drain
+d) draining
+ANSWER: b
+
+34. The corrosion ………… with an approved chemical treatment after removal.
+a) treats
+b) is treated
+c) treating
+d) treated
+ANSWER: b
+
+35. Inspection records ………… in the aircraft logbook after each maintenance task.
+a) enter
+b) must be entered
+c) must enter
+d) entering
+ANSWER: b
+
+36. The tail rotor blades ………… for erosion damage at every 100-hour inspection.
+a) inspects
+b) are inspected
+c) inspect
+d) inspecting
+ANSWER: b
+
+37. The torque wrench ………… before use to ensure accuracy.
+a) calibrates
+b) must be calibrated
+c) must calibrate
+d) calibrating
+ANSWER: b
+
+38. Hazardous materials ………… in approved containers with proper labeling.
+a) store
+b) must be stored
+c) must store
+d) storing
+ANSWER: b
+
+39. The fuel nozzles ………… on a flow bench to verify correct spray pattern.
+a) test
+b) are tested
+c) testing
+d) has test
+ANSWER: b
+
+40. The aircraft structure ………… from corrosion with approved protective coatings.
+a) protects
+b) is protected
+c) protecting
+d) protects
+ANSWER: b
+
+--- MODAL FIILLER (MODAL VERBS) ---
+
+41. Maintenance facilities that replace heat sinks ………… return the carbon disks to the approved distributor.
+a) would
+b) must
+c) could
+d) may
+ANSWER: b
+
+42. You ………… wear protective gloves when handling hydraulic fluid.
+a) may
+b) would
+c) must
+d) could
+ANSWER: c
+
+43. The engine ………… be started in this condition without risk of damage.
+a) should not
+b) must
+c) could
+d) will
+ANSWER: a
+
+44. If the oil level is low, the aircraft ………… not depart until the level is restored.
+a) could
+b) would
+c) may
+d) must
+ANSWER: d
+
+45. Additional maintenance tasks ………… be required depending on the failure mode.
+a) must
+b) will
+c) may
+d) shall
+ANSWER: c
+
+46. The emergency shutdown procedure ………… only be used when abnormal conditions occur.
+a) could
+b) should
+c) would
+d) might
+ANSWER: b
+
+47. The crew ………… obey all safety precautions before entering the fuel tank.
+a) may
+b) could
+c) must
+d) would
+ANSWER: c
+
+48. The fire extinguisher ………… be stored in any attitude.
+a) must
+b) may
+c) would
+d) should
+ANSWER: b
+
+49. A WARNING tells the operator that injury or death ………… if the instruction is not obeyed.
+a) is possible
+b) would occur
+c) could not
+d) must
+ANSWER: a
+
+50. The hydraulic system pressure ………… not exceed 3000 PSI during normal operation.
+a) would
+b) could
+c) must
+d) may
+ANSWER: c
+
+51. You ………… use approved test equipment when working on the fuel system wiring.
+a) would
+b) could
+c) might
+d) must
+ANSWER: d
+
+52. If the crack length exceeds the limit, the part ………… be replaced immediately.
+a) could
+b) might
+c) must
+d) would
+ANSWER: c
+
+53. Lead-acid batteries ………… produce explosive mixtures of hydrogen and oxygen while charging.
+a) could
+b) must
+c) can
+d) should
+ANSWER: c
+
+54. The technician ………… inform the supervisor before beginning any unscheduled maintenance.
+a) might
+b) should
+c) would
+d) could
+ANSWER: b
+
+55. A broken fastener, if detected, ………… be replaced by a new one of the same part number.
+a) could
+b) might
+c) should
+d) must
+ANSWER: c
+
+56. You ………… wait at least one hour before attempting to restart the APU after three failed starts.
+a) may
+b) could
+c) must
+d) would
+ANSWER: c
+
+57. The wheel assembly ………… be inspected for cracks before every flight.
+a) would
+b) might
+c) could
+d) must
+ANSWER: d
+
+58. Any inoperative item ………… only be removed if specifically allowed by the MMEL.
+a) would
+b) could
+c) should
+d) may
+ANSWER: c
+
+59. You ………… not remove safety pins while the aircraft is pressurized.
+a) would
+b) could
+c) must
+d) might
+ANSWER: c
+
+60. An additional pressure regulator ………… be installed on high pressure nitrogen sources to prevent incorrect regulation.
+a) would
+b) must
+c) should
+d) could
+ANSWER: c
+
+61. Cadmium-plated parts ………… cause kidney disease if swallowed.
+a) must
+b) could
+c) would
+d) should
+ANSWER: b
+
+62. The engine ………… be motored without engaging the ignition to purge residual fuel.
+a) can
+b) must
+c) would
+d) should
+ANSWER: a
+
+63. If the brake temperature indicator shows amber, the aircraft ………… depart after a cooling period.
+a) could
+b) must not
+c) would
+d) may
+ANSWER: d
+
+64. Any crew interphone station that is operative ………… be used during emergency situations.
+a) could
+b) would
+c) may
+d) shall
+ANSWER: c
+
+65. Technicians ………… clean their hands after touching cadmium-plated parts before eating or smoking.
+a) would
+b) could
+c) might
+d) must
+ANSWER: d
+
+66. A seat with an inoperative restraint system ………… be considered inoperative until repaired.
+a) could
+b) would
+c) must
+d) might
+ANSWER: c
+
+67. The aircraft ………… return to service until all open items on the work order are closed.
+a) could not
+b) might not
+c) may not
+d) must not
+ANSWER: d
+
+68. The technician ………… refer to the applicable service bulletin for the latest maintenance data.
+a) would
+b) could
+c) should
+d) might
+ANSWER: c
+
+69. The fuel quantity ………… be checked before every departure to ensure sufficient reserves.
+a) would
+b) could
+c) might
+d) must
+ANSWER: d
+
+70. Preloaded bolts ………… be reused after removal; they must be replaced with new ones.
+a) must not
+b) could not
+c) should not
+d) would not
+ANSWER: c
+
+71. If there ………… an obstruction in the drain mast, clean it with the approved procedure.
+a) are
+b) is
+c) were
+d) have
+ANSWER: b
+
+72. The hydraulic actuator ………… be bench tested before installation on the aircraft.
+a) must
+b) would
+c) could
+d) might
+ANSWER: a
+
+73. Worn brake pads ………… cause extended stopping distances and reduced braking efficiency.
+a) must
+b) would
+c) could
+d) should
+ANSWER: c
+
+74. The avionics cooling fan ………… operate continuously when the aircraft is powered on the ground.
+a) must
+b) should
+c) could
+d) would
+ANSWER: a
+
+75. The pressurization controller ………… be tested in the manual mode before flight.
+a) could
+b) would
+c) should
+d) might
+ANSWER: c
+
+76. All modifications to the aircraft ………… be approved by the relevant authority before embodiment.
+a) could
+b) might
+c) must
+d) would
+ANSWER: c
+
+77. The deicing fluid ………… be applied according to the holdover time chart for the prevailing conditions.
+a) would
+b) could
+c) might
+d) must
+ANSWER: d
+
+78. Without proper bonding, static charge ………… build up and cause a spark in the fuel tank.
+a) must
+b) can
+c) would
+d) should
+ANSWER: b
+
+79. The aircraft ………… be weighed at the intervals specified in the weight and balance manual.
+a) could
+b) should
+c) might
+d) would
+ANSWER: b
+
+80. Any contamination found in the oil ………… be kept for investigation by the engine manufacturer.
+a) should
+b) could
+c) might
+d) would
+ANSWER: a
+
+--- KOŞUL CÜMLELERİ (CONDITIONAL SENTENCES) ---
+
+81. If the engine ………… recently, check the temperature in the combustion chamber with a metal probe.
+a) ran
+b) has been run
+c) was running
+d) have been running
+ANSWER: b
+
+82. If you find a crack longer than the maximum allowable limit, ………… the component.
+a) replacing
+b) replaced
+c) replace
+d) to replace
+ANSWER: c
+
+83. If the oil temperature ………… the red line, shut down the engine immediately.
+a) exceeds
+b) exceeded
+c) is exceeding
+d) would exceed
+ANSWER: a
+
+84. If there ………… no airflow at the ram air outlet, do the fault isolation procedure.
+a) have
+b) are
+c) is
+d) was
+ANSWER: c
+
+85. If the battery ………… connected during parking, the loads will decrease the battery charge to a very low level.
+a) stays
+b) stayed
+c) will stay
+d) would stay
+ANSWER: a
+
+86. If the test ………… the fault, perform the operational test of the related system.
+a) confirmed
+b) confirms
+c) will confirm
+d) confirming
+ANSWER: b
+
+87. If a part, tool, or object ………… into the engine, the assembly process must stop until it is found.
+a) fell
+b) falls
+c) will fall
+d) has fallen
+ANSWER: b
+
+88. If an inoperative armrest ………… an emergency evacuation, it should be removed.
+a) will hinder
+b) hindered
+c) hinders
+d) would hinder
+ANSWER: c
+
+89. If the center tank ………… full, the high-level sensor may be overridden.
+a) were
+b) is
+c) will be
+d) would be
+ANSWER: b
+
+90. If you ………… to do this, the computers may overheat and fail.
+a) will fail
+b) failed
+c) fail
+d) would fail
+ANSWER: c
+
+91. If a broken fastener ………… during inspection, replace it immediately.
+a) is detected
+b) detects
+c) detected
+d) has detecting
+ANSWER: a
+
+92. If the test set ………… a fault in the wiring harness, refer to the troubleshooting guide.
+a) indicates
+b) indicated
+c) is indicating
+d) will indicate
+ANSWER: a
+
+93. If there ………… moisture in the oxygen system, purge the lines with dry nitrogen.
+a) are
+b) is
+c) were
+d) was
+ANSWER: b
+
+94. If the hydraulic reservoir level ………… below the minimum mark, do not operate the system.
+a) drops
+b) dropped
+c) will drop
+d) is dropping
+ANSWER: a
+
+95. If an access door or panel ………… in more than one zone, the lowest zone number is used.
+a) is
+b) was
+c) are
+d) were
+ANSWER: a
+
+96. If the seal ………… damaged during disassembly, it must be replaced before reassembly.
+a) is
+b) was
+c) will be
+d) were
+ANSWER: a
+
+97. If no crack ………… during inspection, perform the next inspection at 1000 flight cycles.
+a) is detected
+b) detects
+c) detected
+d) detect
+ANSWER: a
+
+98. If the test ………… the maintenance message, replace the faulty component.
+a) confirmed
+b) confirms
+c) confirming
+d) has confirming
+ANSWER: b
+
+99. If the wheel assembly ………… out of balance, vibration will occur during high-speed taxi.
+a) are
+b) is
+c) were
+d) will be
+ANSWER: b
+
+100. If the compartment ………… expected to flood under light impact, it should not be used.
+a) is
+b) are
+c) was
+d) were
+ANSWER: a
+
+101. If the engine oil pressure ………… the minimum during ground run, shut down immediately.
+a) is below
+b) was below
+c) will below
+d) were below
+ANSWER: a
+
+102. If you ………… the wiring diagram incorrectly, the system may malfunction.
+a) interpreted
+b) interpret
+c) are interpreting
+d) will interpret
+ANSWER: b
+
+103. If the circuit breaker ………… out during normal operation, investigate the cause before resetting.
+a) trips
+b) tripped
+c) will trip
+d) has tripped
+ANSWER: a
+
+104. If there is a short circuit, you ………… damage to the serviceable computer when you swap the units.
+a) cause
+b) would cause
+c) will cause
+d) caused
+ANSWER: c
+
+105. If the aircraft ………… on a slope greater than 3 degrees, the fuel quantity reading may be inaccurate.
+a) parks
+b) is parked
+c) was parked
+d) will park
+ANSWER: b
+
+106. If the disconnection ………… possible, perform the flight control check on one side only.
+a) is not
+b) were not
+c) was not
+d) will not be
+ANSWER: a
+
+107. If the oxygen pressure ………… below the service limit, refill the cylinder.
+a) falls
+b) fell
+c) will fall
+d) has fallen
+ANSWER: a
+
+108. If the strut ………… fully extended on the ground, check for hydraulic fluid loss.
+a) is not
+b) was not
+c) were not
+d) will not be
+ANSWER: a
+
+109. If the battery ………… removed from the aircraft, install terminal protectors immediately.
+a) is
+b) was
+c) will be
+d) were
+ANSWER: a
+
+110. If corrosion ………… on the wing skin, treat and seal the area before applying primer.
+a) finds
+b) found
+c) is found
+d) has find
+ANSWER: c
+
+--- ZAMAN KİPLERİ (TENSES) ---
+
+111. The maintenance team ………… the hydraulic system for three hours when the fault was isolated.
+a) tests
+b) tested
+c) has been testing
+d) had been testing
+ANSWER: d
+
+112. The aircraft ………… a major overhaul last year and is currently in service.
+a) has undergone
+b) underwent
+c) undergoes
+d) was undergoing
+ANSWER: b
+
+113. The fuel pressure ………… fluctuating since the last flight, so the pump must be replaced.
+a) is
+b) was
+c) has been
+d) had been
+ANSWER: c
+
+114. The engineer ………… the repair manual carefully before beginning the procedure.
+a) reads
+b) read
+c) has read
+d) was reading
+ANSWER: b
+
+115. On in-service aircraft, some isolated cracks ………… discovered on the nose landing gear door.
+a) has been
+b) have been
+c) was
+d) were
+ANSWER: b
+
+116. The technician ………… the engine for 20 minutes when he noticed an oil leak.
+a) ran
+b) runs
+c) has been running
+d) had been running
+ANSWER: d
+
+117. The aircraft ………… the 10,000-hour inspection last month and is cleared for flight.
+a) completes
+b) completed
+c) has completed
+d) is completing
+ANSWER: b
+
+118. The flight crew ………… the unusual engine behavior in the technical log after landing.
+a) records
+b) recorded
+c) has recorded
+d) was recording
+ANSWER: b
+
+119. The maintenance schedule shows that the next A-check ………… in 200 flight hours.
+a) is due
+b) was due
+c) has been due
+d) had been due
+ANSWER: a
+
+120. The inspector ………… three cracks in the fuselage during the most recent detailed inspection.
+a) finds
+b) found
+c) has found
+d) had been finding
+ANSWER: b
+
+121. The APU ………… successfully before the aircraft was released from maintenance.
+a) tests
+b) tested
+c) was tested
+d) is tested
+ANSWER: c
+
+122. Engine components ………… at regular intervals to detect signs of fatigue or wear.
+a) inspected
+b) are inspecting
+c) are inspected
+d) have inspected
+ANSWER: c
+
+123. Since the last overhaul, the aircraft ………… over 5,000 hours without any major defects.
+a) flies
+b) flew
+c) has flown
+d) had flown
+ANSWER: c
+
+124. The maintenance manual ………… in 2023 to include the latest service bulletins.
+a) revised
+b) was revised
+c) has revised
+d) is revising
+ANSWER: b
+
+125. The technician ………… on the landing gear when the hangar lights failed.
+a) works
+b) worked
+c) was working
+d) has been working
+ANSWER: c
+
+126. The fan blade ………… its fatigue life limit and must be retired from service.
+a) reaches
+b) reached
+c) has reached
+d) is reaching
+ANSWER: c
+
+127. By the time the aircraft arrives at the gate, the ground crew ………… the equipment in position.
+a) places
+b) placed
+c) will have placed
+d) has placed
+ANSWER: c
+
+128. The technician ………… the aircraft for two hours before finding the fault.
+a) was troubleshooting
+b) troubleshoots
+c) has troubleshot
+d) troubleshot
+ANSWER: a
+
+129. The paint ………… from the composite structure using the approved non-chemical method.
+a) removes
+b) was removed
+c) has removed
+d) is removing
+ANSWER: b
+
+130. Engine serial number data ………… not changed since the engine was originally certified.
+a) were
+b) are
+c) has
+d) have
+ANSWER: c
+
+131. The crew ………… the first officer's seat for 30 minutes when they realized it was unserviceable.
+a) adjust
+b) adjusted
+c) had been adjusting
+d) was adjusting
+ANSWER: c
+
+132. The weather radar ………… erratic readings before it was replaced on the last check.
+a) gives
+b) was giving
+c) has given
+d) had been giving
+ANSWER: d
+
+133. Fuel system maintenance messages ………… possibly occur during the first engine start after a fuel drain.
+a) can
+b) could
+c) would
+d) might
+ANSWER: a
+
+134. The aircraft ………… in the maintenance hangar for the past two weeks undergoing structural repairs.
+a) is
+b) was
+c) has been
+d) had been
+ANSWER: c
+
+135. The new procedure ………… into the maintenance manual after the last revision cycle.
+a) incorporates
+b) incorporated
+c) was incorporated
+d) has incorporated
+ANSWER: c
+
+136. The landing gear retraction time ………… measured during the last functional check.
+a) is
+b) was
+c) has been
+d) had been
+ANSWER: b
+
+137. The overheat detection system ………… serviceably since the last maintenance action.
+a) operates
+b) has been operating
+c) was operating
+d) operated
+ANSWER: b
+
+138. The fuel jettison system ………… tested in accordance with the approved procedure.
+a) should be
+b) must test
+c) testing
+d) tests
+ANSWER: a
+
+139. All defects ………… in the aircraft technical log before the aircraft is returned to service.
+a) must record
+b) must be recorded
+c) records
+d) recorded
+ANSWER: b
+
+140. The maintenance controller ………… the hangar team of the schedule change an hour ago.
+a) informs
+b) has informed
+c) was informing
+d) informed
+ANSWER: d
+
+--- RELATİF CÜMLELER (RELATIVE CLAUSES) ---
+
+141. The location ………… the hydraulic reservoir is situated is accessible through panel 84L.
+a) when
+b) where
+c) which
+d) who
+ANSWER: b
+
+142. The technician ………… replaced the fuel pump has 15 years of experience.
+a) who
+b) which
+c) where
+d) when
+ANSWER: a
+
+143. It is standard practice for locations ………… parts are subjected to temperatures in excess of 500°F.
+a) when
+b) who
+c) where
+d) which
+ANSWER: c
+
+144. The part number ………… is listed in the IPC is the approved replacement part.
+a) who
+b) when
+c) where
+d) that
+ANSWER: d
+
+145. The access door ………… is identified by number 811 is located on the left side of the fuselage.
+a) who
+b) where
+c) that
+d) when
+ANSWER: c
+
+146. The procedure ………… is described in AMM Chapter 28 must be followed exactly.
+a) who
+b) where
+c) which
+d) when
+ANSWER: c
+
+147. The engine zone ………… the repair was performed showed no signs of recurrence.
+a) who
+b) which
+c) when
+d) where
+ANSWER: d
+
+148. Any contamination ………… is found in the oil must be analyzed by the manufacturer.
+a) who
+b) when
+c) that
+d) where
+ANSWER: c
+
+149. The seat ………… the inoperative seatbelt was found must be placarded.
+a) where
+b) that
+c) which
+d) when
+ANSWER: a
+
+150. The inspector ………… carried out the borescope inspection found no damage.
+a) which
+b) that
+c) where
+d) when
+ANSWER: b
+
+151. The hydraulic component ………… was replaced showed signs of internal leakage.
+a) when
+b) where
+c) that
+d) who
+ANSWER: c
+
+152. The MEL item ………… the aircraft is dispatched under must be complied with during flight.
+a) which
+b) that
+c) under which
+d) where
+ANSWER: c
+
+153. The maintenance record ………… shows the last engine replacement date is in the aircraft file.
+a) who
+b) where
+c) when
+d) that
+ANSWER: d
+
+154. The compartment ………… the avionics equipment is located must be kept clean and dry.
+a) when
+b) where
+c) that
+d) which
+ANSWER: b
+
+155. The tool ………… was used for the torque check must be calibrated and traceable.
+a) who
+b) where
+c) that
+d) when
+ANSWER: c
+
+156. The zone ………… the corrosion was found is treated with an approved inhibitor.
+a) who
+b) that
+c) when
+d) where
+ANSWER: d
+
+157. The manual ………… is referenced must be the latest revision.
+a) that
+b) who
+c) where
+d) when
+ANSWER: a
+
+158. The aircraft ………… registration marks are visible on the fuselage is currently in heavy maintenance.
+a) which
+b) whose
+c) that
+d) where
+ANSWER: b
+
+159. The service bulletin ………… covers this repair was issued in 2022.
+a) who
+b) when
+c) where
+d) that
+ANSWER: d
+
+160. The engineer ………… expertise is in avionics will carry out the line replacement unit test.
+a) whose
+b) who
+c) which
+d) that
+ANSWER: a
+
+--- MASTAR / ULAÇ (INFINITIVE / GERUND) ---
+
+161. The procedure ………… paint coatings from metallic materials is described in the SRM.
+a) removes
+b) to remove
+c) removing
+d) is removed
+ANSWER: b
+
+162. The technician avoided ………… on the composite surface with bare hands to prevent contamination.
+a) to walk
+b) walks
+c) walked
+d) walking
+ANSWER: d
+
+163. The supervisor recommended ………… an additional regulator on the high pressure nitrogen source.
+a) to install
+b) installing
+c) install
+d) installed
+ANSWER: b
+
+164. It is important ………… all safety equipment before entering the fuel tank.
+a) wear
+b) wearing
+c) to wear
+d) wore
+ANSWER: c
+
+165. The engineer finished ………… the engine logbook before signing off the work order.
+a) updating
+b) to update
+c) update
+d) updated
+ANSWER: a
+
+166. The technician failed ………… the oxygen system pressure within the required limits.
+a) maintaining
+b) maintained
+c) to maintain
+d) maintain
+ANSWER: c
+
+167. The procedure requires ………… the torque wrench before use.
+a) to calibrate
+b) calibrated
+c) calibrating
+d) calibrate
+ANSWER: c
+
+168. It is recommended ………… a detailed inspection after a hard landing event.
+a) performing
+b) performed
+c) to perform
+d) performs
+ANSWER: c
+
+169. The technician considered ………… the avionics unit before ordering a replacement.
+a) test
+b) to test
+c) testing
+d) tested
+ANSWER: c
+
+170. It is customary ………… bolts with reduced pitch diameter in the hot section of engines.
+a) to provide
+b) providing
+c) provided
+d) provide
+ANSWER: a
+
+171. Put a warning notice in the cockpit ………… persons not to operate the flight controls.
+a) telling
+b) to tell
+c) told
+d) tells
+ANSWER: a
+
+172. The team stopped ………… for lunch after completing the hydraulic system test.
+a) to work
+b) working
+c) worked
+d) work
+ANSWER: b
+
+173. The engineer remembered ………… the part number in the maintenance log.
+a) recording
+b) recorded
+c) to record
+d) records
+ANSWER: c
+
+174. The supervisor allowed the technician ………… the brake assembly unassisted.
+a) replacing
+b) replaced
+c) replace
+d) to replace
+ANSWER: d
+
+175. The manual instructs you ………… the engine before performing any work on the fuel injectors.
+a) to run
+b) running
+c) ran
+d) run
+ANSWER: a
+
+176. The hydraulic system ………… pressurized requires special safety precautions.
+a) is
+b) are
+c) being
+d) been
+ANSWER: c
+
+177. The maintenance controller arranged for ………… the aircraft into the hangar overnight.
+a) tow
+b) to tow
+c) towing
+d) towed
+ANSWER: c
+
+178. Combustible material means the material ………… capable of catching fire and burning.
+a) is
+b) was
+c) being
+d) been
+ANSWER: c
+
+179. The inspector denied ………… the fault before it led to an in-flight incident.
+a) to notice
+b) noticing
+c) noticed
+d) notice
+ANSWER: b
+
+180. The purpose of wet ………… the engine is to test the fuel system integrity.
+a) motoring
+b) motored
+c) motor
+d) to motor
+ANSWER: a
+
+--- EDATLAR (PREPOSITIONS) ---
+
+181. The aircraft must comply ………… applicable airworthiness directives.
+a) to
+b) with
+c) in
+d) for
+ANSWER: b
+
+182. Lead-acid batteries can produce explosive gases while ………… charge.
+a) at
+b) under
+c) on
+d) in
+ANSWER: b
+
+183. Refer ………… the applicable service bulletin for the latest information.
+a) at
+b) into
+c) to
+d) on
+ANSWER: c
+
+184. The fuel filter must be replaced ………… 500 flight hours.
+a) in
+b) on
+c) every
+d) each
+ANSWER: c
+
+185. The justifications include information ………… compliance with the applicable CS-MMEL paragraphs.
+a) in
+b) for
+c) to
+d) with
+ANSWER: b (show compliance with)
+
+186. Apply corrosion preventive compound ………… all exposed metal surfaces.
+a) in
+b) on
+c) at
+d) by
+ANSWER: b
+
+187. The aircraft is dispatched ………… the provisions of the MEL.
+a) by
+b) under
+c) in
+d) with
+ANSWER: b
+
+188. The damage was ………… the allowable repair limits and required a structural repair.
+a) below
+b) under
+c) beyond
+d) within
+ANSWER: c
+
+189. Put the engine ………… ground idle before performing the vibration check.
+a) at
+b) in
+c) on
+d) to
+ANSWER: a
+
+190. The brake temperature must be below 150°C prior ………… departure.
+a) at
+b) to
+c) for
+d) in
+ANSWER: b
+
+191. Parts and materials are to be supplied ………… the operator's own stock where possible.
+a) in
+b) to
+c) from
+d) on
+ANSWER: c
+
+192. The oxygen mask must be ………… reach of all occupants.
+a) at
+b) in
+c) within
+d) on
+ANSWER: c
+
+193. The wheel assembly was found ………… of balance during the functional check.
+a) away
+b) out
+c) off
+d) without
+ANSWER: b
+
+194. All work was carried out ………… accordance with the approved data.
+a) to
+b) by
+c) in
+d) with
+ANSWER: c
+
+195. The aircraft is parked ………… stand 24 awaiting the spare part delivery.
+a) in
+b) at
+c) on
+d) by
+ANSWER: c
+
+196. Keep brake assemblies ………… rain, snow, or dew.
+a) out of
+b) away from
+c) from
+d) without
+ANSWER: b
+
+197. The engine vibration level was measured ………… 0.3 inches per second.
+a) in
+b) at
+c) on
+d) for
+ANSWER: b
+
+198. The maintenance task was completed ………… two hours ahead of schedule.
+a) by
+b) until
+c) in
+d) within
+ANSWER: d
+
+199. Tighten the bolt ………… the specified torque value shown in the AMM.
+a) in
+b) on
+c) to
+d) by
+ANSWER: c
+
+200. The hydraulic fluid level should be checked ………… a daily basis.
+a) in
+b) on
+c) at
+d) by
+ANSWER: b
+
+--- KARŞILAŞTIRMALAR (COMPARATIVES / SUPERLATIVES) ---
+
+201. Discard the wheel half with corrosion or damage that is ………… than the repair limit.
+a) much
+b) more
+c) most
+d) many
+ANSWER: b
+
+202. The composite repair must be ………… than the original structure in terms of strength.
+a) stronger
+b) strongest
+c) strong
+d) more strong
+ANSWER: a
+
+203. The ………… critical area for corrosion inspection is the lower fuselage bilge area.
+a) more
+b) most
+c) much
+d) many
+ANSWER: b
+
+204. Using synthetic oil results in ………… wear on engine components than mineral oil.
+a) less
+b) least
+c) few
+d) fewer
+ANSWER: a
+
+205. The anti-ice system is ………… efficient when the outside air temperature is near 0°C.
+a) less
+b) least
+c) few
+d) fewer
+ANSWER: a
+
+206. The revised procedure is ………… straightforward than the previous one.
+a) more
+b) most
+c) much
+d) many
+ANSWER: a
+
+207. The ………… accessible inspection point on the engine is the borescope port.
+a) easy
+b) easier
+c) easiest
+d) most easy
+ANSWER: c
+
+208. Carbon brake disks are ………… lighter than steel disks for the same stopping performance.
+a) considerable
+b) considerably
+c) most considerable
+d) considerablest
+ANSWER: b
+
+209. The ………… common cause of hydraulic system failure is contaminated fluid.
+a) more
+b) many
+c) most
+d) much
+ANSWER: c
+
+210. The newer brake design has ………… heat capacity than the older version.
+a) greater
+b) greatest
+c) more great
+d) the greatest
+ANSWER: a
+
+--- KARMA DİLBİLGİSİ (MIXED GRAMMAR) ---
+
+211. The busbars ………… 115V AC to the electrically ………… seats.
+a) supply / operating
+b) supply / operated
+c) are supplied / operating
+d) will supply / operating
+ANSWER: b
+
+212. Lead-acid batteries ………… sulfuric acid which ………… severe burns to body tissue.
+a) contained / causing
+b) contain / can cause
+c) contain / must cause
+d) to contain / caused
+ANSWER: b
+
+213. When an engine is dry motored, the starter ………… to turn the HP rotor.
+a) is engaging
+b) is engaged
+c) engages
+d) engaged
+ANSWER: b
+
+214. All axial loads from the engine ………… to the pylon through the forward mount.
+a) are transferred
+b) transferring
+c) transferred
+d) transfer
+ANSWER: a
+
+215. Any compartment that ………… expected to flood under light impact ………… used.
+a) is / should not be
+b) may be / should be
+c) may not be / should not be
+d) may not be / should be
+ANSWER: a
+
+216. The pretreatment of a material ………… the corrosion resistant properties and ………… a good surface for the bond of the paint.
+a) increases / provides
+b) increase / providing
+c) increases / will provide
+d) increasing / provides
+ANSWER: a
+
+217. Make sure that the power indicator light on the galley panel ………….
+a) to go off
+b) goes off
+c) go off
+d) is going off
+ANSWER: b
+
+218. 'Combustible material' ………… the material which is capable of ………… fire and burning.
+a) means / to catch
+b) to mean / to catch
+c) meaning / catching
+d) means / catching
+ANSWER: d
+
+219. A seat with an inoperative or missing occupant restraint system ………… inoperative.
+a) is considered
+b) are considered
+c) are to be considered
+d) considered
+ANSWER: a
+
+220. Any contamination found in the oil that comes out from the scavenge screen ………… for investigation.
+a) shall keep
+b) should be kept
+c) should keep
+d) must keep
+ANSWER: b
+
+221. Parts and materials ………… ………… from operators' stock.
+a) are to be supplied
+b) will supply
+c) have supplied
+d) are supplying
+ANSWER: a
+
+222. All axial loads from the engine ………… to the pylon through the forward mount while side and vertical loads ………… by both mounts.
+a) transferring / are transferred
+b) transferred / transferring
+c) are transferred / are transferred
+d) are transferred / transferring
+ANSWER: c
+
+223. You must wait for a minimum of one hour after the third time, before you ………… or try ………… the APU again.
+a) start / start
+b) starting / to start
+c) to start / start
+d) start / to start
+ANSWER: d
+
+224. The procedure ………… to remove paint coatings from metallic materials as an alternative to chemical stripping.
+a) can use
+b) could use
+c) could be used
+d) can be used
+ANSWER: d
+
+225. When you do work on the fuel system wiring, you ………… test equipment that ………….
+a) may use / is approving
+b) will use / is approved
+c) must use / is approved
+d) must use / is approving
+ANSWER: c
+
+226. Unit Zones ………… by the number of the Units of the Major Zones.
+a) identified
+b) are identified
+c) have identified
+d) identify
+ANSWER: b
+
+227. The clearance to edges ………… more than 300 times of the glass cloth thickness.
+a) could be
+b) have to be
+c) should be
+d) must be
+ANSWER: d
+
+228. The technician must ………… the safety precautions carefully before ………… the fuel tank.
+a) read / enter
+b) reading / entering
+c) read / entering
+d) reads / enters
+ANSWER: c
+
+229. There is a 30-second delay before the maintenance message ………… on the MCDU.
+a) will show
+b) shows
+c) showed
+d) is showing
+ANSWER: b
+
+230. A WARNING tells the operator that injury or death ………… possible if the operator ………… obey the specified instruction.
+a) is / does not
+b) are / does not
+c) is / will not
+d) was / did not
+ANSWER: a
+
+231. If an access door or panel ………… in more than one zone, the lowest zone number applicable ………….
+a) is / is used
+b) is being / are used
+c) has / has been used
+d) has / has used
+ANSWER: a
+
+232. The seat shoulder harness ………… into the reel so that the harness is no longer adjustable.
+a) have not retracted
+b) have now retract
+c) has not retracted
+d) has not retract
+ANSWER: c
+
+233. Lightning ………… some areas more frequently than others.
+a) hit
+b) hits
+c) hitter
+d) hitting
+ANSWER: b
+
+234. An inspection ………… when the aircraft has been involved in an excessive maneuver.
+a) require
+b) requires
+c) required
+d) is required
+ANSWER: d
+
+235. The fuel in the associated outer tank ………… considered as not usable for flight planning.
+a) is
+b) are
+c) were
+d) can
+ANSWER: a
+
+236. The gage ………… to determine the attitude of the airplane prior to a fuel quantity check.
+a) use to
+b) used to
+c) is used to
+d) using to
+ANSWER: c
+
+237. The seat shoulder harness ………… into the reel so the harness is no longer adjustable.
+a) has not retracted
+b) have retracted
+c) will retract
+d) was retracting
+ANSWER: a
+
+238. Any high-frequency eddy current equipment ………… used provided that it meets the requirements.
+a) may be
+b) must
+c) should
+d) would be
+ANSWER: a
+
+239. If installation ………… correct, no further action ………… required.
+a) is / is
+b) was / was
+c) is / is not
+d) will be / will be
+ANSWER: a
+
+240. Additional certification requirements ………… impose additional restrictions on the operator.
+a) must
+b) will
+c) may
+d) should
+ANSWER: c
+
+241. After you touch cadmium plated parts, clean your hands before you ………… or smoke.
+a) eating
+b) eat
+c) ate
+d) to eat
+ANSWER: b
+
+242. Make sure the probes, the engine, and the APU ………… cool before installation of the protective devices.
+a) is
+b) are
+c) isn't
+d) aren't
+ANSWER: b
+
+243. It ………… customary to provide bolts with reduced pitch diameter for use in hot sections of engines.
+a) may be
+b) will be
+c) is
+d) to be
+ANSWER: c
+
+244. The drag ………… normally approximately 40 lbf.in; the permitted maximum ………… 107 lbf.in.
+a) is / is
+b) are / is
+c) is / are
+d) was / is
+ANSWER: a
+
+245. Maintenance messages related to the fuel system can possibly ………… during the first engine start.
+a) occur
+b) occurred
+c) occurs
+d) occurring
+ANSWER: a
+
+246. The clearance to edges should ………… more than 300 times the glass cloth thickness.
+a) is
+b) not be
+c) be
+d) are
+ANSWER: c (should be - meaning should not exceed, the answer is c as the sentence "should be no more than")
+
+247. The aircraft ………… not dispatched under MEL items ………… impose a passenger restriction without a placard.
+a) must / which
+b) should / that
+c) must / that
+d) may / when
+ANSWER: c
+
+248. All calendar days ………… considered to run consecutively from the day of discovery.
+a) must be
+b) are
+c) were
+d) should
+ANSWER: b
+
+249. The fuel manifold ………… metered fuel flow from the HMU to the 30 fuel nozzles.
+a) deliver
+b) delivered
+c) delivers
+d) delivering
+ANSWER: c
+
+250. The inspection ………… complete before the aircraft is released for the next flight.
+a) must be
+b) has be
+c) is being
+d) was being
+ANSWER: a
+
+================================================================
+CEVAP ANAHTARI - BÖLÜM 1: DİL BİLGİSİ
+================================================================
+1-b  2-c  3-b  4-b  5-c  6-a  7-c  8-b  9-b  10-b
+11-b 12-c 13-b 14-b 15-b 16-b 17-b 18-b 19-b 20-b
+21-b 22-b 23-b 24-b 25-b 26-b 27-b 28-b 29-b 30-b
+31-b 32-b 33-b 34-b 35-b 36-b 37-b 38-b 39-b 40-b
+41-b 42-c 43-a 44-d 45-c 46-b 47-c 48-b 49-a 50-c
+51-d 52-c 53-c 54-b 55-c 56-c 57-d 58-c 59-c 60-c
+61-b 62-a 63-d 64-c 65-d 66-c 67-d 68-c 69-d 70-c
+71-b 72-a 73-c 74-a 75-c 76-c 77-d 78-b 79-b 80-a
+81-b 82-c 83-a 84-c 85-a 86-b 87-b 88-c 89-b 90-c
+91-a 92-a 93-b 94-a 95-a 96-a 97-a 98-b 99-b 100-a
+101-a 102-b 103-a 104-c 105-b 106-a 107-a 108-a 109-a 110-c
+111-d 112-b 113-c 114-b 115-b 116-d 117-b 118-b 119-a 120-b
+121-c 122-c 123-c 124-b 125-c 126-c 127-c 128-a 129-b 130-c
+131-c 132-d 133-a 134-c 135-c 136-b 137-b 138-a 139-b 140-d
+141-b 142-a 143-c 144-d 145-c 146-c 147-d 148-c 149-a 150-b
+151-c 152-c 153-d 154-b 155-c 156-d 157-a 158-b 159-d 160-a
+161-b 162-d 163-b 164-c 165-a 166-c 167-c 168-c 169-c 170-a
+171-a 172-b 173-c 174-d 175-a 176-c 177-c 178-c 179-b 180-a
+181-b 182-b 183-c 184-c 185-b 186-b 187-b 188-c 189-a 190-b
+191-c 192-c 193-b 194-c 195-c 196-b 197-b 198-d 199-c 200-b
+201-b 202-a 203-b 204-a 205-a 206-a 207-c 208-b 209-c 210-a
+211-b 212-b 213-b 214-a 215-a 216-a 217-b 218-d 219-a 220-b
+221-a 222-c 223-d 224-d 225-c 226-b 227-d 228-c 229-b 230-a
+231-a 232-c 233-b 234-d 235-a 236-c 237-a 238-a 239-a 240-c
+241-b 242-b 243-c 244-a 245-a 246-c 247-c 248-b 249-c 250-a
