@@ -3,7 +3,7 @@ import 'package:http/http.dart' as http;
 import '../models/ai_analysis_result.dart';
 
 /// Replace with your Gemini API key from https://aistudio.google.com/app/apikey
-const _geminiApiKey = 'YOUR_GEMINI_API_KEY';
+const _geminiApiKey = 'AIzaSyBF2g68U1DltnnMWc2s1M1BHjCq6ErGDL4';
 
 const _model = 'gemini-1.5-flash';
 const _baseUrl =
