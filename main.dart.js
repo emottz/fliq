@@ -44520,7 +44520,7 @@ break}if(!m){if(B.b.q(B.MX,l)){q=null
 s=1
 break}q="/assessment-intro"
 s=1
-break}if(l==="/onboarding"||l==="/assessment-intro"||l==="/assessment"||l==="/assessment-analysis"||l==="/subscription"){q="/home/exams"
+break}if(l==="/onboarding"||l==="/assessment-intro"||l==="/assessment"||l==="/subscription"){q="/home/exams"
 s=1
 break}q=null
 s=1
