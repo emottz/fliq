@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "560944576659",
+    "project_id": "fliq-1638d",
+    "storage_bucket": "fliq-1638d.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:560944576659:android:15be224f53156a5b7b7566",
+        "android_client_info": {
+          "package_name": "com.fliq.fliq"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCsMfApleaIW_edXb2QH4TsV54dhbPD5SI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
