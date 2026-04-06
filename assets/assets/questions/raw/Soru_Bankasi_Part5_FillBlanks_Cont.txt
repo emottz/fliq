@@ -1,0 +1,1233 @@
+================================================================
+HAVA ARACI BAKIM PERSONELİ YABANCI DİL SINAVI
+SORU BANKASI - BÖLÜM 5 DEVAM: BOŞLUK DOLDURMA (FILL IN THE BLANKS)
+160 SORU — Q1741-Q1900
+================================================================
+
+--- TEK CÜMLE BOŞLUK DOLDURMA (Single Sentence Fill-in-the-Blank) ---
+
+1741. The aircraft must be __________ before maintenance begins on the hydraulic system.
+a) refuelled
+b) depressurized
+c) towed
+d) weighed
+ANSWER: b
+
+1742. Carbon brake discs must be kept free from oil and grease __________.
+a) occasionally
+b) contamination
+c) pressure
+d) temperature
+ANSWER: b
+
+1743. All electrical power must be removed before working on the __________ system.
+a) oxygen
+b) fuel
+c) heating
+d) pressurization
+ANSWER: b
+
+1744. Engine oil consumption should be __________ at each service interval.
+a) increased
+b) monitored
+c) reduced
+d) ignored
+ANSWER: b
+
+1745. The hydraulic reservoir level must be __________ before each flight.
+a) filled
+b) checked
+c) drained
+d) replaced
+ANSWER: b
+
+1746. Anti-corrosion treatment must be applied to all __________ metal surfaces exposed during maintenance.
+a) painted
+b) bare
+c) polished
+d) sealed
+ANSWER: b
+
+1747. Landing gear downlock pins must be __________ before the gear is retracted.
+a) installed
+b) removed
+c) painted
+d) greased
+ANSWER: b
+
+1748. A __________ test must be performed on the fire detection loop at each maintenance check.
+a) pressure
+b) functional
+c) visual
+d) leak
+ANSWER: b
+
+1749. Aircraft tyres are inflated with __________ to prevent moisture-related corrosion.
+a) compressed air
+b) nitrogen
+c) oxygen
+d) argon
+ANSWER: b
+
+1750. Borescope inspection allows technicians to view __________ components without disassembly.
+a) external
+b) internal
+c) structural
+d) electrical
+ANSWER: b
+
+1751. The __________ manual provides step-by-step procedures for all aircraft maintenance tasks.
+a) flight
+b) maintenance
+c) weight
+d) loading
+ANSWER: b
+
+1752. Non-sparking tools must be used when working __________ fuel tanks.
+a) near
+b) inside
+c) above
+d) below
+ANSWER: b
+
+1753. The torque __________ must be calibrated before use on critical fasteners.
+a) driver
+b) wrench
+c) pliers
+d) spanner
+ANSWER: b
+
+1754. A __________ inspection by a second independent inspector is required for critical maintenance tasks.
+a) visual
+b) duplicate
+c) verbal
+d) general
+ANSWER: b
+
+1755. Engine __________ temperature exceedances must be recorded in the engine logbook.
+a) oil
+b) exhaust gas
+c) coolant
+d) hydraulic
+ANSWER: b
+
+1756. The aircraft must be on __________ before the landing gear is retracted for maintenance.
+a) blocks
+b) jacks
+c) stands
+d) wheels
+ANSWER: b
+
+1757. All maintenance __________ must be retained for the period specified by the regulatory authority.
+a) tools
+b) records
+c) personnel
+d) manuals
+ANSWER: b
+
+1758. The __________ power unit provides electrical power and bleed air on the ground when engines are not running.
+a) emergency
+b) auxiliary
+c) main
+d) standby
+ANSWER: b
+
+1759. Composite repair patches must be designed to match the original __________ orientation of the material.
+a) colour
+b) layup
+c) weight
+d) thickness
+ANSWER: b
+
+1760. The aircraft fire extinguisher bottle pressure must be __________ before every flight.
+a) increased
+b) verified
+c) reduced
+d) replaced
+ANSWER: b
+
+1761. Engine bleed air is used for aircraft __________ to maintain a comfortable cabin altitude.
+a) cooling
+b) pressurization
+c) fuelling
+d) starting
+ANSWER: b
+
+1762. Before entering a fuel tank, a __________ to enter must be obtained.
+a) certificate
+b) permit
+c) licence
+d) waiver
+ANSWER: b
+
+1763. Hydraulic fluid __________ must be checked and compared against the maintenance manual limits at each service.
+a) colour
+b) contamination
+c) temperature
+d) quantity
+ANSWER: b
+
+1764. The aircraft's weight and __________ must be confirmed before every flight.
+a) fuel
+b) balance
+c) speed
+d) altitude
+ANSWER: b
+
+1765. A __________ is used to prevent fasteners from rotating loose in a critical installation.
+a) lubricant
+b) locking wire
+c) sealant
+d) torque wrench
+ANSWER: b
+
+1766. __________ corrosion occurs when two dissimilar metals are in electrical contact with an electrolyte present.
+a) Pitting
+b) Galvanic
+c) Fretting
+d) Uniform
+ANSWER: b
+
+1767. All maintenance personnel must complete __________ training as part of their recurrent training programme.
+a) flight
+b) human factors
+c) fire fighting
+d) aerodynamics
+ANSWER: b
+
+1768. A __________ test on the oxygen system verifies the correct flow rate is delivered at altitude.
+a) pressure
+b) functional
+c) leak
+d) visual
+ANSWER: b
+
+1769. Aircraft technical records must be __________ and available for inspection by the regulatory authority.
+a) confidential
+b) legible
+c) encrypted
+d) archived
+ANSWER: b
+
+1770. The Minimum Equipment List (MEL) allows dispatch with certain __________ items.
+a) serviceable
+b) inoperative
+c) damaged
+d) expired
+ANSWER: b
+
+1771. Hydraulic actuator __________ must be replaced when the actuator is disassembled for any reason.
+a) pistons
+b) seals
+c) housings
+d) bolts
+ANSWER: b
+
+1772. During aircraft towing, the nose gear must not exceed its stated __________ angle limit.
+a) pitch
+b) steering
+c) braking
+d) camber
+ANSWER: b
+
+1773. The __________ is used to verify the electrical resistance of a bonding strap.
+a) oscilloscope
+b) bonding tester/milliohmmeter
+c) voltmeter
+d) ammeter
+ANSWER: b
+
+1774. Structural repairs must restore the original __________ and aerodynamic profile of the damaged area.
+a) colour
+b) strength
+c) texture
+d) marking
+ANSWER: b
+
+1775. Engine __________ monitoring data is used to detect early signs of deterioration.
+a) noise
+b) trend
+c) fuel
+d) speed
+ANSWER: b
+
+1776. Before any welding on or near an aircraft, all fuel must be __________ from the area.
+a) checked
+b) removed
+c) measured
+d) inspected
+ANSWER: b
+
+1777. A __________ check drains the lowest point of the fuel tank to check for water and sediment.
+a) quantity
+b) sump
+c) pressure
+d) visual
+ANSWER: b
+
+1778. The aircraft Certificate of __________ must be current for the aircraft to fly legally.
+a) Registration
+b) Airworthiness
+c) Maintenance
+d) Insurance
+ANSWER: b
+
+1779. Oxygen cylinders must be stored __________ and secured against falling.
+a) horizontally
+b) vertically
+c) diagonally
+d) inverted
+ANSWER: b
+
+1780. The __________ Catalogue lists all aircraft parts by assembly breakdown and part number.
+a) Maintenance
+b) Illustrated Parts
+c) Fault Isolation
+d) Wiring Diagram
+ANSWER: b
+
+1781. The __________ prevents backflow of hydraulic fluid when a pump fails.
+a) relief valve
+b) check valve
+c) selector valve
+d) shutoff valve
+ANSWER: b
+
+1782. After a birdstrike, __________ areas including engine inlet and leading edges must be inspected.
+a) all external
+b) affected
+c) structural
+d) pressurized
+ANSWER: b
+
+1783. Heat sensitive __________ plugs in aircraft wheels release to prevent tyre blowout after brake overheating.
+a) safety
+b) fusible
+c) pressure
+d) drain
+ANSWER: b
+
+1784. A component that has exceeded its __________ limit must be removed regardless of apparent condition.
+a) warranty
+b) life
+c) service
+d) storage
+ANSWER: b
+
+1785. Fuel __________ lines must be kept clear to prevent pressurisation of tanks beyond design limits.
+a) fill
+b) vent
+c) feed
+d) transfer
+ANSWER: b
+
+1786. The __________ system removes contamination from hydraulic fluid to protect components from wear.
+a) isolation
+b) filtration
+c) pressurization
+d) cooling
+ANSWER: b
+
+1787. Before signing a task card, the certifying engineer must confirm the work was done in accordance with the __________ documentation.
+a) planned
+b) referenced
+c) archived
+d) optional
+ANSWER: b
+
+1788. A __________ leak in the pressurization system can cause rapid loss of cabin pressure.
+a) small
+b) major
+c) slow
+d) external
+ANSWER: b
+
+1789. During a __________ inspection, detailed examination of internal structure is required.
+a) transit
+b) detailed
+c) preflight
+d) turnaround
+ANSWER: b
+
+1790. The aircraft's nose wheel steering must be __________ after a tow before releasing the aircraft to the crew.
+a) tested
+b) reconnected
+c) adjusted
+d) lubricated
+ANSWER: b
+
+1791. Electrical wiring showing signs of __________ insulation must be repaired using approved materials.
+a) correct
+b) damaged
+c) old
+d) clean
+ANSWER: b
+
+1792. Tool __________ is critical to preventing foreign object damage during maintenance.
+a) calibration
+b) accountability
+c) storage
+d) cleaning
+ANSWER: b
+
+1793. The __________ of a repair must be assessed against allowable limits in the SRM before treatment.
+a) colour
+b) extent
+c) weight
+d) location
+ANSWER: b
+
+1794. Dangerous goods must be declared by the __________ and accepted by the operator before loading.
+a) pilot
+b) shipper
+c) handler
+d) agent
+ANSWER: b
+
+1795. A __________ attendant must be present outside a confined space whenever personnel are working inside.
+a) fire
+b) safety
+c) quality
+d) maintenance
+ANSWER: b
+
+--- PASSAGE-BASED FILL-IN-THE-BLANK ---
+
+PASSAGE A: ENGINE OVERHAUL (Q1796-Q1800)
+
+Engine overhaul is a comprehensive (1796) __________ of an engine to restore it to a serviceable condition. The engine is (1797) __________ from the aircraft and sent to an approved overhaul facility. During overhaul, all components are inspected, cleaned, and measured against (1798) __________ to determine serviceability. Life-limited parts are replaced regardless of apparent (1799) __________. After reassembly, the engine undergoes a test (1800) __________ to verify performance before it is returned to service.
+
+1796.
+a) inspection
+b) restoration
+c) disassembly
+d) testing
+ANSWER: b
+
+1797.
+a) disconnected
+b) removed
+c) isolated
+d) powered down
+ANSWER: b
+
+1798.
+a) weight limits
+b) serviceable limits
+c) fuel specifications
+d) torque values
+ANSWER: b
+
+1799.
+a) weight
+b) condition
+c) marking
+d) colour
+ANSWER: b
+
+1800.
+a) run
+b) flight
+c) inspection
+d) calibration
+ANSWER: a
+
+PASSAGE B: BATTERY MAINTENANCE (Q1801-Q1805)
+
+Aircraft batteries provide (1801) __________ power during ground operations and emergency electrical backup. Battery (1802) __________ checks are carried out at specified intervals to verify the battery can deliver its rated amp-hours. Batteries must be (1803) __________ in a well-ventilated area as hydrogen gas is produced during charging. Terminal (1804) __________ must be checked and tightened to the specified torque. Batteries with reduced capacity must be (1805) __________ from service.
+
+1801.
+a) backup
+b) emergency
+c) primary
+d) standby
+ANSWER: b
+
+1802.
+a) visual
+b) capacity
+c) voltage
+d) weight
+ANSWER: b
+
+1803.
+a) tested
+b) charged
+c) stored
+d) installed
+ANSWER: b
+
+1804.
+a) colour
+b) torque
+c) corrosion
+d) voltage
+ANSWER: c
+
+1805.
+a) tested
+b) removed
+c) repaired
+d) stored
+ANSWER: b
+
+PASSAGE C: HYDRAULIC SYSTEM SERVICING (Q1806-Q1810)
+
+Before servicing the hydraulic system, the system must be fully (1806) __________ to prevent injury. Only (1807) __________ hydraulic fluid of the correct type must be used when topping up the reservoir. The fluid level is checked using the (1808) __________ glass on the reservoir. After servicing, the system must be pressurised and all connections checked for (1809) __________. The fluid level must then be re-checked after the system has (1810) __________ for a specified time.
+
+1806.
+a) pressurized
+b) depressurized
+c) drained
+d) tested
+ANSWER: b
+
+1807.
+a) filtered
+b) approved
+c) warm
+d) any available
+ANSWER: b
+
+1808.
+a) pressure
+b) sight
+c) drain
+d) fill
+ANSWER: b
+
+1809.
+a) pressure
+b) leaks
+c) contamination
+d) corrosion
+ANSWER: b
+
+1810.
+a) been started
+b) been operated
+c) been pressurized
+d) been cooled
+ANSWER: b
+
+PASSAGE D: AIRCRAFT JACKING (Q1811-Q1815)
+
+Aircraft jacking is required for landing gear (1811) __________ tests, tyre changes, and other undercarriage maintenance. Before jacking, the area must be (1812) __________ for clearance and all ground equipment must be repositioned. The correct (1813) __________ pads must be positioned at the aircraft jacking points. The aircraft must be (1814) __________ level during jacking to prevent stress on the airframe. Once jacked, the aircraft must be continuously (1815) __________ for any unexpected movement.
+
+1811.
+a) extension
+b) retraction
+c) inspection
+d) replacement
+ANSWER: b
+
+1812.
+a) inspected
+b) checked
+c) cleared
+d) marked
+ANSWER: b
+
+1813.
+a) rubber
+b) jacking
+c) safety
+d) ground
+ANSWER: b
+
+1814.
+a) fuelled
+b) kept
+c) inspected
+d) pressurized
+ANSWER: b
+
+1815.
+a) inspected
+b) monitored
+c) photographed
+d) supported
+ANSWER: b
+
+PASSAGE E: AVIONICS SYSTEM MAINTENANCE (Q1816-Q1820)
+
+Avionics equipment must be protected from (1816) __________ discharge during handling. Components are carried in (1817) __________ bags to prevent damage. When installing avionics, connector (1818) __________ must be clean and free from corrosion. All avionics must be (1819) __________ tested after installation to verify correct operation. Software (1820) __________ must be verified against the approved configuration for the aircraft.
+
+1816.
+a) hydraulic
+b) electrostatic
+c) thermal
+d) magnetic
+ANSWER: b
+
+1817.
+a) sealed
+b) antistatic
+c) insulated
+d) protective
+ANSWER: b
+
+1818.
+a) housing
+b) contacts
+c) wiring
+d) pins
+ANSWER: b
+
+1819.
+a) visually
+b) functionally
+c) manually
+d) externally
+ANSWER: b
+
+1820.
+a) manual
+b) version
+c) update
+d) backup
+ANSWER: b
+
+PASSAGE F: NDT INSPECTION SELECTION (Q1821-Q1825)
+
+The selection of the appropriate NDT method depends on the (1821) __________ type and the location of the suspected defect. Dye penetrant inspection is used for (1822) __________ defects in non-porous materials. Magnetic particle inspection can only be used on (1823) __________ materials. Ultrasonic testing is effective for detecting (1824) __________ defects within the material. Eddy current testing is particularly effective for detecting corrosion beneath the aircraft (1825) __________.
+
+1821.
+a) component
+b) material
+c) defect
+d) inspection
+ANSWER: b
+
+1822.
+a) internal
+b) surface-breaking
+c) subsurface
+d) hidden
+ANSWER: b
+
+1823.
+a) composite
+b) ferrous
+c) aluminium
+d) titanium
+ANSWER: b
+
+1824.
+a) surface
+b) subsurface
+c) external
+d) visible
+ANSWER: b
+
+1825.
+a) structure
+b) skin
+c) frame
+d) floor
+ANSWER: b
+
+PASSAGE G: MAINTENANCE AFTER LIGHTNING STRIKE (Q1826-Q1830)
+
+A lightning strike can cause (1826) __________ damage to aircraft structure and systems. After a lightning strike, the aircraft must be (1827) __________ until specific inspections are completed. The inspection covers (1828) __________ entry and exit points, fuel system, avionics, and flight controls. All damage found must be assessed against the (1829) __________ allowable damage limits. The aircraft may only return to service after the certifying engineer is satisfied that all (1830) __________ have been addressed.
+
+1826.
+a) minor
+b) significant
+c) cosmetic
+d) predictable
+ANSWER: b
+
+1827.
+a) fuelled
+b) grounded
+c) towed
+d) washed
+ANSWER: b
+
+1828.
+a) fuel
+b) lightning
+c) maintenance
+d) hydraulic
+ANSWER: b
+
+1829.
+a) manufacturer's
+b) applicable
+c) original
+d) latest
+ANSWER: b
+
+1830.
+a) repairs
+b) discrepancies
+c) inspections
+d) recordings
+ANSWER: b
+
+PASSAGE H: APU OPERATION AND MAINTENANCE (Q1831-Q1835)
+
+The APU is a small gas (1831) __________ in the tail of the aircraft that provides ground electrical power and bleed air. The APU fire detection and (1832) __________ systems must be confirmed serviceable before start. APU (1833) __________ and cycles are tracked separately from the main engines. At specified intervals, a (1834) __________ inspection of the APU turbine section is required to check for blade damage. The APU intake and (1835) __________ areas must be clear before starting.
+
+1831.
+a) compressor
+b) turbine
+c) engine
+d) generator
+ANSWER: c
+
+1832.
+a) detection
+b) suppression
+c) isolation
+d) prevention
+ANSWER: b
+
+1833.
+a) temperature
+b) hours
+c) starts
+d) power
+ANSWER: b
+
+1834.
+a) visual
+b) borescope
+c) ultrasonic
+d) magnetic
+ANSWER: b
+
+1835.
+a) intake
+b) exhaust
+c) drain
+d) access
+ANSWER: b
+
+PASSAGE I: FUEL SYSTEM MAINTENANCE (Q1836-Q1840)
+
+Aircraft fuel systems must be maintained to prevent (1836) __________, ensure correct quantity indication, and provide uninterrupted fuel supply to the engines. Fuel tank (1837) __________ checks drain the lowest point to check for water and sediment. Fuel (1838) __________ elements must be replaced at specified intervals. Before opening any fuel system (1839) __________, all fuel must be drained from the affected section. After maintenance, the system must be (1840) __________ tested before the aircraft returns to service.
+
+1836.
+a) leaks
+b) contamination
+c) pressure loss
+d) fuel starvation
+ANSWER: b
+
+1837.
+a) pressure
+b) sump
+c) quantity
+d) venting
+ANSWER: b
+
+1838.
+a) pump
+b) filter
+c) valve
+d) line
+ANSWER: b
+
+1839.
+a) connection
+b) tank
+c) pump
+d) valve
+ANSWER: a
+
+1840.
+a) pressure
+b) leak
+c) functional
+d) visual
+ANSWER: c
+
+PASSAGE J: OXYGEN SYSTEM SAFETY (Q1841-Q1845)
+
+Oxygen is a powerful (1841) __________ agent and must be handled with great care. All oxygen system components must be free from (1842) __________ contamination at all times. Non-sparking tools must be used during oxygen system (1843) __________. Oxygen cylinders must be stored in a cool, (1844) __________ area away from heat sources and flammable materials. After any maintenance that involves opening oxygen lines, a (1845) __________ test must be performed before return to service.
+
+1841.
+a) reducing
+b) oxidising
+c) cooling
+d) drying
+ANSWER: b
+
+1842.
+a) water
+b) oil/grease
+c) dust
+d) air
+ANSWER: b
+
+1843.
+a) testing
+b) maintenance
+c) installation
+d) storage
+ANSWER: b
+
+1844.
+a) warm
+b) ventilated
+c) pressurized
+d) sealed
+ANSWER: b
+
+1845.
+a) pressure
+b) leak
+c) flow
+d) visual
+ANSWER: b
+
+PASSAGE K: WEIGHT AND BALANCE PROCEDURES (Q1846-Q1850)
+
+Aircraft weight and (1846) __________ calculations are essential for safe flight. The maximum certificated (1847) __________ weights must never be exceeded. The centre of gravity must remain within the (1848) __________ and aft limits. The basic empty weight is established at manufacture and must be updated after any (1849) __________. Weight and balance calculations are documented on a (1850) __________ sheet that accompanies the aircraft.
+
+1846.
+a) speed
+b) balance
+c) payload
+d) performance
+ANSWER: b
+
+1847.
+a) operational
+b) structural
+c) certificated
+d) design
+ANSWER: c
+
+1848.
+a) upper
+b) forward
+c) lower
+d) normal
+ANSWER: b
+
+1849.
+a) inspection
+b) modification
+c) service
+d) flight
+ANSWER: b
+
+1850.
+a) technical
+b) load
+c) weight
+d) manifest
+ANSWER: b
+
+PASSAGE L: AIRCRAFT CORROSION TREATMENT (Q1851-Q1855)
+
+Corrosion found during aircraft inspection must be (1851) __________ and treated in accordance with the SRM. Mechanical removal using abrasives removes the corrosion products to (1852) __________ metal. The depth of corrosion must be measured and compared with the (1853) __________ limits. After removal, a (1854) __________ coating is applied before priming and painting to restore the protective finish. Corrosion (1855) __________ compounds may be applied to internal areas to provide long-term protection.
+
+1851.
+a) reported
+b) assessed
+c) photographed
+d) sealed
+ANSWER: b
+
+1852.
+a) clean
+b) bare
+c) bright
+d) polished
+ANSWER: b
+
+1853.
+a) manufacturer's
+b) allowable
+c) original
+d) design
+ANSWER: b
+
+1854.
+a) protective
+b) conversion
+c) primer
+d) paint
+ANSWER: b
+
+1855.
+a) prevention
+b) inhibiting
+c) treatment
+d) control
+ANSWER: b
+
+PASSAGE M: AIRCRAFT TOWING SAFETY (Q1856-Q1860)
+
+Aircraft towing must be performed by (1856) __________ personnel using the correct equipment. The towbar must be the correct type for the (1857) __________ gear and must be connected within the nose gear steering angle limits. The maximum towing (1858) __________ must not be exceeded. A wing (1859) __________ must confirm clearance on each side of the aircraft throughout the manoeuvre. After towing, the nose wheel (1860) __________ must be restored before the aircraft is returned to the crew.
+
+1856.
+a) senior
+b) qualified
+c) experienced
+d) licensed
+ANSWER: b
+
+1857.
+a) main
+b) nose
+c) tail
+d) emergency
+ANSWER: b
+
+1858.
+a) force
+b) speed
+c) angle
+d) distance
+ANSWER: b
+
+1859.
+a) tip
+b) walker
+c) guard
+d) marker
+ANSWER: b
+
+1860.
+a) tyre pressure
+b) steering configuration
+c) gear alignment
+d) brake pressure
+ANSWER: b
+
+PASSAGE N: ENGINE STARTING PROCEDURES (Q1861-Q1865)
+
+Before engine start, a (1861) __________ check of the engine area must be performed to ensure no personnel or equipment are in the danger zone. For air turbine starters, bleed air from the (1862) __________ is used to initiate engine rotation. If the engine fails to (1863) __________ within the specified time, the start must be aborted. The engine must then be (1864) __________ (rotated without ignition) to purge unburned fuel. The starter (1865) __________ cycle must be observed to prevent overheating.
+
+1861.
+a) visual
+b) safety
+c) walkaround
+d) pre-start
+ANSWER: b
+
+1862.
+a) engine
+b) APU or ground supply
+c) battery
+d) hydraulic system
+ANSWER: b
+
+1863.
+a) start
+b) light off
+c) rotate
+d) idle
+ANSWER: b
+
+1864.
+a) cooled
+b) motored
+c) reversed
+d) shut down
+ANSWER: b
+
+1865.
+a) speed
+b) duty
+c) power
+d) time
+ANSWER: b
+
+PASSAGE O: MAINTENANCE DOCUMENTATION PROCESS (Q1866-Q1870)
+
+Maintenance tasks are controlled through (1866) __________ cards that specify the scope and references for each task. Upon completion, the technician must (1867) __________ each step and sign the completed task card. The certifying engineer signs the card to (1868) __________ that the work was done in accordance with the referenced documentation. Completed task cards form part of the aircraft's (1869) __________ records. These must be retained for the period specified by the (1870) __________ authority.
+
+1866.
+a) job/task
+b) inspection
+c) maintenance
+d) quality
+ANSWER: a
+
+1867.
+a) review
+b) initial/check off
+c) sign
+d) approve
+ANSWER: b
+
+1868.
+a) confirm
+b) certify
+c) verify
+d) ensure
+ANSWER: b
+
+1869.
+a) technical/maintenance
+b) flight
+c) operational
+d) engineering
+ANSWER: a
+
+1870.
+a) manufacturer
+b) regulatory
+c) operator
+d) quality
+ANSWER: b
+
+PASSAGE P: PITOT-STATIC SYSTEM (Q1871-Q1875)
+
+The pitot-static system provides air data for (1871) __________ speed indication, altitude, and vertical speed. Pitot probes measure (1872) __________ pressure, while static ports measure ambient (1873) __________ pressure. Ice formation on pitot probes causes incorrect (1874) __________ indication in the cockpit. Pitot heat must be (1875) __________ before flight in forecast icing conditions.
+
+1871.
+a) ground
+b) air
+c) vertical
+d) indicated
+ANSWER: b
+
+1872.
+a) static
+b) total/ram
+c) dynamic
+d) differential
+ANSWER: b
+
+1873.
+a) total
+b) static
+c) dynamic
+d) atmospheric
+ANSWER: b
+
+1874.
+a) altitude
+b) airspeed
+c) heading
+d) attitude
+ANSWER: b
+
+1875.
+a) inspected
+b) tested
+c) removed
+d) calibrated
+ANSWER: b
+
+PASSAGE Q: COMPOSITE REPAIR PROCEDURE (Q1876-Q1880)
+
+Before a composite repair, the damaged area must be assessed for the (1876) __________ and extent of damage. The area must be (1877) __________ to remove moisture before bonding. The repair must be designed to (1878) __________ the original load paths through the structure. The repair must comply with the approved (1879) __________ schemes in the SRM. After curing, the repair is inspected using (1880) __________ or tap testing to verify bond integrity.
+
+1876.
+a) colour
+b) type
+c) weight
+d) age
+ANSWER: b
+
+1877.
+a) painted
+b) dried
+c) sealed
+d) primed
+ANSWER: b
+
+1878.
+a) replace
+b) maintain/restore
+c) redirect
+d) strengthen
+ANSWER: b
+
+1879.
+a) maintenance
+b) repair
+c) inspection
+d) overhaul
+ANSWER: b
+
+1880.
+a) X-ray
+b) ultrasound
+c) visual
+d) penetrant
+ANSWER: b
+
+PASSAGE R: AIRCRAFT PRESSURIZATION SYSTEM (Q1881-Q1885)
+
+The pressurization system uses (1881) __________ bleed air to maintain the cabin at a comfortable pressure altitude. The outflow (1882) __________ controls the rate at which air is vented to maintain the desired differential pressure. Safety relief valves protect the fuselage from (1883) __________. The cabin pressure (1884) __________ is set and checked at each maintenance check. If the differential pressure exceeds the maximum design limit, the (1885) __________ relief valve opens.
+
+1881.
+a) engine
+b) bleed
+c) recycled
+d) filtered
+ANSWER: b
+
+1882.
+a) pressure
+b) valve
+c) duct
+d) sensor
+ANSWER: b
+
+1883.
+a) pressurization failure
+b) over-pressurisation
+c) air leaks
+d) structural fatigue
+ANSWER: b
+
+1884.
+a) differential
+b) controller
+c) sensor
+d) valve
+ANSWER: b
+
+1885.
+a) outflow
+b) safety
+c) negative pressure
+d) pressure regulating
+ANSWER: b
+
+PASSAGE S: AIRCRAFT INSPECTION CATEGORIES (Q1886-Q1890)
+
+Aircraft maintenance checks are divided into categories based on (1886) __________ and scope. A daily or transit check covers (1887) __________ inspection of the aircraft exterior, fluid levels, and safety-critical items. An A-check is a light maintenance check performed at (1888) __________ of typically 400-600 flight hours. A C-check is a more comprehensive check requiring (1889) __________ of access panels and covers. A D-check or heavy maintenance visit (HMV) involves complete (1890) __________ and structural inspection of the entire aircraft.
+
+1886.
+a) difficulty
+b) interval
+c) cost
+d) duration
+ANSWER: b
+
+1887.
+a) detailed
+b) visual
+c) functional
+d) structural
+ANSWER: b
+
+1888.
+a) cycles
+b) intervals
+c) years
+d) months
+ANSWER: b
+
+1889.
+a) replacement
+b) removal
+c) inspection
+d) painting
+ANSWER: b
+
+1890.
+a) disassembly
+b) cleaning
+c) painting
+d) replacement
+ANSWER: a
+
+PASSAGE T: SAFETY WIRING (Q1891-Q1895)
+
+Safety wiring (locking wire) is used to (1891) __________ fasteners from rotating loose due to vibration. The wire must be routed so that any loosening of the (1892) __________ causes the wire to (1893) __________. The wire must be of the correct (1894) __________ specified for the application. After installation, the wire must be twisted using (1895) __________ and the ends formed into a closed hook to prevent injury.
+
+1891.
+a) secure
+b) prevent
+c) protect
+d) lock
+ANSWER: b
+
+1892.
+a) wire
+b) fastener
+c) component
+d) bracket
+ANSWER: b
+
+1893.
+a) stretch
+b) tighten
+c) break
+d) loosen
+ANSWER: b
+
+1894.
+a) length
+b) material and diameter
+c) colour
+d) pattern
+ANSWER: b
+
+1895.
+a) pliers
+b) safety wire pliers/twisting tool
+c) a screwdriver
+d) needle-nose pliers
+ANSWER: b
+
+PASSAGE U: GROUND EQUIPMENT CLEARANCE (Q1896-Q1900)
+
+Before the aircraft taxis or is released for departure, a final (1896) __________ check must ensure all ground equipment has been (1897) __________ from the aircraft. Ground power units, fuel trucks, and air (1898) __________ units must be disconnected and moved. All (1899) __________ must be removed from the landing gear. The area around the aircraft must be (1900) __________ of personnel before engine start is authorised.
+
+1896.
+a) safety
+b) walkround/clearance
+c) maintenance
+d) quality
+ANSWER: b
+
+1897.
+a) serviced
+b) disconnected and removed
+c) checked
+d) inspected
+ANSWER: b
+
+1898.
+a) conditioning
+b) supply
+c) start
+d) pressure
+ANSWER: b
+
+1899.
+a) tyres
+b) chocks
+c) pins
+d) covers
+ANSWER: b
+
+1900.
+a) inspected
+b) clear/free
+c) secured
+d) monitored
+ANSWER: b
+
+================================================================
+CEVAP ANAHTARI - BÖLÜM 5 DEVAM: BOŞLUK DOLDURMA (Q1741-Q1900)
+================================================================
+1741-b  1742-b  1743-b  1744-b  1745-b  1746-b  1747-b  1748-b  1749-b  1750-b
+1751-b  1752-b  1753-b  1754-b  1755-b  1756-b  1757-b  1758-b  1759-b  1760-b
+1761-b  1762-b  1763-b  1764-b  1765-b  1766-b  1767-b  1768-b  1769-b  1770-b
+1771-b  1772-b  1773-b  1774-b  1775-b  1776-b  1777-b  1778-b  1779-b  1780-b
+1781-b  1782-b  1783-b  1784-b  1785-b  1786-b  1787-b  1788-b  1789-b  1790-b
+1791-b  1792-b  1793-b  1794-b  1795-b  1796-b  1797-b  1798-b  1799-b  1800-a
+1801-b  1802-b  1803-b  1804-c  1805-b  1806-b  1807-b  1808-b  1809-b  1810-b
+1811-b  1812-b  1813-b  1814-b  1815-b  1816-b  1817-b  1818-b  1819-b  1820-b
+1821-b  1822-b  1823-b  1824-b  1825-b  1826-b  1827-b  1828-b  1829-b  1830-b
+1831-c  1832-b  1833-b  1834-b  1835-b  1836-b  1837-b  1838-b  1839-a  1840-c
+1841-b  1842-b  1843-b  1844-b  1845-b  1846-b  1847-c  1848-b  1849-b  1850-b
+1851-b  1852-b  1853-b  1854-b  1855-b  1856-b  1857-b  1858-b  1859-b  1860-b
+1861-b  1862-b  1863-b  1864-b  1865-b  1866-a  1867-b  1868-b  1869-a  1870-b
+1871-b  1872-b  1873-b  1874-b  1875-b  1876-b  1877-b  1878-b  1879-b  1880-b
+1881-b  1882-b  1883-b  1884-b  1885-b  1886-b  1887-b  1888-b  1889-b  1890-a
+1891-b  1892-b  1893-b  1894-b  1895-b  1896-b  1897-b  1898-b  1899-b  1900-b

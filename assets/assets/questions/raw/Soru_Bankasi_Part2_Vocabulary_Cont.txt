@@ -1,0 +1,1443 @@
+================================================================
+HAVA ARACI BAKIM PERSONELİ YABANCI DİL SINAVI
+SORU BANKASI - BÖLÜM 2 DEVAM: KELİME BİLGİSİ (VOCABULARY)
+200 SORU — Q1116-Q1315
+================================================================
+
+--- BÖLÜM: EŞANLAMLILAR (SYNONYMS) ---
+
+1116. The word "adequate" in aviation maintenance documentation most nearly means:
+a) insufficient
+b) satisfactory
+c) excessive
+d) optional
+ANSWER: b
+
+1117. The word "malfunction" most nearly means:
+a) normal operation
+b) scheduled maintenance
+c) failure to function correctly
+d) complete shutdown
+ANSWER: c
+
+1118. The word "adjacent" most nearly means:
+a) opposite
+b) distant
+c) next to / nearby
+d) identical
+ANSWER: c
+
+1119. The word "subsequent" most nearly means:
+a) previous
+b) following
+c) simultaneous
+d) occasional
+ANSWER: b
+
+1120. The word "precautionary" most nearly means:
+a) emergency
+b) taken as a preventive measure
+c) corrective
+d) mandatory
+ANSWER: b
+
+1121. The word "deterioration" most nearly means:
+a) improvement
+b) replacement
+c) gradual decline in quality
+d) scheduled inspection
+ANSWER: c
+
+1122. The word "notify" most nearly means:
+a) ignore
+b) repair
+c) inform / advise
+d) test
+ANSWER: c
+
+1123. The word "contaminate" most nearly means:
+a) purify
+b) pollute / make impure
+c) replace
+d) inspect
+ANSWER: b
+
+1124. The word "accumulate" most nearly means:
+a) distribute
+b) measure
+c) build up / collect
+d) reduce
+ANSWER: c
+
+1125. The word "obstruction" most nearly means:
+a) passage
+b) blockage
+c) measurement
+d) lubrication
+ANSWER: b
+
+1126. The word "rectify" most nearly means:
+a) record
+b) report
+c) correct / fix
+d) ignore
+ANSWER: c
+
+1127. The word "catastrophic" most nearly means:
+a) minor
+b) routine
+c) disastrous / very serious
+d) gradual
+ANSWER: c
+
+1128. The word "mandatory" most nearly means:
+a) optional
+b) recommended
+c) required by rule or law
+d) temporary
+ANSWER: c
+
+1129. The word "inhibit" most nearly means:
+a) encourage
+b) prevent / hinder
+c) replace
+d) measure
+ANSWER: b
+
+1130. The word "symmetrical" most nearly means:
+a) uneven
+b) balanced / equal on both sides
+c) twisted
+d) corroded
+ANSWER: b
+
+1131. The word "redundancy" in aviation systems means:
+a) unnecessary repetition
+b) backup system duplication for safety
+c) system failure
+d) weight reduction
+ANSWER: b
+
+1132. The word "calibrate" most nearly means:
+a) install
+b) adjust to a standard
+c) remove
+d) lubricate
+ANSWER: b
+
+1133. The word "torque" most nearly means:
+a) linear force
+b) rotational force / twisting force
+c) pressure
+d) tension
+ANSWER: b
+
+1134. The word "brittle" most nearly means:
+a) flexible
+b) hard and likely to break
+c) corroded
+d) soft
+ANSWER: b
+
+1135. The word "volatile" in the context of aviation fluids means:
+a) stable
+b) non-flammable
+c) easily evaporated / flammable
+d) viscous
+ANSWER: c
+
+--- BÖLÜM: ZIT ANLAMLILAR (ANTONYMS) ---
+
+1136. The OPPOSITE of "pressurized" is:
+a) sealed
+b) depressurized
+c) inflated
+d) contained
+ANSWER: b
+
+1137. The OPPOSITE of "serviceable" is:
+a) repairable
+b) inspected
+c) unserviceable
+d) certified
+ANSWER: c
+
+1138. The OPPOSITE of "extend" (as in landing gear extension) is:
+a) lower
+b) deploy
+c) retract
+d) lock
+ANSWER: c
+
+1139. The OPPOSITE of "approved" is:
+a) certified
+b) unapproved
+c) inspected
+d) recommended
+ANSWER: b
+
+1140. The OPPOSITE of "lubricated" is:
+a) greased
+b) oiled
+c) dry / unlubricated
+d) serviced
+ANSWER: c
+
+1141. The OPPOSITE of "engaged" (as in a system) is:
+a) locked
+b) activated
+c) armed
+d) disengaged
+ANSWER: d
+
+1142. The OPPOSITE of "symmetrical" is:
+a) balanced
+b) asymmetrical
+c) identical
+d) measured
+ANSWER: b
+
+1143. The OPPOSITE of "permanent" is:
+a) strong
+b) durable
+c) temporary
+d) reliable
+ANSWER: c
+
+1144. The OPPOSITE of "accelerate" is:
+a) decelerate
+b) maintain
+c) increase
+d) monitor
+ANSWER: a
+
+1145. The OPPOSITE of "rigid" is:
+a) strong
+b) flexible
+c) thick
+d) sealed
+ANSWER: b
+
+--- BÖLÜM: TANIMLAR (DEFINITIONS) ---
+
+1146. An "actuator" in aircraft systems is best described as:
+a) a device that converts fluid or electrical energy into mechanical movement
+b) a sensor that measures temperature
+c) a valve that controls fuel flow
+d) a pump that pressurizes hydraulic fluid
+ANSWER: a
+
+1147. A "discrepancy" in maintenance records refers to:
+a) a completed task
+b) an inconsistency or defect that must be addressed
+c) a scheduled inspection item
+d) an approved modification
+ANSWER: b
+
+1148. "Scheduled maintenance" refers to:
+a) unplanned repair work
+b) maintenance performed at predetermined intervals
+c) emergency troubleshooting
+d) inspection after a hard landing
+ANSWER: b
+
+1149. A "serviceable limit" defines:
+a) the maximum service life of a component
+b) the boundary within which a component may continue in service
+c) the date the component was last serviced
+d) the minimum replacement interval
+ANSWER: b
+
+1150. "Corrosion inhibitor" is a substance used to:
+a) accelerate the corrosion process
+b) remove existing corrosion
+c) slow down or prevent corrosion
+d) detect corrosion in hidden areas
+ANSWER: c
+
+1151. "Dye penetrant inspection" is a method used to detect:
+a) internal cracks in thick metal components
+b) surface-breaking defects in non-porous materials
+c) corrosion under paint
+d) delamination in composite panels
+ANSWER: b
+
+1152. An "AOG" (Aircraft on Ground) situation means:
+a) the aircraft has completed its scheduled maintenance
+b) the aircraft is grounded due to a defect requiring immediate repair
+c) the aircraft is undergoing routine servicing
+d) the aircraft is parked for crew rest
+ANSWER: b
+
+1153. "Hydraulic fluid bypass" occurs when:
+a) fluid flows through the correct path under normal pressure
+b) fluid flows around a restriction instead of through a component
+c) the hydraulic pump fails completely
+d) the reservoir is overfilled
+ANSWER: b
+
+1154. The term "shimmy" in landing gear refers to:
+a) the extension of the landing gear
+b) rapid oscillation of the nose wheel
+c) brake pressure fluctuation
+d) tire blowout on landing
+ANSWER: b
+
+1155. "Potable water system" on an aircraft refers to:
+a) the system that provides water for engine cooling
+b) the clean drinking water supply for passengers and crew
+c) the windshield wash system
+d) the fire suppression water injection system
+ANSWER: b
+
+--- BÖLÜM: KELİME BİÇİMLERİ (WORD FORMS) ---
+
+1156. Choose the correct word form: "The technician must ………… the hydraulic system before opening any lines."
+a) depressurization
+b) depressurized
+c) depressurize
+d) depressurizing
+ANSWER: c
+
+1157. Choose the correct word form: "The ………… of the component was confirmed by inspection."
+a) serve
+b) serviceable
+c) serviceability
+d) servicing
+ANSWER: c
+
+1158. Choose the correct word form: "The engineer submitted a ………… report after the incident."
+a) write
+b) written
+c) writing
+d) writes
+ANSWER: b
+
+1159. Choose the correct word form: "All ………… items must be tagged and removed from the hangar."
+a) unservice
+b) unserviced
+c) unserviceable
+d) unservicing
+ANSWER: c
+
+1160. Choose the correct word form: "The ………… procedure must be followed during fuel system work."
+a) bond
+b) bonded
+c) bonding
+d) bonds
+ANSWER: c
+
+1161. Choose the correct word form: "The AMM provides ………… for each maintenance task."
+a) instruct
+b) instructed
+c) instructions
+d) instructing
+ANSWER: c
+
+1162. Choose the correct word form: "The ………… of the landing gear was confirmed by the green indicator light."
+a) extend
+b) extension
+c) extensive
+d) extensively
+ANSWER: b
+
+1163. Choose the correct word form: "The component showed signs of ………… due to excessive heat."
+a) deteriorate
+b) deterioration
+c) deteriorating
+d) deteriorated
+ANSWER: b
+
+1164. Choose the correct word form: "Safety ………… must be worn when working with hydraulic fluid."
+a) equip
+b) equipment
+c) equipping
+d) equipped
+ANSWER: b
+
+1165. Choose the correct word form: "The system was ………… after the fault was rectified."
+a) certify
+b) certification
+c) certified
+d) certifying
+ANSWER: c
+
+--- BÖLÜM: İFADELER VE FİİL GRUPLAMALARI (PHRASAL VERBS & EXPRESSIONS) ---
+
+1166. "To carry out" a maintenance task means to:
+a) cancel it
+b) perform / complete it
+c) postpone it
+d) report it to the supervisor
+ANSWER: b
+
+1167. "To sign off" a maintenance task means to:
+a) refuse to do the work
+b) certify that the work has been completed satisfactorily
+c) begin the task
+d) escalate it to engineering
+ANSWER: b
+
+1168. "To top up" a fluid level means to:
+a) drain it completely
+b) add fluid to reach the correct level
+c) replace the entire fluid
+d) test the fluid quality
+ANSWER: b
+
+1169. "To bleed" an aircraft system means to:
+a) add fluid to the system
+b) remove trapped air or excess pressure from the system
+c) test the system under pressure
+d) isolate the system
+ANSWER: b
+
+1170. "To lock out" a circuit breaker means to:
+a) reset it after a fault
+b) prevent it from being reset to ensure safety during maintenance
+c) test its functionality
+d) replace it with a new one
+ANSWER: b
+
+1171. "To run up" an engine means to:
+a) stop the engine on the ground
+b) operate the engine at high power on the ground for testing
+c) shut down the engine after flight
+d) start the engine for the first time
+ANSWER: b
+
+1172. "To check out" (a tool or equipment) means to:
+a) inspect and return it to stores
+b) officially borrow it from the tool store
+c) discard it after use
+d) clean and calibrate it
+ANSWER: b
+
+1173. "To stand down" in maintenance context means to:
+a) continue working
+b) suspend or stop an activity as directed
+c) increase work pace
+d) call for inspection
+ANSWER: b
+
+1174. "To write up" a defect means to:
+a) repair it immediately
+b) record it formally in the maintenance log
+c) ignore it if minor
+d) refer it to the crew chief verbally
+ANSWER: b
+
+1175. "To break out" new materials means to:
+a) discard old materials
+b) open and issue new items from storage
+c) test the quality of materials
+d) return materials to the supplier
+ANSWER: b
+
+--- BÖLÜM: BAĞLAMDA KELİME (VOCABULARY IN CONTEXT) ---
+
+1176. "The technician applied a bead of ………… around the access panel to prevent moisture ingress."
+a) paint
+b) sealant
+c) lubricant
+d) solvent
+ANSWER: b
+
+1177. "A ………… reading on the fuel quantity indicator suggests a faulty sensor."
+a) normal
+b) fluctuating
+c) steady
+d) high
+ANSWER: b
+
+1178. "Before engine start, a visual inspection should confirm that the area ………… the engine intake is clear."
+a) behind
+b) over
+c) around
+d) under
+ANSWER: c
+
+1179. "The landing gear downlock is confirmed by a ………… light in the cockpit."
+a) red
+b) amber
+c) green
+d) flashing
+ANSWER: c
+
+1180. "The borescope was inserted through the ………… port to inspect the turbine blades."
+a) access
+b) fill
+c) drain
+d) vent
+ANSWER: a
+
+1181. "After maintenance, the work area must be thoroughly ………… for tools and foreign objects."
+a) painted
+b) sealed
+c) searched
+d) pressurized
+ANSWER: c
+
+1182. "A ………… is used to measure the gap between a brake disc and its housing."
+a) torque wrench
+b) feeler gauge
+c) micrometer
+d) refractometer
+ANSWER: b
+
+1183. "The ………… system distributes electrical power from the generators to consumers throughout the aircraft."
+a) fuel
+b) oxygen
+c) hydraulic
+d) bus
+ANSWER: d
+
+1184. "When ………… a tyre, the pressure must be checked with the aircraft on jacks or the tyre removed from the aircraft."
+a) inflating
+b) replacing
+c) balancing
+d) inspecting
+ANSWER: a
+
+1185. "Corrosion found during inspection must be ………… to determine its extent before treatment."
+a) painted
+b) sanded
+c) evaluated
+d) sealed
+ANSWER: c
+
+1186. "The ………… time of a component is the total accumulated operating hours since new or since last overhaul."
+a) shelf
+b) service
+c) calendar
+d) storage
+ANSWER: b
+
+1187. "After a lightning strike, specific ………… must be performed before the aircraft returns to service."
+a) painting
+b) cleaning
+c) inspections
+d) modifications
+ANSWER: c
+
+1188. "The ………… valve prevents backflow of hydraulic fluid when a pump fails."
+a) check
+b) relief
+c) shutoff
+d) selector
+ANSWER: a
+
+1189. "High frequency vibration detected on the engine ………… may indicate turbine blade damage."
+a) starter
+b) nacelle
+c) exhaust
+d) mount
+ANSWER: b
+
+1190. "A maintenance ………… is a written authorization to deviate from standard procedures when conditions warrant it."
+a) defect
+b) waiver
+c) report
+d) schedule
+ANSWER: b
+
+1191. "Composite structures require ………… repair techniques that differ significantly from metal repair methods."
+a) identical
+b) similar
+c) specialized
+d) simplified
+ANSWER: c
+
+1192. "All tools used during maintenance must be ………… before and after each task to prevent FOD."
+a) calibrated
+b) cleaned
+c) accounted for
+d) stored
+ANSWER: c
+
+1193. "An EGT ………… beyond limits may indicate a hot start condition."
+a) exceedance
+b) reading
+c) measurement
+d) indication
+ANSWER: a
+
+1194. "Hydraulic tubing that shows signs of ………… chafing must be replaced before the aircraft returns to service."
+a) slight
+b) surface
+c) severe
+d) potential
+ANSWER: c
+
+1195. "The ………… point of a hydraulic fluid is the temperature at which it will ignite when exposed to a flame."
+a) boiling
+b) flash
+c) melting
+d) freezing
+ANSWER: b
+
+1196. "During a ………… inspection, the inspector looks for structural damage that may not be visible from the outside."
+a) walkaround
+b) detailed
+c) transit
+d) preflight
+ANSWER: b
+
+1197. "The ………… of the aircraft must be verified after any fuel loading to ensure it is within the flight envelope."
+a) speed
+b) altitude
+c) center of gravity
+d) pressurization
+ANSWER: c
+
+1198. "A ………… fitting is used to connect hydraulic lines at a point where they may need to be separated for maintenance."
+a) permanent
+b) quick-disconnect
+c) compression
+d) swaged
+ANSWER: b
+
+1199. "The APU bleed air may be used to ………… the main engines in the absence of ground support equipment."
+a) cool
+b) start
+c) stop
+d) inspect
+ANSWER: b
+
+1200. "All maintenance personnel must complete a ………… safety briefing before working on fueled aircraft."
+a) weekly
+b) verbal
+c) mandatory
+d) optional
+ANSWER: c
+
+1201. "The structural ………… of an aircraft is its ability to withstand the loads imposed during normal and emergency operations."
+a) weight
+b) balance
+c) integrity
+d) symmetry
+ANSWER: c
+
+1202. "Oxygen equipment must be kept free of ………… contamination, which can cause violent reactions."
+a) water
+b) oil / grease
+c) dust
+d) air
+ANSWER: b
+
+1203. "A ………… aircraft is one that has been modified or repaired and returned to full operational status."
+a) grounded
+b) refurbished
+c) condemned
+d) quarantined
+ANSWER: b
+
+1204. "Before performing any ………… maintenance, a risk assessment must be completed."
+a) routine
+b) minor
+c) invasive
+d) external
+ANSWER: c
+
+1205. "When an engine ………… occurs, immediate shutdown and investigation are required."
+a) start
+b) surge
+c) warm-up
+d) rundown
+ANSWER: b
+
+1206. "The ………… load cell measures the tension in a cable to ensure correct rigging."
+a) strain
+b) hydraulic
+c) electric
+d) torque
+ANSWER: a
+
+1207. "Aircraft batteries must be ………… in a well-ventilated area to prevent hydrogen gas accumulation."
+a) stored
+b) charged
+c) cleaned
+d) installed
+ANSWER: b
+
+1208. "The ………… of a hydraulic pump is expressed in gallons per minute at a given pressure."
+a) efficiency
+b) output
+c) capacity
+d) flow rate
+ANSWER: d
+
+1209. "A ………… in the oxygen system would result in a rapid loss of oxygen supply to crew and passengers."
+a) blockage
+b) leak
+c) pressure spike
+d) temperature rise
+ANSWER: b
+
+1210. "To prevent ………… buildup in fuel tanks, bonding wires connect the fueling equipment to the aircraft."
+a) ice
+b) sediment
+c) static charge
+d) contamination
+ANSWER: c
+
+1211. "A ………… check confirms that a component functions correctly across its full range of movement."
+a) leak
+b) functional
+c) visual
+d) weight
+ANSWER: b
+
+1212. "The aircraft ………… log records all maintenance actions, defects, and flight hours."
+a) technical
+b) operational
+c) flight
+d) service
+ANSWER: a
+
+1213. "When ………… into a confined space on an aircraft, a safety observer must be present."
+a) entering
+b) inspecting
+c) climbing
+d) reaching
+ANSWER: a
+
+1214. "A ………… reading of fuel pressure below the minimum limit would require immediate investigation."
+a) high
+b) normal
+c) low
+d) fluctuating
+ANSWER: c
+
+1215. "The ………… on the hydraulic reservoir indicates the fluid level and must be checked before each service."
+a) pressure gauge
+b) sight glass
+c) dipstick
+d) flowmeter
+ANSWER: b
+
+1216. "A component that has exceeded its ………… must be removed from service regardless of its apparent condition."
+a) weight limit
+b) life limit
+c) storage period
+d) inspection interval
+ANSWER: b
+
+1217. "The fire ………… system uses a sensing element around the engine to detect elevated temperatures."
+a) suppression
+b) detection
+c) prevention
+d) containment
+ANSWER: b
+
+1218. "During fuel system __________, a rag or absorbent material must be placed under all opened connections."
+a) inspection
+b) pressurization
+c) maintenance
+d) bleeding
+ANSWER: c
+
+1219. "The nose wheel __________ is adjusted to align the aircraft's nose wheel with the aircraft centreline."
+a) pressure
+b) steering
+c) brake
+d) shimmy
+ANSWER: b
+
+1220. "A __________ torque value must be applied to critical fasteners using a calibrated torque wrench."
+a) maximum
+b) minimum
+c) specified
+d) estimated
+ANSWER: c
+
+1221. "Hydraulic fluid that appears __________ or milky indicates contamination with water."
+a) dark
+b) clear
+c) cloudy
+d) black
+ANSWER: c
+
+1222. "Before __________ the aircraft, a check of all hatches, panels, and doors must confirm they are secure."
+a) landing
+b) parking
+c) releasing
+d) towing
+ANSWER: d
+
+1223. "The drain mast on the aircraft fuselage provides a __________ path for waste water and condensation."
+a) controlled discharge
+b) sealed
+c) pressurized
+d) heated
+ANSWER: a
+
+1224. "Engine __________ time is counted from the moment the throttle is advanced from idle during takeoff."
+a) shutdown
+b) start
+c) run
+d) flight
+ANSWER: c
+
+1225. "An __________ inspection requires the removal of panels and access doors to examine internal structure."
+a) external
+b) internal
+c) walkaround
+d) preflight
+ANSWER: b
+
+--- BÖLÜM: EK EŞANLAMLILAR VE BAĞLAM (ADDITIONAL SYNONYMS & CONTEXT) ---
+
+1226. The word "verify" most nearly means:
+a) assume
+b) ignore
+c) confirm / check for accuracy
+d) estimate
+ANSWER: c
+
+1227. The word "comply" most nearly means:
+a) refuse
+b) act in accordance with rules
+c) ignore
+d) modify
+ANSWER: b
+
+1228. The word "fatigue" in metals context means:
+a) rust
+b) heat damage
+c) weakening due to repeated stress cycles
+d) corrosion
+ANSWER: c
+
+1229. The word "nominal" most nearly means:
+a) excessive
+b) within normal / expected range
+c) zero
+d) dangerous
+ANSWER: b
+
+1230. The word "tolerance" in engineering means:
+a) the maximum load a structure can carry
+b) the acceptable range of variation in a dimension
+c) the resistance of a material to corrosion
+d) the scheduled maintenance interval
+ANSWER: b
+
+1231. The word "segregate" most nearly means:
+a) combine
+b) separate / keep apart
+c) classify
+d) measure
+ANSWER: b
+
+1232. The word "expedite" most nearly means:
+a) delay
+b) cancel
+c) speed up / accelerate
+d) report
+ANSWER: c
+
+1233. The word "inoperative" most nearly means:
+a) fully functional
+b) under repair
+c) not working / non-functional
+d) recently serviced
+ANSWER: c
+
+1234. The word "preclude" most nearly means:
+a) allow
+b) recommend
+c) prevent / make impossible
+d) require
+ANSWER: c
+
+1235. The word "alleviate" most nearly means:
+a) worsen
+b) measure
+c) reduce / lessen
+d) prevent
+ANSWER: c
+
+1236. The word "fluctuation" most nearly means:
+a) steady reading
+b) irregular variation
+c) gradual increase
+d) total failure
+ANSWER: b
+
+1237. The word "procurement" most nearly means:
+a) installation of parts
+b) acquisition / obtaining of materials
+c) inspection of components
+d) return of defective parts
+ANSWER: b
+
+1238. The word "fatigue crack" refers to:
+a) a crack caused by a single overload
+b) a crack that grows due to repeated stress cycles
+c) a surface crack from corrosion
+d) a manufacturing defect
+ANSWER: b
+
+1239. The word "overhaul" most nearly means:
+a) a routine inspection
+b) a comprehensive restoration of a component to serviceable condition
+c) a minor repair
+d) a scheduled lubrication
+ANSWER: b
+
+1240. The word "purge" in systems maintenance means to:
+a) pressurize a system to test for leaks
+b) completely empty and flush a system
+c) add fluid to a system
+d) seal a system after maintenance
+ANSWER: b
+
+1241. The word "chafing" on wiring or tubing refers to:
+a) electrical arcing
+b) surface wear from rubbing contact
+c) heat discolouration
+d) corrosion damage
+ANSWER: b
+
+1242. The word "delamination" in composite structures means:
+a) surface scratching
+b) separation of layers within the material
+c) impact damage
+d) moisture absorption
+ANSWER: b
+
+1243. The word "squawk" in aviation maintenance context means:
+a) a radio communication
+b) a defect or malfunction reported by flight crew
+c) a scheduled task
+d) a certification document
+ANSWER: b
+
+1244. The word "locking wire" (safety wire) is used to:
+a) secure electrical wiring bundles
+b) prevent fasteners from rotating loose
+c) bond components electrically
+d) mark components for replacement
+ANSWER: b
+
+1245. The word "potting" in avionics maintenance refers to:
+a) painting a component
+b) encapsulating electrical connections with compound to protect against moisture and vibration
+c) securing panel fasteners
+d) cleaning connector contacts
+ANSWER: b
+
+1246. "FOD" stands for:
+a) Flight Operations Directive
+b) Foreign Object Debris/Damage
+c) Final Operations Data
+d) Fuel Outflow Drain
+ANSWER: b
+
+1247. "MEL" stands for:
+a) Maintenance Engineering Log
+b) Minimum Equipment List
+c) Master Engineering Limits
+d) Monthly Engine Log
+ANSWER: b
+
+1248. "NDT" stands for:
+a) Normal Dispatch Test
+b) Non-Destructive Testing
+c) Navigation Data Transfer
+d) Night Duty Training
+ANSWER: b
+
+1249. "SB" in maintenance context stands for:
+a) Standard Briefing
+b) Service Bulletin
+c) Safety Boundary
+d) Structural Baseline
+ANSWER: b
+
+1250. "AD" in aviation regulatory context stands for:
+a) Additional Documentation
+b) Airworthiness Directive
+c) Aircraft Design
+d) Annual Documentation
+ANSWER: b
+
+1251. "CRS" in maintenance certification means:
+a) Component Repair Summary
+b) Certificate of Release to Service
+c) Crew Rest Schedule
+d) Corrosion Rating Scale
+ANSWER: b
+
+1252. "AMM" stands for:
+a) Aircraft Modification Manual
+b) Aircraft Maintenance Manual
+c) Approved Maintenance Method
+d) Airframe Material Manual
+ANSWER: b
+
+1253. "IPC" stands for:
+a) Inspection and Planning Checklist
+b) Illustrated Parts Catalogue
+c) Internal Pressure Check
+d) Initial Phase Certification
+ANSWER: b
+
+1254. "TSN" stands for:
+a) Technical Safety Note
+b) Time Since New
+c) Total System Number
+d) Task Sequence Number
+ANSWER: b
+
+1255. "CSN" stands for:
+a) Component Safety Note
+b) Cycles Since New
+c) Corrosion Severity Number
+d) Crew Safety Notice
+ANSWER: b
+
+1256. "LRU" stands for:
+a) Left Rudder Unit
+b) Line Replaceable Unit
+c) Licensed Repair Update
+d) Load and Refuel Unit
+ANSWER: b
+
+1257. "EGT" stands for:
+a) Engine Ground Test
+b) Exhaust Gas Temperature
+c) Engine General Time
+d) External Ground Tow
+ANSWER: b
+
+1258. "EPR" stands for:
+a) Engine Performance Report
+b) Engine Pressure Ratio
+c) External Power Required
+d) Engine Part Replacement
+ANSWER: b
+
+1259. "APU" stands for:
+a) Aircraft Power Unit
+b) Auxiliary Power Unit
+c) Aft Pressurization Unit
+d) Approved Parts Update
+ANSWER: b
+
+1260. "MTBF" stands for:
+a) Maintenance Time Between Failures
+b) Mean Time Between Failures
+c) Maximum Takeoff Brake Force
+d) Minimum Time Before Flight
+ANSWER: b
+
+1261. "OEM" stands for:
+a) Onboard Electrical Module
+b) Original Equipment Manufacturer
+c) Operator Engineering Manual
+d) Operational Engine Monitor
+ANSWER: b
+
+1262. The word "consumable" in a parts context refers to:
+a) a major structural component
+b) a material used up and not recovered after use
+c) a time-limited component with overhaul interval
+d) a rotable component sent for repair
+ANSWER: b
+
+1263. The word "rotable" in a parts context refers to:
+a) a part that can never be repaired
+b) a part that rotates mechanically
+c) a serviceable part that is repaired and returned to service when removed
+d) a non-structural component
+ANSWER: c
+
+1264. The term "shelf life" refers to:
+a) the maximum number of flight cycles
+b) the period during which a stored item remains usable
+c) the time between scheduled overhauls
+d) the maximum service temperature
+ANSWER: b
+
+1265. The term "traceability" in maintenance records means:
+a) the ability to track a fault to its root cause
+b) the ability to track a component's history, source, and maintenance records
+c) the visual inspection of a component's markings
+d) the process of returning a component to the manufacturer
+ANSWER: b
+
+1266. The word "bonding" in aircraft electrical context means:
+a) joining structural components with adhesive
+b) connecting components with conductors to equalize electrical potential
+c) insulating wiring against moisture
+d) testing electrical continuity
+ANSWER: b
+
+1267. The word "earthing" (or grounding) means:
+a) storing the aircraft on the ground
+b) connecting the aircraft electrically to ground to prevent static build-up
+c) securing the aircraft with chocks
+d) parking the aircraft in a hangar
+ANSWER: b
+
+1268. The word "squib" in a fire suppression system refers to:
+a) a spray nozzle
+b) a small explosive device used to release the fire suppressant
+c) a fire sensor element
+d) a fire detection loop
+ANSWER: b
+
+1269. The term "cold soak" refers to:
+a) soaking a component in cleaning solvent
+b) extended exposure of the aircraft to very low temperatures, often affecting fuel, hydraulics, and seals
+c) pre-heating an engine before start
+d) a hydraulic system flush procedure
+ANSWER: b
+
+1270. The word "nacelle" refers to:
+a) the aircraft fuselage
+b) the structure surrounding and housing an engine
+c) the landing gear bay
+d) the nose radome
+ANSWER: b
+
+1271. The term "inlet guide vanes" in an engine refers to:
+a) vanes that direct oil flow through the engine
+b) stationary vanes that direct airflow into the compressor
+c) vanes that increase exhaust thrust
+d) movable vanes that control fuel flow
+ANSWER: b
+
+1272. "Bleed air" from an aircraft engine is used for:
+a) engine cooling only
+b) aircraft pressurization, anti-icing, and other pneumatic functions
+c) fuel pressurization
+d) hydraulic system backup
+ANSWER: b
+
+1273. The word "flap" refers to:
+a) a primary flight control surface
+b) a high-lift device on the wing trailing edge
+c) a hydraulic actuator housing
+d) a main landing gear door
+ANSWER: b
+
+1274. The term "stall" in an aerodynamic context means:
+a) an engine power reduction
+b) a loss of lift due to exceeding the critical angle of attack
+c) a landing gear retraction failure
+d) a hydraulic system failure
+ANSWER: b
+
+1275. "Ground spoilers" on an aircraft:
+a) slow the aircraft in flight by increasing drag
+b) deploy on landing to reduce lift and improve braking
+c) control roll during low-speed flight
+d) provide additional lift during takeoff
+ANSWER: b
+
+1276. A "squib test" on a fire extinguisher system is performed to:
+a) test the fire suppression agent quantity
+b) verify the firing circuit continuity without discharging the extinguisher
+c) check the fire detection loop
+d) pressurize the extinguisher bottle
+ANSWER: b
+
+1277. "Dry bay" in an aircraft refers to:
+a) a fuel tank that has been drained
+b) a structural area where no flammable fluids are permitted
+c) a cargo hold with no moisture protection
+d) an unpressurized section of the fuselage
+ANSWER: b
+
+1278. The term "pitch" in rotor context means:
+a) the rotational speed of the rotor
+b) the angle of the rotor blade relative to its plane of rotation
+c) the forward speed of the helicopter
+d) the vibration frequency of the rotor system
+ANSWER: b
+
+1279. An "overrun" condition on an aircraft engine means:
+a) the engine has run for too many hours
+b) the engine has exceeded a speed, temperature, or torque limit
+c) the engine has run out of fuel
+d) the engine has started prematurely
+ANSWER: b
+
+1280. The term "hard time" component means:
+a) a part that is difficult to remove
+b) a component that must be replaced or overhauled at a fixed interval regardless of condition
+c) a component with a soft-time inspection
+d) a structural component exposed to high loads
+ANSWER: b
+
+1281. "On condition" maintenance means:
+a) maintenance performed only after a failure
+b) maintenance performed based on the actual condition of the component, not fixed intervals
+c) maintenance conditional on management approval
+d) maintenance performed every 100 flight hours
+ANSWER: b
+
+1282. The word "placard" on an aircraft refers to:
+a) a maintenance instruction in the AMM
+b) a sign or label fixed to the aircraft providing instructions or warnings
+c) a temporary repair approval
+d) a modification record
+ANSWER: b
+
+1283. The term "ferry flight" means:
+a) a scheduled passenger service flight
+b) a flight to reposition an aircraft, sometimes under a special permit
+c) a training flight for new pilots
+d) a test flight after major maintenance
+ANSWER: b
+
+1284. "Special inspection" in maintenance terminology refers to:
+a) a routine transit check
+b) an inspection required after a specific event such as a hard landing or lightning strike
+c) the annual airworthiness review
+d) a post-flight walkaround
+ANSWER: b
+
+1285. "Turbine entry temperature" is measured to:
+a) control cabin temperature
+b) monitor the temperature at the turbine inlet and prevent overheating
+c) measure exhaust emissions
+d) adjust fuel flow automatically
+ANSWER: b
+
+1286. The term "hydraulic snubber" is used to:
+a) increase hydraulic pressure
+b) dampen pressure spikes and reduce vibration in hydraulic lines
+c) filter hydraulic fluid
+d) control the direction of hydraulic flow
+ANSWER: b
+
+1287. The word "discrepancy" in maintenance context most nearly means:
+a) a completed maintenance task
+b) an abnormality or defect requiring action
+c) a routine inspection item
+d) a modification record
+ANSWER: b
+
+1288. "Cycle counting" for aircraft components refers to:
+a) counting engine rotations per minute
+b) tracking the number of pressurization cycles or landing cycles for fatigue life management
+c) monitoring hydraulic pump cycles
+d) recording fuel tank fill cycles
+ANSWER: b
+
+1289. The term "pitch trim" refers to:
+a) adjusting engine thrust
+b) adjusting the aircraft's nose-up or nose-down attitude
+c) aligning the landing gear
+d) adjusting flap position
+ANSWER: b
+
+1290. "Ram air" refers to:
+a) compressed air from the engine compressor
+b) ambient air forced into the aircraft by its forward motion
+c) air from the APU
+d) recirculated cabin air
+ANSWER: b
+
+1291. The word "pitting" on a metal surface indicates:
+a) surface scratches from handling
+b) small holes or cavities caused by corrosion
+c) paint delamination
+d) heat damage
+ANSWER: b
+
+1292. The term "avionics bay" refers to:
+a) the cockpit area
+b) a dedicated compartment housing electronic equipment
+c) the cargo hold
+d) the equipment bay under the passenger floor
+ANSWER: b
+
+1293. "Engine run-in" after overhaul means:
+a) a high-power test to check maximum thrust
+b) a controlled ground running sequence to bed in new components
+c) the first flight after engine change
+d) an idle run to check for oil leaks
+ANSWER: b
+
+1294. The term "airworthiness" means:
+a) the aircraft is on time for departure
+b) the aircraft is in a safe and proper condition for flight
+c) the aircraft has passed a visual inspection
+d) the aircraft has been refuelled
+ANSWER: b
+
+1295. "Critical maintenance task" refers to:
+a) any task taking more than 2 hours
+b) a task whose incorrect performance could directly affect flight safety
+c) a task requiring two people
+d) a task performed during a heavy maintenance check
+ANSWER: b
+
+1296. The term "load sheet" in aviation refers to:
+a) a list of maintenance tasks
+b) a document showing the distribution of load and the resulting centre of gravity of the aircraft
+c) the weight of fuel loaded
+d) a structural load calculation for repairs
+ANSWER: b
+
+1297. The word "penultimate" means:
+a) the last one
+b) the second to last one
+c) the most important
+d) the most recent
+ANSWER: b
+
+1298. "Aircraft release" in maintenance context means:
+a) the aircraft has been sold
+b) the aircraft has been returned to service after maintenance
+c) the aircraft has been dispatched with a known defect
+d) the aircraft has been assigned a new registration
+ANSWER: b
+
+1299. The term "dual inspection" requires:
+a) two separate inspections on different days
+b) inspection by two independent qualified persons
+c) inspection using two different methods
+d) a ground and flight inspection
+ANSWER: b
+
+1300. The word "annotate" most nearly means:
+a) remove
+b) add notes or comments to a document
+c) approve
+d) file
+ANSWER: b
+
+1301. The term "phased inspection" means:
+a) inspecting one aircraft phase at a time
+b) dividing a maintenance check into smaller packages performed at shorter intervals
+c) performing all checks at once
+d) a special inspection after a phase of flight
+ANSWER: b
+
+1302. "Fail-safe" design means:
+a) a system that will not fail under any condition
+b) a system designed so that failure of one component does not cause failure of the whole system
+c) a system that automatically shuts down on failure
+d) a system requiring manual override on failure
+ANSWER: b
+
+1303. The word "supersede" most nearly means:
+a) support
+b) replace / take the place of
+c) approve
+d) supplement
+ANSWER: b
+
+1304. "Fuselage frame" refers to:
+a) the longitudinal structural member of the fuselage
+b) a transverse structural ring that gives the fuselage its shape and transfers loads
+c) the outer skin panel
+d) the cargo floor beam
+ANSWER: b
+
+1305. The term "stringer" in aircraft structure refers to:
+a) a transverse structural member
+b) a longitudinal structural member running along the length of the fuselage or wing
+c) a rivet line
+d) a sealant bead
+ANSWER: b
+
+1306. "Over-torque" of a fastener refers to:
+a) applying less than the specified torque
+b) applying more than the specified torque, potentially damaging the fastener or structure
+c) applying torque in the wrong direction
+d) failing to use a torque wrench
+ANSWER: b
+
+1307. "Safety margin" in engineering means:
+a) the minimum load that must be applied
+b) the additional strength built into a structure beyond the expected maximum load
+c) the time allowed for an inspection
+d) the gap between two structural components
+ANSWER: b
+
+1308. The word "nominal" most nearly means:
+a) excessive
+b) as named / within normal expected range
+c) below limits
+d) critical
+ANSWER: b
+
+1309. "Certification basis" of an aircraft refers to:
+a) the location where the aircraft was certified
+b) the airworthiness standards and regulations to which the aircraft was type certified
+c) the maintenance documentation set
+d) the original build specification
+ANSWER: b
+
+1310. "Continued airworthiness" documentation refers to:
+a) documents generated only at initial delivery
+b) documents and instructions needed to maintain the aircraft's airworthiness throughout its service life
+c) export paperwork for the aircraft
+d) the original type certificate
+ANSWER: b
+
+1311. "AOC" stands for:
+a) Aircraft Operations Certificate
+b) Air Operator Certificate
+c) Airworthiness Operations Check
+d) Aircraft Overhaul Cycle
+ANSWER: b
+
+1312. "ETOPS" refers to:
+a) Electronic Takeoff and Performance System
+b) Extended Twin-engine Operational Performance Standards
+c) Engine Turbine Oil Pressure Specification
+d) External Technical Operations Procedure
+ANSWER: b
+
+1313. The word "disposition" of a rejected part means:
+a) the description of the defect
+b) the decision on what to do with the rejected part (scrap, rework, return, etc.)
+c) the inspection method used
+d) the replacement part number
+ANSWER: b
+
+1314. "Snag" in British aviation English means:
+a) a type of maintenance tool
+b) a defect or fault on the aircraft
+c) a maintenance schedule
+d) a type of inspection
+ANSWER: b
+
+1315. The word "expedite" in maintenance context most nearly means:
+a) delay a non-critical task
+b) complete or process something more quickly
+c) document the task thoroughly
+d) reassign the task
+ANSWER: b
+
+================================================================
+CEVAP ANAHTARI - BÖLÜM 2 DEVAM: KELİME BİLGİSİ (Q1116-Q1315)
+================================================================
+1116-b  1117-c  1118-c  1119-b  1120-b  1121-c  1122-c  1123-b  1124-c  1125-b
+1126-c  1127-c  1128-c  1129-b  1130-b  1131-b  1132-b  1133-b  1134-b  1135-c
+1136-b  1137-c  1138-c  1139-b  1140-c  1141-d  1142-b  1143-c  1144-a  1145-b
+1146-a  1147-b  1148-b  1149-b  1150-c  1151-b  1152-b  1153-b  1154-b  1155-b
+1156-c  1157-c  1158-b  1159-c  1160-c  1161-c  1162-b  1163-b  1164-b  1165-c
+1166-b  1167-b  1168-b  1169-b  1170-b  1171-b  1172-b  1173-b  1174-b  1175-b
+1176-b  1177-b  1178-c  1179-c  1180-a  1181-c  1182-b  1183-d  1184-a  1185-c
+1186-b  1187-c  1188-a  1189-b  1190-b  1191-c  1192-c  1193-a  1194-c  1195-b
+1196-b  1197-c  1198-b  1199-b  1200-c  1201-c  1202-b  1203-b  1204-c  1205-b
+1206-a  1207-b  1208-d  1209-b  1210-c  1211-b  1212-a  1213-a  1214-c  1215-b
+1216-b  1217-b  1218-c  1219-b  1220-c  1221-c  1222-d  1223-a  1224-c  1225-b
+1226-c  1227-b  1228-c  1229-b  1230-b  1231-b  1232-c  1233-c  1234-c  1235-c
+1236-b  1237-b  1238-b  1239-b  1240-b  1241-b  1242-b  1243-b  1244-b  1245-b
+1246-b  1247-b  1248-b  1249-b  1250-b  1251-b  1252-b  1253-b  1254-b  1255-b
+1256-b  1257-b  1258-b  1259-b  1260-b  1261-b  1262-b  1263-c  1264-b  1265-b
+1266-b  1267-b  1268-b  1269-b  1270-b  1271-b  1272-b  1273-b  1274-b  1275-b
+1276-b  1277-b  1278-b  1279-b  1280-b  1281-b  1282-b  1283-b  1284-b  1285-b
+1286-b  1287-b  1288-b  1289-b  1290-b  1291-b  1292-b  1293-b  1294-b  1295-b
+1296-b  1297-b  1298-b  1299-b  1300-b  1301-b  1302-b  1303-b  1304-b  1305-b
+1306-b  1307-b  1308-b  1309-b  1310-b  1311-b  1312-b  1313-b  1314-b  1315-b

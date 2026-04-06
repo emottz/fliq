@@ -1,0 +1,6377 @@
+[
+  {
+    "id": 251,
+    "cat": "vocabulary",
+    "orig": 251,
+    "q": "The fuel manifold DELIVERS metered fuel flow to the 30 fuel nozzles. What is the synonym for \"delivers\"?",
+    "opts": [
+      "collects",
+      "distributes",
+      "neglects",
+      "avoids"
+    ],
+    "ans": 0,
+    "diff": "easy",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 252,
+    "cat": "vocabulary",
+    "orig": 252,
+    "q": "The three-digit numeric function code is used to INDICATE the particular maintenance function. What is the synonym for \"indicate\"?",
+    "opts": [
+      "demonstrate",
+      "diminish",
+      "demolish",
+      "demand"
+    ],
+    "ans": 0,
+    "diff": "easy",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 253,
+    "cat": "vocabulary",
+    "orig": 253,
+    "q": "If the oil heating system is necessary, REFER to the related Service Bulletin. What can be used instead of \"refer\"?",
+    "opts": [
+      "ignore",
+      "consult",
+      "refuse",
+      "retreat"
+    ],
+    "ans": 1,
+    "diff": "easy",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 254,
+    "cat": "vocabulary",
+    "orig": 254,
+    "q": "'Day of discovery' means the calendar day that a malfunction was RECORDED in the maintenance log. What is another word for \"recorded\"?",
+    "opts": [
+      "rejected",
+      "restricted",
+      "registered",
+      "refused"
+    ],
+    "ans": 2,
+    "diff": "easy",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 255,
+    "cat": "vocabulary",
+    "orig": 255,
+    "q": "Any situation that could POSSIBLY crush or penetrate the case of the beacon should be avoided. What is the synonym for \"possibly\"?",
+    "opts": [
+      "potentially",
+      "remotely",
+      "definitely",
+      "doubtfully"
+    ],
+    "ans": 0,
+    "diff": "easy",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 256,
+    "cat": "vocabulary",
+    "orig": 256,
+    "q": "The tail bearing housing CONTAINS three speed probes configured to read LP turbine speed. Which one CANNOT be used for \"contains\"?",
+    "opts": [
+      "involves",
+      "includes",
+      "invades",
+      "features"
+    ],
+    "ans": 2,
+    "diff": "easy",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 257,
+    "cat": "vocabulary",
+    "orig": 257,
+    "q": "All calendar days are considered to run CONSECUTIVELY. What is the meaning of \"consecutively\"?",
+    "opts": [
+      "simultaneously",
+      "in a random order",
+      "one after another",
+      "spontaneously"
+    ],
+    "ans": 2,
+    "diff": "easy",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 258,
+    "cat": "vocabulary",
+    "orig": 258,
+    "q": "Park the aircraft on a FLAT surface. What is a synonym for \"flat\"?",
+    "opts": [
+      "smooth",
+      "curved",
+      "rough",
+      "bumpy"
+    ],
+    "ans": 0,
+    "diff": "easy",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 259,
+    "cat": "vocabulary",
+    "orig": 259,
+    "q": "If there is a short circuit, you will cause damage to the serviceable computer when you SWAP the units. Which verb can be used instead of \"swap\"?",
+    "opts": [
+      "displace",
+      "purchase",
+      "repair",
+      "use"
+    ],
+    "ans": 0,
+    "diff": "easy",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 260,
+    "cat": "vocabulary",
+    "orig": 260,
+    "q": "The drag is normally approx. 40 lbf.in. The PERMITTED maximum is 107 lbf.in. What does \"permitted\" mean?",
+    "opts": [
+      "forbidden",
+      "mandatory",
+      "allowed",
+      "optional"
+    ],
+    "ans": 2,
+    "diff": "easy",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 261,
+    "cat": "vocabulary",
+    "orig": 261,
+    "q": "'Safe operation of aircraft in cold weather conditions RAISES specific problems.' Which phrasal verb could be used for \"to raise\"?",
+    "opts": [
+      "put off",
+      "back up",
+      "sort out",
+      "bring about"
+    ],
+    "ans": 3,
+    "diff": "easy",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 262,
+    "cat": "vocabulary",
+    "orig": 262,
+    "q": "Additional maintenance task may be required DEPENDING on the failure modes. What does \"depending\" mean in this context?",
+    "opts": [
+      "attributing",
+      "contingent",
+      "boarding",
+      "caressing"
+    ],
+    "ans": 1,
+    "diff": "easy",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 263,
+    "cat": "vocabulary",
+    "orig": 263,
+    "q": "The outside of extinguishers should be cleaned with cotton wipers, REMOVING grease and dust.",
+    "opts": [
+      "installing",
+      "transporting",
+      "saving",
+      "removing"
+    ],
+    "ans": 3,
+    "diff": "easy",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 264,
+    "cat": "vocabulary",
+    "orig": 264,
+    "q": "You must OBEY the wiring standard practices to ensure proper electrical fault isolation. What is the synonym for \"obey\"?",
+    "opts": [
+      "obtain",
+      "obscure",
+      "follow",
+      "oppose"
+    ],
+    "ans": 2,
+    "diff": "easy",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 265,
+    "cat": "vocabulary",
+    "orig": 265,
+    "q": "The emergency shutdown procedure must only be used when UNUSUAL conditions occur. What is the synonym for \"unusual\"?",
+    "opts": [
+      "ordinary",
+      "abnormal",
+      "normal",
+      "common"
+    ],
+    "ans": 1,
+    "diff": "easy",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 266,
+    "cat": "vocabulary",
+    "orig": 266,
+    "q": "Do a general visual INSPECTION of the forward avionic compartment. What is the synonym for \"inspection\"?",
+    "opts": [
+      "installation",
+      "replacement",
+      "examination",
+      "operation"
+    ],
+    "ans": 2,
+    "diff": "easy",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 267,
+    "cat": "vocabulary",
+    "orig": 267,
+    "q": "The maintenance data must be ACCURATE to ensure correct repair. What is the synonym for \"accurate\"?",
+    "opts": [
+      "approximate",
+      "precise",
+      "vague",
+      "rough"
+    ],
+    "ans": 1,
+    "diff": "easy",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 268,
+    "cat": "vocabulary",
+    "orig": 268,
+    "q": "You must ENSURE that all safety pins are installed before towing the aircraft. What is the synonym for \"ensure\"?",
+    "opts": [
+      "hope",
+      "assume",
+      "make sure",
+      "expect"
+    ],
+    "ans": 2,
+    "diff": "easy",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 269,
+    "cat": "vocabulary",
+    "orig": 269,
+    "q": "The hydraulic fluid must be COMPATIBLE with the system seals and components. What is the synonym for \"compatible\"?",
+    "opts": [
+      "incompatible",
+      "suitable",
+      "conflicting",
+      "contrasting"
+    ],
+    "ans": 1,
+    "diff": "easy",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 270,
+    "cat": "vocabulary",
+    "orig": 270,
+    "q": "The aircraft must be AIRWORTHY before it is released for flight. What is the synonym for \"airworthy\"?",
+    "opts": [
+      "unsafe",
+      "grounded",
+      "fit to fly",
+      "overdue"
+    ],
+    "ans": 2,
+    "diff": "easy",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 271,
+    "cat": "vocabulary",
+    "orig": 271,
+    "q": "The technician must VERIFY the part number before installation. What is the synonym for \"verify\"?",
+    "opts": [
+      "ignore",
+      "assume",
+      "confirm",
+      "dispute"
+    ],
+    "ans": 2,
+    "diff": "easy",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 272,
+    "cat": "vocabulary",
+    "orig": 272,
+    "q": "The procedure was REVISED to include the latest safety requirements. What is the synonym for \"revised\"?",
+    "opts": [
+      "removed",
+      "updated",
+      "rejected",
+      "ignored"
+    ],
+    "ans": 1,
+    "diff": "easy",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 273,
+    "cat": "vocabulary",
+    "orig": 273,
+    "q": "The maintenance schedule SPECIFIES the inspection intervals for each component. What is the synonym for \"specifies\"?",
+    "opts": [
+      "hides",
+      "ignores",
+      "defines",
+      "removes"
+    ],
+    "ans": 2,
+    "diff": "easy",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 274,
+    "cat": "vocabulary",
+    "orig": 274,
+    "q": "It is MANDATORY to carry a first aid kit on all commercial flights. What is the synonym for \"mandatory\"?",
+    "opts": [
+      "optional",
+      "recommended",
+      "compulsory",
+      "suggested"
+    ],
+    "ans": 2,
+    "diff": "easy",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 275,
+    "cat": "vocabulary",
+    "orig": 275,
+    "q": "The technician must DISCONNECT the battery before working on the electrical system. What is the synonym for \"disconnect\"?",
+    "opts": [
+      "attach",
+      "unplug",
+      "install",
+      "secure"
+    ],
+    "ans": 1,
+    "diff": "easy",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 276,
+    "cat": "vocabulary",
+    "orig": 276,
+    "q": "The ADJACENT structure must be inspected for damage after a hard landing. What is the synonym for \"adjacent\"?",
+    "opts": [
+      "far",
+      "surrounding",
+      "hidden",
+      "distant"
+    ],
+    "ans": 1,
+    "diff": "easy",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 277,
+    "cat": "vocabulary",
+    "orig": 277,
+    "q": "The corrosion was found to be SUPERFICIAL and did not affect structural integrity. What is the synonym for \"superficial\"?",
+    "opts": [
+      "deep",
+      "severe",
+      "surface-level",
+      "critical"
+    ],
+    "ans": 2,
+    "diff": "easy",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 278,
+    "cat": "vocabulary",
+    "orig": 278,
+    "q": "The borescope probe provides ILLUMINATION inside the engine cavity. What is the synonym for \"illumination\"?",
+    "opts": [
+      "darkness",
+      "lighting",
+      "shadow",
+      "covering"
+    ],
+    "ans": 1,
+    "diff": "easy",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 279,
+    "cat": "vocabulary",
+    "orig": 279,
+    "q": "The maintenance engineer ANNOTATED the drawing to show the modification areas. What is the synonym for \"annotated\"?",
+    "opts": [
+      "removed",
+      "destroyed",
+      "marked with notes",
+      "laminated"
+    ],
+    "ans": 2,
+    "diff": "easy",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 280,
+    "cat": "vocabulary",
+    "orig": 280,
+    "q": "The aircraft is PROHIBITED from flying with the emergency exit blocked. What is the synonym for \"prohibited\"?",
+    "opts": [
+      "allowed",
+      "required",
+      "forbidden",
+      "recommended"
+    ],
+    "ans": 2,
+    "diff": "easy",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 281,
+    "cat": "vocabulary",
+    "orig": 281,
+    "q": "The DEFECTIVE brake pad was replaced during the unscheduled maintenance check. What is the synonym for \"defective\"?",
+    "opts": [
+      "new",
+      "faulty",
+      "serviceable",
+      "calibrated"
+    ],
+    "ans": 1,
+    "diff": "easy",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 282,
+    "cat": "vocabulary",
+    "orig": 282,
+    "q": "You must RETAIN the old part for inspection by the quality department. What is the synonym for \"retain\"?",
+    "opts": [
+      "discard",
+      "dispose",
+      "keep",
+      "ship"
+    ],
+    "ans": 2,
+    "diff": "easy",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 283,
+    "cat": "vocabulary",
+    "orig": 283,
+    "q": "The engineer must MONITOR the hydraulic pressure throughout the ground test. What is the synonym for \"monitor\"?",
+    "opts": [
+      "ignore",
+      "observe",
+      "increase",
+      "reduce"
+    ],
+    "ans": 1,
+    "diff": "easy",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 284,
+    "cat": "vocabulary",
+    "orig": 284,
+    "q": "The structural damage was ASSESSED by the designated engineering authority. What is the synonym for \"assessed\"?",
+    "opts": [
+      "caused",
+      "ignored",
+      "evaluated",
+      "removed"
+    ],
+    "ans": 2,
+    "diff": "easy",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 285,
+    "cat": "vocabulary",
+    "orig": 285,
+    "q": "The component was found to be SERVICEABLE after the detailed inspection. What is the synonym for \"serviceable\"?",
+    "opts": [
+      "unfit",
+      "broken",
+      "worn",
+      "functional"
+    ],
+    "ans": 3,
+    "diff": "easy",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 286,
+    "cat": "vocabulary",
+    "orig": 286,
+    "q": "The repair was AUTHORIZED by the quality assurance department. What is the synonym for \"authorized\"?",
+    "opts": [
+      "rejected",
+      "approved",
+      "delayed",
+      "cancelled"
+    ],
+    "ans": 1,
+    "diff": "easy",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 287,
+    "cat": "vocabulary",
+    "orig": 287,
+    "q": "The PROXIMITY of the fuel line to the ignition source posed a fire risk. What is the synonym for \"proximity\"?",
+    "opts": [
+      "distance",
+      "similarity",
+      "nearness",
+      "function"
+    ],
+    "ans": 2,
+    "diff": "easy",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 288,
+    "cat": "vocabulary",
+    "orig": 288,
+    "q": "The test CONFIRMED that the hydraulic pump was operating within limits. What is the synonym for \"confirmed\"?",
+    "opts": [
+      "denied",
+      "disputed",
+      "verified",
+      "questioned"
+    ],
+    "ans": 2,
+    "diff": "easy",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 289,
+    "cat": "vocabulary",
+    "orig": 289,
+    "q": "The technician must ADHERE to the maintenance procedures without deviation. What is the synonym for \"adhere to\"?",
+    "opts": [
+      "ignore",
+      "modify",
+      "follow strictly",
+      "challenge"
+    ],
+    "ans": 2,
+    "diff": "easy",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 290,
+    "cat": "vocabulary",
+    "orig": 290,
+    "q": "The temperature EXCEEDED the red line limit, triggering the overheat warning. What is the synonym for \"exceeded\"?",
+    "opts": [
+      "fell below",
+      "went beyond",
+      "reached",
+      "approached"
+    ],
+    "ans": 1,
+    "diff": "easy",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 291,
+    "cat": "vocabulary",
+    "orig": 291,
+    "q": "The access panel was SECURED with the correct fasteners and lock wire. What is the synonym for \"secured\"?",
+    "opts": [
+      "loosened",
+      "fastened",
+      "removed",
+      "replaced"
+    ],
+    "ans": 1,
+    "diff": "easy",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 292,
+    "cat": "vocabulary",
+    "orig": 292,
+    "q": "The engineer DOCUMENTED all findings in the aircraft technical log. What is the synonym for \"documented\"?",
+    "opts": [
+      "deleted",
+      "ignored",
+      "recorded",
+      "erased"
+    ],
+    "ans": 2,
+    "diff": "easy",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 293,
+    "cat": "vocabulary",
+    "orig": 293,
+    "q": "The anti-corrosion treatment INHIBITS the formation of rust on the metal surface. What is the synonym for \"inhibits\"?",
+    "opts": [
+      "promotes",
+      "prevents",
+      "causes",
+      "accelerates"
+    ],
+    "ans": 1,
+    "diff": "easy",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 294,
+    "cat": "vocabulary",
+    "orig": 294,
+    "q": "The fuel RESIDUE in the tank must be removed before any hot work. What is the synonym for \"residue\"?",
+    "opts": [
+      "surplus",
+      "supply",
+      "remainder",
+      "shortage"
+    ],
+    "ans": 2,
+    "diff": "easy",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 295,
+    "cat": "vocabulary",
+    "orig": 295,
+    "q": "The technician was COMPETENT to perform the complex avionics task. What is the synonym for \"competent\"?",
+    "opts": [
+      "unqualified",
+      "capable",
+      "inexperienced",
+      "unauthorized"
+    ],
+    "ans": 1,
+    "diff": "easy",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 296,
+    "cat": "vocabulary",
+    "orig": 296,
+    "q": "The pressure DIFFERENTIAL across the fuel filter was within limits. What is the synonym for \"differential\"?",
+    "opts": [
+      "total",
+      "sum",
+      "difference",
+      "average"
+    ],
+    "ans": 2,
+    "diff": "easy",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 297,
+    "cat": "vocabulary",
+    "orig": 297,
+    "q": "The airframe structure must WITHSTAND the design ultimate load. What is the synonym for \"withstand\"?",
+    "opts": [
+      "collapse under",
+      "resist",
+      "avoid",
+      "transfer"
+    ],
+    "ans": 1,
+    "diff": "easy",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 298,
+    "cat": "vocabulary",
+    "orig": 298,
+    "q": "The PRELIMINARY inspection showed no visible damage to the exterior. What is the synonym for \"preliminary\"?",
+    "opts": [
+      "final",
+      "detailed",
+      "initial",
+      "thorough"
+    ],
+    "ans": 2,
+    "diff": "easy",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 299,
+    "cat": "vocabulary",
+    "orig": 299,
+    "q": "The maintenance interval was EXTENDED based on the service experience data. What is the synonym for \"extended\"?",
+    "opts": [
+      "shortened",
+      "cancelled",
+      "prolonged",
+      "maintained"
+    ],
+    "ans": 2,
+    "diff": "easy",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 300,
+    "cat": "vocabulary",
+    "orig": 300,
+    "q": "The crack PROPAGATED along the grain boundary due to fatigue. What is the synonym for \"propagated\"?",
+    "opts": [
+      "stopped",
+      "spread",
+      "disappeared",
+      "healed"
+    ],
+    "ans": 1,
+    "diff": "easy",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 301,
+    "cat": "vocabulary",
+    "orig": 301,
+    "q": "If you find seal or shroud interference and you think it is \"MINOR\", the engine is serviceable. What is the OPPOSITE of \"minor\"?",
+    "opts": [
+      "small",
+      "major",
+      "miniscule",
+      "mini"
+    ],
+    "ans": 1,
+    "diff": "easy",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 302,
+    "cat": "vocabulary",
+    "orig": 302,
+    "q": "If you do not repair the protection within 2 hours, apply a corrosion preventive oil as a \"TEMPORARY\" protection. The OPPOSITE of \"temporary\" is:",
+    "opts": [
+      "brief",
+      "intermittent",
+      "permanent",
+      "short"
+    ],
+    "ans": 2,
+    "diff": "easy",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 303,
+    "cat": "vocabulary",
+    "orig": 303,
+    "q": "The wheel assembly has an \"OUTER\" wheel half assembly. What is the OPPOSITE of \"outer\"?",
+    "opts": [
+      "exterior",
+      "outside",
+      "inner",
+      "surface"
+    ],
+    "ans": 2,
+    "diff": "easy",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 304,
+    "cat": "vocabulary",
+    "orig": 304,
+    "q": "Both air conditioning packs are \"OPERATIVE\". \"Operative\" can be replaced with:",
+    "opts": [
+      "futile",
+      "abortive",
+      "incapable",
+      "functional"
+    ],
+    "ans": 3,
+    "diff": "easy",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 305,
+    "cat": "vocabulary",
+    "orig": 305,
+    "q": "The \"MANUAL\" transfer may be performed. The OPPOSITE of \"manual\" is:",
+    "opts": [
+      "by hand",
+      "automatic",
+      "manpower",
+      "handled"
+    ],
+    "ans": 1,
+    "diff": "easy",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 306,
+    "cat": "vocabulary",
+    "orig": 306,
+    "q": "Inspect window for \"ALLOWABLE\" damage limits. \"Allowable\" means:",
+    "opts": [
+      "banned",
+      "rejected",
+      "acceptable",
+      "denied"
+    ],
+    "ans": 2,
+    "diff": "easy",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 307,
+    "cat": "vocabulary",
+    "orig": 307,
+    "q": "Do a \"DETAILED\" visual inspection of the two external power receptacles. The OPPOSITE of \"detailed\" is:",
+    "opts": [
+      "thorough",
+      "complete",
+      "superficial",
+      "specific"
+    ],
+    "ans": 2,
+    "diff": "easy",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 308,
+    "cat": "vocabulary",
+    "orig": 308,
+    "q": "\"POTENTIAL\" consequences are that wires may become open circuit. \"Potential\" can be replaced with:",
+    "opts": [
+      "actual",
+      "real",
+      "factual",
+      "possible"
+    ],
+    "ans": 3,
+    "diff": "easy",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 309,
+    "cat": "vocabulary",
+    "orig": 309,
+    "q": "The aircraft was RELEASED from maintenance after the work was completed. The OPPOSITE of \"released\" is:",
+    "opts": [
+      "freed",
+      "dispatched",
+      "retained",
+      "approved"
+    ],
+    "ans": 2,
+    "diff": "easy",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 310,
+    "cat": "vocabulary",
+    "orig": 310,
+    "q": "The repair procedure is COMPLEX and requires specialized tooling. The OPPOSITE of \"complex\" is:",
+    "opts": [
+      "sophisticated",
+      "simple",
+      "detailed",
+      "thorough"
+    ],
+    "ans": 1,
+    "diff": "easy",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 311,
+    "cat": "vocabulary",
+    "orig": 311,
+    "q": "The engine ran CONTINUOUSLY for 6 hours during the endurance test. The OPPOSITE of \"continuously\" is:",
+    "opts": [
+      "frequently",
+      "regularly",
+      "intermittently",
+      "constantly"
+    ],
+    "ans": 2,
+    "diff": "easy",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 312,
+    "cat": "vocabulary",
+    "orig": 312,
+    "q": "The component showed SIGNIFICANT wear after 5000 flight cycles. The OPPOSITE of \"significant\" is:",
+    "opts": [
+      "considerable",
+      "notable",
+      "marginal",
+      "important"
+    ],
+    "ans": 2,
+    "diff": "easy",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 313,
+    "cat": "vocabulary",
+    "orig": 313,
+    "q": "The access panel was ACCESSIBLE without removing the engine. The OPPOSITE of \"accessible\" is:",
+    "opts": [
+      "easy to reach",
+      "convenient",
+      "inaccessible",
+      "available"
+    ],
+    "ans": 2,
+    "diff": "easy",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 314,
+    "cat": "vocabulary",
+    "orig": 314,
+    "q": "The MAXIMUM allowable weight for the forward hold is 3500 kg. The OPPOSITE of \"maximum\" is:",
+    "opts": [
+      "greater",
+      "minimum",
+      "upper",
+      "elevated"
+    ],
+    "ans": 1,
+    "diff": "easy",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 315,
+    "cat": "vocabulary",
+    "orig": 315,
+    "q": "The oil was found to be CONTAMINATED with metal particles. The OPPOSITE of \"contaminated\" is:",
+    "opts": [
+      "polluted",
+      "dirty",
+      "clean",
+      "mixed"
+    ],
+    "ans": 2,
+    "diff": "easy",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 316,
+    "cat": "vocabulary",
+    "orig": 316,
+    "q": "The procedure was APPROVED by the design authority. The OPPOSITE of \"approved\" is:",
+    "opts": [
+      "accepted",
+      "sanctioned",
+      "rejected",
+      "confirmed"
+    ],
+    "ans": 2,
+    "diff": "easy",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 317,
+    "cat": "vocabulary",
+    "orig": 317,
+    "q": "The aircraft was PRESSURIZED to cabin altitude of 8000 feet. The OPPOSITE of \"pressurized\" is:",
+    "opts": [
+      "inflated",
+      "sealed",
+      "depressurized",
+      "compressed"
+    ],
+    "ans": 2,
+    "diff": "easy",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 318,
+    "cat": "vocabulary",
+    "orig": 318,
+    "q": "The MANDATORY inspection must be completed before the aircraft returns to service. The OPPOSITE of \"mandatory\" is:",
+    "opts": [
+      "compulsory",
+      "required",
+      "optional",
+      "essential"
+    ],
+    "ans": 2,
+    "diff": "easy",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 319,
+    "cat": "vocabulary",
+    "orig": 319,
+    "q": "The corrosion treatment PREVENTS further oxidation of the metal surface. The OPPOSITE of \"prevents\" is:",
+    "opts": [
+      "stops",
+      "blocks",
+      "promotes",
+      "inhibits"
+    ],
+    "ans": 2,
+    "diff": "easy",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 320,
+    "cat": "vocabulary",
+    "orig": 320,
+    "q": "The fuel system was INTACT after the bird strike event. The OPPOSITE of \"intact\" is:",
+    "opts": [
+      "undamaged",
+      "whole",
+      "complete",
+      "damaged"
+    ],
+    "ans": 3,
+    "diff": "easy",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 321,
+    "cat": "vocabulary",
+    "orig": 321,
+    "q": "The maintenance record was COMPLETE before the aircraft was dispatched. The OPPOSITE of \"complete\" is:",
+    "opts": [
+      "finished",
+      "thorough",
+      "incomplete",
+      "detailed"
+    ],
+    "ans": 2,
+    "diff": "easy",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 322,
+    "cat": "vocabulary",
+    "orig": 322,
+    "q": "The engine was SERVICEABLE after the compressor blade replacement. The OPPOSITE of \"serviceable\" is:",
+    "opts": [
+      "functional",
+      "operative",
+      "unserviceable",
+      "capable"
+    ],
+    "ans": 2,
+    "diff": "easy",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 323,
+    "cat": "vocabulary",
+    "orig": 323,
+    "q": "The aircraft was PARKED in the hangar for the duration of the C-check. The OPPOSITE of \"parked\" is:",
+    "opts": [
+      "stopped",
+      "in service",
+      "stationary",
+      "grounded"
+    ],
+    "ans": 1,
+    "diff": "easy",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 324,
+    "cat": "vocabulary",
+    "orig": 324,
+    "q": "The hydraulic system operated NORMALLY after the seal replacement. The OPPOSITE of \"normally\" is:",
+    "opts": [
+      "correctly",
+      "abnormally",
+      "properly",
+      "efficiently"
+    ],
+    "ans": 1,
+    "diff": "easy",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 325,
+    "cat": "vocabulary",
+    "orig": 325,
+    "q": "All INTERNAL aircraft components were checked during the scheduled inspection. The OPPOSITE of \"internal\" is:",
+    "opts": [
+      "inside",
+      "interior",
+      "external",
+      "hidden"
+    ],
+    "ans": 2,
+    "diff": "easy",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 326,
+    "cat": "vocabulary",
+    "orig": 326,
+    "q": "This can cause \"THERMAL\" shock to the stressed parts. What does \"thermal\" mean?",
+    "opts": [
+      "relating to sound",
+      "relating to mass",
+      "relating to liquid",
+      "relating to heat"
+    ],
+    "ans": 3,
+    "diff": "easy",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 327,
+    "cat": "vocabulary",
+    "orig": 327,
+    "q": "All the inspections are visual \"UNLESS\" otherwise specified. \"Unless\" can be replaced with:",
+    "opts": [
+      "if not",
+      "if",
+      "useless",
+      "although"
+    ],
+    "ans": 0,
+    "diff": "easy",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 328,
+    "cat": "vocabulary",
+    "orig": 328,
+    "q": "Do a general visual inspection of the \"FORWARD\" avionic compartment. What is the synonym of \"forward\"?",
+    "opts": [
+      "aft",
+      "starboard",
+      "port",
+      "front"
+    ],
+    "ans": 3,
+    "diff": "easy",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 329,
+    "cat": "vocabulary",
+    "orig": 329,
+    "q": "Do a general \"VISUAL\" inspection of the FWD and AFT passenger doors. \"Visual\" means:",
+    "opts": [
+      "relating to sight or seeing",
+      "relating to sound",
+      "relating to audio",
+      "relating to texture"
+    ],
+    "ans": 0,
+    "diff": "easy",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 330,
+    "cat": "vocabulary",
+    "orig": 330,
+    "q": "If the pressure will \"EXCEED\" 20 PSI absolute, you must remove the oxygen equipment. What can be used instead of \"exceed\"?",
+    "opts": [
+      "surpass",
+      "exclude",
+      "lower",
+      "decrease"
+    ],
+    "ans": 0,
+    "diff": "easy",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 331,
+    "cat": "vocabulary",
+    "orig": 331,
+    "q": "To remove deep signs of corrosion, brush the part with an \"ABRASIVE\" material. \"Abrasive\" means:",
+    "opts": [
+      "polishing the surface gently",
+      "applying a protective coat",
+      "causing damage or wear by friction",
+      "painting a material"
+    ],
+    "ans": 2,
+    "diff": "easy",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 332,
+    "cat": "vocabulary",
+    "orig": 332,
+    "q": "Major sub-zones are IDENTIFIED by the tens of the major zones. What does \"identify\" mean?",
+    "opts": [
+      "to question something's identity",
+      "to confuse something's identity",
+      "to recognize something's identity",
+      "to change something's identity"
+    ],
+    "ans": 2,
+    "diff": "easy",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 333,
+    "cat": "vocabulary",
+    "orig": 333,
+    "q": "The aircraft must be CERTIFIED before it enters revenue service. What does \"certified\" mean?",
+    "opts": [
+      "grounded",
+      "officially approved as airworthy",
+      "rejected by authorities",
+      "under maintenance"
+    ],
+    "ans": 1,
+    "diff": "easy",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 334,
+    "cat": "vocabulary",
+    "orig": 334,
+    "q": "The structural repair manual provides GUIDANCE on acceptable repair methods. What does \"guidance\" mean?",
+    "opts": [
+      "restriction",
+      "prohibition",
+      "direction and advice",
+      "limitation"
+    ],
+    "ans": 2,
+    "diff": "easy",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 335,
+    "cat": "vocabulary",
+    "orig": 335,
+    "q": "The maintenance technician must CALIBRATE the torque wrench before use. What does \"calibrate\" mean?",
+    "opts": [
+      "discard",
+      "adjust to a standard",
+      "replace",
+      "inspect visually"
+    ],
+    "ans": 1,
+    "diff": "easy",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 336,
+    "cat": "vocabulary",
+    "orig": 336,
+    "q": "The airworthiness directive is MANDATORY for all operators of the aircraft type. What does \"mandatory\" mean?",
+    "opts": [
+      "optional",
+      "recommended",
+      "compulsory",
+      "suggested"
+    ],
+    "ans": 2,
+    "diff": "easy",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 337,
+    "cat": "vocabulary",
+    "orig": 337,
+    "q": "The LUBRICANT reduces friction between moving engine components. What does \"lubricant\" mean?",
+    "opts": [
+      "a fuel additive",
+      "a fluid that reduces friction",
+      "a cleaning agent",
+      "a sealing compound"
+    ],
+    "ans": 1,
+    "diff": "easy",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 338,
+    "cat": "vocabulary",
+    "orig": 338,
+    "q": "The aircraft underwent a STRUCTURAL survey after the tail strike incident. What does \"structural\" mean?",
+    "opts": [
+      "relating to systems",
+      "relating to avionics",
+      "relating to the framework of the aircraft",
+      "relating to the engines"
+    ],
+    "ans": 2,
+    "diff": "easy",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 339,
+    "cat": "vocabulary",
+    "orig": 339,
+    "q": "The oxygen system is PRESSURIZED to provide flow to the masks. What does \"pressurized\" mean?",
+    "opts": [
+      "sealed tightly",
+      "inflated with high pressure gas",
+      "emptied of all gas",
+      "maintained at atmospheric pressure"
+    ],
+    "ans": 1,
+    "diff": "easy",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 340,
+    "cat": "vocabulary",
+    "orig": 340,
+    "q": "The BORESCOPE inspection revealed a cracked turbine blade. What is a borescope?",
+    "opts": [
+      "a handheld cutting tool",
+      "a flexible optical device for internal inspection",
+      "a pressure measurement device",
+      "a noise measurement instrument"
+    ],
+    "ans": 1,
+    "diff": "easy",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 341,
+    "cat": "vocabulary",
+    "orig": 341,
+    "q": "The landing gear RETRACTION was tested on jacks before the aircraft's first flight. What does \"retraction\" mean?",
+    "opts": [
+      "extension downward",
+      "movement forward",
+      "drawing back or folding up",
+      "locking in place"
+    ],
+    "ans": 2,
+    "diff": "easy",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 342,
+    "cat": "vocabulary",
+    "orig": 342,
+    "q": "The AILERON provides roll control for the aircraft. What is an aileron?",
+    "opts": [
+      "a moveable surface on the horizontal stabilizer",
+      "a moveable surface on the wing for roll control",
+      "a vertical surface on the fin",
+      "a high-lift device on the leading edge"
+    ],
+    "ans": 1,
+    "diff": "easy",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 343,
+    "cat": "vocabulary",
+    "orig": 343,
+    "q": "The HYDRAULIC accumulator stores energy in the form of pressurized fluid. What is an accumulator?",
+    "opts": [
+      "a device that generates hydraulic pressure",
+      "a device that stores pressurized fluid or gas",
+      "a device that measures fluid flow",
+      "a device that filters hydraulic fluid"
+    ],
+    "ans": 1,
+    "diff": "easy",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 344,
+    "cat": "vocabulary",
+    "orig": 344,
+    "q": "The TRANSPONDER sends identification and altitude information to air traffic control. What is a transponder?",
+    "opts": [
+      "a communication radio",
+      "a navigation system",
+      "a radio device that responds to radar interrogation",
+      "a weather radar unit"
+    ],
+    "ans": 2,
+    "diff": "easy",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 345,
+    "cat": "vocabulary",
+    "orig": 345,
+    "q": "The SQUIB on the fire extinguisher initiates the discharge when activated. What is a squib?",
+    "opts": [
+      "a pressure gauge",
+      "an explosive device used to activate the fire bottle",
+      "a flow control valve",
+      "a temperature sensor"
+    ],
+    "ans": 1,
+    "diff": "easy",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 346,
+    "cat": "vocabulary",
+    "orig": 346,
+    "q": "The TARE weight is the weight of the aircraft without fuel or payload. What does \"tare weight\" mean?",
+    "opts": [
+      "maximum takeoff weight",
+      "landing weight",
+      "the empty weight of the aircraft",
+      "the fuel weight"
+    ],
+    "ans": 2,
+    "diff": "easy",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 347,
+    "cat": "vocabulary",
+    "orig": 347,
+    "q": "The FATIGUE life of the component is expressed in flight cycles. What does \"fatigue\" mean in aviation context?",
+    "opts": [
+      "a state of extreme tiredness",
+      "weakening of metal due to repeated stress cycles",
+      "overheating of components",
+      "corrosion from moisture"
+    ],
+    "ans": 1,
+    "diff": "easy",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 348,
+    "cat": "vocabulary",
+    "orig": 348,
+    "q": "The DATUM line is used as a reference point for weight and balance calculations. What is a datum?",
+    "opts": [
+      "a measurement tool",
+      "a type of fuel",
+      "a fixed reference point",
+      "a structural component"
+    ],
+    "ans": 2,
+    "diff": "easy",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 349,
+    "cat": "vocabulary",
+    "orig": 349,
+    "q": "The aircraft's AIRWORTHINESS certificate was issued after the initial certification. What does \"airworthiness\" mean?",
+    "opts": [
+      "the ability of the aircraft to perform well",
+      "the condition of being fit and safe to fly",
+      "the weight of the aircraft",
+      "the speed of the aircraft"
+    ],
+    "ans": 1,
+    "diff": "easy",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 350,
+    "cat": "vocabulary",
+    "orig": 350,
+    "q": "The fuel CONTAMINATION was caused by water ingress during the refueling operation. What does \"contamination\" mean?",
+    "opts": [
+      "the process of adding fuel",
+      "the presence of unwanted substances in a material",
+      "the measurement of fuel quantity",
+      "the heating of fuel"
+    ],
+    "ans": 1,
+    "diff": "easy",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 351,
+    "cat": "vocabulary",
+    "orig": 351,
+    "q": "The dust can cause ………… on all filter elements.",
+    "opts": [
+      "contaminated",
+      "contamination",
+      "contaminant",
+      "contaminate"
+    ],
+    "ans": 1,
+    "diff": "easy",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 352,
+    "cat": "vocabulary",
+    "orig": 352,
+    "q": "The brake temperature ………… monitors the brake temperature during landing.",
+    "opts": [
+      "sensor",
+      "sensory",
+      "sense",
+      "sensers"
+    ],
+    "ans": 0,
+    "diff": "easy",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 353,
+    "cat": "vocabulary",
+    "orig": 353,
+    "q": "The pilot must report the ………… encounter of this event.",
+    "opts": [
+      "suspected",
+      "suspect",
+      "suspecting",
+      "susceptible"
+    ],
+    "ans": 0,
+    "diff": "easy",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 354,
+    "cat": "vocabulary",
+    "orig": 354,
+    "q": "After 1 hour, use fog or foam on the wheel or tire to decrease the ………….",
+    "opts": [
+      "temperature",
+      "temperate",
+      "temperament",
+      "tempt"
+    ],
+    "ans": 0,
+    "diff": "easy",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 355,
+    "cat": "vocabulary",
+    "orig": 355,
+    "q": "Lift the ………… blankets sufficiently to complete a correct general visual inspection.",
+    "opts": [
+      "insulate",
+      "insolution",
+      "insoluble",
+      "insulation"
+    ],
+    "ans": 3,
+    "diff": "easy",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 356,
+    "cat": "vocabulary",
+    "orig": 356,
+    "q": "The number of passengers must be ………… to 165 passengers.",
+    "opts": [
+      "limiting",
+      "limited",
+      "limitation",
+      "limitless"
+    ],
+    "ans": 1,
+    "diff": "easy",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 357,
+    "cat": "vocabulary",
+    "orig": 357,
+    "q": "Count and ………… the utilized tools after the maintenance task.",
+    "opts": [
+      "verification",
+      "verified",
+      "verify",
+      "vivificated"
+    ],
+    "ans": 2,
+    "diff": "easy",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 358,
+    "cat": "vocabulary",
+    "orig": 358,
+    "q": "Reinstall the shelves and panels affected ………… this modification.",
+    "opts": [
+      "but",
+      "by",
+      "as",
+      "both"
+    ],
+    "ans": 1,
+    "diff": "easy",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 359,
+    "cat": "vocabulary",
+    "orig": 359,
+    "q": "The ………… of the oxygen system pressure must be checked before each flight.",
+    "opts": [
+      "adequate",
+      "adequacy",
+      "adequately",
+      "adequated"
+    ],
+    "ans": 1,
+    "diff": "easy",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 360,
+    "cat": "vocabulary",
+    "orig": 360,
+    "q": "The maintenance team showed great ………… in completing the C-check on schedule.",
+    "opts": [
+      "efficient",
+      "efficiency",
+      "efficiently",
+      "efficiencies"
+    ],
+    "ans": 1,
+    "diff": "easy",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 361,
+    "cat": "vocabulary",
+    "orig": 361,
+    "q": "The engine runs ………… after the replacement of the worn compressor blades.",
+    "opts": [
+      "smooth",
+      "smoothly",
+      "smoothness",
+      "smoother"
+    ],
+    "ans": 1,
+    "diff": "easy",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 362,
+    "cat": "vocabulary",
+    "orig": 362,
+    "q": "The ………… of the hydraulic fluid must meet the specifications in the maintenance manual.",
+    "opts": [
+      "viscous",
+      "viscosity",
+      "viscously",
+      "viscose"
+    ],
+    "ans": 1,
+    "diff": "easy",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 363,
+    "cat": "vocabulary",
+    "orig": 363,
+    "q": "The seat must be tested for ………… before the aircraft returns to service.",
+    "opts": [
+      "function",
+      "functional",
+      "functionally",
+      "functionality"
+    ],
+    "ans": 3,
+    "diff": "easy",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 364,
+    "cat": "vocabulary",
+    "orig": 364,
+    "q": "The corrosion on the wing skin was treated with an approved ………… compound.",
+    "opts": [
+      "inhibit",
+      "inhibition",
+      "inhibitory",
+      "inhibitor"
+    ],
+    "ans": 3,
+    "diff": "easy",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 365,
+    "cat": "vocabulary",
+    "orig": 365,
+    "q": "The engineer provided ………… during the complex structural repair.",
+    "opts": [
+      "supervise",
+      "supervisory",
+      "supervision",
+      "supervisor"
+    ],
+    "ans": 2,
+    "diff": "easy",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 366,
+    "cat": "vocabulary",
+    "orig": 366,
+    "q": "The maintenance was carried out with great ………… to ensure no errors were made.",
+    "opts": [
+      "care",
+      "careful",
+      "carefully",
+      "carefulness"
+    ],
+    "ans": 0,
+    "diff": "easy",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 367,
+    "cat": "vocabulary",
+    "orig": 367,
+    "q": "The fluid ………… was higher than expected, indicating a leak in the system.",
+    "opts": [
+      "consume",
+      "consumer",
+      "consumption",
+      "consumed"
+    ],
+    "ans": 2,
+    "diff": "easy",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 368,
+    "cat": "vocabulary",
+    "orig": 368,
+    "q": "The component failed the ………… inspection and was removed from service.",
+    "opts": [
+      "functioned",
+      "functional",
+      "function",
+      "functioning"
+    ],
+    "ans": 1,
+    "diff": "easy",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 369,
+    "cat": "vocabulary",
+    "orig": 369,
+    "q": "The hydraulic seal showed signs of ………… after 3000 flight hours.",
+    "opts": [
+      "degrade",
+      "degradation",
+      "degraded",
+      "degrading"
+    ],
+    "ans": 1,
+    "diff": "easy",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 370,
+    "cat": "vocabulary",
+    "orig": 370,
+    "q": "The ………… of the engine mount bolts must be checked at every A-check.",
+    "opts": [
+      "tight",
+      "tighten",
+      "tightness",
+      "tightly"
+    ],
+    "ans": 2,
+    "diff": "easy",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 371,
+    "cat": "vocabulary",
+    "orig": 371,
+    "q": "The technician must ………… the old sealant before applying the new compound.",
+    "opts": [
+      "put up",
+      "take off",
+      "strip off",
+      "come down"
+    ],
+    "ans": 2,
+    "diff": "easy",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 372,
+    "cat": "vocabulary",
+    "orig": 372,
+    "q": "The system will ………… automatically if the temperature exceeds the limit.",
+    "opts": [
+      "shut down",
+      "shut up",
+      "shut off",
+      "shut in"
+    ],
+    "ans": 0,
+    "diff": "easy",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 373,
+    "cat": "vocabulary",
+    "orig": 373,
+    "q": "Please ………… the engine before performing maintenance on the fuel system.",
+    "opts": [
+      "turn on",
+      "turn up",
+      "turn down",
+      "shut down"
+    ],
+    "ans": 3,
+    "diff": "easy",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 374,
+    "cat": "vocabulary",
+    "orig": 374,
+    "q": "The technician will ………… the results of the test in the maintenance log.",
+    "opts": [
+      "write up",
+      "write off",
+      "write down",
+      "write in"
+    ],
+    "ans": 2,
+    "diff": "easy",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 375,
+    "cat": "vocabulary",
+    "orig": 375,
+    "q": "The warning light ………… when the brake temperature reached the red line.",
+    "opts": [
+      "came on",
+      "came out",
+      "came off",
+      "came up"
+    ],
+    "ans": 0,
+    "diff": "easy",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 376,
+    "cat": "vocabulary",
+    "orig": 376,
+    "q": "The maintenance team must ………… the work order before the aircraft is released.",
+    "opts": [
+      "fill in",
+      "fill out",
+      "fill up",
+      "fill over"
+    ],
+    "ans": 1,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 377,
+    "cat": "vocabulary",
+    "orig": 377,
+    "q": "The technician had to ………… the faulty component several times before finding the fault.",
+    "opts": [
+      "look for",
+      "look after",
+      "look into",
+      "look up"
+    ],
+    "ans": 2,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 378,
+    "cat": "vocabulary",
+    "orig": 378,
+    "q": "The procedure was ………… to include the latest safety requirements.",
+    "opts": [
+      "written off",
+      "brought up",
+      "drawn up",
+      "worked out"
+    ],
+    "ans": 2,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 379,
+    "cat": "vocabulary",
+    "orig": 379,
+    "q": "Before the aircraft can depart, all deferred defects must be ………….",
+    "opts": [
+      "signed off",
+      "signed in",
+      "signed up",
+      "signed over"
+    ],
+    "ans": 0,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 380,
+    "cat": "vocabulary",
+    "orig": 380,
+    "q": "The engineer will ………… the test results with the quality department.",
+    "opts": [
+      "go over",
+      "go through",
+      "go ahead",
+      "go with"
+    ],
+    "ans": 1,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 381,
+    "cat": "vocabulary",
+    "orig": 381,
+    "q": "The maintenance check was ………… due to a shortage of spare parts.",
+    "opts": [
+      "held up",
+      "held on",
+      "held back",
+      "held out"
+    ],
+    "ans": 0,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 382,
+    "cat": "vocabulary",
+    "orig": 382,
+    "q": "The hydraulic leak was ………… during the routine daily check.",
+    "opts": [
+      "picked out",
+      "picked up",
+      "picked on",
+      "picked off"
+    ],
+    "ans": 1,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 383,
+    "cat": "vocabulary",
+    "orig": 383,
+    "q": "The aircraft had to ………… after takeoff due to an engine fault indication.",
+    "opts": [
+      "turn back",
+      "turn over",
+      "turn around",
+      "turn down"
+    ],
+    "ans": 0,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 384,
+    "cat": "vocabulary",
+    "orig": 384,
+    "q": "The maintenance team needs to ………… the cause of the repeated hydraulic failures.",
+    "opts": [
+      "find out",
+      "find off",
+      "find in",
+      "find on"
+    ],
+    "ans": 0,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 385,
+    "cat": "vocabulary",
+    "orig": 385,
+    "q": "The engine ………… on the second attempt after the starter motor was replaced.",
+    "opts": [
+      "started up",
+      "started off",
+      "started out",
+      "started in"
+    ],
+    "ans": 0,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 386,
+    "cat": "vocabulary",
+    "orig": 386,
+    "q": "The engineer ………… the faulty component with a serviceable one.",
+    "opts": [
+      "swapped out",
+      "swapped in",
+      "swapped on",
+      "swapped up"
+    ],
+    "ans": 0,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 387,
+    "cat": "vocabulary",
+    "orig": 387,
+    "q": "The technician must ………… all tools from the aircraft before closing the panels.",
+    "opts": [
+      "take away",
+      "take out",
+      "remove",
+      "both b and c"
+    ],
+    "ans": 3,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 388,
+    "cat": "vocabulary",
+    "orig": 388,
+    "q": "The pressure check showed that the system ………… gradually during the test.",
+    "opts": [
+      "leaked out",
+      "leaked off",
+      "leaked down",
+      "leaked in"
+    ],
+    "ans": 0,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 389,
+    "cat": "vocabulary",
+    "orig": 389,
+    "q": "The aircraft will be ………… for maintenance starting Monday.",
+    "opts": [
+      "taken out of service",
+      "taken into service",
+      "taken away",
+      "taken up"
+    ],
+    "ans": 0,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 390,
+    "cat": "vocabulary",
+    "orig": 390,
+    "q": "All safety data sheets must be ………… in the maintenance workshop.",
+    "opts": [
+      "put up",
+      "put in",
+      "put on",
+      "put by"
+    ],
+    "ans": 0,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 391,
+    "cat": "vocabulary",
+    "orig": 391,
+    "q": "This lighting system is ………… used at night for the check lists.",
+    "opts": [
+      "special",
+      "specially",
+      "spaciously",
+      "spacious"
+    ],
+    "ans": 1,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 392,
+    "cat": "vocabulary",
+    "orig": 392,
+    "q": "You must be ………… when you do work on the engine parts after shutdown.",
+    "opts": [
+      "careful",
+      "carefree",
+      "caring",
+      "careless"
+    ],
+    "ans": 0,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 393,
+    "cat": "vocabulary",
+    "orig": 393,
+    "q": "Wear ………… eye and face protection when servicing batteries.",
+    "opts": [
+      "casual",
+      "incorrect",
+      "faulty",
+      "proper"
+    ],
+    "ans": 3,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 394,
+    "cat": "vocabulary",
+    "orig": 394,
+    "q": "During parking for not more than 15 days, you must do a ………… ground check at 7-day intervals.",
+    "opts": [
+      "periodic",
+      "monthly",
+      "annual",
+      "weekly"
+    ],
+    "ans": 0,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 395,
+    "cat": "vocabulary",
+    "orig": 395,
+    "q": "You must get a sample of the oil which has contamination for ………… analysis.",
+    "opts": [
+      "local",
+      "location",
+      "locally",
+      "laboratory"
+    ],
+    "ans": 3,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 396,
+    "cat": "vocabulary",
+    "orig": 396,
+    "q": "If the serial number is ………… do the replacement at the first opportunity.",
+    "opts": [
+      "confirmed",
+      "suspected",
+      "verified",
+      "approved"
+    ],
+    "ans": 1,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 397,
+    "cat": "vocabulary",
+    "orig": 397,
+    "q": "Make sure the main entry door moves ………… to the close position.",
+    "opts": [
+      "hardly",
+      "strenuously",
+      "smoothly",
+      "roughly"
+    ],
+    "ans": 2,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 398,
+    "cat": "vocabulary",
+    "orig": 398,
+    "q": "Additional maintenance task may be required ………… on the failure modes.",
+    "opts": [
+      "depending",
+      "attributing",
+      "boarding",
+      "caressing"
+    ],
+    "ans": 0,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 399,
+    "cat": "vocabulary",
+    "orig": 399,
+    "q": "All aural alerts which are normally routed through the speakers must be ………… through the headsets.",
+    "opts": [
+      "audible",
+      "auditory",
+      "loud",
+      "auditable"
+    ],
+    "ans": 0,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 400,
+    "cat": "vocabulary",
+    "orig": 400,
+    "q": "The oxygen mask must be within ………… reach of all passengers.",
+    "opts": [
+      "easy",
+      "simple",
+      "immediate",
+      "direct"
+    ],
+    "ans": 0,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 401,
+    "cat": "vocabulary",
+    "orig": 401,
+    "q": "The engine must be ………… checked after a bird strike event.",
+    "opts": [
+      "thoroughly",
+      "partially",
+      "briefly",
+      "occasionally"
+    ],
+    "ans": 0,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 402,
+    "cat": "vocabulary",
+    "orig": 402,
+    "q": "The aircraft is ………… in service with multiple operators worldwide.",
+    "opts": [
+      "currently",
+      "previously",
+      "formerly",
+      "soon"
+    ],
+    "ans": 0,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 403,
+    "cat": "vocabulary",
+    "orig": 403,
+    "q": "A ………… inspection is required after the aircraft has been struck by lightning.",
+    "opts": [
+      "routine",
+      "thorough",
+      "visual",
+      "brief"
+    ],
+    "ans": 1,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 404,
+    "cat": "vocabulary",
+    "orig": 404,
+    "q": "The damage found during the inspection was ………… and did not affect airworthiness.",
+    "opts": [
+      "critical",
+      "severe",
+      "negligible",
+      "major"
+    ],
+    "ans": 2,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 405,
+    "cat": "vocabulary",
+    "orig": 405,
+    "q": "The maintenance task is ………… to complete and requires only basic tooling.",
+    "opts": [
+      "difficult",
+      "complex",
+      "straightforward",
+      "specialized"
+    ],
+    "ans": 2,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 406,
+    "cat": "vocabulary",
+    "orig": 406,
+    "q": "The AMM provides ………… instructions for each maintenance task.",
+    "opts": [
+      "vague",
+      "approximate",
+      "detailed",
+      "general"
+    ],
+    "ans": 2,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 407,
+    "cat": "vocabulary",
+    "orig": 407,
+    "q": "The technician must ………… all findings in the aircraft technical log.",
+    "opts": [
+      "ignore",
+      "estimate",
+      "document",
+      "discard"
+    ],
+    "ans": 2,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 408,
+    "cat": "vocabulary",
+    "orig": 408,
+    "q": "The hydraulic system must be ………… before any work is performed on it.",
+    "opts": [
+      "pressurized",
+      "depressurized",
+      "heated",
+      "cooled"
+    ],
+    "ans": 1,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 409,
+    "cat": "vocabulary",
+    "orig": 409,
+    "q": "The engine components are ………… numbered for easy identification.",
+    "opts": [
+      "arbitrarily",
+      "sequentially",
+      "randomly",
+      "roughly"
+    ],
+    "ans": 1,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 410,
+    "cat": "vocabulary",
+    "orig": 410,
+    "q": "The maintenance team must ………… with all safety regulations during the repair.",
+    "opts": [
+      "disagree",
+      "argue",
+      "comply",
+      "dispute"
+    ],
+    "ans": 2,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 411,
+    "cat": "vocabulary",
+    "orig": 411,
+    "q": "The service bulletin is ………… for all operators of the aircraft type.",
+    "opts": [
+      "mandatory",
+      "optional",
+      "suggested",
+      "recommended"
+    ],
+    "ans": 0,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 412,
+    "cat": "vocabulary",
+    "orig": 412,
+    "q": "The landing gear EXTENSION was verified during the pre-flight inspection. What does \"extension\" mean in this context?",
+    "opts": [
+      "prolonging the landing gear",
+      "lowering the landing gear to the down position",
+      "retracting the landing gear",
+      "replacing the landing gear"
+    ],
+    "ans": 1,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 413,
+    "cat": "vocabulary",
+    "orig": 413,
+    "q": "The hydraulic fluid must be ………… to prevent contamination of the new system.",
+    "opts": [
+      "added",
+      "replaced",
+      "flushed out",
+      "heated"
+    ],
+    "ans": 2,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 414,
+    "cat": "vocabulary",
+    "orig": 414,
+    "q": "The ………… of the engine is measured in terms of thrust output.",
+    "opts": [
+      "performance",
+      "appearance",
+      "weight",
+      "color"
+    ],
+    "ans": 0,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 415,
+    "cat": "vocabulary",
+    "orig": 415,
+    "q": "The technician should wear ………… when handling Skydrol hydraulic fluid.",
+    "opts": [
+      "chemical-resistant gloves",
+      "thin cotton gloves",
+      "no protection needed",
+      "steel-toed boots only"
+    ],
+    "ans": 0,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 416,
+    "cat": "vocabulary",
+    "orig": 416,
+    "q": "The pressure relief valve ………… excess pressure from the hydraulic system.",
+    "opts": [
+      "adds",
+      "generates",
+      "releases",
+      "measures"
+    ],
+    "ans": 2,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 417,
+    "cat": "vocabulary",
+    "orig": 417,
+    "q": "The AVIONICS compartment contains navigation and communication equipment. What does \"avionics\" refer to?",
+    "opts": [
+      "aircraft fuel systems",
+      "aircraft electrical and electronic systems",
+      "aircraft hydraulic systems",
+      "aircraft structural components"
+    ],
+    "ans": 1,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 418,
+    "cat": "vocabulary",
+    "orig": 418,
+    "q": "The ………… must be signed off by a licensed engineer before the aircraft can fly.",
+    "opts": [
+      "work order",
+      "departure list",
+      "passenger manifest",
+      "cargo document"
+    ],
+    "ans": 0,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 419,
+    "cat": "vocabulary",
+    "orig": 419,
+    "q": "The TORQUE value for the bolt must not exceed 150 Nm. What does \"torque\" mean?",
+    "opts": [
+      "the length of a bolt",
+      "the rotational force applied when tightening",
+      "the material of a bolt",
+      "the size of a thread"
+    ],
+    "ans": 1,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 420,
+    "cat": "vocabulary",
+    "orig": 420,
+    "q": "The rubber seal showed signs of ………… after prolonged exposure to hydraulic fluid.",
+    "opts": [
+      "expansion",
+      "deterioration",
+      "hardening",
+      "improvement"
+    ],
+    "ans": 1,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 421,
+    "cat": "vocabulary",
+    "orig": 421,
+    "q": "The navigation system was ………… with the new software update.",
+    "opts": [
+      "downgraded",
+      "upgraded",
+      "replaced",
+      "removed"
+    ],
+    "ans": 1,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 422,
+    "cat": "vocabulary",
+    "orig": 422,
+    "q": "The aircraft was given a ………… of airworthiness by the regulatory authority.",
+    "opts": [
+      "denial",
+      "rejection",
+      "certificate",
+      "refusal"
+    ],
+    "ans": 2,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 423,
+    "cat": "vocabulary",
+    "orig": 423,
+    "q": "The maintenance team should check the ………… of all structural fasteners.",
+    "opts": [
+      "color",
+      "brand",
+      "integrity",
+      "origin"
+    ],
+    "ans": 2,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 424,
+    "cat": "vocabulary",
+    "orig": 424,
+    "q": "The ground crew must ensure the aircraft is properly ………… before departure.",
+    "opts": [
+      "grounded",
+      "positioned",
+      "cleaned",
+      "warmed"
+    ],
+    "ans": 1,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 425,
+    "cat": "vocabulary",
+    "orig": 425,
+    "q": "The hydraulic pump provides ………… to operate the flight control actuators.",
+    "opts": [
+      "temperature",
+      "pressure",
+      "weight",
+      "resistance"
+    ],
+    "ans": 1,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 426,
+    "cat": "vocabulary",
+    "orig": 1116,
+    "q": "The word \"adequate\" in aviation maintenance documentation most nearly means:",
+    "opts": [
+      "insufficient",
+      "satisfactory",
+      "excessive",
+      "optional"
+    ],
+    "ans": 0,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 427,
+    "cat": "vocabulary",
+    "orig": 1117,
+    "q": "The word \"malfunction\" most nearly means:",
+    "opts": [
+      "normal operation",
+      "scheduled maintenance",
+      "failure to function correctly",
+      "complete shutdown"
+    ],
+    "ans": 2,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 428,
+    "cat": "vocabulary",
+    "orig": 1118,
+    "q": "The word \"adjacent\" most nearly means:",
+    "opts": [
+      "opposite",
+      "distant",
+      "next to / nearby",
+      "identical"
+    ],
+    "ans": 2,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 429,
+    "cat": "vocabulary",
+    "orig": 1119,
+    "q": "The word \"subsequent\" most nearly means:",
+    "opts": [
+      "previous",
+      "following",
+      "simultaneous",
+      "occasional"
+    ],
+    "ans": 1,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 430,
+    "cat": "vocabulary",
+    "orig": 1120,
+    "q": "The word \"precautionary\" most nearly means:",
+    "opts": [
+      "emergency",
+      "taken as a preventive measure",
+      "corrective",
+      "mandatory"
+    ],
+    "ans": 1,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 431,
+    "cat": "vocabulary",
+    "orig": 1121,
+    "q": "The word \"deterioration\" most nearly means:",
+    "opts": [
+      "improvement",
+      "replacement",
+      "gradual decline in quality",
+      "scheduled inspection"
+    ],
+    "ans": 2,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 432,
+    "cat": "vocabulary",
+    "orig": 1122,
+    "q": "The word \"notify\" most nearly means:",
+    "opts": [
+      "ignore",
+      "repair",
+      "inform / advise",
+      "test"
+    ],
+    "ans": 2,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 433,
+    "cat": "vocabulary",
+    "orig": 1123,
+    "q": "The word \"contaminate\" most nearly means:",
+    "opts": [
+      "purify",
+      "pollute / make impure",
+      "replace",
+      "inspect"
+    ],
+    "ans": 1,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 434,
+    "cat": "vocabulary",
+    "orig": 1124,
+    "q": "The word \"accumulate\" most nearly means:",
+    "opts": [
+      "distribute",
+      "measure",
+      "build up / collect",
+      "reduce"
+    ],
+    "ans": 2,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 435,
+    "cat": "vocabulary",
+    "orig": 1125,
+    "q": "The word \"obstruction\" most nearly means:",
+    "opts": [
+      "passage",
+      "blockage",
+      "measurement",
+      "lubrication"
+    ],
+    "ans": 1,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 436,
+    "cat": "vocabulary",
+    "orig": 1126,
+    "q": "The word \"rectify\" most nearly means:",
+    "opts": [
+      "record",
+      "report",
+      "correct / fix",
+      "ignore"
+    ],
+    "ans": 2,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 437,
+    "cat": "vocabulary",
+    "orig": 1127,
+    "q": "The word \"catastrophic\" most nearly means:",
+    "opts": [
+      "minor",
+      "routine",
+      "disastrous / very serious",
+      "gradual"
+    ],
+    "ans": 2,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 438,
+    "cat": "vocabulary",
+    "orig": 1128,
+    "q": "The word \"mandatory\" most nearly means:",
+    "opts": [
+      "optional",
+      "recommended",
+      "required by rule or law",
+      "temporary"
+    ],
+    "ans": 2,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 439,
+    "cat": "vocabulary",
+    "orig": 1129,
+    "q": "The word \"inhibit\" most nearly means:",
+    "opts": [
+      "encourage",
+      "prevent / hinder",
+      "replace",
+      "measure"
+    ],
+    "ans": 1,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 440,
+    "cat": "vocabulary",
+    "orig": 1130,
+    "q": "The word \"symmetrical\" most nearly means:",
+    "opts": [
+      "uneven",
+      "balanced / equal on both sides",
+      "twisted",
+      "corroded"
+    ],
+    "ans": 1,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 441,
+    "cat": "vocabulary",
+    "orig": 1131,
+    "q": "The word \"redundancy\" in aviation systems means:",
+    "opts": [
+      "unnecessary repetition",
+      "backup system duplication for safety",
+      "system failure",
+      "weight reduction"
+    ],
+    "ans": 1,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 442,
+    "cat": "vocabulary",
+    "orig": 1132,
+    "q": "The word \"calibrate\" most nearly means:",
+    "opts": [
+      "install",
+      "adjust to a standard",
+      "remove",
+      "lubricate"
+    ],
+    "ans": 1,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 443,
+    "cat": "vocabulary",
+    "orig": 1133,
+    "q": "The word \"torque\" most nearly means:",
+    "opts": [
+      "linear force",
+      "rotational force / twisting force",
+      "pressure",
+      "tension"
+    ],
+    "ans": 1,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 444,
+    "cat": "vocabulary",
+    "orig": 1134,
+    "q": "The word \"brittle\" most nearly means:",
+    "opts": [
+      "flexible",
+      "hard and likely to break",
+      "corroded",
+      "soft"
+    ],
+    "ans": 1,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 445,
+    "cat": "vocabulary",
+    "orig": 1135,
+    "q": "The word \"volatile\" in the context of aviation fluids means:",
+    "opts": [
+      "stable",
+      "non-flammable",
+      "easily evaporated / flammable",
+      "viscous"
+    ],
+    "ans": 2,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 446,
+    "cat": "vocabulary",
+    "orig": 1136,
+    "q": "The OPPOSITE of \"pressurized\" is:",
+    "opts": [
+      "sealed",
+      "depressurized",
+      "inflated",
+      "contained"
+    ],
+    "ans": 1,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 447,
+    "cat": "vocabulary",
+    "orig": 1137,
+    "q": "The OPPOSITE of \"serviceable\" is:",
+    "opts": [
+      "repairable",
+      "inspected",
+      "unserviceable",
+      "certified"
+    ],
+    "ans": 2,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 448,
+    "cat": "vocabulary",
+    "orig": 1138,
+    "q": "The OPPOSITE of \"extend\" (as in landing gear extension) is:",
+    "opts": [
+      "lower",
+      "deploy",
+      "retract",
+      "lock"
+    ],
+    "ans": 2,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 449,
+    "cat": "vocabulary",
+    "orig": 1139,
+    "q": "The OPPOSITE of \"approved\" is:",
+    "opts": [
+      "certified",
+      "unapproved",
+      "inspected",
+      "recommended"
+    ],
+    "ans": 1,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 450,
+    "cat": "vocabulary",
+    "orig": 1140,
+    "q": "The OPPOSITE of \"lubricated\" is:",
+    "opts": [
+      "greased",
+      "oiled",
+      "dry / unlubricated",
+      "serviced"
+    ],
+    "ans": 2,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 451,
+    "cat": "vocabulary",
+    "orig": 1141,
+    "q": "The OPPOSITE of \"engaged\" (as in a system) is:",
+    "opts": [
+      "locked",
+      "activated",
+      "armed",
+      "disengaged"
+    ],
+    "ans": 3,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 452,
+    "cat": "vocabulary",
+    "orig": 1142,
+    "q": "The OPPOSITE of \"symmetrical\" is:",
+    "opts": [
+      "balanced",
+      "asymmetrical",
+      "identical",
+      "measured"
+    ],
+    "ans": 1,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 453,
+    "cat": "vocabulary",
+    "orig": 1143,
+    "q": "The OPPOSITE of \"permanent\" is:",
+    "opts": [
+      "strong",
+      "durable",
+      "temporary",
+      "reliable"
+    ],
+    "ans": 2,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 454,
+    "cat": "vocabulary",
+    "orig": 1144,
+    "q": "The OPPOSITE of \"accelerate\" is:",
+    "opts": [
+      "decelerate",
+      "maintain",
+      "increase",
+      "monitor"
+    ],
+    "ans": 0,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 455,
+    "cat": "vocabulary",
+    "orig": 1145,
+    "q": "The OPPOSITE of \"rigid\" is:",
+    "opts": [
+      "strong",
+      "flexible",
+      "thick",
+      "sealed"
+    ],
+    "ans": 1,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 456,
+    "cat": "vocabulary",
+    "orig": 1146,
+    "q": "An \"actuator\" in aircraft systems is best described as:",
+    "opts": [
+      "a device that converts fluid or electrical energy into mechanical movement",
+      "a sensor that measures temperature",
+      "a valve that controls fuel flow",
+      "a pump that pressurizes hydraulic fluid"
+    ],
+    "ans": 0,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 457,
+    "cat": "vocabulary",
+    "orig": 1147,
+    "q": "A \"discrepancy\" in maintenance records refers to:",
+    "opts": [
+      "a completed task",
+      "an inconsistency or defect that must be addressed",
+      "a scheduled inspection item",
+      "an approved modification"
+    ],
+    "ans": 1,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 458,
+    "cat": "vocabulary",
+    "orig": 1148,
+    "q": "\"Scheduled maintenance\" refers to:",
+    "opts": [
+      "unplanned repair work",
+      "maintenance performed at predetermined intervals",
+      "emergency troubleshooting",
+      "inspection after a hard landing"
+    ],
+    "ans": 1,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 459,
+    "cat": "vocabulary",
+    "orig": 1149,
+    "q": "A \"serviceable limit\" defines:",
+    "opts": [
+      "the maximum service life of a component",
+      "the boundary within which a component may continue in service",
+      "the date the component was last serviced",
+      "the minimum replacement interval"
+    ],
+    "ans": 1,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 460,
+    "cat": "vocabulary",
+    "orig": 1150,
+    "q": "\"Corrosion inhibitor\" is a substance used to:",
+    "opts": [
+      "accelerate the corrosion process",
+      "remove existing corrosion",
+      "slow down or prevent corrosion",
+      "detect corrosion in hidden areas"
+    ],
+    "ans": 2,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 461,
+    "cat": "vocabulary",
+    "orig": 1151,
+    "q": "\"Dye penetrant inspection\" is a method used to detect:",
+    "opts": [
+      "internal cracks in thick metal components",
+      "surface-breaking defects in non-porous materials",
+      "corrosion under paint",
+      "delamination in composite panels"
+    ],
+    "ans": 1,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 462,
+    "cat": "vocabulary",
+    "orig": 1152,
+    "q": "An \"AOG\" (Aircraft on Ground) situation means:",
+    "opts": [
+      "the aircraft has completed its scheduled maintenance",
+      "the aircraft is grounded due to a defect requiring immediate repair",
+      "the aircraft is undergoing routine servicing",
+      "the aircraft is parked for crew rest"
+    ],
+    "ans": 1,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 463,
+    "cat": "vocabulary",
+    "orig": 1153,
+    "q": "\"Hydraulic fluid bypass\" occurs when:",
+    "opts": [
+      "fluid flows through the correct path under normal pressure",
+      "fluid flows around a restriction instead of through a component",
+      "the hydraulic pump fails completely",
+      "the reservoir is overfilled"
+    ],
+    "ans": 1,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 464,
+    "cat": "vocabulary",
+    "orig": 1154,
+    "q": "The term \"shimmy\" in landing gear refers to:",
+    "opts": [
+      "the extension of the landing gear",
+      "rapid oscillation of the nose wheel",
+      "brake pressure fluctuation",
+      "tire blowout on landing"
+    ],
+    "ans": 1,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 465,
+    "cat": "vocabulary",
+    "orig": 1155,
+    "q": "\"Potable water system\" on an aircraft refers to:",
+    "opts": [
+      "the system that provides water for engine cooling",
+      "the clean drinking water supply for passengers and crew",
+      "the windshield wash system",
+      "the fire suppression water injection system"
+    ],
+    "ans": 1,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 466,
+    "cat": "vocabulary",
+    "orig": 1156,
+    "q": "Choose the correct word form: \"The technician must ………… the hydraulic system before opening any lines.\"",
+    "opts": [
+      "depressurization",
+      "depressurized",
+      "depressurize",
+      "depressurizing"
+    ],
+    "ans": 2,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 467,
+    "cat": "vocabulary",
+    "orig": 1157,
+    "q": "Choose the correct word form: \"The ………… of the component was confirmed by inspection.\"",
+    "opts": [
+      "serve",
+      "serviceable",
+      "serviceability",
+      "servicing"
+    ],
+    "ans": 2,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 468,
+    "cat": "vocabulary",
+    "orig": 1158,
+    "q": "Choose the correct word form: \"The engineer submitted a ………… report after the incident.\"",
+    "opts": [
+      "write",
+      "written",
+      "writing",
+      "writes"
+    ],
+    "ans": 1,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 469,
+    "cat": "vocabulary",
+    "orig": 1159,
+    "q": "Choose the correct word form: \"All ………… items must be tagged and removed from the hangar.\"",
+    "opts": [
+      "unservice",
+      "unserviced",
+      "unserviceable",
+      "unservicing"
+    ],
+    "ans": 2,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 470,
+    "cat": "vocabulary",
+    "orig": 1160,
+    "q": "Choose the correct word form: \"The ………… procedure must be followed during fuel system work.\"",
+    "opts": [
+      "bond",
+      "bonded",
+      "bonding",
+      "bonds"
+    ],
+    "ans": 2,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 471,
+    "cat": "vocabulary",
+    "orig": 1161,
+    "q": "Choose the correct word form: \"The AMM provides ………… for each maintenance task.\"",
+    "opts": [
+      "instruct",
+      "instructed",
+      "instructions",
+      "instructing"
+    ],
+    "ans": 2,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 472,
+    "cat": "vocabulary",
+    "orig": 1162,
+    "q": "Choose the correct word form: \"The ………… of the landing gear was confirmed by the green indicator light.\"",
+    "opts": [
+      "extend",
+      "extension",
+      "extensive",
+      "extensively"
+    ],
+    "ans": 1,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 473,
+    "cat": "vocabulary",
+    "orig": 1163,
+    "q": "Choose the correct word form: \"The component showed signs of ………… due to excessive heat.\"",
+    "opts": [
+      "deteriorate",
+      "deterioration",
+      "deteriorating",
+      "deteriorated"
+    ],
+    "ans": 1,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 474,
+    "cat": "vocabulary",
+    "orig": 1164,
+    "q": "Choose the correct word form: \"Safety ………… must be worn when working with hydraulic fluid.\"",
+    "opts": [
+      "equip",
+      "equipment",
+      "equipping",
+      "equipped"
+    ],
+    "ans": 1,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 475,
+    "cat": "vocabulary",
+    "orig": 1165,
+    "q": "Choose the correct word form: \"The system was ………… after the fault was rectified.\"",
+    "opts": [
+      "certify",
+      "certification",
+      "certified",
+      "certifying"
+    ],
+    "ans": 2,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 476,
+    "cat": "vocabulary",
+    "orig": 1166,
+    "q": "\"To carry out\" a maintenance task means to:",
+    "opts": [
+      "cancel it",
+      "perform / complete it",
+      "postpone it",
+      "report it to the supervisor"
+    ],
+    "ans": 1,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 477,
+    "cat": "vocabulary",
+    "orig": 1167,
+    "q": "\"To sign off\" a maintenance task means to:",
+    "opts": [
+      "refuse to do the work",
+      "certify that the work has been completed satisfactorily",
+      "begin the task",
+      "escalate it to engineering"
+    ],
+    "ans": 1,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 478,
+    "cat": "vocabulary",
+    "orig": 1168,
+    "q": "\"To top up\" a fluid level means to:",
+    "opts": [
+      "drain it completely",
+      "add fluid to reach the correct level",
+      "replace the entire fluid",
+      "test the fluid quality"
+    ],
+    "ans": 1,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 479,
+    "cat": "vocabulary",
+    "orig": 1169,
+    "q": "\"To bleed\" an aircraft system means to:",
+    "opts": [
+      "add fluid to the system",
+      "remove trapped air or excess pressure from the system",
+      "test the system under pressure",
+      "isolate the system"
+    ],
+    "ans": 1,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 480,
+    "cat": "vocabulary",
+    "orig": 1170,
+    "q": "\"To lock out\" a circuit breaker means to:",
+    "opts": [
+      "reset it after a fault",
+      "prevent it from being reset to ensure safety during maintenance",
+      "test its functionality",
+      "replace it with a new one"
+    ],
+    "ans": 1,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 481,
+    "cat": "vocabulary",
+    "orig": 1171,
+    "q": "\"To run up\" an engine means to:",
+    "opts": [
+      "stop the engine on the ground",
+      "operate the engine at high power on the ground for testing",
+      "shut down the engine after flight",
+      "start the engine for the first time"
+    ],
+    "ans": 1,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 482,
+    "cat": "vocabulary",
+    "orig": 1172,
+    "q": "\"To check out\" (a tool or equipment) means to:",
+    "opts": [
+      "inspect and return it to stores",
+      "officially borrow it from the tool store",
+      "discard it after use",
+      "clean and calibrate it"
+    ],
+    "ans": 1,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 483,
+    "cat": "vocabulary",
+    "orig": 1173,
+    "q": "\"To stand down\" in maintenance context means to:",
+    "opts": [
+      "continue working",
+      "suspend or stop an activity as directed",
+      "increase work pace",
+      "call for inspection"
+    ],
+    "ans": 1,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 484,
+    "cat": "vocabulary",
+    "orig": 1174,
+    "q": "\"To write up\" a defect means to:",
+    "opts": [
+      "repair it immediately",
+      "record it formally in the maintenance log",
+      "ignore it if minor",
+      "refer it to the crew chief verbally"
+    ],
+    "ans": 1,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 485,
+    "cat": "vocabulary",
+    "orig": 1175,
+    "q": "\"To break out\" new materials means to:",
+    "opts": [
+      "discard old materials",
+      "open and issue new items from storage",
+      "test the quality of materials",
+      "return materials to the supplier"
+    ],
+    "ans": 1,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 486,
+    "cat": "vocabulary",
+    "orig": 1176,
+    "q": "\"The technician applied a bead of ………… around the access panel to prevent moisture ingress.\"",
+    "opts": [
+      "paint",
+      "sealant",
+      "lubricant",
+      "solvent"
+    ],
+    "ans": 1,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 487,
+    "cat": "vocabulary",
+    "orig": 1177,
+    "q": "\"A ………… reading on the fuel quantity indicator suggests a faulty sensor.\"",
+    "opts": [
+      "normal",
+      "fluctuating",
+      "steady",
+      "high"
+    ],
+    "ans": 1,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 488,
+    "cat": "vocabulary",
+    "orig": 1178,
+    "q": "\"Before engine start, a visual inspection should confirm that the area ………… the engine intake is clear.\"",
+    "opts": [
+      "behind",
+      "over",
+      "around",
+      "under"
+    ],
+    "ans": 2,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 489,
+    "cat": "vocabulary",
+    "orig": 1179,
+    "q": "\"The landing gear downlock is confirmed by a ………… light in the cockpit.\"",
+    "opts": [
+      "red",
+      "amber",
+      "green",
+      "flashing"
+    ],
+    "ans": 2,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 490,
+    "cat": "vocabulary",
+    "orig": 1180,
+    "q": "\"The borescope was inserted through the ………… port to inspect the turbine blades.\"",
+    "opts": [
+      "access",
+      "fill",
+      "drain",
+      "vent"
+    ],
+    "ans": 0,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 491,
+    "cat": "vocabulary",
+    "orig": 1181,
+    "q": "\"After maintenance, the work area must be thoroughly ………… for tools and foreign objects.\"",
+    "opts": [
+      "painted",
+      "sealed",
+      "searched",
+      "pressurized"
+    ],
+    "ans": 2,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 492,
+    "cat": "vocabulary",
+    "orig": 1182,
+    "q": "\"A ………… is used to measure the gap between a brake disc and its housing.\"",
+    "opts": [
+      "torque wrench",
+      "feeler gauge",
+      "micrometer",
+      "refractometer"
+    ],
+    "ans": 1,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 493,
+    "cat": "vocabulary",
+    "orig": 1183,
+    "q": "\"The ………… system distributes electrical power from the generators to consumers throughout the aircraft.\"",
+    "opts": [
+      "fuel",
+      "oxygen",
+      "hydraulic",
+      "bus"
+    ],
+    "ans": 3,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 494,
+    "cat": "vocabulary",
+    "orig": 1184,
+    "q": "\"When ………… a tyre, the pressure must be checked with the aircraft on jacks or the tyre removed from the aircraft.\"",
+    "opts": [
+      "inflating",
+      "replacing",
+      "balancing",
+      "inspecting"
+    ],
+    "ans": 0,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 495,
+    "cat": "vocabulary",
+    "orig": 1185,
+    "q": "\"Corrosion found during inspection must be ………… to determine its extent before treatment.\"",
+    "opts": [
+      "painted",
+      "sanded",
+      "evaluated",
+      "sealed"
+    ],
+    "ans": 2,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 496,
+    "cat": "vocabulary",
+    "orig": 1186,
+    "q": "\"The ………… time of a component is the total accumulated operating hours since new or since last overhaul.\"",
+    "opts": [
+      "shelf",
+      "service",
+      "calendar",
+      "storage"
+    ],
+    "ans": 1,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 497,
+    "cat": "vocabulary",
+    "orig": 1187,
+    "q": "\"After a lightning strike, specific ………… must be performed before the aircraft returns to service.\"",
+    "opts": [
+      "painting",
+      "cleaning",
+      "inspections",
+      "modifications"
+    ],
+    "ans": 2,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 498,
+    "cat": "vocabulary",
+    "orig": 1188,
+    "q": "\"The ………… valve prevents backflow of hydraulic fluid when a pump fails.\"",
+    "opts": [
+      "check",
+      "relief",
+      "shutoff",
+      "selector"
+    ],
+    "ans": 0,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 499,
+    "cat": "vocabulary",
+    "orig": 1189,
+    "q": "\"High frequency vibration detected on the engine ………… may indicate turbine blade damage.\"",
+    "opts": [
+      "starter",
+      "nacelle",
+      "exhaust",
+      "mount"
+    ],
+    "ans": 1,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 500,
+    "cat": "vocabulary",
+    "orig": 1190,
+    "q": "\"A maintenance ………… is a written authorization to deviate from standard procedures when conditions warrant it.\"",
+    "opts": [
+      "defect",
+      "waiver",
+      "report",
+      "schedule"
+    ],
+    "ans": 1,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 501,
+    "cat": "vocabulary",
+    "orig": 1191,
+    "q": "\"Composite structures require ………… repair techniques that differ significantly from metal repair methods.\"",
+    "opts": [
+      "identical",
+      "similar",
+      "specialized",
+      "simplified"
+    ],
+    "ans": 2,
+    "diff": "hard",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 502,
+    "cat": "vocabulary",
+    "orig": 1192,
+    "q": "\"All tools used during maintenance must be ………… before and after each task to prevent FOD.\"",
+    "opts": [
+      "calibrated",
+      "cleaned",
+      "accounted for",
+      "stored"
+    ],
+    "ans": 2,
+    "diff": "hard",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 503,
+    "cat": "vocabulary",
+    "orig": 1193,
+    "q": "\"An EGT ………… beyond limits may indicate a hot start condition.\"",
+    "opts": [
+      "exceedance",
+      "reading",
+      "measurement",
+      "indication"
+    ],
+    "ans": 0,
+    "diff": "hard",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 504,
+    "cat": "vocabulary",
+    "orig": 1194,
+    "q": "\"Hydraulic tubing that shows signs of ………… chafing must be replaced before the aircraft returns to service.\"",
+    "opts": [
+      "slight",
+      "surface",
+      "severe",
+      "potential"
+    ],
+    "ans": 2,
+    "diff": "hard",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 505,
+    "cat": "vocabulary",
+    "orig": 1195,
+    "q": "\"The ………… point of a hydraulic fluid is the temperature at which it will ignite when exposed to a flame.\"",
+    "opts": [
+      "boiling",
+      "flash",
+      "melting",
+      "freezing"
+    ],
+    "ans": 1,
+    "diff": "hard",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 506,
+    "cat": "vocabulary",
+    "orig": 1196,
+    "q": "\"During a ………… inspection, the inspector looks for structural damage that may not be visible from the outside.\"",
+    "opts": [
+      "walkaround",
+      "detailed",
+      "transit",
+      "preflight"
+    ],
+    "ans": 1,
+    "diff": "hard",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 507,
+    "cat": "vocabulary",
+    "orig": 1197,
+    "q": "\"The ………… of the aircraft must be verified after any fuel loading to ensure it is within the flight envelope.\"",
+    "opts": [
+      "speed",
+      "altitude",
+      "center of gravity",
+      "pressurization"
+    ],
+    "ans": 2,
+    "diff": "hard",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 508,
+    "cat": "vocabulary",
+    "orig": 1198,
+    "q": "\"A ………… fitting is used to connect hydraulic lines at a point where they may need to be separated for maintenance.\"",
+    "opts": [
+      "permanent",
+      "quick-disconnect",
+      "compression",
+      "swaged"
+    ],
+    "ans": 1,
+    "diff": "hard",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 509,
+    "cat": "vocabulary",
+    "orig": 1199,
+    "q": "\"The APU bleed air may be used to ………… the main engines in the absence of ground support equipment.\"",
+    "opts": [
+      "cool",
+      "start",
+      "stop",
+      "inspect"
+    ],
+    "ans": 1,
+    "diff": "hard",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 510,
+    "cat": "vocabulary",
+    "orig": 1200,
+    "q": "\"All maintenance personnel must complete a ………… safety briefing before working on fueled aircraft.\"",
+    "opts": [
+      "weekly",
+      "verbal",
+      "mandatory",
+      "optional"
+    ],
+    "ans": 2,
+    "diff": "hard",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 511,
+    "cat": "vocabulary",
+    "orig": 1201,
+    "q": "\"The structural ………… of an aircraft is its ability to withstand the loads imposed during normal and emergency operations.\"",
+    "opts": [
+      "weight",
+      "balance",
+      "integrity",
+      "symmetry"
+    ],
+    "ans": 2,
+    "diff": "hard",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 512,
+    "cat": "vocabulary",
+    "orig": 1202,
+    "q": "\"Oxygen equipment must be kept free of ………… contamination, which can cause violent reactions.\"",
+    "opts": [
+      "water",
+      "oil / grease",
+      "dust",
+      "air"
+    ],
+    "ans": 1,
+    "diff": "hard",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 513,
+    "cat": "vocabulary",
+    "orig": 1203,
+    "q": "\"A ………… aircraft is one that has been modified or repaired and returned to full operational status.\"",
+    "opts": [
+      "grounded",
+      "refurbished",
+      "condemned",
+      "quarantined"
+    ],
+    "ans": 1,
+    "diff": "hard",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 514,
+    "cat": "vocabulary",
+    "orig": 1204,
+    "q": "\"Before performing any ………… maintenance, a risk assessment must be completed.\"",
+    "opts": [
+      "routine",
+      "minor",
+      "invasive",
+      "external"
+    ],
+    "ans": 2,
+    "diff": "hard",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 515,
+    "cat": "vocabulary",
+    "orig": 1205,
+    "q": "\"When an engine ………… occurs, immediate shutdown and investigation are required.\"",
+    "opts": [
+      "start",
+      "surge",
+      "warm-up",
+      "rundown"
+    ],
+    "ans": 1,
+    "diff": "hard",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 516,
+    "cat": "vocabulary",
+    "orig": 1206,
+    "q": "\"The ………… load cell measures the tension in a cable to ensure correct rigging.\"",
+    "opts": [
+      "strain",
+      "hydraulic",
+      "electric",
+      "torque"
+    ],
+    "ans": 0,
+    "diff": "hard",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 517,
+    "cat": "vocabulary",
+    "orig": 1207,
+    "q": "\"Aircraft batteries must be ………… in a well-ventilated area to prevent hydrogen gas accumulation.\"",
+    "opts": [
+      "stored",
+      "charged",
+      "cleaned",
+      "installed"
+    ],
+    "ans": 1,
+    "diff": "hard",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 518,
+    "cat": "vocabulary",
+    "orig": 1208,
+    "q": "\"The ………… of a hydraulic pump is expressed in gallons per minute at a given pressure.\"",
+    "opts": [
+      "efficiency",
+      "output",
+      "capacity",
+      "flow rate"
+    ],
+    "ans": 3,
+    "diff": "hard",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 519,
+    "cat": "vocabulary",
+    "orig": 1209,
+    "q": "\"A ………… in the oxygen system would result in a rapid loss of oxygen supply to crew and passengers.\"",
+    "opts": [
+      "blockage",
+      "leak",
+      "pressure spike",
+      "temperature rise"
+    ],
+    "ans": 1,
+    "diff": "hard",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 520,
+    "cat": "vocabulary",
+    "orig": 1210,
+    "q": "\"To prevent ………… buildup in fuel tanks, bonding wires connect the fueling equipment to the aircraft.\"",
+    "opts": [
+      "ice",
+      "sediment",
+      "static charge",
+      "contamination"
+    ],
+    "ans": 2,
+    "diff": "hard",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 521,
+    "cat": "vocabulary",
+    "orig": 1211,
+    "q": "\"A ………… check confirms that a component functions correctly across its full range of movement.\"",
+    "opts": [
+      "leak",
+      "functional",
+      "visual",
+      "weight"
+    ],
+    "ans": 1,
+    "diff": "hard",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 522,
+    "cat": "vocabulary",
+    "orig": 1212,
+    "q": "\"The aircraft ………… log records all maintenance actions, defects, and flight hours.\"",
+    "opts": [
+      "technical",
+      "operational",
+      "flight",
+      "service"
+    ],
+    "ans": 0,
+    "diff": "hard",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 523,
+    "cat": "vocabulary",
+    "orig": 1213,
+    "q": "\"When ………… into a confined space on an aircraft, a safety observer must be present.\"",
+    "opts": [
+      "entering",
+      "inspecting",
+      "climbing",
+      "reaching"
+    ],
+    "ans": 0,
+    "diff": "hard",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 524,
+    "cat": "vocabulary",
+    "orig": 1214,
+    "q": "\"A ………… reading of fuel pressure below the minimum limit would require immediate investigation.\"",
+    "opts": [
+      "high",
+      "normal",
+      "low",
+      "fluctuating"
+    ],
+    "ans": 2,
+    "diff": "hard",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 525,
+    "cat": "vocabulary",
+    "orig": 1215,
+    "q": "\"The ………… on the hydraulic reservoir indicates the fluid level and must be checked before each service.\"",
+    "opts": [
+      "pressure gauge",
+      "sight glass",
+      "dipstick",
+      "flowmeter"
+    ],
+    "ans": 1,
+    "diff": "hard",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 526,
+    "cat": "vocabulary",
+    "orig": 1216,
+    "q": "\"A component that has exceeded its ………… must be removed from service regardless of its apparent condition.\"",
+    "opts": [
+      "weight limit",
+      "life limit",
+      "storage period",
+      "inspection interval"
+    ],
+    "ans": 1,
+    "diff": "hard",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 527,
+    "cat": "vocabulary",
+    "orig": 1217,
+    "q": "\"The fire ………… system uses a sensing element around the engine to detect elevated temperatures.\"",
+    "opts": [
+      "suppression",
+      "detection",
+      "prevention",
+      "containment"
+    ],
+    "ans": 1,
+    "diff": "hard",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 528,
+    "cat": "vocabulary",
+    "orig": 1218,
+    "q": "\"During fuel system __________, a rag or absorbent material must be placed under all opened connections.\"",
+    "opts": [
+      "inspection",
+      "pressurization",
+      "maintenance",
+      "bleeding"
+    ],
+    "ans": 2,
+    "diff": "hard",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 529,
+    "cat": "vocabulary",
+    "orig": 1219,
+    "q": "\"The nose wheel __________ is adjusted to align the aircraft's nose wheel with the aircraft centreline.\"",
+    "opts": [
+      "pressure",
+      "steering",
+      "brake",
+      "shimmy"
+    ],
+    "ans": 1,
+    "diff": "hard",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 530,
+    "cat": "vocabulary",
+    "orig": 1220,
+    "q": "\"A __________ torque value must be applied to critical fasteners using a calibrated torque wrench.\"",
+    "opts": [
+      "maximum",
+      "minimum",
+      "specified",
+      "estimated"
+    ],
+    "ans": 2,
+    "diff": "hard",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 531,
+    "cat": "vocabulary",
+    "orig": 1221,
+    "q": "\"Hydraulic fluid that appears __________ or milky indicates contamination with water.\"",
+    "opts": [
+      "dark",
+      "clear",
+      "cloudy",
+      "black"
+    ],
+    "ans": 2,
+    "diff": "hard",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 532,
+    "cat": "vocabulary",
+    "orig": 1222,
+    "q": "\"Before __________ the aircraft, a check of all hatches, panels, and doors must confirm they are secure.\"",
+    "opts": [
+      "landing",
+      "parking",
+      "releasing",
+      "towing"
+    ],
+    "ans": 3,
+    "diff": "hard",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 533,
+    "cat": "vocabulary",
+    "orig": 1223,
+    "q": "\"The drain mast on the aircraft fuselage provides a __________ path for waste water and condensation.\"",
+    "opts": [
+      "controlled discharge",
+      "sealed",
+      "pressurized",
+      "heated"
+    ],
+    "ans": 0,
+    "diff": "hard",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 534,
+    "cat": "vocabulary",
+    "orig": 1224,
+    "q": "\"Engine __________ time is counted from the moment the throttle is advanced from idle during takeoff.\"",
+    "opts": [
+      "shutdown",
+      "start",
+      "run",
+      "flight"
+    ],
+    "ans": 2,
+    "diff": "hard",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 535,
+    "cat": "vocabulary",
+    "orig": 1225,
+    "q": "\"An __________ inspection requires the removal of panels and access doors to examine internal structure.\"",
+    "opts": [
+      "external",
+      "internal",
+      "walkaround",
+      "preflight"
+    ],
+    "ans": 1,
+    "diff": "hard",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 536,
+    "cat": "vocabulary",
+    "orig": 1226,
+    "q": "The word \"verify\" most nearly means:",
+    "opts": [
+      "assume",
+      "ignore",
+      "confirm / check for accuracy",
+      "estimate"
+    ],
+    "ans": 2,
+    "diff": "hard",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 537,
+    "cat": "vocabulary",
+    "orig": 1227,
+    "q": "The word \"comply\" most nearly means:",
+    "opts": [
+      "refuse",
+      "act in accordance with rules",
+      "ignore",
+      "modify"
+    ],
+    "ans": 1,
+    "diff": "hard",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 538,
+    "cat": "vocabulary",
+    "orig": 1228,
+    "q": "The word \"fatigue\" in metals context means:",
+    "opts": [
+      "rust",
+      "heat damage",
+      "weakening due to repeated stress cycles",
+      "corrosion"
+    ],
+    "ans": 2,
+    "diff": "hard",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 539,
+    "cat": "vocabulary",
+    "orig": 1229,
+    "q": "The word \"nominal\" most nearly means:",
+    "opts": [
+      "excessive",
+      "within normal / expected range",
+      "zero",
+      "dangerous"
+    ],
+    "ans": 1,
+    "diff": "hard",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 540,
+    "cat": "vocabulary",
+    "orig": 1230,
+    "q": "The word \"tolerance\" in engineering means:",
+    "opts": [
+      "the maximum load a structure can carry",
+      "the acceptable range of variation in a dimension",
+      "the resistance of a material to corrosion",
+      "the scheduled maintenance interval"
+    ],
+    "ans": 1,
+    "diff": "hard",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 541,
+    "cat": "vocabulary",
+    "orig": 1231,
+    "q": "The word \"segregate\" most nearly means:",
+    "opts": [
+      "combine",
+      "separate / keep apart",
+      "classify",
+      "measure"
+    ],
+    "ans": 1,
+    "diff": "hard",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 542,
+    "cat": "vocabulary",
+    "orig": 1232,
+    "q": "The word \"expedite\" most nearly means:",
+    "opts": [
+      "delay",
+      "cancel",
+      "speed up / accelerate",
+      "report"
+    ],
+    "ans": 2,
+    "diff": "hard",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 543,
+    "cat": "vocabulary",
+    "orig": 1233,
+    "q": "The word \"inoperative\" most nearly means:",
+    "opts": [
+      "fully functional",
+      "under repair",
+      "not working / non-functional",
+      "recently serviced"
+    ],
+    "ans": 2,
+    "diff": "hard",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 544,
+    "cat": "vocabulary",
+    "orig": 1234,
+    "q": "The word \"preclude\" most nearly means:",
+    "opts": [
+      "allow",
+      "recommend",
+      "prevent / make impossible",
+      "require"
+    ],
+    "ans": 2,
+    "diff": "hard",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 545,
+    "cat": "vocabulary",
+    "orig": 1235,
+    "q": "The word \"alleviate\" most nearly means:",
+    "opts": [
+      "worsen",
+      "measure",
+      "reduce / lessen",
+      "prevent"
+    ],
+    "ans": 2,
+    "diff": "hard",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 546,
+    "cat": "vocabulary",
+    "orig": 1236,
+    "q": "The word \"fluctuation\" most nearly means:",
+    "opts": [
+      "steady reading",
+      "irregular variation",
+      "gradual increase",
+      "total failure"
+    ],
+    "ans": 1,
+    "diff": "hard",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 547,
+    "cat": "vocabulary",
+    "orig": 1237,
+    "q": "The word \"procurement\" most nearly means:",
+    "opts": [
+      "installation of parts",
+      "acquisition / obtaining of materials",
+      "inspection of components",
+      "return of defective parts"
+    ],
+    "ans": 1,
+    "diff": "hard",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 548,
+    "cat": "vocabulary",
+    "orig": 1238,
+    "q": "The word \"fatigue crack\" refers to:",
+    "opts": [
+      "a crack caused by a single overload",
+      "a crack that grows due to repeated stress cycles",
+      "a surface crack from corrosion",
+      "a manufacturing defect"
+    ],
+    "ans": 1,
+    "diff": "hard",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 549,
+    "cat": "vocabulary",
+    "orig": 1239,
+    "q": "The word \"overhaul\" most nearly means:",
+    "opts": [
+      "a routine inspection",
+      "a comprehensive restoration of a component to serviceable condition",
+      "a minor repair",
+      "a scheduled lubrication"
+    ],
+    "ans": 1,
+    "diff": "hard",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 550,
+    "cat": "vocabulary",
+    "orig": 1240,
+    "q": "The word \"purge\" in systems maintenance means to:",
+    "opts": [
+      "pressurize a system to test for leaks",
+      "completely empty and flush a system",
+      "add fluid to a system",
+      "seal a system after maintenance"
+    ],
+    "ans": 1,
+    "diff": "hard",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 551,
+    "cat": "vocabulary",
+    "orig": 1241,
+    "q": "The word \"chafing\" on wiring or tubing refers to:",
+    "opts": [
+      "electrical arcing",
+      "surface wear from rubbing contact",
+      "heat discolouration",
+      "corrosion damage"
+    ],
+    "ans": 1,
+    "diff": "hard",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 552,
+    "cat": "vocabulary",
+    "orig": 1242,
+    "q": "The word \"delamination\" in composite structures means:",
+    "opts": [
+      "surface scratching",
+      "separation of layers within the material",
+      "impact damage",
+      "moisture absorption"
+    ],
+    "ans": 1,
+    "diff": "hard",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 553,
+    "cat": "vocabulary",
+    "orig": 1243,
+    "q": "The word \"squawk\" in aviation maintenance context means:",
+    "opts": [
+      "a radio communication",
+      "a defect or malfunction reported by flight crew",
+      "a scheduled task",
+      "a certification document"
+    ],
+    "ans": 1,
+    "diff": "hard",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 554,
+    "cat": "vocabulary",
+    "orig": 1244,
+    "q": "The word \"locking wire\" (safety wire) is used to:",
+    "opts": [
+      "secure electrical wiring bundles",
+      "prevent fasteners from rotating loose",
+      "bond components electrically",
+      "mark components for replacement"
+    ],
+    "ans": 1,
+    "diff": "hard",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 555,
+    "cat": "vocabulary",
+    "orig": 1245,
+    "q": "The word \"potting\" in avionics maintenance refers to:",
+    "opts": [
+      "painting a component",
+      "encapsulating electrical connections with compound to protect against moisture and vibration",
+      "securing panel fasteners",
+      "cleaning connector contacts"
+    ],
+    "ans": 1,
+    "diff": "hard",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 556,
+    "cat": "vocabulary",
+    "orig": 1246,
+    "q": "\"FOD\" stands for:",
+    "opts": [
+      "Flight Operations Directive",
+      "Foreign Object Debris/Damage",
+      "Final Operations Data",
+      "Fuel Outflow Drain"
+    ],
+    "ans": 1,
+    "diff": "hard",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 557,
+    "cat": "vocabulary",
+    "orig": 1247,
+    "q": "\"MEL\" stands for:",
+    "opts": [
+      "Maintenance Engineering Log",
+      "Minimum Equipment List",
+      "Master Engineering Limits",
+      "Monthly Engine Log"
+    ],
+    "ans": 1,
+    "diff": "hard",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 558,
+    "cat": "vocabulary",
+    "orig": 1248,
+    "q": "\"NDT\" stands for:",
+    "opts": [
+      "Normal Dispatch Test",
+      "Non-Destructive Testing",
+      "Navigation Data Transfer",
+      "Night Duty Training"
+    ],
+    "ans": 1,
+    "diff": "hard",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 559,
+    "cat": "vocabulary",
+    "orig": 1249,
+    "q": "\"SB\" in maintenance context stands for:",
+    "opts": [
+      "Standard Briefing",
+      "Service Bulletin",
+      "Safety Boundary",
+      "Structural Baseline"
+    ],
+    "ans": 1,
+    "diff": "hard",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 560,
+    "cat": "vocabulary",
+    "orig": 1250,
+    "q": "\"AD\" in aviation regulatory context stands for:",
+    "opts": [
+      "Additional Documentation",
+      "Airworthiness Directive",
+      "Aircraft Design",
+      "Annual Documentation"
+    ],
+    "ans": 1,
+    "diff": "hard",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 561,
+    "cat": "vocabulary",
+    "orig": 1251,
+    "q": "\"CRS\" in maintenance certification means:",
+    "opts": [
+      "Component Repair Summary",
+      "Certificate of Release to Service",
+      "Crew Rest Schedule",
+      "Corrosion Rating Scale"
+    ],
+    "ans": 1,
+    "diff": "hard",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 562,
+    "cat": "vocabulary",
+    "orig": 1252,
+    "q": "\"AMM\" stands for:",
+    "opts": [
+      "Aircraft Modification Manual",
+      "Aircraft Maintenance Manual",
+      "Approved Maintenance Method",
+      "Airframe Material Manual"
+    ],
+    "ans": 1,
+    "diff": "hard",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 563,
+    "cat": "vocabulary",
+    "orig": 1253,
+    "q": "\"IPC\" stands for:",
+    "opts": [
+      "Inspection and Planning Checklist",
+      "Illustrated Parts Catalogue",
+      "Internal Pressure Check",
+      "Initial Phase Certification"
+    ],
+    "ans": 1,
+    "diff": "hard",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 564,
+    "cat": "vocabulary",
+    "orig": 1254,
+    "q": "\"TSN\" stands for:",
+    "opts": [
+      "Technical Safety Note",
+      "Time Since New",
+      "Total System Number",
+      "Task Sequence Number"
+    ],
+    "ans": 1,
+    "diff": "hard",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 565,
+    "cat": "vocabulary",
+    "orig": 1255,
+    "q": "\"CSN\" stands for:",
+    "opts": [
+      "Component Safety Note",
+      "Cycles Since New",
+      "Corrosion Severity Number",
+      "Crew Safety Notice"
+    ],
+    "ans": 1,
+    "diff": "hard",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 566,
+    "cat": "vocabulary",
+    "orig": 1256,
+    "q": "\"LRU\" stands for:",
+    "opts": [
+      "Left Rudder Unit",
+      "Line Replaceable Unit",
+      "Licensed Repair Update",
+      "Load and Refuel Unit"
+    ],
+    "ans": 1,
+    "diff": "hard",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 567,
+    "cat": "vocabulary",
+    "orig": 1257,
+    "q": "\"EGT\" stands for:",
+    "opts": [
+      "Engine Ground Test",
+      "Exhaust Gas Temperature",
+      "Engine General Time",
+      "External Ground Tow"
+    ],
+    "ans": 1,
+    "diff": "hard",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 568,
+    "cat": "vocabulary",
+    "orig": 1258,
+    "q": "\"EPR\" stands for:",
+    "opts": [
+      "Engine Performance Report",
+      "Engine Pressure Ratio",
+      "External Power Required",
+      "Engine Part Replacement"
+    ],
+    "ans": 1,
+    "diff": "hard",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 569,
+    "cat": "vocabulary",
+    "orig": 1259,
+    "q": "\"APU\" stands for:",
+    "opts": [
+      "Aircraft Power Unit",
+      "Auxiliary Power Unit",
+      "Aft Pressurization Unit",
+      "Approved Parts Update"
+    ],
+    "ans": 1,
+    "diff": "hard",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 570,
+    "cat": "vocabulary",
+    "orig": 1260,
+    "q": "\"MTBF\" stands for:",
+    "opts": [
+      "Maintenance Time Between Failures",
+      "Mean Time Between Failures",
+      "Maximum Takeoff Brake Force",
+      "Minimum Time Before Flight"
+    ],
+    "ans": 1,
+    "diff": "hard",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 571,
+    "cat": "vocabulary",
+    "orig": 1261,
+    "q": "\"OEM\" stands for:",
+    "opts": [
+      "Onboard Electrical Module",
+      "Original Equipment Manufacturer",
+      "Operator Engineering Manual",
+      "Operational Engine Monitor"
+    ],
+    "ans": 1,
+    "diff": "hard",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 572,
+    "cat": "vocabulary",
+    "orig": 1262,
+    "q": "The word \"consumable\" in a parts context refers to:",
+    "opts": [
+      "a major structural component",
+      "a material used up and not recovered after use",
+      "a time-limited component with overhaul interval",
+      "a rotable component sent for repair"
+    ],
+    "ans": 1,
+    "diff": "hard",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 573,
+    "cat": "vocabulary",
+    "orig": 1263,
+    "q": "The word \"rotable\" in a parts context refers to:",
+    "opts": [
+      "a part that can never be repaired",
+      "a part that rotates mechanically",
+      "a serviceable part that is repaired and returned to service when removed",
+      "a non-structural component"
+    ],
+    "ans": 2,
+    "diff": "hard",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 574,
+    "cat": "vocabulary",
+    "orig": 1264,
+    "q": "The term \"shelf life\" refers to:",
+    "opts": [
+      "the maximum number of flight cycles",
+      "the period during which a stored item remains usable",
+      "the time between scheduled overhauls",
+      "the maximum service temperature"
+    ],
+    "ans": 1,
+    "diff": "hard",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 575,
+    "cat": "vocabulary",
+    "orig": 1265,
+    "q": "The term \"traceability\" in maintenance records means:",
+    "opts": [
+      "the ability to track a fault to its root cause",
+      "the ability to track a component's history, source, and maintenance records",
+      "the visual inspection of a component's markings",
+      "the process of returning a component to the manufacturer"
+    ],
+    "ans": 1,
+    "diff": "hard",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 576,
+    "cat": "vocabulary",
+    "orig": 1266,
+    "q": "The word \"bonding\" in aircraft electrical context means:",
+    "opts": [
+      "joining structural components with adhesive",
+      "connecting components with conductors to equalize electrical potential",
+      "insulating wiring against moisture",
+      "testing electrical continuity"
+    ],
+    "ans": 1,
+    "diff": "hard",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 577,
+    "cat": "vocabulary",
+    "orig": 1267,
+    "q": "The word \"earthing\" (or grounding) means:",
+    "opts": [
+      "storing the aircraft on the ground",
+      "connecting the aircraft electrically to ground to prevent static build-up",
+      "securing the aircraft with chocks",
+      "parking the aircraft in a hangar"
+    ],
+    "ans": 1,
+    "diff": "hard",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 578,
+    "cat": "vocabulary",
+    "orig": 1268,
+    "q": "The word \"squib\" in a fire suppression system refers to:",
+    "opts": [
+      "a spray nozzle",
+      "a small explosive device used to release the fire suppressant",
+      "a fire sensor element",
+      "a fire detection loop"
+    ],
+    "ans": 1,
+    "diff": "hard",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 579,
+    "cat": "vocabulary",
+    "orig": 1269,
+    "q": "The term \"cold soak\" refers to:",
+    "opts": [
+      "soaking a component in cleaning solvent",
+      "extended exposure of the aircraft to very low temperatures, often affecting fuel, hydraulics, and seals",
+      "pre-heating an engine before start",
+      "a hydraulic system flush procedure"
+    ],
+    "ans": 1,
+    "diff": "hard",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 580,
+    "cat": "vocabulary",
+    "orig": 1270,
+    "q": "The word \"nacelle\" refers to:",
+    "opts": [
+      "the aircraft fuselage",
+      "the structure surrounding and housing an engine",
+      "the landing gear bay",
+      "the nose radome"
+    ],
+    "ans": 1,
+    "diff": "hard",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 581,
+    "cat": "vocabulary",
+    "orig": 1271,
+    "q": "The term \"inlet guide vanes\" in an engine refers to:",
+    "opts": [
+      "vanes that direct oil flow through the engine",
+      "stationary vanes that direct airflow into the compressor",
+      "vanes that increase exhaust thrust",
+      "movable vanes that control fuel flow"
+    ],
+    "ans": 1,
+    "diff": "hard",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 582,
+    "cat": "vocabulary",
+    "orig": 1272,
+    "q": "\"Bleed air\" from an aircraft engine is used for:",
+    "opts": [
+      "engine cooling only",
+      "aircraft pressurization, anti-icing, and other pneumatic functions",
+      "fuel pressurization",
+      "hydraulic system backup"
+    ],
+    "ans": 1,
+    "diff": "hard",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 583,
+    "cat": "vocabulary",
+    "orig": 1273,
+    "q": "The word \"flap\" refers to:",
+    "opts": [
+      "a primary flight control surface",
+      "a high-lift device on the wing trailing edge",
+      "a hydraulic actuator housing",
+      "a main landing gear door"
+    ],
+    "ans": 1,
+    "diff": "hard",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 584,
+    "cat": "vocabulary",
+    "orig": 1274,
+    "q": "The term \"stall\" in an aerodynamic context means:",
+    "opts": [
+      "an engine power reduction",
+      "a loss of lift due to exceeding the critical angle of attack",
+      "a landing gear retraction failure",
+      "a hydraulic system failure"
+    ],
+    "ans": 1,
+    "diff": "hard",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 585,
+    "cat": "vocabulary",
+    "orig": 1275,
+    "q": "\"Ground spoilers\" on an aircraft:",
+    "opts": [
+      "slow the aircraft in flight by increasing drag",
+      "deploy on landing to reduce lift and improve braking",
+      "control roll during low-speed flight",
+      "provide additional lift during takeoff"
+    ],
+    "ans": 1,
+    "diff": "hard",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 586,
+    "cat": "vocabulary",
+    "orig": 1276,
+    "q": "A \"squib test\" on a fire extinguisher system is performed to:",
+    "opts": [
+      "test the fire suppression agent quantity",
+      "verify the firing circuit continuity without discharging the extinguisher",
+      "check the fire detection loop",
+      "pressurize the extinguisher bottle"
+    ],
+    "ans": 1,
+    "diff": "hard",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 587,
+    "cat": "vocabulary",
+    "orig": 1277,
+    "q": "\"Dry bay\" in an aircraft refers to:",
+    "opts": [
+      "a fuel tank that has been drained",
+      "a structural area where no flammable fluids are permitted",
+      "a cargo hold with no moisture protection",
+      "an unpressurized section of the fuselage"
+    ],
+    "ans": 1,
+    "diff": "hard",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 588,
+    "cat": "vocabulary",
+    "orig": 1278,
+    "q": "The term \"pitch\" in rotor context means:",
+    "opts": [
+      "the rotational speed of the rotor",
+      "the angle of the rotor blade relative to its plane of rotation",
+      "the forward speed of the helicopter",
+      "the vibration frequency of the rotor system"
+    ],
+    "ans": 1,
+    "diff": "hard",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 589,
+    "cat": "vocabulary",
+    "orig": 1279,
+    "q": "An \"overrun\" condition on an aircraft engine means:",
+    "opts": [
+      "the engine has run for too many hours",
+      "the engine has exceeded a speed, temperature, or torque limit",
+      "the engine has run out of fuel",
+      "the engine has started prematurely"
+    ],
+    "ans": 1,
+    "diff": "hard",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 590,
+    "cat": "vocabulary",
+    "orig": 1280,
+    "q": "The term \"hard time\" component means:",
+    "opts": [
+      "a part that is difficult to remove",
+      "a component that must be replaced or overhauled at a fixed interval regardless of condition",
+      "a component with a soft-time inspection",
+      "a structural component exposed to high loads"
+    ],
+    "ans": 1,
+    "diff": "hard",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 591,
+    "cat": "vocabulary",
+    "orig": 1281,
+    "q": "\"On condition\" maintenance means:",
+    "opts": [
+      "maintenance performed only after a failure",
+      "maintenance performed based on the actual condition of the component, not fixed intervals",
+      "maintenance conditional on management approval",
+      "maintenance performed every 100 flight hours"
+    ],
+    "ans": 1,
+    "diff": "hard",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 592,
+    "cat": "vocabulary",
+    "orig": 1282,
+    "q": "The word \"placard\" on an aircraft refers to:",
+    "opts": [
+      "a maintenance instruction in the AMM",
+      "a sign or label fixed to the aircraft providing instructions or warnings",
+      "a temporary repair approval",
+      "a modification record"
+    ],
+    "ans": 1,
+    "diff": "hard",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 593,
+    "cat": "vocabulary",
+    "orig": 1283,
+    "q": "The term \"ferry flight\" means:",
+    "opts": [
+      "a scheduled passenger service flight",
+      "a flight to reposition an aircraft, sometimes under a special permit",
+      "a training flight for new pilots",
+      "a test flight after major maintenance"
+    ],
+    "ans": 1,
+    "diff": "hard",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 594,
+    "cat": "vocabulary",
+    "orig": 1284,
+    "q": "\"Special inspection\" in maintenance terminology refers to:",
+    "opts": [
+      "a routine transit check",
+      "an inspection required after a specific event such as a hard landing or lightning strike",
+      "the annual airworthiness review",
+      "a post-flight walkaround"
+    ],
+    "ans": 1,
+    "diff": "hard",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 595,
+    "cat": "vocabulary",
+    "orig": 1285,
+    "q": "\"Turbine entry temperature\" is measured to:",
+    "opts": [
+      "control cabin temperature",
+      "monitor the temperature at the turbine inlet and prevent overheating",
+      "measure exhaust emissions",
+      "adjust fuel flow automatically"
+    ],
+    "ans": 1,
+    "diff": "hard",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 596,
+    "cat": "vocabulary",
+    "orig": 1286,
+    "q": "The term \"hydraulic snubber\" is used to:",
+    "opts": [
+      "increase hydraulic pressure",
+      "dampen pressure spikes and reduce vibration in hydraulic lines",
+      "filter hydraulic fluid",
+      "control the direction of hydraulic flow"
+    ],
+    "ans": 1,
+    "diff": "hard",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 597,
+    "cat": "vocabulary",
+    "orig": 1287,
+    "q": "The word \"discrepancy\" in maintenance context most nearly means:",
+    "opts": [
+      "a completed maintenance task",
+      "an abnormality or defect requiring action",
+      "a routine inspection item",
+      "a modification record"
+    ],
+    "ans": 1,
+    "diff": "hard",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 598,
+    "cat": "vocabulary",
+    "orig": 1288,
+    "q": "\"Cycle counting\" for aircraft components refers to:",
+    "opts": [
+      "counting engine rotations per minute",
+      "tracking the number of pressurization cycles or landing cycles for fatigue life management",
+      "monitoring hydraulic pump cycles",
+      "recording fuel tank fill cycles"
+    ],
+    "ans": 1,
+    "diff": "hard",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 599,
+    "cat": "vocabulary",
+    "orig": 1289,
+    "q": "The term \"pitch trim\" refers to:",
+    "opts": [
+      "adjusting engine thrust",
+      "adjusting the aircraft's nose-up or nose-down attitude",
+      "aligning the landing gear",
+      "adjusting flap position"
+    ],
+    "ans": 1,
+    "diff": "hard",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 600,
+    "cat": "vocabulary",
+    "orig": 1290,
+    "q": "\"Ram air\" refers to:",
+    "opts": [
+      "compressed air from the engine compressor",
+      "ambient air forced into the aircraft by its forward motion",
+      "air from the APU",
+      "recirculated cabin air"
+    ],
+    "ans": 1,
+    "diff": "hard",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 601,
+    "cat": "vocabulary",
+    "orig": 1291,
+    "q": "The word \"pitting\" on a metal surface indicates:",
+    "opts": [
+      "surface scratches from handling",
+      "small holes or cavities caused by corrosion",
+      "paint delamination",
+      "heat damage"
+    ],
+    "ans": 1,
+    "diff": "hard",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 602,
+    "cat": "vocabulary",
+    "orig": 1292,
+    "q": "The term \"avionics bay\" refers to:",
+    "opts": [
+      "the cockpit area",
+      "a dedicated compartment housing electronic equipment",
+      "the cargo hold",
+      "the equipment bay under the passenger floor"
+    ],
+    "ans": 1,
+    "diff": "hard",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 603,
+    "cat": "vocabulary",
+    "orig": 1293,
+    "q": "\"Engine run-in\" after overhaul means:",
+    "opts": [
+      "a high-power test to check maximum thrust",
+      "a controlled ground running sequence to bed in new components",
+      "the first flight after engine change",
+      "an idle run to check for oil leaks"
+    ],
+    "ans": 1,
+    "diff": "hard",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 604,
+    "cat": "vocabulary",
+    "orig": 1294,
+    "q": "The term \"airworthiness\" means:",
+    "opts": [
+      "the aircraft is on time for departure",
+      "the aircraft is in a safe and proper condition for flight",
+      "the aircraft has passed a visual inspection",
+      "the aircraft has been refuelled"
+    ],
+    "ans": 1,
+    "diff": "hard",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 605,
+    "cat": "vocabulary",
+    "orig": 1295,
+    "q": "\"Critical maintenance task\" refers to:",
+    "opts": [
+      "any task taking more than 2 hours",
+      "a task whose incorrect performance could directly affect flight safety",
+      "a task requiring two people",
+      "a task performed during a heavy maintenance check"
+    ],
+    "ans": 1,
+    "diff": "hard",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 606,
+    "cat": "vocabulary",
+    "orig": 1296,
+    "q": "The term \"load sheet\" in aviation refers to:",
+    "opts": [
+      "a list of maintenance tasks",
+      "a document showing the distribution of load and the resulting centre of gravity of the aircraft",
+      "the weight of fuel loaded",
+      "a structural load calculation for repairs"
+    ],
+    "ans": 1,
+    "diff": "hard",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 607,
+    "cat": "vocabulary",
+    "orig": 1297,
+    "q": "The word \"penultimate\" means:",
+    "opts": [
+      "the last one",
+      "the second to last one",
+      "the most important",
+      "the most recent"
+    ],
+    "ans": 1,
+    "diff": "hard",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 608,
+    "cat": "vocabulary",
+    "orig": 1298,
+    "q": "\"Aircraft release\" in maintenance context means:",
+    "opts": [
+      "the aircraft has been sold",
+      "the aircraft has been returned to service after maintenance",
+      "the aircraft has been dispatched with a known defect",
+      "the aircraft has been assigned a new registration"
+    ],
+    "ans": 1,
+    "diff": "hard",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 609,
+    "cat": "vocabulary",
+    "orig": 1299,
+    "q": "The term \"dual inspection\" requires:",
+    "opts": [
+      "two separate inspections on different days",
+      "inspection by two independent qualified persons",
+      "inspection using two different methods",
+      "a ground and flight inspection"
+    ],
+    "ans": 1,
+    "diff": "hard",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 610,
+    "cat": "vocabulary",
+    "orig": 1300,
+    "q": "The word \"annotate\" most nearly means:",
+    "opts": [
+      "remove",
+      "add notes or comments to a document",
+      "approve",
+      "file"
+    ],
+    "ans": 1,
+    "diff": "hard",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 611,
+    "cat": "vocabulary",
+    "orig": 1301,
+    "q": "The term \"phased inspection\" means:",
+    "opts": [
+      "inspecting one aircraft phase at a time",
+      "dividing a maintenance check into smaller packages performed at shorter intervals",
+      "performing all checks at once",
+      "a special inspection after a phase of flight"
+    ],
+    "ans": 1,
+    "diff": "hard",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 612,
+    "cat": "vocabulary",
+    "orig": 1302,
+    "q": "\"Fail-safe\" design means:",
+    "opts": [
+      "a system that will not fail under any condition",
+      "a system designed so that failure of one component does not cause failure of the whole system",
+      "a system that automatically shuts down on failure",
+      "a system requiring manual override on failure"
+    ],
+    "ans": 1,
+    "diff": "hard",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 613,
+    "cat": "vocabulary",
+    "orig": 1303,
+    "q": "The word \"supersede\" most nearly means:",
+    "opts": [
+      "support",
+      "replace / take the place of",
+      "approve",
+      "supplement"
+    ],
+    "ans": 1,
+    "diff": "hard",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 614,
+    "cat": "vocabulary",
+    "orig": 1304,
+    "q": "\"Fuselage frame\" refers to:",
+    "opts": [
+      "the longitudinal structural member of the fuselage",
+      "a transverse structural ring that gives the fuselage its shape and transfers loads",
+      "the outer skin panel",
+      "the cargo floor beam"
+    ],
+    "ans": 1,
+    "diff": "hard",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 615,
+    "cat": "vocabulary",
+    "orig": 1305,
+    "q": "The term \"stringer\" in aircraft structure refers to:",
+    "opts": [
+      "a transverse structural member",
+      "a longitudinal structural member running along the length of the fuselage or wing",
+      "a rivet line",
+      "a sealant bead"
+    ],
+    "ans": 1,
+    "diff": "hard",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 616,
+    "cat": "vocabulary",
+    "orig": 1306,
+    "q": "\"Over-torque\" of a fastener refers to:",
+    "opts": [
+      "applying less than the specified torque",
+      "applying more than the specified torque, potentially damaging the fastener or structure",
+      "applying torque in the wrong direction",
+      "failing to use a torque wrench"
+    ],
+    "ans": 1,
+    "diff": "hard",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 617,
+    "cat": "vocabulary",
+    "orig": 1307,
+    "q": "\"Safety margin\" in engineering means:",
+    "opts": [
+      "the minimum load that must be applied",
+      "the additional strength built into a structure beyond the expected maximum load",
+      "the time allowed for an inspection",
+      "the gap between two structural components"
+    ],
+    "ans": 1,
+    "diff": "hard",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 618,
+    "cat": "vocabulary",
+    "orig": 1308,
+    "q": "The word \"nominal\" most nearly means:",
+    "opts": [
+      "excessive",
+      "as named / within normal expected range",
+      "below limits",
+      "critical"
+    ],
+    "ans": 1,
+    "diff": "hard",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 619,
+    "cat": "vocabulary",
+    "orig": 1309,
+    "q": "\"Certification basis\" of an aircraft refers to:",
+    "opts": [
+      "the location where the aircraft was certified",
+      "the airworthiness standards and regulations to which the aircraft was type certified",
+      "the maintenance documentation set",
+      "the original build specification"
+    ],
+    "ans": 1,
+    "diff": "hard",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 620,
+    "cat": "vocabulary",
+    "orig": 1310,
+    "q": "\"Continued airworthiness\" documentation refers to:",
+    "opts": [
+      "documents generated only at initial delivery",
+      "documents and instructions needed to maintain the aircraft's airworthiness throughout its service life",
+      "export paperwork for the aircraft",
+      "the original type certificate"
+    ],
+    "ans": 1,
+    "diff": "hard",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 621,
+    "cat": "vocabulary",
+    "orig": 1311,
+    "q": "\"AOC\" stands for:",
+    "opts": [
+      "Aircraft Operations Certificate",
+      "Air Operator Certificate",
+      "Airworthiness Operations Check",
+      "Aircraft Overhaul Cycle"
+    ],
+    "ans": 1,
+    "diff": "hard",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 622,
+    "cat": "vocabulary",
+    "orig": 1312,
+    "q": "\"ETOPS\" refers to:",
+    "opts": [
+      "Electronic Takeoff and Performance System",
+      "Extended Twin-engine Operational Performance Standards",
+      "Engine Turbine Oil Pressure Specification",
+      "External Technical Operations Procedure"
+    ],
+    "ans": 1,
+    "diff": "hard",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 623,
+    "cat": "vocabulary",
+    "orig": 1313,
+    "q": "The word \"disposition\" of a rejected part means:",
+    "opts": [
+      "the description of the defect",
+      "the decision on what to do with the rejected part (scrap, rework, return, etc.)",
+      "the inspection method used",
+      "the replacement part number"
+    ],
+    "ans": 1,
+    "diff": "hard",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 624,
+    "cat": "vocabulary",
+    "orig": 1314,
+    "q": "\"Snag\" in British aviation English means:",
+    "opts": [
+      "a type of maintenance tool",
+      "a defect or fault on the aircraft",
+      "a maintenance schedule",
+      "a type of inspection"
+    ],
+    "ans": 1,
+    "diff": "hard",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 625,
+    "cat": "vocabulary",
+    "orig": 1315,
+    "q": "The word \"expedite\" in maintenance context most nearly means:",
+    "opts": [
+      "delay a non-critical task",
+      "complete or process something more quickly",
+      "document the task thoroughly",
+      "reassign the task"
+    ],
+    "ans": 1,
+    "diff": "hard",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  }
+]

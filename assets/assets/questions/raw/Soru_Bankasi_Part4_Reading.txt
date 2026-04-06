@@ -1,0 +1,1164 @@
+================================================================
+HAVA ARACI BAKIM PERSONELİ YABANCI DİL SINAVI
+SORU BANKASI - BÖLÜM 4: PARAGRAF (READING COMPREHENSION)
+375 SORU
+================================================================
+
+--- METİN 1: DETAILED INSPECTION ---
+"Detailed Inspection (DI) is an intensive examination of a specific item, installation, or assembly to detect damage, failure or irregularity. Available lighting is normally supplemented with a direct source of good lighting at an intensity deemed appropriate. Inspection aids such as mirrors, magnifying lenses etc. may be necessary. Surface cleaning and elaborate access procedures may be required."
+
+601. What is the main purpose of a Detailed Inspection?
+a) To replace damaged components
+b) To detect damage, failure, or irregularity
+c) To clean the surface of the aircraft
+d) To troubleshoot system malfunctions
+ANSWER: b
+
+602. Which of the following is NOT necessarily required for a Detailed Inspection?
+a) Direct source of good lighting
+b) Inspection aids such as mirrors
+c) Complete disassembly of the aircraft
+d) Surface cleaning
+ANSWER: c
+
+603. What does a Detailed Inspection examine?
+a) An entire aircraft at once
+b) The aircraft's documentation
+c) A specific item, installation, or assembly
+d) Only the exterior of the aircraft
+ANSWER: c
+
+604. In a Detailed Inspection, which of the following may be required?
+a) A test flight
+b) Removal of all panels
+c) Elaborate access procedures
+d) Engine ground run
+ANSWER: c
+
+605. According to the passage, what supplements the available lighting during a DI?
+a) Ultraviolet lamps
+b) Natural sunlight
+c) Torch lights
+d) A direct source of good lighting
+ANSWER: d
+
+--- METİN 2: WET MOTORING ---
+"Wet motoring the engine is necessary to test the fuel system. When an engine is wet motored, the two ignition systems are turned OFF and the starter is engaged to turn the HP rotor to 15%-20% N2. At N2 = 15%, the HP fuel shutoff valve control lever is moved to ON and the engine exhaust nozzle is carefully monitored for any sign of fuel. The test can be continued in accordance with starter duty cycle limitations."
+
+606. What is the purpose of wet motoring the engine?
+a) To start the engine for the first time
+b) To test the fuel system
+c) To increase engine speed
+d) To test the electrical system
+ANSWER: b
+
+607. During wet motoring, what is the position of the ignition systems?
+a) Both are turned ON
+b) One is ON and one is OFF
+c) Both are turned OFF
+d) The position does not matter
+ANSWER: c
+
+608. At what N2 speed is the HP fuel shutoff valve moved to ON?
+a) 5%
+b) 10%
+c) 15%
+d) 20%
+ANSWER: c
+
+609. What should be monitored during wet motoring?
+a) The oil pressure
+b) The engine exhaust nozzle for any sign of fuel
+c) The cockpit instruments
+d) The engine inlet temperature
+ANSWER: b
+
+610. What limits the continuation of the wet motoring test?
+a) The fuel quantity available
+b) The oil temperature
+c) The starter duty cycle limitations
+d) The ignition system timer
+ANSWER: c
+
+--- METİN 3: MAINTENANCE MESSAGES AND FUEL SYSTEM ---
+"Maintenance messages related to the fuel system can possibly occur during the first engine start. The cause of these messages can be air that went into the system during the related fuel drain procedure. This air will be removed automatically during the first engine ground run. Thus, during subsequent engine starts the messages should not show again, unless they are caused differently."
+
+611. When can fuel system maintenance messages possibly occur?
+a) During subsequent engine starts
+b) During the first engine start
+c) During cruise flight only
+d) During the pre-flight inspection
+ANSWER: b
+
+612. What can cause fuel system maintenance messages?
+a) A faulty fuel pump
+b) Air that entered the system during the fuel drain procedure
+c) Excessive fuel pressure
+d) Low fuel temperature
+ANSWER: b
+
+613. How is the air removed from the fuel system?
+a) Manually by the technician
+b) By operating the fuel transfer pump
+c) Automatically during the first engine ground run
+d) By pressurizing the fuel system
+ANSWER: c
+
+614. When should the fuel system maintenance messages stop appearing?
+a) After the first engine start
+b) During all subsequent engine starts
+c) After the first engine ground run
+d) After the system is drained
+ANSWER: c
+
+615. According to the passage, when might fuel system messages appear again after the first run?
+a) They will never appear again
+b) Only if they are caused by a different reason
+c) During every subsequent engine start
+d) After 1000 flight hours
+ANSWER: b
+
+--- METİN 4: AIRCRAFT COMMUNICATION SYSTEM ---
+"The single aisle aircraft communication system has two sub-systems: radio communication, and onboard communication. The radio communication systems are used for communications to and from the aircraft. The on-board internal communication system is divided into 4 functions: service interphone (on ground only) for maintenance technician communication with cockpit or cabin thanks to several jack connectors around the aircraft; flight interphone for cockpit internal communication and also with the ground mechanic; Passenger Address (PA) from the cockpit or from cabin crew stations for passenger announcements; cabin interphone for cabin crew or cabin crew/pilots communication."
+
+616. How many sub-systems does the aircraft communication system have?
+a) One
+b) Two
+c) Three
+d) Four
+ANSWER: b
+
+617. What is the service interphone used for?
+a) Passenger announcements
+b) Cockpit internal communication
+c) Maintenance technician communication with cockpit or cabin
+d) Communication between cabin crew and pilots
+ANSWER: c
+
+618. Where can the service interphone be used?
+a) Only in the air
+b) Both in the air and on the ground
+c) Only on the ground
+d) Only in the cockpit
+ANSWER: c
+
+619. According to the passage, which function can be used for passenger announcements?
+a) Service interphone
+b) Flight interphone
+c) Passenger Address (PA)
+d) Cabin interphone
+ANSWER: c
+
+620. How many functions does the on-board internal communication system have?
+a) Two
+b) Three
+c) Four
+d) Five
+ANSWER: c
+
+--- METİN 5: AUDIO MANAGEMENT UNIT ---
+"The heart of the audio system is the Audio Management Unit (AMU). The AMU routes the signals generated by the crew and directs the signals to and from the appropriate radio or interphone system. The AMU has a decoding unit called Selective Calling (SELCAL). It lets aural and visual indications on the audio control panel with an amber CALL indication to alert the flight crew for calls from ground stations. When the Passenger Address function is used from cockpit, the audio signal is routed via the AMU to the cabin intercommunication data system director."
+
+621. What is the main function of the AMU?
+a) To generate navigation signals
+b) To route signals to and from the appropriate radio or interphone system
+c) To store flight data
+d) To power the radio equipment
+ANSWER: b
+
+622. What is SELCAL?
+a) A navigation system
+b) A type of radio frequency
+c) A decoding unit in the AMU
+d) A communication protocol
+ANSWER: c
+
+623. What color is the CALL indication on the audio control panel?
+a) Red
+b) Green
+c) Blue
+d) Amber
+ANSWER: d
+
+624. What alerts the flight crew for calls from ground stations?
+a) An audio chime only
+b) Aural and visual indications on the audio control panel
+c) A text message on the MCDU
+d) A red light on the overhead panel
+ANSWER: b
+
+625. When PA is used from the cockpit, where does the audio signal go first after the AMU?
+a) Directly to the cabin speakers
+b) To the radio transmitter
+c) To the cabin intercommunication data system director
+d) To the cockpit voice recorder
+ANSWER: c
+
+--- METİN 6: PITOT PROBE ---
+"The pitot probe measures pitot air pressure. The pitot probe port points forward to measure pitot pressure. The probe is located several inches from the airplane skin to decrease airflow turbulence effects. A base plate contains the electrical and pressure connectors. A gasket is between the probe base and the airplane structure to form a pressure seal. An anti-icing heater is in the probe to prevent ice. The heater is attached to the electrical connector in the base plate."
+
+626. What does the pitot probe measure?
+a) Engine temperature
+b) Fuel flow rate
+c) Pitot air pressure
+d) Cabin pressure
+ANSWER: c
+
+627. Why is the probe located several inches from the airplane skin?
+a) To protect it from bird strikes
+b) To decrease airflow turbulence effects
+c) To make it easier to inspect
+d) To improve the appearance of the aircraft
+ANSWER: b
+
+628. What is the purpose of the gasket between the probe base and the airplane structure?
+a) To provide electrical grounding
+b) To absorb vibration
+c) To form a pressure seal
+d) To mount the probe securely
+ANSWER: c
+
+629. What prevents ice formation on the pitot probe?
+a) A rubber boot
+b) A chemical de-icing fluid
+c) An anti-icing heater
+d) The airflow over the probe
+ANSWER: c
+
+630. According to the passage, what CANNOT be said about the pitot probe?
+a) It measures air pressure
+b) It has a built-in heater
+c) It is flush with the aircraft skin
+d) It faces forward
+ANSWER: c
+
+--- METİN 7: HYDRAULIC SYSTEM BASICS ---
+"The aircraft hydraulic system provides power to operate various systems including flight controls, landing gear, wheel brakes, and thrust reversers. The system uses hydraulic fluid under high pressure (typically 3000 PSI) to generate force. The main components include a hydraulic reservoir, engine-driven pumps, electric motor-driven pumps for backup, actuators, and control valves. Hydraulic fluid must be kept clean and free from contamination to ensure reliable system operation. Regular sampling and testing of the hydraulic fluid is required as part of the maintenance program."
+
+631. What systems does the hydraulic system provide power to?
+a) Only the flight controls
+b) Flight controls, landing gear, wheel brakes, and thrust reversers
+c) Navigation and communication systems
+d) Only the landing gear and brakes
+ANSWER: b
+
+632. What is the typical operating pressure of the hydraulic system?
+a) 1000 PSI
+b) 2000 PSI
+c) 3000 PSI
+d) 5000 PSI
+ANSWER: c
+
+633. Which of the following is NOT listed as a main hydraulic component?
+a) Hydraulic reservoir
+b) Engine-driven pumps
+c) Fuel heat exchanger
+d) Actuators
+ANSWER: c
+
+634. Why must hydraulic fluid be kept clean?
+a) To prevent damage to the reservoir
+b) To ensure reliable system operation
+c) To meet weight restrictions
+d) To prevent freezing at altitude
+ANSWER: b
+
+635. According to the passage, what is required as part of the maintenance program?
+a) Complete fluid replacement every flight
+b) Regular sampling and testing of the hydraulic fluid
+c) Replacement of all seals every 100 hours
+d) Weekly pump inspection
+ANSWER: b
+
+--- METİN 8: CORROSION PREVENTION ---
+"Corrosion is the chemical deterioration of a metal by reaction with its environment. On aircraft, corrosion can seriously affect structural integrity and cause safety issues. The main types of corrosion found on aircraft include surface corrosion, pitting corrosion, intergranular corrosion, and stress corrosion cracking. Prevention methods include the application of protective coatings such as primers and topcoats, the use of corrosion inhibiting compounds, proper drainage design to prevent moisture accumulation, and regular inspection and early treatment of any corrosion found."
+
+636. How is corrosion defined in the passage?
+a) Physical damage from impact
+b) Chemical deterioration of a metal by reaction with its environment
+c) Damage caused by excessive heat
+d) Mechanical wear of metal surfaces
+ANSWER: b
+
+637. Which of the following is NOT listed as a type of corrosion on aircraft?
+a) Surface corrosion
+b) Pitting corrosion
+c) Thermal corrosion
+d) Intergranular corrosion
+ANSWER: c
+
+638. What is one method of corrosion prevention mentioned?
+a) Painting the aircraft in bright colors
+b) Using only aluminum alloys
+c) Application of protective coatings such as primers and topcoats
+d) Keeping the aircraft in a pressurized hangar
+ANSWER: c
+
+639. Why is proper drainage design important?
+a) To reduce aircraft weight
+b) To prevent moisture accumulation
+c) To improve aerodynamics
+d) To facilitate refueling
+ANSWER: b
+
+640. What should be done when corrosion is found during inspection?
+a) It should be documented only
+b) It should be reported to the captain
+c) It should receive early treatment
+d) The aircraft should be grounded permanently
+ANSWER: c
+
+--- METİN 9: AIRCRAFT FUELING SAFETY ---
+"Before fueling operations, all personnel must be briefed on safety procedures. The aircraft and fueling equipment must be properly bonded and grounded to prevent static electricity buildup. No smoking is permitted within 50 feet of the aircraft during fueling. All ignition sources must be eliminated. If a fuel spill occurs, stop fueling immediately, alert the fire service, and ventilate the area. Ground power units and other electrical equipment must be switched off or positioned away from the fuel vents. Fueling agents must wear appropriate personal protective equipment including gloves and eye protection."
+
+641. What must be done before fueling operations?
+a) The captain must approve the fuel uplift
+b) All personnel must be briefed on safety procedures
+c) The aircraft must be weighed
+d) All passengers must disembark
+ANSWER: b
+
+642. Why must the aircraft and fueling equipment be bonded and grounded?
+a) To ensure electrical power supply
+b) To prevent static electricity buildup
+c) To measure fuel quantity accurately
+d) To keep the fuel at the right temperature
+ANSWER: b
+
+643. What is the no-smoking distance from the aircraft during fueling?
+a) 10 feet
+b) 25 feet
+c) 50 feet
+d) 100 feet
+ANSWER: c
+
+644. What should be done if a fuel spill occurs?
+a) Continue fueling and clean up afterwards
+b) Reduce the fueling rate
+c) Stop fueling immediately, alert the fire service, and ventilate the area
+d) Open all aircraft doors to ventilate
+ANSWER: c
+
+645. What personal protective equipment must fueling agents wear?
+a) Hard hat and safety boots only
+b) Gloves and eye protection
+c) Full fireproof suit
+d) High-visibility vest only
+ANSWER: b
+
+--- METİN 10: OXYGEN SYSTEM ---
+"The aircraft oxygen system provides supplemental oxygen to the crew and passengers in case of cabin depressurization. The system consists of oxygen cylinders stored in the avionics bay, pressure regulators, distribution lines, and crew masks. Passenger oxygen is provided by chemical oxygen generators located in the overhead compartment above each seat row. When activated, the generators produce oxygen through a chemical reaction for approximately 12-22 minutes. Crew oxygen is supplied from high-pressure cylinders via a regulator to allow normal breathing at altitude."
+
+646. What is the purpose of the aircraft oxygen system?
+a) To provide fresh air during normal flight
+b) To provide supplemental oxygen in case of cabin depressurization
+c) To power the aircraft's emergency systems
+d) To cool the avionics equipment
+ANSWER: b
+
+647. Where are the oxygen cylinders stored?
+a) In the wing root
+b) In the cockpit overhead panel
+c) In the avionics bay
+d) In the cargo hold
+ANSWER: c
+
+648. How is passenger oxygen provided?
+a) From high-pressure cylinders
+b) Through chemical oxygen generators in the overhead compartment
+c) From the same supply as the crew
+d) Through the air conditioning system
+ANSWER: b
+
+649. How long do the chemical oxygen generators typically produce oxygen?
+a) 5-8 minutes
+b) 12-22 minutes
+c) 30-40 minutes
+d) Up to 1 hour
+ANSWER: b
+
+650. How is crew oxygen supplied?
+a) From chemical generators like passengers
+b) From a central reservoir
+c) From high-pressure cylinders via a regulator
+d) From the same overhead units as passengers
+ANSWER: c
+
+--- METİN 11: BRAKE SYSTEM MAINTENANCE ---
+"The aircraft brake system converts the kinetic energy of the moving aircraft into heat energy to slow the aircraft. Carbon brakes are commonly used on modern commercial aircraft due to their light weight and ability to absorb more heat than steel brakes. The brake temperature must be monitored after landing to prevent damage from overheating. If the brake temperature indicator shows a temperature above the service limit, the aircraft must not depart until the brakes have cooled to below the limit. Regular inspection of the carbon disks for wear and damage is required."
+
+651. How does the brake system slow the aircraft?
+a) By creating aerodynamic drag
+b) By reversing the thrust
+c) By converting kinetic energy into heat energy
+d) By hydraulic pressure on the wheels
+ANSWER: c
+
+652. Why are carbon brakes preferred on modern aircraft?
+a) They are cheaper than steel brakes
+b) They are light weight and can absorb more heat than steel brakes
+c) They last longer than any other material
+d) They require less maintenance
+ANSWER: b
+
+653. When must brake temperature be monitored?
+a) Before takeoff only
+b) During cruise flight
+c) After landing
+d) During taxi to the runway
+ANSWER: c
+
+654. What should be done if the brake temperature exceeds the service limit?
+a) Continue operations with caution
+b) Apply cooling fans immediately
+c) The aircraft must not depart until brakes cool below the limit
+d) Request priority landing
+ANSWER: c
+
+655. What regular inspection is required for carbon disks?
+a) Painting and sealing inspection
+b) Inspection for wear and damage
+c) Ultrasonic testing only
+d) Electrical continuity check
+ANSWER: b
+
+--- METİN 12: FIRE PROTECTION SYSTEM ---
+"The aircraft fire protection system is designed to detect and extinguish fires in the engine nacelles, APU, cargo compartments, and lavatories. Fire detection is accomplished by temperature sensing loops or detectors installed in the protected zones. When a fire is detected, an audible warning sounds in the cockpit and a red FIRE warning light illuminates. The crew can then activate the fire extinguisher by pressing the fire handle and rotating it to discharge the agent. Most modern aircraft have two fire extinguisher shots available for each engine."
+
+656. Which areas are protected by the aircraft fire protection system?
+a) Only the engines
+b) Engine nacelles, APU, cargo compartments, and lavatories
+c) The entire aircraft including the wings
+d) Only the cockpit and cabin
+ANSWER: b
+
+657. How is fire detection accomplished?
+a) By thermal cameras
+b) By smoke detectors only
+c) By temperature sensing loops or detectors in protected zones
+d) By the crew's visual inspection
+ANSWER: c
+
+658. When a fire is detected, what happens in the cockpit?
+a) An automated extinguisher activates
+b) An audible warning sounds and a red FIRE warning light illuminates
+c) Only a warning light illuminates
+d) The engine shuts down automatically
+ANSWER: b
+
+659. How does the crew activate the fire extinguisher?
+a) By pressing a button on the overhead panel
+b) By turning a switch on the center console
+c) By pressing the fire handle and rotating it
+d) By pulling a trigger mechanism
+ANSWER: c
+
+660. How many fire extinguisher shots are available for each engine on most modern aircraft?
+a) One
+b) Two
+c) Three
+d) Four
+ANSWER: b
+
+--- METİN 13: LANDING GEAR SYSTEM ---
+"The landing gear system supports the aircraft on the ground and provides the means for takeoff and landing. The main components are the main landing gear, nose landing gear, wheels, tyres, brakes, and associated hydraulic actuators. Landing gear extension and retraction is controlled by the pilot through a cockpit selector. In the event of hydraulic failure, the landing gear can be extended using an emergency system. The gear down and locked position is confirmed by green indicator lights in the cockpit. The landing gear must be inspected regularly for hydraulic leaks, tyre wear, and structural damage."
+
+661. What is the function of the landing gear system?
+a) To provide aerodynamic lift
+b) To support the aircraft on the ground and provide means for takeoff and landing
+c) To reduce engine noise
+d) To measure aircraft weight
+ANSWER: b
+
+662. How is landing gear extension and retraction controlled?
+a) Automatically by the flight management system
+b) By the ground crew
+c) By the pilot through a cockpit selector
+d) By the copilot only
+ANSWER: c
+
+663. How can the landing gear be extended in case of hydraulic failure?
+a) By a backup hydraulic pump
+b) Using an emergency system
+c) By gravity alone
+d) It cannot be extended without hydraulics
+ANSWER: b
+
+664. How is the gear down and locked position confirmed?
+a) By an audible tone
+b) By green indicator lights in the cockpit
+c) By the pilot's visual inspection through a window
+d) By the flight management computer
+ANSWER: b
+
+665. What must the landing gear be regularly inspected for?
+a) Hydraulic leaks, tyre wear, and structural damage
+b) Paint condition and cleanliness
+c) Corrosion on the wheel hubs only
+d) Brake fluid level only
+ANSWER: a
+
+--- METİN 14: APU MAINTENANCE ---
+"The Auxiliary Power Unit (APU) is a small gas turbine engine located in the tail cone of the aircraft. It provides electrical power and bleed air for air conditioning when the main engines are not running. The APU can be started on the ground using battery power or from the aircraft's external power supply. APU maintenance includes regular oil changes, filter replacements, and inspection of the exhaust system. The APU has a fire detection and suppression system. After three unsuccessful start attempts, the crew must wait at least one hour before making another attempt."
+
+666. Where is the APU located?
+a) In the wing root
+b) In the forward fuselage
+c) In the tail cone of the aircraft
+d) In the avionics bay
+ANSWER: c
+
+667. What does the APU provide when the main engines are not running?
+a) Hydraulic power only
+b) Electrical power and bleed air for air conditioning
+c) Fuel pressure for the main engines
+d) Navigation power only
+ANSWER: b
+
+668. How can the APU be started on the ground?
+a) Only using external power
+b) Only using battery power
+c) Using battery power or external power supply
+d) Only when connected to a GPU
+ANSWER: c
+
+669. According to the passage, how long must the crew wait after three unsuccessful APU start attempts?
+a) 30 minutes
+b) 45 minutes
+c) At least one hour
+d) Two hours
+ANSWER: c
+
+670. Which of the following APU maintenance tasks is mentioned in the passage?
+a) Turbine blade replacement
+b) Regular oil changes, filter replacements, and exhaust system inspection
+c) Fuel nozzle cleaning only
+d) Compressor wash
+ANSWER: b
+
+--- METİN 15: AIRCRAFT MAINTENANCE CHECK CATEGORIES ---
+"Aircraft maintenance checks are categorized into different levels of inspection. The 'A check' is performed approximately every 400-600 flight hours and involves inspections of accessible items, lubrication, and minor repairs. The 'C check' is a more detailed inspection performed every 20-24 months and involves complete inspection of all aircraft systems. The 'D check' or heavy maintenance visit is the most comprehensive inspection performed every 6-12 years, during which the aircraft is virtually disassembled for a thorough examination. The interval between checks varies by aircraft type and the operator's approved maintenance program."
+
+671. What does the A check involve?
+a) Complete disassembly of the aircraft
+b) Inspections of accessible items, lubrication, and minor repairs
+c) Replacement of all major components
+d) Engine overhaul only
+ANSWER: b
+
+672. How often is the C check typically performed?
+a) Every 400-600 flight hours
+b) Every 6-12 years
+c) Every 20-24 months
+d) Every 1000 flight hours
+ANSWER: c
+
+673. What is another name for the D check?
+a) Overhaul check
+b) Major service
+c) Heavy maintenance visit
+d) Complete inspection
+ANSWER: c
+
+674. How often is the D check performed?
+a) Every 6 months
+b) Every 20-24 months
+c) Every 6-12 years
+d) Every 3 years
+ANSWER: c
+
+675. According to the passage, what determines the interval between checks?
+a) The airline's preference
+b) Aircraft type and the operator's approved maintenance program
+c) The age of the aircraft only
+d) The number of flight cycles
+ANSWER: b
+
+--- METİN 16: ENGINE OIL SYSTEM ---
+"The engine oil system lubricates and cools the engine bearings and gearbox components. The oil is stored in a reservoir and circulated by an engine-driven pump. Oil passes through a filter to remove contaminants before reaching the components. The scavenge system returns the oil from the sumps back to the reservoir after use. Oil temperature and pressure are continuously monitored and displayed on the cockpit instruments. Minimum oil pressure must be maintained at all times during engine operation. If oil pressure drops below the minimum, the engine should be shut down immediately."
+
+676. What is the main purpose of the engine oil system?
+a) To fuel the engine
+b) To lubricate and cool engine bearings and gearbox components
+c) To provide hydraulic pressure
+d) To clean the fuel system
+ANSWER: b
+
+677. What does the oil filter do?
+a) It heats the oil to operating temperature
+b) It removes contaminants from the oil
+c) It measures oil quantity
+d) It pressurizes the oil system
+ANSWER: b
+
+678. What is the function of the scavenge system?
+a) To pressurize the oil supply
+b) To filter the oil
+c) To return oil from the sumps to the reservoir
+d) To cool the oil before it enters the engine
+ANSWER: c
+
+679. What must be maintained at all times during engine operation?
+a) Maximum oil pressure
+b) Oil temperature below 80°C
+c) Minimum oil pressure
+d) Oil level at maximum
+ANSWER: c
+
+680. What should be done if oil pressure drops below the minimum?
+a) Reduce engine power
+b) Switch to the backup oil pump
+c) Shut down the engine immediately
+d) Add more oil to the reservoir
+ANSWER: c
+
+--- METİN 17: WEIGHT AND BALANCE ---
+"Aircraft weight and balance is a critical safety consideration. The total weight of the aircraft must not exceed the maximum takeoff weight (MTOW). The center of gravity (CG) must remain within the approved envelope for all phases of flight. An aircraft that is out of CG limits can become uncontrollable. The loadsheet is a document that records the weight and balance calculation for each flight. The dispatcher or load controller prepares the loadsheet using information about the empty aircraft weight, fuel, passengers, baggage, and cargo. The captain must review and accept the loadsheet before takeoff."
+
+681. What does MTOW stand for?
+a) Minimum Takeoff Weight
+b) Maximum Takeoff Weight
+c) Measured Total Operating Weight
+d) Maximum Total Operational Weight
+ANSWER: b
+
+682. What could happen if the aircraft CG is outside the approved limits?
+a) Fuel consumption increases
+b) The aircraft becomes noisy
+c) The aircraft can become uncontrollable
+d) The range is reduced
+ANSWER: c
+
+683. What is a loadsheet?
+a) A document for recording fuel orders
+b) A document recording the weight and balance calculation for each flight
+c) A maintenance record
+d) A passenger list
+ANSWER: b
+
+684. Who prepares the loadsheet?
+a) The captain
+b) The maintenance engineer
+c) The dispatcher or load controller
+d) The fueling agent
+ANSWER: c
+
+685. What must the captain do before takeoff regarding the loadsheet?
+a) Sign it without review
+b) Correct any errors
+c) Review and accept it
+d) File it with the authorities
+ANSWER: c
+
+--- METİN 18: AIRCRAFT ELECTRICAL SYSTEM ---
+"The aircraft electrical system generates, converts, and distributes electrical power to all the aircraft's systems. Power sources include engine-driven generators, the APU generator, and batteries. The electrical system operates on 115V AC and 28V DC. AC power is generated by the engine generators and converted to DC by transformer rectifier units (TRUs). The batteries provide backup power in the event of a complete generator failure. The electrical system is protected by circuit breakers that trip to prevent damage from overloads or short circuits. All electrical work must be carried out with the relevant circuit breakers open."
+
+686. What are the main power sources in the aircraft electrical system?
+a) Solar panels and batteries only
+b) Engine-driven generators, APU generator, and batteries
+c) External power supply only
+d) Fuel cells and generators
+ANSWER: b
+
+687. What voltages does the aircraft electrical system operate on?
+a) 24V DC and 110V AC
+b) 115V AC and 28V DC
+c) 220V AC and 12V DC
+d) 48V DC and 230V AC
+ANSWER: b
+
+688. What is the function of Transformer Rectifier Units (TRUs)?
+a) To increase AC voltage
+b) To store electrical energy
+c) To convert AC power to DC power
+d) To distribute power to the engines
+ANSWER: c
+
+689. What do circuit breakers do in the electrical system?
+a) They generate electrical power
+b) They store backup power
+c) They trip to prevent damage from overloads or short circuits
+d) They convert AC to DC power
+ANSWER: c
+
+690. What must be done before carrying out electrical work?
+a) The aircraft must be depressurized
+b) The relevant circuit breakers must be opened
+c) The engines must be running
+d) All personnel must leave the aircraft
+ANSWER: b
+
+--- METİN 19: PRESSURIZATION SYSTEM ---
+"Aircraft cabin pressurization maintains a comfortable and safe environment for passengers and crew at high altitudes. The pressurization system uses bleed air from the engines to pressurize the fuselage. A pressurization controller automatically regulates the cabin altitude and rate of climb and descent. The safety valve prevents the cabin pressure differential from exceeding structural limits. In the event of a pressurization failure, the oxygen masks will deploy automatically when the cabin altitude exceeds 14,000 feet. The pressurization system is continuously monitored, and any malfunction is indicated to the crew."
+
+691. What is the main source of air for the pressurization system?
+a) RAM air from outside the aircraft
+b) Compressed air tanks
+c) Bleed air from the engines
+d) The APU only
+ANSWER: c
+
+692. What does the pressurization controller regulate automatically?
+a) Fuel flow and engine temperature
+b) Cabin altitude and rate of climb and descent
+c) Engine speed and thrust
+d) Electrical power distribution
+ANSWER: b
+
+693. What is the function of the safety valve?
+a) To maintain constant cabin temperature
+b) To prevent the cabin pressure differential from exceeding structural limits
+c) To provide fresh air to the cabin
+d) To control the oxygen flow to masks
+ANSWER: b
+
+694. At what cabin altitude do oxygen masks deploy automatically?
+a) 10,000 feet
+b) 12,000 feet
+c) 14,000 feet
+d) 18,000 feet
+ANSWER: c
+
+695. What happens to the crew when there is a pressurization malfunction?
+a) The aircraft automatically descends
+b) The oxygen masks deploy
+c) The malfunction is indicated to the crew
+d) The pressurization is transferred to backup
+ANSWER: c
+
+--- METİN 20: AVIONICS COOLING SYSTEM ---
+"Avionics equipment generates heat during operation and must be kept within operating temperature limits to function correctly. The avionics cooling system uses forced air to cool the electronic equipment. On the ground, the cooling fans must operate whenever the avionics are powered. In flight, ram air also assists in cooling. If the cooling system fails, the avionics equipment may overheat and malfunction. Most aircraft have temperature sensors on critical avionics boxes that trigger warnings if cooling is inadequate. Regular inspection of the cooling fans, ducts, and filters is required as part of the maintenance program."
+
+696. Why must avionics equipment be cooled?
+a) To prevent condensation
+b) To maintain correct function within operating temperature limits
+c) To reduce electromagnetic interference
+d) To save electrical power
+ANSWER: b
+
+697. What does the avionics cooling system use to cool the equipment?
+a) Liquid coolant
+b) Engine oil
+c) Forced air
+d) Refrigerant gas
+ANSWER: c
+
+698. When must the cooling fans operate on the ground?
+a) Only during engine start
+b) Whenever the avionics are powered
+c) Only in hot weather
+d) Only when the APU is running
+ANSWER: b
+
+699. What assists cooling in flight in addition to the fans?
+a) The air conditioning packs
+b) Ram air
+c) Hydraulic fluid
+d) The pressurization system
+ANSWER: b
+
+700. What triggers warnings related to avionics cooling?
+a) The flight management computer
+b) The central maintenance system
+c) Temperature sensors on critical avionics boxes
+d) The crew's visual inspection
+ANSWER: c
+
+--- METİN 21: NON-DESTRUCTIVE TESTING ---
+"Non-Destructive Testing (NDT) is used to inspect aircraft structures and components without causing damage. Common NDT methods used in aviation include visual inspection, eddy current testing, ultrasonic testing, radiographic testing, and magnetic particle inspection. Eddy current testing is particularly effective for detecting surface and sub-surface cracks in conductive materials. Ultrasonic testing uses sound waves to detect internal flaws in materials. Radiographic testing uses X-rays to reveal internal defects. All NDT methods require properly certified inspectors and calibrated equipment to produce reliable results."
+
+701. What is the main advantage of NDT?
+a) It is faster than other inspection methods
+b) It inspects components without causing damage
+c) It requires no special equipment
+d) It can be done by uncertified personnel
+ANSWER: b
+
+702. Which NDT method is particularly effective for detecting surface and sub-surface cracks in conductive materials?
+a) Visual inspection
+b) Ultrasonic testing
+c) Eddy current testing
+d) Magnetic particle inspection
+ANSWER: c
+
+703. What does ultrasonic testing use?
+a) X-rays
+b) Sound waves
+c) Electromagnetic fields
+d) Chemical reactions
+ANSWER: b
+
+704. Which NDT method uses X-rays?
+a) Visual inspection
+b) Eddy current testing
+c) Magnetic particle inspection
+d) Radiographic testing
+ANSWER: d
+
+705. What is required for all NDT methods to produce reliable results?
+a) Specialized software
+b) New equipment for each inspection
+c) Properly certified inspectors and calibrated equipment
+d) Complete disassembly of the component
+ANSWER: c
+
+--- METİN 22: FUEL SYSTEM COMPONENTS ---
+"The aircraft fuel system stores and delivers fuel to the engines and APU. The system consists of fuel tanks in the wings and center fuselage, fuel pumps, fuel control valves, crossfeed valves, fuel quantity gauging system, and fueling/defueling connections. Center of gravity fuel management is achieved by transferring fuel between tanks. Fuel is normally fed to each engine from the corresponding wing tank. In case of low fuel pressure, the standby pumps automatically activate. Fuel temperature at the engine inlet must be monitored to prevent fuel freezing."
+
+706. Where are the fuel tanks located?
+a) Only in the wings
+b) Only in the fuselage
+c) In the wings and center fuselage
+d) In the tail section and wings
+ANSWER: c
+
+707. How is center of gravity fuel management achieved?
+a) By jettisoning fuel
+b) By transferring fuel between tanks
+c) By adjusting fuel flow to engines
+d) By varying fuel pump speed
+ANSWER: b
+
+708. How is fuel normally fed to each engine?
+a) From the center fuselage tank
+b) From the corresponding wing tank
+c) Equally from all tanks
+d) From the largest available tank
+ANSWER: b
+
+709. When do the standby pumps activate automatically?
+a) During takeoff only
+b) When external power is connected
+c) In case of low fuel pressure
+d) When the center tank is empty
+ANSWER: c
+
+710. What must be monitored to prevent fuel freezing?
+a) Fuel quantity at the wing tanks
+b) Fuel temperature at the engine inlet
+c) Fuel pressure at the pumps
+d) Fuel flow rate to the APU
+ANSWER: b
+
+--- METİN 23: FLIGHT CONTROL SYSTEMS ---
+"The flight control system allows the pilots to maneuver the aircraft in all three axes. Primary flight controls include ailerons (roll), elevators (pitch), and rudder (yaw). Secondary controls include flaps, slats, spoilers, and speed brakes. On modern fly-by-wire aircraft, control inputs from the pilots are sent electronically to flight control computers, which then command actuators to move the control surfaces. Before flight, a full and free movement check of all flight control surfaces must be performed. Maintenance personnel must never operate the flight controls when technicians are working on them unless a clear all-clear signal has been given."
+
+711. What do ailerons control?
+a) Pitch
+b) Yaw
+c) Roll
+d) Speed
+ANSWER: c
+
+712. Which of the following is a secondary flight control?
+a) Aileron
+b) Elevator
+c) Rudder
+d) Flap
+ANSWER: d
+
+713. How do fly-by-wire systems transmit pilot inputs?
+a) Through mechanical cables
+b) Through hydraulic lines
+c) Electronically to flight control computers
+d) Through pneumatic tubes
+ANSWER: c
+
+714. What check must be performed before flight?
+a) Engine oil level check
+b) Full and free movement check of all flight control surfaces
+c) Passenger weight check
+d) Fuel temperature check
+ANSWER: b
+
+715. According to the passage, when must flight controls not be operated by maintenance personnel?
+a) Never, under any circumstances
+b) Only during engine ground runs
+c) When technicians are working on them without an all-clear signal
+d) During cold weather conditions
+ANSWER: c
+
+--- METİN 24: AIRCRAFT TYRE MAINTENANCE ---
+"Aircraft tyres are critical components that support the full weight of the aircraft on the ground. Tyres must be maintained at the correct inflation pressure. Under-inflation increases tyre wear and generates excessive heat during high-speed ground operations. Over-inflation reduces the tyre contact area and can cause premature failure. Tyre pressure must be checked with the aircraft unloaded (jacked up) and with the tyre at ambient temperature, as the pressure changes with temperature and under load. Tyres must be inspected for cuts, bulges, and excessive wear before each flight. When wear indicators reach their limit, the tyre must be replaced."
+
+716. What happens when a tyre is under-inflated?
+a) It lasts longer
+b) It creates less heat
+c) It increases tyre wear and generates excessive heat
+d) It reduces friction during landing
+ANSWER: c
+
+717. Why does over-inflation cause problems?
+a) It makes the tyre too soft
+b) It reduces the tyre contact area and can cause premature failure
+c) It increases the rolling resistance
+d) It causes uneven tyre wear
+ANSWER: b
+
+718. When should tyre pressure be checked?
+a) With the aircraft fully loaded
+b) During a hot day only
+c) With the aircraft jacked up and tyre at ambient temperature
+d) Just before takeoff
+ANSWER: c
+
+719. What should be inspected on tyres before each flight?
+a) Tyre brand and manufacturing date
+b) Cuts, bulges, and excessive wear
+c) Tyre weight and volume
+d) Internal air composition
+ANSWER: b
+
+720. When must a tyre be replaced?
+a) Every 100 landings
+b) When the tread color changes
+c) When wear indicators reach their limit
+d) After every 500 hours of operation
+ANSWER: c
+
+--- METİN 25: BATTERY MAINTENANCE ---
+"Aircraft batteries are used for engine starting and as a backup power source during electrical emergencies. Lead-acid and nickel-cadmium (NiCd) batteries are commonly used. Lead-acid batteries can produce explosive mixtures of hydrogen and oxygen during charging and discharging, which can ignite if a spark is present. Batteries must be checked regularly for charge capacity, electrolyte level, and condition of the terminals. If the battery remains connected to the aircraft for extended periods without charge, deep discharge can occur and permanently damage the battery. Batteries must be stored in well-ventilated areas away from heat sources."
+
+721. What are the two common types of aircraft batteries mentioned?
+a) Lithium and lead-acid
+b) Lead-acid and nickel-cadmium
+c) NiMH and lead-acid
+d) Lithium-ion and NiCd
+ANSWER: b
+
+722. What dangerous gases can lead-acid batteries produce during charging?
+a) Carbon dioxide and nitrogen
+b) Oxygen and carbon monoxide
+c) Explosive mixtures of hydrogen and oxygen
+d) Hydrogen sulfide and oxygen
+ANSWER: c
+
+723. What can cause the dangerous gases from lead-acid batteries to ignite?
+a) High humidity
+b) Low temperature
+c) A spark
+d) Excessive vibration
+ANSWER: c
+
+724. What damage can result from deep discharge of a battery?
+a) Electrical system overload
+b) Permanent damage to the battery
+c) Corrosion of the aircraft structure
+d) Malfunction of the charging system
+ANSWER: b
+
+725. Where must batteries be stored?
+a) In sealed, airtight containers
+b) In the cockpit overhead compartment
+c) In well-ventilated areas away from heat sources
+d) In the refrigerated section of the hangar
+ANSWER: c
+
+--- METİN 26: MAINTENANCE DOCUMENTATION ---
+"Accurate and complete maintenance documentation is a legal requirement and a safety necessity. After each maintenance task, the technician must make an entry in the aircraft technical log, describing the work performed, the part numbers of replaced items, and the time taken. The certifying engineer or authorized technician must sign off the work. All maintenance data, including manuals, service bulletins, airworthiness directives, and engineering orders, must be current and accessible in the maintenance facility. Any defect found but not repaired must be deferred in accordance with the operator's minimum equipment list (MEL). The aircraft cannot be released to service with any un-deferred open items."
+
+726. After each maintenance task, what must be made in the aircraft technical log?
+a) A sketch of the repaired area
+b) An entry describing the work performed, part numbers, and time taken
+c) Only the time taken for the task
+d) The certification number of the engineer
+ANSWER: b
+
+727. Who must sign off the maintenance work?
+a) The captain
+b) The maintenance manager
+c) The certifying engineer or authorized technician
+d) The quality department
+ANSWER: c
+
+728. What types of maintenance data must be current?
+a) Manuals only
+b) Only airworthiness directives
+c) Manuals, service bulletins, airworthiness directives, and engineering orders
+d) Maintenance manuals and MEL only
+ANSWER: c
+
+729. What must be done with a defect that cannot be repaired immediately?
+a) The aircraft must be grounded
+b) It must be deferred in accordance with the MEL
+c) It must be reported to the regulatory authority
+d) It must be repaired before next flight in all cases
+ANSWER: b
+
+730. When can an aircraft be released to service?
+a) After all tasks are complete and signed off
+b) When no un-deferred open items remain
+c) After the captain's approval
+d) Only after ground operations are approved
+ANSWER: b
+
+--- METİN 27: SAFETY PRECAUTIONS IN MAINTENANCE ---
+"Aircraft maintenance involves many hazards that must be controlled. Working at height requires the use of approved access platforms and fall protection equipment. Chemicals such as hydraulic fluid, fuel, and cleaning agents can cause burns, skin irritation, and eye damage. Personal protective equipment (PPE) including gloves, safety glasses, and protective clothing must be worn. Noise levels in the hangar can exceed safe limits, requiring hearing protection. Adequate lighting must be provided in all work areas. All tools used during maintenance must be accounted for and removed from the aircraft before it is returned to service. A tool control program is essential to prevent foreign object damage (FOD)."
+
+731. What is required when working at height?
+a) A safety net below the aircraft
+b) Approved access platforms and fall protection equipment
+c) Two people working at all times
+d) Special tools with non-slip grips
+ANSWER: b
+
+732. Which of the following can cause burns and eye damage?
+a) Hydraulic fluid, fuel, and cleaning agents
+b) Lubrication grease only
+c) Oxygen and nitrogen
+d) Composite dust only
+ANSWER: a
+
+733. What PPE must be worn according to the passage?
+a) Fireproof suit only
+b) Safety boots only
+c) Gloves, safety glasses, and protective clothing
+d) Hard hat and high-visibility vest only
+ANSWER: c
+
+734. Why is hearing protection required in the hangar?
+a) To prevent distraction
+b) Because noise levels can exceed safe limits
+c) During all maintenance activities
+d) Because communication radios can interfere
+ANSWER: b
+
+735. What is the purpose of a tool control program?
+a) To reduce tool costs
+b) To prevent foreign object damage (FOD)
+c) To ensure tools are calibrated
+d) To track tool usage by technicians
+ANSWER: b
+
+--- METİN 28: ENGINE TURBINE SECTION ---
+"The turbine section of a gas turbine engine extracts energy from the hot, high-pressure gas stream produced by the combustion process. The turbine blades rotate at extremely high speeds and temperatures, making them one of the most highly stressed components in the engine. High-pressure (HP) turbine stages are the first to receive the hot gases from the combustion chamber. Low-pressure (LP) turbine stages follow and extract more energy from the gas. Regular borescope inspections of the turbine section are required to detect cracks, erosion, and tip rubs. Turbine blades have a finite life limit measured in flight cycles."
+
+736. What is the function of the turbine section?
+a) To compress incoming air
+b) To extract energy from hot high-pressure gas
+c) To mix fuel with air
+d) To cool the engine
+ANSWER: b
+
+737. Why are turbine blades considered highly stressed components?
+a) They are made of brittle materials
+b) They rotate at extremely high speeds and temperatures
+c) They are located near the fuel nozzles
+d) They must support the weight of the engine
+ANSWER: b
+
+738. Which turbine stages receive the hot gases first?
+a) LP turbine stages
+b) Both HP and LP simultaneously
+c) HP turbine stages
+d) The intermediate pressure stages
+ANSWER: c
+
+739. What type of inspection is used to detect cracks and erosion in the turbine section?
+a) X-ray inspection
+b) Borescope inspection
+c) Ultrasonic testing
+d) Magnetic particle inspection
+ANSWER: b
+
+740. How is turbine blade life measured?
+a) In operating hours only
+b) In distance traveled
+c) In flight cycles
+d) In number of engine starts
+ANSWER: c
+
+--- METİN 29: COMPOSITE STRUCTURE REPAIR ---
+"Composite materials are increasingly used in modern aircraft structures due to their high strength-to-weight ratio. Common composite materials include carbon fiber reinforced polymer (CFRP) and glass fiber reinforced polymer (GFRP). Damage to composite structures can include delamination, debonding, impact damage, and moisture ingress. Repairs must be carried out strictly in accordance with the Structural Repair Manual (SRM). Improper repairs can reduce the structural strength of the aircraft. Prior to repair, the damage must be assessed and categorized. Most composite repairs involve removing the damaged area, preparing the surface, and applying repair plies in the correct sequence and orientation."
+
+741. Why are composite materials used in modern aircraft?
+a) Because they are cheaper than metals
+b) Because of their high strength-to-weight ratio
+c) Because they are easier to repair
+d) Because they resist corrosion better than all metals
+ANSWER: b
+
+742. Which of the following is NOT listed as damage to composite structures?
+a) Delamination
+b) Corrosion pitting
+c) Debonding
+d) Moisture ingress
+ANSWER: b
+
+743. What must composite repairs follow?
+a) The aircraft manufacturer's training materials
+b) The Structural Repair Manual (SRM)
+c) The technician's judgment
+d) Any approved repair procedure
+ANSWER: b
+
+744. What can result from improper composite repairs?
+a) Increased maintenance costs
+b) Reduction in structural strength
+c) Cosmetic defects only
+d) Electrical system interference
+ANSWER: b
+
+745. What does the composite repair process generally involve?
+a) Replacing the entire panel
+b) Applying a surface coating only
+c) Removing damaged area, preparing the surface, and applying repair plies
+d) Welding the damaged area
+ANSWER: c
+
+--- METİN 30: TASK CARDS AND WORK ORDERS ---
+"Maintenance task cards are detailed written instructions for performing specific maintenance tasks. Each task card specifies the tools required, materials needed, safety precautions, and step-by-step instructions. Work orders are documents that authorize maintenance to be carried out. A work order may contain one or more task cards. The technician must sign each task card upon completion to certify that the work was performed correctly. The inspector must verify the work and co-sign when required. Any deviation from the task card must be recorded and referred to engineering for approval. Task cards must be retained as part of the aircraft maintenance records for the specified period."
+
+746. What does a task card specify?
+a) Only the estimated completion time
+b) Tools required, materials, safety precautions, and step-by-step instructions
+c) The name of the authorized technician
+d) The cost of the maintenance task
+ANSWER: b
+
+747. What is a work order?
+a) A document that authorizes maintenance to be carried out
+b) A list of spare parts needed
+c) A quality audit document
+d) A record of previous maintenance
+ANSWER: a
+
+748. What must the technician do upon completing a task card?
+a) Submit it to the maintenance manager
+b) Discard it after copying the information
+c) Sign it to certify the work was done correctly
+d) Return it to the planning department
+ANSWER: c
+
+749. What must be done with any deviation from a task card?
+a) It can be ignored if the work is complete
+b) It must be recorded and referred to engineering for approval
+c) It automatically invalidates the work order
+d) The aircraft must be grounded
+ANSWER: b
+
+750. For how long must task cards be retained?
+a) Until the next maintenance check
+b) For one year only
+c) For the specified period as part of maintenance records
+d) Until the aircraft is retired
+ANSWER: c
+
+================================================================
+CEVAP ANAHTARI - BÖLÜM 4: PARAGRAF
+================================================================
+601-b 602-c 603-c 604-c 605-d 606-b 607-c 608-c 609-b 610-c
+611-b 612-b 613-c 614-c 615-b 616-b 617-c 618-c 619-c 620-c
+621-b 622-c 623-d 624-b 625-c 626-c 627-b 628-c 629-c 630-c
+631-b 632-c 633-c 634-b 635-b 636-b 637-c 638-c 639-b 640-c
+641-b 642-b 643-c 644-c 645-b 646-b 647-c 648-b 649-b 650-c
+651-c 652-b 653-c 654-c 655-b 656-b 657-c 658-b 659-c 660-b
+661-b 662-c 663-b 664-b 665-a 666-c 667-b 668-c 669-c 670-b
+671-b 672-c 673-c 674-c 675-b 676-b 677-b 678-c 679-c 680-c
+681-b 682-c 683-b 684-c 685-c 686-b 687-b 688-c 689-c 690-b
+691-c 692-b 693-b 694-c 695-c 696-b 697-c 698-b 699-b 700-c
+701-b 702-c 703-b 704-d 705-c 706-c 707-b 708-b 709-c 710-b
+711-c 712-d 713-c 714-b 715-c 716-c 717-b 718-c 719-b 720-c
+721-b 722-c 723-c 724-b 725-c 726-b 727-c 728-c 729-b 730-b
+731-b 732-a 733-c 734-b 735-b 736-b 737-b 738-c 739-b 740-c
+741-b 742-b 743-b 744-b 745-c 746-b 747-a 748-c 749-b 750-c
