@@ -1,31 +1,20 @@
-name: Deploy to GitHub Pages
+name: Build & Deploy to Netlify
 
 on:
   push:
     branches: [master]
-  workflow_dispatch:
-
-permissions:
-  contents: read
-  pages: write
-  id-token: write
-
-concurrency:
-  group: pages
-  cancel-in-progress: true
 
 jobs:
   deploy:
     runs-on: ubuntu-latest
-    environment:
-      name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
+
     steps:
       - uses: actions/checkout@v4
 
-      - uses: subosito/flutter-action@v2
+      - name: Setup Flutter
+        uses: subosito/flutter-action@v2
         with:
-          flutter-version: '3.35.6'
+          flutter-version: '3.32.0'
           channel: 'stable'
           cache: true
 
@@ -33,13 +22,15 @@ jobs:
         run: flutter pub get
 
       - name: Build web
-        run: flutter build web --release --no-tree-shake-icons --base-href /fliq/
+        run: flutter build web --release --no-tree-shake-icons
 
-      - uses: actions/configure-pages@v4
-
-      - uses: actions/upload-pages-artifact@v3
+      - name: Deploy to Netlify
+        uses: nwtgck/actions-netlify@v3
         with:
-          path: build/web
-
-      - uses: actions/deploy-pages@v4
-        id: deployment
+          publish-dir: build/web
+          production-deploy: true
+          github-token: ${{ secrets.GITHUB_TOKEN }}
+          deploy-message: ${{ github.event.head_commit.message }}
+        env:
+          NETLIFY_AUTH_TOKEN: ${{ secrets.NETLIFY_AUTH_TOKEN }}
+          NETLIFY_SITE_ID: ${{ secrets.NETLIFY_SITE_ID }}
