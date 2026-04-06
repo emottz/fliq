@@ -139,10 +139,12 @@ class LessonListScreen extends ConsumerWidget {
       if (minLevel != lastGroupLevel) {
         lastGroupLevel = minLevel;
         final groupInfo = _levelGroups.firstWhere((g) => g.$1 == minLevel);
+        final isGroupLocked = userLevel.index < minLevel.index;
         widgets.add(_LevelSectionHeader(
-          emoji: groupInfo.$2,
-          label: groupInfo.$3,
+          emoji: groupInfo.$3,
+          label: groupInfo.$2,
           color: groupInfo.$4,
+          isLocked: isGroupLocked,
         ));
       }
 
@@ -255,28 +257,63 @@ class _LevelSectionHeader extends StatelessWidget {
   final String emoji;
   final String label;
   final Color color;
+  final bool isLocked;
 
-  const _LevelSectionHeader({required this.emoji, required this.label, required this.color});
+  const _LevelSectionHeader({
+    required this.emoji,
+    required this.label,
+    required this.color,
+    this.isLocked = false,
+  });
 
   @override
   Widget build(BuildContext context) {
+    final effectiveColor = isLocked ? AppColors.textHint : color;
     return Padding(
       padding: const EdgeInsets.only(top: 24, bottom: 8),
-      child: Row(
+      child: Column(
+        crossAxisAlignment: CrossAxisAlignment.start,
         children: [
-          Text(emoji, style: const TextStyle(fontSize: 18)),
-          const SizedBox(width: 8),
-          Text(
-            label,
-            style: TextStyle(
-              fontSize: 13,
-              fontWeight: FontWeight.w700,
-              color: color,
-              letterSpacing: 0.5,
-            ),
+          Row(
+            children: [
+              Text(
+                isLocked ? '🔒' : emoji,
+                style: const TextStyle(fontSize: 18),
+              ),
+              const SizedBox(width: 8),
+              Text(
+                label,
+                style: TextStyle(
+                  fontSize: 13,
+                  fontWeight: FontWeight.w700,
+                  color: effectiveColor,
+                  letterSpacing: 0.5,
+                ),
+              ),
+              const SizedBox(width: 10),
+              Expanded(
+                child: Divider(color: effectiveColor.withOpacity(0.3), thickness: 1),
+              ),
+              if (isLocked) ...[
+                const SizedBox(width: 8),
+                Container(
+                  padding: const EdgeInsets.symmetric(horizontal: 8, vertical: 3),
+                  decoration: BoxDecoration(
+                    color: AppColors.surfaceVariant,
+                    borderRadius: BorderRadius.circular(8),
+                  ),
+                  child: Text(
+                    '$label seviyesi gerekli',
+                    style: const TextStyle(
+                      fontSize: 10,
+                      fontWeight: FontWeight.w500,
+                      color: AppColors.textHint,
+                    ),
+                  ),
+                ),
+              ],
+            ],
           ),
-          const SizedBox(width: 10),
-          Expanded(child: Divider(color: color.withOpacity(0.3), thickness: 1)),
         ],
       ),
     );

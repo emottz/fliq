@@ -4,6 +4,7 @@ import '../../../core/constants/app_colors.dart';
 import '../../../core/constants/app_text_styles.dart';
 import '../../../core/models/ai_analysis_result.dart';
 import '../../../core/services/ai_analysis_service.dart';
+import '../../../data/lessons/lesson_content_data.dart';
 import '../../../data/models/question_model.dart';
 import '../../../data/models/user_profile_model.dart';
 import '../../../shared/widgets/primary_button.dart';
@@ -133,6 +134,95 @@ class _AssessmentAnalysisScreenState extends State<AssessmentAnalysisScreen>
         'cabin_crew' => 'Cabin Crew',
         _ => 'Aviation Student',
       };
+
+  // ── Lesson recommendation map ─────────────────────────────────────────────
+  // Each entry: (lessonId, minLevelIndex)  0=beginner 1=elementary 2=intermediate 3=advanced
+  static const _lessonsByCategory = {
+    'grammar': [
+      ('grammar_1', 0), ('grammar_2', 0), ('grammar_5', 0),
+      ('grammar_3', 1), ('grammar_4', 2), ('grammar_6', 2), ('grammar_7', 3),
+    ],
+    'vocabulary': [
+      ('vocab_1', 0), ('vocab_3', 0), ('vocab_4', 0),
+      ('vocab_2', 1), ('vocab_5', 1),
+      ('vocab_6', 2), ('vocab_7', 3),
+    ],
+    'translation': [
+      ('translation_1', 1), ('translation_2', 1),
+      ('translation_3', 2), ('translation_4', 3),
+    ],
+    'reading': [
+      ('reading_3', 1),
+      ('reading_1', 2), ('reading_4', 2),
+      ('reading_2', 3), ('reading_5', 3), ('reading_6', 3),
+    ],
+    'fill_blanks': [
+      ('fill_1', 0), ('fill_2', 0),
+      ('fill_3', 1), ('fill_4', 2), ('fill_5', 3),
+    ],
+    'sentence_completion': [
+      ('completion_1', 2), ('completion_3', 3), ('completion_2', 3),
+    ],
+  };
+
+  Widget _buildRecommendedLessons() {
+    final userLevelIdx = widget.level.index;
+    final recs = <({String id, String catLabel, double score})>[];
+
+    for (final cat in QuestionCategory.values) {
+      final data = widget.categoryResults[cat.id];
+      final correct = data?['correct'] ?? 0;
+      final total = data?['total'] ?? 0;
+      if (total == 0) continue;
+      final ratio = correct / total;
+      if (ratio >= 0.6) continue; // no recommendation needed
+
+      final allLessons = _lessonsByCategory[cat.id] ?? [];
+      // pick up to 2 lessons at or below user level, highest level first
+      final suitable = allLessons
+          .where((l) => l.$2 <= userLevelIdx)
+          .toList()
+          .reversed
+          .take(2)
+          .toList();
+
+      for (final l in suitable) {
+        recs.add((id: l.$1, catLabel: cat.displayName, score: ratio));
+      }
+    }
+
+    if (recs.isEmpty) return const SizedBox.shrink();
+
+    return Column(
+      crossAxisAlignment: CrossAxisAlignment.start,
+      children: [
+        const SizedBox(height: 24),
+        Row(
+          children: const [
+            Icon(Icons.school_outlined, color: AppColors.primary, size: 16),
+            SizedBox(width: 8),
+            Text('Senin İçin Hazırlanan Dersler', style: AppTextStyles.heading3),
+          ],
+        ),
+        const SizedBox(height: 4),
+        const Text(
+          'Eksik kaldığın konular baz alınarak bu dersler eklendi.',
+          style: AppTextStyles.caption,
+        ),
+        const SizedBox(height: 12),
+        ...recs.take(5).map((r) {
+          final lesson = LessonContentData.findById(r.id);
+          if (lesson == null) return const SizedBox.shrink();
+          return _RecommendedLessonCard(
+            emoji: lesson.emoji,
+            title: lesson.title,
+            categoryLabel: r.catLabel,
+            score: r.score,
+          );
+        }),
+      ],
+    );
+  }
 
   IconData _categoryIcon(QuestionCategory cat) => switch (cat) {
         QuestionCategory.grammar => Icons.spellcheck_outlined,
@@ -410,6 +500,9 @@ class _AssessmentAnalysisScreenState extends State<AssessmentAnalysisScreen>
               ...result.focusAreas.map((area) => _FocusAreaCard(area: area)),
             ],
 
+            // Recommended Lessons
+            _buildRecommendedLessons(),
+
             // Study Tips
             if (result.studyTips.isNotEmpty) ...[
               const SizedBox(height: 24),
@@ -438,6 +531,90 @@ class _AssessmentAnalysisScreenState extends State<AssessmentAnalysisScreen>
             const SizedBox(height: 16),
           ],
         ),
+      ),
+    );
+  }
+}
+
+// ── Recommended lesson card ───────────────────────────────────────────────────
+
+class _RecommendedLessonCard extends StatelessWidget {
+  final String emoji;
+  final String title;
+  final String categoryLabel;
+  final double score;
+
+  const _RecommendedLessonCard({
+    required this.emoji,
+    required this.title,
+    required this.categoryLabel,
+    required this.score,
+  });
+
+  @override
+  Widget build(BuildContext context) {
+    final pct = (score * 100).round();
+    final isLow = score < 0.4;
+
+    return Container(
+      margin: const EdgeInsets.only(bottom: 10),
+      padding: const EdgeInsets.all(14),
+      decoration: BoxDecoration(
+        color: AppColors.surface,
+        borderRadius: BorderRadius.circular(14),
+        border: Border.all(color: AppColors.divider),
+      ),
+      child: Row(
+        children: [
+          Container(
+            width: 46,
+            height: 46,
+            decoration: BoxDecoration(
+              color: AppColors.surfaceVariant,
+              borderRadius: BorderRadius.circular(12),
+            ),
+            child: Center(child: Text(emoji, style: const TextStyle(fontSize: 22))),
+          ),
+          const SizedBox(width: 12),
+          Expanded(
+            child: Column(
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: [
+                Text(title, style: AppTextStyles.bodyBold),
+                const SizedBox(height: 5),
+                Row(
+                  children: [
+                    Container(
+                      padding: const EdgeInsets.symmetric(horizontal: 7, vertical: 2),
+                      decoration: BoxDecoration(
+                        color: isLow ? const Color(0xFFFFF7ED) : const Color(0xFFFEF9C3),
+                        borderRadius: BorderRadius.circular(6),
+                      ),
+                      child: Text(
+                        '$categoryLabel • %$pct',
+                        style: TextStyle(
+                          fontSize: 11,
+                          fontWeight: FontWeight.w600,
+                          color: isLow ? const Color(0xFFEA580C) : const Color(0xFF92400E),
+                        ),
+                      ),
+                    ),
+                    const SizedBox(width: 6),
+                    const Flexible(
+                      child: Text(
+                        'Bu konuda eksik kaldın',
+                        style: TextStyle(fontSize: 11, color: AppColors.textHint),
+                        overflow: TextOverflow.ellipsis,
+                      ),
+                    ),
+                  ],
+                ),
+              ],
+            ),
+          ),
+          const SizedBox(width: 8),
+          const Icon(Icons.arrow_forward_ios_rounded, size: 13, color: AppColors.textHint),
+        ],
       ),
     );
   }
