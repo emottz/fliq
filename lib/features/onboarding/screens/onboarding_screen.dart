@@ -5,7 +5,6 @@ import '../../../core/constants/app_colors.dart';
 import '../../../core/constants/app_text_styles.dart';
 import '../../../data/models/user_profile_model.dart';
 import '../../../shared/providers/app_providers.dart';
-import '../../../shared/widgets/airplane_logo.dart';
 import '../../../shared/widgets/primary_button.dart';
 
 class OnboardingScreen extends ConsumerStatefulWidget {
@@ -15,27 +14,87 @@ class OnboardingScreen extends ConsumerStatefulWidget {
   ConsumerState<OnboardingScreen> createState() => _OnboardingScreenState();
 }
 
-class _OnboardingScreenState extends ConsumerState<OnboardingScreen> {
+class _OnboardingScreenState extends ConsumerState<OnboardingScreen>
+    with SingleTickerProviderStateMixin {
   int _step = 0;
-  String _role = 'student';
-  int _experienceYears = 0;
-  DateTime? _targetDate;
   bool _saving = false;
+  late AnimationController _slideCtrl;
+  late Animation<Offset> _slideAnim;
 
-  void _next() {
+  // Step 1 — Kim olduğun
+  String _licenseLevel = '';
+  String _flightHours = '';
+  String _nativeLanguage = '';
+
+  // Step 2 — Nerede olduğun
+  String _englishLevel = '';
+  String _icaoLevel = '';
+  String _examTimeline = '';
+
+  // Step 3 — Ne istediğin
+  String _hardestArea = '';
+  String _flyingEnvironment = '';
+  String _aircraftType = '';
+  String _dailyTime = '';
+
+  @override
+  void initState() {
+    super.initState();
+    _slideCtrl = AnimationController(
+      vsync: this,
+      duration: const Duration(milliseconds: 350),
+    );
+    _slideAnim = Tween<Offset>(
+      begin: const Offset(1, 0),
+      end: Offset.zero,
+    ).animate(CurvedAnimation(parent: _slideCtrl, curve: Curves.easeOut));
+    _slideCtrl.forward();
+  }
+
+  @override
+  void dispose() {
+    _slideCtrl.dispose();
+    super.dispose();
+  }
+
+  bool _canProceed() => switch (_step) {
+        0 => _licenseLevel.isNotEmpty &&
+            _flightHours.isNotEmpty &&
+            _nativeLanguage.isNotEmpty,
+        1 => _englishLevel.isNotEmpty &&
+            _icaoLevel.isNotEmpty &&
+            _examTimeline.isNotEmpty,
+        2 => _hardestArea.isNotEmpty &&
+            _flyingEnvironment.isNotEmpty &&
+            _aircraftType.isNotEmpty &&
+            _dailyTime.isNotEmpty,
+        _ => false,
+      };
+
+  Future<void> _next() async {
     if (_step < 2) {
+      _slideCtrl.reset();
       setState(() => _step++);
+      _slideCtrl.forward();
     } else {
-      _save();
+      await _save();
     }
   }
 
   Future<void> _save() async {
     setState(() => _saving = true);
     final profile = UserProfileModel(
-      role: _role,
-      experienceYears: _experienceYears,
-      targetExamDate: _targetDate,
+      role: 'pilot',
+      licenseLevel: _licenseLevel,
+      flightHours: _flightHours,
+      nativeLanguage: _nativeLanguage,
+      englishLevel: _englishLevel,
+      icaoLevel: _icaoLevel,
+      examTimeline: _examTimeline,
+      hardestArea: _hardestArea,
+      flyingEnvironment: _flyingEnvironment,
+      aircraftType: _aircraftType,
+      dailyTime: _dailyTime,
       level: ProficiencyLevel.beginner,
       totalXp: 0,
       streakDays: 0,
@@ -45,8 +104,15 @@ class _OnboardingScreenState extends ConsumerState<OnboardingScreen> {
     if (mounted) context.go('/assessment-intro');
   }
 
+  static const _steps = [
+    (emoji: '🧑‍✈️', title: 'Kim olduğun', sub: 'Temel kimlik bilgilerin'),
+    (emoji: '🌍', title: 'Nerede olduğun', sub: 'Mevcut dil durumun'),
+    (emoji: '🎯', title: 'Ne istediğin', sub: 'Hedef ve motivasyon'),
+  ];
+
   @override
   Widget build(BuildContext context) {
+    final step = _steps[_step];
     return Scaffold(
       backgroundColor: AppColors.background,
       body: SafeArea(
@@ -54,21 +120,107 @@ class _OnboardingScreenState extends ConsumerState<OnboardingScreen> {
           child: ConstrainedBox(
             constraints: const BoxConstraints(maxWidth: 480),
             child: Padding(
-              padding: const EdgeInsets.symmetric(horizontal: 24, vertical: 16),
+              padding: const EdgeInsets.fromLTRB(24, 20, 24, 16),
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
-                  const Center(child: AirplaneLogo()),
-                  const SizedBox(height: 32),
-                  _StepIndicator(current: _step, total: 3),
-                  const SizedBox(height: 28),
-                  Expanded(child: _buildStep()),
+                  // ── Header ──────────────────────────────────────
+                  Row(
+                    children: [
+                      // Logo mark
+                      Container(
+                        width: 36,
+                        height: 36,
+                        decoration: BoxDecoration(
+                          color: AppColors.primary,
+                          borderRadius: BorderRadius.circular(10),
+                        ),
+                        child: const Icon(Icons.flight,
+                            color: Colors.white, size: 20),
+                      ),
+                      const SizedBox(width: 10),
+                      const Text(
+                        'FLIQ',
+                        style: TextStyle(
+                          fontSize: 18,
+                          fontWeight: FontWeight.w800,
+                          color: AppColors.textPrimary,
+                          letterSpacing: 2,
+                        ),
+                      ),
+                      const Spacer(),
+                      Container(
+                        padding: const EdgeInsets.symmetric(
+                            horizontal: 12, vertical: 5),
+                        decoration: BoxDecoration(
+                          color: AppColors.surfaceVariant,
+                          borderRadius: BorderRadius.circular(20),
+                        ),
+                        child: Text(
+                          '${_step + 1} / 3 adım',
+                          style: const TextStyle(
+                            fontSize: 12,
+                            fontWeight: FontWeight.w600,
+                            color: AppColors.textSecondary,
+                          ),
+                        ),
+                      ),
+                    ],
+                  ),
+
                   const SizedBox(height: 16),
+
+                  // ── Progress bar ─────────────────────────────────
+                  Row(
+                    children: List.generate(3, (i) {
+                      return Expanded(
+                        child: AnimatedContainer(
+                          duration: const Duration(milliseconds: 300),
+                          margin: EdgeInsets.only(right: i < 2 ? 6 : 0),
+                          height: 4,
+                          decoration: BoxDecoration(
+                            color: i <= _step
+                                ? AppColors.primary
+                                : AppColors.divider,
+                            borderRadius: BorderRadius.circular(2),
+                          ),
+                        ),
+                      );
+                    }),
+                  ),
+
+                  const SizedBox(height: 24),
+
+                  // ── Step title ────────────────────────────────────
+                  Text(
+                    '${step.emoji}  ${step.title}',
+                    style: AppTextStyles.heading2,
+                  ),
+                  const SizedBox(height: 4),
+                  Text(step.sub, style: AppTextStyles.caption),
+
+                  const SizedBox(height: 20),
+
+                  // ── Questions ────────────────────────────────────
+                  Expanded(
+                    child: SlideTransition(
+                      position: _slideAnim,
+                      child: SingleChildScrollView(
+                        child: _buildStep(),
+                      ),
+                    ),
+                  ),
+
+                  const SizedBox(height: 12),
+
+                  // ── Continue button ──────────────────────────────
                   PrimaryButton(
-                    label: _step < 2 ? 'Continue' : 'Get Started',
+                    label: _step < 2 ? 'Devam Et →' : 'Başlayalım 🚀',
                     isLoading: _saving,
                     onPressed: _canProceed() ? _next : null,
                   ),
+
+                  const SizedBox(height: 4),
                 ],
               ),
             ),
@@ -78,24 +230,136 @@ class _OnboardingScreenState extends ConsumerState<OnboardingScreen> {
     );
   }
 
-  bool _canProceed() {
-    if (_step == 0) return _role.isNotEmpty;
-    return true;
-  }
-
   Widget _buildStep() {
     switch (_step) {
       case 0:
-        return _RoleStep(selected: _role, onSelect: (r) => setState(() => _role = r));
+        return _StepContent(
+          questions: [
+            _QuestionData(
+              label: 'Mevcut Lisans Seviyeni',
+              hint: 'ICAO gereksinimleri lisansa göre değişir',
+              options: const [
+                ('ppl_student', 'PPL Öğrencisi'),
+                ('cpl_student', 'CPL Öğrencisi'),
+                ('ppl_holder', 'PPL Sahibi (CPL hazırlığı)'),
+              ],
+              selected: _licenseLevel,
+              onSelect: (v) => setState(() => _licenseLevel = v),
+            ),
+            _QuestionData(
+              label: 'Toplam Uçuş Saati',
+              hint: 'Terim aşinalığı ve kelime zorluğu buna göre ayarlanır',
+              options: const [
+                ('0_50', '0 – 50 saat'),
+                ('50_200', '50 – 200 saat'),
+                ('200_plus', '200+ saat'),
+              ],
+              selected: _flightHours,
+              onSelect: (v) => setState(() => _flightHours = v),
+            ),
+            _QuestionData(
+              label: 'Ana Dilin',
+              hint: 'Hata kalıpları ana dile göre değişir',
+              options: const [
+                ('turkish', '🇹🇷  Türkçe'),
+                ('arabic', '🇸🇦  Arapça'),
+                ('other', '🌐  Diğer'),
+              ],
+              selected: _nativeLanguage,
+              onSelect: (v) => setState(() => _nativeLanguage = v),
+            ),
+          ],
+        );
       case 1:
-        return _ExperienceStep(
-          value: _experienceYears,
-          onChange: (v) => setState(() => _experienceYears = v),
+        return _StepContent(
+          questions: [
+            _QuestionData(
+              label: 'Genel İngilizce Seviyeni',
+              hint: 'ICAO skoru genel seviyeden bağımsız değil',
+              options: const [
+                ('a2', 'A2  Temel'),
+                ('b1', 'B1  Orta öncesi'),
+                ('b2', 'B2  Orta'),
+                ('c1', 'C1  İleri'),
+              ],
+              selected: _englishLevel,
+              onSelect: (v) => setState(() => _englishLevel = v),
+            ),
+            _QuestionData(
+              label: 'ICAO Dil Seviyesi',
+              hint: 'Daha önce resmi ICAO testi yaptırdın mı?',
+              options: const [
+                ('none', 'Test olmadım'),
+                ('level_3', 'Level 3'),
+                ('level_4', 'Level 4'),
+                ('level_5', 'Level 5+'),
+              ],
+              selected: _icaoLevel,
+              onSelect: (v) => setState(() => _icaoLevel = v),
+            ),
+            _QuestionData(
+              label: 'Test Tarihin Var mı?',
+              hint: 'İçerik yoğunluğu ve önceliklendirme buna göre şekillenir',
+              options: const [
+                ('not_planned', 'Planlamadım'),
+                ('6_months_plus', '6 ay+ var'),
+                ('6_months', '6 ay içinde'),
+                ('1_month', '1 ay içinde'),
+              ],
+              selected: _examTimeline,
+              onSelect: (v) => setState(() => _examTimeline = v),
+            ),
+          ],
         );
       case 2:
-        return _DateStep(
-          selected: _targetDate,
-          onSelect: (d) => setState(() => _targetDate = d),
+        return _StepContent(
+          questions: [
+            _QuestionData(
+              label: 'En Zor Bulduğun Alan',
+              hint: 'İlk ders planı buna göre şekillenir',
+              options: const [
+                ('phraseology', '📻  Phraseology'),
+                ('vocabulary', '📚  Kelime dağarcığı'),
+                ('listening', '🎧  Dinleme / Anlama'),
+                ('pronunciation', '🗣️  Telaffuz'),
+              ],
+              selected: _hardestArea,
+              onSelect: (v) => setState(() => _hardestArea = v),
+            ),
+            _QuestionData(
+              label: 'Uçuş / Simülatör Ortamın',
+              hint: 'Yurt içi ağırlıklıysa non-standard phraseology maruziyetin yüksek',
+              options: const [
+                ('domestic', '🏠  Yurt İçi'),
+                ('international', '🌍  Uluslararası'),
+                ('both', '↔️  Her İkisi'),
+              ],
+              selected: _flyingEnvironment,
+              onSelect: (v) => setState(() => _flyingEnvironment = v),
+            ),
+            _QuestionData(
+              label: 'Uçak Tipi / Kategorisi',
+              hint: 'Kelime setleri uçak tipine göre farklılaşır',
+              options: const [
+                ('sep', '🛩️  SEP (Single-engine)'),
+                ('multi', '✈️  Multi-engine'),
+                ('jet', '🚀  Jet (Type rating)'),
+              ],
+              selected: _aircraftType,
+              onSelect: (v) => setState(() => _aircraftType = v),
+            ),
+            _QuestionData(
+              label: 'Günlük Ayırabildiğin Süre',
+              hint: 'Session uzunluğu ve tekrar aralıkları buna göre optimize edilir',
+              options: const [
+                ('5_10', '⚡ 5 – 10 dk'),
+                ('15_20', '🔥 15 – 20 dk'),
+                ('30_plus', '🏆 30+ dk'),
+              ],
+              selected: _dailyTime,
+              onSelect: (v) => setState(() => _dailyTime = v),
+            ),
+          ],
         );
       default:
         return const SizedBox();
@@ -103,232 +367,103 @@ class _OnboardingScreenState extends ConsumerState<OnboardingScreen> {
   }
 }
 
-class _StepIndicator extends StatelessWidget {
-  final int current;
-  final int total;
-  const _StepIndicator({required this.current, required this.total});
+// ── Step content ──────────────────────────────────────────────────────────────
 
-  @override
-  Widget build(BuildContext context) {
-    return Row(
-      children: List.generate(total, (i) {
-        final active = i <= current;
-        return Expanded(
-          child: Container(
-            margin: EdgeInsets.only(right: i < total - 1 ? 6 : 0),
-            height: 4,
-            decoration: BoxDecoration(
-              color: active ? AppColors.primary : AppColors.divider,
-              borderRadius: BorderRadius.circular(2),
-            ),
-          ),
-        );
-      }),
-    );
-  }
-}
-
-class _RoleStep extends StatelessWidget {
+class _QuestionData {
+  final String label;
+  final String? hint;
+  final List<(String, String)> options;
   final String selected;
   final ValueChanged<String> onSelect;
-  const _RoleStep({required this.selected, required this.onSelect});
 
-  static const _roles = [
-    ('pilot', 'Pilot', Icons.flight),
-    ('atc', 'Air Traffic Controller', Icons.radar),
-    ('cabin_crew', 'Cabin Crew', Icons.airline_seat_recline_extra),
-    ('student', 'Student', Icons.school),
-  ];
+  const _QuestionData({
+    required this.label,
+    this.hint,
+    required this.options,
+    required this.selected,
+    required this.onSelect,
+  });
+}
+
+class _StepContent extends StatelessWidget {
+  final List<_QuestionData> questions;
+  const _StepContent({required this.questions});
 
   @override
   Widget build(BuildContext context) {
     return Column(
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
-        const Text('What is your role?', style: AppTextStyles.heading2),
+        for (int i = 0; i < questions.length; i++) ...[
+          if (i > 0) const SizedBox(height: 22),
+          _QuestionWidget(data: questions[i]),
+        ],
         const SizedBox(height: 8),
-        const Text('We\'ll personalize your learning path.', style: AppTextStyles.caption),
-        const SizedBox(height: 24),
-        Expanded(
-          child: GridView.count(
-            crossAxisCount: 2,
-            mainAxisSpacing: 12,
-            crossAxisSpacing: 12,
-            childAspectRatio: 1.1,
-            children: _roles.map((r) {
-              final isSelected = r.$1 == selected;
-              return GestureDetector(
-                onTap: () => onSelect(r.$1),
-                child: AnimatedContainer(
-                  duration: const Duration(milliseconds: 150),
-                  decoration: BoxDecoration(
-                    color: isSelected ? AppColors.surfaceVariant : AppColors.surface,
-                    borderRadius: BorderRadius.circular(16),
-                    border: Border.all(
-                      color: isSelected ? AppColors.primary : AppColors.divider,
-                      width: isSelected ? 2 : 1,
-                    ),
-                  ),
-                  child: Column(
-                    mainAxisAlignment: MainAxisAlignment.center,
-                    children: [
-                      Icon(r.$3,
-                          size: 36,
-                          color: isSelected ? AppColors.primary : AppColors.textSecondary),
-                      const SizedBox(height: 10),
-                      Text(
-                        r.$2,
-                        textAlign: TextAlign.center,
-                        style: TextStyle(
-                          fontSize: 13,
-                          fontWeight: FontWeight.w600,
-                          color: isSelected ? AppColors.primary : AppColors.textPrimary,
-                        ),
-                      ),
-                    ],
-                  ),
-                ),
-              );
-            }).toList(),
-          ),
-        ),
       ],
     );
   }
 }
 
-class _ExperienceStep extends StatelessWidget {
-  final int value;
-  final ValueChanged<int> onChange;
-  const _ExperienceStep({required this.value, required this.onChange});
+class _QuestionWidget extends StatelessWidget {
+  final _QuestionData data;
+  const _QuestionWidget({required this.data});
 
   @override
   Widget build(BuildContext context) {
     return Column(
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
-        const Text('Years of aviation experience?', style: AppTextStyles.heading2),
-        const SizedBox(height: 8),
-        const Text('This helps calibrate your starting level.', style: AppTextStyles.caption),
-        const SizedBox(height: 48),
-        Center(
-          child: Text(
-            '$value years',
-            style: const TextStyle(
-              fontSize: 48,
-              fontWeight: FontWeight.w700,
-              color: AppColors.primary,
-            ),
-          ),
-        ),
-        const SizedBox(height: 16),
-        Slider(
-          value: value.toDouble(),
-          min: 0,
-          max: 20,
-          divisions: 20,
-          activeColor: AppColors.primary,
-          inactiveColor: AppColors.surfaceVariant,
-          onChanged: (v) => onChange(v.round()),
-        ),
-        const Row(
-          mainAxisAlignment: MainAxisAlignment.spaceBetween,
-          children: [
-            Text('0', style: AppTextStyles.caption),
-            Text('20+', style: AppTextStyles.caption),
-          ],
-        ),
-      ],
-    );
-  }
-}
-
-class _DateStep extends StatelessWidget {
-  final DateTime? selected;
-  final ValueChanged<DateTime?> onSelect;
-  const _DateStep({required this.selected, required this.onSelect});
-
-  @override
-  Widget build(BuildContext context) {
-    return Column(
-      crossAxisAlignment: CrossAxisAlignment.start,
-      children: [
-        const Text('When is your target exam?', style: AppTextStyles.heading2),
-        const SizedBox(height: 8),
-        const Text('Optional — helps us track your deadline.', style: AppTextStyles.caption),
-        const SizedBox(height: 32),
-        GestureDetector(
-          onTap: () async {
-            final picked = await showDatePicker(
-              context: context,
-              initialDate: DateTime.now().add(const Duration(days: 90)),
-              firstDate: DateTime.now(),
-              lastDate: DateTime.now().add(const Duration(days: 365 * 3)),
-              builder: (context, child) => Theme(
-                data: Theme.of(context).copyWith(
-                  colorScheme: const ColorScheme.light(primary: AppColors.primary),
-                ),
-                child: child!,
-              ),
-            );
-            onSelect(picked);
-          },
-          child: Container(
-            padding: const EdgeInsets.all(20),
-            decoration: BoxDecoration(
-              color: AppColors.surface,
-              borderRadius: BorderRadius.circular(16),
-              border: Border.all(
-                color: selected != null ? AppColors.primary : AppColors.divider,
-                width: selected != null ? 2 : 1,
-              ),
-            ),
-            child: Row(
-              children: [
-                Icon(Icons.calendar_today,
-                    color: selected != null ? AppColors.primary : AppColors.textSecondary),
-                const SizedBox(width: 16),
-                Text(
-                  selected != null
-                      ? '${selected!.day}/${selected!.month}/${selected!.year}'
-                      : 'Select exam date',
-                  style: TextStyle(
-                    fontSize: 16,
-                    fontWeight: FontWeight.w500,
-                    color: selected != null ? AppColors.textPrimary : AppColors.textHint,
-                  ),
-                ),
-              ],
-            ),
-          ),
-        ),
-        if (selected != null) ...[
-          const SizedBox(height: 16),
-          Container(
-            padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 12),
-            decoration: BoxDecoration(
-              color: AppColors.surfaceVariant,
-              borderRadius: BorderRadius.circular(12),
-            ),
-            child: Row(
-              children: [
-                const Icon(Icons.timer_outlined, color: AppColors.primary, size: 20),
-                const SizedBox(width: 10),
-                Text(
-                  '${selected!.difference(DateTime.now()).inDays} days remaining',
-                  style: const TextStyle(
-                    fontWeight: FontWeight.w600,
-                    color: AppColors.primary,
-                  ),
-                ),
-              ],
-            ),
+        Text(data.label, style: AppTextStyles.bodyBold),
+        if (data.hint != null) ...[
+          const SizedBox(height: 3),
+          Text(
+            data.hint!,
+            style: const TextStyle(fontSize: 12, color: AppColors.textHint),
           ),
         ],
-        const SizedBox(height: 24),
-        TextButton(
-          onPressed: () => onSelect(null),
-          child: const Text('Skip for now', style: TextStyle(color: AppColors.textSecondary)),
+        const SizedBox(height: 10),
+        Wrap(
+          spacing: 8,
+          runSpacing: 8,
+          children: data.options.map((o) {
+            final isSelected = o.$1 == data.selected;
+            return GestureDetector(
+              onTap: () => data.onSelect(o.$1),
+              child: AnimatedContainer(
+                duration: const Duration(milliseconds: 150),
+                padding:
+                    const EdgeInsets.symmetric(horizontal: 14, vertical: 10),
+                decoration: BoxDecoration(
+                  color: isSelected ? AppColors.primary : AppColors.surface,
+                  borderRadius: BorderRadius.circular(12),
+                  border: Border.all(
+                    color:
+                        isSelected ? AppColors.primary : AppColors.divider,
+                    width: isSelected ? 2 : 1,
+                  ),
+                  boxShadow: isSelected
+                      ? [
+                          BoxShadow(
+                            color: AppColors.primary.withOpacity(0.25),
+                            blurRadius: 8,
+                            offset: const Offset(0, 2),
+                          )
+                        ]
+                      : null,
+                ),
+                child: Text(
+                  o.$2,
+                  style: TextStyle(
+                    fontSize: 13,
+                    fontWeight: FontWeight.w600,
+                    color: isSelected
+                        ? Colors.white
+                        : AppColors.textPrimary,
+                  ),
+                ),
+              ),
+            );
+          }).toList(),
         ),
       ],
     );

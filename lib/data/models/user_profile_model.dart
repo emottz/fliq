@@ -14,20 +14,45 @@ class UserProfileModel extends Equatable {
   final String? lastActiveDate;
   final Map<String, double> categoryProgress;
 
+  // Onboarding — Step 1: Kim olduğun
+  final String licenseLevel;   // ppl_student | cpl_student | ppl_holder
+  final String flightHours;    // 0_50 | 50_200 | 200_plus
+  final String nativeLanguage; // turkish | arabic | other
+
+  // Onboarding — Step 2: Nerede olduğun
+  final String englishLevel;   // a2 | b1 | b2 | c1
+  final String icaoLevel;      // none | level_3 | level_4 | level_5
+  final String examTimeline;   // not_planned | 6_months_plus | 6_months | 1_month
+
+  // Onboarding — Step 3: Ne istediğin
+  final String hardestArea;      // phraseology | vocabulary | listening | pronunciation
+  final String flyingEnvironment;// domestic | international | both
+  final String aircraftType;     // sep | multi | jet
+  final String dailyTime;        // 5_10 | 15_20 | 30_plus
+
   const UserProfileModel({
     required this.role,
-    required this.experienceYears,
+    this.experienceYears = 0,
     this.targetExamDate,
     required this.level,
     required this.totalXp,
     required this.streakDays,
     this.lastActiveDate,
     required this.categoryProgress,
+    this.licenseLevel = '',
+    this.flightHours = '',
+    this.nativeLanguage = '',
+    this.englishLevel = '',
+    this.icaoLevel = '',
+    this.examTimeline = '',
+    this.hardestArea = '',
+    this.flyingEnvironment = '',
+    this.aircraftType = '',
+    this.dailyTime = '',
   });
 
   static UserProfileModel empty() => const UserProfileModel(
-        role: 'student',
-        experienceYears: 0,
+        role: 'pilot',
         level: ProficiencyLevel.beginner,
         totalXp: 0,
         streakDays: 0,
@@ -43,6 +68,16 @@ class UserProfileModel extends Equatable {
     int? streakDays,
     String? lastActiveDate,
     Map<String, double>? categoryProgress,
+    String? licenseLevel,
+    String? flightHours,
+    String? nativeLanguage,
+    String? englishLevel,
+    String? icaoLevel,
+    String? examTimeline,
+    String? hardestArea,
+    String? flyingEnvironment,
+    String? aircraftType,
+    String? dailyTime,
   }) {
     return UserProfileModel(
       role: role ?? this.role,
@@ -53,6 +88,16 @@ class UserProfileModel extends Equatable {
       streakDays: streakDays ?? this.streakDays,
       lastActiveDate: lastActiveDate ?? this.lastActiveDate,
       categoryProgress: categoryProgress ?? this.categoryProgress,
+      licenseLevel: licenseLevel ?? this.licenseLevel,
+      flightHours: flightHours ?? this.flightHours,
+      nativeLanguage: nativeLanguage ?? this.nativeLanguage,
+      englishLevel: englishLevel ?? this.englishLevel,
+      icaoLevel: icaoLevel ?? this.icaoLevel,
+      examTimeline: examTimeline ?? this.examTimeline,
+      hardestArea: hardestArea ?? this.hardestArea,
+      flyingEnvironment: flyingEnvironment ?? this.flyingEnvironment,
+      aircraftType: aircraftType ?? this.aircraftType,
+      dailyTime: dailyTime ?? this.dailyTime,
     );
   }
 
@@ -65,12 +110,22 @@ class UserProfileModel extends Equatable {
         'streakDays': streakDays,
         'lastActiveDate': lastActiveDate,
         'categoryProgress': categoryProgress,
+        'licenseLevel': licenseLevel,
+        'flightHours': flightHours,
+        'nativeLanguage': nativeLanguage,
+        'englishLevel': englishLevel,
+        'icaoLevel': icaoLevel,
+        'examTimeline': examTimeline,
+        'hardestArea': hardestArea,
+        'flyingEnvironment': flyingEnvironment,
+        'aircraftType': aircraftType,
+        'dailyTime': dailyTime,
       };
 
   factory UserProfileModel.fromJson(Map<String, dynamic> json) {
     return UserProfileModel(
-      role: json['role'] as String,
-      experienceYears: json['experienceYears'] as int,
+      role: json['role'] as String? ?? 'pilot',
+      experienceYears: json['experienceYears'] as int? ?? 0,
       targetExamDate: json['targetExamDate'] != null
           ? DateTime.tryParse(json['targetExamDate'] as String)
           : null,
@@ -78,14 +133,24 @@ class UserProfileModel extends Equatable {
         (l) => l.name == json['level'],
         orElse: () => ProficiencyLevel.beginner,
       ),
-      totalXp: json['totalXp'] as int,
-      streakDays: json['streakDays'] as int,
+      totalXp: json['totalXp'] as int? ?? 0,
+      streakDays: json['streakDays'] as int? ?? 0,
       lastActiveDate: json['lastActiveDate'] as String?,
-      categoryProgress: (json['categoryProgress'] as Map<String, dynamic>)
+      categoryProgress: (json['categoryProgress'] as Map<String, dynamic>? ?? {})
           .map((k, v) => MapEntry(k, (v as num).toDouble())),
+      licenseLevel: json['licenseLevel'] as String? ?? '',
+      flightHours: json['flightHours'] as String? ?? '',
+      nativeLanguage: json['nativeLanguage'] as String? ?? '',
+      englishLevel: json['englishLevel'] as String? ?? '',
+      icaoLevel: json['icaoLevel'] as String? ?? '',
+      examTimeline: json['examTimeline'] as String? ?? '',
+      hardestArea: json['hardestArea'] as String? ?? '',
+      flyingEnvironment: json['flyingEnvironment'] as String? ?? '',
+      aircraftType: json['aircraftType'] as String? ?? '',
+      dailyTime: json['dailyTime'] as String? ?? '',
     );
   }
 
   @override
-  List<Object?> get props => [role, experienceYears, level, totalXp, streakDays];
+  List<Object?> get props => [role, licenseLevel, flightHours, level, totalXp, streakDays];
 }
