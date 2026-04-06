@@ -115,7 +115,7 @@ class _AssessmentScreenState extends ConsumerState<AssessmentScreen> {
       appBar: AppBar(
         backgroundColor: AppColors.background,
         elevation: 0,
-        title: const Text('Level Assessment', style: AppTextStyles.heading3),
+        title: const Text('Seviye Tespiti', style: AppTextStyles.heading3),
         centerTitle: true,
         automaticallyImplyLeading: false,
       ),

@@ -8,12 +8,12 @@ class AssessmentIntroScreen extends StatelessWidget {
   const AssessmentIntroScreen({super.key});
 
   static const _categories = [
-    (Icons.spellcheck_outlined, 'Grammar', '3 questions'),
-    (Icons.menu_book_outlined, 'Vocabulary', '2 questions'),
-    (Icons.translate_outlined, 'Translation', '2 questions'),
-    (Icons.article_outlined, 'Reading', '3 questions'),
-    (Icons.edit_outlined, 'Fill in Blanks', '2 questions'),
-    (Icons.short_text_outlined, 'Sentence Completion', '3 questions'),
+    (Icons.spellcheck_outlined, 'Gramer', '3 soru'),
+    (Icons.menu_book_outlined, 'Kelime Bilgisi', '2 soru'),
+    (Icons.translate_outlined, 'Çeviri', '2 soru'),
+    (Icons.article_outlined, 'Okuma', '3 soru'),
+    (Icons.edit_outlined, 'Boşluk Doldurma', '2 soru'),
+    (Icons.short_text_outlined, 'Cümle Tamamlama', '3 soru'),
   ];
 
   @override
@@ -54,7 +54,7 @@ class AssessmentIntroScreen extends StatelessWidget {
                         ),
                         const SizedBox(height: 16),
                         const Text(
-                          'Level Assessment',
+                          'Seviye Tespiti',
                           style: TextStyle(
                             fontSize: 24,
                             fontWeight: FontWeight.w700,
@@ -63,7 +63,7 @@ class AssessmentIntroScreen extends StatelessWidget {
                         ),
                         const SizedBox(height: 6),
                         Text(
-                          'We\'ll analyze your aviation English skills and build a personalized study plan just for you.',
+                          'Havacılık İngilizcesi becerilerini analiz edip sana özel bir çalışma planı oluşturacağız.',
                           style: TextStyle(
                             fontSize: 14,
                             color: Colors.white.withOpacity(0.85),
@@ -82,19 +82,19 @@ class AssessmentIntroScreen extends StatelessWidget {
                       _StatChip(
                         icon: Icons.quiz_outlined,
                         value: '15',
-                        label: 'Questions',
+                        label: 'Soru',
                       ),
                       const SizedBox(width: 12),
                       _StatChip(
                         icon: Icons.timer_outlined,
                         value: '10–15',
-                        label: 'Minutes',
+                        label: 'Dakika',
                       ),
                       const SizedBox(width: 12),
                       _StatChip(
                         icon: Icons.auto_awesome_outlined,
-                        value: 'Free',
-                        label: 'AI Analysis',
+                        value: 'Ücretsiz',
+                        label: 'AI Analizi',
                       ),
                     ],
                   ),
@@ -102,10 +102,10 @@ class AssessmentIntroScreen extends StatelessWidget {
                   const SizedBox(height: 28),
 
                   // Categories
-                  const Text('What we test', style: AppTextStyles.heading3),
+                  const Text('Ne Test Ediyoruz', style: AppTextStyles.heading3),
                   const SizedBox(height: 4),
                   const Text(
-                    'Covering all key areas of ICAO aviation English.',
+                    'ICAO havacılık İngilizcesinin tüm temel alanlarını kapsıyoruz.',
                     style: AppTextStyles.caption,
                   ),
                   const SizedBox(height: 16),
@@ -130,14 +130,14 @@ class AssessmentIntroScreen extends StatelessWidget {
                           children: [
                             Icon(Icons.auto_awesome, color: AppColors.primary, size: 18),
                             SizedBox(width: 8),
-                            Text('After the test, you\'ll get:', style: AppTextStyles.bodyBold),
+                            Text('Testin ardından alacakların:', style: AppTextStyles.bodyBold),
                           ],
                         ),
                         const SizedBox(height: 14),
-                        _BulletItem('Your exact ICAO proficiency level'),
-                        _BulletItem('Category-by-category skill breakdown'),
-                        _BulletItem('AI-generated weak area analysis'),
-                        _BulletItem('A personalized study roadmap'),
+                        _BulletItem('Tam ICAO yeterlilik seviyeni'),
+                        _BulletItem('Kategoriye göre beceri dağılımı'),
+                        _BulletItem('AI\'nin belirlediği zayıf alan analizi'),
+                        _BulletItem('Kişiselleştirilmiş çalışma yol haritası'),
                       ],
                     ),
                   ),
@@ -159,7 +159,7 @@ class AssessmentIntroScreen extends StatelessWidget {
                         SizedBox(width: 10),
                         Expanded(
                           child: Text(
-                            'Answer honestly — there are no penalties. The more accurate your results, the better your study plan.',
+                            'Dürüstçe cevapla — ceza yok. Sonuçların ne kadar doğruysa çalışma planın o kadar iyi olur.',
                             style: TextStyle(
                               fontSize: 13,
                               color: Color(0xFF92400E),
@@ -174,13 +174,13 @@ class AssessmentIntroScreen extends StatelessWidget {
                   const SizedBox(height: 32),
 
                   PrimaryButton(
-                    label: 'Start Assessment',
+                    label: 'Tespiti Başlat',
                     onPressed: () => context.go('/assessment'),
                   ),
                   const SizedBox(height: 12),
                   Center(
                     child: Text(
-                      'Results are saved automatically',
+                      'Sonuçlar otomatik kaydedilir',
                       style: AppTextStyles.caption,
                     ),
                   ),

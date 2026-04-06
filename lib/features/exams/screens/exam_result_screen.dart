@@ -368,7 +368,7 @@ class _ExamResultScreenState extends ConsumerState<ExamResultScreen>
                                       borderRadius: BorderRadius.circular(6),
                                     ),
                                     child: Text(
-                                      isHigh ? 'HIGH' : 'MED',
+                                      isHigh ? 'YÜKSEK' : 'ORTA',
                                       style: const TextStyle(
                                         color: Colors.white,
                                         fontSize: 9,

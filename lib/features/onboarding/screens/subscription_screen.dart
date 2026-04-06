@@ -9,11 +9,11 @@ class SubscriptionScreen extends StatelessWidget {
   const SubscriptionScreen({super.key});
 
   static const _features = [
-    (Icons.quiz_outlined, 'Unlimited Practice Exams', 'Test yourself with 2,000+ real-style questions'),
-    (Icons.school_outlined, 'Personalized Lesson Path', 'AI-curated route based on your level'),
-    (Icons.emoji_events_outlined, 'Rank & XP System', 'Track progress with aviation ranks'),
-    (Icons.bar_chart_outlined, 'Detailed Analytics', 'Identify your weak spots by category'),
-    (Icons.offline_bolt_outlined, 'Offline Access', 'Study anywhere, anytime'),
+    (Icons.quiz_outlined, 'Sınırsız Pratik Sınavı', '2.000+ gerçek formatlı soruyla kendini test et'),
+    (Icons.school_outlined, 'Kişisel Ders Yolu', 'Seviyene göre AI tarafından oluşturulan rota'),
+    (Icons.emoji_events_outlined, 'Rütbe & XP Sistemi', 'Havacılık rütbeleriyle ilerleni takip et'),
+    (Icons.bar_chart_outlined, 'Detaylı Analitik', 'Kategoriye göre zayıf noktalarını bul'),
+    (Icons.offline_bolt_outlined, 'Çevrimdışı Erişim', 'Her yerde, her zaman çalış'),
   ];
 
   @override
@@ -30,10 +30,10 @@ class SubscriptionScreen extends StatelessWidget {
                 children: [
                   const AirplaneLogo(size: 56),
                   const SizedBox(height: 28),
-                  const Text('Unlock Your Full Potential', style: AppTextStyles.heading1, textAlign: TextAlign.center),
+                  const Text('Tam Potansiyelini Ortaya Çıkar', style: AppTextStyles.heading1, textAlign: TextAlign.center),
                   const SizedBox(height: 8),
                   const Text(
-                    'Join thousands of aviation professionals who mastered English with FLIQ',
+                    'FLIQ ile İngilizce ustası olan binlerce havacılık profesyoneline katıl',
                     style: AppTextStyles.caption,
                     textAlign: TextAlign.center,
                   ),
@@ -41,32 +41,32 @@ class SubscriptionScreen extends StatelessWidget {
                   ..._features.map((f) => _FeatureRow(icon: f.$1, title: f.$2, subtitle: f.$3)),
                   const SizedBox(height: 28),
                   _PricingCard(
-                    title: 'Monthly',
+                    title: 'Aylık',
                     price: '\$9.99',
-                    period: '/month',
+                    period: '/ay',
                     isHighlighted: false,
                   ),
                   const SizedBox(height: 12),
                   _PricingCard(
-                    title: 'Annual',
+                    title: 'Yıllık',
                     price: '\$59.99',
-                    period: '/year',
-                    badge: 'Save 50%',
+                    period: '/yıl',
+                    badge: '%50 Tasarruf',
                     isHighlighted: true,
                   ),
                   const SizedBox(height: 24),
                   PrimaryButton(
-                    label: 'Start Free Trial',
+                    label: 'Ücretsiz Dene',
                     onPressed: () => context.go('/home/exams'),
                   ),
                   const SizedBox(height: 12),
                   PrimaryButton(
-                    label: 'Continue for free',
+                    label: 'Ücretsiz devam et',
                     outlined: true,
                     onPressed: () => context.go('/home/exams'),
                   ),
                   const SizedBox(height: 16),
-                  const Text('No credit card required', style: AppTextStyles.caption),
+                  const Text('Kredi kartı gerekmez', style: AppTextStyles.caption),
                 ],
               ),
             ),
@@ -168,7 +168,7 @@ class _PricingCard extends StatelessWidget {
                   ],
                 ),
                 const SizedBox(height: 2),
-                Text('Full access to all features', style: AppTextStyles.caption),
+                Text('Tüm özelliklere tam erişim', style: AppTextStyles.caption),
               ],
             ),
           ),

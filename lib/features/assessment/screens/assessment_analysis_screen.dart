@@ -42,11 +42,11 @@ class _AssessmentAnalysisScreenState extends State<AssessmentAnalysisScreen>
   bool _done = false;
 
   static const _loadingSteps = [
-    'Reading your 15 answers...',
-    'Mapping category performance...',
-    'Identifying technical gaps...',
-    'Building your personal profile...',
-    'Generating recommendations...',
+    '15 cevabın okunuyor...',
+    'Kategori performansı haritalanıyor...',
+    'Teknik eksiklikler tespit ediliyor...',
+    'Kişisel profil oluşturuluyor...',
+    'Öneriler hazırlanıyor...',
   ];
 
   @override
@@ -108,10 +108,10 @@ class _AssessmentAnalysisScreenState extends State<AssessmentAnalysisScreen>
   // ── Helpers ───────────────────────────────────────────────────────────────
 
   String get _levelLabel => switch (widget.level) {
-        ProficiencyLevel.beginner => 'Beginner',
-        ProficiencyLevel.elementary => 'Elementary',
-        ProficiencyLevel.intermediate => 'Intermediate',
-        ProficiencyLevel.advanced => 'Advanced',
+        ProficiencyLevel.beginner => 'Başlangıç',
+        ProficiencyLevel.elementary => 'Temel',
+        ProficiencyLevel.intermediate => 'Orta',
+        ProficiencyLevel.advanced => 'İleri',
       };
 
   String get _levelEmoji => switch (widget.level) {
@@ -130,9 +130,9 @@ class _AssessmentAnalysisScreenState extends State<AssessmentAnalysisScreen>
 
   String get _roleLabel => switch (widget.role) {
         'pilot' => 'Pilot',
-        'atc' => 'Air Traffic Controller',
-        'cabin_crew' => 'Cabin Crew',
-        _ => 'Aviation Student',
+        'atc' => 'Hava Trafik Kontrolörü',
+        'cabin_crew' => 'Kabin Ekibi',
+        _ => 'Havacılık Öğrencisi',
       };
 
   // ── Lesson recommendation map ─────────────────────────────────────────────
@@ -283,7 +283,7 @@ class _AssessmentAnalysisScreenState extends State<AssessmentAnalysisScreen>
           ),
           const SizedBox(height: 36),
           const Text(
-            'AI Analysis in Progress',
+            'AI Analizi Devam Ediyor',
             style: TextStyle(
               fontSize: 20,
               fontWeight: FontWeight.w700,
@@ -292,7 +292,7 @@ class _AssessmentAnalysisScreenState extends State<AssessmentAnalysisScreen>
           ),
           const SizedBox(height: 8),
           const Text(
-            'Analyzing your responses to build a\npersonalized aviation English profile.',
+            'Kişisel havacılık İngilizcesi profilin\noluşturuluyor.',
             style: AppTextStyles.caption,
             textAlign: TextAlign.center,
           ),
@@ -378,7 +378,7 @@ class _AssessmentAnalysisScreenState extends State<AssessmentAnalysisScreen>
                     Icon(Icons.auto_awesome, color: Color(0xFF7C3AED), size: 13),
                     SizedBox(width: 6),
                     Text(
-                      'Personalized AI Analysis',
+                      'Kişiselleştirilmiş AI Analizi',
                       style: TextStyle(
                         fontSize: 12,
                         fontWeight: FontWeight.w600,
@@ -425,7 +425,7 @@ class _AssessmentAnalysisScreenState extends State<AssessmentAnalysisScreen>
                         ),
                         const SizedBox(height: 4),
                         Text(
-                          '${widget.totalCorrect} / ${widget.totalQuestions} correct  •  '
+                          '${widget.totalCorrect} / ${widget.totalQuestions} doğru  •  '
                           '${(widget.totalCorrect / widget.totalQuestions * 100).round()}%',
                           style: const TextStyle(fontSize: 13, color: Colors.white),
                         ),
@@ -453,7 +453,7 @@ class _AssessmentAnalysisScreenState extends State<AssessmentAnalysisScreen>
                     children: [
                       Icon(Icons.psychology_outlined, color: AppColors.primary, size: 17),
                       SizedBox(width: 8),
-                      Text('AI Summary', style: AppTextStyles.bodyBold),
+                      Text('AI Özeti', style: AppTextStyles.bodyBold),
                     ],
                   ),
                   const SizedBox(height: 10),
@@ -470,7 +470,7 @@ class _AssessmentAnalysisScreenState extends State<AssessmentAnalysisScreen>
             const SizedBox(height: 24),
 
             // Category breakdown
-            const Text('Skill Breakdown', style: AppTextStyles.heading3),
+            const Text('Beceri Dağılımı', style: AppTextStyles.heading3),
             const SizedBox(height: 14),
             ...QuestionCategory.values.map((cat) {
               final data = widget.categoryResults[cat.id];
@@ -490,10 +490,10 @@ class _AssessmentAnalysisScreenState extends State<AssessmentAnalysisScreen>
             // Focus Areas
             if (result.focusAreas.isNotEmpty) ...[
               const SizedBox(height: 24),
-              const Text('Technical Focus Areas', style: AppTextStyles.heading3),
+              const Text('Teknik Odak Alanları', style: AppTextStyles.heading3),
               const SizedBox(height: 6),
               const Text(
-                'AI-identified gaps based on your answers and role.',
+                'AI, cevaplarına ve rolüne göre eksikleri belirledi.',
                 style: AppTextStyles.caption,
               ),
               const SizedBox(height: 14),
@@ -506,7 +506,7 @@ class _AssessmentAnalysisScreenState extends State<AssessmentAnalysisScreen>
             // Study Tips
             if (result.studyTips.isNotEmpty) ...[
               const SizedBox(height: 24),
-              const Text('Your Action Plan', style: AppTextStyles.heading3),
+              const Text('Çalışma Planın', style: AppTextStyles.heading3),
               const SizedBox(height: 14),
               ...result.studyTips.asMap().entries.map((e) => _TipCard(
                     number: e.key + 1,
@@ -523,7 +523,7 @@ class _AssessmentAnalysisScreenState extends State<AssessmentAnalysisScreen>
               child: TextButton(
                 onPressed: () => context.go('/home/exams'),
                 child: const Text(
-                  'Continue with free access',
+                  'Ücretsiz devam et',
                   style: TextStyle(color: AppColors.textSecondary, fontSize: 13),
                 ),
               ),
@@ -728,7 +728,7 @@ class _FocusAreaCard extends StatelessWidget {
               borderRadius: BorderRadius.circular(8),
             ),
             child: Text(
-              isHigh ? 'HIGH' : 'MED',
+              isHigh ? 'YÜKSEK' : 'ORTA',
               style: const TextStyle(
                 color: Colors.white, fontSize: 10, fontWeight: FontWeight.w700,
               ),
@@ -849,7 +849,7 @@ class _MembershipSectionState extends State<_MembershipSection> {
           child: Column(
             children: [
               const Text(
-                'Unlock Your Full Study Plan',
+                'Tam Çalışma Planını Aç',
                 style: TextStyle(
                   fontSize: 18,
                   fontWeight: FontWeight.w700,
@@ -859,7 +859,7 @@ class _MembershipSectionState extends State<_MembershipSection> {
               ),
               const SizedBox(height: 6),
               Text(
-                'Practice with 1,895 questions tailored to your analysis.',
+                'Analizine özel 1.895 soru ile pratik yap.',
                 style: TextStyle(
                   fontSize: 13,
                   color: Colors.white.withOpacity(0.8),
@@ -892,12 +892,12 @@ class _MembershipSectionState extends State<_MembershipSection> {
                 child: Row(
                   children: [
                     _PlanToggle(
-                      label: 'Monthly',
+                      label: 'Aylık',
                       selected: !_annual,
                       onTap: () => setState(() => _annual = false),
                     ),
                     _PlanToggle(
-                      label: 'Annual  🔥 Save 50%',
+                      label: 'Yıllık  🔥 %50 İndirim',
                       selected: _annual,
                       onTap: () => setState(() => _annual = true),
                     ),
@@ -914,15 +914,15 @@ class _MembershipSectionState extends State<_MembershipSection> {
                     ? _PriceDisplay(
                         key: const ValueKey('annual'),
                         price: '\$4.99',
-                        period: '/month',
-                        note: 'Billed \$59.99/year',
-                        badge: 'Best Value',
+                        period: '/ay',
+                        note: 'Yılda \$59.99 faturalandırılır',
+                        badge: 'En İyi Değer',
                       )
                     : _PriceDisplay(
                         key: const ValueKey('monthly'),
                         price: '\$9.99',
-                        period: '/month',
-                        note: 'Billed monthly, cancel anytime',
+                        period: '/ay',
+                        note: 'Aylık faturalandırılır, istediğin zaman iptal et',
                       ),
               ),
 
@@ -934,13 +934,13 @@ class _MembershipSectionState extends State<_MembershipSection> {
               const SizedBox(height: 20),
 
               PrimaryButton(
-                label: 'Start Free 7-Day Trial',
+                label: '7 Günlük Ücretsiz Denemeyi Başlat',
                 onPressed: () => context.go('/home/exams'),
               ),
               const SizedBox(height: 8),
               const Center(
                 child: Text(
-                  'No credit card required • Cancel anytime',
+                  'Kredi kartı gerekmez • İstediğin zaman iptal et',
                   style: AppTextStyles.caption,
                 ),
               ),
@@ -1057,12 +1057,12 @@ class _FeatureList extends StatelessWidget {
   const _FeatureList();
 
   static const _features = [
-    'All 1,895 questions unlocked',
-    'Your personalized study path',
-    'Detailed analytics & weak area tracking',
-    'AI-powered coaching after each exam',
-    'Offline access on all devices',
-    'Rank system & progress certificates',
+    '1.895 sorunun tamamına erişim',
+    'Kişiselleştirilmiş çalışma yolun',
+    'Detaylı analitik ve zayıf alan takibi',
+    'Her sınavın ardından AI koçluk',
+    'Tüm cihazlarda çevrimdışı erişim',
+    'Rütbe sistemi ve ilerleme sertifikaları',
   ];
 
   @override

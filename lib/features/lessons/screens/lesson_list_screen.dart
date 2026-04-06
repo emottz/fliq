@@ -168,6 +168,18 @@ class _LessonListScreenState extends ConsumerState<LessonListScreen> {
                         levelLabel: _levelLabel(level),
                       ),
 
+                      const SizedBox(height: 12),
+
+                      // ── Ligi Tamamla Butonu ───────────────────────
+                      Padding(
+                        padding: const EdgeInsets.symmetric(horizontal: 20),
+                        child: _CompleteLeagueButton(
+                          levelLabel: _levelLabel(level),
+                          isLoading: _completing,
+                          onTap: () => _completeLeague(level, lessons),
+                        ),
+                      ),
+
                       const SizedBox(height: 8),
 
                       // ── Yol ──────────────────────────────────────
@@ -175,18 +187,6 @@ class _LessonListScreenState extends ConsumerState<LessonListScreen> {
                         padding: const EdgeInsets.symmetric(horizontal: 24),
                         child: Column(
                           children: _buildPath(context, lessons, level, completed),
-                        ),
-                      ),
-
-                      const SizedBox(height: 16),
-
-                      // ── Ligi Tamamla Butonu ───────────────────────
-                      Padding(
-                        padding: const EdgeInsets.symmetric(horizontal: 24),
-                        child: _CompleteLeagueButton(
-                          levelLabel: _levelLabel(level),
-                          isLoading: _completing,
-                          onTap: () => _completeLeague(level, lessons),
                         ),
                       ),
 
