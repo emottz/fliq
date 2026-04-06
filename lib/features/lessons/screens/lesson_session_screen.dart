@@ -6,8 +6,7 @@ import '../../../core/constants/app_text_styles.dart';
 import '../../../data/lessons/lesson_content_data.dart';
 import '../../../data/models/lesson_content_model.dart';
 import '../../../shared/providers/app_providers.dart';
-import '../../../shared/widgets/primary_button.dart';
-import '../widgets/lesson_section_widgets.dart';
+import '../widgets/lesson_card_widgets.dart';
 
 class LessonSessionScreen extends ConsumerStatefulWidget {
   final String lessonId;
@@ -17,11 +16,44 @@ class LessonSessionScreen extends ConsumerStatefulWidget {
   ConsumerState<LessonSessionScreen> createState() => _LessonSessionScreenState();
 }
 
-class _LessonSessionScreenState extends ConsumerState<LessonSessionScreen> {
-  final ScrollController _scroll = ScrollController();
+class _LessonSessionScreenState extends ConsumerState<LessonSessionScreen>
+    with TickerProviderStateMixin {
+  late PageController _pageCtrl;
+  int _currentPage = 0;
   bool _completing = false;
 
+  late AnimationController _celebrationCtrl;
+
   LessonContent? get _lesson => LessonContentData.findById(widget.lessonId);
+
+  @override
+  void initState() {
+    super.initState();
+    _pageCtrl = PageController();
+    _celebrationCtrl = AnimationController(
+      vsync: this,
+      duration: const Duration(milliseconds: 800),
+    );
+  }
+
+  @override
+  void dispose() {
+    _pageCtrl.dispose();
+    _celebrationCtrl.dispose();
+    super.dispose();
+  }
+
+  void _nextPage() {
+    final lesson = _lesson!;
+    if (_currentPage < lesson.sections.length - 1) {
+      _pageCtrl.nextPage(
+        duration: const Duration(milliseconds: 350),
+        curve: Curves.easeInOut,
+      );
+    } else {
+      _complete();
+    }
+  }
 
   Future<void> _complete() async {
     if (_completing) return;
@@ -31,10 +63,11 @@ class _LessonSessionScreenState extends ConsumerState<LessonSessionScreen> {
     await ref.read(userProfileProvider.notifier).addXp(20);
 
     if (mounted) {
-      showDialog(
+      _celebrationCtrl.forward();
+      await showDialog(
         context: context,
         barrierDismissible: false,
-        builder: (_) => _CompletionDialog(
+        builder: (_) => _CelebrationDialog(
           lesson: _lesson!,
           onContinue: () => context.go('/home/lessons'),
         ),
@@ -43,15 +76,8 @@ class _LessonSessionScreenState extends ConsumerState<LessonSessionScreen> {
   }
 
   @override
-  void dispose() {
-    _scroll.dispose();
-    super.dispose();
-  }
-
-  @override
   Widget build(BuildContext context) {
     final lesson = _lesson;
-
     if (lesson == null) {
       return Scaffold(
         appBar: AppBar(leading: BackButton(onPressed: () => context.go('/home/lessons'))),
@@ -59,66 +85,131 @@ class _LessonSessionScreenState extends ConsumerState<LessonSessionScreen> {
       );
     }
 
+    final total = lesson.sections.length;
+
     return Scaffold(
       backgroundColor: AppColors.background,
-      body: CustomScrollView(
-        controller: _scroll,
-        slivers: [
-          // ── Sticky header ──────────────────────────────────
-          SliverAppBar(
-            pinned: true,
-            backgroundColor: AppColors.background,
-            surfaceTintColor: Colors.transparent,
-            elevation: 0,
-            leading: IconButton(
-              icon: const Icon(Icons.close),
-              onPressed: () => context.go('/home/lessons'),
-            ),
-            title: Text(lesson.title, style: AppTextStyles.heading3),
-            bottom: PreferredSize(
-              preferredSize: const Size.fromHeight(1),
-              child: Container(height: 1, color: AppColors.divider),
-            ),
-          ),
-
-          // ── Content ────────────────────────────────────────
-          SliverToBoxAdapter(
-            child: Center(
-              child: ConstrainedBox(
-                constraints: const BoxConstraints(maxWidth: 480),
-                child: Padding(
-                  padding: const EdgeInsets.symmetric(horizontal: 20),
-                  child: Column(
-                    crossAxisAlignment: CrossAxisAlignment.start,
-                    children: [
-                      const SizedBox(height: 20),
-                      // Lesson header card
-                      _LessonHeaderCard(lesson: lesson),
-                      const SizedBox(height: 28),
-
-                      // Sections
-                      ...List.generate(lesson.sections.length, (i) {
-                        return Padding(
-                          padding: const EdgeInsets.only(bottom: 24),
-                          child: LessonSectionWidget(
-                            section: lesson.sections[i],
-                            sectionIndex: i,
-                          ),
-                        );
-                      }),
-
-                      const SizedBox(height: 16),
-                      PrimaryButton(
-                        label: 'Complete Lesson  +20 XP',
-                        isLoading: _completing,
-                        onPressed: _complete,
+      body: SafeArea(
+        child: Column(
+          children: [
+            // ── Top bar ─────────────────────────────────────────
+            Padding(
+              padding: const EdgeInsets.fromLTRB(16, 12, 16, 0),
+              child: Row(
+                children: [
+                  GestureDetector(
+                    onTap: () => _showQuitDialog(context),
+                    child: Container(
+                      width: 36,
+                      height: 36,
+                      decoration: BoxDecoration(
+                        color: AppColors.surfaceVariant,
+                        borderRadius: BorderRadius.circular(10),
                       ),
-                      const SizedBox(height: 40),
-                    ],
+                      child: const Icon(Icons.close, size: 18, color: AppColors.textSecondary),
+                    ),
+                  ),
+                  const SizedBox(width: 12),
+                  Expanded(
+                    child: _SegmentedProgress(
+                      current: _currentPage,
+                      total: total,
+                    ),
+                  ),
+                  const SizedBox(width: 12),
+                  Container(
+                    padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 6),
+                    decoration: BoxDecoration(
+                      color: AppColors.surfaceVariant,
+                      borderRadius: BorderRadius.circular(10),
+                    ),
+                    child: Text(
+                      '${_currentPage + 1}/$total',
+                      style: const TextStyle(
+                        fontSize: 12,
+                        fontWeight: FontWeight.w600,
+                        color: AppColors.textSecondary,
+                      ),
+                    ),
+                  ),
+                ],
+              ),
+            ),
+
+            // ── Page title ───────────────────────────────────────
+            Padding(
+              padding: const EdgeInsets.fromLTRB(20, 12, 20, 4),
+              child: Align(
+                alignment: Alignment.centerLeft,
+                child: Text(
+                  lesson.title,
+                  style: const TextStyle(
+                    fontSize: 13,
+                    fontWeight: FontWeight.w500,
+                    color: AppColors.textSecondary,
                   ),
                 ),
               ),
             ),
+
+            // ── Cards ───────────────────────────────────────────
+            Expanded(
+              child: PageView.builder(
+                controller: _pageCtrl,
+                physics: const NeverScrollableScrollPhysics(),
+                onPageChanged: (i) => setState(() => _currentPage = i),
+                itemCount: total,
+                itemBuilder: (_, i) => Center(
+                  child: ConstrainedBox(
+                    constraints: const BoxConstraints(maxWidth: 480),
+                    child: Padding(
+                      padding: const EdgeInsets.fromLTRB(20, 8, 20, 0),
+                      child: LessonCardWidget(
+                        section: lesson.sections[i],
+                        sectionIndex: i,
+                        lessonEmoji: lesson.emoji,
+                      ),
+                    ),
+                  ),
+                ),
+              ),
+            ),
+
+            // ── Continue button ──────────────────────────────────
+            Center(
+              child: ConstrainedBox(
+                constraints: const BoxConstraints(maxWidth: 480),
+                child: Padding(
+                  padding: const EdgeInsets.fromLTRB(20, 12, 20, 24),
+                  child: _ContinueButton(
+                    isLast: _currentPage == total - 1,
+                    isLoading: _completing,
+                    onTap: _nextPage,
+                  ),
+                ),
+              ),
+            ),
+          ],
+        ),
+      ),
+    );
+  }
+
+  void _showQuitDialog(BuildContext context) {
+    showDialog(
+      context: context,
+      builder: (_) => AlertDialog(
+        shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(18)),
+        title: const Text('Leave Lesson?'),
+        content: const Text('Your progress on this lesson won\'t be saved.'),
+        actions: [
+          TextButton(onPressed: () => Navigator.pop(context), child: const Text('Stay')),
+          TextButton(
+            onPressed: () {
+              Navigator.pop(context);
+              context.go('/home/lessons');
+            },
+            child: const Text('Leave', style: TextStyle(color: AppColors.error)),
           ),
         ],
       ),
@@ -126,104 +217,220 @@ class _LessonSessionScreenState extends ConsumerState<LessonSessionScreen> {
   }
 }
 
-class _LessonHeaderCard extends StatelessWidget {
-  final LessonContent lesson;
-  const _LessonHeaderCard({required this.lesson});
+// ── Segmented progress bar ────────────────────────────────────────────────────
+
+class _SegmentedProgress extends StatelessWidget {
+  final int current;
+  final int total;
+  const _SegmentedProgress({required this.current, required this.total});
 
   @override
   Widget build(BuildContext context) {
-    return Container(
-      padding: const EdgeInsets.all(20),
-      decoration: BoxDecoration(
-        gradient: const LinearGradient(
-          colors: [AppColors.primary, AppColors.primaryLight],
-          begin: Alignment.topLeft,
-          end: Alignment.bottomRight,
+    return Row(
+      children: List.generate(total, (i) {
+        return Expanded(
+          child: AnimatedContainer(
+            duration: const Duration(milliseconds: 300),
+            margin: EdgeInsets.only(right: i < total - 1 ? 3 : 0),
+            height: 6,
+            decoration: BoxDecoration(
+              color: i <= current ? AppColors.primary : AppColors.divider,
+              borderRadius: BorderRadius.circular(3),
+            ),
+          ),
+        );
+      }),
+    );
+  }
+}
+
+// ── Continue button ───────────────────────────────────────────────────────────
+
+class _ContinueButton extends StatelessWidget {
+  final bool isLast;
+  final bool isLoading;
+  final VoidCallback onTap;
+  const _ContinueButton({required this.isLast, required this.isLoading, required this.onTap});
+
+  @override
+  Widget build(BuildContext context) {
+    return GestureDetector(
+      onTap: isLoading ? null : onTap,
+      child: AnimatedContainer(
+        duration: const Duration(milliseconds: 200),
+        width: double.infinity,
+        height: 52,
+        decoration: BoxDecoration(
+          gradient: LinearGradient(
+            colors: isLast
+                ? [const Color(0xFF10B981), const Color(0xFF059669)]
+                : [AppColors.primary, const Color(0xFF1D4ED8)],
+            begin: Alignment.centerLeft,
+            end: Alignment.centerRight,
+          ),
+          borderRadius: BorderRadius.circular(14),
+          boxShadow: [
+            BoxShadow(
+              color: (isLast ? const Color(0xFF10B981) : AppColors.primary).withOpacity(0.35),
+              blurRadius: 12,
+              offset: const Offset(0, 4),
+            ),
+          ],
         ),
-        borderRadius: BorderRadius.circular(18),
-      ),
-      child: Row(
-        children: [
-          Text(lesson.emoji, style: const TextStyle(fontSize: 44)),
-          const SizedBox(width: 16),
-          Expanded(
-            child: Column(
-              crossAxisAlignment: CrossAxisAlignment.start,
-              children: [
-                Text(lesson.title,
-                    style: const TextStyle(
-                        color: Colors.white, fontSize: 18, fontWeight: FontWeight.w700)),
-                const SizedBox(height: 4),
-                Text(lesson.subtitle,
-                    style: const TextStyle(color: Colors.white70, fontSize: 13)),
-                const SizedBox(height: 10),
-                Row(
+        child: Center(
+          child: isLoading
+              ? const SizedBox(
+                  width: 22,
+                  height: 22,
+                  child: CircularProgressIndicator(color: Colors.white, strokeWidth: 2.5),
+                )
+              : Row(
+                  mainAxisSize: MainAxisSize.min,
                   children: [
-                    _chip(Icons.timer_outlined, lesson.estimatedTime),
-                    const SizedBox(width: 12),
-                    _chip(Icons.layers_outlined, '${lesson.sectionCount} sections'),
+                    Text(
+                      isLast ? 'Complete Lesson' : 'Continue',
+                      style: const TextStyle(
+                        color: Colors.white,
+                        fontSize: 16,
+                        fontWeight: FontWeight.w700,
+                      ),
+                    ),
+                    const SizedBox(width: 8),
+                    Icon(
+                      isLast ? Icons.check_circle_outline : Icons.arrow_forward_rounded,
+                      color: Colors.white,
+                      size: 20,
+                    ),
                   ],
                 ),
-              ],
-            ),
-          ),
-        ],
+        ),
       ),
-    );
-  }
-
-  Widget _chip(IconData icon, String label) {
-    return Row(
-      mainAxisSize: MainAxisSize.min,
-      children: [
-        Icon(icon, color: Colors.white70, size: 13),
-        const SizedBox(width: 4),
-        Text(label, style: const TextStyle(color: Colors.white70, fontSize: 12)),
-      ],
     );
   }
 }
 
-class _CompletionDialog extends StatelessWidget {
+// ── Celebration dialog ────────────────────────────────────────────────────────
+
+class _CelebrationDialog extends StatefulWidget {
   final LessonContent lesson;
   final VoidCallback onContinue;
+  const _CelebrationDialog({required this.lesson, required this.onContinue});
 
-  const _CompletionDialog({required this.lesson, required this.onContinue});
+  @override
+  State<_CelebrationDialog> createState() => _CelebrationDialogState();
+}
+
+class _CelebrationDialogState extends State<_CelebrationDialog>
+    with SingleTickerProviderStateMixin {
+  late AnimationController _ctrl;
+  late Animation<double> _scale;
+  late Animation<double> _fade;
+
+  @override
+  void initState() {
+    super.initState();
+    _ctrl = AnimationController(vsync: this, duration: const Duration(milliseconds: 500));
+    _scale = CurvedAnimation(parent: _ctrl, curve: Curves.elasticOut);
+    _fade = CurvedAnimation(parent: _ctrl, curve: Curves.easeIn);
+    _ctrl.forward();
+  }
+
+  @override
+  void dispose() {
+    _ctrl.dispose();
+    super.dispose();
+  }
 
   @override
   Widget build(BuildContext context) {
-    return AlertDialog(
-      shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(20)),
-      contentPadding: const EdgeInsets.all(24),
-      content: Column(
-        mainAxisSize: MainAxisSize.min,
-        children: [
-          Text(lesson.emoji, style: const TextStyle(fontSize: 52)),
-          const SizedBox(height: 12),
-          const Text('Lesson Complete!', style: AppTextStyles.heading3),
-          const SizedBox(height: 4),
-          Text(lesson.title, style: AppTextStyles.caption, textAlign: TextAlign.center),
-          const SizedBox(height: 14),
-          Container(
-            padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 10),
-            decoration: BoxDecoration(
-              color: AppColors.surfaceVariant,
-              borderRadius: BorderRadius.circular(12),
-            ),
-            child: const Row(
-              mainAxisSize: MainAxisSize.min,
-              children: [
-                Icon(Icons.bolt, color: AppColors.xpOrange, size: 22),
-                SizedBox(width: 6),
-                Text('+20 XP Earned',
-                    style: TextStyle(
-                        fontWeight: FontWeight.w700, fontSize: 16, color: AppColors.xpOrange)),
-              ],
-            ),
+    return FadeTransition(
+      opacity: _fade,
+      child: Dialog(
+        shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(24)),
+        child: Padding(
+          padding: const EdgeInsets.all(28),
+          child: Column(
+            mainAxisSize: MainAxisSize.min,
+            children: [
+              ScaleTransition(
+                scale: _scale,
+                child: Container(
+                  width: 88,
+                  height: 88,
+                  decoration: BoxDecoration(
+                    gradient: const LinearGradient(
+                      colors: [Color(0xFF10B981), Color(0xFF059669)],
+                      begin: Alignment.topLeft,
+                      end: Alignment.bottomRight,
+                    ),
+                    shape: BoxShape.circle,
+                    boxShadow: [
+                      BoxShadow(
+                        color: const Color(0xFF10B981).withOpacity(0.4),
+                        blurRadius: 20,
+                        offset: const Offset(0, 6),
+                      ),
+                    ],
+                  ),
+                  child: Center(
+                    child: Text(widget.lesson.emoji,
+                        style: const TextStyle(fontSize: 38)),
+                  ),
+                ),
+              ),
+              const SizedBox(height: 16),
+              const Text('Lesson Complete!',
+                  style: TextStyle(fontSize: 22, fontWeight: FontWeight.w800)),
+              const SizedBox(height: 4),
+              Text(
+                widget.lesson.title,
+                style: AppTextStyles.caption,
+                textAlign: TextAlign.center,
+              ),
+              const SizedBox(height: 18),
+              Container(
+                padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 12),
+                decoration: BoxDecoration(
+                  color: const Color(0xFFFFF7ED),
+                  borderRadius: BorderRadius.circular(14),
+                ),
+                child: const Row(
+                  mainAxisSize: MainAxisSize.min,
+                  children: [
+                    Icon(Icons.bolt, color: AppColors.xpOrange, size: 24),
+                    SizedBox(width: 6),
+                    Text(
+                      '+20 XP',
+                      style: TextStyle(
+                        fontSize: 20,
+                        fontWeight: FontWeight.w800,
+                        color: AppColors.xpOrange,
+                      ),
+                    ),
+                    SizedBox(width: 4),
+                    Text('earned', style: TextStyle(fontSize: 14, color: AppColors.xpOrange)),
+                  ],
+                ),
+              ),
+              const SizedBox(height: 22),
+              SizedBox(
+                width: double.infinity,
+                height: 48,
+                child: ElevatedButton(
+                  onPressed: widget.onContinue,
+                  style: ElevatedButton.styleFrom(
+                    backgroundColor: AppColors.primary,
+                    foregroundColor: Colors.white,
+                    elevation: 0,
+                    shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(12)),
+                  ),
+                  child: const Text('Keep Going!',
+                      style: TextStyle(fontSize: 16, fontWeight: FontWeight.w700)),
+                ),
+              ),
+            ],
           ),
-          const SizedBox(height: 20),
-          PrimaryButton(label: 'Back to Lessons', onPressed: onContinue),
-        ],
+        ),
       ),
     );
   }
