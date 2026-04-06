@@ -6,6 +6,7 @@ import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:go_router/go_router.dart';
 import '../../data/repositories/user_repository.dart';
 import '../../data/models/user_profile_model.dart';
+import '../../features/splash/screens/splash_screen.dart';
 import '../../features/auth/screens/auth_screen.dart';
 import '../../features/onboarding/screens/onboarding_screen.dart';
 import '../../features/onboarding/screens/subscription_screen.dart';
@@ -40,11 +41,15 @@ final routerProvider = Provider<GoRouter>((ref) {
   final authNotifier = _AuthNotifier();
 
   return GoRouter(
-    initialLocation: '/auth',
+    initialLocation: '/splash',
     refreshListenable: authNotifier,
     redirect: (context, state) async {
-      final user = FirebaseAuth.instance.currentUser;
       final path = state.uri.path;
+
+      // ── Splash → hiç yönlendirme yapma ────────────────────
+      if (path == '/splash') return null;
+
+      final user = FirebaseAuth.instance.currentUser;
 
       // ── Giriş yapılmamış → auth ekranı ────────────────────
       if (user == null) {
@@ -91,6 +96,10 @@ final routerProvider = Provider<GoRouter>((ref) {
       return null;
     },
     routes: [
+      GoRoute(
+        path: '/splash',
+        builder: (context, state) => const SplashScreen(),
+      ),
       GoRoute(
         path: '/auth',
         builder: (context, state) => const AuthScreen(),
