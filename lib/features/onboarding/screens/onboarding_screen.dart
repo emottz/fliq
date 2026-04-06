@@ -42,7 +42,7 @@ class _OnboardingScreenState extends ConsumerState<OnboardingScreen> {
       categoryProgress: {},
     );
     await ref.read(userProfileProvider.notifier).saveProfile(profile);
-    if (mounted) context.go('/subscription');
+    if (mounted) context.go('/assessment-intro');
   }
 
   @override

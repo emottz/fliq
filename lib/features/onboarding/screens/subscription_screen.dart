@@ -57,13 +57,13 @@ class SubscriptionScreen extends StatelessWidget {
                   const SizedBox(height: 24),
                   PrimaryButton(
                     label: 'Start Free Trial',
-                    onPressed: () => context.go('/assessment'),
+                    onPressed: () => context.go('/home/exams'),
                   ),
                   const SizedBox(height: 12),
                   PrimaryButton(
-                    label: 'Continue without account',
+                    label: 'Continue for free',
                     outlined: true,
-                    onPressed: () => context.go('/assessment'),
+                    onPressed: () => context.go('/home/exams'),
                   ),
                   const SizedBox(height: 16),
                   const Text('No credit card required', style: AppTextStyles.caption),

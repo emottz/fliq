@@ -6,7 +6,6 @@ import '../../../core/constants/app_text_styles.dart';
 import '../../../data/models/question_model.dart';
 import '../../../data/models/user_profile_model.dart';
 import '../../../shared/providers/app_providers.dart';
-import '../../../shared/widgets/primary_button.dart';
 
 class AssessmentScreen extends ConsumerStatefulWidget {
   const AssessmentScreen({super.key});
@@ -53,8 +52,21 @@ class _AssessmentScreenState extends ConsumerState<AssessmentScreen> {
   Future<void> _finish() async {
     final questions = _questions!;
     int correct = 0;
+
+    // Per-category tracking
+    final Map<String, Map<String, int>> categoryResults = {};
+    for (final cat in QuestionCategory.values) {
+      categoryResults[cat.id] = {'correct': 0, 'total': 0};
+    }
+
     for (int i = 0; i < questions.length; i++) {
-      if (_answers[i] == questions[i].correctIndex) correct++;
+      final q = questions[i];
+      final catData = categoryResults[q.category.id]!;
+      catData['total'] = catData['total']! + 1;
+      if (_answers[i] == q.correctIndex) {
+        correct++;
+        catData['correct'] = catData['correct']! + 1;
+      }
     }
 
     ProficiencyLevel level;
@@ -76,16 +88,13 @@ class _AssessmentScreenState extends ConsumerState<AssessmentScreen> {
     }
 
     if (mounted) {
-      showDialog(
-        context: context,
-        barrierDismissible: false,
-        builder: (_) => _ResultDialog(
-          correct: correct,
-          total: questions.length,
-          level: level,
-          onContinue: () => context.go('/home/exams'),
-        ),
-      );
+      context.go('/assessment-analysis', extra: {
+        'categoryResults': categoryResults,
+        'level': level.name,
+        'totalCorrect': correct,
+        'totalQuestions': questions.length,
+        'role': profile?.role ?? 'student',
+      });
     }
   }
 
@@ -201,51 +210,3 @@ class _AssessmentScreenState extends ConsumerState<AssessmentScreen> {
   }
 }
 
-class _ResultDialog extends StatelessWidget {
-  final int correct;
-  final int total;
-  final ProficiencyLevel level;
-  final VoidCallback onContinue;
-
-  const _ResultDialog({
-    required this.correct,
-    required this.total,
-    required this.level,
-    required this.onContinue,
-  });
-
-  static const _levelLabels = {
-    ProficiencyLevel.beginner: ('Beginner', '🌱'),
-    ProficiencyLevel.elementary: ('Elementary', '✈️'),
-    ProficiencyLevel.intermediate: ('Intermediate', '🛫'),
-    ProficiencyLevel.advanced: ('Advanced', '🏆'),
-  };
-
-  @override
-  Widget build(BuildContext context) {
-    final info = _levelLabels[level]!;
-    return AlertDialog(
-      shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(20)),
-      content: Column(
-        mainAxisSize: MainAxisSize.min,
-        children: [
-          Text(info.$2, style: const TextStyle(fontSize: 56)),
-          const SizedBox(height: 12),
-          Text('Your Level', style: AppTextStyles.caption),
-          const SizedBox(height: 4),
-          Text(info.$1, style: AppTextStyles.heading2),
-          const SizedBox(height: 8),
-          Text('$correct / $total correct', style: AppTextStyles.body),
-          const SizedBox(height: 4),
-          const Text(
-            'Your personalized lesson path is ready!',
-            style: AppTextStyles.caption,
-            textAlign: TextAlign.center,
-          ),
-          const SizedBox(height: 24),
-          PrimaryButton(label: 'Start Learning', onPressed: onContinue),
-        ],
-      ),
-    );
-  }
-}
