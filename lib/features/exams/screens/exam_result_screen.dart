@@ -121,7 +121,7 @@ class _ExamResultScreenState extends ConsumerState<ExamResultScreen>
         backgroundColor: AppColors.background,
         elevation: 0,
         automaticallyImplyLeading: false,
-        title: const Text('Exam Results', style: AppTextStyles.heading3),
+        title: const Text('Sınav Sonuçları', style: AppTextStyles.heading3),
         centerTitle: true,
       ),
       body: Center(
@@ -151,7 +151,7 @@ class _ExamResultScreenState extends ConsumerState<ExamResultScreen>
                                 color: _scoreColor,
                               ),
                             ),
-                            Text('$correct / $total correct',
+                            Text('$correct / $total doğru',
                                 style: AppTextStyles.body),
                             const SizedBox(height: 12),
                             Container(
@@ -168,7 +168,7 @@ class _ExamResultScreenState extends ConsumerState<ExamResultScreen>
                                       color: AppColors.xpOrange, size: 22),
                                   const SizedBox(width: 6),
                                   Text(
-                                    '+$xpEarned XP Earned',
+                                    '+$xpEarned XP Kazanıldı',
                                     style: const TextStyle(
                                       fontSize: 17,
                                       fontWeight: FontWeight.w700,
@@ -185,7 +185,7 @@ class _ExamResultScreenState extends ConsumerState<ExamResultScreen>
                       const SizedBox(height: 28),
 
                       // ── Category breakdown ────────────────────────────
-                      const Text('Skill Breakdown', style: AppTextStyles.heading3),
+                      const Text('Beceri Dağılımı', style: AppTextStyles.heading3),
                       const SizedBox(height: 12),
                       ...QuestionCategory.values.where((cat) {
                         final t = categoryResults[cat.id]?['total'] ?? 0;
@@ -268,7 +268,7 @@ class _ExamResultScreenState extends ConsumerState<ExamResultScreen>
                           const Icon(Icons.auto_awesome,
                               color: Color(0xFF7C3AED), size: 16),
                           const SizedBox(width: 8),
-                          const Text('AI Analysis', style: AppTextStyles.heading3),
+                          const Text('AI Analizi', style: AppTextStyles.heading3),
                           const Spacer(),
                           if (_aiLoading)
                             const SizedBox(
@@ -304,7 +304,7 @@ class _ExamResultScreenState extends ConsumerState<ExamResultScreen>
                               ),
                               SizedBox(width: 14),
                               Text(
-                                'Analyzing your answers...',
+                                'Cevaplarınız analiz ediliyor...',
                                 style: TextStyle(
                                   fontSize: 14,
                                   color: Color(0xFF7C3AED),
@@ -336,7 +336,7 @@ class _ExamResultScreenState extends ConsumerState<ExamResultScreen>
                         // Focus areas
                         if (_aiResult!.focusAreas.isNotEmpty) ...[
                           const SizedBox(height: 16),
-                          const Text('Technical Focus Areas',
+                          const Text('Teknik Odak Alanları',
                               style: AppTextStyles.bodyBold),
                           const SizedBox(height: 10),
                           ..._aiResult!.focusAreas.map((area) {
@@ -415,7 +415,7 @@ class _ExamResultScreenState extends ConsumerState<ExamResultScreen>
                         // Study tips
                         if (_aiResult!.studyTips.isNotEmpty) ...[
                           const SizedBox(height: 16),
-                          const Text('Action Plan', style: AppTextStyles.bodyBold),
+                          const Text('Çalışma Planı', style: AppTextStyles.bodyBold),
                           const SizedBox(height: 10),
                           ..._aiResult!.studyTips.asMap().entries.map((e) {
                             return Container(
@@ -468,7 +468,7 @@ class _ExamResultScreenState extends ConsumerState<ExamResultScreen>
                       const SizedBox(height: 24),
 
                       // ── Answer Review ────────────────────────────────
-                      const Text('Answer Review', style: AppTextStyles.heading3),
+                      const Text('Cevap İncelemesi', style: AppTextStyles.heading3),
                       const SizedBox(height: 12),
                       ...List.generate(questions.length, (i) {
                         final q = questions[i];
@@ -518,14 +518,14 @@ class _ExamResultScreenState extends ConsumerState<ExamResultScreen>
                               if (!isCorrect && userAnswer != null) ...[
                                 const SizedBox(height: 5),
                                 Text(
-                                  'Your answer: ${q.options[userAnswer]}',
+                                  'Cevabınız: ${q.options[userAnswer]}',
                                   style: const TextStyle(
                                       fontSize: 12, color: AppColors.error),
                                 ),
                               ],
                               const SizedBox(height: 3),
                               Text(
-                                'Correct: ${q.options[q.correctIndex]}',
+                                'Doğru: ${q.options[q.correctIndex]}',
                                 style: const TextStyle(
                                   fontSize: 12,
                                   color: AppColors.success,
@@ -547,7 +547,7 @@ class _ExamResultScreenState extends ConsumerState<ExamResultScreen>
               Padding(
                 padding: const EdgeInsets.fromLTRB(24, 12, 24, 24),
                 child: PrimaryButton(
-                  label: 'Back to Home',
+                  label: 'Ana Sayfaya Dön',
                   onPressed: () => context.go('/home/exams'),
                 ),
               ),

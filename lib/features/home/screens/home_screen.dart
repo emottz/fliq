@@ -10,9 +10,9 @@ class HomeScreen extends ConsumerWidget {
   const HomeScreen({super.key, required this.child});
 
   static const _tabs = [
-    (path: '/home/exams', icon: Icons.quiz_outlined, activeIcon: Icons.quiz, label: 'Exams'),
-    (path: '/home/lessons', icon: Icons.school_outlined, activeIcon: Icons.school, label: 'Lessons'),
-    (path: '/home/profile', icon: Icons.person_outline, activeIcon: Icons.person, label: 'Profile'),
+    (path: '/home/exams', icon: Icons.quiz_outlined, activeIcon: Icons.quiz, label: 'Sınavlar'),
+    (path: '/home/lessons', icon: Icons.school_outlined, activeIcon: Icons.school, label: 'Dersler'),
+    (path: '/home/profile', icon: Icons.person_outline, activeIcon: Icons.person, label: 'Profil'),
   ];
 
   int _tabIndex(String path) {

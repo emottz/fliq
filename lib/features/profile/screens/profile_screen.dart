@@ -4,6 +4,7 @@ import 'package:intl/intl.dart';
 import '../../../core/constants/app_colors.dart';
 import '../../../core/constants/app_text_styles.dart';
 import '../../../core/constants/rank_constants.dart';
+import '../../../data/models/user_profile_model.dart';
 import '../../../shared/providers/app_providers.dart';
 import '../../../shared/widgets/xp_progress_bar.dart';
 
@@ -27,7 +28,7 @@ class ProfileScreen extends ConsumerWidget {
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
-                  const Text('Profile', style: AppTextStyles.heading2),
+                  const Text('Profil', style: AppTextStyles.heading2),
                   const SizedBox(height: 20),
                   // Rank badge
                   Container(
@@ -75,25 +76,25 @@ class ProfileScreen extends ConsumerWidget {
                     childAspectRatio: 1.6,
                     children: [
                       _StatCard(
-                        label: 'Total XP',
+                        label: 'Toplam XP',
                         value: profile.totalXp.toString(),
                         icon: Icons.bolt,
                         iconColor: AppColors.xpOrange,
                       ),
                       _StatCard(
-                        label: 'Streak',
-                        value: '${profile.streakDays} days',
+                        label: 'Seri',
+                        value: '${profile.streakDays} gün',
                         icon: Icons.local_fire_department,
                         iconColor: AppColors.streakFlame,
                       ),
                       _StatCard(
-                        label: 'Level',
-                        value: profile.level.name.capitalize(),
+                        label: 'Seviye',
+                        value: _levelName(profile.level),
                         icon: Icons.signal_cellular_alt,
                         iconColor: AppColors.primary,
                       ),
                       _StatCard(
-                        label: 'Exam Date',
+                        label: 'Sınav Tarihi',
                         value: profile.targetExamDate != null
                             ? DateFormat('dd MMM yyyy').format(profile.targetExamDate!)
                             : '—',
@@ -117,9 +118,9 @@ class ProfileScreen extends ConsumerWidget {
                           Column(
                             crossAxisAlignment: CrossAxisAlignment.start,
                             children: [
-                              const Text('Days until exam', style: AppTextStyles.caption),
+                              const Text('Sınava kalan gün', style: AppTextStyles.caption),
                               Text(
-                                '${profile.targetExamDate!.difference(DateTime.now()).inDays} days',
+                                '${profile.targetExamDate!.difference(DateTime.now()).inDays} gün',
                                 style: const TextStyle(
                                   fontWeight: FontWeight.w700,
                                   fontSize: 18,
@@ -133,7 +134,7 @@ class ProfileScreen extends ConsumerWidget {
                     ),
                   ],
                   const SizedBox(height: 24),
-                  const Text('Ranks', style: AppTextStyles.heading3),
+                  const Text('Rütbeler', style: AppTextStyles.heading3),
                   const SizedBox(height: 12),
                   ...RankConstants.ranks.map((r) {
                     final unlocked = profile.totalXp >= r.xpRequired;
@@ -165,7 +166,7 @@ class ProfileScreen extends ConsumerWidget {
                                     color: unlocked ? AppColors.textPrimary : AppColors.textHint,
                                   ),
                                 ),
-                                Text('${r.xpRequired} XP required', style: AppTextStyles.caption),
+                                Text('${r.xpRequired} XP gerekli', style: AppTextStyles.caption),
                               ],
                             ),
                           ),
@@ -176,7 +177,7 @@ class ProfileScreen extends ConsumerWidget {
                                 color: AppColors.primary,
                                 borderRadius: BorderRadius.circular(20),
                               ),
-                              child: const Text('Current',
+                              child: const Text('Mevcut',
                                   style: TextStyle(color: Colors.white, fontSize: 11, fontWeight: FontWeight.w600)),
                             )
                           else if (unlocked)
@@ -241,6 +242,9 @@ class _StatCard extends StatelessWidget {
   }
 }
 
-extension on String {
-  String capitalize() => isEmpty ? this : this[0].toUpperCase() + substring(1);
-}
+String _levelName(ProficiencyLevel level) => switch (level) {
+      ProficiencyLevel.beginner => 'Başlangıç',
+      ProficiencyLevel.elementary => 'Temel',
+      ProficiencyLevel.intermediate => 'Orta',
+      ProficiencyLevel.advanced => 'İleri',
+    };

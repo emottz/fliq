@@ -85,7 +85,7 @@ class _LessonSessionScreenState extends ConsumerState<LessonSessionScreen>
     if (lesson == null) {
       return Scaffold(
         appBar: AppBar(leading: BackButton(onPressed: () => context.go('/home/lessons'))),
-        body: const Center(child: Text('Lesson not found')),
+        body: const Center(child: Text('Ders bulunamadı')),
       );
     }
 
@@ -201,7 +201,7 @@ class _LessonSessionScreenState extends ConsumerState<LessonSessionScreen>
                               Icon(Icons.lock_outline, size: 14, color: AppColors.textSecondary),
                               SizedBox(width: 5),
                               Text(
-                                'Pass the practice quiz to complete this lesson',
+                                'Dersi tamamlamak için alıştırmayı geç',
                                 style: TextStyle(fontSize: 12, color: AppColors.textSecondary),
                               ),
                             ],
@@ -229,16 +229,16 @@ class _LessonSessionScreenState extends ConsumerState<LessonSessionScreen>
       context: context,
       builder: (_) => AlertDialog(
         shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(18)),
-        title: const Text('Leave Lesson?'),
-        content: const Text('Your progress on this lesson won\'t be saved.'),
+        title: const Text('Dersten Çık?'),
+        content: const Text('Bu dersteki ilerlemeliğin kaydedilmeyecek.'),
         actions: [
-          TextButton(onPressed: () => Navigator.pop(context), child: const Text('Stay')),
+          TextButton(onPressed: () => Navigator.pop(context), child: const Text('Kal')),
           TextButton(
             onPressed: () {
               Navigator.pop(context);
               context.go('/home/lessons');
             },
-            child: const Text('Leave', style: TextStyle(color: AppColors.error)),
+            child: const Text('Çık', style: TextStyle(color: AppColors.error)),
           ),
         ],
       ),
@@ -331,12 +331,12 @@ class _ContinueButton extends StatelessWidget {
                       const Icon(Icons.lock_outline, color: AppColors.textSecondary, size: 18),
                       const SizedBox(width: 8),
                       const Text(
-                        'Complete Practice First',
+                        'Önce Alıştırmayı Tamamla',
                         style: TextStyle(color: AppColors.textSecondary, fontSize: 15, fontWeight: FontWeight.w600),
                       ),
                     ] else ...[
                       Text(
-                        isLast ? 'Complete Lesson' : 'Continue',
+                        isLast ? 'Dersi Tamamla' : 'Devam',
                         style: const TextStyle(color: Colors.white, fontSize: 16, fontWeight: FontWeight.w700),
                       ),
                       const SizedBox(width: 8),
@@ -424,7 +424,7 @@ class _CelebrationDialogState extends State<_CelebrationDialog>
                 ),
               ),
               const SizedBox(height: 16),
-              const Text('Lesson Complete!',
+              const Text('Ders Tamamlandı!',
                   style: TextStyle(fontSize: 22, fontWeight: FontWeight.w800)),
               const SizedBox(height: 4),
               Text(
@@ -453,7 +453,7 @@ class _CelebrationDialogState extends State<_CelebrationDialog>
                       ),
                     ),
                     SizedBox(width: 4),
-                    Text('earned', style: TextStyle(fontSize: 14, color: AppColors.xpOrange)),
+                    Text('kazanıldı', style: TextStyle(fontSize: 14, color: AppColors.xpOrange)),
                   ],
                 ),
               ),
@@ -469,7 +469,7 @@ class _CelebrationDialogState extends State<_CelebrationDialog>
                     elevation: 0,
                     shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(12)),
                   ),
-                  child: const Text('Keep Going!',
+                  child: const Text('Devam Et!',
                       style: TextStyle(fontSize: 16, fontWeight: FontWeight.w700)),
                 ),
               ),

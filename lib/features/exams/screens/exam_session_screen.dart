@@ -268,16 +268,16 @@ class _ExamSessionScreenState extends ConsumerState<ExamSessionScreen> {
       context: context,
       builder: (_) => AlertDialog(
         shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(16)),
-        title: const Text('Quit Exam?'),
-        content: const Text('Your progress will be lost.'),
+        title: const Text('Sınavdan Çık?'),
+        content: const Text('İlerlemeliğin kaybolacak.'),
         actions: [
-          TextButton(onPressed: () => Navigator.pop(context), child: const Text('Continue')),
+          TextButton(onPressed: () => Navigator.pop(context), child: const Text('Devam Et')),
           TextButton(
             onPressed: () {
               Navigator.pop(context);
               context.go('/home/exams');
             },
-            child: const Text('Quit', style: TextStyle(color: AppColors.error)),
+            child: const Text('Çık', style: TextStyle(color: AppColors.error)),
           ),
         ],
       ),

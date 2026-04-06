@@ -2,17 +2,24 @@ import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:go_router/go_router.dart';
 import '../../../core/constants/app_colors.dart';
-import '../../../core/constants/app_text_styles.dart';
 import '../../../data/lessons/lesson_content_data.dart';
 import '../../../data/models/lesson_content_model.dart';
 import '../../../data/models/user_profile_model.dart';
 import '../../../shared/providers/app_providers.dart';
 
-class LessonListScreen extends ConsumerWidget {
+class LessonListScreen extends ConsumerStatefulWidget {
   const LessonListScreen({super.key});
 
+  @override
+  ConsumerState<LessonListScreen> createState() => _LessonListScreenState();
+}
+
+class _LessonListScreenState extends ConsumerState<LessonListScreen> {
+  int _refreshKey = 0;
+  bool _completing = false;
+
   static const _minLevels = {
-    // Beginner
+    // Başlangıç
     'grammar_1': ProficiencyLevel.beginner,
     'grammar_2': ProficiencyLevel.beginner,
     'grammar_5': ProficiencyLevel.beginner,
@@ -21,7 +28,7 @@ class LessonListScreen extends ConsumerWidget {
     'vocab_4': ProficiencyLevel.beginner,
     'fill_1': ProficiencyLevel.beginner,
     'fill_2': ProficiencyLevel.beginner,
-    // Elementary
+    // Temel
     'grammar_3': ProficiencyLevel.elementary,
     'vocab_2': ProficiencyLevel.elementary,
     'vocab_5': ProficiencyLevel.elementary,
@@ -29,7 +36,7 @@ class LessonListScreen extends ConsumerWidget {
     'translation_2': ProficiencyLevel.elementary,
     'fill_3': ProficiencyLevel.elementary,
     'reading_3': ProficiencyLevel.elementary,
-    // Intermediate
+    // Orta
     'reading_1': ProficiencyLevel.intermediate,
     'grammar_4': ProficiencyLevel.intermediate,
     'grammar_6': ProficiencyLevel.intermediate,
@@ -38,7 +45,7 @@ class LessonListScreen extends ConsumerWidget {
     'fill_4': ProficiencyLevel.intermediate,
     'translation_3': ProficiencyLevel.intermediate,
     'completion_1': ProficiencyLevel.intermediate,
-    // Advanced
+    // İleri
     'grammar_7': ProficiencyLevel.advanced,
     'vocab_7': ProficiencyLevel.advanced,
     'reading_5': ProficiencyLevel.advanced,
@@ -51,11 +58,31 @@ class LessonListScreen extends ConsumerWidget {
   };
 
   static const _levelGroups = [
-    (ProficiencyLevel.beginner, 'Beginner', '🌱', Color(0xFF10B981)),
-    (ProficiencyLevel.elementary, 'Elementary', '✈️', Color(0xFF3B82F6)),
-    (ProficiencyLevel.intermediate, 'Intermediate', '🛫', Color(0xFF8B5CF6)),
-    (ProficiencyLevel.advanced, 'Advanced', '🏆', Color(0xFFF59E0B)),
+    (ProficiencyLevel.beginner, 'Başlangıç', '🌱', Color(0xFF10B981)),
+    (ProficiencyLevel.elementary, 'Temel', '✈️', Color(0xFF3B82F6)),
+    (ProficiencyLevel.intermediate, 'Orta', '🛫', Color(0xFF8B5CF6)),
+    (ProficiencyLevel.advanced, 'İleri', '🏆', Color(0xFFF59E0B)),
   ];
+
+  static ProficiencyLevel? _nextLevel(ProficiencyLevel current) {
+    switch (current) {
+      case ProficiencyLevel.beginner:
+        return ProficiencyLevel.elementary;
+      case ProficiencyLevel.elementary:
+        return ProficiencyLevel.intermediate;
+      case ProficiencyLevel.intermediate:
+        return ProficiencyLevel.advanced;
+      case ProficiencyLevel.advanced:
+        return null;
+    }
+  }
+
+  static String _levelLabel(ProficiencyLevel level) => switch (level) {
+        ProficiencyLevel.beginner => 'Başlangıç',
+        ProficiencyLevel.elementary => 'Temel',
+        ProficiencyLevel.intermediate => 'Orta',
+        ProficiencyLevel.advanced => 'İleri',
+      };
 
   bool _isUnlocked(ProficiencyLevel userLevel, int idx, List<LessonContent> all, Set<String> completed) {
     if (idx == 0) return true;
@@ -65,8 +92,54 @@ class LessonListScreen extends ConsumerWidget {
     return userLevel.index >= minLevel.index;
   }
 
+  Future<void> _completeLeague(ProficiencyLevel userLevel, List<LessonContent> lessons) async {
+    if (_completing) return;
+    setState(() => _completing = true);
+
+    final repo = ref.read(userRepositoryProvider);
+    // Mevcut ligin tüm derslerini tamamla
+    for (final lesson in lessons) {
+      final minLevel = _minLevels[lesson.id] ?? ProficiencyLevel.beginner;
+      if (minLevel == userLevel) {
+        await repo.markLessonComplete(lesson.id);
+      }
+    }
+
+    // Bir sonraki seviyeye geç
+    final next = _nextLevel(userLevel);
+    if (next != null) {
+      final profile = await repo.getProfile();
+      if (profile != null) {
+        await ref
+            .read(userProfileProvider.notifier)
+            .saveLevel(profile.copyWith(level: next));
+      }
+    }
+
+    if (mounted) {
+      setState(() {
+        _completing = false;
+        _refreshKey++;
+      });
+
+      final next = _nextLevel(userLevel);
+      ScaffoldMessenger.of(context).showSnackBar(
+        SnackBar(
+          content: Text(
+            next != null
+                ? '${_levelLabel(userLevel)} ligi tamamlandı! ${_levelLabel(next)} seviyesine geçildi.'
+                : 'Tüm dersler tamamlandı! 🎉',
+          ),
+          backgroundColor: AppColors.success,
+          behavior: SnackBarBehavior.floating,
+          shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(12)),
+        ),
+      );
+    }
+  }
+
   @override
-  Widget build(BuildContext context, WidgetRef ref) {
+  Widget build(BuildContext context) {
     final profileAsync = ref.watch(userProfileProvider);
 
     return profileAsync.when(
@@ -75,6 +148,7 @@ class LessonListScreen extends ConsumerWidget {
         final lessons = LessonContentData.all;
 
         return FutureBuilder<Set<String>>(
+          key: ValueKey(_refreshKey),
           future: ref.read(userRepositoryProvider).getCompletedLessons(),
           builder: (context, snap) {
             final completed = snap.data ?? {};
@@ -86,20 +160,33 @@ class LessonListScreen extends ConsumerWidget {
                 child: SingleChildScrollView(
                   child: Column(
                     children: [
-                      // ── Header ────────────────────────────────────
+                      // ── Başlık ────────────────────────────────────
                       _ProgressHeader(
                         level: level,
                         done: doneCount,
                         total: lessons.length,
+                        levelLabel: _levelLabel(level),
                       ),
 
                       const SizedBox(height: 8),
 
-                      // ── Path ──────────────────────────────────────
+                      // ── Yol ──────────────────────────────────────
                       Padding(
                         padding: const EdgeInsets.symmetric(horizontal: 24),
                         child: Column(
                           children: _buildPath(context, lessons, level, completed),
+                        ),
+                      ),
+
+                      const SizedBox(height: 16),
+
+                      // ── Ligi Tamamla Butonu ───────────────────────
+                      Padding(
+                        padding: const EdgeInsets.symmetric(horizontal: 24),
+                        child: _CompleteLeagueButton(
+                          levelLabel: _levelLabel(level),
+                          isLoading: _completing,
+                          onTap: () => _completeLeague(level, lessons),
                         ),
                       ),
 
@@ -148,7 +235,7 @@ class LessonListScreen extends ConsumerWidget {
         ));
       }
 
-      // Connector before node (except first)
+      // Bağlantı çizgisi (ilk düğüm hariç)
       if (i > 0) {
         widgets.add(_Connector(done: completed.contains(lessons[i - 1].id)));
       }
@@ -167,21 +254,77 @@ class LessonListScreen extends ConsumerWidget {
   }
 }
 
-// ── Progress header ───────────────────────────────────────────────────────────
+// ── Ligi tamamla butonu ───────────────────────────────────────────────────────
+
+class _CompleteLeagueButton extends StatelessWidget {
+  final String levelLabel;
+  final bool isLoading;
+  final VoidCallback onTap;
+
+  const _CompleteLeagueButton({
+    required this.levelLabel,
+    required this.isLoading,
+    required this.onTap,
+  });
+
+  @override
+  Widget build(BuildContext context) {
+    return GestureDetector(
+      onTap: isLoading ? null : onTap,
+      child: Container(
+        width: double.infinity,
+        padding: const EdgeInsets.symmetric(vertical: 14, horizontal: 18),
+        decoration: BoxDecoration(
+          color: const Color(0xFFFFF7ED),
+          borderRadius: BorderRadius.circular(14),
+          border: Border.all(color: const Color(0xFFFED7AA), width: 1.5),
+        ),
+        child: Row(
+          mainAxisAlignment: MainAxisAlignment.center,
+          children: [
+            if (isLoading)
+              const SizedBox(
+                width: 18,
+                height: 18,
+                child: CircularProgressIndicator(
+                  strokeWidth: 2.5,
+                  color: Color(0xFFEA580C),
+                ),
+              )
+            else
+              const Text('⚡', style: TextStyle(fontSize: 18)),
+            const SizedBox(width: 10),
+            Text(
+              isLoading
+                  ? 'Tamamlanıyor...'
+                  : '$levelLabel ligini tamamla (Test)',
+              style: const TextStyle(
+                fontSize: 14,
+                fontWeight: FontWeight.w700,
+                color: Color(0xFFEA580C),
+              ),
+            ),
+          ],
+        ),
+      ),
+    );
+  }
+}
+
+// ── İlerleme başlığı ─────────────────────────────────────────────────────────
 
 class _ProgressHeader extends StatelessWidget {
   final ProficiencyLevel level;
   final int done;
   final int total;
+  final String levelLabel;
 
-  const _ProgressHeader({required this.level, required this.done, required this.total});
-
-  String get _levelLabel => switch (level) {
-        ProficiencyLevel.beginner => 'Beginner',
-        ProficiencyLevel.elementary => 'Elementary',
-        ProficiencyLevel.intermediate => 'Intermediate',
-        ProficiencyLevel.advanced => 'Advanced',
-      };
+  const _ProgressHeader({
+    required this.level,
+    required this.done,
+    required this.total,
+    required this.levelLabel,
+  });
 
   @override
   Widget build(BuildContext context) {
@@ -202,7 +345,7 @@ class _ProgressHeader extends StatelessWidget {
         children: [
           Row(
             children: [
-              const Text('Your Learning Path', style: TextStyle(color: Colors.white, fontSize: 17, fontWeight: FontWeight.w700)),
+              const Text('Öğrenme Yolun', style: TextStyle(color: Colors.white, fontSize: 17, fontWeight: FontWeight.w700)),
               const Spacer(),
               Container(
                 padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 4),
@@ -211,7 +354,7 @@ class _ProgressHeader extends StatelessWidget {
                   borderRadius: BorderRadius.circular(20),
                 ),
                 child: Text(
-                  _levelLabel,
+                  levelLabel,
                   style: const TextStyle(color: Colors.white, fontSize: 12, fontWeight: FontWeight.w600),
                 ),
               ),
@@ -225,7 +368,7 @@ class _ProgressHeader extends StatelessWidget {
                 style: const TextStyle(color: Colors.white, fontSize: 28, fontWeight: FontWeight.w800),
               ),
               Text(
-                ' / $total lessons',
+                ' / $total ders',
                 style: const TextStyle(color: Colors.white70, fontSize: 16),
               ),
             ],
@@ -251,7 +394,7 @@ class _ProgressHeader extends StatelessWidget {
   }
 }
 
-// ── Level section header ──────────────────────────────────────────────────────
+// ── Seviye bölüm başlığı ──────────────────────────────────────────────────────
 
 class _LevelSectionHeader extends StatelessWidget {
   final String emoji;
@@ -320,7 +463,7 @@ class _LevelSectionHeader extends StatelessWidget {
   }
 }
 
-// ── Connector line ────────────────────────────────────────────────────────────
+// ── Bağlantı çizgisi ──────────────────────────────────────────────────────────
 
 class _Connector extends StatelessWidget {
   final bool done;
@@ -369,7 +512,7 @@ class _ConnectorPainter extends CustomPainter {
   bool shouldRepaint(_ConnectorPainter old) => old.done != done;
 }
 
-// ── Lesson node ───────────────────────────────────────────────────────────────
+// ── Ders düğümü ───────────────────────────────────────────────────────────────
 
 class _LessonNode extends StatefulWidget {
   final LessonContent lesson;
@@ -428,7 +571,7 @@ class _LessonNodeState extends State<_LessonNode>
       onTap: widget.onTap,
       child: Column(
         children: [
-          // Node
+          // Düğüm
           AnimatedBuilder(
             animation: _scale,
             builder: (_, child) => Transform.scale(
@@ -438,7 +581,7 @@ class _LessonNodeState extends State<_LessonNode>
             child: Stack(
               alignment: Alignment.center,
               children: [
-                // Glow ring for next-up
+                // Sonraki ders için parlama halkası
                 if (widget.isNextUp)
                   Container(
                     width: 88,
@@ -448,7 +591,7 @@ class _LessonNodeState extends State<_LessonNode>
                       color: AppColors.primary.withOpacity(0.15),
                     ),
                   ),
-                // Main node
+                // Ana düğüm
                 Container(
                   width: 72,
                   height: 72,
@@ -474,7 +617,7 @@ class _LessonNodeState extends State<_LessonNode>
                             : const Icon(Icons.lock_outline, color: Colors.white, size: 26),
                   ),
                 ),
-                // Done badge
+                // Tamamlandı rozeti
                 if (widget.isDone)
                   Positioned(
                     bottom: 0,
@@ -497,7 +640,7 @@ class _LessonNodeState extends State<_LessonNode>
 
           const SizedBox(height: 8),
 
-          // Title
+          // Başlık
           SizedBox(
             width: 140,
             child: Text(
@@ -513,7 +656,7 @@ class _LessonNodeState extends State<_LessonNode>
             ),
           ),
 
-          // "Start" chip for next-up
+          // Sonraki ders chip'i
           if (widget.isNextUp) ...[
             const SizedBox(height: 6),
             Container(
@@ -523,7 +666,7 @@ class _LessonNodeState extends State<_LessonNode>
                 borderRadius: BorderRadius.circular(20),
               ),
               child: const Text(
-                'Start →',
+                'Başla →',
                 style: TextStyle(
                   color: Colors.white,
                   fontSize: 11,

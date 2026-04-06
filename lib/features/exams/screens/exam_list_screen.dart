@@ -10,12 +10,12 @@ class ExamListScreen extends ConsumerWidget {
   const ExamListScreen({super.key});
 
   static const _categories = [
-    (QuestionCategory.grammar, Icons.spellcheck, 'Grammar'),
-    (QuestionCategory.vocabulary, Icons.translate, 'Vocabulary'),
-    (QuestionCategory.translation, Icons.swap_horiz, 'Translation'),
-    (QuestionCategory.reading, Icons.menu_book, 'Reading'),
-    (QuestionCategory.fillBlanks, Icons.edit_outlined, 'Fill Blanks'),
-    (QuestionCategory.sentenceCompletion, Icons.format_quote, 'Completion'),
+    (QuestionCategory.grammar, Icons.spellcheck, 'Gramer'),
+    (QuestionCategory.vocabulary, Icons.translate, 'Kelime Bilgisi'),
+    (QuestionCategory.translation, Icons.swap_horiz, 'Çeviri'),
+    (QuestionCategory.reading, Icons.menu_book, 'Okuma'),
+    (QuestionCategory.fillBlanks, Icons.edit_outlined, 'Boşluk Doldur'),
+    (QuestionCategory.sentenceCompletion, Icons.format_quote, 'Cümle Tamamlama'),
   ];
 
   @override
@@ -28,11 +28,11 @@ class ExamListScreen extends ConsumerWidget {
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
-              const Text('Exams', style: AppTextStyles.heading2),
+              const Text('Sınavlar', style: AppTextStyles.heading2),
               const SizedBox(height: 16),
               _DailyExamCard(onTap: () => context.go('/exam/session', extra: {'count': 20, 'mode': 'daily'})),
               const SizedBox(height: 24),
-              const Text('Practice by Category', style: AppTextStyles.heading3),
+              const Text('Kategoriye Göre Pratik', style: AppTextStyles.heading3),
               const SizedBox(height: 12),
               GridView.count(
                 shrinkWrap: true,
@@ -54,7 +54,7 @@ class ExamListScreen extends ConsumerWidget {
               ),
               const SizedBox(height: 24),
               PrimaryButton(
-                label: '⚡  Quick Practice (10 Questions)',
+                label: '⚡  Hızlı Pratik (10 Soru)',
                 outlined: true,
                 onPressed: () => context.go('/exam/session', extra: {'count': 10, 'mode': 'quick'}),
               ),
@@ -91,20 +91,20 @@ class _DailyExamCard extends StatelessWidget {
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
                   const Text(
-                    "Today's Exam",
+                    'Bugünün Sınavı',
                     style: TextStyle(color: Colors.white70, fontSize: 13),
                   ),
                   const SizedBox(height: 4),
                   const Text(
-                    'Daily Mixed Exam',
+                    'Günlük Karma Sınav',
                     style: TextStyle(color: Colors.white, fontSize: 20, fontWeight: FontWeight.w700),
                   ),
                   const SizedBox(height: 8),
                   Row(
                     children: [
-                      _chip(Icons.timer_outlined, '20 min'),
+                      _chip(Icons.timer_outlined, '20 dk'),
                       const SizedBox(width: 10),
-                      _chip(Icons.quiz_outlined, '20 questions'),
+                      _chip(Icons.quiz_outlined, '20 soru'),
                     ],
                   ),
                 ],
