@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
+import 'package:go_router/go_router.dart';
 import 'package:intl/intl.dart';
 import '../../../core/constants/app_colors.dart';
 import '../../../core/constants/app_text_styles.dart';
@@ -134,6 +135,23 @@ class ProfileScreen extends ConsumerWidget {
                     ),
                   ],
                   const SizedBox(height: 24),
+                  // ── Çıkış butonu ───────────────────────────────────────
+                  OutlinedButton.icon(
+                    onPressed: () async {
+                      await ref.read(authServiceProvider).signOut();
+                      if (context.mounted) context.go('/auth');
+                    },
+                    icon: const Icon(Icons.logout_rounded, size: 18),
+                    label: const Text('Çıkış Yap'),
+                    style: OutlinedButton.styleFrom(
+                      foregroundColor: AppColors.error,
+                      side: const BorderSide(color: AppColors.error),
+                      minimumSize: const Size(double.infinity, 44),
+                      shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(12)),
+                    ),
+                  ),
+
+                  const SizedBox(height: 8),
                   const Text('Rütbeler', style: AppTextStyles.heading3),
                   const SizedBox(height: 12),
                   ...RankConstants.ranks.map((r) {

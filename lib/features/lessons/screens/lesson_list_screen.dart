@@ -16,7 +16,6 @@ class LessonListScreen extends ConsumerStatefulWidget {
 
 class _LessonListScreenState extends ConsumerState<LessonListScreen> {
   int _refreshKey = 0;
-  bool _completing = false;
 
   static const _minLevels = {
     // Başlangıç
@@ -64,19 +63,6 @@ class _LessonListScreenState extends ConsumerState<LessonListScreen> {
     (ProficiencyLevel.advanced, 'İleri', '🏆', Color(0xFFF59E0B)),
   ];
 
-  static ProficiencyLevel? _nextLevel(ProficiencyLevel current) {
-    switch (current) {
-      case ProficiencyLevel.beginner:
-        return ProficiencyLevel.elementary;
-      case ProficiencyLevel.elementary:
-        return ProficiencyLevel.intermediate;
-      case ProficiencyLevel.intermediate:
-        return ProficiencyLevel.advanced;
-      case ProficiencyLevel.advanced:
-        return null;
-    }
-  }
-
   static String _levelLabel(ProficiencyLevel level) => switch (level) {
         ProficiencyLevel.beginner => 'Başlangıç',
         ProficiencyLevel.elementary => 'Temel',
@@ -90,52 +76,6 @@ class _LessonListScreenState extends ConsumerState<LessonListScreen> {
     if (!completed.contains(prev.id)) return false;
     final minLevel = _minLevels[all[idx].id] ?? ProficiencyLevel.beginner;
     return userLevel.index >= minLevel.index;
-  }
-
-  Future<void> _completeLeague(ProficiencyLevel userLevel, List<LessonContent> lessons) async {
-    if (_completing) return;
-    setState(() => _completing = true);
-
-    final repo = ref.read(userRepositoryProvider);
-    // Mevcut ligin tüm derslerini tamamla
-    for (final lesson in lessons) {
-      final minLevel = _minLevels[lesson.id] ?? ProficiencyLevel.beginner;
-      if (minLevel == userLevel) {
-        await repo.markLessonComplete(lesson.id);
-      }
-    }
-
-    // Bir sonraki seviyeye geç
-    final next = _nextLevel(userLevel);
-    if (next != null) {
-      final profile = await repo.getProfile();
-      if (profile != null) {
-        await ref
-            .read(userProfileProvider.notifier)
-            .saveLevel(profile.copyWith(level: next));
-      }
-    }
-
-    if (mounted) {
-      setState(() {
-        _completing = false;
-        _refreshKey++;
-      });
-
-      final next = _nextLevel(userLevel);
-      ScaffoldMessenger.of(context).showSnackBar(
-        SnackBar(
-          content: Text(
-            next != null
-                ? '${_levelLabel(userLevel)} ligi tamamlandı! ${_levelLabel(next)} seviyesine geçildi.'
-                : 'Tüm dersler tamamlandı! 🎉',
-          ),
-          backgroundColor: AppColors.success,
-          behavior: SnackBarBehavior.floating,
-          shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(12)),
-        ),
-      );
-    }
   }
 
   @override
@@ -166,18 +106,6 @@ class _LessonListScreenState extends ConsumerState<LessonListScreen> {
                         done: doneCount,
                         total: lessons.length,
                         levelLabel: _levelLabel(level),
-                      ),
-
-                      const SizedBox(height: 12),
-
-                      // ── Ligi Tamamla Butonu ───────────────────────
-                      Padding(
-                        padding: const EdgeInsets.symmetric(horizontal: 20),
-                        child: _CompleteLeagueButton(
-                          levelLabel: _levelLabel(level),
-                          isLoading: _completing,
-                          onTap: () => _completeLeague(level, lessons),
-                        ),
                       ),
 
                       const SizedBox(height: 8),
@@ -251,63 +179,6 @@ class _LessonListScreenState extends ConsumerState<LessonListScreen> {
     }
 
     return widgets;
-  }
-}
-
-// ── Ligi tamamla butonu ───────────────────────────────────────────────────────
-
-class _CompleteLeagueButton extends StatelessWidget {
-  final String levelLabel;
-  final bool isLoading;
-  final VoidCallback onTap;
-
-  const _CompleteLeagueButton({
-    required this.levelLabel,
-    required this.isLoading,
-    required this.onTap,
-  });
-
-  @override
-  Widget build(BuildContext context) {
-    return GestureDetector(
-      onTap: isLoading ? null : onTap,
-      child: Container(
-        width: double.infinity,
-        padding: const EdgeInsets.symmetric(vertical: 14, horizontal: 18),
-        decoration: BoxDecoration(
-          color: const Color(0xFFFFF7ED),
-          borderRadius: BorderRadius.circular(14),
-          border: Border.all(color: const Color(0xFFFED7AA), width: 1.5),
-        ),
-        child: Row(
-          mainAxisAlignment: MainAxisAlignment.center,
-          children: [
-            if (isLoading)
-              const SizedBox(
-                width: 18,
-                height: 18,
-                child: CircularProgressIndicator(
-                  strokeWidth: 2.5,
-                  color: Color(0xFFEA580C),
-                ),
-              )
-            else
-              const Text('⚡', style: TextStyle(fontSize: 18)),
-            const SizedBox(width: 10),
-            Text(
-              isLoading
-                  ? 'Tamamlanıyor...'
-                  : '$levelLabel ligini tamamla (Test)',
-              style: const TextStyle(
-                fontSize: 14,
-                fontWeight: FontWeight.w700,
-                color: Color(0xFFEA580C),
-              ),
-            ),
-          ],
-        ),
-      ),
-    );
   }
 }
 

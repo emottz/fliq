@@ -1,13 +1,17 @@
+import 'dart:async';
+
+import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:go_router/go_router.dart';
 import '../../data/repositories/user_repository.dart';
+import '../../data/models/user_profile_model.dart';
+import '../../features/auth/screens/auth_screen.dart';
 import '../../features/onboarding/screens/onboarding_screen.dart';
 import '../../features/onboarding/screens/subscription_screen.dart';
 import '../../features/assessment/screens/assessment_intro_screen.dart';
 import '../../features/assessment/screens/assessment_screen.dart';
 import '../../features/assessment/screens/assessment_analysis_screen.dart';
-import '../../data/models/user_profile_model.dart';
 import '../../features/home/screens/home_screen.dart';
 import '../../features/exams/screens/exam_list_screen.dart';
 import '../../features/exams/screens/exam_session_screen.dart';
@@ -16,22 +20,48 @@ import '../../features/lessons/screens/lesson_list_screen.dart';
 import '../../features/lessons/screens/lesson_session_screen.dart';
 import '../../features/profile/screens/profile_screen.dart';
 
+// Auth değişikliklerini GoRouter'a bildiren notifier
+class _AuthNotifier extends ChangeNotifier {
+  StreamSubscription<User?>? _sub;
+
+  _AuthNotifier() {
+    _sub = FirebaseAuth.instance.authStateChanges().listen((_) => notifyListeners());
+  }
+
+  @override
+  void dispose() {
+    _sub?.cancel();
+    super.dispose();
+  }
+}
+
 final routerProvider = Provider<GoRouter>((ref) {
   final userRepo = UserRepository();
+  final authNotifier = _AuthNotifier();
 
   return GoRouter(
-    initialLocation: '/onboarding',
+    initialLocation: '/auth',
+    refreshListenable: authNotifier,
     redirect: (context, state) async {
-      final hasProfile = await userRepo.hasProfile;
-      final hasLevel = await userRepo.hasLevel;
-
+      final user = FirebaseAuth.instance.currentUser;
       final path = state.uri.path;
 
-      if (!hasProfile) {
-        if (path == '/onboarding') return null;
-        return '/onboarding';
+      // ── Giriş yapılmamış → auth ekranı ────────────────────
+      if (user == null) {
+        if (path == '/auth') return null;
+        return '/auth';
       }
 
+      // ── Giriş yapılmış ama auth ekranındaysa → yönlendir ──
+      if (path == '/auth') {
+        final hasProfile = await userRepo.hasProfile;
+        if (!hasProfile) return '/onboarding';
+        final hasLevel = await userRepo.hasLevel;
+        if (!hasLevel) return '/assessment-intro';
+        return '/home/exams';
+      }
+
+      // ── Profil kontrolü ────────────────────────────────────
       const preAssessmentPaths = [
         '/assessment-intro',
         '/assessment',
@@ -39,6 +69,13 @@ final routerProvider = Provider<GoRouter>((ref) {
         '/subscription',
       ];
 
+      final hasProfile = await userRepo.hasProfile;
+      if (!hasProfile) {
+        if (path == '/onboarding') return null;
+        return '/onboarding';
+      }
+
+      final hasLevel = await userRepo.hasLevel;
       if (!hasLevel) {
         if (preAssessmentPaths.contains(path)) return null;
         return '/assessment-intro';
@@ -54,6 +91,10 @@ final routerProvider = Provider<GoRouter>((ref) {
       return null;
     },
     routes: [
+      GoRoute(
+        path: '/auth',
+        builder: (context, state) => const AuthScreen(),
+      ),
       GoRoute(
         path: '/onboarding',
         builder: (context, state) => const OnboardingScreen(),
@@ -128,7 +169,7 @@ final routerProvider = Provider<GoRouter>((ref) {
       ),
     ],
     errorBuilder: (context, state) => Scaffold(
-      body: Center(child: Text('Page not found: ${state.uri}')),
+      body: Center(child: Text('Sayfa bulunamadı: ${state.uri}')),
     ),
   );
 });
