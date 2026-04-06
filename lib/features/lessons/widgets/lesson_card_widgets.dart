@@ -5,17 +5,22 @@ import '../../../data/models/lesson_content_model.dart';
 import '../../../data/models/question_model.dart';
 import 'grammar_animations.dart';
 
+const _kPassThreshold = 0.60; // 60% to pass
+
 /// Full-card widget per section — used in PageView.
 class LessonCardWidget extends StatelessWidget {
   final LessonSection section;
   final int sectionIndex;
   final String lessonEmoji;
+  /// Called only for practice sections when the user completes the quiz.
+  final void Function(bool passed)? onPracticeResult;
 
   const LessonCardWidget({
     super.key,
     required this.section,
     required this.sectionIndex,
     required this.lessonEmoji,
+    this.onPracticeResult,
   });
 
   @override
@@ -25,7 +30,7 @@ class LessonCardWidget extends StatelessWidget {
       LessonSectionType.rule => _RuleCard(section: section),
       LessonSectionType.examples => _ExamplesCard(section: section),
       LessonSectionType.animation => _AnimationCard(section: section),
-      LessonSectionType.practice => _PracticeCard(section: section),
+      LessonSectionType.practice => _PracticeCard(section: section, onResult: onPracticeResult),
       LessonSectionType.tip => _TipCard(section: section),
     };
   }
@@ -606,7 +611,8 @@ class _AnimationCard extends StatelessWidget {
 
 class _PracticeCard extends StatefulWidget {
   final LessonSection section;
-  const _PracticeCard({required this.section});
+  final void Function(bool passed)? onResult;
+  const _PracticeCard({required this.section, this.onResult});
 
   @override
   State<_PracticeCard> createState() => _PracticeCardState();
@@ -634,11 +640,16 @@ class _PracticeCardState extends State<_PracticeCard> {
     if (_current < _questions.length - 1) {
       setState(() { _current++; _answered = false; });
     } else {
+      final passed = _questions.isNotEmpty && _score / _questions.length >= _kPassThreshold;
       setState(() => _allDone = true);
+      widget.onResult?.call(passed);
     }
   }
 
   void _restart() {
+    final wasPass = _questions.isNotEmpty && _score / _questions.length >= _kPassThreshold;
+    // Only reset pass if they're retrying after failing
+    if (!wasPass) widget.onResult?.call(false);
     setState(() { _answers.clear(); _current = 0; _answered = false; _allDone = false; _score = 0; });
   }
 
@@ -810,31 +821,97 @@ class _ScoreCard extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final pct = (score / total * 100).round();
-    final color = pct >= 75 ? AppColors.success : pct >= 50 ? AppColors.primary : AppColors.warning;
-    final emoji = pct >= 75 ? '🎉' : pct >= 50 ? '👍' : '📚';
+    final pct = total > 0 ? score / total : 0.0;
+    final passed = pct >= _kPassThreshold;
+    final pctInt = (pct * 100).round();
 
+    if (passed) {
+      return Container(
+        width: double.infinity,
+        padding: const EdgeInsets.all(24),
+        decoration: BoxDecoration(
+          color: const Color(0xFFF0FDF4),
+          borderRadius: BorderRadius.circular(18),
+          border: Border.all(color: AppColors.success.withOpacity(0.4), width: 1.5),
+        ),
+        child: Column(
+          children: [
+            Container(
+              width: 72,
+              height: 72,
+              decoration: BoxDecoration(
+                shape: BoxShape.circle,
+                color: AppColors.success,
+                boxShadow: [BoxShadow(color: AppColors.success.withOpacity(0.35), blurRadius: 16, offset: const Offset(0, 4))],
+              ),
+              child: const Icon(Icons.check_rounded, color: Colors.white, size: 36),
+            ),
+            const SizedBox(height: 14),
+            const Text('Practice Passed!', style: TextStyle(fontSize: 20, fontWeight: FontWeight.w800, color: Color(0xFF166534))),
+            const SizedBox(height: 6),
+            Text(
+              '$score / $total correct — $pctInt%',
+              style: const TextStyle(fontSize: 15, color: Color(0xFF15803D)),
+            ),
+            const SizedBox(height: 10),
+            const Text(
+              'You can now complete this lesson.',
+              style: TextStyle(fontSize: 13, color: Color(0xFF166534)),
+            ),
+          ],
+        ),
+      );
+    }
+
+    // Failed
     return Container(
       width: double.infinity,
       padding: const EdgeInsets.all(24),
       decoration: BoxDecoration(
-        color: color.withOpacity(0.08),
-        borderRadius: BorderRadius.circular(16),
-        border: Border.all(color: color.withOpacity(0.3)),
+        color: const Color(0xFFFFF1F2),
+        borderRadius: BorderRadius.circular(18),
+        border: Border.all(color: AppColors.error.withOpacity(0.3), width: 1.5),
       ),
       child: Column(
         children: [
-          Text(emoji, style: const TextStyle(fontSize: 40)),
-          const SizedBox(height: 8),
-          Text('$score / $total', style: TextStyle(fontSize: 30, fontWeight: FontWeight.w800, color: color)),
-          const SizedBox(height: 4),
-          Text('$pct% correct', style: const TextStyle(color: AppColors.textSecondary)),
-          const SizedBox(height: 16),
-          TextButton.icon(
-            onPressed: onRetry,
-            icon: const Icon(Icons.replay, size: 16),
-            label: const Text('Try Again'),
-            style: TextButton.styleFrom(foregroundColor: AppColors.primary),
+          Container(
+            width: 72,
+            height: 72,
+            decoration: BoxDecoration(
+              shape: BoxShape.circle,
+              color: AppColors.error,
+              boxShadow: [BoxShadow(color: AppColors.error.withOpacity(0.3), blurRadius: 16, offset: const Offset(0, 4))],
+            ),
+            child: const Icon(Icons.close_rounded, color: Colors.white, size: 36),
+          ),
+          const SizedBox(height: 14),
+          const Text('Not Quite!', style: TextStyle(fontSize: 20, fontWeight: FontWeight.w800, color: Color(0xFF9B1C1C))),
+          const SizedBox(height: 6),
+          Text(
+            '$score / $total correct — $pctInt%',
+            style: const TextStyle(fontSize: 15, color: Color(0xFFB91C1C)),
+          ),
+          const SizedBox(height: 6),
+          const Text(
+            'You need 60% or more to pass.\nReview the lesson and try again.',
+            style: TextStyle(fontSize: 13, color: Color(0xFF991B1B), height: 1.5),
+            textAlign: TextAlign.center,
+          ),
+          const SizedBox(height: 18),
+          SizedBox(
+            width: double.infinity,
+            height: 44,
+            child: ElevatedButton.icon(
+              onPressed: onRetry,
+              icon: const Icon(Icons.replay_rounded, size: 18),
+              label: const Text('Try Again', style: TextStyle(fontWeight: FontWeight.w700)),
+              style: ElevatedButton.styleFrom(
+                backgroundColor: AppColors.error,
+                foregroundColor: Colors.white,
+                elevation: 0,
+                shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(10)),
+              ),
+            ),
           ),
         ],
       ),
