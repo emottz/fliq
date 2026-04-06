@@ -12,17 +12,41 @@ class LessonListScreen extends ConsumerWidget {
   const LessonListScreen({super.key});
 
   static const _minLevels = {
+    // Beginner
     'grammar_1': ProficiencyLevel.beginner,
     'grammar_2': ProficiencyLevel.beginner,
+    'grammar_5': ProficiencyLevel.beginner,
     'vocab_1': ProficiencyLevel.beginner,
+    'vocab_3': ProficiencyLevel.beginner,
+    'vocab_4': ProficiencyLevel.beginner,
     'fill_1': ProficiencyLevel.beginner,
+    'fill_2': ProficiencyLevel.beginner,
+    // Elementary
     'grammar_3': ProficiencyLevel.elementary,
     'vocab_2': ProficiencyLevel.elementary,
+    'vocab_5': ProficiencyLevel.elementary,
     'translation_1': ProficiencyLevel.elementary,
+    'translation_2': ProficiencyLevel.elementary,
+    'fill_3': ProficiencyLevel.elementary,
+    'reading_3': ProficiencyLevel.elementary,
+    // Intermediate
     'reading_1': ProficiencyLevel.intermediate,
     'grammar_4': ProficiencyLevel.intermediate,
+    'grammar_6': ProficiencyLevel.intermediate,
+    'vocab_6': ProficiencyLevel.intermediate,
+    'reading_4': ProficiencyLevel.intermediate,
+    'fill_4': ProficiencyLevel.intermediate,
+    'translation_3': ProficiencyLevel.intermediate,
     'completion_1': ProficiencyLevel.intermediate,
+    // Advanced
+    'grammar_7': ProficiencyLevel.advanced,
+    'vocab_7': ProficiencyLevel.advanced,
+    'reading_5': ProficiencyLevel.advanced,
     'reading_2': ProficiencyLevel.advanced,
+    'completion_3': ProficiencyLevel.advanced,
+    'fill_5': ProficiencyLevel.advanced,
+    'translation_4': ProficiencyLevel.advanced,
+    'reading_6': ProficiencyLevel.advanced,
     'completion_2': ProficiencyLevel.advanced,
   };
 
