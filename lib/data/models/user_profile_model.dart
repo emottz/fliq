@@ -14,21 +14,20 @@ class UserProfileModel extends Equatable {
   final String? lastActiveDate;
   final Map<String, double> categoryProgress;
 
-  // Onboarding — Step 1: Kim olduğun
-  final String licenseLevel;   // ppl_student | cpl_student | ppl_holder
-  final String flightHours;    // 0_50 | 50_200 | 200_plus
-  final String nativeLanguage; // turkish | arabic | other
+  // Onboarding fields
+  final String licenseLevel;    // not_started | theory | flight_training | ppl_holder
+  final String nativeLanguage;  // turkish | other
+  final String englishLevel;    // weak | medium | good
+  final String goal;            // icao | general | both
+  final String dailyTime;       // 5_10 | 15_20 | 30_plus
+  final String examTimeline;    // not_planned | 6_months_plus | 6_months | 1_month
 
-  // Onboarding — Step 2: Nerede olduğun
-  final String englishLevel;   // a2 | b1 | b2 | c1
-  final String icaoLevel;      // none | level_3 | level_4 | level_5
-  final String examTimeline;   // not_planned | 6_months_plus | 6_months | 1_month
-
-  // Onboarding — Step 3: Ne istediğin
-  final String hardestArea;      // phraseology | vocabulary | listening | pronunciation
-  final String flyingEnvironment;// domestic | international | both
-  final String aircraftType;     // sep | multi | jet
-  final String dailyTime;        // 5_10 | 15_20 | 30_plus
+  // Legacy / unused (kept for model compat)
+  final String flightHours;
+  final String icaoLevel;
+  final String hardestArea;
+  final String flyingEnvironment;
+  final String aircraftType;
 
   const UserProfileModel({
     required this.role,
@@ -40,15 +39,16 @@ class UserProfileModel extends Equatable {
     this.lastActiveDate,
     required this.categoryProgress,
     this.licenseLevel = '',
-    this.flightHours = '',
     this.nativeLanguage = '',
     this.englishLevel = '',
-    this.icaoLevel = '',
+    this.goal = '',
+    this.dailyTime = '',
     this.examTimeline = '',
+    this.flightHours = '',
+    this.icaoLevel = '',
     this.hardestArea = '',
     this.flyingEnvironment = '',
     this.aircraftType = '',
-    this.dailyTime = '',
   });
 
   static UserProfileModel empty() => const UserProfileModel(
@@ -69,15 +69,16 @@ class UserProfileModel extends Equatable {
     String? lastActiveDate,
     Map<String, double>? categoryProgress,
     String? licenseLevel,
-    String? flightHours,
     String? nativeLanguage,
     String? englishLevel,
-    String? icaoLevel,
+    String? goal,
+    String? dailyTime,
     String? examTimeline,
+    String? flightHours,
+    String? icaoLevel,
     String? hardestArea,
     String? flyingEnvironment,
     String? aircraftType,
-    String? dailyTime,
   }) {
     return UserProfileModel(
       role: role ?? this.role,
@@ -89,15 +90,16 @@ class UserProfileModel extends Equatable {
       lastActiveDate: lastActiveDate ?? this.lastActiveDate,
       categoryProgress: categoryProgress ?? this.categoryProgress,
       licenseLevel: licenseLevel ?? this.licenseLevel,
-      flightHours: flightHours ?? this.flightHours,
       nativeLanguage: nativeLanguage ?? this.nativeLanguage,
       englishLevel: englishLevel ?? this.englishLevel,
-      icaoLevel: icaoLevel ?? this.icaoLevel,
+      goal: goal ?? this.goal,
+      dailyTime: dailyTime ?? this.dailyTime,
       examTimeline: examTimeline ?? this.examTimeline,
+      flightHours: flightHours ?? this.flightHours,
+      icaoLevel: icaoLevel ?? this.icaoLevel,
       hardestArea: hardestArea ?? this.hardestArea,
       flyingEnvironment: flyingEnvironment ?? this.flyingEnvironment,
       aircraftType: aircraftType ?? this.aircraftType,
-      dailyTime: dailyTime ?? this.dailyTime,
     );
   }
 
@@ -111,15 +113,11 @@ class UserProfileModel extends Equatable {
         'lastActiveDate': lastActiveDate,
         'categoryProgress': categoryProgress,
         'licenseLevel': licenseLevel,
-        'flightHours': flightHours,
         'nativeLanguage': nativeLanguage,
         'englishLevel': englishLevel,
-        'icaoLevel': icaoLevel,
-        'examTimeline': examTimeline,
-        'hardestArea': hardestArea,
-        'flyingEnvironment': flyingEnvironment,
-        'aircraftType': aircraftType,
+        'goal': goal,
         'dailyTime': dailyTime,
+        'examTimeline': examTimeline,
       };
 
   factory UserProfileModel.fromJson(Map<String, dynamic> json) {
@@ -139,15 +137,11 @@ class UserProfileModel extends Equatable {
       categoryProgress: (json['categoryProgress'] as Map<String, dynamic>? ?? {})
           .map((k, v) => MapEntry(k, (v as num).toDouble())),
       licenseLevel: json['licenseLevel'] as String? ?? '',
-      flightHours: json['flightHours'] as String? ?? '',
       nativeLanguage: json['nativeLanguage'] as String? ?? '',
       englishLevel: json['englishLevel'] as String? ?? '',
-      icaoLevel: json['icaoLevel'] as String? ?? '',
-      examTimeline: json['examTimeline'] as String? ?? '',
-      hardestArea: json['hardestArea'] as String? ?? '',
-      flyingEnvironment: json['flyingEnvironment'] as String? ?? '',
-      aircraftType: json['aircraftType'] as String? ?? '',
+      goal: json['goal'] as String? ?? '',
       dailyTime: json['dailyTime'] as String? ?? '',
+      examTimeline: json['examTimeline'] as String? ?? '',
     );
   }
 

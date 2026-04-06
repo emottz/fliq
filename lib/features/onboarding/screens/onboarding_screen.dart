@@ -21,28 +21,25 @@ class _OnboardingScreenState extends ConsumerState<OnboardingScreen>
   late AnimationController _slideCtrl;
   late Animation<Offset> _slideAnim;
 
-  // Step 1 — Kim olduğun
+  // Q1
   String _licenseLevel = '';
-  String _flightHours = '';
+  // Q2
   String _nativeLanguage = '';
-
-  // Step 2 — Nerede olduğun
+  // Q3
   String _englishLevel = '';
-  String _icaoLevel = '';
-  String _examTimeline = '';
-
-  // Step 3 — Ne istediğin
-  String _hardestArea = '';
-  String _flyingEnvironment = '';
-  String _aircraftType = '';
+  // Q4
+  String _goal = '';
+  // Q5
   String _dailyTime = '';
+  // Q6 — sınav tarihi
+  String _examTimeline = '';
 
   @override
   void initState() {
     super.initState();
     _slideCtrl = AnimationController(
       vsync: this,
-      duration: const Duration(milliseconds: 350),
+      duration: const Duration(milliseconds: 320),
     );
     _slideAnim = Tween<Offset>(
       begin: const Offset(1, 0),
@@ -58,16 +55,9 @@ class _OnboardingScreenState extends ConsumerState<OnboardingScreen>
   }
 
   bool _canProceed() => switch (_step) {
-        0 => _licenseLevel.isNotEmpty &&
-            _flightHours.isNotEmpty &&
-            _nativeLanguage.isNotEmpty,
-        1 => _englishLevel.isNotEmpty &&
-            _icaoLevel.isNotEmpty &&
-            _examTimeline.isNotEmpty,
-        2 => _hardestArea.isNotEmpty &&
-            _flyingEnvironment.isNotEmpty &&
-            _aircraftType.isNotEmpty &&
-            _dailyTime.isNotEmpty,
+        0 => _licenseLevel.isNotEmpty && _nativeLanguage.isNotEmpty,
+        1 => _englishLevel.isNotEmpty && _goal.isNotEmpty,
+        2 => _dailyTime.isNotEmpty && _examTimeline.isNotEmpty,
         _ => false,
       };
 
@@ -86,15 +76,11 @@ class _OnboardingScreenState extends ConsumerState<OnboardingScreen>
     final profile = UserProfileModel(
       role: 'pilot',
       licenseLevel: _licenseLevel,
-      flightHours: _flightHours,
       nativeLanguage: _nativeLanguage,
       englishLevel: _englishLevel,
-      icaoLevel: _icaoLevel,
-      examTimeline: _examTimeline,
-      hardestArea: _hardestArea,
-      flyingEnvironment: _flyingEnvironment,
-      aircraftType: _aircraftType,
+      goal: _goal,
       dailyTime: _dailyTime,
+      examTimeline: _examTimeline,
       level: ProficiencyLevel.beginner,
       totalXp: 0,
       streakDays: 0,
@@ -105,9 +91,9 @@ class _OnboardingScreenState extends ConsumerState<OnboardingScreen>
   }
 
   static const _steps = [
-    (emoji: '🧑‍✈️', title: 'Kim olduğun', sub: 'Temel kimlik bilgilerin'),
-    (emoji: '🌍', title: 'Nerede olduğun', sub: 'Mevcut dil durumun'),
-    (emoji: '🎯', title: 'Ne istediğin', sub: 'Hedef ve motivasyon'),
+    (emoji: '🧑‍✈️', title: 'Kim olduğun'),
+    (emoji: '📚', title: 'Dil durumun'),
+    (emoji: '🎯', title: 'Çalışma planın'),
   ];
 
   @override
@@ -127,7 +113,6 @@ class _OnboardingScreenState extends ConsumerState<OnboardingScreen>
                   // ── Header ──────────────────────────────────────
                   Row(
                     children: [
-                      // Logo mark
                       Container(
                         width: 36,
                         height: 36,
@@ -189,15 +174,13 @@ class _OnboardingScreenState extends ConsumerState<OnboardingScreen>
                     }),
                   ),
 
-                  const SizedBox(height: 24),
+                  const SizedBox(height: 28),
 
                   // ── Step title ────────────────────────────────────
                   Text(
                     '${step.emoji}  ${step.title}',
                     style: AppTextStyles.heading2,
                   ),
-                  const SizedBox(height: 4),
-                  Text(step.sub, style: AppTextStyles.caption),
 
                   const SizedBox(height: 20),
 
@@ -219,7 +202,6 @@ class _OnboardingScreenState extends ConsumerState<OnboardingScreen>
                     isLoading: _saving,
                     onPressed: _canProceed() ? _next : null,
                   ),
-
                   const SizedBox(height: 4),
                 ],
               ),
@@ -232,234 +214,183 @@ class _OnboardingScreenState extends ConsumerState<OnboardingScreen>
 
   Widget _buildStep() {
     switch (_step) {
+      // ── Ekran 1: Kim olduğun ─────────────────────────────────
       case 0:
-        return _StepContent(
-          questions: [
-            _QuestionData(
-              label: 'Mevcut Lisans Seviyeni',
-              hint: 'ICAO gereksinimleri lisansa göre değişir',
+        return Column(
+          crossAxisAlignment: CrossAxisAlignment.start,
+          children: [
+            _Question(
+              label: 'Uçuş eğitiminde hangi aşamadasın?',
+              hint: 'İçerik zorluğunu belirler',
               options: const [
-                ('ppl_student', 'PPL Öğrencisi'),
-                ('cpl_student', 'CPL Öğrencisi'),
-                ('ppl_holder', 'PPL Sahibi (CPL hazırlığı)'),
+                ('not_started', '🌱  Henüz başlamadım'),
+                ('theory', '📖  Teorik eğitimdeyim'),
+                ('flight_training', '✈️  Uçuş eğitimindeyim'),
+                ('ppl_holder', '🏅  PPL aldım'),
               ],
               selected: _licenseLevel,
               onSelect: (v) => setState(() => _licenseLevel = v),
             ),
-            _QuestionData(
-              label: 'Toplam Uçuş Saati',
-              hint: 'Terim aşinalığı ve kelime zorluğu buna göre ayarlanır',
-              options: const [
-                ('0_50', '0 – 50 saat'),
-                ('50_200', '50 – 200 saat'),
-                ('200_plus', '200+ saat'),
-              ],
-              selected: _flightHours,
-              onSelect: (v) => setState(() => _flightHours = v),
-            ),
-            _QuestionData(
-              label: 'Ana Dilin',
-              hint: 'Hata kalıpları ana dile göre değişir',
+            const SizedBox(height: 24),
+            _Question(
+              label: 'Ana dilin nedir?',
+              hint: 'Türkçe konuşanlara özel hata kalıpları var',
               options: const [
                 ('turkish', '🇹🇷  Türkçe'),
-                ('arabic', '🇸🇦  Arapça'),
                 ('other', '🌐  Diğer'),
               ],
               selected: _nativeLanguage,
               onSelect: (v) => setState(() => _nativeLanguage = v),
             ),
+            const SizedBox(height: 8),
           ],
         );
+
+      // ── Ekran 2: Dil durumun ────────────────────────────────
       case 1:
-        return _StepContent(
-          questions: [
-            _QuestionData(
-              label: 'Genel İngilizce Seviyeni',
-              hint: 'ICAO skoru genel seviyeden bağımsız değil',
+        return Column(
+          crossAxisAlignment: CrossAxisAlignment.start,
+          children: [
+            _Question(
+              label: 'İngilizce seviyeni nasıl değerlendirirsin?',
+              hint: '3 seçenek yeterli, fazlası kafa karıştırır',
               options: const [
-                ('a2', 'A2  Temel'),
-                ('b1', 'B1  Orta öncesi'),
-                ('b2', 'B2  Orta'),
-                ('c1', 'C1  İleri'),
+                ('weak', '🔴  Zayıf'),
+                ('medium', '🟡  Orta'),
+                ('good', '🟢  İyi'),
               ],
               selected: _englishLevel,
               onSelect: (v) => setState(() => _englishLevel = v),
             ),
-            _QuestionData(
-              label: 'ICAO Dil Seviyesi',
-              hint: 'Daha önce resmi ICAO testi yaptırdın mı?',
+            const SizedBox(height: 24),
+            _Question(
+              label: 'Hedefin ne?',
+              hint: 'ICAO hedefliyorsan test formatına uygun sorular öne çıkar',
               options: const [
-                ('none', 'Test olmadım'),
-                ('level_3', 'Level 3'),
-                ('level_4', 'Level 4'),
-                ('level_5', 'Level 5+'),
+                ('icao', '🎖️  ICAO sınavına hazırlanmak'),
+                ('general', '✈️  Genel aviation İngilizcesi'),
+                ('both', '🔥  Her ikisi'),
               ],
-              selected: _icaoLevel,
-              onSelect: (v) => setState(() => _icaoLevel = v),
+              selected: _goal,
+              onSelect: (v) => setState(() => _goal = v),
             ),
-            _QuestionData(
-              label: 'Test Tarihin Var mı?',
-              hint: 'İçerik yoğunluğu ve önceliklendirme buna göre şekillenir',
-              options: const [
-                ('not_planned', 'Planlamadım'),
-                ('6_months_plus', '6 ay+ var'),
-                ('6_months', '6 ay içinde'),
-                ('1_month', '1 ay içinde'),
-              ],
-              selected: _examTimeline,
-              onSelect: (v) => setState(() => _examTimeline = v),
-            ),
+            const SizedBox(height: 8),
           ],
         );
+
+      // ── Ekran 3: Çalışma planın ─────────────────────────────
       case 2:
-        return _StepContent(
-          questions: [
-            _QuestionData(
-              label: 'En Zor Bulduğun Alan',
-              hint: 'İlk ders planı buna göre şekillenir',
+        return Column(
+          crossAxisAlignment: CrossAxisAlignment.start,
+          children: [
+            _Question(
+              label: 'Günlük ne kadar vakit ayırabilirsin?',
+              hint: 'Session uzunluğu ve bildirim sıklığı buna göre ayarlanır',
               options: const [
-                ('phraseology', '📻  Phraseology'),
-                ('vocabulary', '📚  Kelime dağarcığı'),
-                ('listening', '🎧  Dinleme / Anlama'),
-                ('pronunciation', '🗣️  Telaffuz'),
-              ],
-              selected: _hardestArea,
-              onSelect: (v) => setState(() => _hardestArea = v),
-            ),
-            _QuestionData(
-              label: 'Uçuş / Simülatör Ortamın',
-              hint: 'Yurt içi ağırlıklıysa non-standard phraseology maruziyetin yüksek',
-              options: const [
-                ('domestic', '🏠  Yurt İçi'),
-                ('international', '🌍  Uluslararası'),
-                ('both', '↔️  Her İkisi'),
-              ],
-              selected: _flyingEnvironment,
-              onSelect: (v) => setState(() => _flyingEnvironment = v),
-            ),
-            _QuestionData(
-              label: 'Uçak Tipi / Kategorisi',
-              hint: 'Kelime setleri uçak tipine göre farklılaşır',
-              options: const [
-                ('sep', '🛩️  SEP (Single-engine)'),
-                ('multi', '✈️  Multi-engine'),
-                ('jet', '🚀  Jet (Type rating)'),
-              ],
-              selected: _aircraftType,
-              onSelect: (v) => setState(() => _aircraftType = v),
-            ),
-            _QuestionData(
-              label: 'Günlük Ayırabildiğin Süre',
-              hint: 'Session uzunluğu ve tekrar aralıkları buna göre optimize edilir',
-              options: const [
-                ('5_10', '⚡ 5 – 10 dk'),
-                ('15_20', '🔥 15 – 20 dk'),
-                ('30_plus', '🏆 30+ dk'),
+                ('5_10', '⚡  5 – 10 dakika'),
+                ('15_20', '🔥  15 – 20 dakika'),
+                ('30_plus', '🏆  30+ dakika'),
               ],
               selected: _dailyTime,
               onSelect: (v) => setState(() => _dailyTime = v),
             ),
+            const SizedBox(height: 24),
+            _Question(
+              label: 'ICAO sınavın ne zaman?',
+              hint: 'Önceliklendirme ve yoğunluk buna göre şekillenir',
+              options: const [
+                ('not_planned', '📅  Planlamadım henüz'),
+                ('6_months_plus', '🗓️  6 aydan fazla var'),
+                ('6_months', '⏳  6 ay içinde'),
+                ('1_month', '🚨  1 ay içinde'),
+              ],
+              selected: _examTimeline,
+              onSelect: (v) => setState(() => _examTimeline = v),
+            ),
+            const SizedBox(height: 8),
           ],
         );
+
       default:
         return const SizedBox();
     }
   }
 }
 
-// ── Step content ──────────────────────────────────────────────────────────────
+// ── Question widget ───────────────────────────────────────────────────────────
 
-class _QuestionData {
+class _Question extends StatelessWidget {
   final String label;
   final String? hint;
   final List<(String, String)> options;
   final String selected;
   final ValueChanged<String> onSelect;
 
-  const _QuestionData({
+  const _Question({
     required this.label,
     this.hint,
     required this.options,
     required this.selected,
     required this.onSelect,
   });
-}
-
-class _StepContent extends StatelessWidget {
-  final List<_QuestionData> questions;
-  const _StepContent({required this.questions});
 
   @override
   Widget build(BuildContext context) {
     return Column(
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
-        for (int i = 0; i < questions.length; i++) ...[
-          if (i > 0) const SizedBox(height: 22),
-          _QuestionWidget(data: questions[i]),
-        ],
-        const SizedBox(height: 8),
-      ],
-    );
-  }
-}
-
-class _QuestionWidget extends StatelessWidget {
-  final _QuestionData data;
-  const _QuestionWidget({required this.data});
-
-  @override
-  Widget build(BuildContext context) {
-    return Column(
-      crossAxisAlignment: CrossAxisAlignment.start,
-      children: [
-        Text(data.label, style: AppTextStyles.bodyBold),
-        if (data.hint != null) ...[
+        Text(label, style: AppTextStyles.bodyBold),
+        if (hint != null) ...[
           const SizedBox(height: 3),
           Text(
-            data.hint!,
+            hint!,
             style: const TextStyle(fontSize: 12, color: AppColors.textHint),
           ),
         ],
-        const SizedBox(height: 10),
-        Wrap(
-          spacing: 8,
-          runSpacing: 8,
-          children: data.options.map((o) {
-            final isSelected = o.$1 == data.selected;
+        const SizedBox(height: 12),
+        Column(
+          children: options.map((o) {
+            final isSelected = o.$1 == selected;
             return GestureDetector(
-              onTap: () => data.onSelect(o.$1),
+              onTap: () => onSelect(o.$1),
               child: AnimatedContainer(
                 duration: const Duration(milliseconds: 150),
-                padding:
-                    const EdgeInsets.symmetric(horizontal: 14, vertical: 10),
+                width: double.infinity,
+                margin: const EdgeInsets.only(bottom: 8),
+                padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 13),
                 decoration: BoxDecoration(
                   color: isSelected ? AppColors.primary : AppColors.surface,
-                  borderRadius: BorderRadius.circular(12),
+                  borderRadius: BorderRadius.circular(13),
                   border: Border.all(
-                    color:
-                        isSelected ? AppColors.primary : AppColors.divider,
+                    color: isSelected ? AppColors.primary : AppColors.divider,
                     width: isSelected ? 2 : 1,
                   ),
                   boxShadow: isSelected
                       ? [
                           BoxShadow(
-                            color: AppColors.primary.withOpacity(0.25),
+                            color: AppColors.primary.withOpacity(0.2),
                             blurRadius: 8,
                             offset: const Offset(0, 2),
                           )
                         ]
                       : null,
                 ),
-                child: Text(
-                  o.$2,
-                  style: TextStyle(
-                    fontSize: 13,
-                    fontWeight: FontWeight.w600,
-                    color: isSelected
-                        ? Colors.white
-                        : AppColors.textPrimary,
-                  ),
+                child: Row(
+                  children: [
+                    Expanded(
+                      child: Text(
+                        o.$2,
+                        style: TextStyle(
+                          fontSize: 14,
+                          fontWeight: FontWeight.w600,
+                          color: isSelected ? Colors.white : AppColors.textPrimary,
+                        ),
+                      ),
+                    ),
+                    if (isSelected)
+                      const Icon(Icons.check_circle_rounded,
+                          color: Colors.white, size: 18),
+                  ],
                 ),
               ),
             );
