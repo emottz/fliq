@@ -4,6 +4,7 @@ import 'package:go_router/go_router.dart';
 import '../../../core/constants/app_colors.dart';
 import '../../../core/constants/app_text_styles.dart';
 import '../../../data/models/user_profile_model.dart';
+import '../../../core/services/firestore_service.dart';
 import '../../../shared/providers/app_providers.dart';
 import '../../../shared/widgets/primary_button.dart';
 
@@ -87,6 +88,7 @@ class _OnboardingScreenState extends ConsumerState<OnboardingScreen>
       categoryProgress: {},
     );
     await ref.read(userProfileProvider.notifier).saveProfile(profile);
+    FirestoreService.saveOnboarding(profile); // fire-and-forget
     if (mounted) context.go('/assessment-intro');
   }
 

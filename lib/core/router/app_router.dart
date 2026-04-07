@@ -19,6 +19,7 @@ import '../../features/exams/screens/exam_session_screen.dart';
 import '../../features/exams/screens/exam_result_screen.dart';
 import '../../features/lessons/screens/lesson_list_screen.dart';
 import '../../features/lessons/screens/lesson_session_screen.dart';
+import '../../features/admin/screens/admin_screen.dart';
 import '../../features/profile/screens/profile_screen.dart';
 
 // Her uygulama başlangıcında splash bir kez gösterilir
@@ -55,6 +56,9 @@ final routerProvider = Provider<GoRouter>((ref) {
         if (path == '/splash') return null;
         return '/splash';
       }
+
+      // ── Admin paneli → yönlendirme yapma ──────────────────
+      if (path == '/admin') return null;
 
       final user = FirebaseAuth.instance.currentUser;
 
@@ -106,6 +110,10 @@ final routerProvider = Provider<GoRouter>((ref) {
       GoRoute(
         path: '/splash',
         builder: (context, state) => const SplashScreen(),
+      ),
+      GoRoute(
+        path: '/admin',
+        builder: (context, state) => const AdminScreen(),
       ),
       GoRoute(
         path: '/auth',
