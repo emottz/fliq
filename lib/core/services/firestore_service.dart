@@ -16,9 +16,13 @@ class FirestoreService {
       'licenseLevel': p.licenseLevel,
       'nativeLanguage': p.nativeLanguage,
       'englishLevel': p.englishLevel,
+      'flyingEnvironment': p.flyingEnvironment,
+      'flightHours': p.flightHours,
+      'hardestArea': p.hardestArea,
       'goal': p.goal,
       'dailyTime': p.dailyTime,
       'examTimeline': p.examTimeline,
+      'prevIcaoAttempt': p.prevIcaoAttempt,
       'onboardingAt': FieldValue.serverTimestamp(),
       'updatedAt': FieldValue.serverTimestamp(),
     }, SetOptions(merge: true));

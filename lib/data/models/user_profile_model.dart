@@ -23,11 +23,11 @@ class UserProfileModel extends Equatable {
   final String dailyTime;       // 5_10 | 15_20 | 30_plus
   final String examTimeline;    // not_planned | 6_months_plus | 6_months | 1_month
 
-  // Legacy / unused (kept for model compat)
-  final String flightHours;
-  final String icaoLevel;
-  final String hardestArea;
-  final String flyingEnvironment;
+  // Ek onboarding alanları
+  final String flightHours;       // 0_50 | 50_200 | 200_500 | 500_plus
+  final String hardestArea;       // grammar | vocabulary | atc_comm | reading | all
+  final String prevIcaoAttempt;   // never | failed | passed_want_higher
+  final String flyingEnvironment; // vfr_private | ifr_commercial | atc | cabin | student
   final String aircraftType;
 
   const UserProfileModel({
@@ -47,8 +47,8 @@ class UserProfileModel extends Equatable {
     this.dailyTime = '',
     this.examTimeline = '',
     this.flightHours = '',
-    this.icaoLevel = '',
     this.hardestArea = '',
+    this.prevIcaoAttempt = '',
     this.flyingEnvironment = '',
     this.aircraftType = '',
   });
@@ -78,8 +78,8 @@ class UserProfileModel extends Equatable {
     String? dailyTime,
     String? examTimeline,
     String? flightHours,
-    String? icaoLevel,
     String? hardestArea,
+    String? prevIcaoAttempt,
     String? flyingEnvironment,
     String? aircraftType,
   }) {
@@ -100,8 +100,8 @@ class UserProfileModel extends Equatable {
       dailyTime: dailyTime ?? this.dailyTime,
       examTimeline: examTimeline ?? this.examTimeline,
       flightHours: flightHours ?? this.flightHours,
-      icaoLevel: icaoLevel ?? this.icaoLevel,
       hardestArea: hardestArea ?? this.hardestArea,
+      prevIcaoAttempt: prevIcaoAttempt ?? this.prevIcaoAttempt,
       flyingEnvironment: flyingEnvironment ?? this.flyingEnvironment,
       aircraftType: aircraftType ?? this.aircraftType,
     );
@@ -118,6 +118,10 @@ class UserProfileModel extends Equatable {
         'categoryProgress': categoryProgress,
         'weakCategories': weakCategories,
         'licenseLevel': licenseLevel,
+        'flightHours': flightHours,
+        'hardestArea': hardestArea,
+        'prevIcaoAttempt': prevIcaoAttempt,
+        'flyingEnvironment': flyingEnvironment,
         'nativeLanguage': nativeLanguage,
         'englishLevel': englishLevel,
         'goal': goal,
@@ -148,6 +152,10 @@ class UserProfileModel extends Equatable {
       goal: json['goal'] as String? ?? '',
       dailyTime: json['dailyTime'] as String? ?? '',
       examTimeline: json['examTimeline'] as String? ?? '',
+      flightHours: json['flightHours'] as String? ?? '',
+      hardestArea: json['hardestArea'] as String? ?? '',
+      prevIcaoAttempt: json['prevIcaoAttempt'] as String? ?? '',
+      flyingEnvironment: json['flyingEnvironment'] as String? ?? '',
     );
   }
 

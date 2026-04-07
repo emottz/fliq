@@ -22,18 +22,23 @@ class _OnboardingScreenState extends ConsumerState<OnboardingScreen>
   late AnimationController _slideCtrl;
   late Animation<Offset> _slideAnim;
 
-  // Q1
+  // Adım 1 — Kim olduğun
   String _licenseLevel = '';
-  // Q2
+  String _flyingEnvironment = '';
+  String _flightHours = '';
+
+  // Adım 2 — Dil & hedef
   String _nativeLanguage = '';
-  // Q3
   String _englishLevel = '';
-  // Q4
+  String _hardestArea = '';
+
+  // Adım 3 — Plan & deneyim
   String _goal = '';
-  // Q5
   String _dailyTime = '';
-  // Q6 — sınav tarihi
   String _examTimeline = '';
+  String _prevIcaoAttempt = '';
+
+  static const _totalSteps = 3;
 
   @override
   void initState() {
@@ -56,14 +61,14 @@ class _OnboardingScreenState extends ConsumerState<OnboardingScreen>
   }
 
   bool _canProceed() => switch (_step) {
-        0 => _licenseLevel.isNotEmpty && _nativeLanguage.isNotEmpty,
-        1 => _englishLevel.isNotEmpty && _goal.isNotEmpty,
-        2 => _dailyTime.isNotEmpty && _examTimeline.isNotEmpty,
+        0 => _licenseLevel.isNotEmpty && _flyingEnvironment.isNotEmpty && _flightHours.isNotEmpty,
+        1 => _nativeLanguage.isNotEmpty && _englishLevel.isNotEmpty && _hardestArea.isNotEmpty,
+        2 => _goal.isNotEmpty && _dailyTime.isNotEmpty && _examTimeline.isNotEmpty && _prevIcaoAttempt.isNotEmpty,
         _ => false,
       };
 
   Future<void> _next() async {
-    if (_step < 2) {
+    if (_step < _totalSteps - 1) {
       _slideCtrl.reset();
       setState(() => _step++);
       _slideCtrl.forward();
@@ -72,30 +77,42 @@ class _OnboardingScreenState extends ConsumerState<OnboardingScreen>
     }
   }
 
+  void _back() {
+    if (_step > 0) {
+      _slideCtrl.reset();
+      setState(() => _step--);
+      _slideCtrl.forward();
+    }
+  }
+
   Future<void> _save() async {
     setState(() => _saving = true);
     final profile = UserProfileModel(
       role: 'pilot',
       licenseLevel: _licenseLevel,
+      flyingEnvironment: _flyingEnvironment,
+      flightHours: _flightHours,
       nativeLanguage: _nativeLanguage,
       englishLevel: _englishLevel,
+      hardestArea: _hardestArea,
       goal: _goal,
       dailyTime: _dailyTime,
       examTimeline: _examTimeline,
+      prevIcaoAttempt: _prevIcaoAttempt,
       level: ProficiencyLevel.beginner,
       totalXp: 0,
       streakDays: 0,
       categoryProgress: {},
     );
     await ref.read(userProfileProvider.notifier).saveProfile(profile);
-    FirestoreService.saveOnboarding(profile); // fire-and-forget
+    FirestoreService.saveOnboarding(profile);
     if (mounted) context.go('/assessment-intro');
   }
 
   static const _steps = [
-    (emoji: '🧑‍✈️', title: 'Kim olduğun'),
+    (emoji: '🧑‍✈️', title: 'Uçuş profilin'),
     (emoji: '📚', title: 'Dil durumun'),
-    (emoji: '🎯', title: 'Çalışma planın'),
+    (emoji: '🎯', title: 'Plan & deneyim'),
   ];
 
   @override
@@ -115,16 +132,30 @@ class _OnboardingScreenState extends ConsumerState<OnboardingScreen>
                   // ── Header ──────────────────────────────────────
                   Row(
                     children: [
-                      Container(
-                        width: 36,
-                        height: 36,
-                        decoration: BoxDecoration(
-                          color: AppColors.primary,
-                          borderRadius: BorderRadius.circular(10),
+                      if (_step > 0)
+                        GestureDetector(
+                          onTap: _back,
+                          child: Container(
+                            width: 36,
+                            height: 36,
+                            decoration: BoxDecoration(
+                              color: AppColors.surfaceVariant,
+                              borderRadius: BorderRadius.circular(10),
+                            ),
+                            child: const Icon(Icons.arrow_back_ios_new_rounded,
+                                color: AppColors.textSecondary, size: 16),
+                          ),
+                        )
+                      else
+                        Container(
+                          width: 36,
+                          height: 36,
+                          decoration: BoxDecoration(
+                            color: AppColors.primary,
+                            borderRadius: BorderRadius.circular(10),
+                          ),
+                          child: const Icon(Icons.flight, color: Colors.white, size: 20),
                         ),
-                        child: const Icon(Icons.flight,
-                            color: Colors.white, size: 20),
-                      ),
                       const SizedBox(width: 10),
                       const Text(
                         'FLIQ',
@@ -137,14 +168,13 @@ class _OnboardingScreenState extends ConsumerState<OnboardingScreen>
                       ),
                       const Spacer(),
                       Container(
-                        padding: const EdgeInsets.symmetric(
-                            horizontal: 12, vertical: 5),
+                        padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 5),
                         decoration: BoxDecoration(
                           color: AppColors.surfaceVariant,
                           borderRadius: BorderRadius.circular(20),
                         ),
                         child: Text(
-                          '${_step + 1} / 3 adım',
+                          '${_step + 1} / $_totalSteps adım',
                           style: const TextStyle(
                             fontSize: 12,
                             fontWeight: FontWeight.w600,
@@ -159,16 +189,14 @@ class _OnboardingScreenState extends ConsumerState<OnboardingScreen>
 
                   // ── Progress bar ─────────────────────────────────
                   Row(
-                    children: List.generate(3, (i) {
+                    children: List.generate(_totalSteps, (i) {
                       return Expanded(
                         child: AnimatedContainer(
                           duration: const Duration(milliseconds: 300),
-                          margin: EdgeInsets.only(right: i < 2 ? 6 : 0),
+                          margin: EdgeInsets.only(right: i < _totalSteps - 1 ? 6 : 0),
                           height: 4,
                           decoration: BoxDecoration(
-                            color: i <= _step
-                                ? AppColors.primary
-                                : AppColors.divider,
+                            color: i <= _step ? AppColors.primary : AppColors.divider,
                             borderRadius: BorderRadius.circular(2),
                           ),
                         ),
@@ -178,29 +206,21 @@ class _OnboardingScreenState extends ConsumerState<OnboardingScreen>
 
                   const SizedBox(height: 28),
 
-                  // ── Step title ────────────────────────────────────
-                  Text(
-                    '${step.emoji}  ${step.title}',
-                    style: AppTextStyles.heading2,
-                  ),
+                  Text('${step.emoji}  ${step.title}', style: AppTextStyles.heading2),
 
                   const SizedBox(height: 20),
 
-                  // ── Questions ────────────────────────────────────
                   Expanded(
                     child: SlideTransition(
                       position: _slideAnim,
-                      child: SingleChildScrollView(
-                        child: _buildStep(),
-                      ),
+                      child: SingleChildScrollView(child: _buildStep()),
                     ),
                   ),
 
                   const SizedBox(height: 12),
 
-                  // ── Continue button ──────────────────────────────
                   PrimaryButton(
-                    label: _step < 2 ? 'Devam Et →' : 'Başlayalım 🚀',
+                    label: _step < _totalSteps - 1 ? 'Devam Et →' : 'Başlayalım 🚀',
                     isLoading: _saving,
                     onPressed: _canProceed() ? _next : null,
                   ),
@@ -216,27 +236,62 @@ class _OnboardingScreenState extends ConsumerState<OnboardingScreen>
 
   Widget _buildStep() {
     switch (_step) {
-      // ── Ekran 1: Kim olduğun ─────────────────────────────────
+      // ── Adım 1: Uçuş profilin ────────────────────────────────
       case 0:
         return Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
             _Question(
               label: 'Uçuş eğitiminde hangi aşamadasın?',
-              hint: 'İçerik zorluğunu belirler',
+              hint: 'İçerik zorluğunu ve konuları belirler',
               options: const [
                 ('not_started', '🌱  Henüz başlamadım'),
                 ('theory', '📖  Teorik eğitimdeyim'),
                 ('flight_training', '✈️  Uçuş eğitimindeyim'),
-                ('ppl_holder', '🏅  PPL aldım'),
+                ('ppl_holder', '🏅  PPL / Lisans sahibiyim'),
               ],
               selected: _licenseLevel,
               onSelect: (v) => setState(() => _licenseLevel = v),
             ),
             const SizedBox(height: 24),
             _Question(
+              label: 'Hangi uçuş ortamında çalışıyorsun?',
+              hint: 'ATC iletişimi ve senaryo içerikleri buna göre şekillenir',
+              options: const [
+                ('vfr_private', '🛩️  VFR / Özel uçuş'),
+                ('ifr_commercial', '🛫  IFR / Ticari uçuş'),
+                ('atc', '🗼  Hava Trafik Kontrolü'),
+                ('cabin', '💺  Kabin ekibi'),
+                ('student', '🎓  Öğrenci / Henüz uçmadım'),
+              ],
+              selected: _flyingEnvironment,
+              onSelect: (v) => setState(() => _flyingEnvironment = v),
+            ),
+            const SizedBox(height: 24),
+            _Question(
+              label: 'Toplam uçuş saatin ne kadar?',
+              hint: 'Soru senaryolarının karmaşıklığını ayarlar',
+              options: const [
+                ('0_50', '🔰  0 – 50 saat'),
+                ('50_200', '📈  50 – 200 saat'),
+                ('200_500', '🚀  200 – 500 saat'),
+                ('500_plus', '🏆  500+ saat'),
+              ],
+              selected: _flightHours,
+              onSelect: (v) => setState(() => _flightHours = v),
+            ),
+            const SizedBox(height: 8),
+          ],
+        );
+
+      // ── Adım 2: Dil durumun ──────────────────────────────────
+      case 1:
+        return Column(
+          crossAxisAlignment: CrossAxisAlignment.start,
+          children: [
+            _Question(
               label: 'Ana dilin nedir?',
-              hint: 'Türkçe konuşanlara özel hata kalıpları var',
+              hint: 'Türkçe konuşanlar için özel hata kalıpları analizi',
               options: const [
                 ('turkish', '🇹🇷  Türkçe'),
                 ('other', '🌐  Diğer'),
@@ -244,27 +299,41 @@ class _OnboardingScreenState extends ConsumerState<OnboardingScreen>
               selected: _nativeLanguage,
               onSelect: (v) => setState(() => _nativeLanguage = v),
             ),
-            const SizedBox(height: 8),
-          ],
-        );
-
-      // ── Ekran 2: Dil durumun ────────────────────────────────
-      case 1:
-        return Column(
-          crossAxisAlignment: CrossAxisAlignment.start,
-          children: [
+            const SizedBox(height: 24),
             _Question(
               label: 'İngilizce seviyeni nasıl değerlendirirsin?',
-              hint: '3 seçenek yeterli, fazlası kafa karıştırır',
+              hint: 'Öğrenme yolunun başlangıç noktası',
               options: const [
-                ('weak', '🔴  Zayıf'),
-                ('medium', '🟡  Orta'),
-                ('good', '🟢  İyi'),
+                ('weak', '🔴  Zayıf — temel günlük İngilizce bile zor'),
+                ('medium', '🟡  Orta — anlıyorum ama aviation İngilizcesi eksik'),
+                ('good', '🟢  İyi — genel İngilizce iyi, uzmanlık gerektiriyor'),
               ],
               selected: _englishLevel,
               onSelect: (v) => setState(() => _englishLevel = v),
             ),
             const SizedBox(height: 24),
+            _Question(
+              label: 'Seni en çok hangi alan zorluyor?',
+              hint: 'İlk haftalar bu alana yoğunlaşırsın',
+              options: const [
+                ('grammar', '📝  Gramer yapıları'),
+                ('vocabulary', '📖  Havacılık kelime bilgisi'),
+                ('atc_comm', '🎙️  ATC iletişimi & phraseology'),
+                ('reading', '📄  METAR / NOTAM okuma'),
+                ('all', '🔥  Hepsi eşit derecede zor'),
+              ],
+              selected: _hardestArea,
+              onSelect: (v) => setState(() => _hardestArea = v),
+            ),
+            const SizedBox(height: 8),
+          ],
+        );
+
+      // ── Adım 3: Plan & deneyim ──────────────────────────────
+      case 2:
+        return Column(
+          crossAxisAlignment: CrossAxisAlignment.start,
+          children: [
             _Question(
               label: 'Hedefin ne?',
               hint: 'ICAO hedefliyorsan test formatına uygun sorular öne çıkar',
@@ -276,18 +345,22 @@ class _OnboardingScreenState extends ConsumerState<OnboardingScreen>
               selected: _goal,
               onSelect: (v) => setState(() => _goal = v),
             ),
-            const SizedBox(height: 8),
-          ],
-        );
-
-      // ── Ekran 3: Çalışma planın ─────────────────────────────
-      case 2:
-        return Column(
-          crossAxisAlignment: CrossAxisAlignment.start,
-          children: [
+            const SizedBox(height: 24),
+            _Question(
+              label: 'Daha önce ICAO / havacılık İngilizcesi sınavına girdin mi?',
+              hint: 'Geçmiş deneyim öğrenme stratejisini etkiler',
+              options: const [
+                ('never', '🆕  Hayır, ilk kez hazırlanıyorum'),
+                ('failed', '❌  Girdim ama geçemedim / istediğim seviyeyi alamadım'),
+                ('passed_want_higher', '✅  Geçtim, daha yüksek seviye istiyorum'),
+              ],
+              selected: _prevIcaoAttempt,
+              onSelect: (v) => setState(() => _prevIcaoAttempt = v),
+            ),
+            const SizedBox(height: 24),
             _Question(
               label: 'Günlük ne kadar vakit ayırabilirsin?',
-              hint: 'Session uzunluğu ve bildirim sıklığı buna göre ayarlanır',
+              hint: 'Seans uzunluğu ve bildirim sıklığı buna göre ayarlanır',
               options: const [
                 ('5_10', '⚡  5 – 10 dakika'),
                 ('15_20', '🔥  15 – 20 dakika'),
@@ -299,7 +372,7 @@ class _OnboardingScreenState extends ConsumerState<OnboardingScreen>
             const SizedBox(height: 24),
             _Question(
               label: 'ICAO sınavın ne zaman?',
-              hint: 'Önceliklendirme ve yoğunluk buna göre şekillenir',
+              hint: 'Önceliklendirme ve çalışma yoğunluğu buna göre şekillenir',
               options: const [
                 ('not_planned', '📅  Planlamadım henüz'),
                 ('6_months_plus', '🗓️  6 aydan fazla var'),
@@ -344,10 +417,7 @@ class _Question extends StatelessWidget {
         Text(label, style: AppTextStyles.bodyBold),
         if (hint != null) ...[
           const SizedBox(height: 3),
-          Text(
-            hint!,
-            style: const TextStyle(fontSize: 12, color: AppColors.textHint),
-          ),
+          Text(hint!, style: const TextStyle(fontSize: 12, color: AppColors.textHint)),
         ],
         const SizedBox(height: 12),
         Column(
@@ -368,13 +438,11 @@ class _Question extends StatelessWidget {
                     width: isSelected ? 2 : 1,
                   ),
                   boxShadow: isSelected
-                      ? [
-                          BoxShadow(
-                            color: AppColors.primary.withOpacity(0.2),
-                            blurRadius: 8,
-                            offset: const Offset(0, 2),
-                          )
-                        ]
+                      ? [BoxShadow(
+                          color: AppColors.primary.withValues(alpha: 0.2),
+                          blurRadius: 8,
+                          offset: const Offset(0, 2),
+                        )]
                       : null,
                 ),
                 child: Row(
@@ -390,8 +458,7 @@ class _Question extends StatelessWidget {
                       ),
                     ),
                     if (isSelected)
-                      const Icon(Icons.check_circle_rounded,
-                          color: Colors.white, size: 18),
+                      const Icon(Icons.check_circle_rounded, color: Colors.white, size: 18),
                   ],
                 ),
               ),
