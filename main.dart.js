@@ -49116,7 +49116,7 @@ p.m(0,q,(r==null?0:r)+1)}return p},
 qL(a){var s=A.k(a).i("cB<1,2>")
 return A.hQ(new A.cB(a,s),new A.asM(),s.i("u.E"),t.N).aM(0,", ")},
 E(a){var s,r,q,p=this,o=null,n=p.x
-if(n!=="admin@fliq.app")return A.hq(o,B.e,A.bX(A.aH(A.b([B.MA,B.aw,B.afc,B.b6,A.X("Bu panel sadece admin hesab\u0131na a\xe7\u0131k.",o,o,o,B.an,o,o),B.bd,A.X("Giri\u015f yap\u0131lan: "+n,o,o,o,B.an,o,o)],t.p),B.n,o,B.f,B.aE),o,o),o)
+if(n!=="emottz199@gmail.com")return A.hq(o,B.e,A.bX(A.aH(A.b([B.MA,B.aw,B.afc,B.b6,A.X("Bu panel sadece admin hesab\u0131na a\xe7\u0131k.",o,o,o,B.an,o,o),B.bd,A.X("Giri\u015f yap\u0131lan: "+n,o,o,o,B.an,o,o)],t.p),B.n,o,B.f,B.aE),o,o),o)
 n=p.ga9K()
 s=t.p
 r=A.AM(A.b([A.CS(o,o,B.Mo,o,o,n,o,o,"Yenile")],s),!0,o,o,o,o,B.a5D)
