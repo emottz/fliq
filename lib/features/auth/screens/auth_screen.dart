@@ -80,6 +80,8 @@ class _AuthScreenState extends ConsumerState<AuthScreen>
   Future<void> _guestSignIn() async {
     setState(() { _guestLoading = true; _error = null; });
     try {
+      // Eski profil varsa temizle → onboarding'den başlasın
+      await ref.read(userRepositoryProvider).clearAll();
       await ref.read(authServiceProvider).signInAnonymously();
     } catch (_) {
       if (mounted) setState(() => _error = 'Misafir girişi başarısız oldu.');
