@@ -22,6 +22,7 @@ class _AuthScreenState extends ConsumerState<AuthScreen>
   final _formKey = GlobalKey<FormState>();
   bool _loading = false;
   bool _googleLoading = false;
+  bool _guestLoading = false;
   bool _obscurePass = true;
   bool _obscureConfirm = true;
   String? _error;
@@ -73,6 +74,17 @@ class _AuthScreenState extends ConsumerState<AuthScreen>
       if (mounted) setState(() => _error = 'Google ile giriş başarısız oldu.');
     } finally {
       if (mounted) setState(() => _googleLoading = false);
+    }
+  }
+
+  Future<void> _guestSignIn() async {
+    setState(() { _guestLoading = true; _error = null; });
+    try {
+      await ref.read(authServiceProvider).signInAnonymously();
+    } catch (_) {
+      if (mounted) setState(() => _error = 'Misafir girişi başarısız oldu.');
+    } finally {
+      if (mounted) setState(() => _guestLoading = false);
     }
   }
 
@@ -373,6 +385,33 @@ class _AuthScreenState extends ConsumerState<AuthScreen>
                           'Google ile devam et',
                           style: TextStyle(fontSize: 15, fontWeight: FontWeight.w600),
                         ),
+                      ),
+                    ),
+
+                    const SizedBox(height: 16),
+
+                    // ── Misafir girişi ────────────────────────────
+                    Center(
+                      child: TextButton(
+                        onPressed: (_loading || _googleLoading || _guestLoading)
+                            ? null
+                            : _guestSignIn,
+                        child: _guestLoading
+                            ? const SizedBox(
+                                width: 16,
+                                height: 16,
+                                child: CircularProgressIndicator(
+                                  strokeWidth: 2,
+                                  color: AppColors.textHint,
+                                ),
+                              )
+                            : const Text(
+                                'Giriş yapmadan devam et →',
+                                style: TextStyle(
+                                  fontSize: 13,
+                                  color: AppColors.textSecondary,
+                                ),
+                              ),
                       ),
                     ),
                   ],
