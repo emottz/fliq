@@ -30,29 +30,16 @@ class _SplashScreenState extends State<SplashScreen>
   void initState() {
     super.initState();
 
-    _logoCtrl = AnimationController(
-      vsync: this,
-      duration: const Duration(milliseconds: 900),
-    );
-    _textCtrl = AnimationController(
-      vsync: this,
-      duration: const Duration(milliseconds: 700),
-    );
-    _dotsCtrl = AnimationController(
-      vsync: this,
-      duration: const Duration(milliseconds: 1000),
-    )..repeat();
-    _glowCtrl = AnimationController(
-      vsync: this,
-      duration: const Duration(milliseconds: 1800),
-    )..repeat(reverse: true);
+    _logoCtrl = AnimationController(vsync: this, duration: const Duration(milliseconds: 900));
+    _textCtrl = AnimationController(vsync: this, duration: const Duration(milliseconds: 700));
+    _dotsCtrl = AnimationController(vsync: this, duration: const Duration(milliseconds: 1000))..repeat();
+    _glowCtrl = AnimationController(vsync: this, duration: const Duration(milliseconds: 1800))..repeat(reverse: true);
 
     _logoScale = _logoCtrl.drive(
       Tween(begin: 0.25, end: 1.0).chain(CurveTween(curve: Curves.elasticOut)),
     );
     _logoOpacity = _logoCtrl.drive(
-      Tween(begin: 0.0, end: 1.0)
-          .chain(CurveTween(curve: const Interval(0.0, 0.4))),
+      Tween(begin: 0.0, end: 1.0).chain(CurveTween(curve: const Interval(0.0, 0.4))),
     );
     _iconRotate = _logoCtrl.drive(
       Tween(begin: -0.15, end: 0.0)
@@ -63,16 +50,13 @@ class _SplashScreenState extends State<SplashScreen>
           .chain(CurveTween(curve: Curves.easeOutCubic)),
     );
     _textOpacity = _textCtrl.drive(
-      Tween(begin: 0.0, end: 1.0)
-          .chain(CurveTween(curve: const Interval(0.0, 0.6))),
+      Tween(begin: 0.0, end: 1.0).chain(CurveTween(curve: const Interval(0.0, 0.6))),
     );
     _subtitleOpacity = _textCtrl.drive(
-      Tween(begin: 0.0, end: 1.0)
-          .chain(CurveTween(curve: const Interval(0.4, 1.0))),
+      Tween(begin: 0.0, end: 1.0).chain(CurveTween(curve: const Interval(0.4, 1.0))),
     );
     _glow = _glowCtrl.drive(
-      Tween(begin: 0.4, end: 1.0)
-          .chain(CurveTween(curve: Curves.easeInOut)),
+      Tween(begin: 0.3, end: 0.9).chain(CurveTween(curve: Curves.easeInOut)),
     );
 
     _runSequence();
@@ -103,114 +87,120 @@ class _SplashScreenState extends State<SplashScreen>
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: AppColors.primary,
-      body: Container(
-        decoration: const BoxDecoration(
-          gradient: LinearGradient(
-            begin: Alignment.topCenter,
-            end: Alignment.bottomCenter,
-            colors: [Color(0xFF3B82F6), Color(0xFF1D4ED8)],
+      backgroundColor: const Color(0xFF1D4ED8),
+      body: SizedBox.expand(
+        child: DecoratedBox(
+          decoration: const BoxDecoration(
+            gradient: LinearGradient(
+              begin: Alignment.topCenter,
+              end: Alignment.bottomCenter,
+              colors: [Color(0xFF3B82F6), Color(0xFF1D4ED8)],
+            ),
           ),
-        ),
-        child: SafeArea(
-          child: Column(
-            children: [
-              const Spacer(flex: 2),
-              // ── Logo ──────────────────────────────────────────
-              AnimatedBuilder(
-                animation: _logoCtrl,
-                builder: (context, child) => Opacity(
-                  opacity: _logoOpacity.value,
-                  child: Transform.scale(
-                    scale: _logoScale.value,
-                    child: child,
-                  ),
-                ),
-                child: AnimatedBuilder(
-                  animation: _glowCtrl,
-                  builder: (context, child) => Container(
-                    width: 108,
-                    height: 108,
-                    decoration: BoxDecoration(
-                      color: Colors.white,
-                      borderRadius: BorderRadius.circular(30),
-                      boxShadow: [
-                        BoxShadow(
-                          color: Colors.white.withValues(alpha: _glow.value * 0.35),
-                          blurRadius: 40,
-                          spreadRadius: 8,
-                        ),
-                        BoxShadow(
-                          color: Colors.black.withValues(alpha: 0.18),
-                          blurRadius: 20,
-                          offset: const Offset(0, 8),
-                        ),
-                      ],
-                    ),
-                    child: child,
+          child: SafeArea(
+            child: Column(
+              mainAxisAlignment: MainAxisAlignment.center,
+              crossAxisAlignment: CrossAxisAlignment.center,
+              children: [
+                const Spacer(flex: 3),
+
+                // ── Logo ikonu ───────────────────────────────────
+                AnimatedBuilder(
+                  animation: _logoCtrl,
+                  builder: (_, child) => Opacity(
+                    opacity: _logoOpacity.value,
+                    child: Transform.scale(scale: _logoScale.value, child: child),
                   ),
                   child: AnimatedBuilder(
-                    animation: _iconRotate,
-                    builder: (context, child) => Transform.rotate(
-                      angle: _iconRotate.value * 2 * pi,
+                    animation: _glowCtrl,
+                    builder: (_, child) => Container(
+                      width: 110,
+                      height: 110,
+                      decoration: BoxDecoration(
+                        color: Colors.white,
+                        borderRadius: BorderRadius.circular(30),
+                        boxShadow: [
+                          BoxShadow(
+                            color: Colors.white.withValues(alpha: _glow.value * 0.4),
+                            blurRadius: 48,
+                            spreadRadius: 10,
+                          ),
+                          BoxShadow(
+                            color: Colors.black.withValues(alpha: 0.15),
+                            blurRadius: 20,
+                            offset: const Offset(0, 8),
+                          ),
+                        ],
+                      ),
                       child: child,
                     ),
-                    child: const Center(
-                      child: Icon(
-                        Icons.flight,
-                        color: AppColors.primary,
-                        size: 60,
+                    child: AnimatedBuilder(
+                      animation: _iconRotate,
+                      builder: (_, child) => Transform.rotate(
+                        angle: _iconRotate.value * 2 * pi,
+                        child: child,
+                      ),
+                      child: const Center(
+                        child: Icon(Icons.flight, color: AppColors.primary, size: 62),
                       ),
                     ),
                   ),
                 ),
-              ),
-              const SizedBox(height: 28),
-              // ── Brand text ────────────────────────────────────
-              ClipRect(
-                child: SlideTransition(
-                  position: _textSlide,
-                  child: FadeTransition(
-                    opacity: _textOpacity,
-                    child: const Text(
-                      'FLIQ',
-                      style: TextStyle(
-                        fontSize: 48,
-                        fontWeight: FontWeight.w900,
-                        color: Colors.white,
-                        letterSpacing: 12,
-                        height: 1.0,
+
+                const SizedBox(height: 30),
+
+                // ── FLIQ yazısı ──────────────────────────────────
+                ClipRect(
+                  child: SlideTransition(
+                    position: _textSlide,
+                    child: FadeTransition(
+                      opacity: _textOpacity,
+                      child: const Text(
+                        'FLIQ',
+                        textAlign: TextAlign.center,
+                        style: TextStyle(
+                          fontSize: 52,
+                          fontWeight: FontWeight.w900,
+                          color: Colors.white,
+                          letterSpacing: 14,
+                          height: 1.0,
+                        ),
                       ),
                     ),
                   ),
                 ),
-              ),
-              const SizedBox(height: 6),
-              FadeTransition(
-                opacity: _subtitleOpacity,
-                child: const Text(
-                  'AVIATION ENGLISH',
-                  style: TextStyle(
-                    fontSize: 12,
-                    fontWeight: FontWeight.w600,
-                    color: Colors.white60,
-                    letterSpacing: 5,
+
+                const SizedBox(height: 8),
+
+                // ── Alt başlık ───────────────────────────────────
+                FadeTransition(
+                  opacity: _subtitleOpacity,
+                  child: const Text(
+                    'AVIATION ENGLISH',
+                    textAlign: TextAlign.center,
+                    style: TextStyle(
+                      fontSize: 12,
+                      fontWeight: FontWeight.w600,
+                      color: Colors.white60,
+                      letterSpacing: 5,
+                    ),
                   ),
                 ),
-              ),
-              const Spacer(flex: 2),
-              // ── Bouncing dots loader ───────────────────────────
-              FadeTransition(
-                opacity: _subtitleOpacity,
-                child: AnimatedBuilder(
-                  animation: _dotsCtrl,
-                  builder: (context, _) {
-                    return Row(
+
+                const Spacer(flex: 3),
+
+                // ── Zıplayan noktalar ────────────────────────────
+                FadeTransition(
+                  opacity: _subtitleOpacity,
+                  child: AnimatedBuilder(
+                    animation: _dotsCtrl,
+                    builder: (_, __) => Row(
+                      mainAxisAlignment: MainAxisAlignment.center,
                       mainAxisSize: MainAxisSize.min,
                       children: List.generate(3, (i) {
-                        final offset = (_dotsCtrl.value + i / 3) % 1.0;
-                        final t = offset < 0.5 ? offset * 2 : (1.0 - offset) * 2;
-                        final bounce = sin(t * pi);
+                        final t = (_dotsCtrl.value + i / 3) % 1.0;
+                        final wave = t < 0.5 ? t * 2 : (1.0 - t) * 2;
+                        final bounce = sin(wave * pi);
                         return Transform.translate(
                           offset: Offset(0, -10 * bounce),
                           child: Container(
@@ -218,18 +208,19 @@ class _SplashScreenState extends State<SplashScreen>
                             width: 9,
                             height: 9,
                             decoration: BoxDecoration(
-                              color: Colors.white.withValues(alpha: 0.35 + 0.65 * bounce),
+                              color: Colors.white.withValues(alpha: 0.3 + 0.7 * bounce),
                               shape: BoxShape.circle,
                             ),
                           ),
                         );
                       }),
-                    );
-                  },
+                    ),
+                  ),
                 ),
-              ),
-              const SizedBox(height: 48),
-            ],
+
+                const SizedBox(height: 52),
+              ],
+            ),
           ),
         ),
       ),

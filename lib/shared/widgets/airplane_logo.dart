@@ -17,27 +17,37 @@ class AirplaneLogo extends StatelessWidget {
           height: size,
           decoration: BoxDecoration(
             color: AppColors.primary,
-            borderRadius: BorderRadius.circular(size * 0.22),
+            borderRadius: BorderRadius.circular(size * 0.27),
+            boxShadow: [
+              BoxShadow(
+                color: AppColors.primary.withValues(alpha: 0.30),
+                blurRadius: size * 0.35,
+                offset: Offset(0, size * 0.1),
+              ),
+            ],
           ),
-          child: Icon(Icons.flight, color: Colors.white, size: size * 0.55),
+          child: Icon(Icons.flight, color: Colors.white, size: size * 0.56),
         ),
         if (showText) ...[
-          const SizedBox(height: 8),
-          const Text(
+          SizedBox(height: size * 0.18),
+          Text(
             'FLIQ',
             style: TextStyle(
-              fontSize: 22,
-              fontWeight: FontWeight.w800,
-              color: AppColors.textPrimary,
-              letterSpacing: 3,
+              fontSize: size * 0.46,
+              fontWeight: FontWeight.w900,
+              color: AppColors.primary,
+              letterSpacing: size * 0.07,
+              height: 1.0,
             ),
           ),
-          const Text(
+          SizedBox(height: size * 0.05),
+          Text(
             'Aviation English',
             style: TextStyle(
-              fontSize: 12,
+              fontSize: size * 0.22,
               color: AppColors.textSecondary,
-              letterSpacing: 1,
+              letterSpacing: size * 0.03,
+              fontWeight: FontWeight.w500,
             ),
           ),
         ],

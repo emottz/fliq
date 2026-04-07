@@ -115,20 +115,8 @@ class _AuthScreenState extends ConsumerState<AuthScreen>
                   crossAxisAlignment: CrossAxisAlignment.stretch,
                   children: [
                     // ── Logo ──────────────────────────────────────
-                    const Center(child: AirplaneLogo(size: 52)),
-                    const SizedBox(height: 10),
-                    const Center(
-                      child: Text(
-                        'FLIQ',
-                        style: TextStyle(
-                          fontSize: 26,
-                          fontWeight: FontWeight.w900,
-                          color: AppColors.primary,
-                          letterSpacing: 4,
-                        ),
-                      ),
-                    ),
-                    const SizedBox(height: 6),
+                    const Center(child: AirplaneLogo(size: 60)),
+                    const SizedBox(height: 12),
                     Center(
                       child: Text(
                         _isSignUp
