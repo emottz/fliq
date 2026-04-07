@@ -124,6 +124,8 @@ class _ExamSessionScreenState extends ConsumerState<ExamSessionScreen> {
     final question = _questions![_current];
     final total = _questions!.length;
     final isLowTime = _secondsLeft < 30;
+    final weakCategories = ref.watch(userProfileProvider).value?.weakCategories ?? [];
+    final isWeakQuestion = weakCategories.contains(question.category.id);
 
     return Scaffold(
       backgroundColor: AppColors.background,
@@ -180,6 +182,32 @@ class _ExamSessionScreenState extends ConsumerState<ExamSessionScreen> {
                 const SizedBox(height: 16),
                 if (question.passageText != null)
                   _PassageCard(title: question.passageTitle, text: question.passageText!),
+                if (isWeakQuestion) ...[
+                  Container(
+                    margin: const EdgeInsets.only(bottom: 8),
+                    padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 6),
+                    decoration: BoxDecoration(
+                      color: const Color(0xFFFFFBEB),
+                      borderRadius: BorderRadius.circular(8),
+                      border: Border.all(color: const Color(0xFFFDE68A)),
+                    ),
+                    child: const Row(
+                      mainAxisSize: MainAxisSize.min,
+                      children: [
+                        Icon(Icons.warning_amber_rounded, color: AppColors.warning, size: 14),
+                        SizedBox(width: 6),
+                        Text(
+                          'Bu konuda eksik var — iyi pratik fırsatı!',
+                          style: TextStyle(
+                            fontSize: 12,
+                            fontWeight: FontWeight.w600,
+                            color: Color(0xFF92400E),
+                          ),
+                        ),
+                      ],
+                    ),
+                  ),
+                ],
                 Container(
                   padding: const EdgeInsets.all(20),
                   decoration: BoxDecoration(

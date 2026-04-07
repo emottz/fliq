@@ -80,10 +80,19 @@ class _AssessmentScreenState extends ConsumerState<AssessmentScreen> {
       level = ProficiencyLevel.advanced;
     }
 
+    final weakCategories = categoryResults.entries
+        .where((e) {
+          final total = e.value['total'] ?? 0;
+          final correct = e.value['correct'] ?? 0;
+          return total > 0 && correct / total < 0.6;
+        })
+        .map((e) => e.key)
+        .toList();
+
     final profile = await ref.read(userRepositoryProvider).getProfile();
     if (profile != null) {
       await ref.read(userProfileProvider.notifier).saveLevel(
-        profile.copyWith(level: level),
+        profile.copyWith(level: level, weakCategories: weakCategories),
       );
     }
 

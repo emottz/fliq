@@ -13,6 +13,7 @@ class UserProfileModel extends Equatable {
   final int streakDays;
   final String? lastActiveDate;
   final Map<String, double> categoryProgress;
+  final List<String> weakCategories; // category IDs where assessment ratio < 0.6
 
   // Onboarding fields
   final String licenseLevel;    // not_started | theory | flight_training | ppl_holder
@@ -38,6 +39,7 @@ class UserProfileModel extends Equatable {
     required this.streakDays,
     this.lastActiveDate,
     required this.categoryProgress,
+    this.weakCategories = const [],
     this.licenseLevel = '',
     this.nativeLanguage = '',
     this.englishLevel = '',
@@ -68,6 +70,7 @@ class UserProfileModel extends Equatable {
     int? streakDays,
     String? lastActiveDate,
     Map<String, double>? categoryProgress,
+    List<String>? weakCategories,
     String? licenseLevel,
     String? nativeLanguage,
     String? englishLevel,
@@ -89,6 +92,7 @@ class UserProfileModel extends Equatable {
       streakDays: streakDays ?? this.streakDays,
       lastActiveDate: lastActiveDate ?? this.lastActiveDate,
       categoryProgress: categoryProgress ?? this.categoryProgress,
+      weakCategories: weakCategories ?? this.weakCategories,
       licenseLevel: licenseLevel ?? this.licenseLevel,
       nativeLanguage: nativeLanguage ?? this.nativeLanguage,
       englishLevel: englishLevel ?? this.englishLevel,
@@ -112,6 +116,7 @@ class UserProfileModel extends Equatable {
         'streakDays': streakDays,
         'lastActiveDate': lastActiveDate,
         'categoryProgress': categoryProgress,
+        'weakCategories': weakCategories,
         'licenseLevel': licenseLevel,
         'nativeLanguage': nativeLanguage,
         'englishLevel': englishLevel,
@@ -136,6 +141,7 @@ class UserProfileModel extends Equatable {
       lastActiveDate: json['lastActiveDate'] as String?,
       categoryProgress: (json['categoryProgress'] as Map<String, dynamic>? ?? {})
           .map((k, v) => MapEntry(k, (v as num).toDouble())),
+      weakCategories: (json['weakCategories'] as List<dynamic>?)?.cast<String>() ?? [],
       licenseLevel: json['licenseLevel'] as String? ?? '',
       nativeLanguage: json['nativeLanguage'] as String? ?? '',
       englishLevel: json['englishLevel'] as String? ?? '',

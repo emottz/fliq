@@ -85,6 +85,7 @@ class _LessonListScreenState extends ConsumerState<LessonListScreen> {
     return profileAsync.when(
       data: (profile) {
         final level = profile?.level ?? ProficiencyLevel.beginner;
+        final weakCategories = profile?.weakCategories ?? [];
         final lessons = LessonContentData.all;
 
         return FutureBuilder<Set<String>>(
@@ -114,7 +115,7 @@ class _LessonListScreenState extends ConsumerState<LessonListScreen> {
                       Padding(
                         padding: const EdgeInsets.symmetric(horizontal: 24),
                         child: Column(
-                          children: _buildPath(context, lessons, level, completed),
+                          children: _buildPath(context, lessons, level, completed, weakCategories),
                         ),
                       ),
 
@@ -137,6 +138,7 @@ class _LessonListScreenState extends ConsumerState<LessonListScreen> {
     List<LessonContent> lessons,
     ProficiencyLevel userLevel,
     Set<String> completed,
+    List<String> weakCategories,
   ) {
     final widgets = <Widget>[];
 
@@ -173,6 +175,7 @@ class _LessonListScreenState extends ConsumerState<LessonListScreen> {
         isDone: isDone,
         isUnlocked: isUnlocked,
         isNextUp: isNextUp,
+        isWeak: weakCategories.contains(lesson.categoryId),
         index: i,
         onTap: isUnlocked ? () => context.go('/lesson/${lesson.id}') : null,
       ));
@@ -390,6 +393,7 @@ class _LessonNode extends StatefulWidget {
   final bool isDone;
   final bool isUnlocked;
   final bool isNextUp;
+  final bool isWeak;
   final int index;
   final VoidCallback? onTap;
 
@@ -398,6 +402,7 @@ class _LessonNode extends StatefulWidget {
     required this.isDone,
     required this.isUnlocked,
     required this.isNextUp,
+    required this.isWeak,
     required this.index,
     this.onTap,
   });
@@ -502,6 +507,27 @@ class _LessonNodeState extends State<_LessonNode>
                       ),
                       child: const Center(
                         child: Icon(Icons.star_rounded, color: AppColors.xpOrange, size: 14),
+                      ),
+                    ),
+                  ),
+                // Zayıf alan rozeti
+                if (widget.isWeak && !widget.isDone)
+                  Positioned(
+                    top: 0,
+                    right: 0,
+                    child: Container(
+                      width: 22,
+                      height: 22,
+                      decoration: const BoxDecoration(
+                        shape: BoxShape.circle,
+                        color: Colors.white,
+                      ),
+                      child: const Center(
+                        child: Icon(
+                          Icons.warning_amber_rounded,
+                          color: AppColors.warning,
+                          size: 14,
+                        ),
                       ),
                     ),
                   ),

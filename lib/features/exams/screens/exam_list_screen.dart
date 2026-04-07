@@ -4,6 +4,7 @@ import 'package:go_router/go_router.dart';
 import '../../../core/constants/app_colors.dart';
 import '../../../core/constants/app_text_styles.dart';
 import '../../../data/models/question_model.dart';
+import '../../../shared/providers/app_providers.dart';
 import '../../../shared/widgets/primary_button.dart';
 
 class ExamListScreen extends ConsumerWidget {
@@ -20,6 +21,8 @@ class ExamListScreen extends ConsumerWidget {
 
   @override
   Widget build(BuildContext context, WidgetRef ref) {
+    final weakCategories = ref.watch(userProfileProvider).value?.weakCategories ?? [];
+
     return Center(
       child: ConstrainedBox(
         constraints: const BoxConstraints(maxWidth: 480),
@@ -45,6 +48,7 @@ class ExamListScreen extends ConsumerWidget {
                   category: c.$1,
                   icon: c.$2,
                   label: c.$3,
+                  isWeak: weakCategories.contains(c.$1.id),
                   onTap: () => context.go('/exam/session', extra: {
                     'count': 15,
                     'category': c.$1.id,
@@ -132,12 +136,14 @@ class _CategoryCard extends StatelessWidget {
   final QuestionCategory category;
   final IconData icon;
   final String label;
+  final bool isWeak;
   final VoidCallback onTap;
 
   const _CategoryCard({
     required this.category,
     required this.icon,
     required this.label,
+    required this.isWeak,
     required this.onTap,
   });
 
@@ -145,28 +151,68 @@ class _CategoryCard extends StatelessWidget {
   Widget build(BuildContext context) {
     return GestureDetector(
       onTap: onTap,
-      child: Container(
-        padding: const EdgeInsets.all(16),
-        decoration: BoxDecoration(
-          color: AppColors.surface,
-          borderRadius: BorderRadius.circular(16),
-          border: Border.all(color: AppColors.divider),
-        ),
-        child: Column(
-          crossAxisAlignment: CrossAxisAlignment.start,
-          mainAxisAlignment: MainAxisAlignment.spaceBetween,
-          children: [
-            Container(
-              padding: const EdgeInsets.all(8),
-              decoration: BoxDecoration(
-                color: AppColors.surfaceVariant,
-                borderRadius: BorderRadius.circular(10),
+      child: Stack(
+        children: [
+          Container(
+            padding: const EdgeInsets.all(16),
+            decoration: BoxDecoration(
+              color: isWeak ? const Color(0xFFFFFBEB) : AppColors.surface,
+              borderRadius: BorderRadius.circular(16),
+              border: Border.all(
+                color: isWeak ? AppColors.warning : AppColors.divider,
+                width: isWeak ? 1.5 : 1,
               ),
-              child: Icon(icon, color: AppColors.primary, size: 22),
             ),
-            Text(label, style: AppTextStyles.bodyBold),
-          ],
-        ),
+            child: Column(
+              crossAxisAlignment: CrossAxisAlignment.start,
+              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+              children: [
+                Container(
+                  padding: const EdgeInsets.all(8),
+                  decoration: BoxDecoration(
+                    color: isWeak
+                        ? const Color(0xFFFEF3C7)
+                        : AppColors.surfaceVariant,
+                    borderRadius: BorderRadius.circular(10),
+                  ),
+                  child: Icon(
+                    icon,
+                    color: isWeak ? AppColors.warning : AppColors.primary,
+                    size: 22,
+                  ),
+                ),
+                Text(label, style: AppTextStyles.bodyBold),
+              ],
+            ),
+          ),
+          if (isWeak)
+            Positioned(
+              top: 8,
+              right: 8,
+              child: Container(
+                padding: const EdgeInsets.symmetric(horizontal: 6, vertical: 2),
+                decoration: BoxDecoration(
+                  color: AppColors.warning,
+                  borderRadius: BorderRadius.circular(6),
+                ),
+                child: const Row(
+                  mainAxisSize: MainAxisSize.min,
+                  children: [
+                    Icon(Icons.warning_amber_rounded, color: Colors.white, size: 10),
+                    SizedBox(width: 3),
+                    Text(
+                      'Zayıf',
+                      style: TextStyle(
+                        color: Colors.white,
+                        fontSize: 9,
+                        fontWeight: FontWeight.w700,
+                      ),
+                    ),
+                  ],
+                ),
+              ),
+            ),
+        ],
       ),
     );
   }
