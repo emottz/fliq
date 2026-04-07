@@ -2,6 +2,7 @@ import 'dart:math';
 import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
 import '../../../core/constants/app_colors.dart';
+import '../../../core/router/app_router.dart';
 
 class SplashScreen extends StatefulWidget {
   const SplashScreen({super.key});
@@ -86,6 +87,7 @@ class _SplashScreenState extends State<SplashScreen>
     _textCtrl.forward();
     await Future.delayed(const Duration(milliseconds: 1700));
     if (!mounted) return;
+    markSplashShown();
     context.go('/auth');
   }
 

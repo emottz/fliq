@@ -21,6 +21,10 @@ import '../../features/lessons/screens/lesson_list_screen.dart';
 import '../../features/lessons/screens/lesson_session_screen.dart';
 import '../../features/profile/screens/profile_screen.dart';
 
+// Her uygulama başlangıcında splash bir kez gösterilir
+bool _splashShown = false;
+void markSplashShown() => _splashShown = true;
+
 // Auth değişikliklerini GoRouter'a bildiren notifier
 class _AuthNotifier extends ChangeNotifier {
   StreamSubscription<User?>? _sub;
@@ -46,8 +50,11 @@ final routerProvider = Provider<GoRouter>((ref) {
     redirect: (context, state) async {
       final path = state.uri.path;
 
-      // ── Splash → hiç yönlendirme yapma ────────────────────
-      if (path == '/splash') return null;
+      // ── Splash henüz gösterilmediyse her zaman oraya git ──
+      if (!_splashShown) {
+        if (path == '/splash') return null;
+        return '/splash';
+      }
 
       final user = FirebaseAuth.instance.currentUser;
 
