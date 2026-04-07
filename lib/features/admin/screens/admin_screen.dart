@@ -27,13 +27,17 @@ class _AdminScreenState extends State<AdminScreen> {
   String? _aiInsight;
   bool _aiLoading = false;
 
-  final _currentEmail = FirebaseAuth.instance.currentUser?.email ?? '';
-
   @override
   void initState() {
     super.initState();
     _load();
   }
+
+  String get _currentEmail =>
+      (FirebaseAuth.instance.currentUser?.email ?? '').toLowerCase().trim();
+
+  bool get _isAdmin =>
+      _currentEmail == _adminEmail.toLowerCase().trim();
 
   Future<void> _load() async {
     setState(() { _loading = true; _error = null; });
@@ -132,7 +136,7 @@ KULLANICI VERİLERİ:
   @override
   Widget build(BuildContext context) {
     // Admin erişim kontrolü
-    if (_currentEmail != _adminEmail) {
+    if (!_isAdmin) {
       return Scaffold(
         backgroundColor: AppColors.background,
         body: Center(
