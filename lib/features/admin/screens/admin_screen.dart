@@ -7,7 +7,7 @@ import '../../../core/constants/app_text_styles.dart';
 import '../../../core/services/firestore_service.dart';
 
 // ── Admin e-postası buraya ────────────────────────────────────────────────────
-const _adminEmail = 'admin@fliq.app'; // <-- kendi e-postanı yaz
+const _adminEmail = 'emottz199@gmail.com';
 
 const _geminiApiKey = 'AIzaSyBF2g68U1DltnnMWc2s1M1BHjCq6ErGDL4';
 const _geminiUrl =
