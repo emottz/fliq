@@ -63,8 +63,28 @@ class _LessonSessionScreenState extends ConsumerState<LessonSessionScreen>
     if (_completing) return;
     setState(() => _completing = true);
 
+    final lesson = _lesson;
     await ref.read(userRepositoryProvider).markLessonComplete(widget.lessonId);
     await ref.read(userProfileProvider.notifier).addXp(20);
+
+    // Remove category from weakCategories if all lessons in it are now done
+    if (lesson != null) {
+      final categoryId = lesson.categoryId;
+      final profile = ref.read(userProfileProvider).value;
+      if (profile != null && profile.weakCategories.contains(categoryId)) {
+        final categoryLessons = LessonContentData.all
+            .where((l) => l.categoryId == categoryId)
+            .map((l) => l.id)
+            .toSet();
+        final completed = await ref.read(userRepositoryProvider).getCompletedLessons();
+        if (categoryLessons.every((id) => completed.contains(id))) {
+          final updated = profile.copyWith(
+            weakCategories: profile.weakCategories.where((c) => c != categoryId).toList(),
+          );
+          await ref.read(userProfileProvider.notifier).saveProfile(updated);
+        }
+      }
+    }
 
     if (mounted) {
       _celebrationCtrl.forward();
