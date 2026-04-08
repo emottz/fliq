@@ -19,13 +19,16 @@ class LeagueService {
   static Stream<List<LeagueMemberModel>> leaderboardStream(
       String season, int leagueId) {
     return _membersRef(season, leagueId)
-        .orderBy('weeklyXp', descending: true)
         .limit(30)
         .snapshots()
-        .map((snap) => snap.docs
-            .map((d) => LeagueMemberModel.fromJson(
-                d.id, d.data() as Map<String, dynamic>))
-            .toList());
+        .map((snap) {
+          final list = snap.docs
+              .map((d) => LeagueMemberModel.fromJson(
+                  d.id, d.data() as Map<String, dynamic>))
+              .toList();
+          list.sort((a, b) => b.weeklyXp.compareTo(a.weeklyXp));
+          return list;
+        });
   }
 
   // ── Kullanıcıyı liğe ekle / güncelle ──────────────────────────────────────

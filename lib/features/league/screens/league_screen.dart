@@ -49,7 +49,13 @@ class _LeagueScreenState extends ConsumerState<LeagueScreen> {
           loading: () => const Center(
             child: CircularProgressIndicator(color: AppColors.primary),
           ),
-          error: (_, __) => const Center(child: Text('Lig verileri yüklenemedi')),
+          error: (_, __) => _LeagueBody(
+            league: league,
+            members: const [],
+            myUid: myUid,
+            season: season,
+            weeklyXp: 0,
+          ),
         );
       },
       loading: () => const Center(
