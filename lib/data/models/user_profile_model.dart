@@ -29,6 +29,7 @@ class UserProfileModel extends Equatable {
   final String prevIcaoAttempt;   // never | failed | passed_want_higher
   final String flyingEnvironment; // vfr_private | ifr_commercial | atc | cabin | student
   final String aircraftType;
+  final int leagueId; // 1-20
 
   const UserProfileModel({
     required this.role,
@@ -51,6 +52,7 @@ class UserProfileModel extends Equatable {
     this.prevIcaoAttempt = '',
     this.flyingEnvironment = '',
     this.aircraftType = '',
+    this.leagueId = 1,
   });
 
   static UserProfileModel empty() => const UserProfileModel(
@@ -82,6 +84,7 @@ class UserProfileModel extends Equatable {
     String? prevIcaoAttempt,
     String? flyingEnvironment,
     String? aircraftType,
+    int? leagueId,
   }) {
     return UserProfileModel(
       role: role ?? this.role,
@@ -104,6 +107,7 @@ class UserProfileModel extends Equatable {
       prevIcaoAttempt: prevIcaoAttempt ?? this.prevIcaoAttempt,
       flyingEnvironment: flyingEnvironment ?? this.flyingEnvironment,
       aircraftType: aircraftType ?? this.aircraftType,
+      leagueId: leagueId ?? this.leagueId,
     );
   }
 
@@ -127,6 +131,7 @@ class UserProfileModel extends Equatable {
         'goal': goal,
         'dailyTime': dailyTime,
         'examTimeline': examTimeline,
+        'leagueId': leagueId,
       };
 
   factory UserProfileModel.fromJson(Map<String, dynamic> json) {
@@ -156,6 +161,7 @@ class UserProfileModel extends Equatable {
       hardestArea: json['hardestArea'] as String? ?? '',
       prevIcaoAttempt: json['prevIcaoAttempt'] as String? ?? '',
       flyingEnvironment: json['flyingEnvironment'] as String? ?? '',
+      leagueId: json['leagueId'] as int? ?? 1,
     );
   }
 

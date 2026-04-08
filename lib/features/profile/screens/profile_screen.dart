@@ -1,3 +1,4 @@
+import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:go_router/go_router.dart';
@@ -31,6 +32,9 @@ class ProfileScreen extends ConsumerWidget {
                 children: [
                   const Text('Profil', style: AppTextStyles.heading2),
                   const SizedBox(height: 20),
+                  // ── Google kullanıcı bilgileri ─────────────────────────────
+                  _UserInfoCard(),
+                  const SizedBox(height: 16),
                   // Rank badge
                   Container(
                     width: double.infinity,
@@ -254,6 +258,83 @@ class _StatCard extends StatelessWidget {
               ],
             ),
           ),
+        ],
+      ),
+    );
+  }
+}
+
+class _UserInfoCard extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    final user = FirebaseAuth.instance.currentUser;
+    if (user == null) return const SizedBox();
+
+    final name = user.displayName ?? user.email ?? 'Kullanıcı';
+    final email = user.email ?? '';
+    final photoUrl = user.photoURL;
+    final isAnon = user.isAnonymous;
+
+    return Container(
+      padding: const EdgeInsets.all(16),
+      decoration: BoxDecoration(
+        color: AppColors.surface,
+        borderRadius: BorderRadius.circular(16),
+        border: Border.all(color: AppColors.divider),
+      ),
+      child: Row(
+        children: [
+          // Avatar
+          CircleAvatar(
+            radius: 30,
+            backgroundColor: AppColors.surfaceVariant,
+            backgroundImage: photoUrl != null ? NetworkImage(photoUrl) : null,
+            child: photoUrl == null
+                ? Text(
+                    isAnon ? '?' : name[0].toUpperCase(),
+                    style: const TextStyle(
+                      fontSize: 22,
+                      fontWeight: FontWeight.w700,
+                      color: AppColors.primary,
+                    ),
+                  )
+                : null,
+          ),
+          const SizedBox(width: 14),
+          // İsim & e-posta
+          Expanded(
+            child: Column(
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: [
+                Text(
+                  isAnon ? 'Misafir Kullanıcı' : name,
+                  style: const TextStyle(
+                    fontSize: 16,
+                    fontWeight: FontWeight.w700,
+                    color: AppColors.textPrimary,
+                  ),
+                  overflow: TextOverflow.ellipsis,
+                ),
+              ],
+            ),
+          ),
+          // Google rozeti
+          if (!isAnon && user.providerData.any((p) => p.providerId == 'google.com'))
+            Container(
+              padding: const EdgeInsets.symmetric(horizontal: 8, vertical: 4),
+              decoration: BoxDecoration(
+                color: AppColors.surfaceVariant,
+                borderRadius: BorderRadius.circular(8),
+              ),
+              child: const Text(
+                'Google',
+                style: TextStyle(
+                  fontSize: 11,
+                  fontWeight: FontWeight.w600,
+                  color: AppColors.textSecondary,
+                ),
+              ),
+            ),
         ],
       ),
     );

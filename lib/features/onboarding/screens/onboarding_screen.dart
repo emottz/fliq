@@ -26,6 +26,18 @@ class _Q {
 
 const _questions = [
   _Q(
+    key: 'role',
+    emoji: '👤',
+    question: 'Rolün nedir?',
+    hint: 'İçerik ve sorular rolüne göre özelleştirilir',
+    options: [
+      ('pilot', '🧑‍✈️  Pilot'),
+      ('cabin_crew', '💺  Kabin Ekibi'),
+      ('amt', '🔧  Aircraft Maintenance Technician'),
+      ('student', '🎓  Öğrenci'),
+    ],
+  ),
+  _Q(
     key: 'licenseLevel',
     emoji: '🧑‍✈️',
     question: 'Uçuş eğitiminde hangi aşamadasın?',
@@ -212,7 +224,7 @@ class _OnboardingScreenState extends ConsumerState<OnboardingScreen>
   Future<void> _save() async {
     setState(() => _saving = true);
     final profile = UserProfileModel(
-      role: 'pilot',
+      role: _answers['role'] ?? 'pilot',
       licenseLevel: _answers['licenseLevel'] ?? '',
       flyingEnvironment: _answers['flyingEnvironment'] ?? '',
       flightHours: _answers['flightHours'] ?? '',

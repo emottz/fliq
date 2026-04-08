@@ -20,6 +20,7 @@ import '../../features/exams/screens/exam_result_screen.dart';
 import '../../features/lessons/screens/lesson_list_screen.dart';
 import '../../features/lessons/screens/lesson_session_screen.dart';
 import '../../features/admin/screens/admin_screen.dart';
+import '../../features/league/screens/league_screen.dart';
 import '../../features/profile/screens/profile_screen.dart';
 
 // Her uygulama başlangıcında splash bir kez gösterilir
@@ -164,6 +165,10 @@ final routerProvider = Provider<GoRouter>((ref) {
           GoRoute(
             path: '/home/lessons',
             builder: (context, state) => const LessonListScreen(),
+          ),
+          GoRoute(
+            path: '/home/league',
+            builder: (context, state) => const LeagueScreen(),
           ),
           GoRoute(
             path: '/home/profile',

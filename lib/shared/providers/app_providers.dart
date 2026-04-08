@@ -1,7 +1,10 @@
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
+import '../../core/constants/league_constants.dart';
 import '../../core/services/auth_service.dart';
+import '../../core/services/league_service.dart';
 import '../../data/datasources/asset_question_source.dart';
+import '../../data/models/league_member_model.dart';
 import '../../data/models/user_profile_model.dart';
 import '../../data/repositories/question_repository.dart';
 import '../../data/repositories/user_repository.dart';
@@ -48,6 +51,18 @@ class UserProfileNotifier extends AsyncNotifier<UserProfileModel?> {
     await repo.addXp(amount);
     final updated = await repo.getProfile();
     state = AsyncData(updated);
+
+    // Lig haftalık XP'i de güncelle
+    if (updated != null) {
+      final season = LeagueConstants.currentSeasonKey;
+      await LeagueService.addWeeklyXp(
+        season: season,
+        leagueId: updated.leagueId,
+        amount: amount,
+        streakDays: updated.streakDays,
+        role: updated.role,
+      );
+    }
   }
 
   Future<void> updateStreak() async {
@@ -56,4 +71,33 @@ class UserProfileNotifier extends AsyncNotifier<UserProfileModel?> {
     final updated = await repo.getProfile();
     state = AsyncData(updated);
   }
+
+  /// Hafta geçişini kontrol eder, gerekirse lig değiştirir
+  Future<void> checkLeagueTransition() async {
+    final profile = state.valueOrNull;
+    if (profile == null) return;
+    final newLeagueId = await LeagueService.checkSeasonTransition(profile.leagueId);
+    if (newLeagueId != profile.leagueId) {
+      final updated = profile.copyWith(leagueId: newLeagueId);
+      final repo = ref.read(userRepositoryProvider);
+      await repo.saveProfile(updated);
+      state = AsyncData(updated);
+    }
+    // Liğe katıl (yeni sezon veya ilk kez)
+    final season = LeagueConstants.currentSeasonKey;
+    await LeagueService.joinLeague(
+      season: season,
+      leagueId: newLeagueId,
+      weeklyXp: await LeagueService.getMyWeeklyXp(season, newLeagueId),
+    );
+  }
 }
+
+// ── League Providers ──────────────────────────────────────────────────────────
+
+final leaderboardProvider = StreamProvider.family<List<LeagueMemberModel>, int>(
+  (ref, leagueId) {
+    final season = LeagueConstants.currentSeasonKey;
+    return LeagueService.leaderboardStream(season, leagueId);
+  },
+);

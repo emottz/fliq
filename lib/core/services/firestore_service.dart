@@ -23,6 +23,7 @@ class FirestoreService {
       'dailyTime': p.dailyTime,
       'examTimeline': p.examTimeline,
       'prevIcaoAttempt': p.prevIcaoAttempt,
+      'leagueId': p.leagueId,
       'onboardingAt': FieldValue.serverTimestamp(),
       'updatedAt': FieldValue.serverTimestamp(),
     }, SetOptions(merge: true));
