@@ -6,6 +6,7 @@ import '../../../core/constants/app_text_styles.dart';
 import '../../../data/lessons/lesson_content_data.dart';
 import '../../../data/models/lesson_content_model.dart';
 import '../../../shared/providers/app_providers.dart';
+import '../../../shared/widgets/streak_celebration_overlay.dart';
 import '../widgets/lesson_card_widgets.dart';
 
 class LessonSessionScreen extends ConsumerStatefulWidget {
@@ -66,6 +67,10 @@ class _LessonSessionScreenState extends ConsumerState<LessonSessionScreen>
     final lesson = _lesson;
     await ref.read(userRepositoryProvider).markLessonComplete(widget.lessonId);
     await ref.read(userProfileProvider.notifier).addXp(20);
+    final newStreak = await ref.read(userProfileProvider.notifier).updateStreak();
+    if (mounted && newStreak > 0) {
+      await showStreakCelebration(context, streakDays: newStreak);
+    }
 
     // Remove category from weakCategories if all lessons in it are now done
     if (lesson != null) {

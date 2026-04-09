@@ -6,6 +6,7 @@ import '../../../core/constants/app_colors.dart';
 import '../../../core/constants/app_text_styles.dart';
 import '../../../data/models/question_model.dart';
 import '../../../shared/providers/app_providers.dart';
+import '../../../shared/widgets/streak_celebration_overlay.dart';
 
 class ExamSessionScreen extends ConsumerStatefulWidget {
   final Map<String, dynamic> config;
@@ -94,6 +95,10 @@ class _ExamSessionScreenState extends ConsumerState<ExamSessionScreen> {
 
     await ref.read(userProfileProvider.notifier).addXp(xp);
     await ref.read(userRepositoryProvider).incrementExamsTaken();
+    final newStreak = await ref.read(userProfileProvider.notifier).updateStreak();
+    if (mounted && newStreak > 0) {
+      await showStreakCelebration(context, streakDays: newStreak);
+    }
 
     if (mounted) {
       context.go('/exam/result', extra: {

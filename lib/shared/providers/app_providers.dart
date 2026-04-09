@@ -65,11 +65,13 @@ class UserProfileNotifier extends AsyncNotifier<UserProfileModel?> {
     }
   }
 
-  Future<void> updateStreak() async {
+  /// Streak günceller ve yeni gün ise yeni streak sayısını döndürür, aynı günse 0.
+  Future<int> updateStreak() async {
     final repo = ref.read(userRepositoryProvider);
-    await repo.updateStreak();
+    final newStreak = await repo.updateStreak();
     final updated = await repo.getProfile();
     state = AsyncData(updated);
+    return newStreak;
   }
 
   /// Hafta geçişini kontrol eder, gerekirse lig değiştirir

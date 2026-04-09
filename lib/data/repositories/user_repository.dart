@@ -46,23 +46,22 @@ class UserRepository {
     await saveProfile(profile.copyWith(totalXp: profile.totalXp + amount));
   }
 
-  Future<void> updateStreak() async {
+  /// Streaki günceller. Yeni gün ise yeni streak sayısını döndürür, aynı günse 0 döner.
+  Future<int> updateStreak() async {
     final profile = await getProfile();
-    if (profile == null) return;
+    if (profile == null) return 0;
 
     final today = DateTime.now();
     final todayStr = '${today.year}-${today.month.toString().padLeft(2, '0')}-${today.day.toString().padLeft(2, '0')}';
 
-    if (profile.lastActiveDate == todayStr) return;
+    if (profile.lastActiveDate == todayStr) return 0;
 
     int newStreak = 1;
     if (profile.lastActiveDate != null) {
       final last = DateTime.tryParse(profile.lastActiveDate!);
       if (last != null) {
         final diff = today.difference(last).inDays;
-        if (diff == 1) {
-          newStreak = profile.streakDays + 1;
-        }
+        if (diff == 1) newStreak = profile.streakDays + 1;
       }
     }
 
@@ -70,6 +69,7 @@ class UserRepository {
       streakDays: newStreak,
       lastActiveDate: todayStr,
     ));
+    return newStreak;
   }
 
   Future<Set<String>> getCompletedLessons() async {
