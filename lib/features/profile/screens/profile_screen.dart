@@ -270,10 +270,11 @@ class _UserInfoCard extends StatelessWidget {
     final user = FirebaseAuth.instance.currentUser;
     if (user == null) return const SizedBox();
 
-    final name = user.displayName ?? user.email ?? 'Kullanıcı';
-    final email = user.email ?? '';
-    final photoUrl = user.photoURL;
     final isAnon = user.isAnonymous;
+    final name = isAnon
+        ? 'user_${user.uid.substring(user.uid.length - 6)}'
+        : user.displayName ?? user.email ?? 'Kullanıcı';
+    final photoUrl = user.photoURL;
 
     return Container(
       padding: const EdgeInsets.all(16),
@@ -307,7 +308,7 @@ class _UserInfoCard extends StatelessWidget {
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
                 Text(
-                  isAnon ? 'Misafir Kullanıcı' : name,
+                  name,
                   style: const TextStyle(
                     fontSize: 16,
                     fontWeight: FontWeight.w700,

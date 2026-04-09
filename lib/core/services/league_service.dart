@@ -41,7 +41,9 @@ class LeagueService {
     if (user == null) return;
 
     await _membersRef(season, leagueId).doc(user.uid).set({
-      'displayName': user.displayName ?? user.email ?? 'Kullanıcı',
+      'displayName': user.isAnonymous
+          ? 'user_${user.uid.substring(user.uid.length - 6)}'
+          : user.displayName ?? user.email ?? 'Kullanıcı',
       'photoUrl': user.photoURL,
       'weeklyXp': weeklyXp,
       'streakDays': 0,
@@ -63,7 +65,9 @@ class LeagueService {
     if (user == null) return;
 
     await _membersRef(season, leagueId).doc(user.uid).set({
-      'displayName': user.displayName ?? user.email ?? 'Kullanıcı',
+      'displayName': user.isAnonymous
+          ? 'user_${user.uid.substring(user.uid.length - 6)}'
+          : user.displayName ?? user.email ?? 'Kullanıcı',
       'photoUrl': user.photoURL,
       'weeklyXp': FieldValue.increment(amount),
       'streakDays': streakDays,
