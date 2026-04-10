@@ -100,8 +100,7 @@ final routerProvider = Provider<GoRouter>((ref) {
 
       if (path == '/onboarding' ||
           path == '/assessment-intro' ||
-          path == '/assessment' ||
-          path == '/subscription') {
+          path == '/assessment') {
         return '/home/exams';
       }
 
