@@ -132,6 +132,7 @@ class _AssessmentAnalysisScreenState extends State<AssessmentAnalysisScreen>
         'pilot' => 'Pilot',
         'atc' => 'Hava Trafik Kontrolörü',
         'cabin_crew' => 'Kabin Ekibi',
+        'amt' => 'Uçak Bakım Teknisyeni',
         _ => 'Havacılık Öğrencisi',
       };
 

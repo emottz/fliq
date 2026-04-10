@@ -88,6 +88,7 @@ class AiAnalysisService {
       'pilot': 'Ticari Pilot',
       'atc': 'Uçuş Kontrol Memuru',
       'cabin_crew': 'Kabin Ekibi Üyesi',
+      'amt': 'Uçak Bakım Teknisyeni',
       'student': 'Havacılık Öğrencisi',
     }[role] ?? 'Havacılık Uzmanı';
 
@@ -150,6 +151,7 @@ Kurallar:
       'pilot': 'pilot',
       'atc': 'uçuş kontrol memuru',
       'cabin_crew': 'kabin ekibi üyesi',
+      'amt': 'uçak bakım teknisyeni',
       'student': 'havacılık öğrencisi',
     }[role] ?? 'havacılık uzmanı';
 
@@ -333,6 +335,10 @@ Kurallar:
         tips.add('Kendin emniyet anonsu yapıp kaydet ve resmi havayolu senaryolarıyla karşılaştır — kelime bilgisi farklılıklarını tespit et.');
         tips.add('ICAO Kabin Ekibi Emniyet Eğitimi El Kitabı terminolojisini bölüm bölüm çalış, her yeni terim için kart oluştur.');
         tips.add('Hem anlama hem de üretim doğruluğunu geliştirmek için emniyet prosedürlerini ileri geri çevirme pratiği yap.');
+      case 'amt':
+        tips.add('SHGM sivil havacılık mevzuatı ve bakım el kitaplarındaki teknik İngilizce terimleri düzenli olarak çalış; her terim için karta not al.');
+        tips.add('AMM (Aircraft Maintenance Manual) ve SB (Service Bulletin) gibi İngilizce teknik belgeleri okuma pratiği yap — önce kısa bölümlerle başla.');
+        tips.add('Havacılık İngilizcesi gramer yapılarını öğrenmek için ICAO Doc 9835 ve EASA Part-66 modül materyallerinden alıştırma metinleri kullan.');
       default:
         tips.add('Aralıklı tekrar yöntemiyle her gün 20 dakika çalış — kısa ve düzenli seanslar uzun ve düzensiz olanlara her zaman üstün gelir.');
         tips.add('Operasyonel havacılık İngilizcesi formatlarına alışmak için her sabah bir NOTAM veya METAR\'ı sesli oku.');

@@ -37,6 +37,7 @@ const _questions = [
       ('student', '🎓  Öğrenci'),
     ],
   ),
+  // AMT seçilince atlanır
   _Q(
     key: 'licenseLevel',
     emoji: '🧑‍✈️',
@@ -49,6 +50,7 @@ const _questions = [
       ('ppl_holder', '🏅  PPL / Lisans sahibiyim'),
     ],
   ),
+  // AMT seçilince atlanır
   _Q(
     key: 'flyingEnvironment',
     emoji: '🗺️',
@@ -63,18 +65,6 @@ const _questions = [
     ],
   ),
   _Q(
-    key: 'flightHours',
-    emoji: '⏱️',
-    question: 'Toplam uçuş saatin ne kadar?',
-    hint: 'Soru senaryolarının karmaşıklığını ayarlar',
-    options: [
-      ('0_50', '🔰  0 – 50 saat'),
-      ('50_200', '📈  50 – 200 saat'),
-      ('200_500', '🚀  200 – 500 saat'),
-      ('500_plus', '🏆  500+ saat'),
-    ],
-  ),
-  _Q(
     key: 'nativeLanguage',
     emoji: '🌐',
     question: 'Ana dilin nedir?',
@@ -84,17 +74,33 @@ const _questions = [
       ('other', '🌍  Diğer'),
     ],
   ),
+  // Tüm roller — CEFR seviyeleri
   _Q(
     key: 'englishLevel',
     emoji: '📊',
     question: 'İngilizce seviyeni nasıl değerlendirirsin?',
     hint: 'Öğrenme yolunun başlangıç noktası',
     options: [
-      ('weak', '🔴  Zayıf — temel günlük İngilizce bile zor'),
-      ('medium', '🟡  Orta — anlıyorum ama aviation İngilizcesi eksik'),
-      ('good', '🟢  İyi — genel İngilizce iyi, uzmanlık gerektiriyor'),
+      ('a2', '🔴  A2 — Temel kullanıcı'),
+      ('b1', '🟡  B1 — Orta düzey'),
+      ('b2', '🟢  B2 — Üst-orta düzey'),
+      ('c1', '🔵  C1 — İleri düzey'),
     ],
   ),
+  // Tüm roller — yeni soru
+  _Q(
+    key: 'aviationEnglishLevel',
+    emoji: '✈️',
+    question: 'Havacılık İngilizcen hangi seviyede?',
+    hint: 'ICAO dil yeterlilik ölçeğine göre değerlendirme',
+    options: [
+      ('none', '❌  Havacılık İngilizcesi bilmiyorum'),
+      ('pre_op', '🟡  Ön-Operasyonel (Seviye 1-3)'),
+      ('operational', '🟢  Operasyonel (Seviye 4)'),
+      ('extended', '🔵  Genişletilmiş / Uzman (Seviye 5-6)'),
+    ],
+  ),
+  // AMT seçilince sadece 3 seçenek gösterilir (_currentOptions)
   _Q(
     key: 'hardestArea',
     emoji: '🎯',
@@ -108,17 +114,19 @@ const _questions = [
       ('all', '🔥  Hepsi eşit derecede zor'),
     ],
   ),
+  // AMT seçilince farklı seçenekler gösterilir (_currentOptions)
   _Q(
     key: 'goal',
     emoji: '🏁',
     question: 'Hedefin ne?',
-    hint: 'ICAO hedefliyorsan test formatına uygun sorular öne çıkar',
+    hint: 'Hedefine göre içerik ve soru formatı şekillenir',
     options: [
       ('icao', '🎖️  ICAO sınavına hazırlanmak'),
       ('general', '✈️  Genel aviation İngilizcesi'),
       ('both', '🔥  Her ikisi'),
     ],
   ),
+  // AMT seçilince atlanır
   _Q(
     key: 'prevIcaoAttempt',
     emoji: '📋',
@@ -141,6 +149,7 @@ const _questions = [
       ('30_plus', '🏆  30+ dakika'),
     ],
   ),
+  // AMT seçilince atlanır
   _Q(
     key: 'examTimeline',
     emoji: '📅',
@@ -154,6 +163,14 @@ const _questions = [
     ],
   ),
 ];
+
+// AMT rolünde atlanacak sorular
+const _amtSkipped = {
+  'licenseLevel',
+  'flyingEnvironment',
+  'prevIcaoAttempt',
+  'examTimeline',
+};
 
 // ── Screen ────────────────────────────────────────────────────────────────────
 
@@ -194,6 +211,44 @@ class _OnboardingScreenState extends ConsumerState<OnboardingScreen>
     super.dispose();
   }
 
+  // ── Görünür adım indeksleri (AMT atlamaları dahil) ────────────────────────
+
+  List<int> get _visibleIndices {
+    final isAmt = _answers['role'] == 'amt';
+    return List.generate(_questions.length, (i) => i)
+        .where((i) => !isAmt || !_amtSkipped.contains(_questions[i].key))
+        .toList();
+  }
+
+  int get _visibleStep => _visibleIndices.indexOf(_step);
+  int get _visibleTotal => _visibleIndices.length;
+
+  // ── AMT'ye göre dinamik seçenekler ───────────────────────────────────────
+
+  List<(String, String)> get _currentOptions {
+    final q = _questions[_step];
+    final isAmt = _answers['role'] == 'amt';
+
+    if (isAmt && q.key == 'hardestArea') {
+      return [
+        ('grammar', '📝  Gramer yapıları'),
+        ('vocabulary', '📖  Havacılık kelime bilgisi'),
+        ('all', '🔥  Hepsi eşit derecede zor'),
+      ];
+    }
+
+    if (isAmt && q.key == 'goal') {
+      return [
+        ('shgm', '📋  SHGM dil sınavına hazırlanmak'),
+        ('general_aviation', '✈️  Genel Havacılık Terminolojisi'),
+      ];
+    }
+
+    return q.options;
+  }
+
+  // ── Navigasyon ─────────────────────────────────────────────────────────────
+
   void _animateTo(int next) {
     _goingForward = next > _step;
     _slideCtrl.reset();
@@ -210,15 +265,19 @@ class _OnboardingScreenState extends ConsumerState<OnboardingScreen>
 
   Future<void> _next() async {
     if (!_answered) return;
-    if (_step < _questions.length - 1) {
-      _animateTo(_step + 1);
+    final indices = _visibleIndices;
+    final visIdx = indices.indexOf(_step);
+    if (visIdx < indices.length - 1) {
+      _animateTo(indices[visIdx + 1]);
     } else {
       await _save();
     }
   }
 
   void _back() {
-    if (_step > 0) _animateTo(_step - 1);
+    final indices = _visibleIndices;
+    final visIdx = indices.indexOf(_step);
+    if (visIdx > 0) _animateTo(indices[visIdx - 1]);
   }
 
   Future<void> _save() async {
@@ -227,9 +286,9 @@ class _OnboardingScreenState extends ConsumerState<OnboardingScreen>
       role: _answers['role'] ?? 'pilot',
       licenseLevel: _answers['licenseLevel'] ?? '',
       flyingEnvironment: _answers['flyingEnvironment'] ?? '',
-      flightHours: _answers['flightHours'] ?? '',
       nativeLanguage: _answers['nativeLanguage'] ?? '',
       englishLevel: _answers['englishLevel'] ?? '',
+      aviationEnglishLevel: _answers['aviationEnglishLevel'] ?? '',
       hardestArea: _answers['hardestArea'] ?? '',
       goal: _answers['goal'] ?? '',
       prevIcaoAttempt: _answers['prevIcaoAttempt'] ?? '',
@@ -248,7 +307,9 @@ class _OnboardingScreenState extends ConsumerState<OnboardingScreen>
   @override
   Widget build(BuildContext context) {
     final q = _questions[_step];
-    final total = _questions.length;
+    final visStep = _visibleStep;
+    final visTotal = _visibleTotal;
+    final canGoBack = visStep > 0;
 
     return Scaffold(
       backgroundColor: AppColors.background,
@@ -265,10 +326,10 @@ class _OnboardingScreenState extends ConsumerState<OnboardingScreen>
                     children: [
                       // Geri butonu
                       GestureDetector(
-                        onTap: _step > 0 ? _back : null,
+                        onTap: canGoBack ? _back : null,
                         child: AnimatedOpacity(
                           duration: const Duration(milliseconds: 200),
-                          opacity: _step > 0 ? 1.0 : 0.0,
+                          opacity: canGoBack ? 1.0 : 0.0,
                           child: Container(
                             width: 36,
                             height: 36,
@@ -291,7 +352,7 @@ class _OnboardingScreenState extends ConsumerState<OnboardingScreen>
                           crossAxisAlignment: CrossAxisAlignment.end,
                           children: [
                             Text(
-                              '${_step + 1} / $total',
+                              '${visStep + 1} / $visTotal',
                               style: const TextStyle(
                                 fontSize: 12,
                                 fontWeight: FontWeight.w600,
@@ -302,7 +363,10 @@ class _OnboardingScreenState extends ConsumerState<OnboardingScreen>
                             ClipRRect(
                               borderRadius: BorderRadius.circular(3),
                               child: TweenAnimationBuilder<double>(
-                                tween: Tween(begin: _step / total, end: (_step + 1) / total),
+                                tween: Tween(
+                                  begin: visStep / visTotal,
+                                  end: (visStep + 1) / visTotal,
+                                ),
                                 duration: const Duration(milliseconds: 300),
                                 curve: Curves.easeOut,
                                 builder: (_, v, __) => LinearProgressIndicator(
@@ -359,7 +423,7 @@ class _OnboardingScreenState extends ConsumerState<OnboardingScreen>
                           Expanded(
                             child: SingleChildScrollView(
                               child: Column(
-                                children: q.options.map((o) {
+                                children: _currentOptions.map((o) {
                                   final isSelected = _answers[_currentKey] == o.$1;
                                   return GestureDetector(
                                     onTap: () {
@@ -428,7 +492,7 @@ class _OnboardingScreenState extends ConsumerState<OnboardingScreen>
                 Padding(
                   padding: const EdgeInsets.fromLTRB(24, 8, 24, 20),
                   child: PrimaryButton(
-                    label: _step < _questions.length - 1
+                    label: _visibleStep < _visibleTotal - 1
                         ? 'Devam Et →'
                         : 'Başlayalım 🚀',
                     isLoading: _saving,
