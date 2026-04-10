@@ -50379,7 +50379,7 @@ case 8:if(!d){if(B.b.p(B.UJ,m)){q=null
 s=1
 break}q="/assessment-intro"
 s=1
-break}if(m==="/onboarding"||m==="/assessment-intro"||m==="/assessment"||m==="/subscription"){q="/home/exams"
+break}if(m==="/onboarding"||m==="/assessment-intro"||m==="/assessment"){q="/home/exams"
 s=1
 break}q=null
 s=1
