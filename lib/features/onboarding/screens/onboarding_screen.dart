@@ -33,7 +33,7 @@ const _questions = [
     options: [
       ('pilot', '🧑‍✈️  Pilot'),
       ('cabin_crew', '💺  Kabin Ekibi'),
-      ('amt', '🔧  Aircraft Maintenance Technician'),
+      ('amt', '🔧  Uçak Bakım Teknisyeni'),
       ('student', '🎓  Öğrenci'),
     ],
   ),
