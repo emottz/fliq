@@ -42,7 +42,7 @@ class AirplaneLogo extends StatelessWidget {
           ),
           SizedBox(height: size * 0.05),
           Text(
-            'Aviation English',
+            'Havacılık İngilizcesi',
             style: TextStyle(
               fontSize: size * 0.22,
               color: AppColors.textSecondary,

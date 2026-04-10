@@ -5,6 +5,7 @@ import 'package:go_router/go_router.dart';
 import '../../../core/constants/app_colors.dart';
 import '../../../core/constants/app_text_styles.dart';
 import '../../../data/models/question_model.dart';
+import '../../../data/repositories/user_repository.dart';
 import '../../../shared/providers/app_providers.dart';
 import '../../../shared/widgets/streak_celebration_overlay.dart';
 
@@ -23,22 +24,38 @@ class _ExamSessionScreenState extends ConsumerState<ExamSessionScreen> {
   int? _selected;
   bool _answered = false;
   bool _loading = true;
+  bool _paywallMode = false;
   late int _secondsLeft;
   Timer? _timer;
 
   int get _totalSeconds => (widget.config['count'] as int? ?? 20) * 60;
+  bool get _isQuick => (widget.config['mode'] as String?) == 'quick';
 
   @override
   void initState() {
     super.initState();
     _secondsLeft = _totalSeconds;
-    _load();
+    _checkAndLoad();
   }
 
   @override
   void dispose() {
     _timer?.cancel();
     super.dispose();
+  }
+
+  Future<void> _checkAndLoad() async {
+    final repo = ref.read(userRepositoryProvider);
+    final isPremium = ref.read(isPremiumProvider).value ?? false;
+    final canTake = await repo.canTakeExam(isPremium: isPremium);
+
+    if (!canTake) {
+      if (mounted) setState(() { _loading = false; _paywallMode = true; });
+      return;
+    }
+
+    await repo.incrementExamsTaken();
+    _load();
   }
 
   Future<void> _load() async {
@@ -52,6 +69,72 @@ class _ExamSessionScreenState extends ConsumerState<ExamSessionScreen> {
       setState(() { _questions = questions; _loading = false; });
       _startTimer();
     }
+  }
+
+  Widget _buildExamPaywall(BuildContext context) {
+    return Scaffold(
+      backgroundColor: AppColors.background,
+      body: SafeArea(
+        child: Center(
+          child: ConstrainedBox(
+            constraints: const BoxConstraints(maxWidth: 480),
+            child: Padding(
+              padding: const EdgeInsets.symmetric(horizontal: 24),
+              child: Column(
+                children: [
+                  const SizedBox(height: 16),
+                  Align(
+                    alignment: Alignment.centerLeft,
+                    child: GestureDetector(
+                      onTap: () => context.go('/home/exams'),
+                      child: Container(
+                        width: 36,
+                        height: 36,
+                        decoration: BoxDecoration(
+                          color: AppColors.surfaceVariant,
+                          borderRadius: BorderRadius.circular(10),
+                        ),
+                        child: const Icon(Icons.arrow_back, size: 18, color: AppColors.textSecondary),
+                      ),
+                    ),
+                  ),
+                  const Spacer(),
+                  const Text('🔒', style: TextStyle(fontSize: 56)),
+                  const SizedBox(height: 16),
+                  const Text(
+                    'Ücretsiz Denemen Bitti',
+                    style: TextStyle(fontSize: 22, fontWeight: FontWeight.w800, color: AppColors.textPrimary),
+                    textAlign: TextAlign.center,
+                  ),
+                  const SizedBox(height: 10),
+                  const Text(
+                    'Devam etmek ve daha fazla sınav çözmek için FLIQ Premium\'a geç. '
+                    'Sınırsız sınav, tüm dersler ve kişisel analiz seni bekliyor.',
+                    style: AppTextStyles.caption,
+                    textAlign: TextAlign.center,
+                  ),
+                  const SizedBox(height: 32),
+                  SizedBox(
+                    width: double.infinity,
+                    child: ElevatedButton(
+                      onPressed: () => context.push('/subscription'),
+                      style: ElevatedButton.styleFrom(
+                        backgroundColor: AppColors.primary,
+                        foregroundColor: Colors.white,
+                        padding: const EdgeInsets.symmetric(vertical: 16),
+                        shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(14)),
+                      ),
+                      child: const Text('Abone Ol ve Devam Et  👑', style: TextStyle(fontSize: 16, fontWeight: FontWeight.w700)),
+                    ),
+                  ),
+                  const Spacer(),
+                ],
+              ),
+            ),
+          ),
+        ),
+      ),
+    );
   }
 
   void _startTimer() {
@@ -119,6 +202,10 @@ class _ExamSessionScreenState extends ConsumerState<ExamSessionScreen> {
 
   @override
   Widget build(BuildContext context) {
+    if (_paywallMode) {
+      return _buildExamPaywall(context);
+    }
+
     if (_loading || _questions == null) {
       return const Scaffold(
         backgroundColor: AppColors.background,
@@ -351,7 +438,7 @@ class _PassageCardState extends State<_PassageCard> {
                 const SizedBox(width: 6),
                 Expanded(
                   child: Text(
-                    widget.title ?? 'Passage',
+                    widget.title ?? 'Pasaj',
                     style: const TextStyle(fontWeight: FontWeight.w600, fontSize: 13, color: AppColors.primary),
                   ),
                 ),

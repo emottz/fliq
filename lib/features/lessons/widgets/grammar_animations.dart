@@ -109,7 +109,7 @@ class _PassiveVoiceAnimationState extends State<_PassiveVoiceAnimation>
                       const Icon(Icons.arrow_downward, color: AppColors.primary, size: 28),
                       const SizedBox(width: 6),
                       Text(
-                        'Passive transformation',
+                        'Edilgen dönüşüm',
                         style: TextStyle(
                           fontSize: 12,
                           color: AppColors.primary,
@@ -147,7 +147,7 @@ class _PassiveVoiceAnimationState extends State<_PassiveVoiceAnimation>
                           color: Colors.white, size: 18),
                       const SizedBox(width: 6),
                       Text(
-                        _playing ? 'Animating…' : 'Play Animation',
+                        _playing ? 'Oynatılıyor…' : 'Animasyonu Oynat',
                         style: const TextStyle(color: Colors.white, fontWeight: FontWeight.w600, fontSize: 14),
                       ),
                     ],
@@ -283,7 +283,7 @@ class _ModalVerbAnimationState extends State<_ModalVerbAnimation>
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
-          const Text('Tap a modal verb to see its usage',
+          const Text('Kullanımını görmek için modal fiile dokun',
               style: TextStyle(fontSize: 12, color: AppColors.textSecondary)),
           const SizedBox(height: 12),
           // Spectrum bar
@@ -417,8 +417,8 @@ class _ConditionalAnimationState extends State<_ConditionalAnimation>
 
   static const _types = [
     _CondType(
-      label: 'Type 1',
-      subtitle: 'Real / Possible',
+      label: 'Tip 1',
+      subtitle: 'Gerçek / Mümkün',
       color: Color(0xFF059669),
       ifClause: 'If + Present Simple',
       ifExample: 'If the oil pressure drops',
@@ -426,8 +426,8 @@ class _ConditionalAnimationState extends State<_ConditionalAnimation>
       thenExample: 'the pilot will declare an emergency.',
     ),
     _CondType(
-      label: 'Type 2',
-      subtitle: 'Hypothetical',
+      label: 'Tip 2',
+      subtitle: 'Varsayımsal',
       color: AppColors.primary,
       ifClause: 'If + Past Simple',
       ifExample: 'If the engine failed',
@@ -435,8 +435,8 @@ class _ConditionalAnimationState extends State<_ConditionalAnimation>
       thenExample: 'the crew would follow the ECAM.',
     ),
     _CondType(
-      label: 'Type 3',
-      subtitle: 'Impossible (past)',
+      label: 'Tip 3',
+      subtitle: 'İmkânsız (geçmiş)',
       color: Color(0xFFEF4444),
       ifClause: 'If + Past Perfect',
       ifExample: 'If maintenance had been done',
@@ -693,16 +693,16 @@ class _ReportedSpeechAnimationState extends State<_ReportedSpeechAnimation>
       ),
       child: Column(
         children: [
-          const Text('Tense Backshift', style: TextStyle(fontWeight: FontWeight.w700, fontSize: 14)),
+          const Text('Zaman Geriye Kayması', style: TextStyle(fontWeight: FontWeight.w700, fontSize: 14)),
           const SizedBox(height: 4),
-          const Text('Tap "Next" to see how tenses shift in reported speech',
+          const Text('Dolaylı anlatımda zamanların nasıl kaydığını görmek için "İleri"ye dokun',
               style: TextStyle(fontSize: 12, color: AppColors.textSecondary)),
           const SizedBox(height: 20),
           Row(
             children: [
               Expanded(
                 child: _TenseBox(
-                  label: 'Direct Speech',
+                  label: 'Doğrudan Konuşma',
                   verb: pair.direct,
                   color: const Color(0xFF7C3AED),
                 ),
@@ -719,7 +719,7 @@ class _ReportedSpeechAnimationState extends State<_ReportedSpeechAnimation>
               ),
               Expanded(
                 child: _TenseBox(
-                  label: 'Reported Speech',
+                  label: 'Dolaylı Anlatım',
                   verb: pair.reported,
                   color: AppColors.primary,
                   highlighted: _step >= 2,
@@ -753,7 +753,7 @@ class _ReportedSpeechAnimationState extends State<_ReportedSpeechAnimation>
                 children: [
                   Icon(Icons.skip_next, color: Colors.white, size: 18),
                   SizedBox(width: 6),
-                  Text('Next Tense', style: TextStyle(color: Colors.white, fontWeight: FontWeight.w600)),
+                  Text('İleri', style: TextStyle(color: Colors.white, fontWeight: FontWeight.w600)),
                 ],
               ),
             ),

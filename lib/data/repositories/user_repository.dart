@@ -8,6 +8,7 @@ class UserRepository {
   static const _keyAssessmentDone = 'assessment_done';
   static const _keyCompletedLessons = 'completed_lessons';
   static const _keyExamsTaken = 'exams_taken';
+  static const freeTrialExams = 1; // Ücretsiz deneme hakkı (ömür boyu)
 
   Future<SharedPreferences> get _prefs => SharedPreferences.getInstance();
 
@@ -93,6 +94,12 @@ class UserRepository {
     final p = await _prefs;
     final current = p.getInt(_keyExamsTaken) ?? 0;
     await p.setInt(_keyExamsTaken, current + 1);
+  }
+
+  /// Ücretsiz kullanıcı sınav alabilir mi? (ömür boyu 1 hak)
+  Future<bool> canTakeExam({required bool isPremium}) async {
+    if (isPremium) return true;
+    return await getExamsTaken() < freeTrialExams;
   }
 
   Future<void> clearAll() async {

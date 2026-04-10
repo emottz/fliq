@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:go_router/go_router.dart';
 import '../../../core/constants/app_colors.dart';
+import '../../../core/constants/app_text_styles.dart';
 import '../../../data/lessons/lesson_content_data.dart';
 import '../../../data/models/lesson_content_model.dart';
 import '../../../data/models/user_profile_model.dart';
@@ -16,6 +17,8 @@ class LessonListScreen extends ConsumerStatefulWidget {
 
 class _LessonListScreenState extends ConsumerState<LessonListScreen> {
   int _refreshKey = 0;
+
+  static const _freeLessonsCount = 5; // İlk 5 ders ücretsiz
 
   static const _minLevels = {
     // Başlangıç
@@ -82,6 +85,9 @@ class _LessonListScreenState extends ConsumerState<LessonListScreen> {
   Widget build(BuildContext context) {
     final profileAsync = ref.watch(userProfileProvider);
 
+    final isPremiumAsync = ref.watch(isPremiumProvider);
+    final isPremium = isPremiumAsync.value ?? false;
+
     return profileAsync.when(
       data: (profile) {
         final level = profile?.level ?? ProficiencyLevel.beginner;
@@ -115,7 +121,7 @@ class _LessonListScreenState extends ConsumerState<LessonListScreen> {
                       Padding(
                         padding: const EdgeInsets.symmetric(horizontal: 24),
                         child: Column(
-                          children: _buildPath(context, lessons, level, completed, weakCategories),
+                          children: _buildPath(context, lessons, level, completed, weakCategories, isPremium),
                         ),
                       ),
 
@@ -139,6 +145,7 @@ class _LessonListScreenState extends ConsumerState<LessonListScreen> {
     ProficiencyLevel userLevel,
     Set<String> completed,
     List<String> weakCategories,
+    bool isPremium,
   ) {
     final widgets = <Widget>[];
 
@@ -147,7 +154,8 @@ class _LessonListScreenState extends ConsumerState<LessonListScreen> {
     for (int i = 0; i < lessons.length; i++) {
       final lesson = lessons[i];
       final isDone = completed.contains(lesson.id);
-      final isUnlocked = isDone || _isUnlocked(userLevel, i, lessons, completed);
+      final isPremiumLocked = !isPremium && i >= _freeLessonsCount;
+      final isUnlocked = !isPremiumLocked && (isDone || _isUnlocked(userLevel, i, lessons, completed));
       final isActive = isUnlocked && !isDone;
       final isNextUp = isActive &&
           (i == 0 || completed.contains(lessons[i - 1].id));
@@ -155,13 +163,23 @@ class _LessonListScreenState extends ConsumerState<LessonListScreen> {
       final minLevel = _minLevels[lesson.id] ?? ProficiencyLevel.beginner;
       if (minLevel != lastGroupLevel) {
         lastGroupLevel = minLevel;
+        // Premium duvar başlığı
+        if (!isPremium && i == _freeLessonsCount) {
+          widgets.add(_PremiumWallHeader(
+            onTap: () => context.push('/subscription'),
+          ));
+        }
         final groupInfo = _levelGroups.firstWhere((g) => g.$1 == minLevel);
         final isGroupLocked = userLevel.index < minLevel.index;
         widgets.add(_LevelSectionHeader(
           emoji: groupInfo.$3,
           label: groupInfo.$2,
           color: groupInfo.$4,
-          isLocked: isGroupLocked,
+          isLocked: isGroupLocked || isPremiumLocked,
+        ));
+      } else if (!isPremium && i == _freeLessonsCount && lastGroupLevel == minLevel) {
+        widgets.add(_PremiumWallHeader(
+          onTap: () => context.push('/subscription'),
         ));
       }
 
@@ -174,10 +192,13 @@ class _LessonListScreenState extends ConsumerState<LessonListScreen> {
         lesson: lesson,
         isDone: isDone,
         isUnlocked: isUnlocked,
+        isPremiumLocked: isPremiumLocked,
         isNextUp: isNextUp,
         isWeak: weakCategories.contains(lesson.categoryId),
         index: i,
-        onTap: isUnlocked ? () => context.go('/lesson/${lesson.id}') : null,
+        onTap: (isUnlocked || isPremiumLocked)
+            ? () => context.go('/lesson/${lesson.id}')
+            : null,
       ));
     }
 
@@ -392,6 +413,7 @@ class _LessonNode extends StatefulWidget {
   final LessonContent lesson;
   final bool isDone;
   final bool isUnlocked;
+  final bool isPremiumLocked;
   final bool isNextUp;
   final bool isWeak;
   final int index;
@@ -401,6 +423,7 @@ class _LessonNode extends StatefulWidget {
     required this.lesson,
     required this.isDone,
     required this.isUnlocked,
+    required this.isPremiumLocked,
     required this.isNextUp,
     required this.isWeak,
     required this.index,
@@ -437,6 +460,7 @@ class _LessonNodeState extends State<_LessonNode>
 
   Color get _nodeColor {
     if (widget.isDone) return AppColors.success;
+    if (widget.isPremiumLocked) return const Color(0xFFF59E0B); // altın
     if (widget.isUnlocked) return AppColors.primary;
     return const Color(0xFFD1D5DB);
   }
@@ -487,10 +511,11 @@ class _LessonNodeState extends State<_LessonNode>
                   child: Center(
                     child: widget.isDone
                         ? const Icon(Icons.check_rounded, color: Colors.white, size: 32)
-                        : widget.isUnlocked
-                            ? Text(widget.lesson.emoji,
-                                style: const TextStyle(fontSize: 30))
-                            : const Icon(Icons.lock_outline, color: Colors.white, size: 26),
+                        : widget.isPremiumLocked
+                            ? const Icon(Icons.workspace_premium, color: Colors.white, size: 28)
+                            : widget.isUnlocked
+                                ? Text(widget.lesson.emoji, style: const TextStyle(fontSize: 30))
+                                : const Icon(Icons.lock_outline, color: Colors.white, size: 26),
                   ),
                 ),
                 // Tamamlandı rozeti
@@ -572,7 +597,91 @@ class _LessonNodeState extends State<_LessonNode>
               ),
             ),
           ],
+
+          // Premium chip
+          if (widget.isPremiumLocked) ...[
+            const SizedBox(height: 6),
+            Container(
+              padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 4),
+              decoration: BoxDecoration(
+                color: const Color(0xFFF59E0B),
+                borderRadius: BorderRadius.circular(20),
+              ),
+              child: const Text(
+                '👑 Premium',
+                style: TextStyle(
+                  color: Colors.white,
+                  fontSize: 10,
+                  fontWeight: FontWeight.w700,
+                ),
+              ),
+            ),
+          ],
         ],
+      ),
+    );
+  }
+}
+
+// ── Premium Duvar Başlığı ─────────────────────────────────────────────────────
+
+class _PremiumWallHeader extends StatelessWidget {
+  final VoidCallback onTap;
+  const _PremiumWallHeader({required this.onTap});
+
+  @override
+  Widget build(BuildContext context) {
+    return Padding(
+      padding: const EdgeInsets.symmetric(vertical: 20),
+      child: GestureDetector(
+        onTap: onTap,
+        child: Container(
+          padding: const EdgeInsets.all(16),
+          decoration: BoxDecoration(
+            gradient: const LinearGradient(
+              colors: [Color(0xFFF59E0B), Color(0xFFEF4444)],
+              begin: Alignment.topLeft,
+              end: Alignment.bottomRight,
+            ),
+            borderRadius: BorderRadius.circular(16),
+          ),
+          child: Row(
+            children: [
+              const Icon(Icons.workspace_premium, color: Colors.white, size: 28),
+              const SizedBox(width: 12),
+              Expanded(
+                child: Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: [
+                    const Text(
+                      'Premium Dersler',
+                      style: TextStyle(color: Colors.white, fontSize: 15, fontWeight: FontWeight.w700),
+                    ),
+                    Text(
+                      'Devam etmek için abone ol',
+                      style: AppTextStyles.caption.copyWith(color: Colors.white70),
+                    ),
+                  ],
+                ),
+              ),
+              Container(
+                padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 6),
+                decoration: BoxDecoration(
+                  color: Colors.white,
+                  borderRadius: BorderRadius.circular(20),
+                ),
+                child: const Text(
+                  'Abone Ol',
+                  style: TextStyle(
+                    color: Color(0xFFF59E0B),
+                    fontSize: 12,
+                    fontWeight: FontWeight.w700,
+                  ),
+                ),
+              ),
+            ],
+          ),
+        ),
       ),
     );
   }

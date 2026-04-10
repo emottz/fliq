@@ -148,7 +148,7 @@ class _ExampleCardState extends State<_ExampleCard> {
                   ),
                   const SizedBox(width: 4),
                   Text(
-                    _showTranslation ? 'Hide translation' : 'Show Turkish translation',
+                    _showTranslation ? 'Çeviriyi gizle' : 'Türkçe çeviriyi göster',
                     style: const TextStyle(fontSize: 11, color: AppColors.textSecondary),
                   ),
                 ],
@@ -350,7 +350,7 @@ class _PracticeSectionState extends State<_PracticeSection> {
                 children: [
                   Icon(Icons.quiz_outlined, color: Colors.white, size: 14),
                   SizedBox(width: 4),
-                  Text('Practice', style: TextStyle(color: Colors.white, fontWeight: FontWeight.w700, fontSize: 12)),
+                  Text('Pratik', style: TextStyle(color: Colors.white, fontWeight: FontWeight.w700, fontSize: 12)),
                 ],
               ),
             ),
@@ -401,7 +401,7 @@ class _PracticeSectionState extends State<_PracticeSection> {
                     shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(10)),
                   ),
                   child: Text(
-                    _current < _questions.length - 1 ? 'Next Question →' : 'Finish Practice',
+                    _current < _questions.length - 1 ? 'Sonraki Soru →' : 'Pratiği Bitir',
                     style: const TextStyle(fontWeight: FontWeight.w600),
                   ),
                 ),
@@ -538,12 +538,12 @@ class _ScoreCard extends StatelessWidget {
             style: TextStyle(fontSize: 28, fontWeight: FontWeight.w800, color: color),
           ),
           const SizedBox(height: 4),
-          Text('$pct% correct', style: const TextStyle(color: AppColors.textSecondary)),
+          Text('%$pct doğru', style: const TextStyle(color: AppColors.textSecondary)),
           const SizedBox(height: 16),
           TextButton.icon(
             onPressed: onRetry,
             icon: const Icon(Icons.replay, size: 16),
-            label: const Text('Try Again'),
+            label: const Text('Tekrar Dene'),
             style: TextButton.styleFrom(foregroundColor: AppColors.primary),
           ),
         ],

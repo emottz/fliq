@@ -1,72 +1,220 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:go_router/go_router.dart';
+import 'package:purchases_flutter/purchases_flutter.dart';
 import '../../../core/constants/app_colors.dart';
 import '../../../core/constants/app_text_styles.dart';
+import '../../../shared/providers/app_providers.dart';
 import '../../../shared/widgets/airplane_logo.dart';
 import '../../../shared/widgets/primary_button.dart';
 
-class SubscriptionScreen extends StatelessWidget {
+class SubscriptionScreen extends ConsumerStatefulWidget {
   const SubscriptionScreen({super.key});
 
+  @override
+  ConsumerState<SubscriptionScreen> createState() => _SubscriptionScreenState();
+}
+
+class _SubscriptionScreenState extends ConsumerState<SubscriptionScreen> {
   static const _features = [
     (Icons.quiz_outlined, 'Sınırsız Pratik Sınavı', '2.000+ gerçek formatlı soruyla kendini test et'),
-    (Icons.school_outlined, 'Kişisel Ders Yolu', 'Seviyene göre AI tarafından oluşturulan rota'),
+    (Icons.school_outlined, 'Tüm Ders İçerikleri', '33 ders — gramer, kelime, ATC iletişimi ve daha fazlası'),
     (Icons.emoji_events_outlined, 'Rütbe & XP Sistemi', 'Havacılık rütbeleriyle ilerleni takip et'),
     (Icons.bar_chart_outlined, 'Detaylı Analitik', 'Kategoriye göre zayıf noktalarını bul'),
     (Icons.offline_bolt_outlined, 'Çevrimdışı Erişim', 'Her yerde, her zaman çalış'),
   ];
 
+  Offerings? _offerings;
+  Package? _selectedPackage;
+  bool _loadingOfferings = true;
+  bool _purchasing = false;
+  bool _restoring = false;
+  String? _errorMessage;
+
+  @override
+  void initState() {
+    super.initState();
+    _loadOfferings();
+  }
+
+  Future<void> _loadOfferings() async {
+    final service = ref.read(subscriptionServiceProvider);
+    final offerings = await service.getOfferings();
+    if (!mounted) return;
+    setState(() {
+      _offerings = offerings;
+      _loadingOfferings = false;
+      // Varsayılan seçim: yıllık paket (varsa)
+      if (offerings != null) {
+        final packages = offerings.current?.availablePackages ?? [];
+        _selectedPackage = packages.firstWhere(
+          (p) => p.packageType == PackageType.annual,
+          orElse: () => packages.isNotEmpty ? packages.first : _selectedPackage!,
+        );
+        if (_selectedPackage == null && packages.isNotEmpty) {
+          _selectedPackage = packages.first;
+        }
+      }
+    });
+  }
+
+  Future<void> _purchase(Package package) async {
+    setState(() { _purchasing = true; _errorMessage = null; });
+    final service = ref.read(subscriptionServiceProvider);
+    final (success, error) = await service.purchasePackage(package);
+    if (!mounted) return;
+    if (success) {
+      await ref.read(isPremiumProvider.notifier).refresh();
+      _goHome();
+    } else if (error != null) {
+      setState(() { _errorMessage = error; _purchasing = false; });
+    } else {
+      setState(() { _purchasing = false; }); // kullanıcı iptal etti
+    }
+  }
+
+  Future<void> _restore() async {
+    setState(() { _restoring = true; _errorMessage = null; });
+    final service = ref.read(subscriptionServiceProvider);
+    final ok = await service.restorePurchases();
+    if (!mounted) return;
+    if (ok) {
+      await ref.read(isPremiumProvider.notifier).refresh();
+      _goHome();
+    } else {
+      setState(() {
+        _restoring = false;
+        _errorMessage = 'Geri yüklenecek aktif abonelik bulunamadı.';
+      });
+    }
+  }
+
+  void _goHome() {
+    if (Navigator.canPop(context)) {
+      context.pop();
+    } else {
+      context.go('/home/exams');
+    }
+  }
+
+  void _continueFree() => _goHome();
+
   @override
   Widget build(BuildContext context) {
+    final canPop = Navigator.canPop(context);
+
     return Scaffold(
       backgroundColor: AppColors.background,
+      appBar: canPop
+          ? AppBar(
+              backgroundColor: Colors.transparent,
+              elevation: 0,
+              leading: IconButton(
+                icon: const Icon(Icons.close, color: AppColors.textSecondary),
+                onPressed: _continueFree,
+              ),
+            )
+          : null,
       body: SafeArea(
         child: Center(
           child: ConstrainedBox(
             constraints: const BoxConstraints(maxWidth: 480),
             child: SingleChildScrollView(
-              padding: const EdgeInsets.symmetric(horizontal: 24, vertical: 24),
+              padding: EdgeInsets.fromLTRB(24, canPop ? 8 : 24, 24, 24),
               child: Column(
                 children: [
                   const AirplaneLogo(size: 56),
-                  const SizedBox(height: 28),
-                  const Text('Tam Potansiyelini Ortaya Çıkar', style: AppTextStyles.heading1, textAlign: TextAlign.center),
+                  const SizedBox(height: 24),
+                  const Text(
+                    'Tam Potansiyelini Ortaya Çıkar',
+                    style: AppTextStyles.heading1,
+                    textAlign: TextAlign.center,
+                  ),
                   const SizedBox(height: 8),
                   const Text(
                     'FLIQ ile İngilizce ustası olan binlerce havacılık profesyoneline katıl',
                     style: AppTextStyles.caption,
                     textAlign: TextAlign.center,
                   ),
-                  const SizedBox(height: 28),
-                  ..._features.map((f) => _FeatureRow(icon: f.$1, title: f.$2, subtitle: f.$3)),
-                  const SizedBox(height: 28),
-                  _PricingCard(
-                    title: 'Aylık',
-                    price: '\$9.99',
-                    period: '/ay',
-                    isHighlighted: false,
-                  ),
-                  const SizedBox(height: 12),
-                  _PricingCard(
-                    title: 'Yıllık',
-                    price: '\$59.99',
-                    period: '/yıl',
-                    badge: '%50 Tasarruf',
-                    isHighlighted: true,
-                  ),
                   const SizedBox(height: 24),
-                  PrimaryButton(
-                    label: 'Ücretsiz Dene',
-                    onPressed: () => context.go('/home/exams'),
-                  ),
+                  ..._features.map((f) => _FeatureRow(icon: f.$1, title: f.$2, subtitle: f.$3)),
+                  const SizedBox(height: 24),
+
+                  // Paketler
+                  if (_loadingOfferings)
+                    const Padding(
+                      padding: EdgeInsets.symmetric(vertical: 16),
+                      child: CircularProgressIndicator(color: AppColors.primary),
+                    )
+                  else if (_offerings != null &&
+                      (_offerings!.current?.availablePackages.isNotEmpty ?? false))
+                    ..._buildPackageCards(_offerings!.current!.availablePackages)
+                  else
+                    ..._buildFallbackCards(),
+
+                  const SizedBox(height: 20),
+
+                  // Hata mesajı
+                  if (_errorMessage != null) ...[
+                    Container(
+                      padding: const EdgeInsets.symmetric(horizontal: 14, vertical: 10),
+                      decoration: BoxDecoration(
+                        color: const Color(0xFFFEE2E2),
+                        borderRadius: BorderRadius.circular(10),
+                      ),
+                      child: Text(
+                        _errorMessage!,
+                        style: const TextStyle(color: Color(0xFFDC2626), fontSize: 13),
+                        textAlign: TextAlign.center,
+                      ),
+                    ),
+                    const SizedBox(height: 16),
+                  ],
+
+                  // Satın Al butonu
+                  _purchasing
+                      ? const Padding(
+                          padding: EdgeInsets.symmetric(vertical: 8),
+                          child: CircularProgressIndicator(color: AppColors.primary),
+                        )
+                      : PrimaryButton(
+                          label: _selectedPackage != null ? 'Premium\'a Geç' : 'Devam Et',
+                          onPressed: _selectedPackage != null
+                              ? () => _purchase(_selectedPackage!)
+                              : null,
+                        ),
+
                   const SizedBox(height: 12),
+
                   PrimaryButton(
-                    label: 'Ücretsiz devam et',
+                    label: 'Ücretsiz Devam Et',
                     outlined: true,
-                    onPressed: () => context.go('/home/exams'),
+                    onPressed: _continueFree,
                   ),
+
                   const SizedBox(height: 16),
-                  const Text('Kredi kartı gerekmez', style: AppTextStyles.caption),
+
+                  // Geri yükle bağlantısı
+                  _restoring
+                      ? const SizedBox(
+                          height: 20,
+                          width: 20,
+                          child: CircularProgressIndicator(strokeWidth: 2, color: AppColors.primary),
+                        )
+                      : TextButton(
+                          onPressed: _restore,
+                          child: const Text(
+                            'Satın Alımları Geri Yükle',
+                            style: TextStyle(
+                              fontSize: 13,
+                              color: AppColors.textSecondary,
+                              decoration: TextDecoration.underline,
+                            ),
+                          ),
+                        ),
+
+                  const SizedBox(height: 4),
+                  const Text('Kredi kartı gerekmez · İstediğin zaman iptal et', style: AppTextStyles.caption),
                 ],
               ),
             ),
@@ -75,7 +223,62 @@ class SubscriptionScreen extends StatelessWidget {
       ),
     );
   }
+
+  List<Widget> _buildPackageCards(List<Package> packages) {
+    return packages.map((pkg) {
+      final isAnnual = pkg.packageType == PackageType.annual;
+      final isSelected = _selectedPackage?.identifier == pkg.identifier;
+      return Padding(
+        padding: const EdgeInsets.only(bottom: 12),
+        child: GestureDetector(
+          onTap: () => setState(() => _selectedPackage = pkg),
+          child: _PricingCard(
+            title: isAnnual ? 'Yıllık' : 'Aylık',
+            price: pkg.storeProduct.priceString,
+            period: isAnnual ? '/yıl' : '/ay',
+            badge: isAnnual ? '%50 Tasarruf' : null,
+            isHighlighted: isAnnual,
+            isSelected: isSelected,
+          ),
+        ),
+      );
+    }).toList();
+  }
+
+  List<Widget> _buildFallbackCards() {
+    return [
+      GestureDetector(
+        onTap: () => setState(() => _selectedPackage = null),
+        child: const Padding(
+          padding: EdgeInsets.only(bottom: 12),
+          child: _PricingCard(
+            title: 'Aylık',
+            price: '\$9.99',
+            period: '/ay',
+            isHighlighted: false,
+            isSelected: false,
+          ),
+        ),
+      ),
+      GestureDetector(
+        onTap: () => setState(() => _selectedPackage = null),
+        child: const Padding(
+          padding: EdgeInsets.only(bottom: 12),
+          child: _PricingCard(
+            title: 'Yıllık',
+            price: '\$59.99',
+            period: '/yıl',
+            badge: '%50 Tasarruf',
+            isHighlighted: true,
+            isSelected: true,
+          ),
+        ),
+      ),
+    ];
+  }
 }
+
+// ── Yardımcı Widgetlar ────────────────────────────────────────────────────────
 
 class _FeatureRow extends StatelessWidget {
   final IconData icon;
@@ -86,17 +289,17 @@ class _FeatureRow extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Padding(
-      padding: const EdgeInsets.only(bottom: 16),
+      padding: const EdgeInsets.only(bottom: 14),
       child: Row(
         children: [
           Container(
-            width: 44,
-            height: 44,
+            width: 42,
+            height: 42,
             decoration: BoxDecoration(
               color: AppColors.surfaceVariant,
               borderRadius: BorderRadius.circular(12),
             ),
-            child: Icon(icon, color: AppColors.primary, size: 22),
+            child: Icon(icon, color: AppColors.primary, size: 21),
           ),
           const SizedBox(width: 14),
           Expanded(
@@ -121,6 +324,7 @@ class _PricingCard extends StatelessWidget {
   final String period;
   final String? badge;
   final bool isHighlighted;
+  final bool isSelected;
 
   const _PricingCard({
     required this.title,
@@ -128,6 +332,7 @@ class _PricingCard extends StatelessWidget {
     required this.period,
     this.badge,
     required this.isHighlighted,
+    required this.isSelected,
   });
 
   @override
@@ -138,8 +343,12 @@ class _PricingCard extends StatelessWidget {
         color: isHighlighted ? AppColors.surfaceVariant : AppColors.surface,
         borderRadius: BorderRadius.circular(16),
         border: Border.all(
-          color: isHighlighted ? AppColors.primary : AppColors.divider,
-          width: isHighlighted ? 2 : 1,
+          color: isSelected
+              ? AppColors.primary
+              : isHighlighted
+                  ? AppColors.primary.withValues(alpha: 0.4)
+                  : AppColors.divider,
+          width: isSelected ? 2 : 1,
         ),
       ),
       child: Row(
@@ -168,27 +377,41 @@ class _PricingCard extends StatelessWidget {
                   ],
                 ),
                 const SizedBox(height: 2),
-                Text('Tüm özelliklere tam erişim', style: AppTextStyles.caption),
+                const Text('Tüm özelliklere tam erişim', style: AppTextStyles.caption),
               ],
             ),
           ),
-          RichText(
-            text: TextSpan(
-              children: [
-                TextSpan(
-                  text: price,
-                  style: const TextStyle(
-                    fontSize: 22,
-                    fontWeight: FontWeight.w700,
-                    color: AppColors.primary,
-                  ),
+          Row(
+            children: [
+              if (isSelected)
+                const Padding(
+                  padding: EdgeInsets.only(right: 8),
+                  child: Icon(Icons.radio_button_checked, color: AppColors.primary, size: 18),
+                )
+              else
+                const Padding(
+                  padding: EdgeInsets.only(right: 8),
+                  child: Icon(Icons.radio_button_unchecked, color: AppColors.textHint, size: 18),
                 ),
-                TextSpan(
-                  text: period,
-                  style: const TextStyle(fontSize: 13, color: AppColors.textSecondary),
+              RichText(
+                text: TextSpan(
+                  children: [
+                    TextSpan(
+                      text: price,
+                      style: const TextStyle(
+                        fontSize: 20,
+                        fontWeight: FontWeight.w700,
+                        color: AppColors.primary,
+                      ),
+                    ),
+                    TextSpan(
+                      text: period,
+                      style: const TextStyle(fontSize: 12, color: AppColors.textSecondary),
+                    ),
+                  ],
                 ),
-              ],
-            ),
+              ),
+            ],
           ),
         ],
       ),

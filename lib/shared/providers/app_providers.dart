@@ -3,6 +3,7 @@ import 'package:flutter_riverpod/flutter_riverpod.dart';
 import '../../core/constants/league_constants.dart';
 import '../../core/services/auth_service.dart';
 import '../../core/services/league_service.dart';
+import '../../core/services/subscription_service.dart';
 import '../../data/datasources/asset_question_source.dart';
 import '../../data/models/league_member_model.dart';
 import '../../data/models/user_profile_model.dart';
@@ -91,6 +92,32 @@ class UserProfileNotifier extends AsyncNotifier<UserProfileModel?> {
       season: season,
       leagueId: newLeagueId,
       weeklyXp: await LeagueService.getMyWeeklyXp(season, newLeagueId),
+    );
+  }
+}
+
+// ── Subscription ──────────────────────────────────────────────────────────────
+
+final subscriptionServiceProvider = Provider<SubscriptionService>((ref) => SubscriptionService());
+
+final isPremiumProvider = AsyncNotifierProvider<PremiumNotifier, bool>(() => PremiumNotifier());
+
+class PremiumNotifier extends AsyncNotifier<bool> {
+  @override
+  Future<bool> build() async {
+    // Auth değişince RevenueCat'i yeniden başlat
+    final user = ref.watch(authStateProvider).value;
+    final service = ref.read(subscriptionServiceProvider);
+    if (user != null) {
+      await service.init(user.uid);
+    }
+    return service.isPremium;
+  }
+
+  Future<void> refresh() async {
+    state = const AsyncLoading();
+    state = await AsyncValue.guard(
+      () => ref.read(subscriptionServiceProvider).isPremium,
     );
   }
 }

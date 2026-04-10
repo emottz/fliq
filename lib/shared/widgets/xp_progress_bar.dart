@@ -50,7 +50,7 @@ class XpProgressBar extends StatelessWidget {
         if (nextRank != null) ...[
           const SizedBox(height: 4),
           Text(
-            'Next: ${nextRank.title} (${nextRank.xpRequired} XP)',
+            'Sonraki: ${nextRank.title} (${nextRank.xpRequired} XP)',
             style: const TextStyle(fontSize: 11, color: AppColors.textHint),
           ),
         ],

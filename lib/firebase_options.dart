@@ -70,6 +70,8 @@ class DefaultFirebaseOptions {
     messagingSenderId: '560944576659',
     projectId: 'fliq-1638d',
     storageBucket: 'fliq-1638d.firebasestorage.app',
+    iosClientId: '560944576659-oimonijndu7u39rrk341s70rg4h5fn89.apps.googleusercontent.com',
     iosBundleId: 'com.fliq.fliq',
   );
+
 }

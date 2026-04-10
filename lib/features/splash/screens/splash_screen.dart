@@ -176,7 +176,7 @@ class _SplashScreenState extends State<SplashScreen>
                 FadeTransition(
                   opacity: _subtitleOpacity,
                   child: const Text(
-                    'AVIATION ENGLISH',
+                    'HAVACILK İNGİLİZCESİ',
                     textAlign: TextAlign.center,
                     style: TextStyle(
                       fontSize: 12,

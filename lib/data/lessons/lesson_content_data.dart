@@ -1,4 +1,4 @@
-import '../models/lesson_content_model.dart';
+﻿import '../models/lesson_content_model.dart';
 import '../models/question_model.dart';
 
 /// All lesson content. Practice questions are embedded directly so they
@@ -58,32 +58,32 @@ class LessonContentData {
   // ─────────────────────────────────────────────────────────────
   static const _passiveVoice = LessonContent(
     id: 'grammar_1',
-    title: 'Passive Voice',
-    subtitle: 'How aviation tasks are described',
+    title: 'Edilgen Çatı',
+    subtitle: 'Havacılık görevlerinin nasıl anlatıldığı',
     categoryId: 'grammar',
-    estimatedTime: '10 min',
+    estimatedTime: '10 dk',
     emoji: '🔧',
     sections: [
       LessonSection(
         type: LessonSectionType.intro,
-        title: 'Why passive voice matters in aviation',
+        title: 'Edilgen çatı neden önemlidir',
         body:
-            'Aviation English relies heavily on the **passive voice**. Maintenance manuals, checklists, and ATC instructions frequently use passive constructions because **the action is more important than who performs it**.\n\nFor example, "The fuel filter must be replaced" is more precise and professional than "You must replace the fuel filter."',
+            'Havacılık İngilizcesi büyük ölçüde **edilgen çatı**ya dayanır. Bakım kılavuzları, kontrol listeleri ve ATC talimatları, eylemi gerçekleştirenden değil **yapılan eylemin daha önemli** olduğu durumlarda edilgen yapıları sıkça kullanır.\n\nÖrneğin, "The fuel filter must be replaced" ifadesi "You must replace the fuel filter" ifadesinden daha kesin ve profesyoneldir.',
       ),
       LessonSection(
         type: LessonSectionType.animation,
-        title: 'See the transformation',
+        title: 'Dönüşmü gör',
         animationType: GrammarAnimationType.passiveVoice,
       ),
       LessonSection(
         type: LessonSectionType.rule,
-        title: 'Formation Rule',
+        title: 'Yapı Kuralı',
         body:
             '**Active:** Subject + **verb** + object\n**Passive:** Object + **be** + past participle (+ by + agent)\n\n**Tense mapping:**\n• Simple Present → is/are + V3\n• Simple Past → was/were + V3\n• Must/Should → must/should + be + V3\n• Has/Have → has/have + been + V3',
       ),
       LessonSection(
         type: LessonSectionType.examples,
-        title: 'Aviation Examples',
+        title: 'Havacılık Örnekleri',
         examples: [
           ExampleSentence(
             sentence: 'The hydraulic pump is driven by the engine through a gearbox.',
@@ -109,13 +109,13 @@ class LessonContentData {
       ),
       LessonSection(
         type: LessonSectionType.tip,
-        title: '✈️ Exam Tip',
+        title: '✈️ Sınav İpucu',
         body:
-            'In multiple-choice questions, look for clues:\n• If the subject is a **thing** (not a person), passive is likely correct.\n• "………… by the engine" → passive form needed.\n• Modal verbs + passive: **must be + past participle** is the most common pattern in aviation maintenance English.',
+            'Çoktan seçmeli sorularda ipucu ara:\n• Özne bir **nesne** ise (kişi değilse), büyük ihtimalle edilgen çatı doğrudur.\n• "………… by the engine" → edilgen form gerekir.\n• Modal fiil + edilgen: **must be + geçmiş zaman ortacı** kalıbı havacılık bakım İngilizcesinde en yaygın yapıdır.',
       ),
       LessonSection(
         type: LessonSectionType.practice,
-        title: 'Practice Questions',
+        title: 'Pratik Sorular',
         practiceQuestions: [
           QuestionModel(
             id: -1,
@@ -163,32 +163,32 @@ class LessonContentData {
   // ─────────────────────────────────────────────────────────────
   static const _modalVerbs = LessonContent(
     id: 'grammar_2',
-    title: 'Modal Verbs in Aviation',
-    subtitle: 'must, should, may, can — knowing when to use each',
+    title: 'Havacılıkta Modal Fiiller',
+    subtitle: 'must, should, may, can — her birini ne zaman kullanacağını bilmek',
     categoryId: 'grammar',
-    estimatedTime: '12 min',
+    estimatedTime: '12 dk',
     emoji: '📋',
     sections: [
       LessonSection(
         type: LessonSectionType.intro,
-        title: 'Modals express obligation and permission',
+        title: 'Modal fiiller zorunluluk ve izin ifade eder',
         body:
-            'Modal verbs are essential in aviation English because they express **degrees of obligation**. The difference between "must" and "should" can have safety implications.\n\n**must** = mandatory (regulatory requirement)\n**should** = recommended (best practice)\n**may** = permitted (allowed)\n**can** = ability / theoretical possibility',
+            'Modal fiiller, **zorunluluk derecelerini** ifade ettiği için havacılık İngilizcesinde son derece önemlidir. "must" ile "should" arasındaki fark güvenlik sonuçları doğurabilir.\n\n**must** = zorunlu (yasal gereklilik)\n**should** = önerilen (en iyi uygulama)\n**may** = izin verilen (serbest)\n**can** = yetenek / teorik olasılık',
       ),
       LessonSection(
         type: LessonSectionType.animation,
-        title: 'Modal strength spectrum',
+        title: 'Modal güç skalası',
         animationType: GrammarAnimationType.modalVerbs,
       ),
       LessonSection(
         type: LessonSectionType.rule,
-        title: 'Modal + Verb Structure',
+        title: 'Modal + Fiil Yapısı',
         body:
             '**Rule:** Modal verb + **base infinitive** (no "to", no "-s", no "-ing")\n\n✓ The pilot **must check** the fuel level.\n✗ The pilot must **checks** / must **checking** / must **to check**\n\n**With passive:**\nModal + **be** + past participle\n✓ The engine **must be shut down** before maintenance.\n✓ Parts **should be inspected** visually.',
       ),
       LessonSection(
         type: LessonSectionType.examples,
-        title: 'Modals in Context',
+        title: 'Bağlamda Modal Fiiller',
         examples: [
           ExampleSentence(
             sentence: 'The engine must be shut down before any maintenance work begins.',
@@ -214,13 +214,13 @@ class LessonContentData {
       ),
       LessonSection(
         type: LessonSectionType.tip,
-        title: '✈️ Exam Tip',
+        title: '✈️ Sınav İpucu',
         body:
-            'Common distractors in modal questions:\n• "must checking" → WRONG (modal + base form, not -ing)\n• "should to inspect" → WRONG (no "to" after modals)\n• "must performed" → WRONG (passive needs "be": must **be** performed)\n\nIf you see a modal verb + gap, check: is an active or passive meaning needed?',
+            'Modal sorularında yaygın tuzaklar:\n• "must checking" → YANLIŞ (modal + yalın fiil, -ing değil)\n• "should to inspect" → YANLIŞ (modal sonrasında "to" gelmez)\n• "must performed" → YANLIŞ (edilgen için "be" gerekli: must **be** performed)\n\nModal fiil + boşluk görünce sor: etken mi yoksa edilgen anlam mı gerekiyor?',
       ),
       LessonSection(
         type: LessonSectionType.practice,
-        title: 'Practice Questions',
+        title: 'Pratik Sorular',
         practiceQuestions: [
           QuestionModel(
             id: -10,
@@ -268,39 +268,39 @@ class LessonContentData {
   // ─────────────────────────────────────────────────────────────
   static const _aircraftComponents = LessonContent(
     id: 'vocab_1',
-    title: 'Aircraft Components',
-    subtitle: 'Key technical vocabulary for exams',
+    title: 'Uçak Bileşenleri',
+    subtitle: 'Sınav için temel teknik kelimeler',
     categoryId: 'vocabulary',
-    estimatedTime: '8 min',
+    estimatedTime: '8 dk',
     emoji: '✈️',
     sections: [
       LessonSection(
         type: LessonSectionType.intro,
-        title: 'Why technical vocabulary matters',
+        title: 'Teknik kelime bilgisi neden önemlidir',
         body:
-            'Aviation exams test your ability to understand and use precise technical terms. A technician saying "the thing that lifts the plane" instead of "the **aileron**" is unprofessional and dangerous.\n\nThis lesson covers the most frequently tested components grouped by aircraft system.',
+            'Havacılık sınavları, kesin teknik terimleri anlama ve kullanma becerinizi ölçer. Bir teknisyenin **aileron** yerine "uçağı kaldıran şey" demesi hem profesyonellikten uzak hem de tehlikelidir.\n\nBu ders, uçak sistemine göre gruplandırılmış en sık sınanan bileşenleri kapsar.',
       ),
       LessonSection(
         type: LessonSectionType.rule,
-        title: '🛩️ Flight Control Surfaces',
+        title: '🛩️ Uçuş Kontrol Yüzeyleri',
         body:
             '**Ailerons** — on the wings; control roll (bank left/right)\n**Elevator** — on the horizontal stabilizer; controls pitch (nose up/down)\n**Rudder** — on the vertical stabilizer; controls yaw (nose left/right)\n**Flaps** — on wing trailing edge; increase lift and drag during takeoff/landing\n**Spoilers** — on wings; reduce lift, increase drag, assist in roll control',
       ),
       LessonSection(
         type: LessonSectionType.rule,
-        title: '⚙️ Powerplant & Fuel Systems',
+        title: '⚙️ Motor & Yakıt Sistemleri',
         body:
             '**Turbine engine** — compressor → combustion chamber → turbine → nozzle\n**HP fuel shutoff valve** — high-pressure fuel control valve\n**Fuel manifold** — distributes fuel to combustion chambers\n**Gearbox** — transfers power between engine components\n**Nacelle** — streamlined housing enclosing the engine',
       ),
       LessonSection(
         type: LessonSectionType.rule,
-        title: '🔧 Hydraulic & Landing Gear',
+        title: '🔧 Hidrolik & İniş Takımı',
         body:
             '**Hydraulic actuator** — converts hydraulic pressure to mechanical movement\n**Hydraulic pump** — pressurizes hydraulic fluid\n**Landing gear strut** — shock-absorbing leg of landing gear\n**Torque link** — scissors linkage preventing wheel rotation on strut\n**Brake assembly** — disc brakes on main landing gear wheels',
       ),
       LessonSection(
         type: LessonSectionType.examples,
-        title: 'In-Context Examples',
+        title: 'Bağlamda Örnekler',
         examples: [
           ExampleSentence(
             sentence: 'The ailerons deflect differentially to produce a rolling moment.',
@@ -321,13 +321,13 @@ class LessonContentData {
       ),
       LessonSection(
         type: LessonSectionType.tip,
-        title: '✈️ Exam Tip',
+        title: '✈️ Sınav İpucu',
         body:
-            'Vocabulary questions often ask for **synonyms**. Common traps:\n• "nacelle" ≠ "fuselage" (nacelle is the engine housing)\n• "aileron" controls **roll**, not yaw\n• "elevator" controls **pitch**, not roll\n\nMemory trick: **A**ileron → **A**xis of roll, **E**levator → **E**levation (pitch), **R**udder → **R**otation around yaw axis.',
+            'Kelime soruları çoğunlukla **eş anlamlı** sorar. Yaygın tuzaklar:\n• "nacelle" ≠ "fuselage" (nacelle motor kovanıdır)\n• "aileron" **roll** (yuvarlama) eksenini kontrol eder, yaw değil\n• "elevator" **pitch** (yunuslama) eksenini kontrol eder, roll değil\n\nEzber formülü: **A**ileron → **A**ks (roll), **E**levator → **E**levasyonu (pitch), **R**udder → **R**otasyon (yaw).',
       ),
       LessonSection(
         type: LessonSectionType.practice,
-        title: 'Practice Questions',
+        title: 'Pratik Sorular',
         practiceQuestions: [
           QuestionModel(
             id: -20,
@@ -375,33 +375,33 @@ class LessonContentData {
   // ─────────────────────────────────────────────────────────────
   static const _atcFillBlanks = LessonContent(
     id: 'fill_1',
-    title: 'Fill in the Blanks: ATC',
-    subtitle: 'Completing ATC communication phrases',
+    title: 'Boşluk Doldurma: ATC',
+    subtitle: 'ATC iletişim ifadelerini tamamlama',
     categoryId: 'fill_blanks',
-    estimatedTime: '9 min',
+    estimatedTime: '9 dk',
     emoji: '🗼',
     sections: [
       LessonSection(
         type: LessonSectionType.intro,
-        title: 'ATC phraseology is standardized',
+        title: 'ATC ifade kalıpları standarttır',
         body:
-            'Air Traffic Control communications follow ICAO standard phraseology. Fill-in-the-blank questions test whether you know the **exact words** used in clearances, instructions, and readbacks.\n\nThe key is understanding the **structure** of each phrase type so you can identify the missing word even without memorizing every phrase.',
+            'Hava Trafik Kontrol iletişimleri ICAO standart ifade kalıplarını izler. Boşluk doldurma soruları, klirens, talimat ve tekrar (readback) ifadelerinde kullanılan **tam kelimeleri** bilip bilmediğinizi sınar.\n\nAnahtar, her ifade türünün **yapısını** anlamaktır; böylece her ifadeyi ezberlemenize gerek kalmadan eksik kelimeyi bulabilirsiniz.',
       ),
       LessonSection(
         type: LessonSectionType.rule,
-        title: '🛫 Clearance Structure',
+        title: '🛫 Klirans Yapısı',
         body:
-            'A standard ATC clearance follows this pattern:\n\n**Aircraft ID** + clearance limit + route + altitude + speed + squawk\n\nExample: "THY123, **cleared to** Istanbul, via KEMER, **climb and maintain** FL350, squawk 4521."\n\nKey verbs: **cleared**, **maintain**, **climb**, **descend**, **turn**, **contact**, **report**',
+            'Standart bir ATC kliransı şu kalıbı izler:\n\n**Uçak kimliği** + klirans limiti + rota + irtifa + hız + squawk\n\nÖrnek: "THY123, **cleared to** İstanbul, via KEMER, **climb and maintain** FL350, squawk 4521."\n\nTemel fiiller: **cleared**, **maintain**, **climb**, **descend**, **turn**, **contact**, **report**',
       ),
       LessonSection(
         type: LessonSectionType.rule,
-        title: '📻 Readback Rules',
+        title: '📻 Tekrar Etme Kuralları',
         body:
-            'Pilots must **read back** all:\n• Runway in use\n• Altimeter settings\n• Altitude/flight level\n• Heading instructions\n• Speed instructions\n• Frequency changes\n• Transponder codes\n• Taxi instructions (at controlled airports)\n\n**Standard phrase:** "Cleared to FL350, THY123." (call sign at end in readback)',
+            'Pilotlar aşağıdakilerin hepsini **tekrar etmek** (**read back**) zorundadır:\n• Kullanılan pist\n• Altimetre ayarları\n• İrtifa/uçuş seviyesi\n• Yön talimatları\n• Hız talimatları\n• Frekans değişiklikleri\n• Transponder kodları\n• Taksi talimatları (kontrollü havalimanlarında)\n\n**Standart ifade:** "Cleared to FL350, THY123." (tekrarda çağrı kodu sonda söylenir)',
       ),
       LessonSection(
         type: LessonSectionType.examples,
-        title: 'Phraseology Examples',
+        title: 'İfade Kalıbı Örnekleri',
         examples: [
           ExampleSentence(
             sentence: 'THY123, descend and maintain flight level 150.',
@@ -422,13 +422,13 @@ class LessonContentData {
       ),
       LessonSection(
         type: LessonSectionType.tip,
-        title: '✈️ Exam Strategy',
+        title: '✈️ Sınav Stratejisi',
         body:
-            'For fill-in-the-blank ATC questions:\n1. Read the **whole sentence** first — understand the situation\n2. Identify the **verb type** needed (is it a clearance, instruction, or report?)\n3. Use **elimination** — remove grammatically wrong options first\n4. Check for **prepositions**: "cleared **to**", "cleared **for**", "climb **to**", "maintain **at**"',
+            'ATC boşluk doldurma sorularında:\n1. Önce **tümceyi baştan sona** oku — durumu anla\n2. Gereken **fiil türünü** belirle (klirens mi, talimat mı, rapor mu?)\n3. **Eleme** yöntemini uygula — dilbilgisel olarak yanlış seçenekleri önce çıkar\n4. **Edatlara** dikkat et: "cleared **to**", "cleared **for**", "climb **to**", "maintain **at**"',
       ),
       LessonSection(
         type: LessonSectionType.practice,
-        title: 'Practice Questions',
+        title: 'Pratik Sorular',
         practiceQuestions: [
           QuestionModel(
             id: -30,
@@ -476,32 +476,32 @@ class LessonContentData {
   // ─────────────────────────────────────────────────────────────
   static const _conditionals = LessonContent(
     id: 'grammar_3',
-    title: 'Conditional Sentences',
-    subtitle: 'Real and hypothetical situations in aviation',
+    title: 'Koşul Cümleleri',
+    subtitle: 'Havacılıkta gerçek ve varsayımsal durumlar',
     categoryId: 'grammar',
-    estimatedTime: '11 min',
+    estimatedTime: '11 dk',
     emoji: '🔀',
     sections: [
       LessonSection(
         type: LessonSectionType.intro,
-        title: 'Conditionals describe cause and effect',
+        title: 'Koşul cümleleri neden-sonuç ilişkisi kurar',
         body:
-            'Aviation procedures often describe what happens **if** a certain condition occurs. Emergency checklists, operational manuals, and exam questions rely heavily on conditional sentences.\n\nUnderstanding which conditional type to use depends on whether the situation is **real/possible** or **hypothetical/impossible**.',
+            'Havacılık prosedürleri çoğunlukla belirli bir koşul gerçekleştiğinde ne olacağını anlatır. Acil durum kontrol listeleri, operasyon kılavuzları ve sınav soruları koşul cümlelerine yoğun biçimde dayanır.\n\nHangi koşul cümlesi tipini kullanacağınız, durumun **gerçek/olası** mı yoksa **varsayımsal/imkânsız** mı olduğuna göre belirlenir.',
       ),
       LessonSection(
         type: LessonSectionType.animation,
-        title: 'Conditional types at a glance',
+        title: 'Bir bakışta koşul tipleri',
         animationType: GrammarAnimationType.conditionals,
       ),
       LessonSection(
         type: LessonSectionType.rule,
-        title: 'The Three Main Types',
+        title: 'Üç Ana Tip',
         body:
             '**Type 1 — Real/Possible (present/future)**\nIf + present simple, will/can/must + base verb\n→ "If the oil pressure drops, the pilot **will** declare an emergency."\n\n**Type 2 — Hypothetical (present/future)**\nIf + past simple, would/could + base verb\n→ "If the engine **failed**, the crew **would** follow the ECAM."\n\n**Type 3 — Impossible (past)**\nIf + past perfect, would/could + have + past participle\n→ "If the crew **had noticed** the leak, they **would have** diverted."',
       ),
       LessonSection(
         type: LessonSectionType.examples,
-        title: 'Aviation Conditionals',
+        title: 'Havacılıkta Koşul Cümleleri',
         examples: [
           ExampleSentence(
             sentence: 'If the fuel quantity drops below minimum, the aircraft must return to base.',
@@ -522,13 +522,13 @@ class LessonContentData {
       ),
       LessonSection(
         type: LessonSectionType.tip,
-        title: '✈️ Exam Tip',
+        title: '✈️ Sınav İpucu',
         body:
-            'Quick identification trick:\n• See "will" in the result clause → **Type 1** (real)\n• See "would" + present base → **Type 2** (hypothetical)\n• See "would have" + past participle → **Type 3** (past)\n\nWatch for "unless" = "if not":\n"Unless the checklist is completed, departure is not permitted."\n= "If the checklist is **not** completed, departure is not permitted."',
+            'Hızlı tanıma yöntemi:\n• Sonuç yan cümlesinde "will" → **Tip 1** (gerçek)\n• "would" + yalın fiil → **Tip 2** (varsayımsal)\n• "would have" + geçmiş zaman ortacı → **Tip 3** (geçmiş)\n\n"unless" = "if not" dikkat:\n"Unless the checklist is completed, departure is not permitted."\n= Kontrol listesi **tamamlanmazsa** kalkışa izin verilmez.',
       ),
       LessonSection(
         type: LessonSectionType.practice,
-        title: 'Practice Questions',
+        title: 'Pratik Sorular',
         practiceQuestions: [
           QuestionModel(
             id: -40,
@@ -576,33 +576,33 @@ class LessonContentData {
   // ─────────────────────────────────────────────────────────────
   static const _weatherNavigation = LessonContent(
     id: 'vocab_2',
-    title: 'Weather & Navigation',
-    subtitle: 'METAR, TAF and navigation terminology',
+    title: 'Hava Durumu & Navigasyon',
+    subtitle: 'METAR, TAF ve navigasyon terminolojisi',
     categoryId: 'vocabulary',
-    estimatedTime: '10 min',
+    estimatedTime: '10 dk',
     emoji: '🌤️',
     sections: [
       LessonSection(
         type: LessonSectionType.intro,
-        title: 'Weather is critical to aviation',
+        title: 'Hava durumu havacılık için kritiktir',
         body:
-            'Weather reports and navigation documents use highly standardized vocabulary. METAR, TAF, NOTAM, and ATIS use specific terms that pilots and controllers must understand instantly.\n\nThis lesson covers the most frequently tested weather and navigation terms.',
+            'Hava raporları ve navigasyon belgeleri yüksek düzeyde standardize edilmiş kelime bilgisi kullanır. METAR, TAF, NOTAM ve ATIS, pilotların ve kontrolörlerin aninda anlaması gereken belirli terimler içerir.\n\nBu ders, en sık sınanan hava durumu ve navigasyon terimlerini kapsar.',
       ),
       LessonSection(
         type: LessonSectionType.rule,
-        title: '🌦️ Weather Phenomena',
+        title: '🌦️ Hava Olayları',
         body:
             '**CAVOK** — Ceiling And Visibility OK (vis >10km, no cloud below 5000ft, no significant weather)\n**BECMG** — Becoming (gradual change within a period)\n**TEMPO** — Temporary fluctuations lasting less than 1 hour\n**CB** — Cumulonimbus (thunderstorm cloud, avoid by 20nm)\n**TSRA** — Thunderstorm with rain\n**FG** — Fog | **BR** — Mist | **RA** — Rain | **SN** — Snow',
       ),
       LessonSection(
         type: LessonSectionType.rule,
-        title: '🧭 Navigation Terms',
+        title: '🧭 Navigasyon Terimleri',
         body:
             '**Track** — actual path over the ground\n**Heading** — direction the nose is pointing\n**Bearing** — direction from one point to another\n**QNH** — altimeter setting (sea level pressure in hPa)\n**QFE** — altimeter setting (airfield elevation, reads zero on ground)\n**ATIS** — Automatic Terminal Information Service\n**VOR/DME** — VHF Omni Range / Distance Measuring Equipment',
       ),
       LessonSection(
         type: LessonSectionType.examples,
-        title: 'METAR Example',
+        title: 'METAR Örneği',
         examples: [
           ExampleSentence(
             sentence: 'METAR LTBA 120850Z 35015KT 9999 FEW030 SCT100 18/08 Q1013 NOSIG',
@@ -623,13 +623,13 @@ class LessonContentData {
       ),
       LessonSection(
         type: LessonSectionType.tip,
-        title: '✈️ Exam Tip',
+        title: '✈️ Sınav İpucu',
         body:
-            'METAR reading order (always the same):\nStation → Date/Time → Wind → Visibility → Weather → Cloud → Temperature/Dewpoint → QNH → Trend\n\n"QNH" vs "QFE":\n• **QNH** → altitude above sea level (standard, used for en-route)\n• **QFE** → altitude above aerodrome (shows 0 when on ground)\n\nMost exam questions ask about QNH.',
+            'METAR okuma sırası (her zaman aynıdır):\nStation → Date/Time → Wind → Visibility → Weather → Cloud → Temperature/Dewpoint → QNH → Trend\n\n"QNH" ile "QFE" farkı:\n• **QNH** → deniz seviyesinden yükseklik (standart, yolculuk fazında kullanılır)\n• **QFE** → pist yüzeyinden yükseklik (yerde sıfır gösterir)\n\nSınav sorularının büyük çoğunluğu QNH hakkındadır.',
       ),
       LessonSection(
         type: LessonSectionType.practice,
-        title: 'Practice Questions',
+        title: 'Pratik Sorular',
         practiceQuestions: [
           QuestionModel(
             id: -50,
@@ -678,27 +678,27 @@ class LessonContentData {
   // ─────────────────────────────────────────────────────────────
   static const _atcPhraseology = LessonContent(
     id: 'translation_1',
-    title: 'ATC Phraseology EN→TR',
-    subtitle: 'Translating standard ATC phrases accurately',
+    title: 'ATC İfade Kalıpları EN→TR',
+    subtitle: 'Standart ATC ifadelerini doğru çevirme',
     categoryId: 'translation',
-    estimatedTime: '10 min',
+    estimatedTime: '10 dk',
     emoji: '🗣️',
     sections: [
       LessonSection(
         type: LessonSectionType.intro,
-        title: 'Precise translation in aviation',
+        title: 'Havacılıkta kesin çeviri',
         body:
-            'Translation questions test whether you understand **both** the technical meaning of aviation phrases and their accurate Turkish equivalents.\n\nA wrong translation can indicate a misunderstanding of the procedure, which is why these questions carry significant weight in exams.',
+            'Çeviri soruları, havacılık ifadelerinin **teknik anlamını** ve doğru Türkçe karşılıklarını anlayanıp anlamadığınızı sınar.\n\nYanlış bir çeviri prosedür yanlış anlaşılmasına işaret edebildiğinden bu sorular sınavlarda önemli ağırlık taşır.',
       ),
       LessonSection(
         type: LessonSectionType.rule,
-        title: '🔑 Key Phrase Translations',
+        title: '🔑 Temel İfade Çevirileri',
         body:
             '"**Cleared to land**" → Piste inişe yetkilendirildiniz\n"**Go around**" → Tırmaniş yapın / Alçalışı iptal edin\n"**Hold short**" → Girmeden bekleyin\n"**Line up and wait**" → Sıraya girin ve bekleyin\n"**Contact [unit] on [freq]**" → [birim] ile [frekans] üzerinde temasa geçin\n"**Report final**" → Final pistine geldiğinizde bildirin\n"**Confirm**" → Teyit edin\n"**Affirm**" → Evet/Doğru (Teyit ederim)',
       ),
       LessonSection(
         type: LessonSectionType.examples,
-        title: 'Translation Examples',
+        title: 'Çeviri Örnekleri',
         examples: [
           ExampleSentence(
             sentence: 'THY123, descend and maintain flight level 150.',
@@ -719,13 +719,13 @@ class LessonContentData {
       ),
       LessonSection(
         type: LessonSectionType.tip,
-        title: '✈️ Translation Tips',
+        title: '✈️ Çeviri İpuçları',
         body:
-            'Common translation mistakes to avoid:\n• "Hold position" ≠ "pisti tutun" → Correct: "bulunduğunuz yerde bekleyin"\n• "Expedite" ≠ "acele edin" → Correct: "mümkün olan en kısa sürede (yapın)"\n• "Wilco" ≠ "tamam" → Correct: "anlıyorum ve gereğini yapacağım"\n• "Roger" = "mesajınız alındı" (not agreement, just acknowledgement)',
+            'Kaçınılması gereken yaygın çeviri hataları:\n• "Hold position" ≠ "pisti tutun" → Doğrusu: "bulunduğunuz yerde bekleyin"\n• "Expedite" ≠ "acele edin" → Doğrusu: "mümkün olan en kısa sürede (yapın)"\n• "Wilco" ≠ "tamam" → Doğrusu: "anlıyorum ve gereğini yapacağım"\n• "Roger" = "mesajınız alındı" (onay değil, sadece teslim alma)',
       ),
       LessonSection(
         type: LessonSectionType.practice,
-        title: 'Practice Questions',
+        title: 'Pratik Sorular',
         practiceQuestions: [
           QuestionModel(
             id: -60,
@@ -779,33 +779,33 @@ class LessonContentData {
   // ─────────────────────────────────────────────────────────────
   static const _notamReading = LessonContent(
     id: 'reading_1',
-    title: 'NOTAM Reading',
-    subtitle: 'Understanding Notices to Air Missions',
+    title: 'NOTAM Okuma',
+    subtitle: 'Havacılık Bildirimlerini Anlama',
     categoryId: 'reading',
-    estimatedTime: '12 min',
+    estimatedTime: '12 dk',
     emoji: '📄',
     sections: [
       LessonSection(
         type: LessonSectionType.intro,
-        title: 'What is a NOTAM?',
+        title: 'NOTAM nedir?',
         body:
-            'A **NOTAM** (Notice to Air Missions) is an official notice distributed to personnel concerned with flight operations, containing information about the establishment, condition, or change of any aeronautical facility, service, procedure, or hazard.\n\nReading comprehension questions often use NOTAM-style texts or maintenance/inspection documents.',
+            'Bir **NOTAM** (Notice to Air Missions — Havacılık Operasyonlarına Bildirim), uçuş operasyonlarıyla ilgili personele dağıtılan resmi bir bildirimdir. Herhangi bir havacılık tesisi, hizmet, prosedür veya tehlike hakkında oluşturma, durum veya değişiklik bilgisi içerir.\n\nOkuma anlama soruları çoğunlukla NOTAM tarzı metinler ya da bakım/muayene belgeleri kullanır.',
       ),
       LessonSection(
         type: LessonSectionType.rule,
-        title: '📋 NOTAM Structure',
+        title: '📋 NOTAM Yapısı',
         body:
-            'A NOTAM contains:\n**Q)** — Subject/condition/traffic codes\n**A)** — Location (ICAO code)\n**B)** — Begin date/time\n**C)** — End date/time\n**E)** — Full text description\n\nExample structure:\n"A0123/24 NOTAMN\nQ) LTAA/QMRLC/IV/NBO/A/000/999/4059N02858E005\n**A) LTBA B) 2401150600 C) 2401152359**\n**E) RWY 36L/18R CLOSED FOR MAINTENANCE"**',
+            'Bir NOTAM şunları içerir:\n**Q)** — Konu/durum/trafik kodları\n**A)** — Konum (ICAO kodu)\n**B)** — Başlangıç tarihi/saati\n**C)** — Bitiş tarihi/saati\n**E)** — Tam metin açıklaması\n\nÖrnek yapı:\n"A0123/24 NOTAMN\nQ) LTAA/QMRLC/IV/NBO/A/000/999/4059N02858E005\n**A) LTBA B) 2401150600 C) 2401152359**\n**E) RWY 36L/18R CLOSED FOR MAINTENANCE\"**',
       ),
       LessonSection(
         type: LessonSectionType.rule,
-        title: '🔍 Reading Comprehension Strategy',
+        title: '🔍 Okuma Anlama Stratejisi',
         body:
-            'For any aviation text (NOTAM, report, manual extract):\n1. **Scan first** — identify the type of document and subject\n2. **Read the question before re-reading** — know what to look for\n3. **Find key facts** — dates, locations, restrictions, requirements\n4. **Watch for negatives** — "not", "except", "unless" change the meaning completely\n5. **Avoid assumptions** — answer only from the given text',
+            'Herhangi bir havacılık metni için (NOTAM, rapor, kılavuz alıntısı):\n1. **Önce tara** — belge türünü ve konuyu belirle\n2. **Soruyu oku, sonra metni yeniden oku** — neye bakacağını bil\n3. **Anahtar gerçekleri bul** — tarihler, yerler, kısıtlamalar, gereklilikler\n4. **Olumsuzlamalara dikkat et** — "not", "except", "unless" anlamı tamamen değiştirir\n5. **Varsayımdan kaçın** — yalnızca verilen metinden yanıt ver',
       ),
       LessonSection(
         type: LessonSectionType.examples,
-        title: 'Sample Passage',
+        title: 'Örnek Pasaj',
         examples: [
           ExampleSentence(
             sentence: 'Detailed Inspection (DI) is an intensive examination of a specific item to detect damage, failure or irregularity.',
@@ -821,13 +821,13 @@ class LessonContentData {
       ),
       LessonSection(
         type: LessonSectionType.tip,
-        title: '✈️ Reading Tips',
+        title: '✈️ Okuma İpuçları',
         body:
-            'Watch for question types:\n• **"What is the main purpose?"** → look for the opening definition sentence\n• **"Which is NOT required?"** → find the list and identify the missing/excluded item\n• **"According to the passage"** → the answer must be explicitly stated, not inferred\n• **"What does X examine?"** → find the direct object of the key verb',
+            'Soru türlerine dikkat et:\n• **"Ana amaç nedir?"** → açılış tanım cümlesini ara\n• **"Hangisi GEREKLİ DEĞİLDİR?"** → listeyi bul ve eksik/dışlanan ögeyi belirle\n• **"Metne göre..."** → yanıt açıkça belirtilmiş olmalı, çıkarım yapılmamalı\n• **"X neyi inceler?"** → anahtar fiilin doğrudan nesnesini bul',
       ),
       LessonSection(
         type: LessonSectionType.practice,
-        title: 'Practice Questions',
+        title: 'Pratik Sorular',
         body: 'Read the following passage, then answer the questions.\n\n"Detailed Inspection (DI) is an intensive examination of a specific item, installation, or assembly to detect damage, failure or irregularity. Available lighting is normally supplemented with a direct source of good lighting at an intensity deemed appropriate. Inspection aids such as mirrors, magnifying lenses etc. may be necessary. Surface cleaning and elaborate access procedures may be required."',
         practiceQuestions: [
           QuestionModel(
@@ -882,32 +882,32 @@ class LessonContentData {
   // ─────────────────────────────────────────────────────────────
   static const _reportedSpeech = LessonContent(
     id: 'grammar_4',
-    title: 'Reported Speech',
-    subtitle: 'Incident reports and crew statements',
+    title: 'Dolaylı Anlatım',
+    subtitle: 'Olay raporları ve ekip ifadeleri',
     categoryId: 'grammar',
-    estimatedTime: '11 min',
+    estimatedTime: '11 dk',
     emoji: '💬',
     sections: [
       LessonSection(
         type: LessonSectionType.intro,
-        title: 'Reported speech in aviation reports',
+        title: 'Havacılık raporlarında dolaylı anlatım',
         body:
-            'Aviation incident and accident reports frequently quote what crew members or controllers **said** or **thought**. The grammar used to report these statements is called **indirect/reported speech**.\n\nExam questions often ask you to convert between direct and reported speech, or complete a reported speech sentence correctly.',
+            'Havacılık olay ve kaza raporları, mürettebat üyelerinin veya kontrolörlerin **söylediklerini** veya **düşündüklerini** sıkça aktarır. Bu ifadeleri aktarmak için kullanılan dilbilgisi yapısına **dolaylı/aktarmalı anlatım** denir.\n\nSınav soruları çoğunlukla doğrudan anlatımı dolaylıya çevirmenizi ya da dolaylı anlatım cümlesini doğru tamamlamanızı ister.',
       ),
       LessonSection(
         type: LessonSectionType.animation,
-        title: 'Watch the tense shift',
+        title: 'Zaman kaymasını izle',
         animationType: GrammarAnimationType.reportedSpeech,
       ),
       LessonSection(
         type: LessonSectionType.rule,
-        title: 'Tense Backshift Rule',
+        title: 'Zaman Kayması Kuralı',
         body:
-            'When the reporting verb is **past** (said, told, reported), tenses shift back:\n\n| Direct | Reported |\n|---|---|\n| is/am/are | **was/were** |\n| was/were | **had been** |\n| will | **would** |\n| can | **could** |\n| must | **had to** |\n| has/have + V3 | **had** + V3 |\n\n"The system **is** malfunctioning." →\nThe pilot said the system **was** malfunctioning.',
+            'Aktarım fiili **geçmiş zaman** olduğunda (said, told, reported), zamanlar geri kayar:\n\n| Doğrudan | Dolaylı Anlatım |\n|---|---|\n| is/am/are | **was/were** |\n| was/were | **had been** |\n| will | **would** |\n| can | **could** |\n| must | **had to** |\n| has/have + V3 | **had** + V3 |\n\n"The system **is** malfunctioning." →\nPilot, sistemin **was** malfunctioning olduğunu söyledi.',
       ),
       LessonSection(
         type: LessonSectionType.examples,
-        title: 'Aviation Reported Speech',
+        title: 'Havacılıkta Dolaylı Anlatım',
         examples: [
           ExampleSentence(
             sentence: 'The captain reported that the hydraulic pressure had dropped below limits.',
@@ -928,13 +928,13 @@ class LessonContentData {
       ),
       LessonSection(
         type: LessonSectionType.tip,
-        title: '✈️ Exam Tip',
+        title: '✈️ Sınav İpucu',
         body:
-            'Key reporting verbs and their prepositions:\n• said (that) — general statement\n• told + person + (that) — "told him/her"\n• reported (that) — formal/written report\n• informed + person + (that) — official notification\n• warned + person + (that/about) — hazard warning\n\nNo preposition after "said": ✓ "said **that**" / ✗ "said **to** him that"',
+            'Temel aktarma fiilleri ve edatları:\n• said (that) — genel ifade\n• told + kişi + (that) — "ona söyledi"\n• reported (that) — resmi/yazılı rapor\n• informed + kişi + (that) — resmi bildirim\n• warned + kişi + (that/about) — tehlike uyardı\n\n"said" sonrasında edat gelmez: ✓ "said **that**" / ✗ "said **to** him that"',
       ),
       LessonSection(
         type: LessonSectionType.practice,
-        title: 'Practice Questions',
+        title: 'Pratik Sorular',
         practiceQuestions: [
           QuestionModel(
             id: -80,
@@ -973,33 +973,33 @@ class LessonContentData {
   // ─────────────────────────────────────────────────────────────
   static const _emergencyCompletion = LessonContent(
     id: 'completion_1',
-    title: 'Emergency Procedures',
-    subtitle: 'Completing emergency communication phrases',
+    title: 'Acil Durum Prosedürleri',
+    subtitle: 'Acil iletişim ifadelerini tamamlama',
     categoryId: 'sentence_completion',
-    estimatedTime: '10 min',
+    estimatedTime: '10 dk',
     emoji: '🚨',
     sections: [
       LessonSection(
         type: LessonSectionType.intro,
-        title: 'Emergency language must be precise',
+        title: 'Acil durum dili kesin olmalıdır',
         body:
-            'Emergency communications follow strict ICAO phraseology. In sentence completion questions, you must choose the word or phrase that **precisely and completely** fills the meaning of the sentence.\n\nThe distractor options often look plausible — the key is selecting the **most accurate** aviation term.',
+            'Acil durum iletişimleri ICAO ifade kurallarına uyar. Cümle tamamlama sorularında, cümlenin anlamını **tam ve eksiksiz** dolduran kelime ya da ifadeyi seçmeniz gerekir.\n\nYanlış seçenekler çoğunlukla mantıklı görünür — anahtar, en **doğru** havacılık terimini seçmektir.',
       ),
       LessonSection(
         type: LessonSectionType.rule,
-        title: '🚨 Emergency Levels',
+        title: '🚨 Acil Durum Seviyeleri',
         body:
             '**MAYDAY** (×3) — Distress: immediate danger to life\n"MAYDAY MAYDAY MAYDAY — THY123 — engine fire — declaring emergency"\n\n**PAN-PAN** (×3) — Urgency: serious situation, not immediate danger\n"PAN-PAN PAN-PAN PAN-PAN — THY123 — medical emergency on board"\n\n**SQUAWK 7700** — General emergency\n**SQUAWK 7600** — Radio failure\n**SQUAWK 7500** — Unlawful interference (hijack)',
       ),
       LessonSection(
         type: LessonSectionType.rule,
-        title: '📡 Emergency Checklist Language',
+        title: '📡 Acil Durum Kontrol Listesi Dili',
         body:
-            'Emergency checklists use specific sentence patterns:\n• "In the event of ………, the crew should…"\n• "If ……… is observed, immediately…"\n• "………… and report to ATC"\n• "Declare ………… and request priority landing"\n\nCommon verbs: **declare, squawk, divert, dump, depressurize, evacuate, report**',
+            'Acil durum kontrol listeleri özel cümle kalıpları kullanır:\n• "In the event of …………, the crew should…"\n• "If ………… is observed, immediately…"\n• "…………… and report to ATC"\n• "Declare …………… and request priority landing"\n\nYaygın fiiller: **declare, squawk, divert, dump, depressurize, evacuate, report**',
       ),
       LessonSection(
         type: LessonSectionType.examples,
-        title: 'Emergency Completions',
+        title: 'Acil Durum Tamamlamaları',
         examples: [
           ExampleSentence(
             sentence: 'In the event of an engine fire, the crew must __________ the affected engine.',
@@ -1015,13 +1015,13 @@ class LessonContentData {
       ),
       LessonSection(
         type: LessonSectionType.tip,
-        title: '✈️ Exam Strategy for Completion Questions',
+        title: '✈️ Tamamlama Soruları için Sınav Stratejisi',
         body:
-            '1. Read the **full sentence** — understand the aviation situation\n2. Identify the **grammatical slot** — noun? verb? adjective? preposition?\n3. Check **collocations** — "declare an emergency" not "announce an emergency"\n4. Aviation-specific collocations:\n   • declare **an emergency** / mayday\n   • squawk **a code** (7700)\n   • divert **to** an alternate\n   • request **immediate** / priority assistance',
+            '1. **Tümceyi baştan sona** oku — havacılık durumunu anla\n2. **Dilbilgisel boşluğu** belirle — isim mi? fiil mi? sıfat mı? edat mı?\n3. **Öbekleri** kontrol et — "declare an emergency" (acil durum ilan etmek), "announce" değil\n4. Havacılığa özgü öbekler:\n   • declare **an emergency** / mayday\n   • squawk **a code** (7700)\n   • divert **to** an alternate\n   • request **immediate** / priority assistance',
       ),
       LessonSection(
         type: LessonSectionType.practice,
-        title: 'Practice Questions',
+        title: 'Pratik Sorular',
         practiceQuestions: [
           QuestionModel(
             id: -90,
@@ -1060,33 +1060,33 @@ class LessonContentData {
   // ─────────────────────────────────────────────────────────────
   static const _accidentReport = LessonContent(
     id: 'reading_2',
-    title: 'Accident Report Analysis',
-    subtitle: 'Advanced reading comprehension',
+    title: 'Kaza Raporu Analizi',
+    subtitle: 'İleri okuma anlama',
     categoryId: 'reading',
-    estimatedTime: '14 min',
+    estimatedTime: '14 dk',
     emoji: '📑',
     sections: [
       LessonSection(
         type: LessonSectionType.intro,
-        title: 'Accident reports are complex texts',
+        title: 'Kaza raporları karmaşık metinlerdir',
         body:
-            'Aviation accident investigation reports (such as those produced by ICAO Annex 13 standards) are among the most complex texts tested in aviation English exams.\n\nThey contain technical terminology, passive constructions, reported speech, and conditional reasoning — all combined in a single document.',
+            'Havacılık kaza soruşturma raporları (ICAO Ek 13 standartlarına göre hazırlananlar gibi) havacılık İngilizcesi sınavlarında sınanan en karmaşık metinlerdendir.\n\nTeknik terminoloji, edilgen yapılar, dolaylı anlatım ve koşul çıkarımlarını tek bir belgede bir araya getirirler.',
       ),
       LessonSection(
         type: LessonSectionType.rule,
-        title: '📋 Report Structure',
+        title: '📋 Rapor Yapısı',
         body:
-            'A standard accident report contains:\n1. **Synopsis** — brief summary of the accident\n2. **Factual information** — aircraft, crew, weather, airport data\n3. **Analysis** — what happened and why (cause chain)\n4. **Findings** — established facts\n5. **Cause** — probable cause(s)\n6. **Safety recommendations** — what should change\n\nExam questions usually target **Factual Information** and **Analysis** sections.',
+            'Standart bir kaza raporu şunları içerir:\n1. **Özet (Synopsis)** — kazanın kısa özeti\n2. **Olgusal bilgi** — uçak, mürettebat, hava durumu, havalimanı verileri\n3. **Analiz** — ne olduğu ve neden (neden zinciri)\n4. **Bulgular** — tespit edilen olgular\n5. **Neden** — muhtemel neden(ler)\n6. **Güvenlik önerileri** — neyin değişmesi gerektiği\n\nSınav soruları genellikle **Olgusal Bilgi** ve **Analiz** bölümlerini hedefler.',
       ),
       LessonSection(
         type: LessonSectionType.rule,
-        title: '🔍 Critical Reading Skills',
+        title: '🔍 Kritik Okuma Becerileri',
         body:
-            'For accident report passages:\n• **Sequence words**: prior to, during, following, subsequently, as a result\n• **Causal language**: due to, caused by, attributed to, led to, resulted in\n• **Finding vs. Recommendation**: findings are facts; recommendations are suggestions\n• **Contributing factor** ≠ **Probable cause**: contributing factors worsen the situation; probable cause is the primary reason',
+            'Kaza raporu pasajları için:\n• **Sıralama kelimeleri**: prior to, during, following, subsequently, as a result\n• **Nedensellik dili**: due to, caused by, attributed to, led to, resulted in\n• **Bulgu ile Öneri** arasındaki fark: bulgular olgulardır; öneriler tavsiyedir\n• **Contributing factor** ≠ **Probable cause**: katkıda bulunan faktörler durumu ağırlaştırır; muhtemel neden birincil sebeptir',
       ),
       LessonSection(
         type: LessonSectionType.examples,
-        title: 'Report Language Examples',
+        title: 'Rapor Dili Örnekleri',
         examples: [
           ExampleSentence(
             sentence: 'The accident was attributed to the crew\'s failure to monitor fuel quantity during the extended hold.',
@@ -1102,13 +1102,13 @@ class LessonContentData {
       ),
       LessonSection(
         type: LessonSectionType.tip,
-        title: '✈️ Advanced Reading Strategy',
+        title: '✈️ İleri Okuma Stratejisi',
         body:
-            'The 3-read method for complex passages:\n1. **First read**: skim for topic and structure (30 seconds)\n2. **Read question**: understand exactly what is asked\n3. **Second read**: focus on the relevant paragraph only\n\nNever answer from memory — always verify in the text. Advanced questions often have **plausible but incorrect** distractors that use words from the passage in the wrong context.',
+            'Üç okuma yöntemi:\n1. **Birinci okuma**: konu ve yapıyı taramak için (30 saniye)\n2. **Soruyu oku**: tam olarak neyin sorulduğunu anla\n3. **İkinci okuma**: yalnızca ilgili paragrafa odaklan\n\nBellekten yanıt verme — her zaman metinde doğrula. İleri düzey sorularda çoğunlukla pasajdaki kelimelerin yanlış bağlamda kullanıldığı **mantıklı ama yanlış** seçenekler bulunur.',
       ),
       LessonSection(
         type: LessonSectionType.practice,
-        title: 'Practice Questions',
+        title: 'Pratik Sorular',
         body: '"Wet motoring the engine is necessary to test the fuel system. When an engine is wet motored, the two ignition systems are turned OFF and the starter is engaged to turn the HP rotor to 15%-20% N2. At N2 = 15%, the HP fuel shutoff valve control lever is moved to ON and the engine exhaust nozzle is carefully monitored for any sign of fuel."',
         practiceQuestions: [
           QuestionModel(
@@ -1163,32 +1163,32 @@ class LessonContentData {
   // ─────────────────────────────────────────────────────────────
   static const _simpleTenses = LessonContent(
     id: 'grammar_5',
-    title: 'Simple & Continuous Tenses',
-    subtitle: 'When to use each tense in aviation contexts',
+    title: 'Basit & Sürekli Zamanlar',
+    subtitle: 'Her zamanın havacılık bağlamında kullanımı',
     categoryId: 'grammar',
-    estimatedTime: '10 min',
+    estimatedTime: '10 dk',
     emoji: '⏰',
     sections: [
       LessonSection(
         type: LessonSectionType.intro,
-        title: 'Tense signals when an action happens',
+        title: 'Zaman kipi, eylemin ne zaman gerçekleştiğini gösterir',
         body:
-            'In aviation English, choosing the right tense is critical. ATC uses **present simple** for permanent facts, **present continuous** for current actions, and **past simple** for completed events in reports.\n\nMixing tenses in checklists or reports is a common exam error.',
+            'Havacılık İngilizcesinde doğru zaman kipini seçmek kritik öneme sahiptir. ATC kalıcı gerçekler için **basit geniş zaman**, anlık eylemler için **şimdiki sürekli zaman**, raporlardaki tamamlanmış olaylar için **basit geçmiş zaman** kullanır.\n\nKontrol listeleri veya raporlarda zaman kipi karıştırmak yaygın bir sınav hatasıdır.',
       ),
       LessonSection(
         type: LessonSectionType.animation,
-        title: 'Tenses on a timeline',
+        title: 'Zaman çizelgesinde kipler',
         animationType: GrammarAnimationType.tensesTimeline,
       ),
       LessonSection(
         type: LessonSectionType.rule,
-        title: 'Simple vs. Continuous',
+        title: 'Basit vs. Sürekli',
         body:
             '**Present Simple** — facts, routines, permanent states\n→ "The ILS localizer **operates** on frequencies 108–111.95 MHz."\n\n**Present Continuous** — actions happening now, temporary\n→ "The aircraft **is climbing** through flight level 180."\n\n**Past Simple** — completed events (reports, logs)\n→ "The crew **performed** the before-start checklist at 0612Z."\n\n**Past Continuous** — ongoing past action interrupted\n→ "The aircraft **was taxiing** when the bird strike **occurred**."',
       ),
       LessonSection(
         type: LessonSectionType.examples,
-        title: 'Tense in Context',
+        title: 'Bağlamda Zaman Kipi',
         examples: [
           ExampleSentence(
             sentence: 'The aircraft is currently holding at ELVIN fix due to traffic congestion.',
@@ -1209,13 +1209,13 @@ class LessonContentData {
       ),
       LessonSection(
         type: LessonSectionType.tip,
-        title: '✈️ Exam Tip',
+        title: '✈️ Sınav İpucu',
         body:
-            'Time signal words give away the tense:\n• **now / currently / at the moment** → present continuous\n• **always / usually / every flight** → present simple\n• **at 14:32 / yesterday / last night** → past simple\n• **while / when / as** → look for two simultaneous past actions\n\nAviation logs and reports always use **past simple** — they record completed events.',
+            'Zaman belirteçleri kipe işaret eder:\n• **now / currently / at the moment** → şimdiki sürekli zaman\n• **always / usually / every flight** → basit geniş zaman\n• **at 14:32 / yesterday / last night** → basit geçmiş zaman\n• **while / when / as** → iki eş zamanlı geçmiş eylem arayın\n\nHavacılık kayıtları ve raporlar her zaman **basit geçmiş zaman** kullanır — tamamlanmış olayları kaydederler.',
       ),
       LessonSection(
         type: LessonSectionType.practice,
-        title: 'Practice Questions',
+        title: 'Pratik Sorular',
         practiceQuestions: [
           QuestionModel(id: -120, category: QuestionCategory.grammar, originalNumber: 50, questionText: 'The aircraft ………… through FL200 when the turbulence began.', options: ['climbs', 'was climbing', 'has climbed', 'climbed'], correctIndex: 1, difficulty: Difficulty.medium),
           QuestionModel(id: -121, category: QuestionCategory.grammar, originalNumber: 51, questionText: 'At 0800Z, the first officer ………… the pre-departure ATIS.', options: ['receives', 'is receiving', 'received', 'has receive'], correctIndex: 2, difficulty: Difficulty.easy),
@@ -1231,33 +1231,33 @@ class LessonContentData {
   // ─────────────────────────────────────────────────────────────
   static const _airportGround = LessonContent(
     id: 'vocab_3',
-    title: 'Airport & Ground Operations',
-    subtitle: 'Ramps, taxiways, gates and ground handling',
+    title: 'Havalimanı & Yer Hizmetleri',
+    subtitle: 'Ramplar, taksi yolları, kapılar ve yer operasyonları',
     categoryId: 'vocabulary',
-    estimatedTime: '9 min',
+    estimatedTime: '9 dk',
     emoji: '🏗️',
     sections: [
       LessonSection(
         type: LessonSectionType.intro,
-        title: 'The airport environment has precise terminology',
+        title: 'Havalimanı ortamının kesin terminolojisi vardır',
         body:
-            'Ground operations vocabulary is tested heavily in fill-in-the-blank and reading comprehension questions. Knowing the difference between a **taxiway**, **runway**, **apron**, and **ramp** is essential for safe operations and exam success.',
+            'Yer operasyonları kelime bilgisi, boşluk doldurma ve okuma anlama sorularında yoğun biçimde sınanır. **Taksi yolu (taxiway)**, **pist (runway)**, **apron** ve **ramp** arasındaki farkı bilmek hem güvenli operasyonlar hem de sınav başarısı için şarttır.',
       ),
       LessonSection(
         type: LessonSectionType.rule,
-        title: '🛬 Airport Movement Areas',
+        title: '🛬 Havalimanı Hareket Alanları',
         body:
             '**Runway** — paved surface for takeoff and landing\n**Taxiway** — paved path connecting runways to aprons (named A, B, C…)\n**Apron (Ramp)** — area for parking, loading, servicing aircraft\n**Holding Bay** — area where aircraft wait before entering runway\n**Threshold** — beginning of the runway available for landing\n**Displaced Threshold** — landing threshold moved from physical runway end\n**Stopway** — paved area beyond runway end, usable for stopping only',
       ),
       LessonSection(
         type: LessonSectionType.rule,
-        title: '🚧 Ground Movement Terms',
+        title: '🚧 Yer Hareketi Terimleri',
         body:
             '**Pushback** — towing aircraft backward from gate using a tug\n**Tow** — moving aircraft with a ground vehicle\n**Ground power unit (GPU)** — provides external electrical power\n**Chocks** — wheel blocks preventing movement\n**Jet bridge / Jetway** — passenger boarding bridge\n**FOD** — Foreign Object Debris (anything on runway/taxiway that could damage aircraft)\n**Ground stop** — ATC directive halting departures',
       ),
       LessonSection(
         type: LessonSectionType.examples,
-        title: 'Ground Operations in Context',
+        title: 'Bağlamda Yer Operasyonları',
         examples: [
           ExampleSentence(
             sentence: 'Hold short of taxiway Charlie, there is an aircraft being towed across.',
@@ -1278,13 +1278,13 @@ class LessonContentData {
       ),
       LessonSection(
         type: LessonSectionType.tip,
-        title: '✈️ Exam Tip',
+        title: '✈️ Sınav İpucu',
         body:
-            'Common confusion pairs:\n• **Apron** = parking/service area | **Tarmac** = informal term for apron/taxiway (avoid in formal use)\n• **Taxiway** = movement path | **Runway** = takeoff/landing only\n• **Gate** = passenger boarding position | **Stand/Bay** = parking position (no gate)\n• **Pushback** = aircraft moves backward | **Tow** = any direction with a vehicle',
+            'Sık karıştırılan çiftler:\n• **Apron** = park/servis alanı | **Tarmac** = apron/taksi yolu için gayri resmi terim (resmi kullanımda kaçının)\n• **Taxiway** = hareket yolu | **Runway** = yalnızca kalkış/iniş\n• **Gate** = yolcu biniş pozisyonu | **Stand/Bay** = park pozisyonu (gate yok)\n• **Pushback** = uçak geri gider | **Tow** = araçla herhangi bir yöne çekme',
       ),
       LessonSection(
         type: LessonSectionType.practice,
-        title: 'Practice Questions',
+        title: 'Pratik Sorular',
         practiceQuestions: [
           QuestionModel(id: -130, category: QuestionCategory.vocabulary, originalNumber: 260, questionText: 'The area of an airport used for parking, loading, and servicing aircraft is called the:', options: ['Taxiway', 'Runway', 'Apron', 'Threshold'], correctIndex: 2, difficulty: Difficulty.easy),
           QuestionModel(id: -131, category: QuestionCategory.vocabulary, originalNumber: 261, questionText: 'What does "FOD" stand for in aviation ground operations?', options: ['Flight Operations Document', 'Foreign Object Debris', 'Final Obstacle Distance', 'Field Operations Division'], correctIndex: 1, difficulty: Difficulty.easy),
@@ -1300,33 +1300,33 @@ class LessonContentData {
   // ─────────────────────────────────────────────────────────────
   static const _safetyEquipment = LessonContent(
     id: 'vocab_4',
-    title: 'Safety Equipment',
-    subtitle: 'Emergency equipment terminology for exams',
+    title: 'Güvenlik Ekipmanları',
+    subtitle: 'Sınav için acil ekipman terminolojisi',
     categoryId: 'vocabulary',
-    estimatedTime: '8 min',
+    estimatedTime: '8 dk',
     emoji: '🦺',
     sections: [
       LessonSection(
         type: LessonSectionType.intro,
-        title: 'Safety equipment names must be exact',
+        title: 'Güvenlik ekipmanı adları kesin olmalıdır',
         body:
-            'Using incorrect names for safety equipment can cause dangerous misunderstandings. Exam questions test precise knowledge of equipment names, their function, and the verbs used with them.\n\nThis lesson covers the most frequently examined safety equipment terms across all aviation roles.',
+            'Güvenlik ekipmanı için yanlış isimler kullanmak tehlikeli yanlış anlaşılmalara yol açabilir. Sınav soruları ekipman adları, işlevleri ve bunlarla kullanılan fiiller hakkında kesin bilgi ölçer.\n\nBu ders, tüm havacılık rolleri için en sık sınanan güvenlik ekipmanı terimlerini kapsar.',
       ),
       LessonSection(
         type: LessonSectionType.rule,
-        title: '🛡️ Cabin Safety Equipment',
+        title: '🛡️ Kabin Güvenlik Ekipmanları',
         body:
             '**Portable oxygen unit** — portable O₂ bottle for crew use\n**Drop-down oxygen mask** — passenger masks, auto-deploys above 10,000 ft cabin alt\n**Life vest / Life jacket** — under-seat flotation device\n**Emergency exit** — floor-level lighting marks the path\n**Escape slide** — inflatable slide for rapid evacuation\n**Fire extinguisher** — Halon type in cockpit, water/CO₂ in cabin\n**ELT** — Emergency Locator Transmitter (activates on impact)',
       ),
       LessonSection(
         type: LessonSectionType.rule,
-        title: '🔧 Technical Safety Equipment',
+        title: '🔧 Teknik Güvenlik Ekipmanları',
         body:
             '**Circuit breaker (CB)** — protects electrical circuits from overload\n**Fire detector** — senses smoke/heat in engine, APU, cargo compartment\n**Fire suppression system** — discharges extinguisher agent into engine nacelle\n**Overheat detector** — warns of bleed air duct overheating\n**TCAS** — Traffic Collision Avoidance System\n**GPWS/EGPWS** — Ground Proximity Warning System',
       ),
       LessonSection(
         type: LessonSectionType.examples,
-        title: 'Safety Equipment in Use',
+        title: 'Kullanımda Güvenlik Ekipmanları',
         examples: [
           ExampleSentence(
             sentence: 'Oxygen masks will drop down automatically if cabin altitude exceeds 10,000 feet.',
@@ -1347,13 +1347,13 @@ class LessonContentData {
       ),
       LessonSection(
         type: LessonSectionType.tip,
-        title: '✈️ Exam Tip',
+        title: '✈️ Sınav İpucu',
         body:
-            'Key verbs used with safety equipment:\n• **don** = put on (life vest, oxygen mask) — formal aviation term\n• **deploy** = activate automatically (escape slide, oxygen mask)\n• **arm** = set to automatic deployment mode (door slide)\n• **discharge** = release extinguishing agent\n• **arm/disarm** doors = cabin crew action before departure/after arrival\n\nNever use "put on" in formal exam answers — use **don**.',
+            'Güvenlik ekipmanı ile kullanılan temel fiiller:\n• **don** = giymek (can yeleği, oksijen maskesi) — resmi havacılık terimi\n• **deploy** = otomatik etkinleştirmek (tahliye kayalğı, oksijen maskesi)\n• **arm** = otomatik açılım moduna ayarlamak (kapı kayalğı)\n• **discharge** = söndürücü maddeyi salmak\n• **arm/disarm** kapılar = kalkış öncesi/varış sonrası kabin ekibi eylemi\n\nResmi sınav yanıtlarında "put on" yerine her zaman **don** kullanın.',
       ),
       LessonSection(
         type: LessonSectionType.practice,
-        title: 'Practice Questions',
+        title: 'Pratik Sorular',
         practiceQuestions: [
           QuestionModel(id: -140, category: QuestionCategory.vocabulary, originalNumber: 270, questionText: 'The correct aviation term for "putting on" a life vest or oxygen mask is:', options: ['Wearing', 'Donning', 'Fitting', 'Applying'], correctIndex: 1, difficulty: Difficulty.easy),
           QuestionModel(id: -141, category: QuestionCategory.vocabulary, originalNumber: 271, questionText: 'TCAS stands for:', options: ['Traffic Control and Safety System', 'Traffic Collision Avoidance System', 'Terminal Control Area Separation', 'Tactical Course Alerting System'], correctIndex: 1, difficulty: Difficulty.easy),
@@ -1369,27 +1369,27 @@ class LessonContentData {
   // ─────────────────────────────────────────────────────────────
   static const _preflightChecklist = LessonContent(
     id: 'fill_2',
-    title: 'Pre-flight Checklist Language',
-    subtitle: 'Completing checklist phrases correctly',
+    title: 'Uçuş Öncesi Kontrol Listesi Dili',
+    subtitle: 'Kontrol listesi ifadelerini doğru tamamlama',
     categoryId: 'fill_blanks',
-    estimatedTime: '9 min',
+    estimatedTime: '9 dk',
     emoji: '📝',
     sections: [
       LessonSection(
         type: LessonSectionType.intro,
-        title: 'Checklists follow fixed language patterns',
+        title: 'Kontrol listeleri sabit dil kalıplarını takip eder',
         body:
-            'Aviation checklists use a highly standardized language structure. Unlike conversational English, checklist language is **compressed and precise** — each word is chosen for accuracy and brevity.\n\nFill-in-the-blank questions test whether you know the correct technical term or phrase for each checklist item.',
+            'Havacılık kontrol listeleri son derece standartlaştırılmış bir dil yapısı kullanır. Günlük İngilizcenin aksine, kontrol listesi dili **sıkıştırılmış ve kesin**tir — her kelime doğruluk ve kısalık için seçilmiştir.\n\nBoşluk doldurma soruları, her kontrol listesi öğesi için doğru teknik terim veya ifadeyi bilip bilmediğinizi sınar.',
       ),
       LessonSection(
         type: LessonSectionType.rule,
-        title: '📋 Checklist Language Patterns',
+        title: '📋 Kontrol Listesi Dil Kalıpları',
         body:
-            'Checklists use three main patterns:\n\n**Challenge / Response:**\n"PARKING BRAKE — **SET**"\n"SEAT BELTS — **ON**"\n"FUEL QUANTITY — **CHECKED**"\n\n**Action items:**\n"……… the altimeters to QNH"\n"……… the ILS frequency and course"\n"……… the transponder to 2000"\n\nCommon action verbs: **set, check, confirm, select, arm, position, verify, engage**',
+            'Kontrol listeleri üç ana kalıp kullanır:\n\n**Soru / Yanıt (Challenge / Response):**\n"PARKING BRAKE — **SET**"\n"SEAT BELTS — **ON**"\n"FUEL QUANTITY — **CHECKED**"\n\n**Eylem maddeleri:**\n"…………… the altimeters to QNH"\n"…………… the ILS frequency and course"\n"…………… the transponder to 2000"\n\nYaygın eylem fiilleri: **set, check, confirm, select, arm, position, verify, engage**',
       ),
       LessonSection(
         type: LessonSectionType.examples,
-        title: 'Checklist Phrases in Context',
+        title: 'Bağlamda Kontrol Listesi İfadeleri',
         examples: [
           ExampleSentence(
             sentence: 'Set the altimeter to the current QNH of 1013 hectopascals.',
@@ -1410,13 +1410,13 @@ class LessonContentData {
       ),
       LessonSection(
         type: LessonSectionType.tip,
-        title: '✈️ Exam Tip',
+        title: '✈️ Sınav İpucu',
         body:
-            'Checklist verb distinctions:\n• **Set** = adjust to a specific value ("set altimeter to 1013")\n• **Check** = confirm current state without adjusting\n• **Verify** = confirm a specific condition is met\n• **Confirm** = obtain acknowledgment from another crew member\n• **Arm** = place in automatic activation mode\n• **Select** = choose from available options ("select flaps 5")',
+            'Kontrol listesi fiil ayrımları:\n• **Set** = belirli bir değere ayarlamak ("set altimeter to 1013")\n• **Check** = mevcut durumu değiştirmeden doğrulamak\n• **Verify** = belirli bir koşulun sağlandığını onaylamak\n• **Confirm** = diğer mürettebat üyesinden onay almak\n• **Arm** = otomatik aktivasyon moduna almak\n• **Select** = mevcut seçeneklerden birini seçmek ("select flaps 5")',
       ),
       LessonSection(
         type: LessonSectionType.practice,
-        title: 'Practice Questions',
+        title: 'Pratik Sorular',
         practiceQuestions: [
           QuestionModel(id: -150, category: QuestionCategory.fillBlanks, originalNumber: 760, questionText: '………… the parking brake before starting engine start procedures.', options: ['Activate', 'Set', 'Apply', 'Lock'], correctIndex: 1, difficulty: Difficulty.easy),
           QuestionModel(id: -151, category: QuestionCategory.fillBlanks, originalNumber: 761, questionText: 'Doors and slides — ………… and cross-checked.', options: ['armed', 'locked', 'verified', 'activated'], correctIndex: 0, difficulty: Difficulty.easy),
@@ -1432,33 +1432,33 @@ class LessonContentData {
   // ─────────────────────────────────────────────────────────────
   static const _emergencyVocab = LessonContent(
     id: 'vocab_5',
-    title: 'Emergency Terminology',
-    subtitle: 'Words and phrases used in abnormal situations',
+    title: 'Acil Durum Terminolojisi',
+    subtitle: 'Anormal durumlarda kullanılan kelimeler ve ifadeler',
     categoryId: 'vocabulary',
-    estimatedTime: '10 min',
+    estimatedTime: '10 dk',
     emoji: '🚨',
     sections: [
       LessonSection(
         type: LessonSectionType.intro,
-        title: 'Emergency language must be learned exactly',
+        title: 'Acil durum dili tam olarak öğrenilmelidir',
         body:
-            'In real emergencies and in exam questions, using the right word can make a critical difference. ICAO standards define specific terms for emergencies — these cannot be paraphrased.\n\nThis lesson focuses on the vocabulary that appears most frequently in emergency-related exam questions.',
+            'Gerçek acil durumlarda ve sınav sorularında doğru kelimeyi kullanmak kritik fark yaratabilir. ICAO standartları acil durumlar için belirli terimler tanımlar — bunlar farklı ifadeyle anlatılamaz.\n\nBu ders, acil durumla ilgili sınav sorularında en sık karşılaşılan kelime bilgisine odaklanır.',
       ),
       LessonSection(
         type: LessonSectionType.rule,
-        title: '🚨 Emergency Classification',
+        title: '🚨 Acil Durum Sınıflandırması',
         body:
             '**Distress** — state of being threatened by serious and/or imminent danger, requiring immediate assistance (MAYDAY)\n\n**Urgency** — condition concerning the safety of an aircraft or other vehicle, or of some person on board or in sight, but not requiring immediate assistance (PAN-PAN)\n\n**Emergency** — broad term covering both distress and urgency situations\n\n**Incident** — occurrence other than an accident associated with flight operation\n**Accident** — occurrence resulting in death, injury, or substantial aircraft damage',
       ),
       LessonSection(
         type: LessonSectionType.rule,
-        title: '🔥 Emergency Action Vocabulary',
+        title: '🔥 Acil Durum Eylem Kelime Bilgisi',
         body:
             '**Declare** — formally announce an emergency state\n**Divert** — change destination to an alternate airport\n**Squawk** — set transponder code\n**Dump fuel** — jettison fuel to reduce landing weight (on equipped aircraft)\n**Depressurize** — controlled or rapid loss of cabin pressure\n**Evacuate** — rapid exit of passengers and crew\n**Ditch** — emergency landing on water\n**Abort** — discontinue a takeoff roll',
       ),
       LessonSection(
         type: LessonSectionType.examples,
-        title: 'Emergency Communication',
+        title: 'Acil Durum İletişimi',
         examples: [
           ExampleSentence(
             sentence: 'The captain declared a MAYDAY due to rapid decompression at FL350.',
@@ -1479,13 +1479,13 @@ class LessonContentData {
       ),
       LessonSection(
         type: LessonSectionType.tip,
-        title: '✈️ Exam Tip',
+        title: '✈️ Sınav İpucu',
         body:
-            '"Incident" vs. "Accident" is a common exam question:\n• **Incident**: something happened but no one died and no major damage occurred\n• **Accident**: death, serious injury, OR substantial damage occurred\n\n"Distress" vs. "Urgency":\n• **Distress (MAYDAY)**: needs help NOW — immediate danger to life\n• **Urgency (PAN-PAN)**: serious concern, but not an immediate threat to life',
+            '"Incident" ve "Accident" arasındaki fark sık sorulan bir sınav konusudur:\n• **Incident (Olay)**: bir şey oldu ama kimse ölmedi ve büyük bir hasar oluşmadı\n• **Accident (Kaza)**: ölüm, ağır yaralanma YA DA önemli hasar meydana geldi\n\n"Distress" ve "Urgency" farkı:\n• **Distress (MAYDAY)**: HEMEN yardım gerekiyor — hayati tehlike\n• **Urgency (PAN-PAN)**: ciddi endişe, ancak ani hayati tehlike yok',
       ),
       LessonSection(
         type: LessonSectionType.practice,
-        title: 'Practice Questions',
+        title: 'Pratik Sorular',
         practiceQuestions: [
           QuestionModel(id: -160, category: QuestionCategory.vocabulary, originalNumber: 310, questionText: 'An occurrence involving an aircraft that results in fatal injury or substantial damage is defined as a/an:', options: ['Incident', 'Accident', 'Emergency', 'Distress'], correctIndex: 1, difficulty: Difficulty.easy),
           QuestionModel(id: -161, category: QuestionCategory.vocabulary, originalNumber: 311, questionText: 'Which word means "to formally announce that an emergency exists"?', options: ['Report', 'Declare', 'Signal', 'Request'], correctIndex: 1, difficulty: Difficulty.easy),
@@ -1501,33 +1501,33 @@ class LessonContentData {
   // ─────────────────────────────────────────────────────────────
   static const _approachLanding = LessonContent(
     id: 'fill_3',
-    title: 'Approach & Landing',
-    subtitle: 'Phraseology for the critical final phase',
+    title: 'Yaklaşma & İniş',
+    subtitle: 'Kritik son faz için ifade kalıpları',
     categoryId: 'fill_blanks',
-    estimatedTime: '10 min',
+    estimatedTime: '10 dk',
     emoji: '🛬',
     sections: [
       LessonSection(
         type: LessonSectionType.intro,
-        title: 'Approach phraseology is highly structured',
+        title: 'Yaklaşma ifade kalıpları yüksek düzeyde yapılandırılmıştır',
         body:
-            'The approach and landing phase uses the most regulated phraseology in aviation. Precise language is essential because misunderstandings during approach have caused accidents.\n\nFill-in-the-blank questions in this area test knowledge of exact ICAO phrases and their correct prepositions and keywords.',
+            'Yaklaşma ve iniş fazı, havacılıkta en çok düzenlenen ifade kalıplarını kullanır. Yaklaşma sırasındaki yanlış anlaşılmalar kazalara neden olduğundan kesin dil şarttır.\n\nBu alandaki boşluk doldurma soruları, tam ICAO ifadelerine ve doğru edatlarla anahtar kelimelerine ilişkin bilgiyi ölçer.',
       ),
       LessonSection(
         type: LessonSectionType.rule,
-        title: '🛬 Approach Clearance Phrases',
+        title: '🛬 Yaklaşma Klirans İfadeleri',
         body:
             '"Cleared **ILS approach** runway 36R"\n"Cleared **visual approach** runway 18L"\n"Cleared **RNAV(GPS) approach** runway 05"\n"**Descend** on the glide path"\n"**Established** on localizer / on the ILS"\n"**Report** outer marker / FAF / visual"\n"**Missed approach** — go around, climb to 4000 feet"\n"**Wind check**: 270/15, **cleared to land**"',
       ),
       LessonSection(
         type: LessonSectionType.rule,
-        title: '📏 Approach Distance & Height',
+        title: '📏 Yaklaşma Mesafesi & Yüksekliği',
         body:
             '**Final approach** — last straight segment to runway\n**Short final** — within 4nm of runway threshold\n**Glide slope** — vertical guidance component of ILS\n**Localizer** — horizontal guidance component of ILS\n**Decision altitude (DA)** — height at which missed approach must be initiated if no visual contact\n**Minimum Descent Altitude (MDA)** — minimum height in non-precision approach\n**Touch-down zone** — first 3,000 feet of runway used for landing',
       ),
       LessonSection(
         type: LessonSectionType.examples,
-        title: 'Approach Phrases',
+        title: 'Yaklaşma İfadeleri',
         examples: [
           ExampleSentence(
             sentence: 'THY123, report established on the ILS runway 36R.',
@@ -1548,13 +1548,13 @@ class LessonContentData {
       ),
       LessonSection(
         type: LessonSectionType.tip,
-        title: '✈️ Key Prepositions',
+        title: '✈️ Temel Edatlar',
         body:
-            'Prepositions are frequently tested in approach phraseology:\n• Cleared **for** ILS approach (not "to")\n• Established **on** the localizer (not "in")\n• Descend **to** 3,000 feet (not "until")\n• Report **at** the outer marker (not "on")\n• Cleared **to land** (two words, not "for landing" in ICAO standard)\n\nMemorise: **"Cleared for approach"** vs. **"Cleared to land"** — different phrases!',
+            'Yaklaşma ifade kalıplarında edatlar sıkça sınanır:\n• Cleared **for** ILS approach ("to" değil)\n• Established **on** the localizer ("in" değil)\n• Descend **to** 3.000 feet ("until" değil)\n• Report **at** the outer marker ("on" değil)\n• Cleared **to land** (iki kelime, ICAO standardında "for landing" değil)\n\nEzberleme: **"Cleared for approach"** vs. **"Cleared to land"** — farklı ifadeler!',
       ),
       LessonSection(
         type: LessonSectionType.practice,
-        title: 'Practice Questions',
+        title: 'Pratik Sorular',
         practiceQuestions: [
           QuestionModel(id: -170, category: QuestionCategory.fillBlanks, originalNumber: 770, questionText: 'THY123, ………… ILS approach runway 36L.', options: ['cleared to', 'cleared for', 'approved for', 'authorized to'], correctIndex: 1, difficulty: Difficulty.easy),
           QuestionModel(id: -171, category: QuestionCategory.fillBlanks, originalNumber: 771, questionText: 'Report ………… on the localizer runway 18R.', options: ['positioned', 'established', 'confirmed', 'settled'], correctIndex: 1, difficulty: Difficulty.easy),
@@ -1570,33 +1570,33 @@ class LessonContentData {
   // ─────────────────────────────────────────────────────────────
   static const _metarTranslation = LessonContent(
     id: 'translation_2',
-    title: 'METAR Translation',
-    subtitle: 'Decoding weather reports in plain English',
+    title: 'METAR Çevirisi',
+    subtitle: 'Hava raporlarını doğru Türkçeye çevirme',
     categoryId: 'translation',
-    estimatedTime: '11 min',
+    estimatedTime: '11 dk',
     emoji: '📊',
     sections: [
       LessonSection(
         type: LessonSectionType.intro,
-        title: 'Every METAR element has a precise meaning',
+        title: 'Her METAR unsurunun kesin bir anlamı vardır',
         body:
-            'Translation questions often ask you to interpret METAR or TAF codes and express them in plain English — or to identify the correct Turkish translation of a weather observation.\n\nEach element of a METAR appears in fixed order and has an exact meaning. Getting the order wrong or misinterpreting an abbreviation loses marks.',
+            'Çeviri soruları çoğunlukla METAR veya TAF kodlarını yorumlamanızı ve düz dille ifade etmenizi — ya da bir hava gözleminin doğru Türkçe çevirisini belirlemenizi ister.\n\nBir METAR\'in her unsuru sabit sırayla gelir ve kesin bir anlam taşır. Sırayı karıştırmak veya bir kısaltmayı yanlış yorumlamak puan kaybettirir.',
       ),
       LessonSection(
         type: LessonSectionType.rule,
-        title: '🌦️ METAR Element Order',
+        title: '🌦️ METAR Unsur Sırası',
         body:
             '**METAR** LTBA **120850Z** **35015KT** **9999** **FEW030** **18/08** **Q1013** **NOSIG**\n\n1. Station ICAO code: LTBA (Istanbul)\n2. Date/Time: 12th at 08:50 UTC\n3. Wind: 350°/15 knots\n4. Visibility: 9999 = 10km or more\n5. Cloud: FEW at 3,000ft AGL\n6. Temp/Dewpoint: 18°C / 8°C\n7. QNH: 1013 hPa\n8. Trend: NOSIG = no significant change',
       ),
       LessonSection(
         type: LessonSectionType.rule,
-        title: '☁️ Cloud Cover Codes',
+        title: '☁️ Bulut Örtüsü Kodları',
         body:
             '**FEW** — 1–2 oktas (1/8–2/8 coverage)\n**SCT (Scattered)** — 3–4 oktas\n**BKN (Broken)** — 5–7 oktas\n**OVC (Overcast)** — 8 oktas (full coverage)\n**NSC** — No Significant Cloud\n**NCD** — No Cloud Detected (auto station)\n\nHeight is given in hundreds of feet AGL:\n"BKN015" = broken cloud at 1,500 feet AGL\n"OVC008" = overcast at 800 feet AGL',
       ),
       LessonSection(
         type: LessonSectionType.examples,
-        title: 'Translation Examples',
+        title: 'Çeviri Örnekleri',
         examples: [
           ExampleSentence(
             sentence: 'OVC008 means overcast cloud at 800 feet above aerodrome level.',
@@ -1617,13 +1617,13 @@ class LessonContentData {
       ),
       LessonSection(
         type: LessonSectionType.tip,
-        title: '✈️ Exam Tip',
+        title: '✈️ Sınav İpucu',
         body:
-            'Most common METAR translation errors:\n• **9999** = 10km or more visibility (NOT "9,999 meters exactly")\n• **FEW030** = clouds at 3,000ft (add two zeros to METAR cloud height)\n• **18/08** = temperature 18°C, dewpoint 8°C (NOT "18 to 8")\n• **NOSIG** = no significant change expected in next 2 hours (NOT "no signal")\n• Wind "35015KT" = FROM 350°, speed 15 knots (direction is WHERE wind comes FROM)',
+            'En yaygın METAR çeviri hataları:\n• **9999** = 10 km veya daha fazla görüş (YANLIŞ: "tam 9.999 metre")\n• **FEW030** = 3.000 ft\'te bulut (METAR bulut yüksekliğinin sonuna iki sıfır ekle)\n• **18/08** = sıcaklık 18°C, çiğ noktası 8°C (YANLIŞ: "18\'den 8\'e")\n• **NOSIG** = önümüzdeki 2 saat için önemli değişiklik beklenmiyor (YANLIŞ: "sinyal yok")\n• Rüzgar "35015KT" = 350°\'DEN geliyor, hız 15 knot (yön, rüzgarın NEREDEN geldiğini gösterir)',
       ),
       LessonSection(
         type: LessonSectionType.practice,
-        title: 'Practice Questions',
+        title: 'Pratik Sorular',
         practiceQuestions: [
           QuestionModel(id: -180, category: QuestionCategory.translation, originalNumber: 440, questionText: 'In a METAR, "BKN015" means:', options: ['Blue sky with no clouds at 1,500 feet', 'Broken cloud layer at 1,500 feet AGL', 'Blocked visibility below 1,500 feet', 'Best conditions at 1,500 feet'], correctIndex: 1, difficulty: Difficulty.easy),
           QuestionModel(id: -181, category: QuestionCategory.translation, originalNumber: 441, questionText: '"35015KT" in a METAR means the wind is:', options: ['From 035° at 015 knots', 'From 350° at 15 knots', 'To 350° at 15 knots', 'Variable at 35–015 knots'], correctIndex: 1, difficulty: Difficulty.easy),
@@ -1639,27 +1639,27 @@ class LessonContentData {
   // ─────────────────────────────────────────────────────────────
   static const _atisReading = LessonContent(
     id: 'reading_3',
-    title: 'ATIS Messages',
-    subtitle: 'Reading and understanding terminal information',
+    title: 'ATIS Mesajları',
+    subtitle: 'Terminal bilgilerini okuma ve anlama',
     categoryId: 'reading',
-    estimatedTime: '9 min',
+    estimatedTime: '9 dk',
     emoji: '📻',
     sections: [
       LessonSection(
         type: LessonSectionType.intro,
-        title: 'ATIS delivers critical pre-flight information',
+        title: 'ATIS kritik uçuş öncesi bilgileri sunar',
         body:
-            'ATIS (Automatic Terminal Information Service) broadcasts updated airport information continuously. Pilots must obtain the current ATIS information before contacting ATC and must confirm they have received it with the ATIS letter (Alpha, Bravo, Charlie…).\n\nReading comprehension questions often use ATIS-style texts and ask you to extract specific information.',
+            'ATIS (Otomatik Terminal Bilgi Servisi) güncel havalimanı bilgilerini kesintisiz yayınlar. Pilotlar ATC ile temasa geçmeden önce güncel ATIS bilgisini almalı ve ATIS harfiyle (Alfa, Bravo, Charlie…) aldıklarını teyit etmelidir.\n\nOkuma anlama soruları çoğunlukla ATIS tarzı metinler kullanarak belirli bilgileri çıkarmanızı ister.',
       ),
       LessonSection(
         type: LessonSectionType.rule,
-        title: '📻 Standard ATIS Content',
+        title: '📻 Standart ATIS İçeriği',
         body:
-            'An ATIS broadcast includes (in order):\n1. Airport name and ATIS information letter\n2. Observation time\n3. Active runway(s) in use\n4. Approach type in use (ILS/VOR/Visual)\n5. Wind direction and speed\n6. Visibility\n7. Weather phenomena\n8. Cloud layers\n9. Temperature and dewpoint\n10. QNH\n11. NOTAMs/special notices\n12. "Advise on initial contact you have information [letter]"',
+            'Bir ATIS yayını şu sırayla bilgileri içerir:\n1. Havalimanı adı ve ATIS bilgi harfi\n2. Gözlem saati\n3. Kullanılan aktif pist(ler)\n4. Kullanılan yaklaşma tipi (ILS/VOR/Visual)\n5. Rüzgar yönü ve hızı\n6. Görüş\n7. Hava olayları\n8. Bulut katmanları\n9. Sıcaklık ve çiğ noktası\n10. QNH\n11. NOTAM\'lar/özel duyurular\n12. "Advise on initial contact you have information [letter]"',
       ),
       LessonSection(
         type: LessonSectionType.examples,
-        title: 'Sample ATIS Passage',
+        title: 'Örnek ATIS Metni',
         examples: [
           ExampleSentence(
             sentence: 'Istanbul Atatürk information Alpha. Time 0650 UTC. Runway in use: 36L for landing, 36R for takeoff.',
@@ -1680,13 +1680,13 @@ class LessonContentData {
       ),
       LessonSection(
         type: LessonSectionType.tip,
-        title: '✈️ Reading Strategy',
+        title: '✈️ Okuma Stratejisi',
         body:
-            'For ATIS-type reading questions:\n• The **ATIS letter** changes every 30–60 minutes — questions may ask "what does Bravo indicate?"\n• **Runway in use** may differ for arrivals and departures\n• **Transition level** = lowest usable flight level above the transition altitude\n• **Special notices** at the end often contain the detail that is tested\n• Questions often ask: "According to the ATIS, which runway is available for…?" — read carefully',
+            'ATIS türü okuma soruları için:\n• **ATIS harfi** her 30-60 dakikada değişir — sorular "Bravo ne anlama gelir?" diye sorabilir\n• **Kullanılan pist** varışlar ve kalkışlar için farklı olabilir\n• **Geçiş seviyesi** = geçiş irtifasının üzerindeki en düşük kullanılabilir uçuş seviyesi\n• Sondaki **özel bildirimler** çoğunlukla sınanan ayrıntıyı içerir\n• Sorular genellikle "ATIS\'e göre … için hangi pist kullanılabilir?" diye sorar',
       ),
       LessonSection(
         type: LessonSectionType.practice,
-        title: 'Practice Questions',
+        title: 'Pratik Sorular',
         body: 'Read the ATIS below:\n\n"Istanbul Atatürk information Bravo. Time 0820 UTC. Runway 18R in use for arrivals and departures. ILS approach in use. Wind 190 degrees 8 knots. Visibility 6 kilometers in mist. Cloud BKN012. Temperature 14, dewpoint 13. QNH 1009. Runway 18L closed for maintenance. Advise on initial contact you have information Bravo."',
         practiceQuestions: [
           QuestionModel(id: -190, category: QuestionCategory.reading, originalNumber: 620, questionText: 'According to the ATIS, which runway is currently available for arrivals?', options: ['18L', '36R', '18R', 'Both 18L and 18R'], correctIndex: 2, difficulty: Difficulty.easy),
@@ -1703,32 +1703,32 @@ class LessonContentData {
   // ─────────────────────────────────────────────────────────────
   static const _articlesAviation = LessonContent(
     id: 'grammar_6',
-    title: 'Articles in Aviation',
-    subtitle: 'a, an, the — and when to use zero article',
+    title: 'Havacılıkta Artikeller',
+    subtitle: 'a, an, the — ve sıfır artikel ne zaman kullanılır',
     categoryId: 'grammar',
-    estimatedTime: '10 min',
+    estimatedTime: '10 dk',
     emoji: '📖',
     sections: [
       LessonSection(
         type: LessonSectionType.intro,
-        title: 'Articles signal definiteness and context',
+        title: 'Artikeller belirlilik ve bağlamı gösterir',
         body:
-            'While articles seem simple, they are among the most frequently tested grammar points in aviation English because technical documents, manuals, and ATC communications all follow specific article usage patterns.\n\nA wrong article changes the meaning: "**a** hydraulic pump" (any one) vs. "**the** hydraulic pump" (a specific one we are discussing).',
+            'Artikeller basit görünse de, teknik belgeler, kılavuzlar ve ATC iletişimleri belirli artikel kullanım kalıplarını izlediğinden havacılık İngilizcesinde en sık sınanan dilbilgisi noktalarından biridir.\n\nYanlış bir artikel anlamı değiştirir: "**a** hydraulic pump" (herhangi bir hidrolik pompa) vs. "**the** hydraulic pump" (konuştuğumuz belirli bir pompa).',
       ),
       LessonSection(
         type: LessonSectionType.animation,
-        title: 'Article usage guide',
+        title: 'Artikel kullanım kılavuzu',
         animationType: GrammarAnimationType.articleUsage,
       ),
       LessonSection(
         type: LessonSectionType.rule,
-        title: 'Article Rules',
+        title: 'Artikel Kuralları',
         body:
             '**"a / an"** — indefinite: first mention, one of many, job/type\n→ "A hydraulic pump pressurizes the fluid."\n→ "He is a licensed aircraft engineer."\n\n**"the"** — definite: previously mentioned, unique, specific system\n→ "The hydraulic pump (mentioned before) failed."\n→ "The captain (there is only one) made the decision."\n\n**Zero article** — general statements, uncountable nouns, proper names\n→ "Aviation safety depends on training." (general)\n→ "ILS runway 36L is available." (proper name)',
       ),
       LessonSection(
         type: LessonSectionType.examples,
-        title: 'Articles in Technical Texts',
+        title: 'Teknik Metinlerde Artikeller',
         examples: [
           ExampleSentence(
             sentence: 'The aircraft is equipped with a hydraulic system that powers the flight controls.',
@@ -1749,13 +1749,13 @@ class LessonContentData {
       ),
       LessonSection(
         type: LessonSectionType.tip,
-        title: '✈️ Exam Tip',
+        title: '✈️ Sınav İpucu',
         body:
-            'Use "an" (not "a") before vowel **sounds** — not just vowel letters:\n• **an** ILS approach (I = vowel sound)\n• **an** RNAV procedure (R = consonant sound, but "RNAV" starts with vowel sound "ar")\n• **a** NOTAM (N = consonant sound)\n• **a** VOR (V = consonant sound)\n\nZero article with aviation systems in general context:\n✓ "Hydraulic systems are used in …" (NOT "The hydraulic systems")\n✓ "ILS provides guidance" (NOT "The ILS provides")',
+            'Ünlü **seslerden** önce "a" değil "an" kullanın — yalnızca ünlü harflerden değil:\n• **an** ILS approach (I = ünlü ses)\n• **an** RNAV procedure (R = ünsüz harf, ama "RNAV" "ar" ünlü sesiyle başlar)\n• **a** NOTAM (N = ünsüz ses)\n• **a** VOR (V = ünsüz ses)\n\nGenel bağlamda havacılık sistemleriyle sıfır artikel:\n✓ "Hydraulic systems are used in..." ("The hydraulic systems" değil)\n✓ "ILS provides guidance" ("The ILS provides" değil)',
       ),
       LessonSection(
         type: LessonSectionType.practice,
-        title: 'Practice Questions',
+        title: 'Pratik Sorular',
         practiceQuestions: [
           QuestionModel(id: -200, category: QuestionCategory.grammar, originalNumber: 220, questionText: 'The aircraft is fitted with ………… auxiliary power unit.', options: ['a', 'an', 'the', '—'], correctIndex: 1, difficulty: Difficulty.easy),
           QuestionModel(id: -201, category: QuestionCategory.grammar, originalNumber: 221, questionText: '………… captain must complete a pre-flight inspection before every departure.', options: ['A', 'An', 'The', '—'], correctIndex: 0, difficulty: Difficulty.easy),
@@ -1767,37 +1767,37 @@ class LessonContentData {
   );
 
   // ─────────────────────────────────────────────────────────────
-  // LESSON I4 — Instrument & Navigation Systems
+  // LESSON I4 — Instrument & Navigasyon Sistemleri
   // ─────────────────────────────────────────────────────────────
   static const _instrumentSystems = LessonContent(
     id: 'vocab_6',
-    title: 'Instrument Systems',
-    subtitle: 'Avionics and navigation instrument vocabulary',
+    title: 'Enstrüman Sistemleri',
+    subtitle: 'Aviyonik ve navigasyon enstrümanı kelime bilgisi',
     categoryId: 'vocabulary',
-    estimatedTime: '11 min',
+    estimatedTime: '11 dk',
     emoji: '🎛️',
     sections: [
       LessonSection(
         type: LessonSectionType.intro,
-        title: 'Modern aircraft rely on complex instrument systems',
+        title: 'Modern uçaklar karmaşık enstrüman sistemlerine dayanır',
         body:
-            'Avionics vocabulary appears in reading comprehension, vocabulary fill-in, and sentence completion questions. Understanding what each instrument does and how it is described in manuals is essential for intermediate and advanced levels.',
+            'Aviyonik kelime bilgisi okuma anlama, kelime doldurma ve cümle tamamlama sorularında karşınıza çıkar. Her enstrümanın ne yaptığını ve kılavuzlarda nasıl tanımlandığını anlamak orta ve ileri düzey için şarttır.',
       ),
       LessonSection(
         type: LessonSectionType.rule,
-        title: '✈️ Primary Flight Instruments',
+        title: '✈️ Temel Uçuş Enstrümanları',
         body:
             '**ADI (Attitude Director Indicator)** — shows pitch and bank\n**HSI (Horizontal Situation Indicator)** — combined heading + navigation\n**VSI (Vertical Speed Indicator)** — rate of climb/descent in feet per minute\n**ASI (Airspeed Indicator)** — shows IAS in knots\n**Altimeter** — shows altitude using static pressure\n**Turn & Slip Indicator** — shows rate of turn and coordination',
       ),
       LessonSection(
         type: LessonSectionType.rule,
-        title: '🛰️ Navigation Systems',
+        title: '🛰️ Navigasyon Sistemleri',
         body:
             '**FMS (Flight Management System)** — computerized navigation, flight planning, and performance\n**GPS (Global Positioning System)** — satellite-based positioning\n**IRS/INS (Inertial Reference System)** — self-contained navigation using accelerometers\n**DME (Distance Measuring Equipment)** — ground-based range measurement\n**ADF (Automatic Direction Finder)** — homes to NDB stations\n**TCAS II** — provides Resolution Advisories (RA) to avoid traffic',
       ),
       LessonSection(
         type: LessonSectionType.examples,
-        title: 'Navigation System Context',
+        title: 'Bağlamda Navigasyon Sistemleri',
         examples: [
           ExampleSentence(
             sentence: 'The FMS automatically calculates the most fuel-efficient cruise altitude.',
@@ -1818,13 +1818,13 @@ class LessonContentData {
       ),
       LessonSection(
         type: LessonSectionType.tip,
-        title: '✈️ Exam Tip',
+        title: '✈️ Sınav İpucu',
         body:
-            'Common exam confusion pairs:\n• **IAS** (Indicated Airspeed) vs. **TAS** (True Airspeed) — TAS increases with altitude\n• **FMS** manages the whole route | **autopilot** controls the aircraft\n• **TCAS RA** = mandatory evasive action | **TCAS TA** = Traffic Advisory (awareness only)\n• **DME** measures **slant range** (not ground distance)\n• **IRS** is self-contained (no external signals) | **GPS** needs satellites',
+            'Sınavda sık karıştırılan çiftler:\n• **IAS** (Gösterge Hava Hızı) vs. **TAS** (Gerçek Hava Hızı) — TAS irtifayla artar\n• **FMS** tüm rotayı yönetir | **otopilot** uçağı kontrol eder\n• **TCAS RA** = zorunlu kaçınma manevrası | **TCAS TA** = Trafik Tavsiyesi (yalnızca farkındalık)\n• **DME** **eğim mesafesini** ölçer (yer mesafesi değil)\n• **IRS** bağımsızdır (dış sinyal gerekmez) | **GPS** uyduları gerektirir',
       ),
       LessonSection(
         type: LessonSectionType.practice,
-        title: 'Practice Questions',
+        title: 'Pratik Sorular',
         practiceQuestions: [
           QuestionModel(id: -210, category: QuestionCategory.vocabulary, originalNumber: 320, questionText: 'What does VSI measure?', options: ['Vertical separation from terrain', 'Rate of climb or descent in feet per minute', 'Vertical speed of ground traffic', 'Variance in static pressure'], correctIndex: 1, difficulty: Difficulty.easy),
           QuestionModel(id: -211, category: QuestionCategory.vocabulary, originalNumber: 321, questionText: 'A TCAS Resolution Advisory (RA) requires the crew to:', options: ['Monitor the traffic only', 'Take immediate evasive action as directed', 'Contact ATC for guidance', 'Reduce speed only'], correctIndex: 1, difficulty: Difficulty.medium),
@@ -1840,33 +1840,33 @@ class LessonContentData {
   // ─────────────────────────────────────────────────────────────
   static const _flightPlanReading = LessonContent(
     id: 'reading_4',
-    title: 'Flight Plan Documents',
-    subtitle: 'Reading ICAO flight plan forms and OFPs',
+    title: 'Uçuş Planı Belgeleri',
+    subtitle: 'ICAO uçuş planı formlarını ve OFP\'leri okuma',
     categoryId: 'reading',
-    estimatedTime: '12 min',
+    estimatedTime: '12 dk',
     emoji: '📋',
     sections: [
       LessonSection(
         type: LessonSectionType.intro,
-        title: 'Flight plans encode critical operational data',
+        title: 'Uçuş planları kritik operasyonel veri içerir',
         body:
-            'ICAO flight plan forms (ICAO Doc 4444, Appendix 2) and Operational Flight Plans (OFPs) contain dense coded information. Reading comprehension questions at this level require you to extract specific data from these documents and understand their structure.',
+            'ICAO uçuş planı formları (ICAO Doc 4444, Ek 2) ve Operasyonel Uçuş Planları (OFP\'ler) yoğun kodlanmış bilgi içerir. Bu düzeydeki okuma anlama soruları, bu belgelerden belirli verileri çıkarmanızı ve yapılarını anlamanızı gerektirir.',
       ),
       LessonSection(
         type: LessonSectionType.rule,
-        title: '📋 ICAO Flight Plan Fields',
+        title: '📋 ICAO Uçuş Planı Alanları',
         body:
             '**Field 7** — Aircraft ID (call sign): "THY123"\n**Field 8** — Flight rules (I=IFR, V=VFR) and type (S=scheduled): "IS"\n**Field 9** — Number and type of aircraft / wake turbulence: "B738/M"\n**Field 10** — Equipment: "SDFGRY/S" (comms/nav/approach/SSR)\n**Field 15** — Route: SID + airways + waypoints + STAR\n**Field 16** — Destination + EET + alternates\n**Field 18** — Other information (PBN, DAT, SUR, etc.)',
       ),
       LessonSection(
         type: LessonSectionType.rule,
-        title: '⚠️ Wake Turbulence Categories',
+        title: '⚠️ İz Türbülanssı Kategorileri',
         body:
             '**J — Super** (A380, AN-124): wingspan >80m\n**H — Heavy** (B747, B777, A330): MTOW >136,000kg\n**M — Medium** (B737, A320): MTOW 7,000–136,000kg\n**L — Light** (Cessna, DA-42): MTOW <7,000kg\n\nSeparation minima increase behind heavier aircraft:\n• H behind J: 6nm\n• M behind H: 5nm\n• L behind H: 6nm\n\nWake turbulence is most severe at **low speed, high angle of attack** (on approach)',
       ),
       LessonSection(
         type: LessonSectionType.examples,
-        title: 'Flight Plan Data',
+        title: 'Uçuş Planı Verisi',
         examples: [
           ExampleSentence(
             sentence: 'B738/M in the flight plan means Boeing 737-800 with Medium wake turbulence category.',
@@ -1882,13 +1882,13 @@ class LessonContentData {
       ),
       LessonSection(
         type: LessonSectionType.tip,
-        title: '✈️ Exam Tip',
+        title: '✈️ Sınav İpucu',
         body:
-            'Flight plan questions often focus on:\n• **Aircraft type / wake category** — know ICAO aircraft designators\n• **EET** (Estimated Elapsed Time) vs. **ETA** (Estimated Time of Arrival)\n• **Alternate airport** requirements — when is one required?\n• **PBN** (Performance Based Navigation) codes in Field 18\n\nCommon trick: "EOBT" = Estimated Off-Blocks Time (when pushback starts), NOT takeoff time.',
+            'Uçuş planı soruları genellikle şunlara odaklanır:\n• **Uçak tipi / iz türbülanssı kategorisi** — ICAO uçak tanımlayıcılarını bilin\n• **EET** (Tahmini Geçen Süre) vs. **ETA** (Tahmini Varış Saati)\n• **Yedek havalimanı** gereksinimleri — ne zaman gerekli?\n• Alan 18\'deki **PBN** (Performansa Dayalı Seyrsüsefer) kodları\n\nYaygın tuzak: "EOBT" = Tahmini Blok Ayrılış Saati (geri itme başladığında), KALKIŞ saati değil.',
       ),
       LessonSection(
         type: LessonSectionType.practice,
-        title: 'Practice Questions',
+        title: 'Pratik Sorular',
         practiceQuestions: [
           QuestionModel(id: -220, category: QuestionCategory.reading, originalNumber: 630, questionText: 'In an ICAO flight plan, "H" in the wake turbulence field means:', options: ['High altitude aircraft', 'Heavy aircraft (MTOW > 136,000 kg)', 'Helicopter', 'High-speed aircraft'], correctIndex: 1, difficulty: Difficulty.easy),
           QuestionModel(id: -221, category: QuestionCategory.reading, originalNumber: 631, questionText: 'Field 15 of an ICAO flight plan contains:', options: ['Aircraft identification', 'The planned route', 'Equipment capabilities', 'Emergency information'], correctIndex: 1, difficulty: Difficulty.medium),
@@ -1904,33 +1904,33 @@ class LessonContentData {
   // ─────────────────────────────────────────────────────────────
   static const _engineFailureLanguage = LessonContent(
     id: 'fill_4',
-    title: 'Engine Failure Procedures',
-    subtitle: 'Language patterns in abnormal and emergency checklists',
+    title: 'Motor Arızası Prosedürleri',
+    subtitle: 'Anormal ve acil kontrol listelerindeki dil kalıpları',
     categoryId: 'fill_blanks',
-    estimatedTime: '10 min',
+    estimatedTime: '10 dk',
     emoji: '🔥',
     sections: [
       LessonSection(
         type: LessonSectionType.intro,
-        title: 'Abnormal checklists have fixed language patterns',
+        title: 'Anormal kontrol listelerinin sabit dil kalıpları vardır',
         body:
-            'Engine failure and other abnormal/emergency checklists use the most precise language in aviation. Fill-in-the-blank questions from this area test both technical knowledge and vocabulary accuracy.\n\nThe correct procedure verb is critical — using the wrong action word is never acceptable in aviation.',
+            'Motor arızası ve diğer anormal/acil durum kontrol listeleri havacılıktaki en kesin dili kullanır. Bu alandan gelen boşluk doldurma soruları hem teknik bilgiyi hem de kelime doğruluğunu sınar.\n\nDoğru prosedür fiili kritik öneme sahiptir — yanlış eylem kelimesi kullanmak havacılıkta asla kabul edilemez.',
       ),
       LessonSection(
         type: LessonSectionType.rule,
-        title: '🔥 Engine Failure Vocabulary',
+        title: '🔥 Motor Arızası Kelime Bilgisi',
         body:
             '**Thrust lever** — controls engine power (throttle)\n**Fuel control lever** — starts/stops fuel to engine\n**Engine fire handle** — emergency shut-off and fire suppression control\n**HP fuel cock / Shutoff valve** — high-pressure fuel control\n**N1 / N2** — fan speed (%) / core speed (%)\n**EGT** — Exhaust Gas Temperature\n**ITT** — Interstage Turbine Temperature\n**Surge** — compressor stall; loud bang, rpm fluctuation',
       ),
       LessonSection(
         type: LessonSectionType.rule,
-        title: '📋 Checklist Action Patterns',
+        title: '📋 Kontrol Listesi Eylem Kalıpları',
         body:
-            'Engine failure checklist sequence uses these exact phrases:\n\n"Engine fire, failure or severe damage — **ECAM ACTIONS**... **PERFORM**"\n"Thrust lever — **IDLE**"\n"If engine does not recover — engine **MASTER switch** — **OFF**"\n"Engine fire pushbutton — **PUSH**"\n"If fire not extinguished — **DISCHARGE** second agent"\n"Land at nearest suitable aerodrome — **CONSIDER**"\n\nKey pattern verbs: **idle, push, pull, discharge, confirm, verify, cross-check**',
+            'Motor arızası kontrol listesi sırası şu kesin ifadeleri kullanır:\n\n"Engine fire, failure or severe damage — **ECAM ACTIONS**… **PERFORM**"\n"Thrust lever — **IDLE**"\n"Motor iyileşmiyorsa — engine **MASTER switch** — **OFF**"\n"Engine fire pushbutton — **PUSH**"\n"Yangın sönmezse — ikinci ajanı **DISCHARGE** et"\n"En yakın uygun havalimanına in — **CONSIDER**"\n\nAnahtar kalıp fiilleri: **idle, push, pull, discharge, confirm, verify, cross-check**',
       ),
       LessonSection(
         type: LessonSectionType.examples,
-        title: 'Abnormal Checklist Language',
+        title: 'Anormal Kontrol Listesi Dili',
         examples: [
           ExampleSentence(
             sentence: 'In the event of an engine fire, the crew must pull the engine fire handle.',
@@ -1951,13 +1951,13 @@ class LessonContentData {
       ),
       LessonSection(
         type: LessonSectionType.tip,
-        title: '✈️ Exam Tip',
+        title: '✈️ Sınav İpucu',
         body:
-            'Checklist action verbs that are tested:\n• **Pull** fire handle (not "activate" or "turn")\n• **Discharge** extinguisher (not "release" or "fire")\n• **Cross-check** — never skip this step in exams\n• **Monitor** vs. **Check**: monitoring is continuous; checking is a single action\n• "Land at nearest suitable" ≠ "divert immediately" — the crew must assess "suitability"',
+            'Sınanan kontrol listesi eylem fiilleri:\n• **Pull** fire handle ("activate" veya "turn" değil — yangın kolunu **çek**)\n• **Discharge** extinguisher ("release" veya "fire" değil — söndürücüyü **deşarj et**)\n• **Cross-check** — sınavda bu adımı asla atlama\n• **Monitor** vs. **Check**: izleme süreklidir; kontrol tek bir eylemdir\n• "Land at nearest suitable" ≠ "hemen saptır" — ekip "uygunluğu" değerlendirmelidir',
       ),
       LessonSection(
         type: LessonSectionType.practice,
-        title: 'Practice Questions',
+        title: 'Pratik Sorular',
         practiceQuestions: [
           QuestionModel(id: -230, category: QuestionCategory.fillBlanks, originalNumber: 780, questionText: 'In the event of an engine fire, the fire handle should be ………… after engine shutdown.', options: ['pushed', 'pulled', 'turned', 'activated'], correctIndex: 1, difficulty: Difficulty.medium),
           QuestionModel(id: -231, category: QuestionCategory.fillBlanks, originalNumber: 781, questionText: 'Before performing any engine shutdown action, the crew should ………… the affected engine.', options: ['turn off', 'confirm', 'cross-check', 'identify'], correctIndex: 2, difficulty: Difficulty.medium),
@@ -1973,27 +1973,27 @@ class LessonContentData {
   // ─────────────────────────────────────────────────────────────
   static const _opsManualTranslation = LessonContent(
     id: 'translation_3',
-    title: 'Operations Manual Language',
-    subtitle: 'Translating formal operations and maintenance texts',
+    title: 'Operasyon Kılavuzu Dili',
+    subtitle: 'Resmi operasyon ve bakım metinlerini çevirme',
     categoryId: 'translation',
-    estimatedTime: '11 min',
+    estimatedTime: '11 dk',
     emoji: '📕',
     sections: [
       LessonSection(
         type: LessonSectionType.intro,
-        title: 'Formal aviation documents have specific language patterns',
+        title: 'Resmi havacılık belgelerinin özel dil kalıpları vardır',
         body:
-            'Operations manuals, maintenance manuals (AMM), and airworthiness directives use formal English with precise legal and technical implications. Translation questions at this level require understanding not just the words, but the **regulatory intent** behind them.',
+            'Operasyon kılavuzları, bakım kılavuzları (AMM) ve uçuşa elverişlilik direktifleri, kesin hukuki ve teknik çıkarımlar içeren resmi İngilizce kullanır. Bu düzeydeki çeviri soruları, yalnızca kelimeleri değil, arkarındaki **düzenleyici amacı** da anlamayı gerektirir.',
       ),
       LessonSection(
         type: LessonSectionType.rule,
-        title: '📕 Regulatory Language',
+        title: '📕 Düzenleyici Dil',
         body:
             '**Shall** — mandatory requirement (legal obligation in ICAO documents)\n**Should** — recommended practice (not legally binding, but expected)\n**May** — permitted (optional)\n**Must** — mandatory (operational context, not formal ICAO legal text)\n\n**Compliance** — acting in accordance with a regulation\n**In accordance with (IAW)** — following specified requirements\n**Subject to** — conditional upon something\n**Notwithstanding** — despite; even though\n**Hereinafter** — from this point forward in the document',
       ),
       LessonSection(
         type: LessonSectionType.examples,
-        title: 'Manual Language Examples',
+        title: 'Kılavuz Dili Örnekleri',
         examples: [
           ExampleSentence(
             sentence: 'All maintenance shall be carried out by qualified personnel in accordance with the approved data.',
@@ -2014,13 +2014,13 @@ class LessonContentData {
       ),
       LessonSection(
         type: LessonSectionType.tip,
-        title: '✈️ Translation Tips',
+        title: '✈️ Çeviri İpuçları',
         body:
-            'Critical translation distinctions:\n• "**shall**" in ICAO docs ≠ "will" (future) — it means **mandatory**\n• "**notwithstanding**" ≠ "noting" — it means **despite** or **regardless of**\n• "**in the event of**" = "eğer … olursa/durumunda" (conditional)\n• "**prior to**" = "…dan önce" (before) — formal version of "before"\n• "**subsequent to**" = "…dan sonra" (after) — formal version of "after"',
+            'Önemli çeviri ayrımları:\n• ICAO belgelerinde "**shall**" ≠ "will" (gelecek) — **zorunlu** anlamına gelir\n• "**notwithstanding**" ≠ "noting" — **rağmen** veya **ne olursa olsun** anlamına gelir\n• "**in the event of**" = "eğer … olursa/durumunda" (şartlı)\n• "**prior to**" = "…dan önce" (before ifadesinin resmi hali)\n• "**subsequent to**" = "…dan sonra" (after ifadesinin resmi hali)',
       ),
       LessonSection(
         type: LessonSectionType.practice,
-        title: 'Practice Questions',
+        title: 'Pratik Sorular',
         practiceQuestions: [
           QuestionModel(id: -240, category: QuestionCategory.translation, originalNumber: 450, questionText: '"All crew members shall complete the emergency training" — "shall" in this context means:', options: ['Will possibly complete', 'Are encouraged to complete', 'Must complete (mandatory)', 'Should ideally complete'], correctIndex: 2, difficulty: Difficulty.medium),
           QuestionModel(id: -241, category: QuestionCategory.translation, originalNumber: 451, questionText: '"Notwithstanding the MEL entry, the captain must assess airworthiness" correctly translates as:', options: ['Because of the MEL entry, the captain must assess', 'Despite the MEL entry, the captain must still assess', 'The MEL entry prevents the captain from assessing', 'After the MEL entry, the captain will assess'], correctIndex: 1, difficulty: Difficulty.hard),
@@ -2036,33 +2036,33 @@ class LessonContentData {
   // ─────────────────────────────────────────────────────────────
   static const _complexStructures = LessonContent(
     id: 'grammar_7',
-    title: 'Complex Sentence Structures',
-    subtitle: 'Relative clauses, participles, and inversion',
+    title: 'Karmaşık Cümle Yapıları',
+    subtitle: 'Sıfat cümleleri, ortaçlar ve devrik yapılar',
     categoryId: 'grammar',
-    estimatedTime: '13 min',
+    estimatedTime: '13 dk',
     emoji: '🧩',
     sections: [
       LessonSection(
         type: LessonSectionType.intro,
-        title: 'Advanced texts use complex grammatical structures',
+        title: 'İleri metinler karmaşık dilbilgisi yapıları kullanır',
         body:
-            'Aviation documents, accident reports, and ICAO publications use complex sentence structures that combine multiple clauses. At the advanced level, you must handle these accurately in both comprehension and production questions.',
+            'Havacılık belgeleri, kaza raporları ve ICAO yayınları, birden fazla yan cümleyi bir araya getiren karmaşık cümle yapıları kullanır. İleri düzeyde, hem anlama hem de üretim sorularında bunları doğru bir şekilde ele almalısınız.',
       ),
       LessonSection(
         type: LessonSectionType.rule,
-        title: 'Relative Clauses',
+        title: 'Sıfat Cümleleri',
         body:
             '**Defining** (no commas): identifies which one\n→ "The component **that failed** was the hydraulic pump."\n\n**Non-defining** (with commas): adds extra information\n→ "The hydraulic pump, **which had just been serviced**, failed."\n\n**Reduced relative clause** (participle phrase):\n→ "The pilot **flying the aircraft** reported vibration." (= who was flying)\n→ "The component **installed last week** is defective." (= that was installed)',
       ),
       LessonSection(
         type: LessonSectionType.rule,
-        title: 'Participial Phrases & Inversion',
+        title: 'Ortaç İfadeleri & Devrik Yapı',
         body:
             '**Present participle** (active, simultaneous):\n→ "**Having received** the clearance, the crew began the takeoff roll."\n\n**Past participle** (passive, completed first):\n→ "**Notified by ATC**, the pilot diverted to the alternate."\n\n**Negative inversion** (formal/reports):\n→ "**Under no circumstances should** the aircraft depart without a clearance."\n→ "**Not until the checks were completed** did the captain approve departure."',
       ),
       LessonSection(
         type: LessonSectionType.examples,
-        title: 'Complex Structure Examples',
+        title: 'Karmaşık Yapı Örnekleri',
         examples: [
           ExampleSentence(
             sentence: 'The maintenance technician, having completed all required inspections, signed the aircraft log.',
@@ -2078,13 +2078,13 @@ class LessonContentData {
       ),
       LessonSection(
         type: LessonSectionType.tip,
-        title: '✈️ Exam Tip',
+        title: '✈️ Sınav İpucu',
         body:
-            'Inversion signals in exam questions:\n• "Under no circumstances…" → should/must come before subject\n• "Not until…" → did/could comes before subject in main clause\n• "Only after…" → inversion in main clause\n\nParticiple phrases — check the subject:\n• "**Having landed**, the aircraft was directed to the gate." ✓ (aircraft landed)\n• "**Having landed**, the gate was assigned." ✗ (gate didn\'t land — dangling participle)',
+            'Sınav sorularında devrik yapı işaretleri:\n• "Under no circumstances…" → yardımcı fiil özneden önce gelmelidir\n• "Not until…" → ana cümlede did/could özneden önce gelir\n• "Only after…" → ana cümlede devrik yapı\n\nOrtaç ifadeler — özneyi kontrol edin:\n• "**Having landed**, the aircraft was directed to the gate." ✓ (aircraft indi)\n• "**Having landed**, the gate was assigned." ✗ (gate inmedi — sarkan ortaç)',
       ),
       LessonSection(
         type: LessonSectionType.practice,
-        title: 'Practice Questions',
+        title: 'Pratik Sorular',
         practiceQuestions: [
           QuestionModel(id: -250, category: QuestionCategory.grammar, originalNumber: 230, questionText: 'The hydraulic pump ………… last week has already failed.', options: ['that installed', 'installed', 'which installed', 'installing'], correctIndex: 1, difficulty: Difficulty.hard),
           QuestionModel(id: -251, category: QuestionCategory.grammar, originalNumber: 231, questionText: 'Under no circumstances ………… crew members disable the fire detection system.', options: ['crew members should', 'should crew members', 'do crew members', 'crew members must'], correctIndex: 1, difficulty: Difficulty.hard),
@@ -2100,33 +2100,33 @@ class LessonContentData {
   // ─────────────────────────────────────────────────────────────
   static const _expertVocab = LessonContent(
     id: 'vocab_7',
-    title: 'Expert ICAO Vocabulary',
-    subtitle: 'High-frequency advanced aviation terminology',
+    title: 'İleri ICAO Kelime Bilgisi',
+    subtitle: 'Yüksek frekanslı ileri havacılık terminolojisi',
     categoryId: 'vocabulary',
-    estimatedTime: '12 min',
+    estimatedTime: '12 dk',
     emoji: '🏆',
     sections: [
       LessonSection(
         type: LessonSectionType.intro,
-        title: 'Advanced vocabulary separates good from excellent',
+        title: 'İleri kelime bilgisi iyiyi mükemmelden ayırır',
         body:
-            'ICAO Level 5 and 6 proficiency requires mastery of low-frequency but high-stakes technical vocabulary. This lesson covers the terms that distinguish advanced candidates and that frequently appear in the hardest exam questions.',
+            'ICAO Seviye 5 ve 6 yeterliği, az kullanılan ancak yüksek öneme sahip teknik sözcüklere hakim olmayı gerektirir. Bu ders, ileri düzey adayları ayırt eden ve en zor sınav sorularında sıkça karşılaşılan terimleri kapsar.',
       ),
       LessonSection(
         type: LessonSectionType.rule,
-        title: '🏆 Advanced Operational Terms',
+        title: '🏆 İleri Operasyonel Terimler',
         body:
             '**EDTO/ETOPS** — Extended Diversion Time Operations (flying far from alternate airports)\n**RVSM** — Reduced Vertical Separation Minima (300m / 1,000ft between FL290–FL410)\n**PBN** — Performance-Based Navigation (RNP, RNAV specs)\n**MNPS** — Minimum Navigation Performance Specification (oceanic)\n**MEL** — Minimum Equipment List (approved deferred defects)\n**CDL** — Configuration Deviation List (approved structural deviations)\n**AOG** — Aircraft on Ground (urgent unserviceable aircraft)',
       ),
       LessonSection(
         type: LessonSectionType.rule,
-        title: '⚠️ Safety-Critical Vocabulary',
+        title: '⚠️ Güvenlik Kritik Kelime Bilgisi',
         body:
             '**Controlled flight into terrain (CFIT)** — aircraft in controlled flight strikes terrain\n**Loss of control in-flight (LOC-I)** — most fatal accident category\n**Runway incursion** — unauthorized presence on runway\n**Airspace infringement** — entering controlled airspace without clearance\n**Human factors** — study of human performance in aviation systems\n**Crew Resource Management (CRM)** — effective use of all resources\n**Threat and Error Management (TEM)** — proactive safety model',
       ),
       LessonSection(
         type: LessonSectionType.examples,
-        title: 'Expert Vocabulary in Context',
+        title: 'Bağlamda Uzman Kelime Bilgisi',
         examples: [
           ExampleSentence(
             sentence: 'The accident was classified as CFIT — the crew was unaware of the proximity to terrain.',
@@ -2147,13 +2147,13 @@ class LessonContentData {
       ),
       LessonSection(
         type: LessonSectionType.tip,
-        title: '✈️ Exam Strategy',
+        title: '✈️ Sınav Stratejisi',
         body:
-            'For advanced vocabulary questions:\n• **EDTO/ETOPS** = about how far from alternates you can fly (oceanic/remote operations)\n• **MEL** = what you CAN fly with broken; **CDL** = approved structural missing parts\n• **PBN** includes both **RNAV** and **RNP** (RNP has on-board monitoring + alerting)\n• **Runway incursion** vs. **airspace infringement** — both are serious safety events but involve different areas\n• **CRM** is about **using available resources** — not just communication',
+            'İleri düzey sözcük soruları için:\n• **EDTO/ETOPS** = yedek havalimanlarına ne kadar uzak uçabileceğiniz (okyanus/uzak operasyonlar)\n• **MEL** = bozukken uçabilecekleriniz; **CDL** = onaylanmış eksik yapısal parçalar\n• **PBN** hem **RNAV** hem **RNP** kapsamındadır (RNP bordo izleme + uyarı sistemi gerektirir)\n• **Runway incursion** ile **airspace infringement** — her ikisi ciddi güvenlik olayları; farklı alanları ilgilendirir\n• **CRM** **mevcut kaynakları kullanmakla** ilgilidir — yalnızca iletişim değil',
       ),
       LessonSection(
         type: LessonSectionType.practice,
-        title: 'Practice Questions',
+        title: 'Pratik Sorular',
         practiceQuestions: [
           QuestionModel(id: -260, category: QuestionCategory.vocabulary, originalNumber: 330, questionText: 'CFIT stands for:', options: ['Crew Fatigue Incident Tracking', 'Controlled Flight Into Terrain', 'Cockpit Flight Information Terminal', 'Critical Flight Instrument Test'], correctIndex: 1, difficulty: Difficulty.medium),
           QuestionModel(id: -261, category: QuestionCategory.vocabulary, originalNumber: 331, questionText: 'Under RVSM, what is the minimum vertical separation between FL290 and FL410?', options: ['2,000 feet', '500 meters', '1,000 feet', '600 meters'], correctIndex: 2, difficulty: Difficulty.medium),
@@ -2169,33 +2169,33 @@ class LessonContentData {
   // ─────────────────────────────────────────────────────────────
   static const _sidStarReading = LessonContent(
     id: 'reading_5',
-    title: 'SID/STAR Procedures',
-    subtitle: 'Reading departure and arrival procedure documents',
+    title: 'SID/STAR Prosedürleri',
+    subtitle: 'Kalkış ve varış prosedür belgelerini okuma',
     categoryId: 'reading',
-    estimatedTime: '13 min',
+    estimatedTime: '13 dk',
     emoji: '🗺️',
     sections: [
       LessonSection(
         type: LessonSectionType.intro,
-        title: 'Procedure documents are dense with technical information',
+        title: 'Prosedür belgeleri teknik bilgi ile doludur',
         body:
-            'Standard Instrument Departures (SIDs) and Standard Terminal Arrival Routes (STARs) are documented procedures that contain altitudes, speeds, waypoints, and restrictions. Advanced reading questions use extracts from these documents and require precise interpretation.',
+            'Standart Enstrüman Kalkışları (SID) ve Standart Terminal Variş Rotaları (STAR), irtifalar, hızlar, ara noktalar ve kısıtlamalar içeren belgelenmiş prosedürlerdir. İleri düzey okuma anlama soruları bu belgelerden alıntı kullanır ve kesin yorumlama gerektirir.',
       ),
       LessonSection(
         type: LessonSectionType.rule,
-        title: '🛫 SID — Departure Procedure',
+        title: '🛫 SID — Kalkış Prosedürü',
         body:
-            'A SID (Standard Instrument Departure) provides:\n• Routing from runway to en-route structure\n• Altitude restrictions ("at or above 3,000 ft at waypoint TURPO")\n• Speed restrictions ("250 KIAS below 10,000 ft")\n• Transition codes (RNAV, conventional)\n\n**Altitude coding:**\n• **"A030+"** = at or above 3,000 ft\n• **"A050-"** = at or below 5,000 ft\n• **"A060B080"** = between 6,000 and 8,000 ft\n• **"S220"** = maintain speed 220 KIAS or below',
+            'A SID (Standart Enstrüman Kalkış Prosedürü) şunları sağlar:\n• Pistden en-route yapısına rotalama\n• İrtifa kısıtlamaları ("at or above 3,000 ft at waypoint TURPO")\n• Hız kısıtlamaları ("250 KIAS below 10,000 ft")\n• Geçiş kodları (RNAV, geleneksel)\n\n**İrtifa kodlaması:**\n• **"A030+"** = 3.000 ft veya üzeri\n• **"A050-"** = 5.000 ft veya altı\n• **"A060B080"** = 6.000 ile 8.000 ft arası\n• **"S220"** = 220 KIAS veya altında hız koru',
       ),
       LessonSection(
         type: LessonSectionType.rule,
-        title: '🛬 STAR — Arrival Procedure',
+        title: '🛬 STAR — Varış Prosedürü',
         body:
-            'A STAR (Standard Terminal Arrival Route) provides:\n• Routing from en-route to terminal area / approach\n• Speed reduction profile\n• Transition to IAF (Initial Approach Fix)\n\n**Common STAR terminology:**\n• **IAF** — Initial Approach Fix (start of approach)\n• **IF** — Intermediate Fix\n• **FAF** — Final Approach Fix\n• **MAP** — Missed Approach Point\n• **Published hold** — holding pattern on procedure\n• **"Expect vectors"** — ATC will give radar headings instead',
+            'Bir STAR (Standart Terminal Variş Rotası) şunları sağlar:\n• en-route yapısından terminal alanına/yaklaşmaya rotalama\n• Hız azaltma profili\n• IAF noktasına (Başlangıç Yaklaşma Noktası) geçiş\n\n**Yaygın STAR terminolojisi:**\n• **IAF** — Başlangıç Yaklaşma Noktası\n• **IF** — Orta Nokta\n• **FAF** — Son Yaklaşma Noktası\n• **MAP** — Yanlış Yaklaşma Karar Noktası\n• **Published hold** — prosedürdeki bekleme döngüsü\n• **"Expect vectors"** — ATC radar yönlendirmesi verecek',
       ),
       LessonSection(
         type: LessonSectionType.examples,
-        title: 'Procedure Language',
+        title: 'Prosedür Dili',
         examples: [
           ExampleSentence(
             sentence: 'At or above 6,000 feet at TURPO waypoint before turning left to intercept the final approach course.',
@@ -2211,13 +2211,13 @@ class LessonContentData {
       ),
       LessonSection(
         type: LessonSectionType.tip,
-        title: '✈️ Exam Tip',
+        title: '✈️ Sınav İpucu',
         body:
-            '"At or above" / "at or below" in procedure documents:\n• "A030+" = at or **above** 3,000 ft (plus sign = higher)\n• "A050-" = at or **below** 5,000 ft (minus sign = lower)\n\nIf you see both a speed and altitude restriction at a waypoint, **both** must be complied with simultaneously.\n\n"Expect vectors" on a STAR does not mean ATC will always give vectors — it means the pilot should expect them (but must fly the published procedure if not given vectors).',
+            'Prosedür belgelerinde "At or above" / "at or below":\n• "A030+" = 3.000 ft veya **üzeri** (artı işareti = daha yüksek)\n• "A050-" = 5.000 ft veya **altı** (eksi işareti = daha alçak)\n\nBir ara noktada hem hız hem irtifa kısıtlaması varsa, **her ikisine** eş zamanlı uyulmalıdır.\n\nBir STAR\'daki "Expect vectors", ATC\'nin her zaman vektör vereceği anlamına gelmez — pilot beklemelidir (vektör verilmezse yayımlanmış prosedürü uygulayın).',
       ),
       LessonSection(
         type: LessonSectionType.practice,
-        title: 'Practice Questions',
+        title: 'Pratik Sorular',
         practiceQuestions: [
           QuestionModel(id: -270, category: QuestionCategory.reading, originalNumber: 640, questionText: 'In a SID procedure document, "A040+" means the aircraft must be:', options: ['At 4,000 ft exactly', 'At or above 4,000 ft', 'At or below 4,000 ft', 'Between 4,000 and 4,500 ft'], correctIndex: 1, difficulty: Difficulty.medium),
           QuestionModel(id: -271, category: QuestionCategory.reading, originalNumber: 641, questionText: 'The FAF (Final Approach Fix) marks:', options: ['The beginning of the missed approach', 'The start of the final approach segment', 'The runway threshold', 'The IAF position'], correctIndex: 1, difficulty: Difficulty.medium),
@@ -2233,33 +2233,33 @@ class LessonContentData {
   // ─────────────────────────────────────────────────────────────
   static const _cat3Completion = LessonContent(
     id: 'completion_3',
-    title: 'CAT III Approach Procedures',
-    subtitle: 'Low visibility operations and completion phrases',
+    title: 'CAT III Yaklaşma Prosedürleri',
+    subtitle: 'Düşük görüş operasyonları ve tamamlama ifadeleri',
     categoryId: 'sentence_completion',
-    estimatedTime: '12 min',
+    estimatedTime: '12 dk',
     emoji: '🌫️',
     sections: [
       LessonSection(
         type: LessonSectionType.intro,
-        title: 'Low visibility operations demand precise language',
+        title: 'Düşük görüş operasyonları kesin dil gerektirir',
         body:
-            'CAT II and CAT III approaches are conducted in very low visibility using autoland systems. The phraseology, alerts, and callouts in these procedures are among the most precisely defined in aviation English.\n\nSentence completion questions in this area require exact knowledge of procedure terminology.',
+            'CAT II ve CAT III yaklaşmaları otomatik indiş sistemleri kullanılarak çok düşük görüş koşullarında gerçekleştirilir. Bu prosedürlerdeki ifadeler, uyarılar ve sözlü bildirimler havacılık İngilizcesinin en kesin tanımlı ifadeleri arasındadır.\n\nBu alandaki cümle tamamlama soruları, prosedür terminolojisinin tam bilgisini gerektirir.',
       ),
       LessonSection(
         type: LessonSectionType.rule,
-        title: '🌫️ ILS Categories',
+        title: '🌫️ ILS Kategorileri',
         body:
             '**CAT I** — DH ≥200ft, RVR ≥550m (standard ILS)\n**CAT II** — DH 100–200ft, RVR ≥300m (needs specific aircraft/crew cert)\n**CAT IIIA** — DH <100ft OR no DH, RVR ≥200m\n**CAT IIIB** — DH <50ft OR no DH, RVR 50–200m\n**CAT IIIC** — No DH, No RVR limit (still not in service)\n\n**LVP** — Low Visibility Procedures (activated by airport when RVR <600m)\n**LVT** — Low Visibility Takeoff',
       ),
       LessonSection(
         type: LessonSectionType.rule,
-        title: '📢 CAT III Callouts',
+        title: '📢 CAT III Sözlü Bildirimleri',
         body:
-            'Standard CAT III approach callouts (in order):\n1. "**Localizer alive**" — ILS localizer captured\n2. "**Glide slope alive**" — vertical guidance captured\n3. "**Land 3**" — autoland mode confirmed (A320 family)\n4. "**1,000 feet**" — standard check altitude\n5. "**500 feet**" — stability check\n6. "**100 feet**" — visual or go-around decision\n7. "**50, 40, 30, 20, 10**" — radio altimeter callouts\n8. "**Touchdown**" → "**Decelerate**" → "**Vacate**"',
+            'Standart CAT III yaklaşma sözlü bildirimleri (sırayla):\n1. "**Localizer alive**" — ILS localizer yakalandı\n2. "**Glide slope alive**" — dikey rehberlik yakalandı\n3. "**Land 3**" — otomatik indiş modu onaylandı (A320 ailesi)\n4. "**1,000 feet**" — standart kontrol irtifası\n5. "**500 feet**" — istikrar kontrolü\n6. "**100 feet**" — görsel veya etrafta dönüş kararı\n7. "**50, 40, 30, 20, 10**" — radyo altimetre çağrıları\n8. "**Touchdown**" → "**Decelerate**" → "**Vacate**"',
       ),
       LessonSection(
         type: LessonSectionType.examples,
-        title: 'CAT III Completion Examples',
+        title: 'CAT III Tamamlama Örnekleri',
         examples: [
           ExampleSentence(
             sentence: 'During LVP, ground movement must be strictly controlled to prevent runway incursion.',
@@ -2275,13 +2275,13 @@ class LessonContentData {
       ),
       LessonSection(
         type: LessonSectionType.tip,
-        title: '✈️ Exam Tip',
+        title: '✈️ Sınav İpucu',
         body:
-            'CAT II/III key distinctions for exams:\n• **DH** = Decision Height (radio altimeter based, CAT II/III)\n• **DA** = Decision Altitude (barometric, CAT I)\n• **RVR** = Runway Visual Range (measured by transmissometers)\n• A CAT IIIB approach may be conducted with **no Decision Height** if auto-rollout/auto-brake available\n• LVP does NOT cancel low-visibility departures automatically — there are separate LVT minima\n• "Required visual reference" for CAT III is **less** than for CAT I (may be just runway edge lights)',
+            'Sınavlar için CAT II/III temel ayrımları:\n• **DH** = Karar İrtifası (radyo altimetre tabanlı, CAT II/III)\n• **DA** = Karar Yüksekliği (barometre tabanlı, CAT I)\n• **RVR** = Pist Görüş Mesafesi (transmissometre ile ölçülür)\n• Otomatik taksi/fren kullanılabilirse CAT IIIB yaklaşma **Karar İrtifası olmadan** yapılabilir\n• LVP, düşük görüşlü kalkışları otomatik olarak iptal etmez — ayrı LVT minimumlari vardır\n• CAT III için "zorunlu görsel referans" CAT I\'e göre **daha azdır** (yalnızca pist kenar ışıkları yeterli olabilir)',
       ),
       LessonSection(
         type: LessonSectionType.practice,
-        title: 'Practice Questions',
+        title: 'Pratik Sorular',
         practiceQuestions: [
           QuestionModel(id: -280, category: QuestionCategory.sentenceCompletion, originalNumber: 980, questionText: 'A CAT III approach uses ………… altitude as the reference point for the go-around decision.', options: ['Minimum Descent', 'Decision Height', 'Decision Altitude', 'Obstacle Clearance'], correctIndex: 1, difficulty: Difficulty.medium),
           QuestionModel(id: -281, category: QuestionCategory.sentenceCompletion, originalNumber: 981, questionText: 'LVP (Low Visibility Procedures) are normally activated when RVR drops below ………….', options: ['800 meters', '1,000 meters', '600 meters', '400 meters'], correctIndex: 2, difficulty: Difficulty.hard),
@@ -2297,33 +2297,33 @@ class LessonContentData {
   // ─────────────────────────────────────────────────────────────
   static const _advancedAtcClearances = LessonContent(
     id: 'fill_5',
-    title: 'Advanced ATC Clearances',
-    subtitle: 'Complex clearance structures and oceanic phraseology',
+    title: 'İleri ATC Klirensları',
+    subtitle: 'Karmaşık klirens yapıları ve okyanus ifade kalıpları',
     categoryId: 'fill_blanks',
-    estimatedTime: '12 min',
+    estimatedTime: '12 dk',
     emoji: '🗼',
     sections: [
       LessonSection(
         type: LessonSectionType.intro,
-        title: 'Advanced clearances combine multiple elements',
+        title: 'İleri klirenslar birden fazla unsuru birleştirir',
         body:
-            'At the advanced level, ATC clearances contain multiple simultaneous instructions — altitude, heading, speed, frequency, and transponder — all in a single transmission. Parsing and completing these accurately is a high-level skill tested in expert-level exams.',
+            'İleri düzeyde, ATC kliransları tek bir iletimde irtifa, yön, hız, frekans ve transponder gibi birden fazla eş zamanlı talimat içerir. Bunları doğru analiz etmek ve tamamlamak, uzman düzey sınavlarda test edilen üst düzey bir beceridir.',
       ),
       LessonSection(
         type: LessonSectionType.rule,
-        title: '🗼 Oceanic & Complex Clearance Elements',
+        title: '🗼 Okyanus & Karmaşık Klirans Unsurları',
         body:
             '**Oceanic clearance:** "THY1 is cleared to New York JFK via track Bravo, flight level 360, Mach 0.84, squawk 2341"\n\n**Complex enroute:** "THY456, cross TURPO at or above FL280, then direct EMEVI, reduce to Mach 0.80"\n\n**Conditional clearance:** "Behind the departing B777, line up runway 34L and wait"\n— Always read back: **type of aircraft + condition + instruction**\n\n**SELCAL** — Selective Calling system for oceanic comms\n**HF** — High Frequency radio (used in oceanic areas beyond VHF range)',
       ),
       LessonSection(
         type: LessonSectionType.rule,
-        title: '🔄 Holding Clearance Language',
+        title: '🔄 Bekleme Klirans Dili',
         body:
             '"THY123, hold at TURPO as published, expect approach in 20 minutes"\n"………… to the right on the 150 radial, 1-minute legs"\n\n**Key holding terms:**\n• **Inbound course** — heading toward the fix during holding\n• **Outbound leg** — time/distance spent flying away from fix\n• **Expect further clearance (EFC)** — time pilot can expect to leave the hold\n• **Published hold** — charted holding pattern; use standard values\n• "**Left / right turns**" — direction of turns in the hold',
       ),
       LessonSection(
         type: LessonSectionType.examples,
-        title: 'Advanced Clearance Examples',
+        title: 'İleri Klirans Örnekleri',
         examples: [
           ExampleSentence(
             sentence: 'THY123, cross TURPO at or above FL260, then direct EMEVI, Mach 0.82.',
@@ -2344,13 +2344,13 @@ class LessonContentData {
       ),
       LessonSection(
         type: LessonSectionType.tip,
-        title: '✈️ Advanced Exam Tips',
+        title: '✈️ İleri Sınav İpuçları',
         body:
-            'Conditional clearances — always identify:\n1. **Condition** — which aircraft / when\n2. **Instruction** — what to do\n3. **Readback** must include the condition: "Behind the B777 on final, cleared to land, THY456"\n\nOceanic clearances always include: track letter + FL + Mach number + squawk\n\nEFC (Expect Further Clearance) is NOT a clearance to leave the hold — the pilot must wait for the actual clearance.',
+            'Koşulllu kliranslar — her zaman şunları belirleyin:\n1. **Koşul** — hangi uçak / ne zaman\n2. **Talimat** — ne yapılacak\n3. **Tekrar** koşulu içermelidir: "Behind the B777 on final, cleared to land, THY456"\n\nOkyanus kliransları her zaman şunları içerir: track harfi + FL + Mach numarası + squawk\n\nEFC (Expect Further Clearance) bekleme döngüsünden ayrılma kliransı **değildir** — pilot gerçek kliransı beklemelidir.',
       ),
       LessonSection(
         type: LessonSectionType.practice,
-        title: 'Practice Questions',
+        title: 'Pratik Sorular',
         practiceQuestions: [
           QuestionModel(id: -290, category: QuestionCategory.fillBlanks, originalNumber: 790, questionText: '"………… the A330 on final, line up runway 34L and wait." — The missing word is:', options: ['After', 'Following', 'Behind', 'When'], correctIndex: 2, difficulty: Difficulty.medium),
           QuestionModel(id: -291, category: QuestionCategory.fillBlanks, originalNumber: 791, questionText: 'An oceanic clearance always includes the assigned ………… number as the track speed reference.', options: ['Knots', 'IAS', 'Mach', 'TAS'], correctIndex: 2, difficulty: Difficulty.hard),
@@ -2366,33 +2366,33 @@ class LessonContentData {
   // ─────────────────────────────────────────────────────────────
   static const _accidentTranslation = LessonContent(
     id: 'translation_4',
-    title: 'Accident Investigation Reports',
-    subtitle: 'Translating ICAO Annex 13 investigation language',
+    title: 'Kaza Soruşturma Raporları',
+    subtitle: 'ICAO Ek 13 soruşturma dilini çevirme',
     categoryId: 'translation',
-    estimatedTime: '13 min',
+    estimatedTime: '13 dk',
     emoji: '📰',
     sections: [
       LessonSection(
         type: LessonSectionType.intro,
-        title: 'Accident reports use precise legal and technical language',
+        title: 'Kaza raporları kesin hukuki ve teknik dil kullanır',
         body:
-            'ICAO Annex 13 accident investigation reports are among the most linguistically demanding documents in aviation. They combine legal precision, passive constructions, technical accuracy, and causal analysis in a single text.\n\nTranslation questions from these reports require understanding both the technical meaning and the legal implications of each phrase.',
+            'ICAO Ek 13 kaza araştırma raporları, havacılıktaki en dilbilimsel açıdan zorlayıcı belgeler arasındadır. Tek bir metinde hukuki kesinliği, edilgen yapıları, teknik doğruluğu ve nedensellik analizini bir araya getirirler.\n\nBu raporlardan çeviri soruları, hem teknik anlamı hem de her ifadenin hukuki sonuçlarını anlamayı gerektirir.',
       ),
       LessonSection(
         type: LessonSectionType.rule,
-        title: '⚠️ Causal Language',
+        title: '⚠️ Nedensellik Dili',
         body:
             '**Probable cause** — the primary factor judged to have produced the accident\n**Contributing factor** — a condition that increased risk but was not the primary cause\n**Causal factor** — any element in the cause chain\n\nCausal verbs and phrases:\n• "**led to**" = caused/resulted in (direct chain)\n• "**attributed to**" = judged as the cause\n• "**resulted in**" = produced this outcome\n• "**was a factor in**" = contributed but not sole cause\n• "**was consistent with**" = evidence matches this explanation',
       ),
       LessonSection(
         type: LessonSectionType.rule,
-        title: '📋 Investigation Findings Language',
+        title: '📋 Soruşturma Bulguları Dili',
         body:
             '"The investigation **found** that…" → formal finding\n"Evidence **indicated** that…" → supported but not proven\n"**It could not be determined** whether…" → insufficient evidence\n"The crew **failed to**…" → did not perform required action\n"**Contrary to** the standard operating procedure…" → SOP violation\n"The accident **is survivable** / **was not survivable**" → survivability finding\n"**Safety recommendation**" → formal advisory to prevent recurrence',
       ),
       LessonSection(
         type: LessonSectionType.examples,
-        title: 'Report Passage Examples',
+        title: 'Rapor Metni Örnekleri',
         examples: [
           ExampleSentence(
             sentence: 'The probable cause of the accident was the crew\'s failure to monitor fuel quantity.',
@@ -2413,13 +2413,13 @@ class LessonContentData {
       ),
       LessonSection(
         type: LessonSectionType.tip,
-        title: '✈️ Translation Exam Strategy',
+        title: '✈️ Çeviri Sınav Stratejisi',
         body:
-            'For accident report translation questions:\n• "**Probable cause**" ≠ "possible cause" — it is the MOST LIKELY established cause\n• "**Contributing factor**" ≠ "main reason" — it is a secondary, exacerbating condition\n• "**Crew failed to**" = they did not do something required — not necessarily negligence\n• "**It could not be determined**" = insufficient evidence — do NOT translate as "it is unknown"\n• "**Contrary to SOP**" = a procedure violation — always serious in reports',
+            'Kaza raporu çeviri soruları için:\n• "**Probable cause**" ≠ "possible cause" — tespit edilen EN MUHTEMEL nedendir\n• "**Contributing factor**" ≠ "main reason" — ikincil, ağırlaştırıcı bir koşuldur\n• "**Crew failed to**" = zorunlu bir eylem yapılmadı — doğrudan ihmal anlamı taşımaz\n• "**It could not be determined**" = yetersiz kanıt — "bilinmiyor" olarak çevirmeyin\n• "**Contrary to SOP**" = prosedür ihlali — raporlarda her zaman ciddidir',
       ),
       LessonSection(
         type: LessonSectionType.practice,
-        title: 'Practice Questions',
+        title: 'Pratik Sorular',
         practiceQuestions: [
           QuestionModel(id: -300, category: QuestionCategory.translation, originalNumber: 460, questionText: '"The accident was attributed to controlled flight into terrain." This means:', options: ['The accident was caused by an out-of-control aircraft hitting terrain', 'The aircraft was in controlled flight when it struck terrain', 'The crew controlled the aircraft into terrain intentionally', 'The terrain was controlled by ATC when the accident occurred'], correctIndex: 1, difficulty: Difficulty.medium),
           QuestionModel(id: -301, category: QuestionCategory.translation, originalNumber: 461, questionText: '"Contrary to standard operating procedures" means:', options: ['In accordance with SOPs', 'Violating or not following SOPs', 'Similar to SOPs in other companies', 'An improvement over SOPs'], correctIndex: 1, difficulty: Difficulty.medium),
@@ -2435,33 +2435,33 @@ class LessonContentData {
   // ─────────────────────────────────────────────────────────────
   static const _airworthinessDirectives = LessonContent(
     id: 'reading_6',
-    title: 'Airworthiness Directives',
-    subtitle: 'Reading and interpreting mandatory safety notices',
+    title: 'Uçuşa Elverişlilik Direktifleri',
+    subtitle: 'Zorunlu güvenlik bildirimlerini okuma ve yorumlama',
     categoryId: 'reading',
-    estimatedTime: '13 min',
+    estimatedTime: '13 dk',
     emoji: '📜',
     sections: [
       LessonSection(
         type: LessonSectionType.intro,
         title: 'ADs are mandatory safety compliance documents',
         body:
-            'An Airworthiness Directive (AD) is a legally binding document issued by a civil aviation authority requiring specific action to correct an unsafe condition in an aircraft type. Non-compliance is illegal and grounds for operating certificate suspension.\n\nAD language is the most precise regulatory language in aviation — every word has legal weight.',
+            'Uçuşa Elverişlilik Direktifi (AD), belirli bir uçak tipindeki güvenli olmayan bir durumu gidermek amacıyla sivil havacılık otoritesi tarafından zorunlu eylem gerektiren yasal bağlayıcı bir belgedir. Uyumsuzluk yasadışıdır ve işletme sertifikasının askıya alınmasına yol açabilir.\n\nAD dili havacılıktaki en kesin düzenleyici dildir — her kelimenin yasal ağırlığı vardır.',
       ),
       LessonSection(
         type: LessonSectionType.rule,
-        title: '📜 AD Structure',
+        title: '📜 AD Yapısı',
         body:
-            'A typical AD contains:\n1. **Applicability** — which aircraft/engines/parts are affected\n2. **Unsafe condition** — the hazard being addressed\n3. **Required action** — what must be done\n4. **Compliance time** — when it must be done (e.g., "within 50 flight hours")\n5. **Method** — how to comply (service bulletin, specific procedure)\n6. **Alternative Method of Compliance (AMOC)** — approved alternative\n7. **Costs** — estimated compliance cost',
+            'Tipik bir AD şunları içerir:\n1. **Uygulanabilirlik** — hangi uçak/motor/parçalar etkileniyor\n2. **Güvensiz durum** — çözülecek tehlike\n3. **Gerekli eylem** — ne yapılması gerekiyor\n4. **Uyumluluk süresi** — ne zamana kadar yapılmalı (ör. "50 uçuş saati içinde")\n5. **Yöntem** — nasıl uyulur (servis bülteni, özel prosedür)\n6. **Alternatif Uyumluluk Yöntemi (AMOC)** — onaylanmış alternatif\n7. **Maliyetler** — tahmini uyumluluk maliyeti',
       ),
       LessonSection(
         type: LessonSectionType.rule,
-        title: '⚠️ Compliance Time Language',
+        title: '⚠️ Uyumluluk Süresi Dili',
         body:
             '**"Within 50 flight hours after the effective date"** — must be done before 50 more hours\n**"At the next scheduled maintenance"** — at next A/B/C check\n**"Before further flight"** — aircraft must not fly until complied with\n**"At first opportunity"** — as soon as practical (not as urgent as "before further flight")\n**"Repetitive inspection every 200 FH"** — not a one-time action; must be repeated\n**"Terminating action"** — permanently satisfies the AD (no more repetitive checks needed)',
       ),
       LessonSection(
         type: LessonSectionType.examples,
-        title: 'AD Language Examples',
+        title: 'AD Dili Örnekleri',
         examples: [
           ExampleSentence(
             sentence: 'This AD requires repetitive inspections of the fuselage skin every 500 flight cycles.',
@@ -2482,13 +2482,13 @@ class LessonContentData {
       ),
       LessonSection(
         type: LessonSectionType.tip,
-        title: '✈️ Advanced Reading Strategy',
+        title: '✈️ İleri Okuma Stratejisi',
         body:
-            'For AD reading questions:\n• **Applicability** section tells you which aircraft are affected — check this first\n• "**Before further flight**" = the most urgent compliance time — aircraft is GROUNDED\n• "**Terminating action**" = once done, no more repetitive inspections needed\n• **AMOC** = alternative compliance method — must be approved by the authority\n• "**At the next scheduled**" does NOT mean "optional" — it is mandatory at that point\n• Read dates carefully — "after the effective date" vs. "from the date of manufacture"',
+            'AD okuma anlama soruları için:\n• **Uygulanabilirlik** bölümü hangi uçakların etkilendiğini söyler — bunu önce kontrol edin\n• "**Before further flight**" = en acil uyumluluk süresi — uçak YER\'DE KALMALIDIR\n• "**Terminating action**" = bir kez yapıldığında tekrar edici denetim gerekmez\n• **AMOC** = alternatif uyumluluk yöntemi — otorite tarafından onaylanmalıdır\n• "**At the next scheduled**" "isteğe bağlı" anlamına gelmez — o noktada zorunludur\n• Tarihlere dikkat edin: "after the effective date" ile "from the date of manufacture"',
       ),
       LessonSection(
         type: LessonSectionType.practice,
-        title: 'Practice Questions',
+        title: 'Pratik Sorular',
         body: 'Read the following AD extract:\n\n"This Airworthiness Directive is applicable to all Airbus A320-200 aircraft, serial numbers 3001 through 5500. The unsafe condition is potential fatigue cracking of the forward fuselage frame. Required action: Perform a detailed visual inspection of the forward fuselage frame assembly. Compliance time: Within 100 flight cycles after the effective date of this AD. Repetitive inspection interval: Every 500 flight cycles thereafter. Terminating action: Replacement of the frame assembly with Part Number A320-FR-9902 permanently terminates the repetitive inspection requirement."',
         practiceQuestions: [
           QuestionModel(id: -310, category: QuestionCategory.reading, originalNumber: 650, questionText: 'Which aircraft are affected by this AD?', options: ['All Airbus A320 variants', 'A320-200 with serial numbers 3001–5500', 'A320-200 manufactured after the effective date', 'All Airbus narrowbody aircraft'], correctIndex: 1, difficulty: Difficulty.easy),
@@ -2505,29 +2505,29 @@ class LessonContentData {
   // ─────────────────────────────────────────────────────────────
   static const _advancedCompletion = LessonContent(
     id: 'completion_2',
-    title: 'Advanced Completion',
-    subtitle: 'Complex technical sentence completion',
+    title: 'İleri Düzey Tamamlama',
+    subtitle: 'Karmaşık teknik cümle tamamlama',
     categoryId: 'sentence_completion',
-    estimatedTime: '12 min',
+    estimatedTime: '12 dk',
     emoji: '🎯',
     sections: [
       LessonSection(
         type: LessonSectionType.intro,
-        title: 'Advanced completion requires full context understanding',
+        title: 'İleri düzey tamamlama tam bağlam anlayışı gerektirir',
         body:
-            'At the advanced level, sentence completion questions involve complex technical sentences where multiple options may seem grammatically correct. The correct answer requires understanding both grammar **and** aviation technical knowledge.',
+            'İleri düzeyde cümle tamamlama soruları, birden fazla seçeneğin dilbilgisel olarak doğru görünebildiği karmaşık teknik cümleler içerir. Doğru cevap hem dilbilgisi **hem de** havacılık teknik bilgisi gerektirmektedir.',
       ),
       LessonSection(
         type: LessonSectionType.rule,
-        title: '⚙️ Technical Collocation Patterns',
+        title: '⚙️ Teknik Öbek Kalıpları',
         body:
-            'Aviation technical writing has fixed collocations — word combinations that are always used together:\n\n• perform/carry out/conduct (**a maintenance check**) — not "make" or "do"\n• comply with (**regulations**) — not "follow to"\n• in accordance with (**AMM/CMM**) — standard phrase\n• prior to/following (**departure**) — formal time expressions\n• serviceability of (**equipment**) — airworthiness term\n• within the limits (**specified in**) — compliance language',
+            'Havacılık teknik yazımı, her zaman birlikte kullanılan sabit öbekler içerir:\n\n• perform/carry out/conduct (**a maintenance check**) — "make" veya "do" değil\n• comply with (**regulations**) — "follow to" değil\n• in accordance with (**AMM/CMM**) — standart ifade\n• prior to/following (**departure**) — resmi zaman ifadeleri\n• serviceability of (**equipment**) — uuçuşa elverişlilik terimi\n• within the limits (**specified in**) — uyumluluk dili',
       ),
       LessonSection(
         type: LessonSectionType.rule,
-        title: '📐 Precision Language',
+        title: '📐 Kesinlik Dili',
         body:
-            'Aviation English values **precision** over elegance. Words are not interchangeable:\n• **inspect** = visually examine | **test** = functionally verify | **check** = confirm state\n• **fault** = specific defect | **failure** = complete loss of function | **malfunction** = partial/intermittent failure\n• **serviceable** = fit for use | **unserviceable** = not fit for use (technical term, not informal)\n• **advise** = inform/recommend | **instruct** = give mandatory direction',
+            'Havacılık İngilizcesi zarafet yerine **kesinliğe** değer verir. Kelimeler birbirinin yerine kullanılamaz:\n• **inspect** = görsel inceleme | **test** = işlevsel doğrulama | **check** = durumu onaylama\n• **fault** = belirli arıza | **failure** = tam fonksiyon kaybı | **malfunction** = kısmi/aralıklı arıza\n• **serviceable** = kullanıma uygun | **unserviceable** = kullanıma uygun değil (teknik terim)\n• **advise** = bildir/tavsiye et | **instruct** = zorunlu yön ver',
       ),
       LessonSection(
         type: LessonSectionType.examples,
@@ -2547,13 +2547,13 @@ class LessonContentData {
       ),
       LessonSection(
         type: LessonSectionType.tip,
-        title: '✈️ Final Exam Strategy',
+        title: '✈️ Final Sınav Stratejisi',
         body:
-            'For advanced completion:\n1. Identify the **technical context** (maintenance, operations, ATC)\n2. Look for **register** — is this formal documentation or communication?\n3. Check **grammatical function** — what part of speech fits?\n4. Use aviation **technical vocabulary** — general English word may be wrong in aviation context\n5. If two options seem correct, choose the **more specific/technical** one',
+            'İleri düzey tamamlama için:\n1. **Teknik bağlamı** belirleyin (bakım, operasyon, ATC)\n2. **Dil düzeyini** kontrol edin — resmi belge mi yoksa iletişim mi?\n3. **Dilbilgisel işlevi** kontrol edin — hangi konuşma parçası uyuyor?\n4. Havacılık **teknik sözcüğünü** kullanın — genel İngilizce kelime havacılıkta yanlış olabilir\n5. İki seçenek doğru görünüyorsa **daha spesifik/teknik** olanı seçin',
       ),
       LessonSection(
         type: LessonSectionType.practice,
-        title: 'Practice Questions',
+        title: 'Pratik Sorular',
         practiceQuestions: [
           QuestionModel(
             id: -110,

@@ -2,8 +2,9 @@ import 'dart:convert';
 import 'package:http/http.dart' as http;
 import '../models/ai_analysis_result.dart';
 
-/// Replace with your Gemini API key from https://aistudio.google.com/app/apikey
-const _geminiApiKey = 'AIzaSyBF2g68U1DltnnMWc2s1M1BHjCq6ErGDL4';
+// Çalıştırma: flutter run --dart-define=GEMINI_KEY=YOUR_KEY
+// Build:       flutter build web --dart-define=GEMINI_KEY=YOUR_KEY
+const _geminiApiKey = String.fromEnvironment('GEMINI_KEY');
 
 const _model = 'gemini-1.5-flash';
 const _baseUrl =
@@ -17,8 +18,8 @@ class AiAnalysisService {
     required int totalQuestions,
     required Map<String, Map<String, int>> categoryResults,
   }) async {
-    if (_geminiApiKey == 'YOUR_GEMINI_API_KEY') {
-      // No API key — return smart rule-based fallback
+    if (_geminiApiKey.isEmpty) {
+      // API key yok — kural tabanlı fallback
       return _fallback(
         role: role,
         level: level,
@@ -84,11 +85,11 @@ class AiAnalysisService {
     required Map<String, Map<String, int>> categoryResults,
   }) {
     final roleLabel = {
-      'pilot': 'Commercial Pilot',
-      'atc': 'Air Traffic Controller',
-      'cabin_crew': 'Cabin Crew Member',
-      'student': 'Aviation Student',
-    }[role] ?? 'Aviation Professional';
+      'pilot': 'Ticari Pilot',
+      'atc': 'Uçuş Kontrol Memuru',
+      'cabin_crew': 'Kabin Ekibi Üyesi',
+      'student': 'Havacılık Öğrencisi',
+    }[role] ?? 'Havacılık Uzmanı';
 
     final categoryLines = categoryResults.entries.map((e) {
       final c = e.value['correct'] ?? 0;
@@ -110,25 +111,25 @@ $categoryLines
 
 Respond ONLY with valid JSON matching this exact schema:
 {
-  "summary": "2-3 sentence personalized performance summary mentioning their role and specific observations",
+  "summary": "2-3 cümlelik kişiselleştirilmiş performans özeti; rolünü ve spesifik gözlemleri içermeli",
   "focus_areas": [
     {
-      "title": "Short technical topic title (e.g. Modal Verbs in Clearances)",
-      "description": "1-2 sentences explaining the gap and why it matters for their specific role",
+      "title": "Kısa teknik konu başlığı (örn: İzinlerde Modal Fiiller)",
+      "description": "Eksikliği ve bu rolde neden önemli olduğunu açıklayan 1-2 cümle",
       "priority": "high"
     }
   ],
   "study_tips": [
-    "Specific actionable study tip relevant to their role and weak areas"
+    "Role ve zayıf alanlara özgü somut çalışma tavsiyesi"
   ]
 }
 
-Rules:
-- focus_areas: 2-4 items, ordered by priority. Only include weak categories (under 70%).
-- study_tips: exactly 3 items, practical and role-specific
-- All text must be in English
-- Be specific about ICAO standards, aviation phraseology, and their role
-- If all categories are strong (>=80%), focus_areas should have 1 item about maintaining excellence
+Kurallar:
+- focus_areas: 2-4 madde, önceliğe göre sıralı. Yalnızca zayıf kategorileri (yüzde 70 altı) dahil et.
+- study_tips: tam olarak 3 madde, pratik ve role özgü
+- Tüm metin TÜRKÇE olmalı
+- ICAO standartları, havacılık terminolojisi ve role özgü olmalı
+- Tüm kategoriler güçlüyse (yüzde 80 üstü), focus_areas mükemmelliği korumaya dair 1 madde içermeli
 ''';
   }
 
@@ -147,28 +148,28 @@ Rules:
 
     final roleLabel = {
       'pilot': 'pilot',
-      'atc': 'air traffic controller',
-      'cabin_crew': 'cabin crew member',
-      'student': 'aviation student',
-    }[role] ?? 'aviation professional';
+      'atc': 'uçuş kontrol memuru',
+      'cabin_crew': 'kabin ekibi üyesi',
+      'student': 'havacılık öğrencisi',
+    }[role] ?? 'havacılık uzmanı';
 
-    final pct = (totalCorrect / totalQuestions * 100).round();
+    final pct = totalQuestions > 0 ? (totalCorrect / totalQuestions * 100).round() : 0;
     String summary;
     if (pct >= 80) {
       summary =
-          'Strong performance — you\'re well above average for a $roleLabel at the $level level. '
-          'Your results show solid command of most ICAO English areas. '
-          'Targeted practice in a few specific areas will bring you to exam-ready condition.';
+          'Güçlü performans — $level seviyesinde bir $roleLabel için ortalamanın çok üzerindesiniz. '
+          'Sonuçlarınız ICAO İngilizce alanlarının büyük çoğunluğuna hakimiyetinizi gösteriyor. '
+          'Birkaç spesifik alanda hedefli çalışma sizi sınav hazır duruma getirecektir.';
     } else if (pct >= 50) {
       summary =
-          'Your $level result shows a good foundation as a $roleLabel with clear areas to develop. '
-          'You answered $totalCorrect out of $totalQuestions correctly, '
-          'with some categories needing focused attention before your exam.';
+          '$level sonucunuz, geliştirilmesi gereken net alanlarla birlikte bir $roleLabel olarak güçlü bir temel gösteriyor. '
+          '$totalQuestions sorudan $totalCorrect tanesini doğru yanıtladınız; '
+          'bazı kategoriler sınavdan önce odaklanmış dikkat gerektiriyor.';
     } else {
       summary =
-          'You\'re at the beginning of your aviation English journey as a $roleLabel. '
-          'With $totalCorrect/$totalQuestions correct, there\'s significant room to grow. '
-          'A structured daily study plan will help you progress to exam-ready level.';
+          'Bir $roleLabel olarak havacılık İngilizcesi yolculuğunuzun başındasınız. '
+          '$totalQuestions sorudan $totalCorrect doğru ile gelişme için önemli bir alan var. '
+          'Yapılandırılmış günlük bir çalışma planı sizi sınav hazır seviyeye ilerletecektir.';
     }
 
     final focusAreas = _buildFallbackFocusAreas(weakCats, role);
@@ -185,110 +186,110 @@ Rules:
     const insights = {
       'grammar': {
         'pilot': (
-          'Modal Verbs & Conditional Structures',
-          'Gaps in grammar directly affect clearance readbacks and PIREP accuracy. Focus on shall/must/should and if-clauses in operational contexts.'
+          'Modal Fiiller & Koşullu Yapılar',
+          'Gramer eksiklikleri, takas onaylarını (clearance readback) ve PIREP doğruluğunu doğrudan etkiler. shall/must/should ve operasyonel bağlamlarda if-cümleciklerine odaklan.'
         ),
         'atc': (
-          'Tense Consistency in Instructions',
-          'Inconsistent tense usage causes ambiguity in traffic information. Practice passive voice and future tense in ATC coordination phrases.'
+          'Talimatlarında Zaman Tutarlılığı',
+          'Tutarsız zaman kullanımı, trafik bilgisinde belirsizliğe yol açar. ATC koordinasyon cümlelerinde edilgen çatı ve gelecek zamana odaklan.'
         ),
         'cabin_crew': (
-          'Imperative & Modal Structures',
-          'Safety announcements require precise imperative and modal grammar. Passengers must receive unambiguous instructions in emergency situations.'
+          'Emir Kipi & Modal Yapılar',
+          'Güvenlik anonsları kesin emir kipi ve modal gramer gerektirir. Yolcular acil durumlarda net talimatlar almalıdır.'
         ),
         'student': (
-          'Core Aviation Grammar Patterns',
-          'Master modal verbs, passive constructions, and conditional sentences — the three pillars of ICAO standard aviation English grammar.'
+          'Temel Havacılık Gramer Kalıpları',
+          'Modal fiiller, edilgen yapılar ve koşullu cümleler — ICAO standart havacılık İngilizcesinin üç temel direğini öğren.'
         ),
       },
       'vocabulary': {
         'pilot': (
-          'METAR/TAF & NOTAMs Terminology',
-          'Weather and NOTAM vocabulary is critical for pre-flight planning and in-flight decision making. Build your decoding speed for METAR abbreviations.'
+          'METAR/TAF & NOTAM Terminolojisi',
+          'Hava durumu ve NOTAM kelime bilgisi, uçuş öncesi planlama ve uçuş içi karar verme için kritiktir. METAR kısaltmalarını çözme hızını geliştir.'
         ),
         'atc': (
-          'SID/STAR & Holding Phraseology',
-          'Precise vocabulary for departure and arrival procedures prevents misunderstandings in high-traffic environments. Focus on ICAO Doc 4444 phraseology.'
+          'SID/STAR & Holding Fraseolojisi',
+          'Kalkış ve iniş prosedürlerine ait kesin kelime bilgisi, yoğun trafik ortamlarında yanlış anlaşılmaları önler. ICAO Doc 4444 fraseolojisine odaklan.'
         ),
         'cabin_crew': (
-          'Safety Equipment Terminology',
-          'Accurate names for safety equipment and procedures are non-negotiable for ICAO compliance and passenger safety management.'
+          'Emniyet Ekipmanı Terminolojisi',
+          'Emniyet ekipmanı ve prosedürlerinin doğru adları, ICAO uyumu ve yolcu güvenliği yönetimi için vazgeçilmezdir.'
         ),
         'student': (
-          'ICAO Core Aviation Vocabulary',
-          'Build your foundation with ATC phraseology, aircraft systems vocabulary, and standard ICAO terminology used across all aviation roles.'
+          'ICAO Temel Havacılık Kelime Bilgisi',
+          'ATC fraseolojisi, uçak sistemleri kelime bilgisi ve tüm havacılık rollerinde kullanılan standart ICAO terminolojisiyle temelini oluştur.'
         ),
       },
       'reading': {
         'pilot': (
-          'Operational Document Comprehension',
-          'Slow reading of NOTAMs and OFPs under time pressure is a common exam failure point. Practice extracting key data from dense aviation texts in under 90 seconds.'
+          'Operasyonel Belge Anlama',
+          'Zaman baskısı altında NOTAM ve OFP okumak, sınavlarda yaygın başarısızlık noktasıdır. Yoğun havacılık metinlerinden anahtar verileri 90 saniye içinde çıkarma pratiği yap.'
         ),
         'atc': (
-          'Flight Plan & Strip Reading Speed',
-          'ATC strips and flight plan formats contain dense information that must be processed rapidly. Drill reading speed on ICAO flight plan formats.'
+          'Uçuş Planı & Strip Okuma Hızı',
+          'ATC strip\'leri ve uçuş planı formatları hızla işlenmesi gereken yoğun bilgi içerir. ICAO uçuş planı formatlarında okuma hızı antrenmanı yap.'
         ),
         'cabin_crew': (
-          'Safety Procedure Manuals',
-          'Understanding company ops manuals and ICAO safety documents in English is required for all cabin crew roles. Focus on procedural language patterns.'
+          'Emniyet Prosedürü El Kitapları',
+          'İngilizce şirket operasyon el kitapları ve ICAO emniyet belgelerini anlamak, tüm kabin ekibi rolleri için zorunludur. Prosedürel dil kalıplarına odaklan.'
         ),
         'student': (
-          'Aviation Text Comprehension',
-          'ICAO English exams include dense operational texts. Practice reading NOTAMs, METARs, and AIP extracts — focus on identifying key information quickly.'
+          'Havacılık Metni Anlama',
+          'ICAO İngilizce sınavları yoğun operasyonel metinler içerir. NOTAM, METAR ve AIP alıntılarını okuyarak pratik yap — anahtar bilgiyi hızlı tespit etmeye odaklan.'
         ),
       },
       'translation': {
         'pilot': (
-          'Operational Meaning Interpretation',
-          'Accurately interpreting the intent of ATC instructions and translating concepts between English and your working language prevents dangerous misunderstandings.'
+          'Operasyonel Anlam Yorumlama',
+          'ATC talimatlarının amacını doğru yorumlamak ve kavramları İngilizce ile çalışma dilin arasında çevirmek, tehlikeli yanlış anlaşılmaları önler.'
         ),
         'atc': (
-          'Readback & Clearance Precision',
-          'Translation errors in clearance readbacks are a leading cause of runway incursions. Practice precision in both directions without paraphrasing critical values.'
+          'Takas Teyidi & Müsaade Kesinliği',
+          'Clearance readback\'teki çeviri hataları, pist ihlallerinin önde gelen nedenidir. Kritik değerleri yorumlamadan her iki yönde de kesinlik pratiği yap.'
         ),
         'student': (
-          'Context-Based Language Transfer',
-          'Focus on understanding aviation texts in context rather than word-for-word translation. ICAO language is formulaic — learn the patterns.'
+          'Bağlama Dayalı Dil Aktarımı',
+          'Kelimesi kelimesine çeviri yerine havacılık metinlerini bağlamda anlamaya odaklan. ICAO dili kalıp tabanlıdır — kalıpları öğren.'
         ),
         'cabin_crew': (
-          'Safety Communication Accuracy',
-          'Translating safety instructions accurately ensures passenger compliance. Focus on official ICAO safety terminology rather than free translation.'
+          'Emniyet İletişiminde Doğruluk',
+          'Emniyet talimatlarını doğru çevirmek yolcu uyumunu sağlar. Serbest çeviri yerine resmi ICAO emniyet terminolojisine odaklan.'
         ),
       },
       'fill_blanks': {
         'pilot': (
-          'Aviation Collocations & Fixed Phrases',
-          'Many ATC communications use fixed collocations (e.g. "cleared for", "report passing"). Recognition of these patterns is tested directly in fill-in-the-blank questions.'
+          'Havacılık Kollokasyonları & Sabit İfadeler',
+          'ATC iletişimlerinin çoğu sabit kollokasyon kullanır (ör. "cleared for", "report passing"). Bu kalıpların tanınması boşluk doldurma sorularında doğrudan sınanır.'
         ),
         'atc': (
-          'Standard Phraseology Patterns',
-          'Fill-in-the-blank questions test your knowledge of ICAO Doc 4444 standard phrases. Memorize the exact wording of common clearances and instructions.'
+          'Standart Fraseoloji Kalıpları',
+          'Boşluk doldurma soruları ICAO Doc 4444 standart ifadelerini sınar. Yaygın müsaade ve talimatların tam söylemini ezberle.'
         ),
         'student': (
-          'Aviation Collocation Patterns',
-          'Aviation English uses specific word combinations that don\'t follow general English rules. Study collocations from ICAO training materials systematically.'
+          'Havacılık Kollokasyon Kalıpları',
+          'Havacılık İngilizcesi, genel İngilizce kurallarına uymayan belirli sözcük birleşimleri kullanır. ICAO eğitim materyallerinden kollokasyonları sistematik biçimde çalış.'
         ),
         'cabin_crew': (
-          'Safety Announcement Templates',
-          'Standard safety announcements follow fixed templates. Master the exact phrasing for each type of announcement — these appear frequently in fill-blank exams.'
+          'Emniyet Anonsu Şablonları',
+          'Standart emniyet anonsları sabit şablonlar izler. Her anons türünün tam ifadesini öğren — bunlar boşluk doldurma sınavlarında sıkça çıkar.'
         ),
       },
       'sentence_completion': {
         'pilot': (
-          'Discourse Flow in ATC Communication',
-          'Understanding how ATC/pilot exchanges are structured helps predict how sentences complete. Study the logical flow of standard communication sequences.'
+          'ATC İletişiminde Söylem Akışı',
+          'ATC/pilot alışverişlerinin nasıl yapılandırıldığını anlamak, cümlelerin nasıl tamamlandığını tahmin etmeye yardımcı olur. Standart iletişim dizilerinin mantıksal akışını çalış.'
         ),
         'atc': (
-          'Logical Sequence in Clearances',
-          'Clearance sentences follow predictable logical patterns. Practice completing partial clearances to build speed and accuracy on this question type.'
+          'Müsaadelerde Mantıksal Sıra',
+          'Müsaade cümleleri öngörülebilir mantıksal kalıplar izler. Bu soru türünde hız ve doğruluk kazanmak için kısmi müsaadeleri tamamlama pratiği yap.'
         ),
         'student': (
-          'Aviation Sentence Structure',
-          'Aviation English sentences follow specific structural patterns. Study how information is sequenced in ICAO communications — what comes first, second, third.'
+          'Havacılık Cümle Yapısı',
+          'Havacılık İngilizcesi cümleleri belirli yapısal kalıplar izler. ICAO iletişimlerinde bilginin nasıl sıralandığını — önce ne, sonra ne — çalış.'
         ),
         'cabin_crew': (
-          'Procedural Language Completion',
-          'Safety and service procedure sentences follow predictable structures. Practice with official cabin crew communication scripts to internalize the patterns.'
+          'Prosedürel Dil Tamamlama',
+          'Emniyet ve hizmet prosedürü cümleleri öngörülebilir yapılar izler. Kalıpları içselleştirmek için resmi kabin ekibi iletişim senaryolarıyla pratik yap.'
         ),
       },
     };
@@ -296,9 +297,9 @@ Rules:
     if (weakCats.isEmpty) {
       return [
         AiFocusArea(
-          title: 'Maintain Exam Readiness',
+          title: 'Sınav Hazırlığını Koru',
           description:
-              'Your performance is strong across all categories. Take 2-3 timed practice exams weekly to maintain your edge and simulate real exam pressure.',
+              'Tüm kategorilerde performansın güçlü. Avantajını korumak ve gerçek sınav baskısını simüle etmek için haftada 2-3 zamanlı deneme sınavı çöz.',
           priority: 'medium',
         ),
       ];
@@ -307,7 +308,7 @@ Rules:
     return weakCats.take(3).map((cat) {
       final catInsights = insights[cat];
       final roleKey = catInsights?.containsKey(role) == true ? role : 'student';
-      final info = catInsights?[roleKey] ?? ('${cat.replaceAll('_', ' ')} Skills', 'Focus on this area to improve your overall performance.');
+      final info = catInsights?[roleKey] ?? ('${cat.replaceAll('_', ' ')} Becerileri', 'Genel performansını artırmak için bu alana odaklan.');
       return AiFocusArea(
         title: info.$1,
         description: info.$2,
@@ -321,21 +322,21 @@ Rules:
 
     switch (role) {
       case 'pilot':
-        tips.add('Listen to 15 minutes of LiveATC.net daily and write down every clearance you hear — this builds automatic phraseology recognition.');
-        tips.add('Practice METAR and TAF decoding under a 30-second time limit using free online decoders before each study session.');
-        tips.add('Use the ICAO Language Proficiency Requirements doc (Circular 323) as your exam benchmark and read one section per day.');
+        tips.add('Her gün LiveATC.net\'ten 15 dakika dinle ve duyduğun her müsaadeyi yaz — bu otomatik fraseoloji tanımayı geliştirir.');
+        tips.add('Her çalışma seansından önce ücretsiz çevrimiçi kod çözücüler kullanarak METAR ve TAF\'ı 30 saniye zaman sınırıyla çözme pratiği yap.');
+        tips.add('ICAO Dil Yeterlilik Gereksinimleri belgesini (Circular 323) sınav kıstasın olarak kullan ve her gün bir bölüm oku.');
       case 'atc':
-        tips.add('Shadow real ATC recordings on LiveATC.net — pause after each transmission and write the readback before listening to the pilot\'s response.');
-        tips.add('Drill ICAO Doc 4444 phraseology tables: memorize one new standard phrase per day and use it in a written sentence.');
-        tips.add('Practice with ATC simulation apps (e.g. Endless ATC) to build the habit of precise, structured English communication.');
+        tips.add('LiveATC.net\'teki gerçek ATC kayıtlarını gölgele — her iletimden sonra dur, pilotun yanıtını dinlemeden önce teyit metnini yaz.');
+        tips.add('ICAO Doc 4444 fraseoloji tablolarını çalış: her gün yeni bir standart ifade ezberle ve bunu yazılı bir cümlede kullan.');
+        tips.add('Kesin ve yapılandırılmış İngilizce iletişim alışkanlığı edinmek için ATC simülasyon uygulamalarıyla (ör. Endless ATC) pratik yap.');
       case 'cabin_crew':
-        tips.add('Record yourself delivering safety announcements and compare against official airline scripts — identify any vocabulary differences.');
-        tips.add('Study ICAO Cabin Crew Safety Training Manual terminology chapter by chapter, creating flashcards for each new term.');
-        tips.add('Practice translating safety procedures back and forth to build both comprehension and production accuracy.');
+        tips.add('Kendin emniyet anonsu yapıp kaydet ve resmi havayolu senaryolarıyla karşılaştır — kelime bilgisi farklılıklarını tespit et.');
+        tips.add('ICAO Kabin Ekibi Emniyet Eğitimi El Kitabı terminolojisini bölüm bölüm çalış, her yeni terim için kart oluştur.');
+        tips.add('Hem anlama hem de üretim doğruluğunu geliştirmek için emniyet prosedürlerini ileri geri çevirme pratiği yap.');
       default:
-        tips.add('Study for 20 minutes daily using spaced repetition — short consistent sessions beat long irregular ones every time.');
-        tips.add('Read one NOTAM or METAR aloud every morning to build familiarity with operational aviation English formats.');
-        tips.add('Focus your first 2 weeks exclusively on ${weakCats.isNotEmpty ? weakCats.first.replaceAll("_", " ") : "your weakest category"} — mastering one area at a time is more effective than spreading effort thin.');
+        tips.add('Aralıklı tekrar yöntemiyle her gün 20 dakika çalış — kısa ve düzenli seanslar uzun ve düzensiz olanlara her zaman üstün gelir.');
+        tips.add('Operasyonel havacılık İngilizcesi formatlarına alışmak için her sabah bir NOTAM veya METAR\'ı sesli oku.');
+        tips.add('İlk 2 haftanı yalnızca ${weakCats.isNotEmpty ? weakCats.first.replaceAll("_", " ") : "en zayıf kategorine"} ayır — bir alanda uzmanlaşmak, çabayı dağıtmaktan çok daha etkilidir.');
     }
 
     return tips;

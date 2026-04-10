@@ -453,7 +453,7 @@ class _FlipExampleCardState extends State<_FlipExampleCard>
                           const Icon(Icons.touch_app_outlined, size: 13, color: AppColors.textHint),
                           const SizedBox(width: 4),
                           Text(
-                            'Tap for Turkish translation',
+                            'Türkçe çeviriyi görmek için dokun',
                             style: const TextStyle(fontSize: 11, color: AppColors.textHint),
                           ),
                         ],
@@ -675,7 +675,7 @@ class _PracticeCardState extends State<_PracticeCard> {
                   children: [
                     Icon(Icons.quiz_outlined, color: Colors.white, size: 13),
                     SizedBox(width: 4),
-                    Text('PRACTICE', style: TextStyle(color: Colors.white, fontSize: 11, fontWeight: FontWeight.w700, letterSpacing: 1)),
+                    Text('PRATİK', style: TextStyle(color: Colors.white, fontSize: 11, fontWeight: FontWeight.w700, letterSpacing: 1)),
                   ],
                 ),
               ),
@@ -722,7 +722,7 @@ class _PracticeCardState extends State<_PracticeCard> {
                       shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(10)),
                     ),
                     child: Text(
-                      _current < _questions.length - 1 ? 'Next →' : 'See Results',
+                      _current < _questions.length - 1 ? 'İleri →' : 'Sonuçları Gör',
                       style: const TextStyle(fontWeight: FontWeight.w600),
                     ),
                   ),
@@ -847,15 +847,15 @@ class _ScoreCard extends StatelessWidget {
               child: const Icon(Icons.check_rounded, color: Colors.white, size: 36),
             ),
             const SizedBox(height: 14),
-            const Text('Practice Passed!', style: TextStyle(fontSize: 20, fontWeight: FontWeight.w800, color: Color(0xFF166534))),
+            const Text('Pratik Tamamlandı!', style: TextStyle(fontSize: 20, fontWeight: FontWeight.w800, color: Color(0xFF166534))),
             const SizedBox(height: 6),
             Text(
-              '$score / $total correct — $pctInt%',
+              '$score / $total doğru — %$pctInt',
               style: const TextStyle(fontSize: 15, color: Color(0xFF15803D)),
             ),
             const SizedBox(height: 10),
             const Text(
-              'You can now complete this lesson.',
+              'Bu dersi artık tamamlayabilirsiniz.',
               style: TextStyle(fontSize: 13, color: Color(0xFF166534)),
             ),
           ],
@@ -885,15 +885,15 @@ class _ScoreCard extends StatelessWidget {
             child: const Icon(Icons.close_rounded, color: Colors.white, size: 36),
           ),
           const SizedBox(height: 14),
-          const Text('Not Quite!', style: TextStyle(fontSize: 20, fontWeight: FontWeight.w800, color: Color(0xFF9B1C1C))),
+          const Text('Olmadı!', style: TextStyle(fontSize: 20, fontWeight: FontWeight.w800, color: Color(0xFF9B1C1C))),
           const SizedBox(height: 6),
           Text(
-            '$score / $total correct — $pctInt%',
+            '$score / $total doğru — %$pctInt',
             style: const TextStyle(fontSize: 15, color: Color(0xFFB91C1C)),
           ),
           const SizedBox(height: 6),
           const Text(
-            'You need 60% or more to pass.\nReview the lesson and try again.',
+            'Geçmek için %60 veya üzeri almanız gerekiyor.\nDersi tekrar gözden geçirip tekrar deneyin.',
             style: TextStyle(fontSize: 13, color: Color(0xFF991B1B), height: 1.5),
             textAlign: TextAlign.center,
           ),
@@ -904,7 +904,7 @@ class _ScoreCard extends StatelessWidget {
             child: ElevatedButton.icon(
               onPressed: onRetry,
               icon: const Icon(Icons.replay_rounded, size: 18),
-              label: const Text('Try Again', style: TextStyle(fontWeight: FontWeight.w700)),
+              label: const Text('Tekrar Dene', style: TextStyle(fontWeight: FontWeight.w700)),
               style: ElevatedButton.styleFrom(
                 backgroundColor: AppColors.error,
                 foregroundColor: Colors.white,

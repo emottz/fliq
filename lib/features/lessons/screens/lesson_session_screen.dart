@@ -104,6 +104,8 @@ class _LessonSessionScreenState extends ConsumerState<LessonSessionScreen>
     }
   }
 
+  static const _freeLessonsCount = 5;
+
   @override
   Widget build(BuildContext context) {
     final lesson = _lesson;
@@ -112,6 +114,14 @@ class _LessonSessionScreenState extends ConsumerState<LessonSessionScreen>
         appBar: AppBar(leading: BackButton(onPressed: () => context.go('/home/lessons'))),
         body: const Center(child: Text('Ders bulunamadı')),
       );
+    }
+
+    final isPremium = ref.watch(isPremiumProvider).value ?? false;
+    final lessonIndex = LessonContentData.all.indexWhere((l) => l.id == widget.lessonId);
+    final isPremiumLocked = !isPremium && lessonIndex >= _freeLessonsCount;
+
+    if (isPremiumLocked) {
+      return _buildPaywallScreen(context, lesson);
     }
 
     final total = lesson.sections.length;
@@ -244,6 +254,97 @@ class _LessonSessionScreenState extends ConsumerState<LessonSessionScreen>
               ),
             ),
           ],
+        ),
+      ),
+    );
+  }
+
+  Widget _buildPaywallScreen(BuildContext context, LessonContent lesson) {
+    return Scaffold(
+      backgroundColor: AppColors.background,
+      body: SafeArea(
+        child: Center(
+          child: ConstrainedBox(
+            constraints: const BoxConstraints(maxWidth: 480),
+            child: Padding(
+              padding: const EdgeInsets.symmetric(horizontal: 24),
+              child: Column(
+                children: [
+                  const SizedBox(height: 16),
+                  Align(
+                    alignment: Alignment.centerLeft,
+                    child: GestureDetector(
+                      onTap: () => context.go('/home/lessons'),
+                      child: Container(
+                        width: 36,
+                        height: 36,
+                        decoration: BoxDecoration(
+                          color: AppColors.surfaceVariant,
+                          borderRadius: BorderRadius.circular(10),
+                        ),
+                        child: const Icon(Icons.arrow_back, size: 18, color: AppColors.textSecondary),
+                      ),
+                    ),
+                  ),
+                  const Spacer(),
+                  // Ders önizleme kartı
+                  Container(
+                    width: double.infinity,
+                    padding: const EdgeInsets.all(24),
+                    decoration: BoxDecoration(
+                      color: AppColors.surface,
+                      borderRadius: BorderRadius.circular(20),
+                      border: Border.all(color: const Color(0xFFF59E0B), width: 2),
+                    ),
+                    child: Column(
+                      children: [
+                        Text(lesson.emoji, style: const TextStyle(fontSize: 48)),
+                        const SizedBox(height: 12),
+                        Text(lesson.title, style: AppTextStyles.heading2, textAlign: TextAlign.center),
+                        const SizedBox(height: 4),
+                        Text(lesson.subtitle, style: AppTextStyles.caption, textAlign: TextAlign.center),
+                      ],
+                    ),
+                  ),
+                  const SizedBox(height: 28),
+                  // Kilit mesajı
+                  const Icon(Icons.workspace_premium, color: Color(0xFFF59E0B), size: 40),
+                  const SizedBox(height: 12),
+                  const Text(
+                    'Bu Ders Premium\'a Özel',
+                    style: TextStyle(fontSize: 20, fontWeight: FontWeight.w800, color: AppColors.textPrimary),
+                    textAlign: TextAlign.center,
+                  ),
+                  const SizedBox(height: 8),
+                  const Text(
+                    'Tüm 33 dersi açmak ve sınırsız pratik yapmak için FLIQ Premium\'a geç.',
+                    style: AppTextStyles.caption,
+                    textAlign: TextAlign.center,
+                  ),
+                  const SizedBox(height: 28),
+                  SizedBox(
+                    width: double.infinity,
+                    child: ElevatedButton(
+                      onPressed: () => context.push('/subscription'),
+                      style: ElevatedButton.styleFrom(
+                        backgroundColor: const Color(0xFFF59E0B),
+                        foregroundColor: Colors.white,
+                        padding: const EdgeInsets.symmetric(vertical: 16),
+                        shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(14)),
+                      ),
+                      child: const Text('Premium\'a Geç  👑', style: TextStyle(fontSize: 16, fontWeight: FontWeight.w700)),
+                    ),
+                  ),
+                  const SizedBox(height: 12),
+                  TextButton(
+                    onPressed: () => context.go('/home/lessons'),
+                    child: const Text('Şimdi Değil', style: TextStyle(color: AppColors.textSecondary)),
+                  ),
+                  const Spacer(),
+                ],
+              ),
+            ),
+          ),
         ),
       ),
     );

@@ -22,6 +22,9 @@ class ExamListScreen extends ConsumerWidget {
   @override
   Widget build(BuildContext context, WidgetRef ref) {
     final weakCategories = ref.watch(userProfileProvider).value?.weakCategories ?? [];
+    final isPremium = ref.watch(isPremiumProvider).value ?? false;
+
+    void goPaywall() => context.push('/subscription');
 
     return Center(
       child: ConstrainedBox(
@@ -33,7 +36,12 @@ class ExamListScreen extends ConsumerWidget {
             children: [
               const Text('Sınavlar', style: AppTextStyles.heading2),
               const SizedBox(height: 16),
-              _DailyExamCard(onTap: () => context.go('/exam/session', extra: {'count': 20, 'mode': 'daily'})),
+              _DailyExamCard(
+                isPremium: isPremium,
+                onTap: isPremium
+                    ? () => context.go('/exam/session', extra: {'count': 20, 'mode': 'daily'})
+                    : goPaywall,
+              ),
               const SizedBox(height: 24),
               const Text('Kategoriye Göre Pratik', style: AppTextStyles.heading3),
               const SizedBox(height: 12),
@@ -49,11 +57,14 @@ class ExamListScreen extends ConsumerWidget {
                   icon: c.$2,
                   label: c.$3,
                   isWeak: weakCategories.contains(c.$1.id),
-                  onTap: () => context.go('/exam/session', extra: {
-                    'count': 15,
-                    'category': c.$1.id,
-                    'mode': 'category',
-                  }),
+                  isPremium: isPremium,
+                  onTap: isPremium
+                      ? () => context.go('/exam/session', extra: {
+                            'count': 15,
+                            'category': c.$1.id,
+                            'mode': 'category',
+                          })
+                      : goPaywall,
                 )).toList(),
               ),
               const SizedBox(height: 24),
@@ -62,6 +73,14 @@ class ExamListScreen extends ConsumerWidget {
                 outlined: true,
                 onPressed: () => context.go('/exam/session', extra: {'count': 10, 'mode': 'quick'}),
               ),
+              if (!isPremium) ...[
+                const SizedBox(height: 8),
+                const Text(
+                  'Ücretsiz: Hızlı Pratik · Premium: Günlük Sınav + Kategori',
+                  style: AppTextStyles.caption,
+                  textAlign: TextAlign.center,
+                ),
+              ],
             ],
           ),
         ),
@@ -72,7 +91,8 @@ class ExamListScreen extends ConsumerWidget {
 
 class _DailyExamCard extends StatelessWidget {
   final VoidCallback onTap;
-  const _DailyExamCard({required this.onTap});
+  final bool isPremium;
+  const _DailyExamCard({required this.onTap, required this.isPremium});
 
   @override
   Widget build(BuildContext context) {
@@ -81,8 +101,10 @@ class _DailyExamCard extends StatelessWidget {
       child: Container(
         padding: const EdgeInsets.all(20),
         decoration: BoxDecoration(
-          gradient: const LinearGradient(
-            colors: [AppColors.primary, AppColors.primaryLight],
+          gradient: LinearGradient(
+            colors: isPremium
+                ? [AppColors.primary, AppColors.primaryLight]
+                : [const Color(0xFF6B7280), const Color(0xFF9CA3AF)],
             begin: Alignment.topLeft,
             end: Alignment.bottomRight,
           ),
@@ -94,9 +116,9 @@ class _DailyExamCard extends StatelessWidget {
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
-                  const Text(
-                    'Bugünün Sınavı',
-                    style: TextStyle(color: Colors.white70, fontSize: 13),
+                  Text(
+                    isPremium ? 'Bugünün Sınavı' : '👑 Premium Özellik',
+                    style: const TextStyle(color: Colors.white70, fontSize: 13),
                   ),
                   const SizedBox(height: 4),
                   const Text(
@@ -114,7 +136,11 @@ class _DailyExamCard extends StatelessWidget {
                 ],
               ),
             ),
-            const Icon(Icons.arrow_forward_ios, color: Colors.white, size: 20),
+            Icon(
+              isPremium ? Icons.arrow_forward_ios : Icons.lock_outline,
+              color: Colors.white,
+              size: 20,
+            ),
           ],
         ),
       ),
@@ -137,6 +163,7 @@ class _CategoryCard extends StatelessWidget {
   final IconData icon;
   final String label;
   final bool isWeak;
+  final bool isPremium;
   final VoidCallback onTap;
 
   const _CategoryCard({
@@ -144,6 +171,7 @@ class _CategoryCard extends StatelessWidget {
     required this.icon,
     required this.label,
     required this.isWeak,
+    required this.isPremium,
     required this.onTap,
   });
 
@@ -155,11 +183,19 @@ class _CategoryCard extends StatelessWidget {
         width: double.infinity,
         padding: const EdgeInsets.all(14),
         decoration: BoxDecoration(
-          color: isWeak ? const Color(0xFFFFFBEB) : AppColors.surface,
+          color: !isPremium
+              ? AppColors.surfaceVariant
+              : isWeak
+                  ? const Color(0xFFFFFBEB)
+                  : AppColors.surface,
           borderRadius: BorderRadius.circular(16),
           border: Border.all(
-            color: isWeak ? AppColors.warning : AppColors.divider,
-            width: isWeak ? 1.5 : 1,
+            color: !isPremium
+                ? AppColors.divider
+                : isWeak
+                    ? AppColors.warning
+                    : AppColors.divider,
+            width: isWeak && isPremium ? 1.5 : 1,
           ),
         ),
         child: Column(
@@ -172,17 +208,37 @@ class _CategoryCard extends StatelessWidget {
                 Container(
                   padding: const EdgeInsets.all(8),
                   decoration: BoxDecoration(
-                    color: isWeak ? const Color(0xFFFEF3C7) : AppColors.surfaceVariant,
+                    color: !isPremium
+                        ? AppColors.divider
+                        : isWeak
+                            ? const Color(0xFFFEF3C7)
+                            : AppColors.surfaceVariant,
                     borderRadius: BorderRadius.circular(10),
                   ),
                   child: Icon(
-                    icon,
-                    color: isWeak ? AppColors.warning : AppColors.primary,
+                    isPremium ? icon : Icons.lock_outline,
+                    color: !isPremium
+                        ? AppColors.textHint
+                        : isWeak
+                            ? AppColors.warning
+                            : AppColors.primary,
                     size: 20,
                   ),
                 ),
-                if (isWeak) ...[
-                  const Spacer(),
+                const Spacer(),
+                if (!isPremium)
+                  Container(
+                    padding: const EdgeInsets.symmetric(horizontal: 5, vertical: 2),
+                    decoration: BoxDecoration(
+                      color: const Color(0xFFF59E0B),
+                      borderRadius: BorderRadius.circular(6),
+                    ),
+                    child: const Text(
+                      '👑',
+                      style: TextStyle(fontSize: 10),
+                    ),
+                  )
+                else if (isWeak)
                   Container(
                     padding: const EdgeInsets.symmetric(horizontal: 5, vertical: 2),
                     decoration: BoxDecoration(
@@ -205,10 +261,14 @@ class _CategoryCard extends StatelessWidget {
                       ],
                     ),
                   ),
-                ],
               ],
             ),
-            Text(label, style: AppTextStyles.bodyBold),
+            Text(
+              label,
+              style: AppTextStyles.bodyBold.copyWith(
+                color: isPremium ? AppColors.textPrimary : AppColors.textHint,
+              ),
+            ),
           ],
         ),
       ),
