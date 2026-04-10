@@ -15,14 +15,93 @@ class SubscriptionScreen extends ConsumerStatefulWidget {
   ConsumerState<SubscriptionScreen> createState() => _SubscriptionScreenState();
 }
 
-class _SubscriptionScreenState extends ConsumerState<SubscriptionScreen> {
-  static const _features = [
-    (Icons.quiz_outlined, 'Sınırsız Pratik Sınavı', '2.000+ gerçek formatlı soruyla kendini test et'),
-    (Icons.school_outlined, 'Tüm Ders İçerikleri', '33 ders — gramer, kelime, ATC iletişimi ve daha fazlası'),
-    (Icons.emoji_events_outlined, 'Rütbe & XP Sistemi', 'Havacılık rütbeleriyle ilerleni takip et'),
+// Rol bazlı fiyatlandırma
+class _RolePricing {
+  final String roleLabel;
+  final double monthly;
+  final double annual; // aylık eşdeğer
+  final double annualTotal;
+  final List<(IconData, String, String)> features;
+
+  const _RolePricing({
+    required this.roleLabel,
+    required this.monthly,
+    required this.annual,
+    required this.annualTotal,
+    required this.features,
+  });
+}
+
+const _pilotPricing = _RolePricing(
+  roleLabel: 'Pilot',
+  monthly: 50,
+  annual: 35,
+  annualTotal: 420,
+  features: [
+    (Icons.quiz_outlined, 'Sınırsız Pratik Sınavı', '2.000+ ICAO ve EASA formatlı soru'),
+    (Icons.school_outlined, '33 İleri Seviye Ders', 'ATC iletişimi, METAR, SID/STAR, kaza raporları ve daha fazlası'),
+    (Icons.emoji_events_outlined, 'Pilot Ligi', 'Sadece pilotlarla rekabet et, rütbe kazan'),
     (Icons.bar_chart_outlined, 'Detaylı Analitik', 'Kategoriye göre zayıf noktalarını bul'),
     (Icons.offline_bolt_outlined, 'Çevrimdışı Erişim', 'Her yerde, her zaman çalış'),
-  ];
+  ],
+);
+
+const _cabinPricing = _RolePricing(
+  roleLabel: 'Kabin Görevlisi',
+  monthly: 25,
+  annual: 17.5,
+  annualTotal: 210,
+  features: [
+    (Icons.quiz_outlined, 'Sınırsız Pratik Sınavı', 'Kabin prosedürü ve emniyet sorularıyla hazırlan'),
+    (Icons.school_outlined, 'Kabin İçin Özel Dersler', 'Yolcu iletişimi, acil durum, CRM, tehlikeli madde'),
+    (Icons.emoji_events_outlined, 'Kabin Ligi', 'Kabin görevlileriyle kendi liginde yarış'),
+    (Icons.bar_chart_outlined, 'Detaylı Analitik', 'Kategoriye göre zayıf noktalarını bul'),
+    (Icons.offline_bolt_outlined, 'Çevrimdışı Erişim', 'Her yerde, her zaman çalış'),
+  ],
+);
+
+const _amtPricing = _RolePricing(
+  roleLabel: 'Uçak Bakım Teknisyeni',
+  monthly: 25,
+  annual: 17.5,
+  annualTotal: 210,
+  features: [
+    (Icons.quiz_outlined, 'Sınırsız Pratik Sınavı', 'AMM, EASA Part-66 ve SHGM odaklı sorular'),
+    (Icons.school_outlined, 'Teknik Bakım Dersleri', 'AMM dili, AD okuma, arıza raporlaması, teknik kısaltmalar'),
+    (Icons.emoji_events_outlined, 'Teknisyen Ligi', 'AMT\'lerle kendi liginde yarış'),
+    (Icons.bar_chart_outlined, 'Detaylı Analitik', 'Kategoriye göre zayıf noktalarını bul'),
+    (Icons.offline_bolt_outlined, 'Çevrimdışı Erişim', 'Her yerde, her zaman çalış'),
+  ],
+);
+
+const _studentPricing = _RolePricing(
+  roleLabel: 'Öğrenci',
+  monthly: 10,
+  annual: 7,
+  annualTotal: 84,
+  features: [
+    (Icons.quiz_outlined, 'Sınırsız Pratik Sınavı', 'Temel havacılık İngilizcesi sorularıyla başla'),
+    (Icons.school_outlined, 'Temel Dersler', 'Gramer, kelime bilgisi ve temel ATC iletişimi'),
+    (Icons.emoji_events_outlined, 'Öğrenci Ligi', 'Öğrencilerle kendi liginde yarış'),
+    (Icons.bar_chart_outlined, 'Detaylı Analitik', 'Kategoriye göre zayıf noktalarını bul'),
+    (Icons.offline_bolt_outlined, 'Çevrimdışı Erişim', 'Her yerde, her zaman çalış'),
+  ],
+);
+
+_RolePricing _getPricingForRole(String role) {
+  switch (role) {
+    case 'pilot':
+      return _pilotPricing;
+    case 'cabin_crew':
+      return _cabinPricing;
+    case 'amt':
+      return _amtPricing;
+    default:
+      return _studentPricing;
+  }
+}
+
+class _SubscriptionScreenState extends ConsumerState<SubscriptionScreen> {
 
   Offerings? _offerings;
   Package? _selectedPackage;
@@ -102,6 +181,9 @@ class _SubscriptionScreenState extends ConsumerState<SubscriptionScreen> {
   @override
   Widget build(BuildContext context) {
     final canPop = Navigator.canPop(context);
+    final profileAsync = ref.watch(userProfileProvider);
+    final role = profileAsync.valueOrNull?.role ?? 'student';
+    final pricing = _getPricingForRole(role);
 
     return Scaffold(
       backgroundColor: AppColors.background,
@@ -125,8 +207,8 @@ class _SubscriptionScreenState extends ConsumerState<SubscriptionScreen> {
                 children: [
                   const AirplaneLogo(size: 56),
                   const SizedBox(height: 24),
-                  const Text(
-                    'Tam Potansiyelini Ortaya Çıkar',
+                  Text(
+                    '${pricing.roleLabel} Planı',
                     style: AppTextStyles.heading1,
                     textAlign: TextAlign.center,
                   ),
@@ -137,7 +219,7 @@ class _SubscriptionScreenState extends ConsumerState<SubscriptionScreen> {
                     textAlign: TextAlign.center,
                   ),
                   const SizedBox(height: 24),
-                  ..._features.map((f) => _FeatureRow(icon: f.$1, title: f.$2, subtitle: f.$3)),
+                  ...pricing.features.map((f) => _FeatureRow(icon: f.$1, title: f.$2, subtitle: f.$3)),
                   const SizedBox(height: 24),
 
                   // Paketler
@@ -150,7 +232,7 @@ class _SubscriptionScreenState extends ConsumerState<SubscriptionScreen> {
                       (_offerings!.current?.availablePackages.isNotEmpty ?? false))
                     ..._buildPackageCards(_offerings!.current!.availablePackages)
                   else
-                    ..._buildFallbackCards(),
+                    ..._buildFallbackCards(pricing),
 
                   const SizedBox(height: 20),
 
@@ -245,15 +327,19 @@ class _SubscriptionScreenState extends ConsumerState<SubscriptionScreen> {
     }).toList();
   }
 
-  List<Widget> _buildFallbackCards() {
+  List<Widget> _buildFallbackCards(_RolePricing pricing) {
+    final monthlyStr = '\$${pricing.monthly % 1 == 0 ? pricing.monthly.toInt() : pricing.monthly}';
+    final annualStr = '\$${pricing.annual % 1 == 0 ? pricing.annual.toInt() : pricing.annual}';
+    final annualTotalStr = '\$${pricing.annualTotal % 1 == 0 ? pricing.annualTotal.toInt() : pricing.annualTotal}';
+
     return [
       GestureDetector(
         onTap: () => setState(() => _selectedPackage = null),
-        child: const Padding(
-          padding: EdgeInsets.only(bottom: 12),
+        child: Padding(
+          padding: const EdgeInsets.only(bottom: 12),
           child: _PricingCard(
             title: 'Aylık',
-            price: '\$9.99',
+            price: monthlyStr,
             period: '/ay',
             isHighlighted: false,
             isSelected: false,
@@ -262,13 +348,14 @@ class _SubscriptionScreenState extends ConsumerState<SubscriptionScreen> {
       ),
       GestureDetector(
         onTap: () => setState(() => _selectedPackage = null),
-        child: const Padding(
-          padding: EdgeInsets.only(bottom: 12),
+        child: Padding(
+          padding: const EdgeInsets.only(bottom: 12),
           child: _PricingCard(
             title: 'Yıllık',
-            price: '\$59.99',
-            period: '/yıl',
-            badge: '%50 Tasarruf',
+            price: annualStr,
+            period: '/ay',
+            badge: '%30 Tasarruf',
+            subtitle: '$annualTotalStr/yıl olarak faturalandırılır',
             isHighlighted: true,
             isSelected: true,
           ),
@@ -323,6 +410,7 @@ class _PricingCard extends StatelessWidget {
   final String price;
   final String period;
   final String? badge;
+  final String? subtitle;
   final bool isHighlighted;
   final bool isSelected;
 
@@ -331,6 +419,7 @@ class _PricingCard extends StatelessWidget {
     required this.price,
     required this.period,
     this.badge,
+    this.subtitle,
     required this.isHighlighted,
     required this.isSelected,
   });
@@ -377,7 +466,10 @@ class _PricingCard extends StatelessWidget {
                   ],
                 ),
                 const SizedBox(height: 2),
-                const Text('Tüm özelliklere tam erişim', style: AppTextStyles.caption),
+                Text(
+                  subtitle ?? 'Tüm özelliklere tam erişim',
+                  style: AppTextStyles.caption,
+                ),
               ],
             ),
           ),

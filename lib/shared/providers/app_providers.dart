@@ -79,7 +79,8 @@ class UserProfileNotifier extends AsyncNotifier<UserProfileModel?> {
   Future<void> checkLeagueTransition() async {
     final profile = state.valueOrNull;
     if (profile == null) return;
-    final newLeagueId = await LeagueService.checkSeasonTransition(profile.leagueId);
+    final role = profile.role.isEmpty ? 'student' : profile.role;
+    final newLeagueId = await LeagueService.checkSeasonTransition(profile.leagueId, role);
     if (newLeagueId != profile.leagueId) {
       final updated = profile.copyWith(leagueId: newLeagueId);
       final repo = ref.read(userRepositoryProvider);
@@ -91,7 +92,8 @@ class UserProfileNotifier extends AsyncNotifier<UserProfileModel?> {
     await LeagueService.joinLeague(
       season: season,
       leagueId: newLeagueId,
-      weeklyXp: await LeagueService.getMyWeeklyXp(season, newLeagueId),
+      weeklyXp: await LeagueService.getMyWeeklyXp(season, newLeagueId, role),
+      role: role,
     );
   }
 }
@@ -124,9 +126,9 @@ class PremiumNotifier extends AsyncNotifier<bool> {
 
 // ── League Providers ──────────────────────────────────────────────────────────
 
-final leaderboardProvider = StreamProvider.family<List<LeagueMemberModel>, int>(
-  (ref, leagueId) {
+final leaderboardProvider = StreamProvider.family<List<LeagueMemberModel>, ({int leagueId, String role})>(
+  (ref, params) {
     final season = LeagueConstants.currentSeasonKey;
-    return LeagueService.leaderboardStream(season, leagueId);
+    return LeagueService.leaderboardStream(season, params.leagueId, params.role);
   },
 );

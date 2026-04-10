@@ -47,9 +47,62 @@ class LessonContentData {
 
   static LessonContent? findById(String id) {
     try {
-      return all.firstWhere((l) => l.id == id);
+      return _everything.firstWhere((l) => l.id == id);
     } catch (_) {
       return null;
+    }
+  }
+
+  // Tüm dersler (rol bazlı listeler dahil)
+  static const List<LessonContent> _everything = [
+    ...all,
+    _cabin1SafetyAnnouncements,
+    _cabin2PassengerComm,
+    _cabin3EmergencyProc,
+    _cabin4CrmBriefing,
+    _cabin5MedicalTerms,
+    _cabin6DangerousGoods,
+    _amt1AmmLanguage,
+    _amt2Abbreviations,
+    _amt3Airworthiness,
+    _amt4RegulatoryLang,
+    _amt5DefectReporting,
+    _amt6WorkOrder,
+  ];
+
+  // Rol bazlı ders listesi
+  static List<LessonContent> forRole(String role) {
+    switch (role) {
+      case 'pilot':
+        return all;
+      case 'cabin_crew':
+        return const [
+          _passiveVoice, _modalVerbs, _simpleTenses,
+          _aircraftComponents, _safetyEquipment, _airportGround,
+          _atcFillBlanks, _preflightChecklist,
+          _emergencyVocab, _metarTranslation,
+          _cabin1SafetyAnnouncements, _cabin2PassengerComm,
+          _cabin3EmergencyProc, _cabin4CrmBriefing,
+          _cabin5MedicalTerms, _cabin6DangerousGoods,
+        ];
+      case 'amt':
+        return const [
+          _passiveVoice, _modalVerbs, _simpleTenses,
+          _aircraftComponents, _atcFillBlanks, _preflightChecklist,
+          _notamReading, _airworthinessDirectives,
+          _amt1AmmLanguage, _amt2Abbreviations,
+          _amt3Airworthiness, _amt4RegulatoryLang,
+          _amt5DefectReporting, _amt6WorkOrder,
+        ];
+      case 'student':
+      default:
+        return const [
+          _passiveVoice, _modalVerbs, _simpleTenses,
+          _aircraftComponents, _airportGround, _safetyEquipment,
+          _atcFillBlanks, _preflightChecklist,
+          _conditionals, _weatherNavigation, _emergencyVocab,
+          _metarTranslation, _approachLanding, _atisReading,
+        ];
     }
   }
 
@@ -2581,6 +2634,916 @@ class LessonContentData {
             options: ['redirect', 'divert', 'turn', 'fly'],
             correctIndex: 1,
             difficulty: Difficulty.hard,
+          ),
+        ],
+      ),
+    ],
+  );
+
+  // ─────────────────────────────────────────────────────────────
+  // CABIN 1 — Safety Announcements
+  // ─────────────────────────────────────────────────────────────
+  static const _cabin1SafetyAnnouncements = LessonContent(
+    id: 'cabin_1',
+    title: 'Güvenlik Anonsları',
+    subtitle: 'Standart kabin duyuruları ve kalıpları',
+    categoryId: 'cabin',
+    estimatedTime: '10 dk',
+    emoji: '📢',
+    sections: [
+      LessonSection(
+        type: LessonSectionType.intro,
+        title: 'Neden standart ifadeler önemlidir',
+        body:
+            'Kabin güvenlik anonsları **düzenleyici kurumlar tarafından onaylanmış** sabit ifadeler içerir. IATA ve havayollarının kendi prosedürleri, yolcuların her uçuşta aynı mesajı anlamasını sağlamak için belirli kelimeler kullanır.\n\nBu kalıpları ezberlemek, baskı altında bile doğru ve net iletişim kurmanızı sağlar.',
+      ),
+      LessonSection(
+        type: LessonSectionType.rule,
+        title: '📋 Temel Anonslardaki Kalıplar',
+        body:
+            '**Kalkış öncesi:**\n• "Please ensure your seatbelt is fastened and your seat is in the upright position."\n• "All portable electronic devices must be switched off or set to flight mode."\n• "Please direct your attention to the cabin crew for the safety demonstration."\n\n**Türbülans:**\n• "The captain has turned on the fasten seatbelt sign. Please return to your seats immediately."\n\n**İniş:**\n• "Cabin crew, please prepare for landing."\n• "We are beginning our descent into [city]."\n\n**Anahtar fiiller:** *ensure, fasten, secure, remain, proceed, direct*',
+      ),
+      LessonSection(
+        type: LessonSectionType.examples,
+        title: 'Örnek Anonslar',
+        examples: [
+          ExampleSentence(
+            sentence: 'Ladies and gentlemen, please ensure all carry-on baggage is stowed in the overhead bins or under the seat in front of you.',
+            highlight: 'ensure … is stowed',
+            translation: 'Bayanlar ve baylar, lütfen tüm el bagajlarınızın üstteki bagaj bölmelerinde veya önünüzdeki koltuğun altında yerleştirildiğinden emin olun.',
+          ),
+          ExampleSentence(
+            sentence: 'We remind you that this is a non-smoking flight. Smoking is prohibited throughout the aircraft, including the lavatories.',
+            highlight: 'is prohibited',
+            translation: 'Bu uçuşun sigara içilmeyen bir uçuş olduğunu hatırlatırız. Tuvaletler dahil olmak üzere uçak içinde sigara içmek yasaktır.',
+          ),
+          ExampleSentence(
+            sentence: 'In the event of a sudden loss of cabin pressure, oxygen masks will drop from above. Pull the mask towards you, place it over your nose and mouth, and breathe normally.',
+            highlight: 'In the event of',
+            translation: 'Kabin basıncında ani bir düşüş olması durumunda, oksijen maskeleri yukarıdan düşecektir.',
+          ),
+        ],
+      ),
+      LessonSection(
+        type: LessonSectionType.practice,
+        title: 'Pratik Sorular',
+        practiceQuestions: [
+          QuestionModel(
+            id: -120,
+            category: QuestionCategory.vocabulary,
+            originalNumber: 2001,
+            questionText: 'Which phrase correctly completes the safety announcement: "Please ………… your seatbelt is securely fastened"?',
+            options: ['check', 'ensure', 'verify', 'confirm'],
+            correctIndex: 1,
+            difficulty: Difficulty.easy,
+          ),
+          QuestionModel(
+            id: -121,
+            category: QuestionCategory.vocabulary,
+            originalNumber: 2002,
+            questionText: 'In a standard cabin announcement, "the upright position" refers to:',
+            options: ['standing position', 'seat back position', 'tray table', 'armrest'],
+            correctIndex: 1,
+            difficulty: Difficulty.easy,
+          ),
+          QuestionModel(
+            id: -122,
+            category: QuestionCategory.sentenceCompletion,
+            originalNumber: 2003,
+            questionText: '"Cabin crew, please ………… for landing." — What is the standard word?',
+            options: ['prepare', 'ready', 'arrange', 'set'],
+            correctIndex: 0,
+            difficulty: Difficulty.easy,
+          ),
+        ],
+      ),
+    ],
+  );
+
+  // ─────────────────────────────────────────────────────────────
+  // CABIN 2 — Passenger Communication
+  // ─────────────────────────────────────────────────────────────
+  static const _cabin2PassengerComm = LessonContent(
+    id: 'cabin_2',
+    title: 'Yolcu İletişimi',
+    subtitle: 'Nazik istek kalıpları ve hizmet dili',
+    categoryId: 'cabin',
+    estimatedTime: '10 dk',
+    emoji: '🤝',
+    sections: [
+      LessonSection(
+        type: LessonSectionType.intro,
+        title: 'Hizmet dili neden özel bir beceridir',
+        body:
+            'Kabin görevlileri hem **hizmet veren** hem de **otorite temsilcisi** rolündedir. Bu nedenle yolcularla kurulan iletişimde hem nazik hem de net olmak gerekir.\n\nFarklı durumlara göre farklı dil düzeyleri kullanılır: normal hizmet için yumuşak istekler, güvenlik kuralları için daha doğrudan ifadeler.',
+      ),
+      LessonSection(
+        type: LessonSectionType.rule,
+        title: '💬 İstek ve Yönerge Kalıpları',
+        body:
+            '**Nazik istekler (hizmet):**\n• "Would you like …?" — teklif\n• "Could I get you …?" — teklif\n• "Would you mind …?" — rica\n• "I\'m afraid …" — olumsuz yanıt verme\n\n**Doğrudan yönergeler (güvenlik):**\n• "Please return to your seat."\n• "I need you to fasten your seatbelt now."\n• "Sir/Ma\'am, this item must be stowed."\n\n**Şikayet yönetimi:**\n• "I understand your concern, and I apologize for the inconvenience."\n• "I\'ll do my best to …"\n• "Allow me to …"',
+      ),
+      LessonSection(
+        type: LessonSectionType.examples,
+        title: 'Diyalog Örnekleri',
+        examples: [
+          ExampleSentence(
+            sentence: 'I\'m afraid we\'ve run out of the chicken option. Would the pasta be acceptable?',
+            highlight: "I'm afraid … Would … be acceptable",
+            translation: 'Maalesef tavuk seçeneğimiz tükendi. Makarna uygun olur mu?',
+          ),
+          ExampleSentence(
+            sentence: 'Sir, I need you to return to your seat and fasten your seatbelt. The captain has switched on the fasten seatbelt sign.',
+            highlight: 'I need you to',
+            translation: 'Efendim, yerinize dönüp emniyet kemerinizi bağlamanız gerekiyor. Kaptan emniyet kemeri işaretini açtı.',
+          ),
+        ],
+      ),
+      LessonSection(
+        type: LessonSectionType.practice,
+        title: 'Pratik Sorular',
+        practiceQuestions: [
+          QuestionModel(
+            id: -123,
+            category: QuestionCategory.vocabulary,
+            originalNumber: 2004,
+            questionText: 'A passenger complains about seat discomfort. The most professional response begins with:',
+            options: ['That\'s not my problem.', 'I understand your concern, and I apologize for the inconvenience.', 'You should have chosen a different seat.', 'Please wait.'],
+            correctIndex: 1,
+            difficulty: Difficulty.easy,
+          ),
+          QuestionModel(
+            id: -124,
+            category: QuestionCategory.sentenceCompletion,
+            originalNumber: 2005,
+            questionText: '"………… you like another drink?" — Choose the correct form.',
+            options: ['Do', 'Would', 'Can', 'Shall'],
+            correctIndex: 1,
+            difficulty: Difficulty.easy,
+          ),
+          QuestionModel(
+            id: -125,
+            category: QuestionCategory.sentenceCompletion,
+            originalNumber: 2006,
+            questionText: 'When asking a passenger to move a bag from an aisle: "I\'m afraid this bag ………… be stowed in the overhead bin."',
+            options: ['can', 'will', 'must', 'should'],
+            correctIndex: 2,
+            difficulty: Difficulty.medium,
+          ),
+        ],
+      ),
+    ],
+  );
+
+  // ─────────────────────────────────────────────────────────────
+  // CABIN 3 — Emergency Procedures
+  // ─────────────────────────────────────────────────────────────
+  static const _cabin3EmergencyProc = LessonContent(
+    id: 'cabin_3',
+    title: 'Acil Durum İletişimi',
+    subtitle: 'Tahliye, brace ve acil anons dili',
+    categoryId: 'cabin',
+    estimatedTime: '12 dk',
+    emoji: '🚨',
+    sections: [
+      LessonSection(
+        type: LessonSectionType.intro,
+        title: 'Acil durumda dil kesinliği hayat kurtarır',
+        body:
+            'Acil durum komutları **kısa, net ve tereddütsüz** olmalıdır. Normal hizmet dilinin aksine, acil durumlarda "please" veya "would you mind" kullanılmaz — doğrudan emir kipi tercih edilir.\n\nEACCS (Emergency Aircraft Crew Communication System) standartlarına göre acil durum anonsları uluslararası standart ifadeler içerir.',
+      ),
+      LessonSection(
+        type: LessonSectionType.rule,
+        title: '⚠️ Standart Acil Durum Komutları',
+        body:
+            '**Brace komutu:**\n• "Brace! Brace! Brace!" — acil iniş pozisyonu\n• "Head down! Stay down!"\n\n**Tahliye komutları:**\n• "Release seatbelts! Come this way!"\n• "Leave everything! Get out!"\n• "Jump and slide!" (kaydıraklarda)\n\n**Yangın/duman:**\n• "There is smoke in the cabin. Please remain calm and follow crew instructions."\n\n**Tıbbi:**\n• "Is there a doctor or medical professional on board?"\n\n**Kapı güvenliği:**\n• "Doors to manual and cross-check" / "Doors to automatic and cross-check"',
+      ),
+      LessonSection(
+        type: LessonSectionType.examples,
+        title: 'Acil Anonslara Örnekler',
+        examples: [
+          ExampleSentence(
+            sentence: 'Attention, this is an emergency. Fasten your seatbelts, put your seat backs and tray tables in their upright positions, and brace for impact.',
+            highlight: 'brace for impact',
+            translation: 'Dikkat, bu bir acil durumdur. Emniyet kemerlerinizi bağlayın, koltuk arkalıklarınızı ve tepsi masalarınızı dik konuma getirin ve çarpma için hazır olun.',
+          ),
+          ExampleSentence(
+            sentence: 'All passengers must evacuate the aircraft immediately. Leave all hand baggage behind and proceed to the nearest exit.',
+            highlight: 'Leave all hand baggage behind',
+            translation: 'Tüm yolcular uçaktan derhal tahliye edilmelidir. Tüm el bagajlarınızı geride bırakın ve en yakın çıkışa doğru ilerleyin.',
+          ),
+        ],
+      ),
+      LessonSection(
+        type: LessonSectionType.practice,
+        title: 'Pratik Sorular',
+        practiceQuestions: [
+          QuestionModel(
+            id: -126,
+            category: QuestionCategory.vocabulary,
+            originalNumber: 2007,
+            questionText: 'The command "Brace! Brace! Brace!" is given to:',
+            options: ['begin service', 'prepare passengers for a crash landing', 'open emergency exits', 'call for medical help'],
+            correctIndex: 1,
+            difficulty: Difficulty.easy,
+          ),
+          QuestionModel(
+            id: -127,
+            category: QuestionCategory.vocabulary,
+            originalNumber: 2008,
+            questionText: '"Doors to automatic and cross-check" is said:',
+            options: ['during service', 'before departure', 'during evacuation', 'at cruising altitude'],
+            correctIndex: 1,
+            difficulty: Difficulty.medium,
+          ),
+          QuestionModel(
+            id: -128,
+            category: QuestionCategory.sentenceCompletion,
+            originalNumber: 2009,
+            questionText: 'During evacuation, "Leave ………… behind" means passengers should not take their bags.',
+            options: ['everything', 'nothing', 'someone', 'anyone'],
+            correctIndex: 0,
+            difficulty: Difficulty.easy,
+          ),
+        ],
+      ),
+    ],
+  );
+
+  // ─────────────────────────────────────────────────────────────
+  // CABIN 4 — CRM & Crew Briefing
+  // ─────────────────────────────────────────────────────────────
+  static const _cabin4CrmBriefing = LessonContent(
+    id: 'cabin_4',
+    title: 'CRM ve Ekip İletişimi',
+    subtitle: 'Ekip kaynak yönetimi ve brifing dili',
+    categoryId: 'cabin',
+    estimatedTime: '12 dk',
+    emoji: '🧑‍✈️',
+    sections: [
+      LessonSection(
+        type: LessonSectionType.intro,
+        title: 'CRM neden hayati önem taşır',
+        body:
+            '**Crew Resource Management (CRM)**, kaza önlemede kritik bir faktördür. Araştırmalar, uçak kazalarının büyük çoğunluğunun teknik arızadan değil **iletişim ve ekip koordinasyonu** yetersizliğinden kaynaklandığını göstermektedir.\n\nEtkili CRM dili şunları içerir: açık çağrı yöntemi, challenge-response, sterile cockpit kuralına uyum ve güvenlik endişelerini iletebilme.',
+      ),
+      LessonSection(
+        type: LessonSectionType.rule,
+        title: '🔄 CRM İletişim Teknikleri',
+        body:
+            '**Closed-loop communication (kapalı döngü iletişim):**\n• Gönderici mesajı iletir\n• Alıcı mesajı tekrarlar\n• Gönderici onaylar\n\n**Assertiveness (iddialı iletişim):**\n• "I am concerned about …" — endişeyi bildirme\n• "I recommend we …" — öneri\n• "I need to advise you that …" — uyarı\n\n**Sterile cockpit:**\n• "Sterile cockpit is now in effect" — uçuşun kritik fazlarında\n• Yalnızca güvenlikle ilgili iletişim\n\n**Pre-flight briefing:**\n• "Today\'s senior cabin crew is …"\n• "Our emergency equipment locations are …"\n• "In the event of …, our procedure is …"',
+      ),
+      LessonSection(
+        type: LessonSectionType.examples,
+        title: 'CRM Diyalog Örnekleri',
+        examples: [
+          ExampleSentence(
+            sentence: 'Captain, I am concerned that a passenger in row 14 appears to be extremely intoxicated and may pose a safety risk.',
+            highlight: 'I am concerned that … may pose a safety risk',
+            translation: 'Kaptan, 14. sıradaki bir yolcunun aşırı sarhoş göründüğü ve güvenlik riski oluşturabileceği konusunda endişeliydim.',
+          ),
+          ExampleSentence(
+            sentence: 'Cross-check complete. All doors are armed and confirmed.',
+            highlight: 'Cross-check complete',
+            translation: 'Çapraz kontrol tamamlandı. Tüm kapılar devrede ve onaylandı.',
+          ),
+        ],
+      ),
+      LessonSection(
+        type: LessonSectionType.practice,
+        title: 'Pratik Sorular',
+        practiceQuestions: [
+          QuestionModel(
+            id: -129,
+            category: QuestionCategory.vocabulary,
+            originalNumber: 2010,
+            questionText: '"Sterile cockpit" means:',
+            options: ['the cockpit is clean', 'only safety-related communication is allowed', 'the crew is on break', 'passengers must be silent'],
+            correctIndex: 1,
+            difficulty: Difficulty.medium,
+          ),
+          QuestionModel(
+            id: -130,
+            category: QuestionCategory.vocabulary,
+            originalNumber: 2011,
+            questionText: 'In CRM, "closed-loop communication" refers to:',
+            options: ['sending encrypted messages', 'repeating back a received message to confirm understanding', 'communicating only with the captain', 'using an interphone'],
+            correctIndex: 1,
+            difficulty: Difficulty.medium,
+          ),
+          QuestionModel(
+            id: -131,
+            category: QuestionCategory.sentenceCompletion,
+            originalNumber: 2012,
+            questionText: '"I am ………… about the amount of fuel remaining" — assertive CRM language.',
+            options: ['worried', 'concerned', 'afraid', 'nervous'],
+            correctIndex: 1,
+            difficulty: Difficulty.medium,
+          ),
+        ],
+      ),
+    ],
+  );
+
+  // ─────────────────────────────────────────────────────────────
+  // CABIN 5 — Medical Terminology
+  // ─────────────────────────────────────────────────────────────
+  static const _cabin5MedicalTerms = LessonContent(
+    id: 'cabin_5',
+    title: 'Tıbbi Terminoloji',
+    subtitle: 'Uçuş içi tıbbi durum bildirme dili',
+    categoryId: 'cabin',
+    estimatedTime: '12 dk',
+    emoji: '🏥',
+    sections: [
+      LessonSection(
+        type: LessonSectionType.intro,
+        title: 'Uçuşta tıbbi acil yönetimi',
+        body:
+            'Kabin görevlileri ilk yardım eğitimi almış olsa da tıbbi bir acil durumda doktor veya sağlık profesyoneliyle iletişim kurmak için **doğru terminolojiyi** kullanmak gerekir.\n\nAyrıca yer kontrolü veya MEDLINK hizmetiyle iletişimde belirtileri doğru İngilizce ile aktarmak kritik önem taşır.',
+      ),
+      LessonSection(
+        type: LessonSectionType.rule,
+        title: '🩺 Temel Tıbbi Terimler',
+        body:
+            '**Bilinç durumu:**\n• conscious / unconscious — bilinçli / bilinçsiz\n• responsive / unresponsive — tepki veriyor / vermiyor\n• disoriented — dezoryantasyon\n\n**Belirtiler:**\n• chest pain — göğüs ağrısı\n• shortness of breath / dyspnea — nefes darlığı\n• nausea / vomiting — bulantı / kusma\n• seizure — nöbet\n• anaphylaxis — anafilaksi (ciddi alerjik reaksiyon)\n• hypoglycemia — hipoglisemi (düşük kan şekeri)\n\n**Müdahale:**\n• administer oxygen — oksijen ver\n• AED (Automated External Defibrillator) — otomatik harici defibrilatör\n• first aid kit — ilk yardım çantası\n• Is there a doctor or medical professional on board?',
+      ),
+      LessonSection(
+        type: LessonSectionType.examples,
+        title: 'Tıbbi Durum Bildirimi',
+        examples: [
+          ExampleSentence(
+            sentence: 'The passenger is conscious but unresponsive. She is breathing, but her pulse is weak and irregular.',
+            highlight: 'conscious but unresponsive … pulse is weak and irregular',
+            translation: 'Yolcu bilinçli ancak tepkisiz. Nefes alıyor, ancak nabzı zayıf ve düzensiz.',
+          ),
+          ExampleSentence(
+            sentence: 'The passenger is experiencing severe chest pain radiating to his left arm. We suspect a cardiac event.',
+            highlight: 'radiating to … cardiac event',
+            translation: 'Yolcu sol koluna yayılan şiddetli göğüs ağrısı yaşıyor. Kardiyak bir olay şüpheleniyoruz.',
+          ),
+        ],
+      ),
+      LessonSection(
+        type: LessonSectionType.practice,
+        title: 'Pratik Sorular',
+        practiceQuestions: [
+          QuestionModel(
+            id: -132,
+            category: QuestionCategory.vocabulary,
+            originalNumber: 2013,
+            questionText: 'A passenger who is "unresponsive" means they:',
+            options: ['are sleeping', 'do not react to stimuli', 'are refusing service', 'are speaking a foreign language'],
+            correctIndex: 1,
+            difficulty: Difficulty.easy,
+          ),
+          QuestionModel(
+            id: -133,
+            category: QuestionCategory.vocabulary,
+            originalNumber: 2014,
+            questionText: '"Anaphylaxis" in a medical report refers to:',
+            options: ['a broken bone', 'a severe allergic reaction', 'loss of consciousness', 'a heart attack'],
+            correctIndex: 1,
+            difficulty: Difficulty.medium,
+          ),
+          QuestionModel(
+            id: -134,
+            category: QuestionCategory.vocabulary,
+            originalNumber: 2015,
+            questionText: 'What does "AED" stand for?',
+            options: ['Aircraft Emergency Device', 'Automated External Defibrillator', 'Advanced Emergency Doctor', 'Aviation Emergency Directive'],
+            correctIndex: 1,
+            difficulty: Difficulty.easy,
+          ),
+        ],
+      ),
+    ],
+  );
+
+  // ─────────────────────────────────────────────────────────────
+  // CABIN 6 — Dangerous Goods Language
+  // ─────────────────────────────────────────────────────────────
+  static const _cabin6DangerousGoods = LessonContent(
+    id: 'cabin_6',
+    title: 'Tehlikeli Madde Dili',
+    subtitle: 'DG kategorileri ve mevzuat ifadeleri',
+    categoryId: 'cabin',
+    estimatedTime: '14 dk',
+    emoji: '⚠️',
+    sections: [
+      LessonSection(
+        type: LessonSectionType.intro,
+        title: 'Tehlikeli madde farkındalığı neden zorunludur',
+        body:
+            'ICAO Technical Instructions ve IATA DGR (Dangerous Goods Regulations) uyarınca kabin ekibi tehlikeli madde tanımlama ve bildirme konusunda eğitim almalıdır.\n\nTehlikeli maddeler uçak güvenliğine ciddi tehdit oluşturabilir. Doğru tanımlama ve hızlı bildirim çok önemlidir.',
+      ),
+      LessonSection(
+        type: LessonSectionType.rule,
+        title: '🏷️ IATA DG Kategorileri',
+        body:
+            '**9 Ana Tehlike Sınıfı:**\n• Class 1: Explosives — Patlayıcılar\n• Class 2: Gases — Gazlar\n• Class 3: Flammable liquids — Yanıcı sıvılar\n• Class 4: Flammable solids — Yanıcı katılar\n• Class 5: Oxidizing substances — Oksitleyici maddeler\n• Class 6: Toxic substances — Toksik maddeler\n• Class 7: Radioactive material — Radyoaktif materyal\n• Class 8: Corrosives — Aşındırıcılar\n• Class 9: Miscellaneous — Çeşitli tehlikeli maddeler (lityum piller dahil)\n\n**Yasaklı kalemler bildirimi:**\n• "This item is a prohibited article under IATA regulations."\n• "This item cannot be carried on board."',
+      ),
+      LessonSection(
+        type: LessonSectionType.examples,
+        title: 'DG İletişim Örnekleri',
+        examples: [
+          ExampleSentence(
+            sentence: 'I noticed a passenger attempting to board with a pressurized spray can that exceeds the permitted volume. I have removed it from the cabin.',
+            highlight: 'pressurized … exceeds the permitted volume',
+            translation: 'İzin verilen hacmi aşan basınçlı bir sprey kutusuyla binmeye çalışan bir yolcu fark ettim. Kabinden kaldırdım.',
+          ),
+          ExampleSentence(
+            sentence: 'Lithium batteries in quantities exceeding the permitted limit are classified as Class 9 dangerous goods and must be declared.',
+            highlight: 'must be declared',
+            translation: 'İzin verilen sınırı aşan lityum piller Sınıf 9 tehlikeli madde olarak sınıflandırılır ve beyan edilmelidir.',
+          ),
+        ],
+      ),
+      LessonSection(
+        type: LessonSectionType.practice,
+        title: 'Pratik Sorular',
+        practiceQuestions: [
+          QuestionModel(
+            id: -135,
+            category: QuestionCategory.vocabulary,
+            originalNumber: 2016,
+            questionText: 'Lithium batteries in excess quantities are classified under IATA Class:',
+            options: ['Class 3', 'Class 6', 'Class 9', 'Class 1'],
+            correctIndex: 2,
+            difficulty: Difficulty.medium,
+          ),
+          QuestionModel(
+            id: -136,
+            category: QuestionCategory.vocabulary,
+            originalNumber: 2017,
+            questionText: '"Corrosives" in the IATA DG classification refers to Class:',
+            options: ['5', '6', '7', '8'],
+            correctIndex: 3,
+            difficulty: Difficulty.medium,
+          ),
+          QuestionModel(
+            id: -137,
+            category: QuestionCategory.sentenceCompletion,
+            originalNumber: 2018,
+            questionText: '"This item cannot be ………… on board" — complete the standard DG phrase.',
+            options: ['taken', 'carried', 'brought', 'loaded'],
+            correctIndex: 1,
+            difficulty: Difficulty.easy,
+          ),
+        ],
+      ),
+    ],
+  );
+
+  // ─────────────────────────────────────────────────────────────
+  // AMT 1 — AMM Language
+  // ─────────────────────────────────────────────────────────────
+  static const _amt1AmmLanguage = LessonContent(
+    id: 'amt_1',
+    title: 'AMM Dili',
+    subtitle: 'Uçak Bakım El Kitabı okuma ve anlama',
+    categoryId: 'amt',
+    estimatedTime: '12 dk',
+    emoji: '📖',
+    sections: [
+      LessonSection(
+        type: LessonSectionType.intro,
+        title: 'AMM neden standart bir dil kullanır',
+        body:
+            'Aircraft Maintenance Manual (AMM), teknik prosedürlerin evrensel olarak anlaşılmasını sağlamak için **ASD-STE100 (Simplified Technical English)** standardını kullanır.\n\nBu standart: kısa cümleler, aktif fiil kullanımı, belirsiz olmayan teknik terimler ve onaylı kelime listesi içerir. AMM\'yi doğru okumak; güvenli bakım, EASA/FAA uyumluluğu ve kaza önleme açısından kritiktir.',
+      ),
+      LessonSection(
+        type: LessonSectionType.rule,
+        title: '🔧 AMM Temel Yapıları',
+        body:
+            '**Zorunluluk dili (Modal verbs):**\n• "must" — zorunlu eylem (EASA/FAA şartı)\n• "shall" — resmi zorunluluk\n• "should" — tavsiye\n• "may" — izin verilen eylem\n\n**Prosedür fiilleri:**\n• inspect — görsel kontrol yap\n• remove/install — söküp/takma\n• torque to — belirtilen tork değerine sık\n• apply — uygula (torque, lubricant, sealant)\n• verify — doğrula\n• record — kayıt al\n\n**Uyarı seviyeleri:**\n• WARNING — kişisel yaralanma veya ölüm riski\n• CAUTION — ekipman hasarı riski\n• NOTE — prosedür bilgisi',
+      ),
+      LessonSection(
+        type: LessonSectionType.examples,
+        title: 'AMM Prosedür Örnekleri',
+        examples: [
+          ExampleSentence(
+            sentence: 'WARNING: Do not open the hydraulic reservoir cap until system pressure is fully released. Failure to comply may result in serious injury.',
+            highlight: 'WARNING … must … Failure to comply',
+            translation: 'UYARI: Sistem basıncı tamamen düşürülmeden hidrolik rezervuar kapağını açmayın. Uyulmaması ciddi yaralanmaya neden olabilir.',
+          ),
+          ExampleSentence(
+            sentence: 'Torque the bolts to 25 Nm in a cross pattern. Apply Loctite 243 to the threads prior to installation.',
+            highlight: 'Torque … Apply … prior to installation',
+            translation: 'Cıvataları çapraz düzende 25 Nm\'ye sıkın. Montajdan önce dişlere Loctite 243 uygulayın.',
+          ),
+          ExampleSentence(
+            sentence: 'Inspect the brake assembly for wear, cracks, and fluid leakage. Replace any components that do not meet the serviceability limits.',
+            highlight: 'serviceability limits',
+            translation: 'Fren tertibatını aşınma, çatlak ve sıvı sızıntısı için inceleyin. Kullanılabilirlik sınırlarını karşılamayan parçaları değiştirin.',
+          ),
+        ],
+      ),
+      LessonSection(
+        type: LessonSectionType.practice,
+        title: 'Pratik Sorular',
+        practiceQuestions: [
+          QuestionModel(
+            id: -150,
+            category: QuestionCategory.vocabulary,
+            originalNumber: 2019,
+            questionText: 'In an AMM, "WARNING" indicates:',
+            options: ['a note about procedure sequence', 'risk of equipment damage only', 'risk of personal injury or death', 'a recommended but optional step'],
+            correctIndex: 2,
+            difficulty: Difficulty.easy,
+          ),
+          QuestionModel(
+            id: -151,
+            category: QuestionCategory.vocabulary,
+            originalNumber: 2020,
+            questionText: '"Torque to 25 Nm" in an AMM procedure means:',
+            options: ['apply 25 Nm of force in any direction', 'tighten the fastener to exactly 25 Nm using a torque wrench', 'use a 25 mm wrench', 'tighten firmly without measuring'],
+            correctIndex: 1,
+            difficulty: Difficulty.easy,
+          ),
+          QuestionModel(
+            id: -152,
+            category: QuestionCategory.sentenceCompletion,
+            originalNumber: 2021,
+            questionText: 'In AMM language, "must" indicates a ………… action required by regulation.',
+            options: ['recommended', 'optional', 'mandatory', 'prohibited'],
+            correctIndex: 2,
+            difficulty: Difficulty.easy,
+          ),
+        ],
+      ),
+    ],
+  );
+
+  // ─────────────────────────────────────────────────────────────
+  // AMT 2 — Technical Abbreviations
+  // ─────────────────────────────────────────────────────────────
+  static const _amt2Abbreviations = LessonContent(
+    id: 'amt_2',
+    title: 'Teknik Kısaltmalar',
+    subtitle: 'Havacılık bakım terminolojisindeki kısaltmalar',
+    categoryId: 'amt',
+    estimatedTime: '12 dk',
+    emoji: '🔤',
+    sections: [
+      LessonSection(
+        type: LessonSectionType.intro,
+        title: 'Kısaltmalar neden önemlidir',
+        body:
+            'Havacılık bakım dokümanları yüzlerce kısaltma içerir. Bu kısaltmaları yanlış anlamak **ciddi bakım hatalarına** yol açabilir.\n\nÖzellikle MEL, SB, AD, NDT ve CMM gibi terimler günlük iş akışında sıkça kullanılır ve doğru anlaşılmaları zorunludur.',
+      ),
+      LessonSection(
+        type: LessonSectionType.rule,
+        title: '📋 Kritik Bakım Kısaltmaları',
+        body:
+            '**Dokümanlar:**\n• AMM — Aircraft Maintenance Manual\n• CMM — Component Maintenance Manual\n• IPC — Illustrated Parts Catalog\n• MEL — Minimum Equipment List\n• DDG — Dispatch Deviation Guide\n• SB — Service Bulletin (üretici önerileri)\n• AD — Airworthiness Directive (zorunlu direktif)\n\n**Teknik:**\n• NDT — Non-Destructive Testing\n• LRU — Line Replaceable Unit\n• BRT — Bench Run Test\n• ENG — Engine\n• APU — Auxiliary Power Unit\n• HYD — Hydraulics\n• BITE — Built-In Test Equipment\n\n**Durum:**\n• U/S — Unserviceable\n• S/B — Serviceable\n• AOG — Aircraft on Ground (acil durum)',
+      ),
+      LessonSection(
+        type: LessonSectionType.examples,
+        title: 'Kısaltmaların Kullanımı',
+        examples: [
+          ExampleSentence(
+            sentence: 'The LRU was found U/S during preflight inspection. An AOG message was sent to maintenance control.',
+            highlight: 'LRU … U/S … AOG',
+            translation: 'Uçuş öncesi incelemede LRU kullanılamaz durumda bulundu. Bakım kontrolüne AOG mesajı gönderildi.',
+          ),
+          ExampleSentence(
+            sentence: 'Refer to the CMM for detailed overhaul procedures. NDT inspection is required at every major check.',
+            highlight: 'CMM … NDT',
+            translation: 'Detaylı revizyon prosedürleri için CMM\'ye bakın. Her büyük bakımda NDT muayenesi gereklidir.',
+          ),
+        ],
+      ),
+      LessonSection(
+        type: LessonSectionType.practice,
+        title: 'Pratik Sorular',
+        practiceQuestions: [
+          QuestionModel(
+            id: -153,
+            category: QuestionCategory.vocabulary,
+            originalNumber: 2022,
+            questionText: '"AOG" in aircraft maintenance means:',
+            options: ['Aircraft Overhaul Guide', 'Aircraft on Ground', 'Annual Overhaul Grading', 'Airworthiness Operations Group'],
+            correctIndex: 1,
+            difficulty: Difficulty.easy,
+          ),
+          QuestionModel(
+            id: -154,
+            category: QuestionCategory.vocabulary,
+            originalNumber: 2023,
+            questionText: '"MEL" stands for:',
+            options: ['Maintenance Engineering Log', 'Minimum Equipment List', 'Manual Engine Limit', 'Maintenance Error Log'],
+            correctIndex: 1,
+            difficulty: Difficulty.easy,
+          ),
+          QuestionModel(
+            id: -155,
+            category: QuestionCategory.vocabulary,
+            originalNumber: 2024,
+            questionText: '"NDT" in aircraft maintenance refers to:',
+            options: ['Normal Duty Time', 'Non-Destructive Testing', 'Night Departure Time', 'Navigation Display Terminal'],
+            correctIndex: 1,
+            difficulty: Difficulty.easy,
+          ),
+        ],
+      ),
+    ],
+  );
+
+  // ─────────────────────────────────────────────────────────────
+  // AMT 3 — Airworthiness Directives Language
+  // ─────────────────────────────────────────────────────────────
+  static const _amt3Airworthiness = LessonContent(
+    id: 'amt_3',
+    title: 'Uçuşa Elverişlilik Direktifleri',
+    subtitle: 'AD okuma ve uyumluluk dili',
+    categoryId: 'amt',
+    estimatedTime: '14 dk',
+    emoji: '📜',
+    sections: [
+      LessonSection(
+        type: LessonSectionType.intro,
+        title: 'Airworthiness Directive (AD) nedir',
+        body:
+            'Airworthiness Directives (ADs), havacılık otoriteleri (EASA, FAA, SHGM) tarafından yayımlanan **zorunlu bakım direktifleridir**. Belirli bir güvenlik sorunu tespit edildiğinde yayımlanır ve uyum **yasal zorunluluktur**.\n\nBir AD\'yi okuyamayan veya yanlış yorumlayan bir teknisyen hem uçağı hem de kariyerini tehlikeye atar.',
+      ),
+      LessonSection(
+        type: LessonSectionType.rule,
+        title: '📋 AD Yapısı ve Anahtar İfadeler',
+        body:
+            '**Tipik AD bölümleri:**\n• Applicability — hangi uçak/motor tiplerine uygulanır\n• Reason — direktifin nedeni\n• Description of action — yapılacak işlem\n• Compliance — uyum süresi ve koşulları\n• Alternative Methods of Compliance (AMOC) — alternatif uyum yöntemi\n\n**Uyumluluk ifadeleri:**\n• "This AD requires …" — zorunlu eylem\n• "Within [X] flight hours after the effective date" — uyum süresi\n• "Before further flight" — acil, bir sonraki uçuştan önce\n• "At each [check type] interval" — periyodik\n• "Unless already accomplished" — daha önce yapılmışsa geçerli',
+      ),
+      LessonSection(
+        type: LessonSectionType.examples,
+        title: 'AD Metinden Örnekler',
+        examples: [
+          ExampleSentence(
+            sentence: 'This AD requires inspection of the wing spar attachment fittings within 500 flight hours after the effective date of this AD.',
+            highlight: 'requires … within 500 flight hours after the effective date',
+            translation: 'Bu AD, bu AD\'nin yürürlük tarihinden itibaren 500 uçuş saati içinde kanat lonjeronunun bağlantı parçalarının muayenesini gerektirmektedir.',
+          ),
+          ExampleSentence(
+            sentence: 'Before further flight, replace the fuel pump with a serviceable unit in accordance with the AMM.',
+            highlight: 'Before further flight … in accordance with the AMM',
+            translation: 'Bir sonraki uçuştan önce, yakıt pompasını AMM\'ye uygun olarak kullanılabilir bir üniteyle değiştirin.',
+          ),
+        ],
+      ),
+      LessonSection(
+        type: LessonSectionType.practice,
+        title: 'Pratik Sorular',
+        practiceQuestions: [
+          QuestionModel(
+            id: -156,
+            category: QuestionCategory.vocabulary,
+            originalNumber: 2025,
+            questionText: '"Before further flight" in an AD means:',
+            options: ['within 100 hours', 'at the next scheduled check', 'the action must be done before the next flight', 'within one calendar year'],
+            correctIndex: 2,
+            difficulty: Difficulty.easy,
+          ),
+          QuestionModel(
+            id: -157,
+            category: QuestionCategory.vocabulary,
+            originalNumber: 2026,
+            questionText: 'The "Applicability" section of an AD describes:',
+            options: ['the cost of compliance', 'which aircraft types or serial numbers are affected', 'how to request an AMOC', 'the history of the safety issue'],
+            correctIndex: 1,
+            difficulty: Difficulty.easy,
+          ),
+          QuestionModel(
+            id: -158,
+            category: QuestionCategory.sentenceCompletion,
+            originalNumber: 2027,
+            questionText: '"Unless already ………… " in an AD means the action is not required if it was previously done.',
+            options: ['accomplished', 'inspected', 'recorded', 'approved'],
+            correctIndex: 0,
+            difficulty: Difficulty.medium,
+          ),
+        ],
+      ),
+    ],
+  );
+
+  // ─────────────────────────────────────────────────────────────
+  // AMT 4 — Regulatory Language (EASA/SHGM)
+  // ─────────────────────────────────────────────────────────────
+  static const _amt4RegulatoryLang = LessonContent(
+    id: 'amt_4',
+    title: 'Mevzuat Dili',
+    subtitle: 'EASA Part-66 / Part-145 ve SHGM ifadeleri',
+    categoryId: 'amt',
+    estimatedTime: '14 dk',
+    emoji: '⚖️',
+    sections: [
+      LessonSection(
+        type: LessonSectionType.intro,
+        title: 'Neden mevzuat İngilizcesi öğrenilmeli',
+        body:
+            'EASA yönetmelikleri (Part-66, Part-145, Part-M) İngilizce olarak yayımlanır ve Türk SHGM mevzuatı da bu belgelere atıf yapar.\n\nBir teknisyen olarak lisans yenileme, yetki kazanma ve denetim süreçlerinde bu belgeleri okuyup anlayabilmek zorunludur. "Shall", "may", "must" gibi modal fiillerin mevzuattaki anlamları günlük İngilizceden farklıdır.',
+      ),
+      LessonSection(
+        type: LessonSectionType.rule,
+        title: '📐 Mevzuatta Modal Fiil Hiyerarşisi',
+        body:
+            '**Zorunluluk seviyeleri (EASA/ICAO standartları):**\n• **shall** — kesin yasal zorunluluk (en güçlü)\n• **must** — zorunluluk (düzenleyici şart)\n• **should** — tavsiye edilen iyi uygulama\n• **may** — izin verilen seçenek\n\n**Dikkat:** Günlük İngilizcede "shall" eski moda; mevzuatta ise **zorunlu**dur.\n\n**Part-66 anahtar terimleri:**\n• holder of a licence — lisans sahibi\n• certifying staff — onaylayıcı personel\n• scope of work — iş kapsamı\n• authorisation — yetki\n• compliance — uyumluluk\n• findings — bulgular\n• corrective action — düzeltici faaliyet',
+      ),
+      LessonSection(
+        type: LessonSectionType.examples,
+        title: 'Mevzuat Metinden Örnekler',
+        examples: [
+          ExampleSentence(
+            sentence: 'The holder of a Part-66 licence shall ensure that the licence is accessible when performing maintenance.',
+            highlight: 'shall ensure',
+            translation: 'Part-66 lisansının sahibi, bakım gerçekleştirirken lisansın erişilebilir olmasını sağlamalıdır (yasal zorunluluk).',
+          ),
+          ExampleSentence(
+            sentence: 'Certifying staff shall not certify maintenance they have not performed or directly supervised.',
+            highlight: 'shall not certify',
+            translation: 'Onaylayıcı personel, bizzat gerçekleştirmediği veya doğrudan denetlemediği bakımı onaylamamalıdır.',
+          ),
+        ],
+      ),
+      LessonSection(
+        type: LessonSectionType.practice,
+        title: 'Pratik Sorular',
+        practiceQuestions: [
+          QuestionModel(
+            id: -159,
+            category: QuestionCategory.vocabulary,
+            originalNumber: 2028,
+            questionText: 'In EASA regulations, "shall" indicates:',
+            options: ['a recommendation', 'a permitted option', 'a mandatory legal requirement', 'a prohibition'],
+            correctIndex: 2,
+            difficulty: Difficulty.medium,
+          ),
+          QuestionModel(
+            id: -160,
+            category: QuestionCategory.vocabulary,
+            originalNumber: 2029,
+            questionText: '"Certifying staff" in Part-145 refers to:',
+            options: ['staff who issue certificates to passengers', 'personnel authorized to certify that maintenance has been carried out', 'EASA inspectors', 'training instructors'],
+            correctIndex: 1,
+            difficulty: Difficulty.medium,
+          ),
+          QuestionModel(
+            id: -161,
+            category: QuestionCategory.vocabulary,
+            originalNumber: 2030,
+            questionText: '"Corrective action" in a regulatory context means:',
+            options: ['a punishment', 'disciplinary action against a technician', 'action taken to fix a finding or non-compliance', 'a type of inspection'],
+            correctIndex: 2,
+            difficulty: Difficulty.medium,
+          ),
+        ],
+      ),
+    ],
+  );
+
+  // ─────────────────────────────────────────────────────────────
+  // AMT 5 — Defect Reporting
+  // ─────────────────────────────────────────────────────────────
+  static const _amt5DefectReporting = LessonContent(
+    id: 'amt_5',
+    title: 'Arıza Raporlama',
+    subtitle: 'Teknik kayıt ve arıza raporu yazma dili',
+    categoryId: 'amt',
+    estimatedTime: '12 dk',
+    emoji: '📝',
+    sections: [
+      LessonSection(
+        type: LessonSectionType.intro,
+        title: 'Neden doğru arıza kaydı kritiktir',
+        body:
+            'Teknik Log (Aircraft Technical Log) ve arıza raporları **yasal belgelerdir**. Bir arızanın yanlış veya eksik kaydedilmesi uçuş güvenliğini tehlikeye atar ve ciddi yasal sonuçlar doğurur.\n\nDoğru arıza kaydı: nedeni açıkça belirtir, yapılan işlemi doğru fiillerle anlatır ve yetkili onayı içerir.',
+      ),
+      LessonSection(
+        type: LessonSectionType.rule,
+        title: '✏️ Arıza Raporu Yazım Kuralları',
+        body:
+            '**Arıza tanımında kullanılan fiiller:**\n• found — bulundu (pasif keşif)\n• observed — gözlemlendi\n• reported — raporlandı / bildirildi\n• indicated — gösterge gösterdi\n• failed — arızalandı\n• leaked — sızdı\n\n**Düzeltici faaliyet fiilleri:**\n• replaced — değiştirildi\n• inspected — muayene edildi\n• cleaned and reinstalled — temizlendi ve yeniden takıldı\n• tested — test edildi\n• adjusted — ayarlandı\n• deferred in accordance with MEL — MEL kapsamında ertelendi\n\n**Kapanış ifadesi:**\n• "Aircraft released to service" / "Component released serviceable"\n• "Certified in accordance with AMM [chapter]"',
+      ),
+      LessonSection(
+        type: LessonSectionType.examples,
+        title: 'Arıza Kayıt Örnekleri',
+        examples: [
+          ExampleSentence(
+            sentence: 'Defect: No. 2 engine oil pressure found low during post-flight inspection. Action: Checked oil level — found 2 qts low. Added oil per AMM 79-00-00. Oil pressure normal on ground run.',
+            highlight: 'found … Added … per AMM',
+            translation: 'Arıza: Uçuş sonrası muayenede 2 no\'lu motor yağ basıncı düşük bulundu. İşlem: Yağ seviyesi kontrol edildi — 2 litre eksik bulundu. AMM 79-00-00\'a göre yağ ilave edildi. Yer çalıştırmasında yağ basıncı normal.',
+          ),
+          ExampleSentence(
+            sentence: 'Defect deferred in accordance with MEL item 29-01. Aircraft released to service. Next required action within 3 flight days.',
+            highlight: 'deferred in accordance with MEL … released to service',
+            translation: 'Arıza MEL madde 29-01 kapsamında ertelendi. Uçak servise alındı. Bir sonraki gerekli işlem 3 uçuş günü içinde.',
+          ),
+        ],
+      ),
+      LessonSection(
+        type: LessonSectionType.practice,
+        title: 'Pratik Sorular',
+        practiceQuestions: [
+          QuestionModel(
+            id: -162,
+            category: QuestionCategory.vocabulary,
+            originalNumber: 2031,
+            questionText: '"Deferred in accordance with MEL" means:',
+            options: ['the repair is cancelled permanently', 'the defect is postponed as permitted by the Minimum Equipment List', 'the aircraft is grounded', 'the defect was not found'],
+            correctIndex: 1,
+            difficulty: Difficulty.medium,
+          ),
+          QuestionModel(
+            id: -163,
+            category: QuestionCategory.vocabulary,
+            originalNumber: 2032,
+            questionText: 'Which phrase correctly closes a technical log entry?',
+            options: ['Work is complete.', 'Aircraft released to service.', 'Defect fixed.', 'Done.'],
+            correctIndex: 1,
+            difficulty: Difficulty.easy,
+          ),
+          QuestionModel(
+            id: -164,
+            category: QuestionCategory.sentenceCompletion,
+            originalNumber: 2033,
+            questionText: 'In a defect report: "Hydraulic fluid ………… from the main landing gear actuator seal."',
+            options: ['dropped', 'leaked', 'spilled', 'came'],
+            correctIndex: 1,
+            difficulty: Difficulty.easy,
+          ),
+        ],
+      ),
+    ],
+  );
+
+  // ─────────────────────────────────────────────────────────────
+  // AMT 6 — Work Order & Job Card Language
+  // ─────────────────────────────────────────────────────────────
+  static const _amt6WorkOrder = LessonContent(
+    id: 'amt_6',
+    title: 'İş Emri ve Görev Kartı Dili',
+    subtitle: 'Work order ve job card terminolojisi',
+    categoryId: 'amt',
+    estimatedTime: '12 dk',
+    emoji: '🗂️',
+    sections: [
+      LessonSection(
+        type: LessonSectionType.intro,
+        title: 'İş emri sistemi neden öğrenilmeli',
+        body:
+            'Work Order (WO) ve Job Card (JC/Task Card), bakım planlaması ve takibinin temelini oluşturur. Part-145 onaylı organizasyonlarda tüm bakım faaliyetleri bir iş emrine bağlıdır.\n\nBir iş emrini doğru okumak: işin kapsamını, kullanılacak referans dokümanları, gerekli parça ve ekipmanı ve imza yetkinliklerini anlamayı gerektirir.',
+      ),
+      LessonSection(
+        type: LessonSectionType.rule,
+        title: '📋 İş Emri Bölümleri ve Terimleri',
+        body:
+            '**Tipik Work Order bölümleri:**\n• Work scope — iş kapsamı\n• Reference documents — AMM, CMM, SB bölümleri\n• Man-hours — adam-saat tahmini\n• Materials required — gerekli malzeme listesi\n• Special tools — özel alet gereksinimleri\n• Zone — uçağın çalışma bölgesi\n• Sign-off — imza/onay\n\n**Job card fiilleri:**\n• Accomplish — gerçekleştir (formal)\n• Verify — doğrula\n• Ensure — emin ol\n• Record — kayıt al\n• Certify — onaylayıcı imzası ile onayla\n\n**Onay ifadeleri:**\n• "Signed and stamped by certifying staff"\n• "Work completed satisfactorily"\n• "Complies with [AMM chapter]"',
+      ),
+      LessonSection(
+        type: LessonSectionType.examples,
+        title: 'Job Card Örnekleri',
+        examples: [
+          ExampleSentence(
+            sentence: 'Task: Accomplish engine oil change in accordance with AMM 12-10-01. Record part numbers and batch numbers of oil used. Sign off upon completion.',
+            highlight: 'Accomplish … in accordance with … Sign off upon completion',
+            translation: 'Görev: AMM 12-10-01\'e uygun olarak motor yağı değişimini gerçekleştirin. Kullanılan yağın parça numaralarını ve seri numaralarını kaydedin. Tamamlandığında imzalayın.',
+          ),
+          ExampleSentence(
+            sentence: 'Verify that all access panels are closed and secured prior to returning the aircraft to service.',
+            highlight: 'Verify … prior to returning to service',
+            translation: 'Uçağı servise geri döndürmeden önce tüm erişim panellerinin kapalı ve güvenli olduğunu doğrulayın.',
+          ),
+        ],
+      ),
+      LessonSection(
+        type: LessonSectionType.practice,
+        title: 'Pratik Sorular',
+        practiceQuestions: [
+          QuestionModel(
+            id: -165,
+            category: QuestionCategory.vocabulary,
+            originalNumber: 2034,
+            questionText: 'In a job card, "accomplish" is a formal word meaning:',
+            options: ['check', 'carry out / perform', 'delay', 'cancel'],
+            correctIndex: 1,
+            difficulty: Difficulty.easy,
+          ),
+          QuestionModel(
+            id: -166,
+            category: QuestionCategory.vocabulary,
+            originalNumber: 2035,
+            questionText: '"Man-hours" in a work order refers to:',
+            options: ['the number of workers', 'the estimated time required to complete the work', 'overtime payment', 'safety regulations for workers'],
+            correctIndex: 1,
+            difficulty: Difficulty.easy,
+          ),
+          QuestionModel(
+            id: -167,
+            category: QuestionCategory.sentenceCompletion,
+            originalNumber: 2036,
+            questionText: '"Work completed ………… " is the standard sign-off phrase on a job card.',
+            options: ['correctly', 'satisfactorily', 'successfully', 'properly'],
+            correctIndex: 1,
+            difficulty: Difficulty.medium,
           ),
         ],
       ),

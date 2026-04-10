@@ -57,6 +57,20 @@ class _LessonListScreenState extends ConsumerState<LessonListScreen> {
     'translation_4': ProficiencyLevel.advanced,
     'reading_6': ProficiencyLevel.advanced,
     'completion_2': ProficiencyLevel.advanced,
+    // Kabin Görevlisi Dersleri
+    'cabin_1': ProficiencyLevel.beginner,
+    'cabin_2': ProficiencyLevel.beginner,
+    'cabin_3': ProficiencyLevel.elementary,
+    'cabin_4': ProficiencyLevel.elementary,
+    'cabin_5': ProficiencyLevel.elementary,
+    'cabin_6': ProficiencyLevel.intermediate,
+    // AMT Dersleri
+    'amt_1': ProficiencyLevel.beginner,
+    'amt_2': ProficiencyLevel.beginner,
+    'amt_3': ProficiencyLevel.elementary,
+    'amt_4': ProficiencyLevel.elementary,
+    'amt_5': ProficiencyLevel.elementary,
+    'amt_6': ProficiencyLevel.intermediate,
   };
 
   static const _levelGroups = [
@@ -92,7 +106,7 @@ class _LessonListScreenState extends ConsumerState<LessonListScreen> {
       data: (profile) {
         final level = profile?.level ?? ProficiencyLevel.beginner;
         final weakCategories = profile?.weakCategories ?? [];
-        final lessons = LessonContentData.all;
+        final lessons = LessonContentData.forRole(profile?.role ?? 'student');
 
         return FutureBuilder<Set<String>>(
           key: ValueKey(_refreshKey),

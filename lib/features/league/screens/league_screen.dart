@@ -35,7 +35,7 @@ class _LeagueScreenState extends ConsumerState<LeagueScreen> {
         final season = LeagueConstants.currentSeasonKey;
         final myUid = FirebaseAuth.instance.currentUser?.uid ?? '';
 
-        return ref.watch(leaderboardProvider(leagueId)).when(
+        return ref.watch(leaderboardProvider((leagueId: leagueId, role: profile.role))).when(
           data: (members) => _LeagueBody(
             league: league,
             members: members,
