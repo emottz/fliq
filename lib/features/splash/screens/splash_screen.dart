@@ -156,7 +156,7 @@ class _SplashScreenState extends State<SplashScreen>
                     child: FadeTransition(
                       opacity: _textOpacity,
                       child: const Text(
-                        'Avia English',
+                        'Avialish',
                         textAlign: TextAlign.center,
                         style: TextStyle(
                           fontSize: 38,

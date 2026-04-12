@@ -1,11 +1,11 @@
 {
-    "name": "Avia English",
-    "short_name": "Avia English",
+    "name": "Avialish",
+    "short_name": "Avialish",
     "start_url": ".",
     "display": "standalone",
     "background_color": "#0175C2",
     "theme_color": "#0175C2",
-    "description": "Avia English — Havacılık İngilizcesi Sınav ve Öğrenme Uygulaması",
+    "description": "Avialish — Havacılık İngilizcesi Sınav ve Öğrenme Uygulaması",
     "orientation": "portrait-primary",
     "prefer_related_applications": false,
     "icons": [

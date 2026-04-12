@@ -36,9 +36,9 @@ class ReportService {
         headers: {'Content-Type': 'application/json', 'Accept': 'application/json'},
         body: jsonEncode({
           'access_key': _key,
-          'subject': 'Avia English Hata Bildirimi — $errorType',
-          'from_name': 'Avia English Uygulama',
-          'name': 'Avia English App',
+          'subject': 'Avialish Hata Bildirimi — $errorType',
+          'from_name': 'Avialish Uygulama',
+          'name': 'Avialish App',
           'email': 'noreply@aviaenglish.app',
           'message': buf.toString(),
           'botcheck': false,

@@ -4,6 +4,7 @@ import 'package:go_router/go_router.dart';
 import '../../../core/constants/app_colors.dart';
 import '../../../core/constants/rank_constants.dart';
 import '../../../shared/providers/app_providers.dart';
+import '../../../shared/widgets/airplane_logo.dart';
 import '../../../shared/widgets/hearts_display.dart';
 
 // Geniş ekran eşiği (px)
@@ -100,17 +101,9 @@ class _SideNav extends StatelessWidget {
         children: [
           // ── Logo ────────────────────────────────────────────────────────────
           const SizedBox(height: 24),
-          Padding(
-            padding: const EdgeInsets.symmetric(horizontal: 20),
-            child: Text(
-              'Avia English',
-              style: const TextStyle(
-                fontSize: 22,
-                fontWeight: FontWeight.w800,
-                color: AppColors.primary,
-                letterSpacing: 2,
-              ),
-            ),
+          const Padding(
+            padding: EdgeInsets.symmetric(horizontal: 20),
+            child: AirplaneLogo(size: 40, showText: true),
           ),
           const SizedBox(height: 28),
 
@@ -269,15 +262,7 @@ class _XpStreakHeader extends StatelessWidget {
       ),
       child: Row(
         children: [
-          const Text(
-            'Avia English',
-            style: TextStyle(
-              fontSize: 18,
-              fontWeight: FontWeight.w800,
-              color: AppColors.primary,
-              letterSpacing: 2,
-            ),
-          ),
+          const AirplaneLogo(size: 32, showText: true, horizontal: true),
           const Spacer(),
           // Kalpler her zaman görünür (profile'dan bağımsız)
           const HeartsDisplay(),
