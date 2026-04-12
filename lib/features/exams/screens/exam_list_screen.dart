@@ -3,8 +3,10 @@ import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:go_router/go_router.dart';
 import '../../../core/constants/app_colors.dart';
 import '../../../core/constants/app_text_styles.dart';
+import '../../../core/services/hearts_service.dart';
 import '../../../data/models/question_model.dart';
 import '../../../shared/providers/app_providers.dart';
+import '../../../shared/widgets/hearts_display.dart';
 import '../../../shared/widgets/primary_button.dart';
 
 class ExamListScreen extends ConsumerWidget {
@@ -19,12 +21,23 @@ class ExamListScreen extends ConsumerWidget {
     (QuestionCategory.sentenceCompletion, Icons.format_quote, 'Cümle Tamamlama'),
   ];
 
+  Future<void> _startExam(
+    BuildContext context,
+    WidgetRef ref,
+    Map<String, dynamic> config,
+  ) async {
+    final ok = await showNoHeartsDialog(context, ref, HeartsService.examCost);
+    if (!ok || !context.mounted) return;
+    await ref.read(heartsProvider.notifier).use(HeartsService.examCost);
+    if (!context.mounted) return;
+    context.go('/exam/session', extra: config);
+  }
+
   @override
   Widget build(BuildContext context, WidgetRef ref) {
-    final weakCategories = ref.watch(userProfileProvider).value?.weakCategories ?? [];
-    final isPremium = ref.watch(isPremiumProvider).value ?? false;
-
-    void goPaywall() => context.push('/subscription');
+    final profile = ref.watch(userProfileProvider).value;
+    final weakCategories = profile?.weakCategories ?? [];
+    final isAmt = profile?.role == 'amt';
 
     return Center(
       child: ConstrainedBox(
@@ -36,11 +49,17 @@ class ExamListScreen extends ConsumerWidget {
             children: [
               const Text('Sınavlar', style: AppTextStyles.heading2),
               const SizedBox(height: 16),
+
+              // ── Uçak Bakım Teknisyeni Özel Sınavı ──────────────────────
+              if (isAmt) ...[
+                _AmtExamCard(
+                  onTap: () => _startExam(context, ref, {'mode': 'amt_exam'}),
+                ),
+                const SizedBox(height: 16),
+              ],
+
               _DailyExamCard(
-                isPremium: isPremium,
-                onTap: isPremium
-                    ? () => context.go('/exam/session', extra: {'count': 20, 'mode': 'daily'})
-                    : goPaywall,
+                onTap: () => _startExam(context, ref, {'count': 20, 'mode': 'daily'}),
               ),
               const SizedBox(height: 24),
               const Text('Kategoriye Göre Pratik', style: AppTextStyles.heading3),
@@ -57,30 +76,28 @@ class ExamListScreen extends ConsumerWidget {
                   icon: c.$2,
                   label: c.$3,
                   isWeak: weakCategories.contains(c.$1.id),
-                  isPremium: isPremium,
-                  onTap: isPremium
-                      ? () => context.go('/exam/session', extra: {
-                            'count': 15,
-                            'category': c.$1.id,
-                            'mode': 'category',
-                          })
-                      : goPaywall,
+                  onTap: () => _startExam(context, ref, {
+                    'count': 15,
+                    'category': c.$1.id,
+                    'mode': 'category',
+                  }),
                 )).toList(),
               ),
               const SizedBox(height: 24),
               PrimaryButton(
                 label: '⚡  Hızlı Pratik (10 Soru)',
                 outlined: true,
-                onPressed: () => context.go('/exam/session', extra: {'count': 10, 'mode': 'quick'}),
+                onPressed: () => _startExam(context, ref, {'count': 10, 'mode': 'quick'}),
               ),
-              if (!isPremium) ...[
-                const SizedBox(height: 8),
-                const Text(
-                  'Ücretsiz: Hızlı Pratik · Premium: Günlük Sınav + Kategori',
-                  style: AppTextStyles.caption,
-                  textAlign: TextAlign.center,
-                ),
-              ],
+              const SizedBox(height: 8),
+              const Row(
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: [
+                  Text('Sınav başlatmak ', style: AppTextStyles.caption),
+                  Text('❤️ 10', style: TextStyle(fontSize: 12, fontWeight: FontWeight.w700, color: Color(0xFFEF4444))),
+                  Text(' hak kullanır', style: AppTextStyles.caption),
+                ],
+              ),
             ],
           ),
         ),
@@ -89,10 +106,11 @@ class ExamListScreen extends ConsumerWidget {
   }
 }
 
-class _DailyExamCard extends StatelessWidget {
+// ── Uçak Bakım Teknisyeni Özel Sınav Kartı ───────────────────────────────────
+
+class _AmtExamCard extends StatelessWidget {
   final VoidCallback onTap;
-  final bool isPremium;
-  const _DailyExamCard({required this.onTap, required this.isPremium});
+  const _AmtExamCard({required this.onTap});
 
   @override
   Widget build(BuildContext context) {
@@ -101,10 +119,110 @@ class _DailyExamCard extends StatelessWidget {
       child: Container(
         padding: const EdgeInsets.all(20),
         decoration: BoxDecoration(
-          gradient: LinearGradient(
-            colors: isPremium
-                ? [AppColors.primary, AppColors.primaryLight]
-                : [const Color(0xFF6B7280), const Color(0xFF9CA3AF)],
+          gradient: const LinearGradient(
+            colors: [Color(0xFF1E3A5F), Color(0xFF2563EB)],
+            begin: Alignment.topLeft,
+            end: Alignment.bottomRight,
+          ),
+          borderRadius: BorderRadius.circular(20),
+          boxShadow: [
+            BoxShadow(
+              color: const Color(0xFF1E3A5F).withValues(alpha: 0.35),
+              blurRadius: 16,
+              offset: const Offset(0, 6),
+            ),
+          ],
+        ),
+        child: Row(
+          children: [
+            Expanded(
+              child: Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: [
+                  // Rozet
+                  Container(
+                    padding: const EdgeInsets.symmetric(horizontal: 8, vertical: 3),
+                    decoration: BoxDecoration(
+                      color: Colors.white.withValues(alpha: 0.2),
+                      borderRadius: BorderRadius.circular(8),
+                    ),
+                    child: const Text(
+                      '🔧 Uçak Bakım Teknisyeni',
+                      style: TextStyle(color: Colors.white, fontSize: 11, fontWeight: FontWeight.w600),
+                    ),
+                  ),
+                  const SizedBox(height: 8),
+                  const Text(
+                    'Yabancı Dil Sınavı',
+                    style: TextStyle(
+                      color: Colors.white,
+                      fontSize: 20,
+                      fontWeight: FontWeight.w800,
+                    ),
+                  ),
+                  const SizedBox(height: 4),
+                  const Text(
+                    'SHGM standart sınav formatı',
+                    style: TextStyle(color: Colors.white70, fontSize: 12),
+                  ),
+                  const SizedBox(height: 10),
+                  Wrap(
+                    spacing: 12,
+                    runSpacing: 6,
+                    children: [
+                      _chip(Icons.timer_outlined, '80 dakika'),
+                      _chip(Icons.quiz_outlined, '80 soru'),
+                      _chip(Icons.category_outlined, '6 bölüm'),
+                    ],
+                  ),
+                ],
+              ),
+            ),
+            const SizedBox(width: 12),
+            Container(
+              width: 48,
+              height: 48,
+              decoration: BoxDecoration(
+                color: Colors.white.withValues(alpha: 0.15),
+                shape: BoxShape.circle,
+              ),
+              child: const Center(
+                child: Text('🔧', style: TextStyle(fontSize: 24)),
+              ),
+            ),
+          ],
+        ),
+      ),
+    );
+  }
+
+  Widget _chip(IconData icon, String label) {
+    return Row(
+      mainAxisSize: MainAxisSize.min,
+      children: [
+        Icon(icon, color: Colors.white70, size: 13),
+        const SizedBox(width: 4),
+        Text(label, style: const TextStyle(color: Colors.white70, fontSize: 11)),
+      ],
+    );
+  }
+}
+
+// ── Günlük Sınav Kartı ────────────────────────────────────────────────────────
+
+class _DailyExamCard extends StatelessWidget {
+  final VoidCallback onTap;
+  const _DailyExamCard({required this.onTap});
+
+  @override
+  Widget build(BuildContext context) {
+    return GestureDetector(
+      onTap: onTap,
+      child: Container(
+        padding: const EdgeInsets.all(20),
+        decoration: BoxDecoration(
+          gradient: const LinearGradient(
+            colors: [AppColors.primary, AppColors.primaryLight],
             begin: Alignment.topLeft,
             end: Alignment.bottomRight,
           ),
@@ -116,9 +234,9 @@ class _DailyExamCard extends StatelessWidget {
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
-                  Text(
-                    isPremium ? 'Bugünün Sınavı' : '👑 Premium Özellik',
-                    style: const TextStyle(color: Colors.white70, fontSize: 13),
+                  const Text(
+                    'Bugünün Sınavı',
+                    style: TextStyle(color: Colors.white70, fontSize: 13),
                   ),
                   const SizedBox(height: 4),
                   const Text(
@@ -131,16 +249,14 @@ class _DailyExamCard extends StatelessWidget {
                       _chip(Icons.timer_outlined, '20 dk'),
                       const SizedBox(width: 10),
                       _chip(Icons.quiz_outlined, '20 soru'),
+                      const SizedBox(width: 10),
+                      _chip(Icons.favorite, '❤️ 10'),
                     ],
                   ),
                 ],
               ),
             ),
-            Icon(
-              isPremium ? Icons.arrow_forward_ios : Icons.lock_outline,
-              color: Colors.white,
-              size: 20,
-            ),
+            const Icon(Icons.arrow_forward_ios, color: Colors.white, size: 20),
           ],
         ),
       ),
@@ -148,6 +264,9 @@ class _DailyExamCard extends StatelessWidget {
   }
 
   Widget _chip(IconData icon, String label) {
+    if (label.startsWith('❤️')) {
+      return Text(label, style: const TextStyle(color: Colors.white70, fontSize: 12));
+    }
     return Row(
       children: [
         Icon(icon, color: Colors.white70, size: 14),
@@ -163,7 +282,6 @@ class _CategoryCard extends StatelessWidget {
   final IconData icon;
   final String label;
   final bool isWeak;
-  final bool isPremium;
   final VoidCallback onTap;
 
   const _CategoryCard({
@@ -171,7 +289,6 @@ class _CategoryCard extends StatelessWidget {
     required this.icon,
     required this.label,
     required this.isWeak,
-    required this.isPremium,
     required this.onTap,
   });
 
@@ -183,19 +300,11 @@ class _CategoryCard extends StatelessWidget {
         width: double.infinity,
         padding: const EdgeInsets.all(14),
         decoration: BoxDecoration(
-          color: !isPremium
-              ? AppColors.surfaceVariant
-              : isWeak
-                  ? const Color(0xFFFFFBEB)
-                  : AppColors.surface,
+          color: isWeak ? const Color(0xFFFFFBEB) : AppColors.surface,
           borderRadius: BorderRadius.circular(16),
           border: Border.all(
-            color: !isPremium
-                ? AppColors.divider
-                : isWeak
-                    ? AppColors.warning
-                    : AppColors.divider,
-            width: isWeak && isPremium ? 1.5 : 1,
+            color: isWeak ? AppColors.warning : AppColors.divider,
+            width: isWeak ? 1.5 : 1,
           ),
         ),
         child: Column(
@@ -208,37 +317,17 @@ class _CategoryCard extends StatelessWidget {
                 Container(
                   padding: const EdgeInsets.all(8),
                   decoration: BoxDecoration(
-                    color: !isPremium
-                        ? AppColors.divider
-                        : isWeak
-                            ? const Color(0xFFFEF3C7)
-                            : AppColors.surfaceVariant,
+                    color: isWeak ? const Color(0xFFFEF3C7) : AppColors.surfaceVariant,
                     borderRadius: BorderRadius.circular(10),
                   ),
                   child: Icon(
-                    isPremium ? icon : Icons.lock_outline,
-                    color: !isPremium
-                        ? AppColors.textHint
-                        : isWeak
-                            ? AppColors.warning
-                            : AppColors.primary,
+                    icon,
+                    color: isWeak ? AppColors.warning : AppColors.primary,
                     size: 20,
                   ),
                 ),
                 const Spacer(),
-                if (!isPremium)
-                  Container(
-                    padding: const EdgeInsets.symmetric(horizontal: 5, vertical: 2),
-                    decoration: BoxDecoration(
-                      color: const Color(0xFFF59E0B),
-                      borderRadius: BorderRadius.circular(6),
-                    ),
-                    child: const Text(
-                      '👑',
-                      style: TextStyle(fontSize: 10),
-                    ),
-                  )
-                else if (isWeak)
+                if (isWeak)
                   Container(
                     padding: const EdgeInsets.symmetric(horizontal: 5, vertical: 2),
                     decoration: BoxDecoration(
@@ -263,12 +352,7 @@ class _CategoryCard extends StatelessWidget {
                   ),
               ],
             ),
-            Text(
-              label,
-              style: AppTextStyles.bodyBold.copyWith(
-                color: isPremium ? AppColors.textPrimary : AppColors.textHint,
-              ),
-            ),
+            Text(label, style: AppTextStyles.bodyBold),
           ],
         ),
       ),

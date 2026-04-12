@@ -59,4 +59,36 @@ class QuestionRepository {
     pool.shuffle();
     return pool.take(count).toList();
   }
+
+  /// Uçak Bakım Teknisyeni Yabancı Dil Sınavı — 80 soru, SHGM dağılımına uygun.
+  ///
+  /// Dağılım:
+  ///   Dil Bilgisi (Grammar)          20 soru — %25
+  ///   Kelime Bilgisi (Vocabulary)    15 soru — %19
+  ///   Çeviri (Translation)           15 soru — %19
+  ///   Okuma (Reading)                15 soru — %19
+  ///   Boşluk Doldurma (Fill Blanks)  10 soru — %12
+  ///   Cümle Tamamlama (Completion)    5 soru —  %6
+  ///   ───────────────────────────────────────────
+  ///   Toplam                         80 soru
+  Future<List<QuestionModel>> buildAmtExamSession() async {
+    final all = await getAll();
+
+    const distribution = {
+      QuestionCategory.grammar:            20,
+      QuestionCategory.vocabulary:         15,
+      QuestionCategory.translation:        15,
+      QuestionCategory.reading:            15,
+      QuestionCategory.fillBlanks:         10,
+      QuestionCategory.sentenceCompletion:  5,
+    };
+
+    final result = <QuestionModel>[];
+    for (final entry in distribution.entries) {
+      final pool = all.where((q) => q.category == entry.key).toList()..shuffle();
+      result.addAll(pool.take(entry.value));
+    }
+    result.shuffle();
+    return result;
+  }
 }

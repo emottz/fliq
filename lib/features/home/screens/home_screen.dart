@@ -4,6 +4,7 @@ import 'package:go_router/go_router.dart';
 import '../../../core/constants/app_colors.dart';
 import '../../../core/constants/rank_constants.dart';
 import '../../../shared/providers/app_providers.dart';
+import '../../../shared/widgets/hearts_display.dart';
 
 // Geniş ekran eşiği (px)
 const _kWideBreakpoint = 720.0;
@@ -193,7 +194,7 @@ class _SideXpStreak extends StatelessWidget {
     return profileAsync.when(
       data: (profile) {
         if (profile == null) return const SizedBox();
-        final rank = RankConstants.getRankForXp(profile.totalXp);
+        final rank = RankConstants.getRankForXp(profile.totalXp, profile.role);
         return Container(
           margin: const EdgeInsets.symmetric(horizontal: 10),
           padding: const EdgeInsets.all(12),
@@ -236,6 +237,8 @@ class _SideXpStreak extends StatelessWidget {
                         ),
                       ],
                     ),
+                    const SizedBox(height: 6),
+                    const HeartsDisplay(),
                   ],
                 ),
               ),
@@ -279,23 +282,25 @@ class _XpStreakHeader extends StatelessWidget {
           profileAsync.when(
             data: (profile) {
               if (profile == null) return const SizedBox();
-              final rank = RankConstants.getRankForXp(profile.totalXp);
+              final rank = RankConstants.getRankForXp(profile.totalXp, profile.role);
               return Row(
                 children: [
+                  const HeartsDisplay(),
+                  const SizedBox(width: 12),
                   const Icon(Icons.local_fire_department, color: AppColors.streakFlame, size: 20),
                   const SizedBox(width: 4),
                   Text(
                     '${profile.streakDays}',
                     style: const TextStyle(fontWeight: FontWeight.w700, fontSize: 14),
                   ),
-                  const SizedBox(width: 16),
+                  const SizedBox(width: 12),
                   const Icon(Icons.bolt, color: AppColors.xpOrange, size: 20),
                   const SizedBox(width: 4),
                   Text(
                     '${profile.totalXp} XP',
                     style: const TextStyle(fontWeight: FontWeight.w700, fontSize: 14),
                   ),
-                  const SizedBox(width: 12),
+                  const SizedBox(width: 10),
                   Text(rank.emoji, style: const TextStyle(fontSize: 18)),
                 ],
               );

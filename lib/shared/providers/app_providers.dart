@@ -2,6 +2,8 @@ import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import '../../core/constants/league_constants.dart';
 import '../../core/services/auth_service.dart';
+import '../../core/services/ad_service.dart';
+import '../../core/services/hearts_service.dart';
 import '../../core/services/league_service.dart';
 import '../../core/services/subscription_service.dart';
 import '../../data/datasources/asset_question_source.dart';
@@ -123,6 +125,47 @@ class PremiumNotifier extends AsyncNotifier<bool> {
     );
   }
 }
+
+// ── Hearts ────────────────────────────────────────────────────────────────────
+
+final heartsServiceProvider = Provider<HeartsService>((ref) => HeartsService());
+
+typedef HeartsState = ({int count, DateTime? resetTime});
+
+final heartsProvider =
+    AsyncNotifierProvider<HeartsNotifier, HeartsState>(() => HeartsNotifier());
+
+class HeartsNotifier extends AsyncNotifier<HeartsState> {
+  @override
+  Future<HeartsState> build() async {
+    final svc = ref.read(heartsServiceProvider);
+    return svc.getState();
+  }
+
+  /// Kalpleri kullanır. Yeterliyse true, değilse false döner.
+  Future<bool> use(int cost) async {
+    final svc = ref.read(heartsServiceProvider);
+    final ok = await svc.useHearts(cost);
+    if (ok) state = AsyncData(await svc.getState());
+    return ok;
+  }
+
+  /// Reklam ödülü ile kalp ekler.
+  Future<void> addFromAd(int amount) async {
+    final svc = ref.read(heartsServiceProvider);
+    await svc.addHearts(amount);
+    state = AsyncData(await svc.getState());
+  }
+
+  Future<void> refresh() async {
+    final svc = ref.read(heartsServiceProvider);
+    state = AsyncData(await svc.getState());
+  }
+}
+
+// ── AdMob ─────────────────────────────────────────────────────────────────────
+
+final adServiceProvider = Provider<AdService>((ref) => AdService());
 
 // ── League Providers ──────────────────────────────────────────────────────────
 

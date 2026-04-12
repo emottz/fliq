@@ -5,7 +5,6 @@ import 'package:go_router/go_router.dart';
 import '../../../core/constants/app_colors.dart';
 import '../../../core/constants/app_text_styles.dart';
 import '../../../data/models/question_model.dart';
-import '../../../data/repositories/user_repository.dart';
 import '../../../shared/providers/app_providers.dart';
 import '../../../shared/widgets/streak_celebration_overlay.dart';
 
@@ -24,18 +23,18 @@ class _ExamSessionScreenState extends ConsumerState<ExamSessionScreen> {
   int? _selected;
   bool _answered = false;
   bool _loading = true;
-  bool _paywallMode = false;
   late int _secondsLeft;
   Timer? _timer;
 
-  int get _totalSeconds => (widget.config['count'] as int? ?? 20) * 60;
+  bool get _isAmtExam => (widget.config['mode'] as String?) == 'amt_exam';
+  int get _totalSeconds => _isAmtExam ? 80 * 60 : (widget.config['count'] as int? ?? 20) * 60;
   bool get _isQuick => (widget.config['mode'] as String?) == 'quick';
 
   @override
   void initState() {
     super.initState();
     _secondsLeft = _totalSeconds;
-    _checkAndLoad();
+    _load();
   }
 
   @override
@@ -44,97 +43,23 @@ class _ExamSessionScreenState extends ConsumerState<ExamSessionScreen> {
     super.dispose();
   }
 
-  Future<void> _checkAndLoad() async {
-    final repo = ref.read(userRepositoryProvider);
-    final isPremium = ref.read(isPremiumProvider).value ?? false;
-    final canTake = await repo.canTakeExam(isPremium: isPremium);
-
-    if (!canTake) {
-      if (mounted) setState(() { _loading = false; _paywallMode = true; });
-      return;
-    }
-
-    await repo.incrementExamsTaken();
-    _load();
-  }
-
   Future<void> _load() async {
     final repo = ref.read(questionRepositoryProvider);
-    final count = widget.config['count'] as int? ?? 20;
-    final catId = widget.config['category'] as String?;
-    final category = catId != null ? QuestionCategory.fromId(catId) : null;
 
-    final questions = await repo.buildExamSession(category: category, count: count);
+    final List<QuestionModel> questions;
+    if (_isAmtExam) {
+      questions = await repo.buildAmtExamSession();
+    } else {
+      final count = widget.config['count'] as int? ?? 20;
+      final catId = widget.config['category'] as String?;
+      final category = catId != null ? QuestionCategory.fromId(catId) : null;
+      questions = await repo.buildExamSession(category: category, count: count);
+    }
+
     if (mounted) {
       setState(() { _questions = questions; _loading = false; });
       _startTimer();
     }
-  }
-
-  Widget _buildExamPaywall(BuildContext context) {
-    return Scaffold(
-      backgroundColor: AppColors.background,
-      body: SafeArea(
-        child: Center(
-          child: ConstrainedBox(
-            constraints: const BoxConstraints(maxWidth: 480),
-            child: Padding(
-              padding: const EdgeInsets.symmetric(horizontal: 24),
-              child: Column(
-                children: [
-                  const SizedBox(height: 16),
-                  Align(
-                    alignment: Alignment.centerLeft,
-                    child: GestureDetector(
-                      onTap: () => context.go('/home/exams'),
-                      child: Container(
-                        width: 36,
-                        height: 36,
-                        decoration: BoxDecoration(
-                          color: AppColors.surfaceVariant,
-                          borderRadius: BorderRadius.circular(10),
-                        ),
-                        child: const Icon(Icons.arrow_back, size: 18, color: AppColors.textSecondary),
-                      ),
-                    ),
-                  ),
-                  const Spacer(),
-                  const Text('🔒', style: TextStyle(fontSize: 56)),
-                  const SizedBox(height: 16),
-                  const Text(
-                    'Ücretsiz Denemen Bitti',
-                    style: TextStyle(fontSize: 22, fontWeight: FontWeight.w800, color: AppColors.textPrimary),
-                    textAlign: TextAlign.center,
-                  ),
-                  const SizedBox(height: 10),
-                  const Text(
-                    'Devam etmek ve daha fazla sınav çözmek için FLIQ Premium\'a geç. '
-                    'Sınırsız sınav, tüm dersler ve kişisel analiz seni bekliyor.',
-                    style: AppTextStyles.caption,
-                    textAlign: TextAlign.center,
-                  ),
-                  const SizedBox(height: 32),
-                  SizedBox(
-                    width: double.infinity,
-                    child: ElevatedButton(
-                      onPressed: () => context.push('/subscription'),
-                      style: ElevatedButton.styleFrom(
-                        backgroundColor: AppColors.primary,
-                        foregroundColor: Colors.white,
-                        padding: const EdgeInsets.symmetric(vertical: 16),
-                        shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(14)),
-                      ),
-                      child: const Text('Abone Ol ve Devam Et  👑', style: TextStyle(fontSize: 16, fontWeight: FontWeight.w700)),
-                    ),
-                  ),
-                  const Spacer(),
-                ],
-              ),
-            ),
-          ),
-        ),
-      ),
-    );
   }
 
   void _startTimer() {
@@ -177,7 +102,6 @@ class _ExamSessionScreenState extends ConsumerState<ExamSessionScreen> {
     if (correct == questions.length) xp += 25;
 
     await ref.read(userProfileProvider.notifier).addXp(xp);
-    await ref.read(userRepositoryProvider).incrementExamsTaken();
     final newStreak = await ref.read(userProfileProvider.notifier).updateStreak();
     if (mounted && newStreak > 0) {
       await showStreakCelebration(context, streakDays: newStreak);
@@ -202,10 +126,6 @@ class _ExamSessionScreenState extends ConsumerState<ExamSessionScreen> {
 
   @override
   Widget build(BuildContext context) {
-    if (_paywallMode) {
-      return _buildExamPaywall(context);
-    }
-
     if (_loading || _questions == null) {
       return const Scaffold(
         backgroundColor: AppColors.background,
