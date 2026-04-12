@@ -24,7 +24,7 @@ jobs:
         run: flutter pub get
 
       - name: Build web
-        run: flutter build web --release --no-tree-shake-icons --base-href "/fliq/"
+        run: flutter build web --release --no-tree-shake-icons --base-href "/fliq/" --dart-define=WEB3FORMS_KEY=a4cae2f2-7bc8-463e-a0a9-d938705c9deb
 
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v4
