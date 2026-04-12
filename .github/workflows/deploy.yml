@@ -8,7 +8,8 @@ permissions:
   contents: write
 
 jobs:
-  build:
+  # ── GitHub Pages ────────────────────────────────────────────────────────────
+  deploy-pages:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
@@ -22,36 +23,41 @@ jobs:
       - name: Install dependencies
         run: flutter pub get
 
-      # ── GitHub Pages build (alt dizin: /fliq/) ─────────────────────────────
-      - name: Build web for GitHub Pages
+      - name: Build web (GitHub Pages)
         run: flutter build web --release --no-tree-shake-icons --base-href "/fliq/" --dart-define=WEB3FORMS_KEY=${{ secrets.WEB3FORMS_KEY }}
-        if: ${{ vars.DEPLOY_TARGET != 'ftp_only' }}
 
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v4
-        if: ${{ vars.DEPLOY_TARGET != 'ftp_only' }}
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: build/web
 
-      # ── Turhost FTP build (kök dizin: /) ───────────────────────────────────
-      - name: Build web for Turhost (root)
+  # ── Turhost FTP ─────────────────────────────────────────────────────────────
+  deploy-ftp:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Setup Flutter
+        uses: subosito/flutter-action@v2
+        with:
+          channel: 'stable'
+          cache: true
+
+      - name: Install dependencies
+        run: flutter pub get
+
+      - name: Build web (Turhost)
         run: flutter build web --release --no-tree-shake-icons --base-href "/" --dart-define=WEB3FORMS_KEY=${{ secrets.WEB3FORMS_KEY }}
-        if: ${{ secrets.FTP_HOST != '' }}
-        # NOT: FTP_HOST, FTP_USERNAME, FTP_PASSWORD, FTP_SERVER_DIR ve
-        # WEB3FORMS_KEY gizli bilgilerini GitHub Secrets'a ekle:
-        # Settings → Secrets and variables → Actions → New repository secret
 
       - name: Deploy to Turhost via FTP
         uses: SamKirkland/FTP-Deploy-Action@v4.3.5
-        if: ${{ secrets.FTP_HOST != '' }}
         with:
           server: ${{ secrets.FTP_HOST }}
           username: ${{ secrets.FTP_USERNAME }}
           password: ${{ secrets.FTP_PASSWORD }}
           local-dir: build/web/
           server-dir: ${{ secrets.FTP_SERVER_DIR }}
-          # Sadece değişen dosyaları yükle (hızlı deploy)
           exclude: |
             **/.git*
             **/.git*/**
