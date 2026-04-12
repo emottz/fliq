@@ -301,7 +301,7 @@ class _OnboardingScreenState extends ConsumerState<OnboardingScreen>
     );
     await ref.read(userProfileProvider.notifier).saveProfile(profile);
     FirestoreService.saveOnboarding(profile);
-    if (mounted) context.go('/assessment-intro');
+    if (mounted) context.go('/subscription');
   }
 
   @override

@@ -20,7 +20,7 @@ class ProfileScreen extends ConsumerWidget {
     return profileAsync.when(
       data: (profile) {
         if (profile == null) return const SizedBox();
-        final rank = RankConstants.getRankForXp(profile.totalXp);
+        final rank = RankConstants.getRankForXp(profile.totalXp, profile.role);
 
         return Center(
           child: ConstrainedBox(
@@ -69,7 +69,7 @@ class ProfileScreen extends ConsumerWidget {
                   ),
                   const SizedBox(height: 20),
                   // XP bar
-                  XpProgressBar(xp: profile.totalXp),
+                  XpProgressBar(xp: profile.totalXp, role: profile.role),
                   const SizedBox(height: 20),
                   // Stats grid
                   GridView.count(
@@ -158,7 +158,7 @@ class ProfileScreen extends ConsumerWidget {
                   const SizedBox(height: 8),
                   const Text('Rütbeler', style: AppTextStyles.heading3),
                   const SizedBox(height: 12),
-                  ...RankConstants.ranks.map((r) {
+                  ...RankConstants.ranksForRole(profile.role).map((r) {
                     final unlocked = profile.totalXp >= r.xpRequired;
                     final isCurrent = r.title == rank.title;
                     return Container(

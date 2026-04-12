@@ -4,14 +4,15 @@ import '../../core/constants/rank_constants.dart';
 
 class XpProgressBar extends StatelessWidget {
   final int xp;
+  final String role;
 
-  const XpProgressBar({super.key, required this.xp});
+  const XpProgressBar({super.key, required this.xp, this.role = 'pilot'});
 
   @override
   Widget build(BuildContext context) {
-    final rank = RankConstants.getRankForXp(xp);
-    final nextRank = RankConstants.getNextRank(xp);
-    final progress = RankConstants.getProgressToNextRank(xp);
+    final rank = RankConstants.getRankForXp(xp, role);
+    final nextRank = RankConstants.getNextRank(xp, role);
+    final progress = RankConstants.getProgressToNextRank(xp, role);
 
     return Column(
       crossAxisAlignment: CrossAxisAlignment.start,

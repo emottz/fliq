@@ -11,7 +11,7 @@ class FliqApp extends ConsumerWidget {
     final router = ref.watch(routerProvider);
 
     return MaterialApp.router(
-      title: 'FLIQ',
+      title: 'Avia English',
       debugShowCheckedModeBanner: false,
       routerConfig: router,
       theme: ThemeData(

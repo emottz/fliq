@@ -149,20 +149,20 @@ class _SplashScreenState extends State<SplashScreen>
 
                 const SizedBox(height: 30),
 
-                // ── FLIQ yazısı ──────────────────────────────────
+                // ── Uygulama adı ──────────────────────────────────
                 ClipRect(
                   child: SlideTransition(
                     position: _textSlide,
                     child: FadeTransition(
                       opacity: _textOpacity,
                       child: const Text(
-                        'FLIQ',
+                        'Avia English',
                         textAlign: TextAlign.center,
                         style: TextStyle(
-                          fontSize: 52,
+                          fontSize: 38,
                           fontWeight: FontWeight.w900,
                           color: Colors.white,
-                          letterSpacing: 14,
+                          letterSpacing: 2,
                           height: 1.0,
                         ),
                       ),
@@ -176,7 +176,7 @@ class _SplashScreenState extends State<SplashScreen>
                 FadeTransition(
                   opacity: _subtitleOpacity,
                   child: const Text(
-                    'HAVACILK İNGİLİZCESİ',
+                    'HAVACLIK İNGİLİZCESİ',
                     textAlign: TextAlign.center,
                     style: TextStyle(
                       fontSize: 12,

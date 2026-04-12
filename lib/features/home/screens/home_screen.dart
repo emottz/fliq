@@ -103,7 +103,7 @@ class _SideNav extends StatelessWidget {
           Padding(
             padding: const EdgeInsets.symmetric(horizontal: 20),
             child: Text(
-              'FLIQ',
+              'Avia English',
               style: const TextStyle(
                 fontSize: 22,
                 fontWeight: FontWeight.w800,
@@ -270,7 +270,7 @@ class _XpStreakHeader extends StatelessWidget {
       child: Row(
         children: [
           const Text(
-            'FLIQ',
+            'Avia English',
             style: TextStyle(
               fontSize: 18,
               fontWeight: FontWeight.w800,

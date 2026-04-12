@@ -31,12 +31,12 @@ class AirplaneLogo extends StatelessWidget {
         if (showText) ...[
           SizedBox(height: size * 0.18),
           Text(
-            'FLIQ',
+            'Avia English',
             style: TextStyle(
-              fontSize: size * 0.46,
+              fontSize: size * 0.28,
               fontWeight: FontWeight.w900,
               color: AppColors.primary,
-              letterSpacing: size * 0.07,
+              letterSpacing: size * 0.02,
               height: 1.0,
             ),
           ),
