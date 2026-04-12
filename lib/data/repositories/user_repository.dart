@@ -1,6 +1,7 @@
 import 'dart:convert';
 import 'package:shared_preferences/shared_preferences.dart';
 import '../models/user_profile_model.dart';
+import '../lessons/lesson_content_data.dart';
 
 class UserRepository {
   static const _keyProfile = 'user_profile';
@@ -100,6 +101,17 @@ class UserRepository {
   Future<bool> canTakeExam({required bool isPremium}) async {
     if (isPremium) return true;
     return await getExamsTaken() < freeTrialExams;
+  }
+
+  /// Seviye tespitinden sonra kullanıcının seviyesinin altındaki dersleri
+  /// tamamlanmış olarak işaretler; böylece o dersler atlayarak devam edilir.
+  Future<void> skipLessonsForLevel(ProficiencyLevel level) async {
+    final toSkip = LessonContentData.lessonIdsBeforeLevel(level);
+    if (toSkip.isEmpty) return;
+    final p = await _prefs;
+    final current = await getCompletedLessons();
+    current.addAll(toSkip);
+    await p.setStringList(_keyCompletedLessons, current.toList());
   }
 
   Future<void> clearAll() async {

@@ -22,16 +22,16 @@ class QuestionRepository {
     return all.where((q) => q.difficulty == difficulty).toList();
   }
 
-  /// Returns 15 stratified questions for the level assessment.
-  /// Distribution: Grammar 3, Vocabulary 2, Translation 2, Reading 3, FillBlanks 2, Completion 3
+  /// Returns 25 stratified questions for the level assessment.
+  /// Distribution: Grammar 5, Vocabulary 4, Translation 4, Reading 5, FillBlanks 4, Completion 3
   Future<List<QuestionModel>> getAssessmentQuestions() async {
     final all = await getAll();
     final distribution = {
-      QuestionCategory.grammar: 3,
-      QuestionCategory.vocabulary: 2,
-      QuestionCategory.translation: 2,
-      QuestionCategory.reading: 3,
-      QuestionCategory.fillBlanks: 2,
+      QuestionCategory.grammar: 5,
+      QuestionCategory.vocabulary: 4,
+      QuestionCategory.translation: 4,
+      QuestionCategory.reading: 5,
+      QuestionCategory.fillBlanks: 4,
       QuestionCategory.sentenceCompletion: 3,
     };
 

@@ -70,12 +70,13 @@ class _AssessmentScreenState extends ConsumerState<AssessmentScreen> {
       }
     }
 
+    // Thresholds for 25 questions
     ProficiencyLevel level;
-    if (correct <= 5) {
+    if (correct <= 8) {
       level = ProficiencyLevel.beginner;
-    } else if (correct <= 9) {
+    } else if (correct <= 14) {
       level = ProficiencyLevel.elementary;
-    } else if (correct <= 12) {
+    } else if (correct <= 20) {
       level = ProficiencyLevel.intermediate;
     } else {
       level = ProficiencyLevel.advanced;
@@ -90,11 +91,13 @@ class _AssessmentScreenState extends ConsumerState<AssessmentScreen> {
         .map((e) => e.key)
         .toList();
 
-    final profile = await ref.read(userRepositoryProvider).getProfile();
+    final repo = ref.read(userRepositoryProvider);
+    final profile = await repo.getProfile();
     if (profile != null) {
       final updated = profile.copyWith(level: level, weakCategories: weakCategories);
       await ref.read(userProfileProvider.notifier).saveLevel(updated);
       FirestoreService.saveAssessment(updated, categoryResults); // fire-and-forget
+      await repo.skipLessonsForLevel(level); // pre-complete lessons below user's level
     }
 
     if (mounted) {

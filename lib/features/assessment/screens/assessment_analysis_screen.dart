@@ -42,7 +42,7 @@ class _AssessmentAnalysisScreenState extends State<AssessmentAnalysisScreen>
   bool _done = false;
 
   static const _loadingSteps = [
-    '15 cevabın okunuyor...',
+    '25 cevabın okunuyor...',
     'Kategori performansı haritalanıyor...',
     'Teknik eksiklikler tespit ediliyor...',
     'Kişisel profil oluşturuluyor...',
