@@ -464,8 +464,15 @@ Future<bool> showNoHeartsDialog(
   WidgetRef ref,
   int cost,
 ) async {
-  final heartsState = ref.read(heartsProvider).value;
-  if (heartsState == null) return false;
+  // Provider henüz yüklenmediyse kısa süre bekle
+  HeartsState? nullable = ref.read(heartsProvider).value;
+  if (nullable == null) {
+    await Future.delayed(const Duration(milliseconds: 300));
+    nullable = ref.read(heartsProvider).value;
+  }
+  // Hâlâ null ise izin ver (servis başlatılamamış demektir)
+  if (nullable == null) return true;
+  final heartsState = nullable;
 
   if (heartsState.count >= cost) return true;
 

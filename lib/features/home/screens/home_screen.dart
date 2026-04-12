@@ -279,13 +279,14 @@ class _XpStreakHeader extends StatelessWidget {
             ),
           ),
           const Spacer(),
+          // Kalpler her zaman görünür (profile'dan bağımsız)
+          const HeartsDisplay(),
           profileAsync.when(
             data: (profile) {
               if (profile == null) return const SizedBox();
               final rank = RankConstants.getRankForXp(profile.totalXp, profile.role);
               return Row(
                 children: [
-                  const HeartsDisplay(),
                   const SizedBox(width: 12),
                   const Icon(Icons.local_fire_department, color: AppColors.streakFlame, size: 20),
                   const SizedBox(width: 4),
