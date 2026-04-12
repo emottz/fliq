@@ -18,7 +18,11 @@ class ExamListScreen extends ConsumerWidget {
     (QuestionCategory.translation, Icons.swap_horiz, 'Çeviri'),
     (QuestionCategory.reading, Icons.menu_book, 'Okuma'),
     (QuestionCategory.fillBlanks, Icons.edit_outlined, 'Boşluk Doldur'),
-    (QuestionCategory.sentenceCompletion, Icons.format_quote, 'Cümle Tamamlama'),
+    (
+      QuestionCategory.sentenceCompletion,
+      Icons.format_quote,
+      'Cümle Tamamlama',
+    ),
   ];
 
   Future<void> _startExam(
@@ -39,69 +43,100 @@ class ExamListScreen extends ConsumerWidget {
     final weakCategories = profile?.weakCategories ?? [];
     final isAmt = profile?.role == 'amt';
 
-    return Center(
-      child: ConstrainedBox(
-        constraints: const BoxConstraints(maxWidth: 480),
-        child: SingleChildScrollView(
-          padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 16),
-          child: Column(
-            crossAxisAlignment: CrossAxisAlignment.start,
-            children: [
-              const Text('Sınavlar', style: AppTextStyles.heading2),
-              const SizedBox(height: 16),
-
-              // ── Uçak Bakım Teknisyeni Özel Sınavı ──────────────────────
-              if (isAmt) ...[
-                _AmtExamCard(
-                  onTap: () => _startExam(context, ref, {'mode': 'amt_exam'}),
+    return Column(
+      children: [
+        const HeartsEmptyBanner(),
+        Expanded(
+          child: Center(
+            child: ConstrainedBox(
+              constraints: const BoxConstraints(maxWidth: 480),
+              child: SingleChildScrollView(
+                padding: const EdgeInsets.symmetric(
+                  horizontal: 20,
+                  vertical: 16,
                 ),
-                const SizedBox(height: 16),
-              ],
+                child: Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: [
+                    const Text('Sınavlar', style: AppTextStyles.heading2),
+                    const SizedBox(height: 16),
 
-              _DailyExamCard(
-                onTap: () => _startExam(context, ref, {'count': 20, 'mode': 'daily'}),
+                    // ── Uçak Bakım Teknisyeni Özel Sınavı ──────────────────────
+                    if (isAmt) ...[
+                      _AmtExamCard(
+                        onTap: () =>
+                            _startExam(context, ref, {'mode': 'amt_exam'}),
+                      ),
+                      const SizedBox(height: 16),
+                    ],
+
+                    _DailyExamCard(
+                      onTap: () => _startExam(context, ref, {
+                        'count': 20,
+                        'mode': 'daily',
+                      }),
+                    ),
+                    const SizedBox(height: 24),
+                    const Text(
+                      'Kategoriye Göre Pratik',
+                      style: AppTextStyles.heading3,
+                    ),
+                    const SizedBox(height: 12),
+                    GridView.count(
+                      shrinkWrap: true,
+                      physics: const NeverScrollableScrollPhysics(),
+                      crossAxisCount: 2,
+                      mainAxisSpacing: 12,
+                      crossAxisSpacing: 12,
+                      childAspectRatio: 1.15,
+                      children: _categories
+                          .map(
+                            (c) => _CategoryCard(
+                              category: c.$1,
+                              icon: c.$2,
+                              label: c.$3,
+                              isWeak: weakCategories.contains(c.$1.id),
+                              onTap: () => _startExam(context, ref, {
+                                'count': 15,
+                                'category': c.$1.id,
+                                'mode': 'category',
+                              }),
+                            ),
+                          )
+                          .toList(),
+                    ),
+                    const SizedBox(height: 24),
+                    PrimaryButton(
+                      label: '⚡  Hızlı Pratik (10 Soru)',
+                      outlined: true,
+                      onPressed: () => _startExam(context, ref, {
+                        'count': 10,
+                        'mode': 'quick',
+                      }),
+                    ),
+                    const SizedBox(height: 8),
+                    const Row(
+                      mainAxisAlignment: MainAxisAlignment.center,
+                      children: [
+                        Text('Sınav başlatmak ', style: AppTextStyles.caption),
+                        Text(
+                          '❤️ 10',
+                          style: TextStyle(
+                            fontSize: 12,
+                            fontWeight: FontWeight.w700,
+                            color: Color(0xFFEF4444),
+                          ),
+                        ),
+                        Text(' hak kullanır', style: AppTextStyles.caption),
+                      ],
+                    ),
+                  ],
+                ),
               ),
-              const SizedBox(height: 24),
-              const Text('Kategoriye Göre Pratik', style: AppTextStyles.heading3),
-              const SizedBox(height: 12),
-              GridView.count(
-                shrinkWrap: true,
-                physics: const NeverScrollableScrollPhysics(),
-                crossAxisCount: 2,
-                mainAxisSpacing: 12,
-                crossAxisSpacing: 12,
-                childAspectRatio: 1.15,
-                children: _categories.map((c) => _CategoryCard(
-                  category: c.$1,
-                  icon: c.$2,
-                  label: c.$3,
-                  isWeak: weakCategories.contains(c.$1.id),
-                  onTap: () => _startExam(context, ref, {
-                    'count': 15,
-                    'category': c.$1.id,
-                    'mode': 'category',
-                  }),
-                )).toList(),
-              ),
-              const SizedBox(height: 24),
-              PrimaryButton(
-                label: '⚡  Hızlı Pratik (10 Soru)',
-                outlined: true,
-                onPressed: () => _startExam(context, ref, {'count': 10, 'mode': 'quick'}),
-              ),
-              const SizedBox(height: 8),
-              const Row(
-                mainAxisAlignment: MainAxisAlignment.center,
-                children: [
-                  Text('Sınav başlatmak ', style: AppTextStyles.caption),
-                  Text('❤️ 10', style: TextStyle(fontSize: 12, fontWeight: FontWeight.w700, color: Color(0xFFEF4444))),
-                  Text(' hak kullanır', style: AppTextStyles.caption),
-                ],
-              ),
-            ],
+            ),
           ),
         ),
-      ),
+      ],
     );
   }
 }
@@ -141,14 +176,21 @@ class _AmtExamCard extends StatelessWidget {
                 children: [
                   // Rozet
                   Container(
-                    padding: const EdgeInsets.symmetric(horizontal: 8, vertical: 3),
+                    padding: const EdgeInsets.symmetric(
+                      horizontal: 8,
+                      vertical: 3,
+                    ),
                     decoration: BoxDecoration(
                       color: Colors.white.withValues(alpha: 0.2),
                       borderRadius: BorderRadius.circular(8),
                     ),
                     child: const Text(
                       '🔧 Uçak Bakım Teknisyeni',
-                      style: TextStyle(color: Colors.white, fontSize: 11, fontWeight: FontWeight.w600),
+                      style: TextStyle(
+                        color: Colors.white,
+                        fontSize: 11,
+                        fontWeight: FontWeight.w600,
+                      ),
                     ),
                   ),
                   const SizedBox(height: 8),
@@ -202,7 +244,10 @@ class _AmtExamCard extends StatelessWidget {
       children: [
         Icon(icon, color: Colors.white70, size: 13),
         const SizedBox(width: 4),
-        Text(label, style: const TextStyle(color: Colors.white70, fontSize: 11)),
+        Text(
+          label,
+          style: const TextStyle(color: Colors.white70, fontSize: 11),
+        ),
       ],
     );
   }
@@ -241,7 +286,11 @@ class _DailyExamCard extends StatelessWidget {
                   const SizedBox(height: 4),
                   const Text(
                     'Günlük Karma Sınav',
-                    style: TextStyle(color: Colors.white, fontSize: 20, fontWeight: FontWeight.w700),
+                    style: TextStyle(
+                      color: Colors.white,
+                      fontSize: 20,
+                      fontWeight: FontWeight.w700,
+                    ),
                   ),
                   const SizedBox(height: 8),
                   Row(
@@ -265,13 +314,19 @@ class _DailyExamCard extends StatelessWidget {
 
   Widget _chip(IconData icon, String label) {
     if (label.startsWith('❤️')) {
-      return Text(label, style: const TextStyle(color: Colors.white70, fontSize: 12));
+      return Text(
+        label,
+        style: const TextStyle(color: Colors.white70, fontSize: 12),
+      );
     }
     return Row(
       children: [
         Icon(icon, color: Colors.white70, size: 14),
         const SizedBox(width: 4),
-        Text(label, style: const TextStyle(color: Colors.white70, fontSize: 12)),
+        Text(
+          label,
+          style: const TextStyle(color: Colors.white70, fontSize: 12),
+        ),
       ],
     );
   }
@@ -317,7 +372,9 @@ class _CategoryCard extends StatelessWidget {
                 Container(
                   padding: const EdgeInsets.all(8),
                   decoration: BoxDecoration(
-                    color: isWeak ? const Color(0xFFFEF3C7) : AppColors.surfaceVariant,
+                    color: isWeak
+                        ? const Color(0xFFFEF3C7)
+                        : AppColors.surfaceVariant,
                     borderRadius: BorderRadius.circular(10),
                   ),
                   child: Icon(
@@ -329,7 +386,10 @@ class _CategoryCard extends StatelessWidget {
                 const Spacer(),
                 if (isWeak)
                   Container(
-                    padding: const EdgeInsets.symmetric(horizontal: 5, vertical: 2),
+                    padding: const EdgeInsets.symmetric(
+                      horizontal: 5,
+                      vertical: 2,
+                    ),
                     decoration: BoxDecoration(
                       color: AppColors.warning,
                       borderRadius: BorderRadius.circular(6),
@@ -337,7 +397,11 @@ class _CategoryCard extends StatelessWidget {
                     child: const Row(
                       mainAxisSize: MainAxisSize.min,
                       children: [
-                        Icon(Icons.warning_amber_rounded, color: Colors.white, size: 10),
+                        Icon(
+                          Icons.warning_amber_rounded,
+                          color: Colors.white,
+                          size: 10,
+                        ),
                         SizedBox(width: 2),
                         Text(
                           'Zayıf',
