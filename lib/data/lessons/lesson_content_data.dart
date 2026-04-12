@@ -8,7 +8,7 @@ class LessonContentData {
   LessonContentData._();
 
   static const List<LessonContent> all = [
-    // ── BEGINNER (11 ders) ────────────────────────────────────
+    // ── BEGINNER (13 ders) ───────────────────────────────────
     _passiveVoice,
     _modalVerbs,
     _simpleTenses,
@@ -20,7 +20,9 @@ class LessonContentData {
     _natoAlphabet,
     _basicAtcInstructions,
     _runwayTaxiway,
-    // ── ELEMENTARY (11 ders) ──────────────────────────────────
+    _aviationAbbreviations,
+    _basicWeatherFill,
+    // ── ELEMENTARY (14 ders) ─────────────────────────────────
     _conditionals,
     _weatherNavigation,
     _emergencyVocab,
@@ -32,7 +34,10 @@ class LessonContentData {
     _weatherPhenomena,
     _holdingPatterns,
     _squawkTransponder,
-    // ── INTERMEDIATE (12 ders) ────────────────────────────────
+    _departureProcedures,
+    _atcReadbackDrills,
+    _flightPhasesVocab,
+    // ── INTERMEDIATE (16 ders) ───────────────────────────────
     _notamReading,
     _reportedSpeech,
     _articlesAviation,
@@ -45,7 +50,11 @@ class LessonContentData {
     _emergencyPhraseology,
     _conditionalEmergency,
     _atisDecoding,
-    // ── ADVANCED (13 ders) ────────────────────────────────────
+    _advancedPassiveVoice,
+    _notamReadingAdv,
+    _navSystemsVocab,
+    _tafReading,
+    // ── ADVANCED (17 ders) ───────────────────────────────────
     _complexStructures,
     _expertVocab,
     _sidStarReading,
@@ -59,17 +68,20 @@ class LessonContentData {
     _smsLanguage,
     _regulatoryLanguage,
     _accidentInvestigation,
+    _pirepLanguage,
+    _opManualSentences,
+    _advancedAtcCompletion,
+    _fatigueLanguage,
   ];
 
   /// Kullanıcının seviyesinin altındaki tüm pilot dersleri döndürür.
-  /// Seviye tespitinden sonra bu dersler tamamlanmış sayılarak atlanır.
   static List<String> lessonIdsBeforeLevel(ProficiencyLevel level) {
-    // all listesindeki sıralama: 11 beginner, 11 elementary, 12 intermediate, 13 advanced
+    // 13 beginner, 14 elementary, 16 intermediate, 17 advanced
     const boundaries = {
       ProficiencyLevel.beginner: 0,
-      ProficiencyLevel.elementary: 11,
-      ProficiencyLevel.intermediate: 22,
-      ProficiencyLevel.advanced: 34,
+      ProficiencyLevel.elementary: 13,
+      ProficiencyLevel.intermediate: 27,
+      ProficiencyLevel.advanced: 43,
     };
     final count = boundaries[level] ?? 0;
     return all.take(count).map((l) => l.id).toList();
@@ -87,18 +99,44 @@ class LessonContentData {
   // Not: all listesi zaten yeni dersleri içeriyor, sadece rol-özel dersler eklenir
   static const List<LessonContent> _everything = [
     ...all,
+    // Cabin crew lessons
     _cabin1SafetyAnnouncements,
     _cabin2PassengerComm,
     _cabin3EmergencyProc,
     _cabin4CrmBriefing,
     _cabin5MedicalTerms,
     _cabin6DangerousGoods,
+    _cabin7BoardingAnnouncements,
+    _cabin8SeatbeltDemo,
+    _cabin9ServiceLanguage,
+    _cabin10TurbulenceComm,
+    _cabin11MedicalReporting,
+    _cabin12EvacuationCommands,
+    _cabin13ConflictResolution,
+    _cabin14CustomsForms,
+    _cabin15CrewRest,
+    _cabin16MaydayPanPan,
+    _cabin17InfantSafety,
+    _cabin18ServiceFailure,
+    // AMT lessons
     _amt1AmmLanguage,
     _amt2Abbreviations,
     _amt3Airworthiness,
     _amt4RegulatoryLang,
     _amt5DefectReporting,
     _amt6WorkOrder,
+    _amt7TechnicalLog,
+    _amt8InspectionTerms,
+    _amt9EngineRunup,
+    _amt10CorrosionReport,
+    _amt11NdtTerms,
+    _amt12HydraulicSystem,
+    _amt13AvionicsTroubleshooting,
+    _amt14PartsLogistics,
+    _amt15CertificationRelease,
+    _amt16FuelSystem,
+    _amt17LandingGear,
+    _amt18SafetyMgmt,
   ];
 
   // Rol bazlı ders listesi
@@ -108,34 +146,65 @@ class LessonContentData {
         return all;
       case 'cabin_crew':
         return const [
+          // Temel dil bilgisi (beginner)
           _passiveVoice, _modalVerbs, _simpleTenses,
           _aircraftComponents, _safetyEquipment, _airportGround,
-          _atcFillBlanks, _preflightChecklist,
           _natoAlphabet, _basicAtcInstructions, _runwayTaxiway,
-          _emergencyVocab, _metarTranslation, _weatherPhenomena,
+          _aviationAbbreviations, _basicWeatherFill,
+          // Kabin ekibi özel
           _cabin1SafetyAnnouncements, _cabin2PassengerComm,
           _cabin3EmergencyProc, _cabin4CrmBriefing,
           _cabin5MedicalTerms, _cabin6DangerousGoods,
+          _cabin7BoardingAnnouncements, _cabin8SeatbeltDemo,
+          _cabin9ServiceLanguage, _cabin10TurbulenceComm,
+          // Elementary dil (ortak)
+          _emergencyVocab, _metarTranslation, _weatherPhenomena,
+          _atcFillBlanks, _preflightChecklist,
+          // İleri kabin
+          _cabin11MedicalReporting, _cabin12EvacuationCommands,
+          _cabin13ConflictResolution, _cabin14CustomsForms,
+          _cabin15CrewRest, _cabin16MaydayPanPan,
+          _cabin17InfantSafety, _cabin18ServiceFailure,
         ];
       case 'amt':
         return const [
+          // Temel dil (beginner)
           _passiveVoice, _modalVerbs, _simpleTenses,
-          _aircraftComponents, _atcFillBlanks, _preflightChecklist,
-          _notamReading, _airworthinessDirectives,
+          _aircraftComponents, _aviationAbbreviations,
+          // AMT özel – başlangıç
           _amt1AmmLanguage, _amt2Abbreviations,
           _amt3Airworthiness, _amt4RegulatoryLang,
           _amt5DefectReporting, _amt6WorkOrder,
+          // Ortak intermediate
+          _notamReading, _airworthinessDirectives,
+          _atcFillBlanks, _preflightChecklist,
+          // AMT özel – ileri
+          _amt7TechnicalLog, _amt8InspectionTerms,
+          _amt9EngineRunup, _amt10CorrosionReport,
+          _amt11NdtTerms, _amt12HydraulicSystem,
+          _amt13AvionicsTroubleshooting, _amt14PartsLogistics,
+          _amt15CertificationRelease, _amt16FuelSystem,
+          _amt17LandingGear, _amt18SafetyMgmt,
         ];
       case 'student':
       default:
         return const [
+          // Beginner
           _passiveVoice, _modalVerbs, _simpleTenses,
           _aircraftComponents, _airportGround, _safetyEquipment,
-          _atcFillBlanks, _preflightChecklist,
           _natoAlphabet, _basicAtcInstructions, _runwayTaxiway,
+          _aviationAbbreviations, _basicWeatherFill,
+          _atcFillBlanks, _preflightChecklist,
+          // Elementary
           _conditionals, _weatherNavigation, _emergencyVocab,
           _metarTranslation, _approachLanding, _atisReading,
           _positionReports, _weatherPhenomena, _holdingPatterns,
+          _squawkTransponder, _departureProcedures, _atcReadbackDrills,
+          _flightPhasesVocab,
+          // Intermediate
+          _notamReading, _reportedSpeech, _instrumentSystems,
+          _flightPlanReading, _ifrClearance, _atisDecoding,
+          _navSystemsVocab, _tafReading,
         ];
     }
   }
@@ -5089,6 +5158,2539 @@ class LessonContentData {
             originalNumber: 2036,
             questionText: '"Work completed ………… " is the standard sign-off phrase on a job card.',
             options: ['correctly', 'satisfactorily', 'successfully', 'properly'],
+            correctIndex: 1,
+            difficulty: Difficulty.medium,
+          ),
+        ],
+      ),
+    ],
+  );
+
+  // ─────────────────────────────────────────────────────────────
+  // PILOT — BEGINNER: Aviation Abbreviations
+  // ─────────────────────────────────────────────────────────────
+  static const _aviationAbbreviations = LessonContent(
+    id: 'vocab_13',
+    title: 'Temel Havacılık Kısaltmaları',
+    subtitle: 'ATC, cockpit ve bakım belgelerinde en sık karşılaşılan kısaltmalar',
+    categoryId: 'vocabulary',
+    estimatedTime: '10 dk',
+    emoji: '🔤',
+    sections: [
+      LessonSection(
+        type: LessonSectionType.intro,
+        title: 'Neden önemlidir?',
+        body:
+            'Havacılık belgelerinde yüzlerce kısaltma yer alır. Bunları bilmek hem radyo iletişiminde hem de NOTAM, METAR ve teknik kitapları okurken hayat kurtarır.\n\nBu derste en kritik 20 kısaltmayı öğreneceksin.',
+      ),
+      LessonSection(
+        type: LessonSectionType.rule,
+        title: 'Temel Kısaltmalar',
+        body:
+            '**Uçuş & ATC:**\n• ATC — Air Traffic Control\n• ATIS — Automatic Terminal Information Service\n• IFR — Instrument Flight Rules\n• VFR — Visual Flight Rules\n• SID — Standard Instrument Departure\n• STAR — Standard Terminal Arrival Route\n• ETA — Estimated Time of Arrival\n• ETD — Estimated Time of Departure\n\n**Hava Durumu:**\n• METAR — Meteorological Aerodrome Report\n• TAF — Terminal Aerodrome Forecast\n• QNH — Sea-level pressure setting\n• VMC — Visual Meteorological Conditions\n• IMC — Instrument Meteorological Conditions\n\n**Teknik / Bakım:**\n• AMM — Aircraft Maintenance Manual\n• MEL — Minimum Equipment List\n• AD — Airworthiness Directive\n• SB — Service Bulletin\n• AOG — Aircraft on Ground\n• ELT — Emergency Locator Transmitter\n• CVR — Cockpit Voice Recorder',
+      ),
+      LessonSection(
+        type: LessonSectionType.tip,
+        title: '✈️ Sınav İpucu',
+        body:
+            'Kısaltmaları tam açılımıyla birlikte ezberle. Sınav soruları genellikle "What does ___ stand for?" veya açılımdan kısaltmaya sorma şeklinde gelir.',
+      ),
+      LessonSection(
+        type: LessonSectionType.practice,
+        title: 'Pratik Sorular',
+        practiceQuestions: [
+          QuestionModel(
+            id: -170,
+            category: QuestionCategory.vocabulary,
+            originalNumber: 2040,
+            questionText: 'What does "ATIS" stand for?',
+            options: [
+              'Air Traffic Instruction System',
+              'Automatic Terminal Information Service',
+              'Aviation Terminal Interface Standard',
+              'Air Transport Identification Signal',
+            ],
+            correctIndex: 1,
+            difficulty: Difficulty.easy,
+          ),
+          QuestionModel(
+            id: -171,
+            category: QuestionCategory.vocabulary,
+            originalNumber: 2041,
+            questionText: 'The abbreviation "MEL" means:',
+            options: [
+              'Maximum Equipment List',
+              'Minimum Equipment List',
+              'Mandatory Equipment Limitation',
+              'Mechanical Engineering Log',
+            ],
+            correctIndex: 1,
+            difficulty: Difficulty.easy,
+          ),
+          QuestionModel(
+            id: -172,
+            category: QuestionCategory.vocabulary,
+            originalNumber: 2042,
+            questionText: '"AOG" indicates that:',
+            options: [
+              'the aircraft is airborne on a glide path',
+              'the aircraft is awaiting outbound gate',
+              'the aircraft is grounded due to a technical issue',
+              'the aircraft has obtained gate clearance',
+            ],
+            correctIndex: 2,
+            difficulty: Difficulty.easy,
+          ),
+          QuestionModel(
+            id: -173,
+            category: QuestionCategory.vocabulary,
+            originalNumber: 2043,
+            questionText: '"VMC" conditions mean that:',
+            options: [
+              'very marginal cloud cover is present',
+              'visibility and cloud clearance meet visual flight criteria',
+              'IFR flight is required',
+              'the runway visual range is below minima',
+            ],
+            correctIndex: 1,
+            difficulty: Difficulty.medium,
+          ),
+        ],
+      ),
+    ],
+  );
+
+  // ─────────────────────────────────────────────────────────────
+  // PILOT — BEGINNER: Basic Weather Fill-in
+  // ─────────────────────────────────────────────────────────────
+  static const _basicWeatherFill = LessonContent(
+    id: 'fill_7',
+    title: 'Temel Hava Durumu: Boşluk Doldurma',
+    subtitle: 'Wind, visibility, ceiling — temel hava durumu cümleleri',
+    categoryId: 'fill',
+    estimatedTime: '8 dk',
+    emoji: '🌤️',
+    sections: [
+      LessonSection(
+        type: LessonSectionType.intro,
+        title: 'Hava durumu iletişiminin temeli',
+        body:
+            'Pilot-ATC ve pilot-pilot iletişiminde hava durumu ifadeleri sürekli kullanılır. Standart kalıpları doğru doldurmak, yanlış anlaşılmaları önler.',
+      ),
+      LessonSection(
+        type: LessonSectionType.examples,
+        title: 'Temel Kalıplar',
+        examples: [
+          ExampleSentence(
+            sentence: 'Wind is 270 degrees at 15 knots.',
+            highlight: 'Wind is',
+            translation: 'Rüzgar 270 derecede 15 knot.',
+          ),
+          ExampleSentence(
+            sentence: 'Visibility is 8 kilometres in light rain.',
+            highlight: 'Visibility is',
+            translation: 'Görüş hafif yağmurda 8 kilometre.',
+          ),
+          ExampleSentence(
+            sentence: 'Ceiling is 1500 feet broken.',
+            highlight: 'Ceiling is',
+            translation: 'Tavan 1500 feet parçalı bulutlu.',
+          ),
+          ExampleSentence(
+            sentence: 'QNH is 1013 hectopascals.',
+            highlight: 'QNH is',
+            translation: 'QNH 1013 hektopaskal.',
+          ),
+        ],
+      ),
+      LessonSection(
+        type: LessonSectionType.practice,
+        title: 'Pratik Sorular',
+        practiceQuestions: [
+          QuestionModel(
+            id: -174,
+            category: QuestionCategory.fillBlanks,
+            originalNumber: 2044,
+            questionText: '"Wind ………… 180 degrees at 10 knots, gusting 20."',
+            options: ['are', 'is', 'was', 'being'],
+            correctIndex: 1,
+            difficulty: Difficulty.easy,
+          ),
+          QuestionModel(
+            id: -175,
+            category: QuestionCategory.fillBlanks,
+            originalNumber: 2045,
+            questionText: '"Visibility ………… reduced to 500 metres in fog."',
+            options: ['are', 'has', 'is', 'will'],
+            correctIndex: 2,
+            difficulty: Difficulty.easy,
+          ),
+          QuestionModel(
+            id: -176,
+            category: QuestionCategory.fillBlanks,
+            originalNumber: 2046,
+            questionText: '"Ceiling is 800 feet ………… ."',
+            options: ['overcast', 'overcasted', 'overcasting', 'overcast\'s'],
+            correctIndex: 0,
+            difficulty: Difficulty.easy,
+          ),
+          QuestionModel(
+            id: -177,
+            category: QuestionCategory.fillBlanks,
+            originalNumber: 2047,
+            questionText: '"Expect ………… conditions on approach."',
+            options: ['IMC', 'INC', 'IMR', 'IRC'],
+            correctIndex: 0,
+            difficulty: Difficulty.medium,
+          ),
+        ],
+      ),
+    ],
+  );
+
+  // ─────────────────────────────────────────────────────────────
+  // PILOT — ELEMENTARY: Departure Procedures
+  // ─────────────────────────────────────────────────────────────
+  static const _departureProcedures = LessonContent(
+    id: 'vocab_14',
+    title: 'Kalkış Prosedür Dili',
+    subtitle: 'Pushback, startup, taxi ve clearance iletişim kalıpları',
+    categoryId: 'vocabulary',
+    estimatedTime: '12 dk',
+    emoji: '🛫',
+    sections: [
+      LessonSection(
+        type: LessonSectionType.intro,
+        title: 'Kalkış öncesi süreç',
+        body:
+            'Her uçuşta pilot ve ATC arasında gerçekleşen standart iletişim sırası şöyledir:\n\n1. **ATIS dinle** — aktif pist ve hava durumunu öğren\n2. **Delivery\'den clearance al** — rota, transponder kodu, initial altitude\n3. **Ground\'dan taxi talimatı al** — hangi yoldan piste gidileceği\n4. **Tower\'dan kalkış izni al** — "cleared for takeoff"',
+      ),
+      LessonSection(
+        type: LessonSectionType.rule,
+        title: 'Standart Kalkış İfadeleri',
+        body:
+            '**Clearance request:**\n"Request IFR clearance to [destination], [aircraft type], [stand number]."\n\n**Readback:**\n"Cleared to [dest] via [SID], squawk [code], [callsign]."\n\n**Pushback & startup:**\n"Request pushback and startup, stand [X]."\n"Pushback and startup approved, face [direction]."\n\n**Taxi:**\n"Taxi to holding point runway [X] via [taxiways]."\n"Hold short of runway [X]."\n\n**Takeoff:**\n"Runway [X], cleared for takeoff, wind [X] degrees [X] knots."',
+      ),
+      LessonSection(
+        type: LessonSectionType.examples,
+        title: 'Örnek Diyalog',
+        examples: [
+          ExampleSentence(
+            sentence: 'TK1234: "Istanbul Delivery, TK1234, request IFR clearance to Ankara, B738, stand 14."',
+            highlight: 'request IFR clearance',
+            translation: 'TK1234 İstanbul Teslim\'e Ankara\'ya IFR kalkış izni istiyor.',
+          ),
+          ExampleSentence(
+            sentence: 'DEL: "TK1234, cleared to Ankara via GUVEN1A departure, squawk 2341."',
+            highlight: 'cleared to',
+            translation: 'Teslim birimi rota ve transponder kodunu onayladı.',
+          ),
+          ExampleSentence(
+            sentence: 'TWR: "TK1234, runway 34R, cleared for takeoff, wind 330 degrees 12 knots."',
+            highlight: 'cleared for takeoff',
+            translation: 'Tower kalkış iznini verdi.',
+          ),
+        ],
+      ),
+      LessonSection(
+        type: LessonSectionType.practice,
+        title: 'Pratik Sorular',
+        practiceQuestions: [
+          QuestionModel(
+            id: -178,
+            category: QuestionCategory.vocabulary,
+            originalNumber: 2048,
+            questionText: 'Which phrase does ATC use to give takeoff permission?',
+            options: [
+              'Proceed to runway',
+              'Cleared for takeoff',
+              'Takeoff approved',
+              'You may depart',
+            ],
+            correctIndex: 1,
+            difficulty: Difficulty.easy,
+          ),
+          QuestionModel(
+            id: -179,
+            category: QuestionCategory.vocabulary,
+            originalNumber: 2049,
+            questionText: '"Squawk 7700" means the pilot should:',
+            options: [
+              'select transponder code 7700 indicating emergency',
+              'turn off the transponder',
+              'select code 7700 for VFR flight',
+              'report position to approach control',
+            ],
+            correctIndex: 0,
+            difficulty: Difficulty.medium,
+          ),
+          QuestionModel(
+            id: -180,
+            category: QuestionCategory.vocabulary,
+            originalNumber: 2050,
+            questionText: 'What does "hold short of runway 28" mean?',
+            options: [
+              'Enter runway 28 and wait',
+              'Stop before entering runway 28',
+              'Cross runway 28 quickly',
+              'Line up on runway 28',
+            ],
+            correctIndex: 1,
+            difficulty: Difficulty.easy,
+          ),
+          QuestionModel(
+            id: -181,
+            category: QuestionCategory.vocabulary,
+            originalNumber: 2051,
+            questionText: '"Face south" in a pushback clearance means the aircraft nose should point:',
+            options: ['north', 'east', 'south', 'west'],
+            correctIndex: 2,
+            difficulty: Difficulty.easy,
+          ),
+        ],
+      ),
+    ],
+  );
+
+  // ─────────────────────────────────────────────────────────────
+  // PILOT — ELEMENTARY: ATC Readback Drills
+  // ─────────────────────────────────────────────────────────────
+  static const _atcReadbackDrills = LessonContent(
+    id: 'fill_8',
+    title: 'ATC Readback Alıştırmaları',
+    subtitle: 'Verilen ATC talimatlarını doğru tekrar etme',
+    categoryId: 'fill',
+    estimatedTime: '10 dk',
+    emoji: '📻',
+    sections: [
+      LessonSection(
+        type: LessonSectionType.intro,
+        title: 'Readback nedir?',
+        body:
+            '**Readback** (geri okuma), ATC talimatlarının pilotlar tarafından tam olarak tekrar edilmesidir. ICAO standartlarına göre aşağıdaki bilgiler mutlaka readback yapılmalıdır:\n\n• Pist numarası (kalkış/iniş izinleri dahil)\n• Yön ve yükseklik talimatları\n• Transponder kodları\n• Rüzgar bilgisi ile birlikte verilen kalkış izinleri\n• Pist geçiş talimatları',
+      ),
+      LessonSection(
+        type: LessonSectionType.rule,
+        title: 'Readback Kuralları',
+        body:
+            '**DO readback (mutlaka tekrar et):**\n• ATC clearances (route, altitude, heading)\n• Runway crossing/entry instructions\n• Takeoff and landing clearances\n• QNH / altimeter settings\n• Frequency changes\n\n**Format:** [Talimat içeriği] + [Callsign]\nÖrnek: "Descend to 3000 feet, QNH 1018, TK1234."\n\n**Readback vermek yeterliliği onaylar** — yanlış anlaşılmayı önler.',
+      ),
+      LessonSection(
+        type: LessonSectionType.practice,
+        title: 'Pratik Sorular',
+        practiceQuestions: [
+          QuestionModel(
+            id: -182,
+            category: QuestionCategory.fillBlanks,
+            originalNumber: 2052,
+            questionText: 'ATC says: "Descend to flight level 80." The correct readback is: "Descend to ………… 80, [callsign]."',
+            options: ['level', 'altitude', 'flight level', 'height'],
+            correctIndex: 2,
+            difficulty: Difficulty.easy,
+          ),
+          QuestionModel(
+            id: -183,
+            category: QuestionCategory.fillBlanks,
+            originalNumber: 2053,
+            questionText: 'ATC: "Turn left heading 270." Readback: "Turn ………… heading 270, [callsign]."',
+            options: ['right', 'left', 'direct', 'onto'],
+            correctIndex: 1,
+            difficulty: Difficulty.easy,
+          ),
+          QuestionModel(
+            id: -184,
+            category: QuestionCategory.fillBlanks,
+            originalNumber: 2054,
+            questionText: 'ATC: "Contact approach on 119.7." Readback: "………… approach on 119.7, [callsign]."',
+            options: ['Calling', 'Contacting', 'Contact', 'Over to'],
+            correctIndex: 2,
+            difficulty: Difficulty.easy,
+          ),
+          QuestionModel(
+            id: -185,
+            category: QuestionCategory.fillBlanks,
+            originalNumber: 2055,
+            questionText: 'Which item does NOT require a readback according to ICAO standards?',
+            options: [
+              'Runway crossing instructions',
+              'Takeoff clearance',
+              'General weather information only',
+              'Transponder code',
+            ],
+            correctIndex: 2,
+            difficulty: Difficulty.medium,
+          ),
+        ],
+      ),
+    ],
+  );
+
+  // ─────────────────────────────────────────────────────────────
+  // PILOT — ELEMENTARY: Flight Phases Vocabulary
+  // ─────────────────────────────────────────────────────────────
+  static const _flightPhasesVocab = LessonContent(
+    id: 'vocab_15',
+    title: 'Uçuş Fazları Terminolojisi',
+    subtitle: 'Taxi\'den iniş sonrasına kadar her faz ve anahtar kelimeler',
+    categoryId: 'vocabulary',
+    estimatedTime: '10 dk',
+    emoji: '✈️',
+    sections: [
+      LessonSection(
+        type: LessonSectionType.intro,
+        title: 'Uçuşun aşamaları',
+        body:
+            'Her uçuş belirli fazlardan oluşur. Her fazın kendine özgü terminolojisi ve ATC iletişim kalıpları vardır. Bu terimleri bilmek hem sınavda hem de gerçek operasyonda kritik öneme sahiptir.',
+      ),
+      LessonSection(
+        type: LessonSectionType.rule,
+        title: 'Uçuş Fazları ve Anahtar Terimler',
+        body:
+            '**1. Pre-flight / Preflight**\n— walkaround, fuel check, NOTAMs, weight & balance\n\n**2. Taxi (Ground phase)**\n— taxiway, holding point, line up, backtrack\n\n**3. Takeoff**\n— rotate, V1 (decision speed), Vr (rotation speed), V2 (takeoff safety speed)\n\n**4. Climb (Departure)**\n— initial climb, SID, transition altitude, cruise climb\n\n**5. Cruise**\n— flight level, Mach number, step climb, drift down\n\n**6. Descent**\n— top of descent, STAR, speed restrictions\n\n**7. Approach**\n— ILS, localizer, glideslope, decision altitude (DA), MDA\n\n**8. Landing**\n— flare, touchdown, rollout, reverse thrust, exit vacate\n\n**9. Post-flight**\n— shutdown, parking, log entry, technical log',
+      ),
+      LessonSection(
+        type: LessonSectionType.practice,
+        title: 'Pratik Sorular',
+        practiceQuestions: [
+          QuestionModel(
+            id: -186,
+            category: QuestionCategory.vocabulary,
+            originalNumber: 2056,
+            questionText: '"V1" in takeoff terminology is defined as:',
+            options: [
+              'the rotation speed',
+              'the takeoff decision speed',
+              'the takeoff safety speed',
+              'the minimum control speed',
+            ],
+            correctIndex: 1,
+            difficulty: Difficulty.medium,
+          ),
+          QuestionModel(
+            id: -187,
+            category: QuestionCategory.vocabulary,
+            originalNumber: 2057,
+            questionText: '"Top of descent" refers to the point where:',
+            options: [
+              'the aircraft reaches cruise altitude',
+              'the aircraft begins its descent from cruise level',
+              'the approach briefing is completed',
+              'ATC hands off to approach control',
+            ],
+            correctIndex: 1,
+            difficulty: Difficulty.easy,
+          ),
+          QuestionModel(
+            id: -188,
+            category: QuestionCategory.vocabulary,
+            originalNumber: 2058,
+            questionText: '"Decision altitude" (DA) on an ILS approach is the altitude at which:',
+            options: [
+              'the aircraft must land regardless of visibility',
+              'flaps must be extended to full',
+              'the pilot decides to continue or go around based on visual reference',
+              'the ILS glideslope is intercepted',
+            ],
+            correctIndex: 2,
+            difficulty: Difficulty.medium,
+          ),
+          QuestionModel(
+            id: -189,
+            category: QuestionCategory.vocabulary,
+            originalNumber: 2059,
+            questionText: '"Backtrack" on a runway means:',
+            options: [
+              'an aborted takeoff procedure',
+              'taxiing along the runway in the opposite direction of landing',
+              'returning to the gate after engine start',
+              'a go-around manoeuvre',
+            ],
+            correctIndex: 1,
+            difficulty: Difficulty.easy,
+          ),
+        ],
+      ),
+    ],
+  );
+
+  // ─────────────────────────────────────────────────────────────
+  // PILOT — INTERMEDIATE: Advanced Passive Voice
+  // ─────────────────────────────────────────────────────────────
+  static const _advancedPassiveVoice = LessonContent(
+    id: 'grammar_11',
+    title: 'İleri Düzey Edilgen Çatı',
+    subtitle: 'Perfect passive, causative ve reporting structures',
+    categoryId: 'grammar',
+    estimatedTime: '14 dk',
+    emoji: '⚙️',
+    sections: [
+      LessonSection(
+        type: LessonSectionType.intro,
+        title: 'Edilgenin ileri formları',
+        body:
+            'Temel edilgen yapıyı biliyorsun. Şimdi havacılık belgelerinde sıkça karşılaşılan **perfect passive**, **causative** (have/get something done) ve **reporting structures** (It is reported that…) üzerine yoğunlaşacağız.',
+      ),
+      LessonSection(
+        type: LessonSectionType.rule,
+        title: 'İleri Yapılar',
+        body:
+            '**Perfect Passive:**\n• has/have been + V3 → "The engine has been inspected."\n• had been + V3 → "The part had been replaced before the flight."\n\n**Future Passive:**\n• will be + V3 → "The aircraft will be returned to service."\n• is going to be + V3 → "The runway is going to be closed."\n\n**Causative:**\n• have + object + V3 → "The airline had the engine overhauled."\n• get + object + V3 → "The crew got the fault rectified."\n\n**Reporting Passive:**\n• It is reported that… / It is believed that…\n• The aircraft is reported to have deviated from the assigned route.',
+      ),
+      LessonSection(
+        type: LessonSectionType.examples,
+        title: 'Havacılık Örnekleri',
+        examples: [
+          ExampleSentence(
+            sentence: 'The engine has been overhauled and is ready for return to service.',
+            highlight: 'has been overhauled',
+            translation: 'Motor revizyon görmüş ve servise dönüşe hazır.',
+          ),
+          ExampleSentence(
+            sentence: 'The fault is reported to have been present since the previous flight.',
+            highlight: 'is reported to have been present',
+            translation: 'Arızanın bir önceki uçuştan bu yana mevcut olduğu rapor edilmektedir.',
+          ),
+          ExampleSentence(
+            sentence: 'The airline had the airframe inspected by an independent authority.',
+            highlight: 'had the airframe inspected',
+            translation: 'Havayolu, gövdeyi bağımsız bir otorite tarafından denetletti.',
+          ),
+        ],
+      ),
+      LessonSection(
+        type: LessonSectionType.practice,
+        title: 'Pratik Sorular',
+        practiceQuestions: [
+          QuestionModel(
+            id: -190,
+            category: QuestionCategory.grammar,
+            originalNumber: 2060,
+            questionText: 'The hydraulic system ………… before the incident occurred.',
+            options: [
+              'was inspected',
+              'had been inspected',
+              'has been inspected',
+              'will be inspected',
+            ],
+            correctIndex: 1,
+            difficulty: Difficulty.medium,
+          ),
+          QuestionModel(
+            id: -191,
+            category: QuestionCategory.grammar,
+            originalNumber: 2061,
+            questionText: 'It ………… that the aircraft deviated from its assigned altitude.',
+            options: ['reports', 'is reported', 'reported', 'was reporting'],
+            correctIndex: 1,
+            difficulty: Difficulty.medium,
+          ),
+          QuestionModel(
+            id: -192,
+            category: QuestionCategory.grammar,
+            originalNumber: 2062,
+            questionText: 'The airline ………… the navigation system upgraded before the summer season.',
+            options: ['got', 'had', 'made', 'let'],
+            correctIndex: 1,
+            difficulty: Difficulty.hard,
+          ),
+          QuestionModel(
+            id: -193,
+            category: QuestionCategory.grammar,
+            originalNumber: 2063,
+            questionText: 'The damaged component ………… by the time investigators arrived.',
+            options: ['removed', 'was removed', 'had been removed', 'has removed'],
+            correctIndex: 2,
+            difficulty: Difficulty.hard,
+          ),
+        ],
+      ),
+    ],
+  );
+
+  // ─────────────────────────────────────────────────────────────
+  // PILOT — INTERMEDIATE: Advanced NOTAM Reading
+  // ─────────────────────────────────────────────────────────────
+  static const _notamReadingAdv = LessonContent(
+    id: 'reading_10',
+    title: 'İleri NOTAM Analizi',
+    subtitle: 'Karmaşık NOTAM metinlerini çözümleme ve anlam çıkarma',
+    categoryId: 'reading',
+    estimatedTime: '15 dk',
+    emoji: '📋',
+    sections: [
+      LessonSection(
+        type: LessonSectionType.intro,
+        title: 'NOTAM nedir?',
+        body:
+            '**NOTAM** (Notice to Air Missions), pilotların haberdar edilmesi gereken havacılık bilgilerini içerir: pist kapanışları, VOR arızaları, geçici kısıtlama bölgeleri ve daha fazlası.\n\nBu derste gerçek NOTAM formatlarını çözümlemeyi öğreneceksin.',
+      ),
+      LessonSection(
+        type: LessonSectionType.rule,
+        title: 'NOTAM Formatı',
+        body:
+            '**Başlık:** A1234/23 NOTAMN\n**Q satırı:** Q) LTBB/QMRLC/IV/NBO/A/000/999/4102N02900E005\n**A:** LTBA (havalimanı ICAO kodu)\n**B:** 2301010600 (başlangıç: Ocak 2023, 06:00 UTC)\n**C:** 2301311800 (bitiş)\n**E:** İçerik (İngilizce)\n\n**Yaygın NOTAM türleri:**\n• QMRLC — Runway closed\n• QNVAS — VOR/NDB arızası\n• QLCAS — ILS unserviceable\n• QRTCA — Geçici kısıtlama bölgesi\n• QFAHW — Airwork in progress',
+      ),
+      LessonSection(
+        type: LessonSectionType.examples,
+        title: 'Örnek NOTAM',
+        examples: [
+          ExampleSentence(
+            sentence: 'E) RWY 06/24 CLSD DUE RESURFACING WIP. EXPECT DUST AND DEBRIS IN VICINITY.',
+            highlight: 'CLSD DUE RESURFACING WIP',
+            translation: 'Pist 06/24 yüzey yenileme çalışması nedeniyle kapalı. Çevrede toz ve moloz bekleniyor.',
+          ),
+          ExampleSentence(
+            sentence: 'E) ILS RWY 34L UNSERVICEABLE. CAT I OPS ONLY ON RWY 34R.',
+            highlight: 'ILS RWY 34L UNSERVICEABLE',
+            translation: 'Pist 34L ILS hizmete kapalı. Yalnızca Pist 34R\'de CAT I operasyon.',
+          ),
+          ExampleSentence(
+            sentence: 'E) TEMPO RESTRICTED AREA ESTD FL050-FL200 DUE MILITARY EXERCISE.',
+            highlight: 'TEMPO RESTRICTED AREA',
+            translation: 'Askeri tatbikat nedeniyle FL050-FL200 arası geçici kısıtlı hava sahası.',
+          ),
+        ],
+      ),
+      LessonSection(
+        type: LessonSectionType.practice,
+        title: 'Pratik Sorular',
+        practiceQuestions: [
+          QuestionModel(
+            id: -194,
+            category: QuestionCategory.reading,
+            originalNumber: 2064,
+            questionText: 'NOTAM: "RWY 18/36 CLSD 0600-1800 DUE TO BIRD CONTROL OPS." When is the runway available?',
+            options: [
+              'Only during 0600-1800',
+              'Before 0600 and after 1800',
+              'Only at night',
+              'The runway is permanently closed',
+            ],
+            correctIndex: 1,
+            difficulty: Difficulty.medium,
+          ),
+          QuestionModel(
+            id: -195,
+            category: QuestionCategory.reading,
+            originalNumber: 2065,
+            questionText: 'In a NOTAM, "UNSERVICEABLE" means the facility is:',
+            options: [
+              'operating at reduced capacity',
+              'temporarily out of service',
+              'permanently decommissioned',
+              'under scheduled maintenance with no impact on ops',
+            ],
+            correctIndex: 1,
+            difficulty: Difficulty.easy,
+          ),
+          QuestionModel(
+            id: -196,
+            category: QuestionCategory.reading,
+            originalNumber: 2066,
+            questionText: 'NOTAM states: "TEMPO RESTRICTED AREA FL080-FL180." A flight at FL150 through this area would be:',
+            options: [
+              'unaffected as restrictions are below FL150',
+              'in violation of the temporary restriction',
+              'required to obtain a special clearance',
+              'permitted if under IFR',
+            ],
+            correctIndex: 1,
+            difficulty: Difficulty.medium,
+          ),
+        ],
+      ),
+    ],
+  );
+
+  // ─────────────────────────────────────────────────────────────
+  // PILOT — INTERMEDIATE: Navigation Systems Vocabulary
+  // ─────────────────────────────────────────────────────────────
+  static const _navSystemsVocab = LessonContent(
+    id: 'vocab_16',
+    title: 'Navigasyon Sistemleri Terminolojisi',
+    subtitle: 'VOR, ILS, GPS, RNAV, RNP — modern nav sistemleri',
+    categoryId: 'vocabulary',
+    estimatedTime: '12 dk',
+    emoji: '🧭',
+    sections: [
+      LessonSection(
+        type: LessonSectionType.intro,
+        title: 'Modern navigasyon',
+        body:
+            'Günümüz havacılığında pilotlar birden fazla navigasyon sistemini birlikte kullanır. Her sistemin kendine has terminolojisi ve operasyonel kavramları bulunur.',
+      ),
+      LessonSection(
+        type: LessonSectionType.rule,
+        title: 'Temel Navigasyon Sistemleri',
+        body:
+            '**VOR** (VHF Omnidirectional Range)\n— radial, bearing, CDI (Course Deviation Indicator)\n\n**ILS** (Instrument Landing System)\n— localizer (lateral), glideslope (vertical), outer/middle/inner marker\n— CAT I / II / III operations\n\n**DME** (Distance Measuring Equipment)\n— slant range in nautical miles\n\n**GPS / GNSS**\n— RAIM (Receiver Autonomous Integrity Monitoring)\n— WAAS/SBAS augmentation\n\n**RNAV / RNP**\n— Area navigation: fly any route, not just ground-based nav\n— RNP: required navigation performance with integrity monitoring\n— RNP AR: authorisation required approaches',
+      ),
+      LessonSection(
+        type: LessonSectionType.examples,
+        title: 'Örnek Cümleler',
+        examples: [
+          ExampleSentence(
+            sentence: 'The ILS localizer provides lateral guidance to the runway centreline.',
+            highlight: 'localizer',
+            translation: 'ILS lokalizörü pist merkez hattına yatay yönlendirme sağlar.',
+          ),
+          ExampleSentence(
+            sentence: 'RAIM failure means GPS integrity cannot be assured.',
+            highlight: 'RAIM failure',
+            translation: 'RAIM arızası GPS bütünlüğünün sağlanamadığı anlamına gelir.',
+          ),
+          ExampleSentence(
+            sentence: 'The RNP AR approach requires special aircraft and crew authorisation.',
+            highlight: 'RNP AR',
+            translation: 'RNP AR yaklaşması özel uçak ve ekip yetkilendirmesi gerektirir.',
+          ),
+        ],
+      ),
+      LessonSection(
+        type: LessonSectionType.practice,
+        title: 'Pratik Sorular',
+        practiceQuestions: [
+          QuestionModel(
+            id: -197,
+            category: QuestionCategory.vocabulary,
+            originalNumber: 2067,
+            questionText: 'The "glideslope" component of an ILS provides:',
+            options: [
+              'lateral guidance to the runway',
+              'vertical guidance for the descent',
+              'distance information from the threshold',
+              'wind shear alerts on approach',
+            ],
+            correctIndex: 1,
+            difficulty: Difficulty.easy,
+          ),
+          QuestionModel(
+            id: -198,
+            category: QuestionCategory.vocabulary,
+            originalNumber: 2068,
+            questionText: '"RAIM" in GPS operations stands for:',
+            options: [
+              'Radio Altitude Integrity Monitor',
+              'Receiver Autonomous Integrity Monitoring',
+              'Range Accuracy and Integrity Measurement',
+              'Radar Altimeter Instrument Module',
+            ],
+            correctIndex: 1,
+            difficulty: Difficulty.medium,
+          ),
+          QuestionModel(
+            id: -199,
+            category: QuestionCategory.vocabulary,
+            originalNumber: 2069,
+            questionText: 'A VOR "radial" is defined as:',
+            options: [
+              'the bearing from the aircraft to the VOR',
+              'the bearing from the VOR to the aircraft (magnetic)',
+              'the distance from the aircraft to the VOR',
+              'the altitude at which the VOR signal is received',
+            ],
+            correctIndex: 1,
+            difficulty: Difficulty.medium,
+          ),
+        ],
+      ),
+    ],
+  );
+
+  // ─────────────────────────────────────────────────────────────
+  // PILOT — INTERMEDIATE: TAF Reading
+  // ─────────────────────────────────────────────────────────────
+  static const _tafReading = LessonContent(
+    id: 'reading_11',
+    title: 'TAF Okuma ve Yorumlama',
+    subtitle: 'Terminal Aerodrome Forecast — hava tahmin raporlarını çözümleme',
+    categoryId: 'reading',
+    estimatedTime: '14 dk',
+    emoji: '🌦️',
+    sections: [
+      LessonSection(
+        type: LessonSectionType.intro,
+        title: 'TAF nedir?',
+        body:
+            '**TAF** (Terminal Aerodrome Forecast), bir havalimanı için 24 veya 30 saatlik hava tahminidir. METAR anlık durumu verirken TAF gelecekteki beklenen koşulları belirtir. Uçuş planlama açısından kritik öneme sahiptir.',
+      ),
+      LessonSection(
+        type: LessonSectionType.rule,
+        title: 'TAF Formatı',
+        body:
+            '**Örnek TAF:**\nTAF LTBA 120500Z 1206/1312\n9999 FEW020 SCT060\nBECMG 1208/1210 BKN015 -RA\nTEMPO 1214/1218 4000 TSRA BKN010CB\n\n**Açıklama:**\n• LTBA — İstanbul (havalimanı ICAO kodu)\n• 120500Z — 12. günü 05:00 UTC\'de yayınlandı\n• 1206/1312 — Geçerlilik: 12. gün 06:00 – 13. gün 12:00 UTC\n• 9999 — 10 km veya üzeri görüş\n• BECMG — Gradually becoming (kademeli değişim)\n• TEMPO — Temporary fluctuation (geçici, < 1 saat)\n• TSRA — Thunderstorm with rain (gök gürültülü sağanak)\n• CB — Cumulonimbus',
+      ),
+      LessonSection(
+        type: LessonSectionType.examples,
+        title: 'TAF Değişim Göstergeleri',
+        examples: [
+          ExampleSentence(
+            sentence: 'BECMG 1208/1210 — conditions will gradually change between 08:00 and 10:00.',
+            highlight: 'BECMG',
+            translation: 'BECMG: 08:00-10:00 arasında koşullar kademeli olarak değişecek.',
+          ),
+          ExampleSentence(
+            sentence: 'TEMPO 1214/1218 — temporary conditions lasting less than 1 hour at a time.',
+            highlight: 'TEMPO',
+            translation: 'TEMPO: 14:00-18:00 arasında geçici (her seferinde < 1 saat) koşullar.',
+          ),
+          ExampleSentence(
+            sentence: 'PROB30 — 30% probability of the stated conditions.',
+            highlight: 'PROB30',
+            translation: 'PROB30: Belirtilen koşulların gerçekleşme olasılığı %30.',
+          ),
+        ],
+      ),
+      LessonSection(
+        type: LessonSectionType.practice,
+        title: 'Pratik Sorular',
+        practiceQuestions: [
+          QuestionModel(
+            id: -200,
+            category: QuestionCategory.reading,
+            originalNumber: 2070,
+            questionText: 'In a TAF, "TEMPO" indicates conditions that:',
+            options: [
+              'are permanent for the forecast period',
+              'fluctuate temporarily, each occurrence lasting less than one hour',
+              'gradually replace the previous conditions',
+              'have a 30% probability of occurring',
+            ],
+            correctIndex: 1,
+            difficulty: Difficulty.easy,
+          ),
+          QuestionModel(
+            id: -201,
+            category: QuestionCategory.reading,
+            originalNumber: 2071,
+            questionText: 'TAF: "BECMG 1410/1412 BKN005 FG." This means:',
+            options: [
+              'fog and broken cloud at 500ft will temporarily occur between 10:00 and 12:00',
+              'fog and broken cloud at 500ft will gradually develop between 10:00 and 12:00',
+              'fog is forecast with 40% probability after 12:00',
+              'broken cloud at 500ft will be permanent from 10:00',
+            ],
+            correctIndex: 1,
+            difficulty: Difficulty.medium,
+          ),
+          QuestionModel(
+            id: -202,
+            category: QuestionCategory.reading,
+            originalNumber: 2072,
+            questionText: '"9999" in a METAR or TAF means visibility is:',
+            options: [
+              'exactly 9,999 metres',
+              '10 km or more',
+              'less than 100 metres',
+              'variable between 9 and 9 km',
+            ],
+            correctIndex: 1,
+            difficulty: Difficulty.easy,
+          ),
+        ],
+      ),
+    ],
+  );
+
+  // ─────────────────────────────────────────────────────────────
+  // PILOT — ADVANCED: PIREP Language
+  // ─────────────────────────────────────────────────────────────
+  static const _pirepLanguage = LessonContent(
+    id: 'vocab_17',
+    title: 'PIREP Dili',
+    subtitle: 'Pilot Reports — türbülans, buzlanma ve hava fenomeni bildirimleri',
+    categoryId: 'vocabulary',
+    estimatedTime: '12 dk',
+    emoji: '📡',
+    sections: [
+      LessonSection(
+        type: LessonSectionType.intro,
+        title: 'PIREP nedir?',
+        body:
+            '**PIREP** (Pilot Report), pilotların uçuş sırasında karşılaştıkları meteorolojik koşulları ATC\'ye bildirdiği standart formattır. Diğer pilotlar için hayati önem taşır.',
+      ),
+      LessonSection(
+        type: LessonSectionType.rule,
+        title: 'PIREP Kategorileri ve Terminolojisi',
+        body:
+            '**Türbülans şiddeti:**\n• Light (LGT) — küçük değişimler, hiçbir rahatsızlık yok\n• Moderate (MOD) — yiyecek/içecekler devrilebilir, hareket zor\n• Severe (SEV) — anlık kontrolü tehdit eden değişimler\n• Extreme (EXTM) — uçak neredeyse kontrol dışı\n\n**Buzlanma şiddeti:**\n• Trace — tespit edilebilir, sorun yok\n• Light — hız kaybı yok, buz giderici yeterli\n• Moderate — hız kaybı başlar, buz giderici güçlükle başa çıkabilir\n• Severe — ani hız/kaldırma kaybı, buz giderici yetersiz\n\n**PIREP Formatı:**\nUA /OV [konum] /TM [zaman] /FL [irtifa] /TP [uçak tipi]\n/SK [bulut] /WX [hava] /TA [sıcaklık] /TB [türbülans] /IC [buzlanma] /RM [açıklama]',
+      ),
+      LessonSection(
+        type: LessonSectionType.practice,
+        title: 'Pratik Sorular',
+        practiceQuestions: [
+          QuestionModel(
+            id: -203,
+            category: QuestionCategory.vocabulary,
+            originalNumber: 2073,
+            questionText: 'A PIREP reporting "SEV TURB" means:',
+            options: [
+              'light turbulence that is barely noticeable',
+              'moderate turbulence causing some spills',
+              'severe turbulence causing momentary loss of aircraft control',
+              'extreme turbulence causing structural damage',
+            ],
+            correctIndex: 2,
+            difficulty: Difficulty.medium,
+          ),
+          QuestionModel(
+            id: -204,
+            category: QuestionCategory.vocabulary,
+            originalNumber: 2074,
+            questionText: '"Moderate icing" in a PIREP indicates:',
+            options: [
+              'barely detectable ice accumulation',
+              'ice accumulation where de-icing equipment may struggle to control it',
+              'no significant effect on aircraft performance',
+              'ice accumulation causing immediate emergency',
+            ],
+            correctIndex: 1,
+            difficulty: Difficulty.medium,
+          ),
+          QuestionModel(
+            id: -205,
+            category: QuestionCategory.vocabulary,
+            originalNumber: 2075,
+            questionText: 'In PIREP format, "/TB" refers to:',
+            options: ['temperature below zero', 'turbulence report', 'top of broken layer', 'tail bearing'],
+            correctIndex: 1,
+            difficulty: Difficulty.easy,
+          ),
+        ],
+      ),
+    ],
+  );
+
+  // ─────────────────────────────────────────────────────────────
+  // PILOT — ADVANCED: Ops Manual Sentence Structures
+  // ─────────────────────────────────────────────────────────────
+  static const _opManualSentences = LessonContent(
+    id: 'translation_8',
+    title: 'Operasyon El Kitabı Cümle Yapıları',
+    subtitle: 'OM-A, OM-B dilini anlama ve çevirme',
+    categoryId: 'translation',
+    estimatedTime: '14 dk',
+    emoji: '📖',
+    sections: [
+      LessonSection(
+        type: LessonSectionType.intro,
+        title: 'Operations Manual (OM) dili',
+        body:
+            'Havayolu operasyon el kitapları (OM-A: Genel, OM-B: Uçuş Operasyonları) karmaşık yasal ve teknik dil içerir. Bu dili anlamak; kuralları doğru yorumlamak ve sınavda başarılı olmak için şarttır.',
+      ),
+      LessonSection(
+        type: LessonSectionType.rule,
+        title: 'Tipik OM Cümle Kalıpları',
+        body:
+            '**Zorunluluk ifadeleri:**\n• "The commander shall ensure that…"\n• "…must not commence unless…"\n• "…is required to carry…"\n\n**Koşullu izinler:**\n• "…may be carried out provided that…"\n• "…is permitted when all of the following conditions are met:"\n• "…subject to the approval of…"\n\n**Sorumluluk ifadeleri:**\n• "It is the responsibility of the commander to…"\n• "The operator shall ensure that…"\n• "The crew is authorised to…"',
+      ),
+      LessonSection(
+        type: LessonSectionType.practice,
+        title: 'Pratik Sorular',
+        practiceQuestions: [
+          QuestionModel(
+            id: -206,
+            category: QuestionCategory.translation,
+            originalNumber: 2076,
+            questionText: 'Translate to Turkish: "The commander shall ensure that all crew members are briefed on emergency procedures."',
+            options: [
+              'Komutan, tüm mürettebat üyelerinin acil prosedürler konusunda brifing aldığından emin olmalıdır.',
+              'Komutan, acil prosedürlerde mürettebatı eğitmek zorundadır.',
+              'Tüm mürettebat üyeleri acil prosedürler hakkında bilgi sahibi olabilir.',
+              'Komutan, acil prosedürleri mürettebata açıklaması gerekebilir.',
+            ],
+            correctIndex: 0,
+            difficulty: Difficulty.medium,
+          ),
+          QuestionModel(
+            id: -207,
+            category: QuestionCategory.translation,
+            originalNumber: 2077,
+            questionText: '"Flight must not commence unless the commander is satisfied with the serviceability of the aircraft." Bu cümle ne anlama gelir?',
+            options: [
+              'Uçuş, komutan uçağın arızalı olduğunu tespit edene kadar başlayabilir.',
+              'Komutan uçağın operasyonel durumundan tatmin olmadıkça uçuşa başlanmamalıdır.',
+              'Uçuş, yalnızca teknik sorunların giderilmesinden sonra başlatılabilir.',
+              'Komutan, uçak servise alınmadan önce onay vermelidir.',
+            ],
+            correctIndex: 1,
+            difficulty: Difficulty.medium,
+          ),
+          QuestionModel(
+            id: -208,
+            category: QuestionCategory.translation,
+            originalNumber: 2078,
+            questionText: '"Additional fuel may be uplifted at the commander\'s discretion." What does this mean?',
+            options: [
+              'Extra fuel is mandatory on all flights',
+              'The commander can decide to take extra fuel if deemed necessary',
+              'Additional fuel is forbidden without prior approval',
+              'Ground staff decide how much extra fuel to load',
+            ],
+            correctIndex: 1,
+            difficulty: Difficulty.medium,
+          ),
+        ],
+      ),
+    ],
+  );
+
+  // ─────────────────────────────────────────────────────────────
+  // PILOT — ADVANCED: Advanced ATC Completion
+  // ─────────────────────────────────────────────────────────────
+  static const _advancedAtcCompletion = LessonContent(
+    id: 'completion_4',
+    title: 'İleri ATC İletişim Tamamlama',
+    subtitle: 'Karmaşık clearance ve procedural iletişimde boşluk doldurma',
+    categoryId: 'completion',
+    estimatedTime: '12 dk',
+    emoji: '🎙️',
+    sections: [
+      LessonSection(
+        type: LessonSectionType.intro,
+        title: 'İleri ATC iletişimi',
+        body:
+            'Temel ATC iletişim kalıplarını biliyorsun. Bu derste daha karmaşık senaryolar için gerekli cümle yapılarını tamamlama becerini geliştireceksin: holding instructions, conditional clearances, re-routes.',
+      ),
+      LessonSection(
+        type: LessonSectionType.rule,
+        title: 'Karmaşık ATC Kalıpları',
+        body:
+            '**Holding:**\n"Hold over [fix] at [altitude], [direction] turns, EFC [time]."\n"Expect further clearance at [time]."\n\n**Re-route:**\n"Route amended, proceed direct [waypoint], then as filed."\n"Re-cleared via [route], re-enter at [fix]."\n\n**Conditional clearance:**\n"Behind the landing [type] aircraft, [instruction]."\n"After departure of [callsign], line up runway [X]."\n\n**Speed control:**\n"Reduce speed to [X] knots not later than [fix]."\n"Resume normal speed."',
+      ),
+      LessonSection(
+        type: LessonSectionType.practice,
+        title: 'Pratik Sorular',
+        practiceQuestions: [
+          QuestionModel(
+            id: -209,
+            category: QuestionCategory.sentenceCompletion,
+            originalNumber: 2079,
+            questionText: '"Hold over GUVEN at 5000 feet, left turns, expect further clearance ………… 1430."',
+            options: ['before', 'at', 'until', 'by'],
+            correctIndex: 1,
+            difficulty: Difficulty.medium,
+          ),
+          QuestionModel(
+            id: -210,
+            category: QuestionCategory.sentenceCompletion,
+            originalNumber: 2080,
+            questionText: '"Behind the landing Boeing 737, ………… on runway 05."',
+            options: ['line up', 'cleared to land', 'hold position', 'back-track'],
+            correctIndex: 0,
+            difficulty: Difficulty.medium,
+          ),
+          QuestionModel(
+            id: -211,
+            category: QuestionCategory.sentenceCompletion,
+            originalNumber: 2081,
+            questionText: '"Reduce speed to 180 knots ………… IDONA."',
+            options: ['after', 'by', 'at', 'not later than'],
+            correctIndex: 3,
+            difficulty: Difficulty.hard,
+          ),
+          QuestionModel(
+            id: -212,
+            category: QuestionCategory.sentenceCompletion,
+            originalNumber: 2082,
+            questionText: '"Route amended, proceed direct GUVEN, ………… as filed."',
+            options: ['then', 'therefore', 'after that', 'and'],
+            correctIndex: 0,
+            difficulty: Difficulty.medium,
+          ),
+        ],
+      ),
+    ],
+  );
+
+  // ─────────────────────────────────────────────────────────────
+  // PILOT — ADVANCED: Fatigue and Human Performance Language
+  // ─────────────────────────────────────────────────────────────
+  static const _fatigueLanguage = LessonContent(
+    id: 'vocab_18',
+    title: 'Yorgunluk ve İnsan Performansı Dili',
+    subtitle: 'FTL, FRMS ve CRM bağlamında yorgunluk terminolojisi',
+    categoryId: 'vocabulary',
+    estimatedTime: '13 dk',
+    emoji: '🧠',
+    sections: [
+      LessonSection(
+        type: LessonSectionType.intro,
+        title: 'Fatigue — neden önemlidir?',
+        body:
+            'Yorgunluk (fatigue), havacılıkta kaza-kırım nedenlerinin önemli bir bölümünü oluşturur. ICAO ve AB düzenlemeleri, ekiplerin yorgunluk riskini yönetmesi için kapsamlı bir dil ve sistem geliştirmiştir.',
+      ),
+      LessonSection(
+        type: LessonSectionType.rule,
+        title: 'Temel Yorgunluk Terminolojisi',
+        body:
+            '**FTL** — Flight Time Limitations (Uçuş Süresi Sınırlamaları)\n**FRMS** — Fatigue Risk Management System\n**FDP** — Flight Duty Period (uçuş görev süresi, raporlamadan kalkışa)\n**FT** — Flight Time (blok süresi)\n**Cumulative fatigue** — biriken yorgunluk (seferler arası tam dinlenme olmaksızın)\n**Sleep inertia** — uyanışın hemen ardından gelen bozulmuş performans\n**Circadian rhythm** — biyolojik saat\n**WOCL** — Window of Circadian Low (02:00-06:00 arası; performans en düşük)\n**Split duty** — uzun mola içeren, 2 parçalı görev periyodu\n**Controlled rest** — kokpitte kısa uyku (uzun menzilli uçuşlarda izinli)',
+      ),
+      LessonSection(
+        type: LessonSectionType.examples,
+        title: 'Bağlam İçinde Kullanım',
+        examples: [
+          ExampleSentence(
+            sentence: 'The crew\'s FDP exceeded the regulatory maximum, triggering an FRMS review.',
+            highlight: 'FDP exceeded',
+            translation: 'Mürettebatın uçuş görev süresi yasal azamíyi aştı ve FRMS incelemesini başlattı.',
+          ),
+          ExampleSentence(
+            sentence: 'Operations during the WOCL significantly increase the risk of crew error.',
+            highlight: 'WOCL',
+            translation: 'Sirkadiyen düşüş penceresinde (02:00-06:00) operasyon, mürettebat hatası riskini önemli ölçüde artırır.',
+          ),
+          ExampleSentence(
+            sentence: 'Sleep inertia must be considered before using controlled rest during long-haul flights.',
+            highlight: 'Sleep inertia',
+            translation: 'Uzun menzilli uçuşlarda kontrollü uyku kullanılmadan önce uyku ataleti göz önünde bulundurulmalıdır.',
+          ),
+        ],
+      ),
+      LessonSection(
+        type: LessonSectionType.practice,
+        title: 'Pratik Sorular',
+        practiceQuestions: [
+          QuestionModel(
+            id: -213,
+            category: QuestionCategory.vocabulary,
+            originalNumber: 2083,
+            questionText: '"WOCL" refers to the time window when:',
+            options: [
+              'flight operations are prohibited',
+              'crew performance is at its lowest due to circadian rhythm',
+              'weather conditions are typically worst',
+              'ATC workload is at maximum',
+            ],
+            correctIndex: 1,
+            difficulty: Difficulty.medium,
+          ),
+          QuestionModel(
+            id: -214,
+            category: QuestionCategory.vocabulary,
+            originalNumber: 2084,
+            questionText: '"Sleep inertia" describes:',
+            options: [
+              'the inability to fall asleep during a rest period',
+              'impaired performance immediately after waking',
+              'chronic fatigue from repeated short sleep periods',
+              'the regulatory limit on crew rest between duties',
+            ],
+            correctIndex: 1,
+            difficulty: Difficulty.medium,
+          ),
+          QuestionModel(
+            id: -215,
+            category: QuestionCategory.vocabulary,
+            originalNumber: 2085,
+            questionText: '"FRMS" is used by airlines to:',
+            options: [
+              'schedule flight routes for fuel efficiency',
+              'proactively manage crew fatigue risk based on data',
+              'record flight time and duty periods automatically',
+              'regulate passenger load factors',
+            ],
+            correctIndex: 1,
+            difficulty: Difficulty.medium,
+          ),
+          QuestionModel(
+            id: -216,
+            category: QuestionCategory.vocabulary,
+            originalNumber: 2086,
+            questionText: '"Cumulative fatigue" occurs when:',
+            options: [
+              'a single flight exceeds the maximum flight time',
+              'fatigue builds up over multiple duty periods without adequate recovery',
+              'the crew operates more than two sectors in one day',
+              'fatigue is caused by a single all-night operation',
+            ],
+            correctIndex: 1,
+            difficulty: Difficulty.medium,
+          ),
+        ],
+      ),
+    ],
+  );
+
+  // ═══════════════════════════════════════════════════════════
+  //  CABIN CREW LESSONS — cabin_7 through cabin_18
+  // ═══════════════════════════════════════════════════════════
+
+  static const _cabin7BoardingAnnouncements = LessonContent(
+    id: 'cabin_7',
+    title: 'Biniş Anonsları',
+    subtitle: 'Gate ve uçak içi biniş duyuruları İngilizcesi',
+    categoryId: 'vocabulary',
+    estimatedTime: '9 dk',
+    emoji: '🎤',
+    sections: [
+      LessonSection(
+        type: LessonSectionType.intro,
+        title: 'Standart biniş anonsları',
+        body:
+            'Biniş süreci sırasında hem kapı ajanları hem kabin ekibi belirli standart anonslar yapar. Bu ifadelerin doğru İngilizcesini bilmek hem yolcularla hem de havalimanı personeli ile iletişimi kolaylaştırır.',
+      ),
+      LessonSection(
+        type: LessonSectionType.rule,
+        title: 'Yaygın Biniş İfadeleri',
+        body:
+            '"Ladies and gentlemen, we are now boarding…"\n"May I see your boarding pass and passport, please?"\n"Your seat is in row [X], on the [left/right]."\n"Please stow your carry-on baggage in the overhead bin."\n"The overhead bin above your seat is full. We will check your bag to the final destination."\n"We are expecting a full flight today. Please take your seats promptly."\n"We will begin boarding with passengers requiring extra assistance."',
+      ),
+      LessonSection(
+        type: LessonSectionType.practice,
+        title: 'Pratik Sorular',
+        practiceQuestions: [
+          QuestionModel(
+            id: -217,
+            category: QuestionCategory.vocabulary,
+            originalNumber: 2087,
+            questionText: 'Which phrase is used when the overhead bin is full?',
+            options: [
+              '"Please hold your bag on your lap."',
+              '"We will check your bag to the final destination."',
+              '"Your bag must remain at the gate."',
+              '"Please leave your bag in the aisle."',
+            ],
+            correctIndex: 1,
+            difficulty: Difficulty.easy,
+          ),
+          QuestionModel(
+            id: -218,
+            category: QuestionCategory.vocabulary,
+            originalNumber: 2088,
+            questionText: '"Stow your carry-on baggage" means:',
+            options: [
+              'check the bag at the counter',
+              'place the bag in a storage area (bin or under seat)',
+              'carry the bag to your seat',
+              'leave the bag with the gate agent',
+            ],
+            correctIndex: 1,
+            difficulty: Difficulty.easy,
+          ),
+        ],
+      ),
+    ],
+  );
+
+  static const _cabin8SeatbeltDemo = LessonContent(
+    id: 'cabin_8',
+    title: 'Emniyet Kemeri Demo Dili',
+    subtitle: 'Güvenlik demonstrasyonu sırasında kullanılan standart İngilizce',
+    categoryId: 'fill',
+    estimatedTime: '8 dk',
+    emoji: '🔒',
+    sections: [
+      LessonSection(
+        type: LessonSectionType.intro,
+        title: 'Güvenlik demonstrasyonu',
+        body:
+            'ICAO ve havayolu SOPları gereği tüm yolculara uçuş öncesinde güvenlik demonstrasyonu yapılmalı veya video gösterilmelidir. Kullanılan dil standartlaştırılmıştır.',
+      ),
+      LessonSection(
+        type: LessonSectionType.rule,
+        title: 'Demo İfadeleri',
+        body:
+            '"To fasten your seatbelt, insert the metal fitting into the buckle and tighten by pulling the loose end of the strap."\n"To release, lift the top of the buckle."\n"Your seatbelt should be worn low and tight across your lap at all times when seated."\n"Please direct your attention to the cabin crew for a safety demonstration."\n"There are [X] emergency exits on this aircraft: two at the front, two over the wings, and two at the rear."\n"In the event of a loss of cabin pressure, an oxygen mask will drop from the panel above you. Pull it towards you, place it over your nose and mouth, and breathe normally."',
+      ),
+      LessonSection(
+        type: LessonSectionType.practice,
+        title: 'Pratik Sorular',
+        practiceQuestions: [
+          QuestionModel(
+            id: -219,
+            category: QuestionCategory.fillBlanks,
+            originalNumber: 2089,
+            questionText: '"To ………… your seatbelt, insert the metal fitting into the buckle."',
+            options: ['secure', 'fasten', 'lock', 'tighten'],
+            correctIndex: 1,
+            difficulty: Difficulty.easy,
+          ),
+          QuestionModel(
+            id: -220,
+            category: QuestionCategory.fillBlanks,
+            originalNumber: 2090,
+            questionText: '"Pull the oxygen mask ………… you and place it over your nose and mouth."',
+            options: ['away from', 'towards', 'beside', 'under'],
+            correctIndex: 1,
+            difficulty: Difficulty.easy,
+          ),
+        ],
+      ),
+    ],
+  );
+
+  static const _cabin9ServiceLanguage = LessonContent(
+    id: 'cabin_9',
+    title: 'İkram Servis Dili',
+    subtitle: 'Yiyecek, içecek ve duty-free servisi İngilizcesi',
+    categoryId: 'vocabulary',
+    estimatedTime: '9 dk',
+    emoji: '🍽️',
+    sections: [
+      LessonSection(
+        type: LessonSectionType.intro,
+        title: 'Kabin servisi iletişimi',
+        body:
+            'Kabin ekibinin yolcularla günlük iletişiminin önemli bir bölümü ikram servisi sırasında gerçekleşir. Profesyonel ve net bir dil kullanmak yolcu memnuniyetini doğrudan etkiler.',
+      ),
+      LessonSection(
+        type: LessonSectionType.rule,
+        title: 'Servis İfadeleri',
+        body:
+            '"Would you like chicken or pasta for your main course?"\n"I\'m afraid we\'ve run out of chicken. Would you like pasta instead?"\n"Would you like something to drink?"\n"That would be [price]. Would you like to pay by card or cash?"\n"Your meal will be served shortly."\n"We will be coming through the cabin with duty-free items."\n"Please ensure your tray table is stowed and your seat is in the upright position for landing."',
+      ),
+      LessonSection(
+        type: LessonSectionType.practice,
+        title: 'Pratik Sorular',
+        practiceQuestions: [
+          QuestionModel(
+            id: -221,
+            category: QuestionCategory.vocabulary,
+            originalNumber: 2091,
+            questionText: '"I\'m afraid we\'ve run out of chicken" means:',
+            options: [
+              'chicken is being prepared',
+              'chicken is no longer available',
+              'chicken is only available in business class',
+              'chicken will be served later',
+            ],
+            correctIndex: 1,
+            difficulty: Difficulty.easy,
+          ),
+          QuestionModel(
+            id: -222,
+            category: QuestionCategory.vocabulary,
+            originalNumber: 2092,
+            questionText: '"Tray table stowed" means the tray table is:',
+            options: ['extended and ready for use', 'folded back into the seat', 'cleaned and disinfected', 'removed for safety'],
+            correctIndex: 1,
+            difficulty: Difficulty.easy,
+          ),
+        ],
+      ),
+    ],
+  );
+
+  static const _cabin10TurbulenceComm = LessonContent(
+    id: 'cabin_10',
+    title: 'Türbülans İletişimi',
+    subtitle: 'Türbülans öncesi, sırası ve sonrasındaki standart anonslar',
+    categoryId: 'vocabulary',
+    estimatedTime: '10 dk',
+    emoji: '⚡',
+    sections: [
+      LessonSection(
+        type: LessonSectionType.intro,
+        title: 'Türbülans neden özel iletişim gerektirir?',
+        body:
+            'Türbülans, yolcularda ve ekipte yaralanmaya yol açabilen en yaygın uçuş güvenliği sorunlarından biridir. Net ve sakin bir iletişim, paniği önler ve güvenliği artırır.',
+      ),
+      LessonSection(
+        type: LessonSectionType.rule,
+        title: 'Türbülans Anonsları',
+        body:
+            '**Öncesinde:**\n"Ladies and gentlemen, the captain has switched on the fasten seatbelt sign. Please return to your seats and fasten your seatbelts."\n"We are expecting some turbulence ahead. Please remain seated with your seatbelts fastened."\n\n**Servis durumu:**\n"Due to turbulence, cabin service has been suspended. Please remain seated."\n\n**Sonrasında:**\n"The captain has turned off the fasten seatbelt sign. You may now move about the cabin, however we recommend keeping your seatbelt fastened when seated."',
+      ),
+      LessonSection(
+        type: LessonSectionType.practice,
+        title: 'Pratik Sorular',
+        practiceQuestions: [
+          QuestionModel(
+            id: -223,
+            category: QuestionCategory.vocabulary,
+            originalNumber: 2093,
+            questionText: '"The fasten seatbelt sign has been switched on" means passengers should:',
+            options: [
+              'prepare for emergency landing',
+              'return to seats and fasten seatbelts',
+              'move to emergency exits',
+              'deploy oxygen masks',
+            ],
+            correctIndex: 1,
+            difficulty: Difficulty.easy,
+          ),
+          QuestionModel(
+            id: -224,
+            category: QuestionCategory.vocabulary,
+            originalNumber: 2094,
+            questionText: '"Cabin service has been suspended" means:',
+            options: [
+              'service has ended for the flight',
+              'service is temporarily stopped',
+              'only drinks are available',
+              'service will not start',
+            ],
+            correctIndex: 1,
+            difficulty: Difficulty.easy,
+          ),
+        ],
+      ),
+    ],
+  );
+
+  static const _cabin11MedicalReporting = LessonContent(
+    id: 'cabin_11',
+    title: 'Tıbbi Acil Durum Raporlaması',
+    subtitle: 'Doktora, kaptana ve ATC\'ye tıbbi durum bildirimi',
+    categoryId: 'reading',
+    estimatedTime: '12 dk',
+    emoji: '🏥',
+    sections: [
+      LessonSection(
+        type: LessonSectionType.intro,
+        title: 'Tıbbi acil durumlar',
+        body:
+            'Kabin ekibi bir tıbbi acil durumla karşılaştığında hem kaptana hem yerdeki tıbbi destek hattına hem de gerekirse ATC\'ye net bilgi iletmek zorundadır. Yanlış veya eksik bilgi doğru müdahaleyi geciktirir.',
+      ),
+      LessonSection(
+        type: LessonSectionType.rule,
+        title: 'Tıbbi Rapor İfadeleri',
+        body:
+            '"Captain, we have a medical situation in row [X]. Passenger appears [conscious/unconscious]."\n"The passenger is [complaining of chest pain / having difficulty breathing / showing signs of allergic reaction]."\n"We have administered [oxygen / epinephrine / aspirin]."\n"Is there a doctor or medical professional on board?"\n"Medlink, this is [airline/flight number], we have a passenger with [symptoms], current position is [location]."\n"We request medical diversion to the nearest suitable airport."',
+      ),
+      LessonSection(
+        type: LessonSectionType.practice,
+        title: 'Pratik Sorular',
+        practiceQuestions: [
+          QuestionModel(
+            id: -225,
+            category: QuestionCategory.reading,
+            originalNumber: 2095,
+            questionText: '"Passenger appears unconscious" means the passenger:',
+            options: [
+              'is sleeping and should not be disturbed',
+              'is unresponsive and not awake',
+              'is conscious but confused',
+              'is refusing to cooperate with crew',
+            ],
+            correctIndex: 1,
+            difficulty: Difficulty.easy,
+          ),
+          QuestionModel(
+            id: -226,
+            category: QuestionCategory.reading,
+            originalNumber: 2096,
+            questionText: '"We request medical diversion" means the crew is asking to:',
+            options: [
+              'continue to the destination and arrange ambulance',
+              'land at a different airport for medical assistance',
+              'return to the departure airport',
+              'request a doctor via radio',
+            ],
+            correctIndex: 1,
+            difficulty: Difficulty.medium,
+          ),
+        ],
+      ),
+    ],
+  );
+
+  static const _cabin12EvacuationCommands = LessonContent(
+    id: 'cabin_12',
+    title: 'Tahliye Komutları',
+    subtitle: 'Emergency evacuation sırasında kullanılan standart komutlar',
+    categoryId: 'vocabulary',
+    estimatedTime: '10 dk',
+    emoji: '🚪',
+    sections: [
+      LessonSection(
+        type: LessonSectionType.intro,
+        title: 'Tahliye iletişimi hayat kurtarır',
+        body:
+            'Acil tahliyede saniyeler kritiktir. Kabin ekibinin kullandığı komutların net, standart ve yüksek sesle verilmesi gerekir. ICAO ve havayolu SOPları bu ifadeleri belirler.',
+      ),
+      LessonSection(
+        type: LessonSectionType.rule,
+        title: 'Standart Tahliye Komutları',
+        body:
+            '"EVACUATE! EVACUATE! EVACUATE!"\n"RELEASE SEATBELTS! LEAVE EVERYTHING! GET OUT!"\n"COME THIS WAY! THIS EXIT!" (işlevsel çıkıştayken)\n"COME THIS WAY!" (fonksiyonel olmayan çıkıştayken yönlendirme)\n"JUMP AND SLIDE!" / "STEP OFF THE SLIDE!"\n"MOVE AWAY FROM THE AIRCRAFT! MOVE AWAY!"\n\n**Kapalı çıkışta:**\n"GET BACK! GET BACK! COME THIS WAY!" (diğer çıkışa yönlendirme)',
+      ),
+      LessonSection(
+        type: LessonSectionType.practice,
+        title: 'Pratik Sorular',
+        practiceQuestions: [
+          QuestionModel(
+            id: -227,
+            category: QuestionCategory.vocabulary,
+            originalNumber: 2097,
+            questionText: 'During an evacuation, "LEAVE EVERYTHING" means passengers should:',
+            options: [
+              'take only their valuables',
+              'take carry-on bags but leave checked bags',
+              'leave all their belongings and exit immediately',
+              'leave only large bags and take small items',
+            ],
+            correctIndex: 2,
+            difficulty: Difficulty.easy,
+          ),
+          QuestionModel(
+            id: -228,
+            category: QuestionCategory.vocabulary,
+            originalNumber: 2098,
+            questionText: 'If a cabin crew member says "GET BACK! COME THIS WAY!" it means:',
+            options: [
+              'the exit is clear and passengers should proceed',
+              'the exit is blocked and passengers should use another exit',
+              'passengers are moving too fast',
+              'the crew member wants passengers to sit down',
+            ],
+            correctIndex: 1,
+            difficulty: Difficulty.medium,
+          ),
+        ],
+      ),
+    ],
+  );
+
+  static const _cabin13ConflictResolution = LessonContent(
+    id: 'cabin_13',
+    title: 'Yolcu Çatışma Yönetimi Dili',
+    subtitle: 'Zor yolcularla iletişim ve de-escalation teknikleri',
+    categoryId: 'vocabulary',
+    estimatedTime: '11 dk',
+    emoji: '🤝',
+    sections: [
+      LessonSection(
+        type: LessonSectionType.intro,
+        title: 'De-escalation neden önemlidir?',
+        body:
+            'Disruptive passenger (rahatsız edici yolcu) vakaları hem uçuş güvenliğini hem de diğer yolcuları etkiler. Doğru dil ve tutum, durumun daha da kötüleşmesini önler.',
+      ),
+      LessonSection(
+        type: LessonSectionType.rule,
+        title: 'De-escalation İfadeleri',
+        body:
+            '"I understand your concern, sir/ma\'am. Let me see what I can do."\n"I\'m sorry for the inconvenience. We\'re doing our best to assist you."\n"I need you to return to your seat for the safety of all passengers."\n"If you continue this behaviour, the captain will be informed and we may have to divert."\n"I\'m going to have to ask you to comply with crew instructions."\n"We take the comfort and safety of all passengers very seriously."',
+      ),
+      LessonSection(
+        type: LessonSectionType.practice,
+        title: 'Pratik Sorular',
+        practiceQuestions: [
+          QuestionModel(
+            id: -229,
+            category: QuestionCategory.vocabulary,
+            originalNumber: 2099,
+            questionText: '"Comply with crew instructions" means the passenger should:',
+            options: [
+              'argue with the crew politely',
+              'follow what the crew has told them to do',
+              'report the crew to the airline',
+              'ask for a supervisor',
+            ],
+            correctIndex: 1,
+            difficulty: Difficulty.easy,
+          ),
+          QuestionModel(
+            id: -230,
+            category: QuestionCategory.vocabulary,
+            originalNumber: 2100,
+            questionText: '"We may have to divert" means the aircraft might:',
+            options: [
+              'accelerate to reach the destination faster',
+              'land at an unplanned airport',
+              'delay departure',
+              'return to the gate',
+            ],
+            correctIndex: 1,
+            difficulty: Difficulty.easy,
+          ),
+        ],
+      ),
+    ],
+  );
+
+  static const _cabin14CustomsForms = LessonContent(
+    id: 'cabin_14',
+    title: 'Gümrük ve Göçmenlik Formu Dili',
+    subtitle: 'Arrival cards, customs declarations ve entry forms',
+    categoryId: 'reading',
+    estimatedTime: '10 dk',
+    emoji: '📝',
+    sections: [
+      LessonSection(
+        type: LessonSectionType.intro,
+        title: 'Gümrük formları',
+        body:
+            'Uluslararası uçuşlarda yolculara arrival card (giriş kartı) veya customs declaration form (gümrük beyan formu) doldurmaları için kabin ekibi rehberlik eder. Bu belgelerdeki terminoloji standartlaştırılmıştır.',
+      ),
+      LessonSection(
+        type: LessonSectionType.rule,
+        title: 'Form Terminolojisi',
+        body:
+            '**Arrival card:**\n• Surname / Family name — soyadı\n• Given names / First name — adı\n• Date of birth (DD/MM/YYYY) — doğum tarihi\n• Nationality — uyruk\n• Passport number — pasaport numarası\n• Purpose of visit: tourism / business / transit / study\n• Address in country of destination — gidilen ülkedeki adres\n\n**Customs declaration:**\n• Do you have goods to declare? — Beyan edecek eşyanz var mı?\n• Are you carrying currency exceeding [limit]? — Limitin üzerinde döviz taşıyor musunuz?\n• Are you carrying meat, dairy, or plant products? — Et, süt veya bitki ürünleri taşıyor musunuz?',
+      ),
+      LessonSection(
+        type: LessonSectionType.practice,
+        title: 'Pratik Sorular',
+        practiceQuestions: [
+          QuestionModel(
+            id: -231,
+            category: QuestionCategory.reading,
+            originalNumber: 2101,
+            questionText: '"Purpose of visit: transit" means the passenger is:',
+            options: [
+              'visiting for tourism',
+              'passing through to another destination',
+              'working in the country',
+              'studying in the country',
+            ],
+            correctIndex: 1,
+            difficulty: Difficulty.easy,
+          ),
+          QuestionModel(
+            id: -232,
+            category: QuestionCategory.reading,
+            originalNumber: 2102,
+            questionText: '"Goods to declare" on a customs form means:',
+            options: [
+              'items that must be listed because they may be subject to customs duty or restrictions',
+              'all personal belongings in the suitcase',
+              'items purchased at duty-free shops only',
+              'medical items requiring special handling',
+            ],
+            correctIndex: 0,
+            difficulty: Difficulty.medium,
+          ),
+        ],
+      ),
+    ],
+  );
+
+  static const _cabin15CrewRest = LessonContent(
+    id: 'cabin_15',
+    title: 'Mürettebat Dinlenme Prosedürleri Dili',
+    subtitle: 'Uzun menzilli uçuşlarda crew rest iletişimi',
+    categoryId: 'vocabulary',
+    estimatedTime: '9 dk',
+    emoji: '😴',
+    sections: [
+      LessonSection(
+        type: LessonSectionType.intro,
+        title: 'Crew rest neden önemlidir?',
+        body:
+            'Uzun menzilli uçuşlarda (genellikle 8 saati aşan) kabin ekibine dinlenme fırsatı sağlanır. Bu sürecin yönetimi ve iletişimi belirli bir terminoloji gerektirir.',
+      ),
+      LessonSection(
+        type: LessonSectionType.rule,
+        title: 'Crew Rest Terminolojisi',
+        body:
+            '**Crew rest compartment (CRC)** — ekip dinlenme bölmesi (üst veya alt güverte)\n**Break schedule** — dinlenme takvimi\n**In-charge cabin crew member** — sorumlu kabin amiri\n\nİfadeler:\n"I\'m going on my scheduled break. [Name] will be in charge."\n"Please call me if there is a medical emergency or if turbulence is forecast."\n"The crew will be taking turns resting. One senior crew member will remain in the cabin at all times."\n"We are approximately [X] hours from destination. Crew rest will begin shortly."',
+      ),
+      LessonSection(
+        type: LessonSectionType.practice,
+        title: 'Pratik Sorular',
+        practiceQuestions: [
+          QuestionModel(
+            id: -233,
+            category: QuestionCategory.vocabulary,
+            originalNumber: 2103,
+            questionText: '"In-charge cabin crew member" during rest refers to:',
+            options: [
+              'the captain monitoring the cabin',
+              'the senior cabin crew responsible while others rest',
+              'a passenger volunteer',
+              'a relief pilot who monitors passengers',
+            ],
+            correctIndex: 1,
+            difficulty: Difficulty.easy,
+          ),
+        ],
+      ),
+    ],
+  );
+
+  static const _cabin16MaydayPanPan = LessonContent(
+    id: 'cabin_16',
+    title: 'Kabin için MAYDAY ve PAN PAN',
+    subtitle: 'Acil durum iletişiminde kabin ekibinin rolü',
+    categoryId: 'vocabulary',
+    estimatedTime: '10 dk',
+    emoji: '🚨',
+    sections: [
+      LessonSection(
+        type: LessonSectionType.intro,
+        title: 'Kabin ekibi ve acil iletişim',
+        body:
+            'MAYDAY ve PAN PAN çağrıları teknik olarak pilotlar tarafından yapılır. Ancak kabin ekibinin bu terimlerin anlamını, prosedürler içindeki rolünü ve kaptanla iletişim dilini bilmesi zorunludur.',
+      ),
+      LessonSection(
+        type: LessonSectionType.rule,
+        title: 'MAYDAY vs PAN PAN',
+        body:
+            '**MAYDAY** (3 kez tekrar edilir):\n— Hayati tehlike veya acil yardım gerektiren durum\n— Yangın, dekompresyon, motor arızası, tıbbi kritik durum\n— Kabin ekibi: kabini tahliye ve brace pozisyonu için hazırlar\n\n**PAN PAN** (3 kez tekrar edilir):\n— Acil durum değil, ancak yardım gerekebilir (urgency)\n— Tıbbi acil durum (hayati tehlike olmayan), yakıt azlığı\n— Kabin ekibi: kaptanı bilgilendirir, normal prosedür devam eder\n\n**Kabin-Kokpit iletişimi:**\n"Captain, this is [name] in the cabin. We have a [describe situation]."\n"What are your instructions?"\n"Understood. We will [action]."',
+      ),
+      LessonSection(
+        type: LessonSectionType.practice,
+        title: 'Pratik Sorular',
+        practiceQuestions: [
+          QuestionModel(
+            id: -234,
+            category: QuestionCategory.vocabulary,
+            originalNumber: 2104,
+            questionText: 'A "MAYDAY" call indicates:',
+            options: [
+              'an urgency situation requiring possible assistance',
+              'a distress situation with immediate danger to life',
+              'a routine priority request for ATC assistance',
+              'a passenger medical situation',
+            ],
+            correctIndex: 1,
+            difficulty: Difficulty.medium,
+          ),
+          QuestionModel(
+            id: -235,
+            category: QuestionCategory.vocabulary,
+            originalNumber: 2105,
+            questionText: '"PAN PAN" compared to "MAYDAY" indicates:',
+            options: [
+              'a more serious emergency',
+              'an urgency requiring assistance but not immediate danger to life',
+              'a routine communication',
+              'an engine failure',
+            ],
+            correctIndex: 1,
+            difficulty: Difficulty.medium,
+          ),
+        ],
+      ),
+    ],
+  );
+
+  static const _cabin17InfantSafety = LessonContent(
+    id: 'cabin_17',
+    title: 'Bebek ve Çocuk Güvenlik Dili',
+    subtitle: 'Bassinet, CARES harness ve çocuk emniyeti terminolojisi',
+    categoryId: 'vocabulary',
+    estimatedTime: '8 dk',
+    emoji: '👶',
+    sections: [
+      LessonSection(
+        type: LessonSectionType.intro,
+        title: 'Çocuk yolcularla iletişim',
+        body:
+            'Bebekli ve çocuklu yolcular özel ekipman ve güvenlik kılavuzlarına ihtiyaç duyar. Kabin ekibinin bu ekipmanlara ilişkin terminolojiyi ve kural ifadelerini bilmesi gerekir.',
+      ),
+      LessonSection(
+        type: LessonSectionType.rule,
+        title: 'Bebek ve Çocuk Güvenlik Terimleri',
+        body:
+            '**Bassinet** — uçak koltuğuna monte edilen bebek yatağı (kalkış, iniş ve türbülansta kaldırılır)\n**CARES harness** — çocuklar için onaylı emniyet kemeri eki\n**Child restraint system (CRS)** — çocuk güvenlik sistemi (araba koltuğu gibi)\n**Lap infant** — kucakta taşınan bebek (< 2 yaş, kendi koltuğu yok)\n**Supplemental loop belt** — bazı ülkelerde onaylı bebek kemeri eki\n\nİfadeler:\n"The bassinet must be removed for takeoff, landing, and during turbulence."\n"Lap infants must be held securely or placed in an approved CRS."\n"Please ensure the child is properly secured in the CARES harness."',
+      ),
+      LessonSection(
+        type: LessonSectionType.practice,
+        title: 'Pratik Sorular',
+        practiceQuestions: [
+          QuestionModel(
+            id: -236,
+            category: QuestionCategory.vocabulary,
+            originalNumber: 2106,
+            questionText: 'A "bassinet" must be removed during:',
+            options: [
+              'meal service only',
+              'takeoff, landing, and turbulence',
+              'cruise phase only',
+              'immigration checks',
+            ],
+            correctIndex: 1,
+            difficulty: Difficulty.easy,
+          ),
+          QuestionModel(
+            id: -237,
+            category: QuestionCategory.vocabulary,
+            originalNumber: 2107,
+            questionText: '"Lap infant" refers to a child who:',
+            options: [
+              'has their own seat and restraint system',
+              'is under 2 years old and held by a parent without their own seat',
+              'requires a CARES harness',
+              'is travelling unaccompanied',
+            ],
+            correctIndex: 1,
+            difficulty: Difficulty.easy,
+          ),
+        ],
+      ),
+    ],
+  );
+
+  static const _cabin18ServiceFailure = LessonContent(
+    id: 'cabin_18',
+    title: 'Servis Hatası İletişimi',
+    subtitle: 'Eksik ikram, sistem arızası ve özür ifadeleri',
+    categoryId: 'translation',
+    estimatedTime: '9 dk',
+    emoji: '🙏',
+    sections: [
+      LessonSection(
+        type: LessonSectionType.intro,
+        title: 'Servis hataları nasıl yönetilir?',
+        body:
+            'Kabin hizmetlerinde aksaklıklar (eksik yemek seçeneği, sistem arızası, koltuk sorunu) yaşanabilir. Bunları profesyonel bir dille yönetmek, müşteri memnuniyetini ve güveni korur.',
+      ),
+      LessonSection(
+        type: LessonSectionType.rule,
+        title: 'Servis Hatası İfadeleri',
+        body:
+            '"I sincerely apologise for the inconvenience."\n"Unfortunately, your pre-ordered meal was not loaded onto the aircraft. I\'m sorry for this error."\n"I\'m afraid the in-flight entertainment system in your seat is not functioning. I\'ll try to reset it."\n"We will report this issue to the airline and ensure you are compensated."\n"As an apology, may I offer you [complimentary item]?"\n"Your feedback is very important to us. I\'ll inform my supervisor."',
+      ),
+      LessonSection(
+        type: LessonSectionType.practice,
+        title: 'Pratik Sorular',
+        practiceQuestions: [
+          QuestionModel(
+            id: -238,
+            category: QuestionCategory.translation,
+            originalNumber: 2108,
+            questionText: 'Translate to Turkish: "I sincerely apologise for the inconvenience caused."',
+            options: [
+              'Bu rahatsızlık için içtenlikle özür dilerim.',
+              'Bu sorun için üzgün değilim.',
+              'Maalesef yardımcı olamıyorum.',
+              'Bu durum bizim sorumluluğumuzda değil.',
+            ],
+            correctIndex: 0,
+            difficulty: Difficulty.easy,
+          ),
+          QuestionModel(
+            id: -239,
+            category: QuestionCategory.translation,
+            originalNumber: 2109,
+            questionText: '"We will ensure you are compensated" means:',
+            options: [
+              'nothing will be done',
+              'the airline will provide something in return for the inconvenience',
+              'the passenger will be charged extra',
+              'the crew will apologise again at the destination',
+            ],
+            correctIndex: 1,
+            difficulty: Difficulty.easy,
+          ),
+        ],
+      ),
+    ],
+  );
+
+  // ═══════════════════════════════════════════════════════════
+  //  AMT LESSONS — amt_7 through amt_18
+  // ═══════════════════════════════════════════════════════════
+
+  static const _amt7TechnicalLog = LessonContent(
+    id: 'amt_7',
+    title: 'Teknik Günlük Girişleri',
+    subtitle: 'Aircraft technical log — arıza kaydı ve imza dili',
+    categoryId: 'fill',
+    estimatedTime: '11 dk',
+    emoji: '📓',
+    sections: [
+      LessonSection(
+        type: LessonSectionType.intro,
+        title: 'Teknik günlük nedir?',
+        body:
+            '**Aircraft Technical Log (ATL)**, uçakla birlikte seyahat eden ve her uçuş segmentinde doldurulması zorunlu olan belgedir. Arızaları, yapılan işlemleri ve uçuşa elverişlilik beyanını içerir.',
+      ),
+      LessonSection(
+        type: LessonSectionType.rule,
+        title: 'ATL Girişi İfadeleri',
+        body:
+            '**Arıza kaydı (Defect entry):**\n"Captain\'s report: [defect description]. Aircraft serviceable for next flight with defect deferred to MEL item [X]."\n\n**Giderme kaydı (Rectification):**\n"Rectified in accordance with AMM Chapter [X], Task [X]. Part replaced: P/N [X], S/N [X]. Aircraft certified serviceable."\n\n**Erteleme (Deferral):**\n"Defect deferred under MEL item [X] for [X] calendar days. Placard installed."\n\n**Teknisyen imzası:**\n"I certify that the work specified above has been carried out in accordance with Part-145 and the data specified therein."',
+      ),
+      LessonSection(
+        type: LessonSectionType.practice,
+        title: 'Pratik Sorular',
+        practiceQuestions: [
+          QuestionModel(
+            id: -240,
+            category: QuestionCategory.fillBlanks,
+            originalNumber: 2110,
+            questionText: '"Defect ………… under MEL item 29-1 for 10 calendar days."',
+            options: ['closed', 'deferred', 'delayed', 'removed'],
+            correctIndex: 1,
+            difficulty: Difficulty.easy,
+          ),
+          QuestionModel(
+            id: -241,
+            category: QuestionCategory.fillBlanks,
+            originalNumber: 2111,
+            questionText: '"Aircraft ………… serviceable." (rectification tamamlandıktan sonra yazılan ifade)',
+            options: ['declared', 'certified', 'confirmed', 'approved'],
+            correctIndex: 1,
+            difficulty: Difficulty.easy,
+          ),
+          QuestionModel(
+            id: -242,
+            category: QuestionCategory.fillBlanks,
+            originalNumber: 2112,
+            questionText: '"Rectified in ………… with AMM Chapter 28."',
+            options: ['compliance', 'accordance', 'agreement', 'line'],
+            correctIndex: 1,
+            difficulty: Difficulty.medium,
+          ),
+        ],
+      ),
+    ],
+  );
+
+  static const _amt8InspectionTerms = LessonContent(
+    id: 'amt_8',
+    title: 'Muayene Terminolojisi',
+    subtitle: 'Visual, detailed, special detailed — muayene türleri ve dili',
+    categoryId: 'vocabulary',
+    estimatedTime: '11 dk',
+    emoji: '🔍',
+    sections: [
+      LessonSection(
+        type: LessonSectionType.intro,
+        title: 'Havacılıkta muayene türleri',
+        body:
+            'Havacılık bakımında farklı derinlikte muayene türleri tanımlanmıştır. Doğru terminolojiyi bilmek, iş emrini (work order) ve sonuç raporunu doğru yazmak için şarttır.',
+      ),
+      LessonSection(
+        type: LessonSectionType.rule,
+        title: 'Muayene Türleri',
+        body:
+            '**General Visual Inspection (GVI):**\n— Geniş alanda, erişim gerekmeksizin yapılan genel görsel muayene\n— Hasarı, arızayı, düzensizliği tespit etmek için\n\n**Detailed Inspection (DET):**\n— Yakın mesafeden, genellikle aydınlatma ve büyütme yardımıyla\n— Belirli bir alana odaklanır\n\n**Special Detailed Inspection (SDI):**\n— NDT (Non-Destructive Testing) teknikleri içerir\n— Borescope, eddy current, ultrasonic, X-ray\n\n**Operational Check:**\n— Sistemin tasarım fonksiyonunu gerçekleştirip gerçekleştirmediğini doğrular\n\n**Functional Check:**\n— Belirli fonksiyonun quantitative (sayısal) olarak doğrulanması',
+      ),
+      LessonSection(
+        type: LessonSectionType.practice,
+        title: 'Pratik Sorular',
+        practiceQuestions: [
+          QuestionModel(
+            id: -243,
+            category: QuestionCategory.vocabulary,
+            originalNumber: 2113,
+            questionText: 'A "General Visual Inspection" (GVI) is best described as:',
+            options: [
+              'a close-up inspection with magnifying equipment',
+              'a broad-area visual check without opening access panels',
+              'an NDT technique using eddy current',
+              'a quantitative check of system performance',
+            ],
+            correctIndex: 1,
+            difficulty: Difficulty.easy,
+          ),
+          QuestionModel(
+            id: -244,
+            category: QuestionCategory.vocabulary,
+            originalNumber: 2114,
+            questionText: '"Borescope inspection" is an example of:',
+            options: [
+              'General Visual Inspection',
+              'Operational Check',
+              'Special Detailed Inspection',
+              'Functional Check',
+            ],
+            correctIndex: 2,
+            difficulty: Difficulty.medium,
+          ),
+        ],
+      ),
+    ],
+  );
+
+  static const _amt9EngineRunup = LessonContent(
+    id: 'amt_9',
+    title: 'Motor Run-up Dili',
+    subtitle: 'Ground run ve engine test prosedür terminolojisi',
+    categoryId: 'vocabulary',
+    estimatedTime: '10 dk',
+    emoji: '🔥',
+    sections: [
+      LessonSection(
+        type: LessonSectionType.intro,
+        title: 'Engine run-up nedir?',
+        body:
+            'Bakım sonrası motorun zemin testine "engine run-up" veya "ground run" denir. Bu test, motorun operasyonel parametrelerini doğrulamak ve kaçakları tespit etmek için yapılır.',
+      ),
+      LessonSection(
+        type: LessonSectionType.rule,
+        title: 'Run-up Terminolojisi',
+        body:
+            '**Ground run authorization** — zemin testi için gerekli izin belgesi\n**Idle** — rölanti (en düşük güç ayarı)\n**Take-off power (TOGA)** — maksimum kalkış gücü\n**EGT** — Exhaust Gas Temperature (egzoz gaz sıcaklığı)\n**N1 / N2** — fan ve kompresör hız yüzdesi\n**Oil pressure / oil temperature** — yağ basıncı / sıcaklığı\n**Surge** — kompresör sürjü (anormal ses + EGT artışı)\n**Wet start** — ateşleme olmaksızın yakıt sızdırması\n**Hung start** — motor ateşlenir fakat rölantiye ulaşamaz\n**Hot start** — EGT başlangıç limitini aşar',
+      ),
+      LessonSection(
+        type: LessonSectionType.practice,
+        title: 'Pratik Sorular',
+        practiceQuestions: [
+          QuestionModel(
+            id: -245,
+            category: QuestionCategory.vocabulary,
+            originalNumber: 2115,
+            questionText: 'A "hot start" during engine start means:',
+            options: [
+              'the engine reached idle faster than normal',
+              'EGT exceeded the start temperature limit',
+              'the engine failed to ignite',
+              'oil pressure dropped during startup',
+            ],
+            correctIndex: 1,
+            difficulty: Difficulty.medium,
+          ),
+          QuestionModel(
+            id: -246,
+            category: QuestionCategory.vocabulary,
+            originalNumber: 2116,
+            questionText: '"Hung start" describes a condition where:',
+            options: [
+              'the engine lights up but does not accelerate to idle',
+              'the engine reaches full power too quickly',
+              'ignition fails completely',
+              'EGT is normal but N1 is high',
+            ],
+            correctIndex: 0,
+            difficulty: Difficulty.medium,
+          ),
+          QuestionModel(
+            id: -247,
+            category: QuestionCategory.vocabulary,
+            originalNumber: 2117,
+            questionText: '"TOGA" power setting is used during:',
+            options: [
+              'normal cruise',
+              'engine idle on ground',
+              'maximum power for takeoff or go-around',
+              'approach and landing',
+            ],
+            correctIndex: 2,
+            difficulty: Difficulty.easy,
+          ),
+        ],
+      ),
+    ],
+  );
+
+  static const _amt10CorrosionReport = LessonContent(
+    id: 'amt_10',
+    title: 'Korozyon Raporu Dili',
+    subtitle: 'Korozyon türleri, derecelendirme ve raporlama terminolojisi',
+    categoryId: 'reading',
+    estimatedTime: '12 dk',
+    emoji: '🦠',
+    sections: [
+      LessonSection(
+        type: LessonSectionType.intro,
+        title: 'Korozyon neden kritiktir?',
+        body:
+            'Korozyon, hava aracı yapısal bütünlüğünü tehdit eden en önemli sorunlardan biridir. AMT\'nin farklı korozyon türlerini tanımlayabilmesi ve raporunu doğru yazabilmesi zorunludur.',
+      ),
+      LessonSection(
+        type: LessonSectionType.rule,
+        title: 'Korozyon Terminolojisi',
+        body:
+            '**Türler:**\n• Surface corrosion — yüzey korozyonu (oksitlenme)\n• Pitting corrosion — çukur/nokta korozyonu\n• Intergranular corrosion — taneler arası korozyon\n• Galvanic corrosion — farklı metaller temasından oluşan\n• Stress corrosion cracking — gerilim + korozyon birlikteliği\n• Filiform corrosion — boya altı ince ipliksi korozyon\n\n**Derecelendirme (severity):**\n• Level 1 — yüzeysel, temizlenebilir\n• Level 2 — derinlemesine, onarım gerektirir\n• Level 3 — yapısal etkisi var, parça değişimi gerekebilir\n\n**Rapor ifadesi:**\n"Corrosion found on [component]. Type: [pitting/surface]. Extent: [area in cm²]. Depth: [mm]. Level: [1/2/3]. Action taken: [clean and treat / blend / replace]."',
+      ),
+      LessonSection(
+        type: LessonSectionType.practice,
+        title: 'Pratik Sorular',
+        practiceQuestions: [
+          QuestionModel(
+            id: -248,
+            category: QuestionCategory.reading,
+            originalNumber: 2118,
+            questionText: '"Galvanic corrosion" occurs when:',
+            options: [
+              'metal is exposed to high temperature',
+              'two dissimilar metals are in electrical contact in the presence of an electrolyte',
+              'tensile stress accelerates surface pitting',
+              'paint is applied over a corroded surface',
+            ],
+            correctIndex: 1,
+            difficulty: Difficulty.medium,
+          ),
+          QuestionModel(
+            id: -249,
+            category: QuestionCategory.reading,
+            originalNumber: 2119,
+            questionText: 'A corrosion report stating "Level 3" indicates:',
+            options: [
+              'surface corrosion that can be cleaned',
+              'minor pitting requiring only treatment',
+              'structural impact likely requiring part replacement',
+              'cosmetic paint damage only',
+            ],
+            correctIndex: 2,
+            difficulty: Difficulty.medium,
+          ),
+        ],
+      ),
+    ],
+  );
+
+  static const _amt11NdtTerms = LessonContent(
+    id: 'amt_11',
+    title: 'NDT Terminolojisi',
+    subtitle: 'Tahribatsız muayene yöntemleri ve raporlama dili',
+    categoryId: 'vocabulary',
+    estimatedTime: '12 dk',
+    emoji: '📡',
+    sections: [
+      LessonSection(
+        type: LessonSectionType.intro,
+        title: 'NDT nedir?',
+        body:
+            '**NDT** (Non-Destructive Testing / Tahribatsız Muayene), parçayı bozmadan veya değiştirmeden iç ve yüzey kusurlarını tespit etmek için kullanılan muayene yöntemlerinin genel adıdır.',
+      ),
+      LessonSection(
+        type: LessonSectionType.rule,
+        title: 'NDT Yöntemleri',
+        body:
+            '**VT** — Visual Testing: doğrudan veya dolaylı görsel muayene\n**PT** — Penetrant Testing: yüzey çatlaklarında floresan boya kullanımı\n**MT** — Magnetic Particle Testing: manyetik malzemelerde yüzey ve yüzey altı kusurları\n**UT** — Ultrasonic Testing: ses dalgaları ile iç kusur tespiti; thickness measurement\n**ET** — Eddy Current Testing: elektrik iletken malzemelerde yüzey/yüzey altı\n**RT** — Radiographic Testing: X-ışını veya gama ışınıyla iç yapı görüntüleme\n**Borescope** — optik cihazla motor iç kanallarını inceleme\n\n**Rapor ifadeleri:**\n"No cracks, corrosion, or other defects noted."\n"Indication found at [location]. Further evaluation required."\n"Part accepted / rejected in accordance with engineering data."',
+      ),
+      LessonSection(
+        type: LessonSectionType.practice,
+        title: 'Pratik Sorular',
+        practiceQuestions: [
+          QuestionModel(
+            id: -250,
+            category: QuestionCategory.vocabulary,
+            originalNumber: 2120,
+            questionText: '"Eddy Current Testing" (ET) is most useful for detecting defects in:',
+            options: [
+              'non-metallic composite structures',
+              'electrically conductive materials such as aluminium',
+              'fuel system rubber seals',
+              'hydraulic fluid contamination',
+            ],
+            correctIndex: 1,
+            difficulty: Difficulty.medium,
+          ),
+          QuestionModel(
+            id: -251,
+            category: QuestionCategory.vocabulary,
+            originalNumber: 2121,
+            questionText: 'In an NDT report, "no indication found" means:',
+            options: [
+              'the test was not performed',
+              'no defect signal was detected',
+              'results are inconclusive',
+              'the part must be replaced',
+            ],
+            correctIndex: 1,
+            difficulty: Difficulty.easy,
+          ),
+        ],
+      ),
+    ],
+  );
+
+  static const _amt12HydraulicSystem = LessonContent(
+    id: 'amt_12',
+    title: 'Hidrolik Sistem Dili',
+    subtitle: 'Hydraulic system bakım ve arıza terminolojisi',
+    categoryId: 'vocabulary',
+    estimatedTime: '11 dk',
+    emoji: '💧',
+    sections: [
+      LessonSection(
+        type: LessonSectionType.intro,
+        title: 'Hidrolik sistemler neden kritiktir?',
+        body:
+            'Uçağın kontrol yüzeyleri, iniş takımı ve frenler hidrolik sistemle çalışır. Bu sistemin bakım dilini bilmek, AMM talimatlarını doğru okumak için şarttır.',
+      ),
+      LessonSection(
+        type: LessonSectionType.rule,
+        title: 'Hidrolik Terminoloji',
+        body:
+            '**Temel bileşenler:**\n• Hydraulic reservoir — depo\n• Hydraulic pump (engine-driven / electric) — pompa\n• Pressure relief valve — basınç tahliye valfi\n• Actuator — aktüatör (silindir)\n• Selector valve — seçici valf\n• Accumulator — akümülatör (basınç depolamak için)\n• Filter element — filtre elemanı\n\n**Arıza terimleri:**\n• External leakage — dış sızıntı (görünür)\n• Internal leakage — iç sızıntı (pistondan bypass)\n• Low pressure — düşük basınç (pump, filter, leak)\n• Aeration — sıvıya hava karışması (köpük)\n• Contamination — kirlilik (parçacık, su)\n\n**AMM talimat ifadeleri:**\n"Depressurise hydraulic system before maintenance."\n"Bleed air from system after component replacement."\n"Check fluid level at [COLD/HOT] indication on sight glass."',
+      ),
+      LessonSection(
+        type: LessonSectionType.practice,
+        title: 'Pratik Sorular',
+        practiceQuestions: [
+          QuestionModel(
+            id: -252,
+            category: QuestionCategory.vocabulary,
+            originalNumber: 2122,
+            questionText: '"Depressurise hydraulic system before maintenance" means:',
+            options: [
+              'turn on the hydraulic pump',
+              'relieve accumulated hydraulic pressure before working on the system',
+              'add hydraulic fluid before starting work',
+              'run a ground check to verify pressure',
+            ],
+            correctIndex: 1,
+            difficulty: Difficulty.easy,
+          ),
+          QuestionModel(
+            id: -253,
+            category: QuestionCategory.vocabulary,
+            originalNumber: 2123,
+            questionText: '"Aeration" in a hydraulic system indicates:',
+            options: [
+              'correct fluid viscosity',
+              'air bubbles mixed with hydraulic fluid, causing foaming',
+              'normal fluid circulation',
+              'high fluid temperature',
+            ],
+            correctIndex: 1,
+            difficulty: Difficulty.medium,
+          ),
+        ],
+      ),
+    ],
+  );
+
+  static const _amt13AvionicsTroubleshooting = LessonContent(
+    id: 'amt_13',
+    title: 'Aviyonik Arıza Giderme Dili',
+    subtitle: 'BITE, fault codes ve aviyonik troubleshooting terminolojisi',
+    categoryId: 'reading',
+    estimatedTime: '13 dk',
+    emoji: '💻',
+    sections: [
+      LessonSection(
+        type: LessonSectionType.intro,
+        title: 'Modern aviyonik sistemler',
+        body:
+            'Modern uçaklarda aviyonik sistemler kendi kendini test edebilen (BITE — Built-In Test Equipment) özelliğe sahiptir. AMT\'nin bu sistemlerin çıktılarını anlayabilmesi ve arıza giderimini doğru belgelemesi gerekir.',
+      ),
+      LessonSection(
+        type: LessonSectionType.rule,
+        title: 'Aviyonik Terminoloji',
+        body:
+            '**BITE** — Built-In Test Equipment: sistem içindeki otomatik test fonksiyonu\n**Fault code / fault message** — arıza kodu veya mesajı\n**LRU** — Line Replaceable Unit: sahada değiştirilebilen en küçük birim\n**Intermittent fault** — aralıklı arıza (sürekli tekrarlamayan)\n**Confirmed fault** — doğrulanmış arıza (BITE sürekli kayıt ediyor)\n**NFF** — No Fault Found: LRU değiştirildi fakat arıza bulunamadı\n**ACMS** — Aircraft Condition Monitoring System\n**DFDR** — Digital Flight Data Recorder verisi\n\nTroubleshooting ifadeleri:\n"Access BITE menu on MCDU and retrieve active faults."\n"Fault confirmed: [LRU name] faulty. Replace LRU in accordance with AMM."\n"No fault found after LRU replacement. Monitor for recurrence."',
+      ),
+      LessonSection(
+        type: LessonSectionType.practice,
+        title: 'Pratik Sorular',
+        practiceQuestions: [
+          QuestionModel(
+            id: -254,
+            category: QuestionCategory.reading,
+            originalNumber: 2124,
+            questionText: '"NFF — No Fault Found" after LRU replacement means:',
+            options: [
+              'the fault has been permanently resolved',
+              'the replaced LRU was defective',
+              'no defect was detected in the removed unit during bench test',
+              'the BITE system is faulty',
+            ],
+            correctIndex: 2,
+            difficulty: Difficulty.hard,
+          ),
+          QuestionModel(
+            id: -255,
+            category: QuestionCategory.reading,
+            originalNumber: 2125,
+            questionText: 'An "intermittent fault" in avionics means the fault:',
+            options: [
+              'is permanently active and easy to reproduce',
+              'appears and disappears without a clear pattern',
+              'was found only in the BITE test, not in flight',
+              'requires immediate AOG action',
+            ],
+            correctIndex: 1,
+            difficulty: Difficulty.medium,
+          ),
+        ],
+      ),
+    ],
+  );
+
+  static const _amt14PartsLogistics = LessonContent(
+    id: 'amt_14',
+    title: 'Yedek Parça ve Lojistik Dili',
+    subtitle: 'Part number, serviceable tag ve parça sipariş terminolojisi',
+    categoryId: 'vocabulary',
+    estimatedTime: '10 dk',
+    emoji: '📦',
+    sections: [
+      LessonSection(
+        type: LessonSectionType.intro,
+        title: 'Yedek parça yönetimi',
+        body:
+            'AMT, bakım sırasında doğru parçayı tespit etmek, sipariş etmek ve teslim alırken kontrol etmek zorundadır. Bu sürecin her adımında belirli bir terminoloji kullanılır.',
+      ),
+      LessonSection(
+        type: LessonSectionType.rule,
+        title: 'Parça Terminolojisi',
+        body:
+            '**P/N** — Part Number: parça numarası\n**S/N** — Serial Number: seri numarası\n**Batch/Lot Number** — seri üretim parti numarası\n**Serviceable tag (Form 1 / 8130-3)** — parçanın uçuşa elverişli olduğunu gösteren belge\n— EASA Form 1, FAA 8130-3\n**Unserviceable tag** — kullanılamaz etiketi\n**Shelf life** — raf ömrü\n**Cure date** — üretim tarihi (lastik, conta için)\n**Overhaul (OH)** — revizyon\n**Serviceable (SVC)** — uçuşa elverişli\n**Beyond Economical Repair (BER)** — ekonomik onarım sınırını aşmış\n\nİfadeler:\n"Verify P/N and S/N before installation."\n"Ensure valid EASA Form 1 accompanies the part."\n"Check shelf life has not expired prior to installation."',
+      ),
+      LessonSection(
+        type: LessonSectionType.practice,
+        title: 'Pratik Sorular',
+        practiceQuestions: [
+          QuestionModel(
+            id: -256,
+            category: QuestionCategory.vocabulary,
+            originalNumber: 2126,
+            questionText: 'An "EASA Form 1" accompanying a spare part certifies that:',
+            options: [
+              'the part is in unserviceable condition',
+              'the part has been released as airworthy by an approved organisation',
+              'the part has been removed from a scrapped aircraft',
+              'the part requires further inspection before installation',
+            ],
+            correctIndex: 1,
+            difficulty: Difficulty.medium,
+          ),
+          QuestionModel(
+            id: -257,
+            category: QuestionCategory.vocabulary,
+            originalNumber: 2127,
+            questionText: '"Shelf life expired" for a rubber seal means:',
+            options: [
+              'the seal has been installed too long',
+              'the seal cannot be used because its guaranteed service period has passed',
+              'the seal must be returned to the manufacturer',
+              'the seal requires a functional test before use',
+            ],
+            correctIndex: 1,
+            difficulty: Difficulty.easy,
+          ),
+        ],
+      ),
+    ],
+  );
+
+  static const _amt15CertificationRelease = LessonContent(
+    id: 'amt_15',
+    title: 'Sertifikasyon ve Servise Verme Dili',
+    subtitle: 'CRS, Part-145 ve release to service terminolojisi',
+    categoryId: 'fill',
+    estimatedTime: '12 dk',
+    emoji: '✅',
+    sections: [
+      LessonSection(
+        type: LessonSectionType.intro,
+        title: 'Servise verme sertifikası',
+        body:
+            '**Certificate of Release to Service (CRS)**, bir bakım görevinin tamamlandıktan sonra yetkili kişi tarafından imzalanması gereken belgedir. Bu belge olmadan uçak uçuşa alınamaz.',
+      ),
+      LessonSection(
+        type: LessonSectionType.rule,
+        title: 'CRS Dili',
+        body:
+            '**Standart CRS ifadesi (Part-145):**\n"Certifies that the work specified in this order has been carried out in accordance with Part-145 and in respect to that work the aircraft/aircraft component is considered ready for release to service."\n\n**Anahtar ifadeler:**\n• "released to service" — servise verildi\n• "in accordance with" (IAW) — uygun olarak\n• "approved data" — onaylı veri\n• "authorised certifying staff" — yetkili sertifikasyon personeli\n• "limitations as specified" — belirtilen sınırlamalar dahilinde\n\n**Sınırlı release:**\n"Aircraft released to service with defect [X] deferred under MEL item [Y]."',
+      ),
+      LessonSection(
+        type: LessonSectionType.practice,
+        title: 'Pratik Sorular',
+        practiceQuestions: [
+          QuestionModel(
+            id: -258,
+            category: QuestionCategory.fillBlanks,
+            originalNumber: 2128,
+            questionText: '"The work has been carried out ………… Part-145 approved data."',
+            options: ['following', 'in accordance with', 'as per to', 'according'],
+            correctIndex: 1,
+            difficulty: Difficulty.easy,
+          ),
+          QuestionModel(
+            id: -259,
+            category: QuestionCategory.fillBlanks,
+            originalNumber: 2129,
+            questionText: '"Aircraft ………… to service." (CRS sonunda yazılan standart ifade)',
+            options: ['returned', 'cleared', 'released', 'approved'],
+            correctIndex: 2,
+            difficulty: Difficulty.easy,
+          ),
+          QuestionModel(
+            id: -260,
+            category: QuestionCategory.fillBlanks,
+            originalNumber: 2130,
+            questionText: '"Only ………… certifying staff may sign the CRS."',
+            options: ['senior', 'experienced', 'authorised', 'licensed'],
+            correctIndex: 2,
+            difficulty: Difficulty.medium,
+          ),
+        ],
+      ),
+    ],
+  );
+
+  static const _amt16FuelSystem = LessonContent(
+    id: 'amt_16',
+    title: 'Yakıt Sistemi Dili',
+    subtitle: 'Fuel system bakım, sızıntı ve tank terminolojisi',
+    categoryId: 'vocabulary',
+    estimatedTime: '11 dk',
+    emoji: '⛽',
+    sections: [
+      LessonSection(
+        type: LessonSectionType.intro,
+        title: 'Yakıt sistemi bakımı',
+        body:
+            'Yakıt sistemi arızaları uçak güvenliğini doğrudan etkiler. AMT\'nin yakıt sistemi terminolojisini iyi bilmesi hem bakım sırasında hem de raporlamada kritik önem taşır.',
+      ),
+      LessonSection(
+        type: LessonSectionType.rule,
+        title: 'Yakıt Sistemi Terminolojisi',
+        body:
+            '**Bileşenler:**\n• Fuel tank (integral/bladder/pod) — yakıt tankı\n• Boost pump — takviye pompası\n• Cross-feed valve — çapraz besleme valfi\n• Fuel quantity indication (FQI) — yakıt miktarı göstergesi\n• Fuel filter / strainer — yakıt filtresi\n• Fuel vent system — yakıt havalandırma sistemi\n• Refuelling / defuelling — yakıt ikmali / tahliyesi\n\n**Arıza/Sızıntı terimleri:**\n• Stain — leke (aktif sızıntı değil)\n• Seep — yavaş, hafif sızıntı (≤ 1 damla/dk)\n• Heavy seep — orta sızıntı (1-30 damla/dk)\n• Running leak — akma (> 30 damla/dk, acil işlem gerekir)\n\n**AMM ifadesi:**\n"Fuel tank entry requires hot work permit and confined space authorisation."\n"All fuel must be defuelled before sealant application."',
+      ),
+      LessonSection(
+        type: LessonSectionType.practice,
+        title: 'Pratik Sorular',
+        practiceQuestions: [
+          QuestionModel(
+            id: -261,
+            category: QuestionCategory.vocabulary,
+            originalNumber: 2131,
+            questionText: 'A "running leak" in the fuel system indicates:',
+            options: [
+              'a dry stain with no active flow',
+              'a slow seep under 1 drop per minute',
+              'active fuel flow exceeding 30 drops per minute requiring immediate action',
+              'fuel tank vapour pressure build-up',
+            ],
+            correctIndex: 2,
+            difficulty: Difficulty.medium,
+          ),
+          QuestionModel(
+            id: -262,
+            category: QuestionCategory.vocabulary,
+            originalNumber: 2132,
+            questionText: '"Fuel tank entry" requires:',
+            options: [
+              'only a standard work order',
+              'hot work permit and confined space authorisation',
+              'captain\'s approval',
+              'no special authorisation if the aircraft is defuelled',
+            ],
+            correctIndex: 1,
+            difficulty: Difficulty.medium,
+          ),
+        ],
+      ),
+    ],
+  );
+
+  static const _amt17LandingGear = LessonContent(
+    id: 'amt_17',
+    title: 'İniş Takımı Sistemi Dili',
+    subtitle: 'Landing gear, brake ve shimmy terminolojisi',
+    categoryId: 'reading',
+    estimatedTime: '12 dk',
+    emoji: '🛬',
+    sections: [
+      LessonSection(
+        type: LessonSectionType.intro,
+        title: 'İniş takımı bakımı',
+        body:
+            'İniş takımı, her iniş ve kalkışta büyük kuvvetlere maruz kalan kritik bir yapıdır. Periyodik muayenelerin ve arıza giderimlerinin doğru belgelenmesi zorunludur.',
+      ),
+      LessonSection(
+        type: LessonSectionType.rule,
+        title: 'İniş Takımı Terminolojisi',
+        body:
+            '**Yapısal bileşenler:**\n• Shock strut (oleo) — amortisör\n• Torque link — döndürme bağlantısı\n• Drag brace / side brace — geri çekilme kolu\n• Wheel well — iniş takımı yuvası\n• Down lock / up lock — açık/kapalı kilitleme\n• Squat switch — yere baskı şalteri\n\n**Fren sistemi:**\n• Anti-skid system — kayma önleme sistemi\n• Brake pressure — fren basıncı\n• Brake wear indicator — fren aşınma göstergesi\n• Hydraulic brake unit — hidrolik fren birimi\n\n**Arızalar:**\n• Shimmy — tekerlek titreşimi (yatay düzlem)\n• Gear not down and locked — iniş takımı inmiş-kilitli değil\n• Hydraulic fluid on gear — iniş takımında hidrolik sızıntı\n• Flat spot — düz nokta (kayma sonucu tekerlek aşınması)',
+      ),
+      LessonSection(
+        type: LessonSectionType.practice,
+        title: 'Pratik Sorular',
+        practiceQuestions: [
+          QuestionModel(
+            id: -263,
+            category: QuestionCategory.reading,
+            originalNumber: 2133,
+            questionText: '"Shimmy" in landing gear terminology refers to:',
+            options: [
+              'the extension speed of the landing gear',
+              'an abnormal lateral (sideways) wheel vibration',
+              'hydraulic pressure fluctuation during extension',
+              'a brake system pressure warning',
+            ],
+            correctIndex: 1,
+            difficulty: Difficulty.medium,
+          ),
+          QuestionModel(
+            id: -264,
+            category: QuestionCategory.reading,
+            originalNumber: 2134,
+            questionText: 'The "squat switch" on an aircraft is used to:',
+            options: [
+              'indicate that the landing gear is fully retracted',
+              'detect whether the aircraft is on the ground (weight on wheels)',
+              'measure tyre pressure',
+              'control anti-skid braking',
+            ],
+            correctIndex: 1,
+            difficulty: Difficulty.medium,
+          ),
+          QuestionModel(
+            id: -265,
+            category: QuestionCategory.reading,
+            originalNumber: 2135,
+            questionText: '"Flat spot" on a tyre is most commonly caused by:',
+            options: [
+              'over-inflation',
+              'wheel lock-up during braking (skidding)',
+              'hard landing impact',
+              'prolonged parking on a hot surface',
+            ],
+            correctIndex: 1,
+            difficulty: Difficulty.medium,
+          ),
+        ],
+      ),
+    ],
+  );
+
+  static const _amt18SafetyMgmt = LessonContent(
+    id: 'amt_18',
+    title: 'Bakımda Güvenlik Yönetimi Dili',
+    subtitle: 'SMS, hazard reporting ve toolbox talk terminolojisi',
+    categoryId: 'translation',
+    estimatedTime: '12 dk',
+    emoji: '🛡️',
+    sections: [
+      LessonSection(
+        type: LessonSectionType.intro,
+        title: 'Havacılık bakımında SMS',
+        body:
+            '**Safety Management System (SMS)**, havacılık kuruluşlarının güvenlik risklerini proaktif olarak yönetmesi için geliştirilen sistematik yaklaşımdır. AMT\'ler SMS süreçlerinin aktif katılımcılarıdır.',
+      ),
+      LessonSection(
+        type: LessonSectionType.rule,
+        title: 'SMS Terminolojisi',
+        body:
+            '**Temel kavramlar:**\n• Hazard — tehlike (zarar vermek için potansiyel mevcut durum)\n• Risk — tehlikenin gerçekleşme olasılığı × sonucun şiddeti\n• Safety occurrence — güvenlik olayı\n• Near miss / close call — ramak kala (hasar olmaksızın gerçekleşen olay)\n• Root cause analysis — kök neden analizi\n• Corrective action — düzeltici faaliyet\n• Preventive action — önleyici faaliyet\n• Just culture — suçlama yerine öğrenmeyi hedefleyen kültür\n• Toolbox talk — bakım öncesi kısa güvenlik brifing\n\n**Hazard report ifadesi:**\n"I observed a potential hazard: [description]. Location: [X]. Risk level: [high/medium/low]. Recommended action: [X]."',
+      ),
+      LessonSection(
+        type: LessonSectionType.practice,
+        title: 'Pratik Sorular',
+        practiceQuestions: [
+          QuestionModel(
+            id: -266,
+            category: QuestionCategory.translation,
+            originalNumber: 2136,
+            questionText: 'Translate to Turkish: "A near miss should always be reported, even if no damage occurred."',
+            options: [
+              'Ramak kala olaylar, hasar meydana gelmese bile her zaman raporlanmalıdır.',
+              'Hasar olmayan olaylar rapor edilmek zorunda değildir.',
+              'Ramak kala olaylar yalnızca ciddi hasara yol açtığında raporlanır.',
+              'Güvenlik olayları yalnızca kaza olduğunda kayıt altına alınır.',
+            ],
+            correctIndex: 0,
+            difficulty: Difficulty.easy,
+          ),
+          QuestionModel(
+            id: -267,
+            category: QuestionCategory.translation,
+            originalNumber: 2137,
+            questionText: '"Just culture" in SMS means:',
+            options: [
+              'a culture of assigning blame for all safety errors',
+              'a culture that encourages reporting by distinguishing between honest mistakes and negligence',
+              'a culture where only management decides safety actions',
+              'a legal term for fair compensation after accidents',
+            ],
+            correctIndex: 1,
+            difficulty: Difficulty.medium,
+          ),
+          QuestionModel(
+            id: -268,
+            category: QuestionCategory.translation,
+            originalNumber: 2138,
+            questionText: '"Root cause analysis" aims to:',
+            options: [
+              'identify who is responsible for an accident',
+              'find the underlying cause(s) of a safety occurrence to prevent recurrence',
+              'document all damage caused by the occurrence',
+              'report the occurrence to the aviation authority',
+            ],
             correctIndex: 1,
             difficulty: Difficulty.medium,
           ),
