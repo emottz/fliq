@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import '../../core/constants/app_colors.dart';
 
 /// Duolingo tarzı streak kutlama overlay'i.
 /// Kullanım: showStreakCelebration(context, streakDays: 3);
@@ -91,11 +92,11 @@ class _StreakDialogState extends State<_StreakDialog>
               margin: const EdgeInsets.symmetric(horizontal: 40),
               padding: const EdgeInsets.symmetric(horizontal: 32, vertical: 36),
               decoration: BoxDecoration(
-                color: const Color(0xFF1C1C2E),
+                color: AppColors.streakDarkBg,
                 borderRadius: BorderRadius.circular(28),
                 boxShadow: [
                   BoxShadow(
-                    color: const Color(0xFFFF6B00).withValues(alpha: 0.3),
+                    color: AppColors.streakOrange.withValues(alpha: 0.3),
                     blurRadius: 40,
                     spreadRadius: 5,
                   ),
@@ -186,9 +187,9 @@ class _StreakDots extends StatelessWidget {
 
         Color dotColor;
         if (isToday) {
-          dotColor = const Color(0xFFFF6B00);
+          dotColor = AppColors.streakOrange;
         } else if (isPast) {
-          dotColor = const Color(0xFFFF9A3C);
+          dotColor = AppColors.streakOrangeLight;
         } else {
           dotColor = const Color(0xFF2A2A3E);
         }
@@ -207,7 +208,7 @@ class _StreakDots extends StatelessWidget {
                   boxShadow: isToday
                       ? [
                           BoxShadow(
-                            color: const Color(0xFFFF6B00).withValues(alpha: 0.5),
+                            color: AppColors.streakOrange.withValues(alpha: 0.5),
                             blurRadius: 10,
                           )
                         ]

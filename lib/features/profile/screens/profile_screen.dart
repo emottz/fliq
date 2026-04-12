@@ -174,7 +174,7 @@ class ProfileScreen extends ConsumerWidget {
                       ),
                       child: Row(
                         children: [
-                          Text(r.emoji, style: TextStyle(fontSize: 24, color: unlocked ? null : const Color(0xFFD1D5DB))),
+                          Text(r.emoji, style: TextStyle(fontSize: 24, color: unlocked ? null : AppColors.locked)),
                           const SizedBox(width: 14),
                           Expanded(
                             child: Column(

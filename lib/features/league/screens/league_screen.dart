@@ -330,9 +330,9 @@ class _ZoneLegend extends StatelessWidget {
     }
     return Row(
       children: [
-        _ZonePill(color: const Color(0xFF22C55E), label: '↑ Yükseliyor (ilk 5)'),
+        _ZonePill(color: AppColors.success, label: '↑ Yükseliyor (ilk 5)'),
         const SizedBox(width: 8),
-        _ZonePill(color: const Color(0xFFEF4444), label: '↓ Düşüyor (son 5)'),
+        _ZonePill(color: AppColors.error, label: '↓ Düşüyor (son 5)'),
       ],
     );
   }
@@ -387,8 +387,8 @@ class _LeaderboardRow extends StatelessWidget {
     Color? borderColor;
     Color rowBg = isMe ? AppColors.primary.withValues(alpha: 0.08) : AppColors.surface;
 
-    if (isPromo) borderColor = const Color(0xFF22C55E);
-    if (isDemote) borderColor = const Color(0xFFEF4444);
+    if (isPromo) borderColor = AppColors.success;
+    if (isDemote) borderColor = AppColors.error;
     if (isMe) borderColor = AppColors.primary;
 
     return Container(
@@ -500,7 +500,7 @@ class _LeaderboardRow extends StatelessWidget {
             Icon(
               isPromo ? Icons.arrow_upward_rounded : Icons.arrow_downward_rounded,
               size: 16,
-              color: isPromo ? const Color(0xFF22C55E) : const Color(0xFFEF4444),
+              color: isPromo ? AppColors.success : AppColors.error,
             ),
           ],
         ],

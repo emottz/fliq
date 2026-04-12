@@ -119,12 +119,12 @@ class ExamListScreen extends ConsumerWidget {
                       mainAxisAlignment: MainAxisAlignment.center,
                       children: [
                         Text('Sınav başlatmak ', style: AppTextStyles.caption),
-                        Text(
+                        const Text(
                           '❤️ 10',
                           style: TextStyle(
                             fontSize: 12,
                             fontWeight: FontWeight.w700,
-                            color: Color(0xFFEF4444),
+                            color: AppColors.error,
                           ),
                         ),
                         Text(' hak kullanır', style: AppTextStyles.caption),
@@ -155,14 +155,14 @@ class _AmtExamCard extends StatelessWidget {
         padding: const EdgeInsets.all(20),
         decoration: BoxDecoration(
           gradient: const LinearGradient(
-            colors: [Color(0xFF1E3A5F), Color(0xFF2563EB)],
+            colors: [AppColors.primaryDeep, AppColors.primary],
             begin: Alignment.topLeft,
             end: Alignment.bottomRight,
           ),
           borderRadius: BorderRadius.circular(20),
           boxShadow: [
             BoxShadow(
-              color: const Color(0xFF1E3A5F).withValues(alpha: 0.35),
+              color: AppColors.primaryDeep.withValues(alpha: 0.35),
               blurRadius: 16,
               offset: const Offset(0, 6),
             ),
@@ -272,6 +272,13 @@ class _DailyExamCard extends StatelessWidget {
             end: Alignment.bottomRight,
           ),
           borderRadius: BorderRadius.circular(20),
+          boxShadow: [
+            BoxShadow(
+              color: AppColors.primary.withValues(alpha: 0.30),
+              blurRadius: 16,
+              offset: const Offset(0, 6),
+            ),
+          ],
         ),
         child: Row(
           children: [
@@ -355,7 +362,7 @@ class _CategoryCard extends StatelessWidget {
         width: double.infinity,
         padding: const EdgeInsets.all(14),
         decoration: BoxDecoration(
-          color: isWeak ? const Color(0xFFFFFBEB) : AppColors.surface,
+          color: isWeak ? AppColors.warningLight : AppColors.surface,
           borderRadius: BorderRadius.circular(16),
           border: Border.all(
             color: isWeak ? AppColors.warning : AppColors.divider,
@@ -372,9 +379,7 @@ class _CategoryCard extends StatelessWidget {
                 Container(
                   padding: const EdgeInsets.all(8),
                   decoration: BoxDecoration(
-                    color: isWeak
-                        ? const Color(0xFFFEF3C7)
-                        : AppColors.surfaceVariant,
+                    color: isWeak ? AppColors.warningBg : AppColors.surfaceVariant,
                     borderRadius: BorderRadius.circular(10),
                   ),
                   child: Icon(

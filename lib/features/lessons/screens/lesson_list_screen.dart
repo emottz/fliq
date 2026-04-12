@@ -73,10 +73,10 @@ class _LessonListScreenState extends ConsumerState<LessonListScreen> {
   };
 
   static const _levelGroups = [
-    (ProficiencyLevel.beginner, 'Başlangıç', '🌱', Color(0xFF10B981)),
-    (ProficiencyLevel.elementary, 'Temel', '✈️', Color(0xFF3B82F6)),
-    (ProficiencyLevel.intermediate, 'Orta', '🛫', Color(0xFF8B5CF6)),
-    (ProficiencyLevel.advanced, 'İleri', '🏆', Color(0xFFF59E0B)),
+    (ProficiencyLevel.beginner,     'Başlangıç', '🌱', AppColors.levelGreen),
+    (ProficiencyLevel.elementary,   'Temel',     '✈️', AppColors.primaryLight),
+    (ProficiencyLevel.intermediate, 'Orta',      '🛫', AppColors.levelPurple),
+    (ProficiencyLevel.advanced,     'İleri',     '🏆', AppColors.warning),
   ];
 
   static String _levelLabel(ProficiencyLevel level) => switch (level) {
@@ -232,7 +232,7 @@ class _ProgressHeader extends StatelessWidget {
       padding: const EdgeInsets.all(18),
       decoration: BoxDecoration(
         gradient: const LinearGradient(
-          colors: [Color(0xFF1E3A8A), AppColors.primary],
+          colors: [AppColors.primaryDeep, AppColors.primary],
           begin: Alignment.topLeft,
           end: Alignment.bottomRight,
         ),
@@ -462,7 +462,7 @@ class _LessonNodeState extends State<_LessonNode>
   Color get _nodeColor {
     if (widget.isDone) return AppColors.success;
     if (widget.isUnlocked) return AppColors.primary;
-    return const Color(0xFFD1D5DB);
+    return AppColors.locked;
   }
 
   @override

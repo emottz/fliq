@@ -1,6 +1,7 @@
 import 'dart:async';
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
+import '../../core/constants/app_colors.dart';
 import '../../core/services/hearts_service.dart';
 import '../providers/app_providers.dart';
 
@@ -97,9 +98,9 @@ class _HeartsChipState extends State<_HeartsChip> {
   }
 
   Color get _color {
-    if (widget.count == 0) return Colors.grey;
-    if (widget.count <= 5) return Colors.orange;
-    return const Color(0xFFEF4444);
+    if (widget.count == 0) return AppColors.locked;
+    if (widget.count <= 5) return AppColors.warning;
+    return AppColors.error;
   }
 
   @override
@@ -164,7 +165,7 @@ class HeartsEmptyBanner extends ConsumerWidget {
       margin: const EdgeInsets.fromLTRB(0, 0, 0, 16),
       decoration: const BoxDecoration(
         gradient: LinearGradient(
-          colors: [Color(0xFFB91C1C), Color(0xFFEF4444)],
+          colors: [AppColors.errorDark, AppColors.error],
           begin: Alignment.centerLeft,
           end: Alignment.centerRight,
         ),
@@ -294,7 +295,7 @@ class _WatchAdButtonState extends ConsumerState<WatchAdButton> {
               width: double.infinity,
               padding: const EdgeInsets.symmetric(vertical: 14),
               decoration: BoxDecoration(
-                color: const Color(0xFFDCFCE7),
+                color: AppColors.successLight,
                 borderRadius: BorderRadius.circular(14),
               ),
               child: const Row(
@@ -307,7 +308,7 @@ class _WatchAdButtonState extends ConsumerState<WatchAdButton> {
                     style: TextStyle(
                       fontSize: 15,
                       fontWeight: FontWeight.w700,
-                      color: Color(0xFF15803D),
+                      color: AppColors.successDark,
                     ),
                   ),
                 ],
@@ -329,19 +330,19 @@ class _WatchAdButtonState extends ConsumerState<WatchAdButton> {
                   width: 14,
                   height: 14,
                   child: CircularProgressIndicator(
-                    color: Color(0xFFEF4444),
+                    color: AppColors.error,
                     strokeWidth: 2,
                   ),
                 )
               : const Row(
                   mainAxisSize: MainAxisSize.min,
                   children: [
-                    Icon(Icons.play_circle_filled, color: Color(0xFFEF4444), size: 16),
+                    Icon(Icons.play_circle_filled, color: AppColors.error, size: 16),
                     SizedBox(width: 4),
                     Text(
                       '+5 ❤️ İzle',
                       style: TextStyle(
-                        color: Color(0xFFEF4444),
+                        color: AppColors.error,
                         fontSize: 12,
                         fontWeight: FontWeight.w800,
                       ),
@@ -358,7 +359,7 @@ class _WatchAdButtonState extends ConsumerState<WatchAdButton> {
       child: ElevatedButton(
         onPressed: _loading ? null : _watch,
         style: ElevatedButton.styleFrom(
-          backgroundColor: const Color(0xFFEF4444),
+          backgroundColor: AppColors.error,
           foregroundColor: Colors.white,
           padding: const EdgeInsets.symmetric(vertical: 14),
           shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(14)),
@@ -445,7 +446,7 @@ class _HeartsBottomSheetState extends ConsumerState<_HeartsBottomSheet> {
           // Tutamaç
           Container(
             width: 40, height: 4,
-            decoration: BoxDecoration(color: Colors.grey[300], borderRadius: BorderRadius.circular(2)),
+            decoration: BoxDecoration(color: AppColors.divider, borderRadius: BorderRadius.circular(2)),
           ),
           const SizedBox(height: 20),
 
@@ -463,7 +464,7 @@ class _HeartsBottomSheetState extends ConsumerState<_HeartsBottomSheet> {
                   ),
                   Text(
                     '$currentCount / ${HeartsService.maxHearts} kalp',
-                    style: TextStyle(fontSize: 13, color: Colors.grey[600]),
+                    style: const TextStyle(fontSize: 13, color: AppColors.textSecondary),
                   ),
                 ],
               ),
@@ -477,9 +478,9 @@ class _HeartsBottomSheetState extends ConsumerState<_HeartsBottomSheet> {
             child: LinearProgressIndicator(
               value: currentCount / HeartsService.maxHearts,
               minHeight: 10,
-              backgroundColor: Colors.grey[200],
+              backgroundColor: AppColors.divider,
               valueColor: AlwaysStoppedAnimation<Color>(
-                currentCount == 0 ? Colors.grey : const Color(0xFFEF4444),
+                currentCount == 0 ? AppColors.locked : AppColors.error,
               ),
             ),
           ),
@@ -496,9 +497,9 @@ class _HeartsBottomSheetState extends ConsumerState<_HeartsBottomSheet> {
             Container(
               padding: const EdgeInsets.all(14),
               decoration: BoxDecoration(
-                color: const Color(0xFFFEF2F2),
+                color: AppColors.errorLight,
                 borderRadius: BorderRadius.circular(12),
-                border: Border.all(color: const Color(0xFFFCA5A5)),
+                border: Border.all(color: AppColors.errorBorder),
               ),
               child: Row(
                 children: [
@@ -510,14 +511,14 @@ class _HeartsBottomSheetState extends ConsumerState<_HeartsBottomSheet> {
                       children: [
                         const Text(
                           'Otomatik yenileme',
-                          style: TextStyle(fontSize: 12, color: Color(0xFF991B1B)),
+                          style: const TextStyle(fontSize: 12, color: AppColors.errorDark),
                         ),
                         Text(
                           _formatCountdown(_remaining),
                           style: const TextStyle(
                             fontSize: 16,
                             fontWeight: FontWeight.w700,
-                            color: Color(0xFFEF4444),
+                            color: AppColors.error,
                           ),
                         ),
                       ],
@@ -539,7 +540,7 @@ class _HeartsBottomSheetState extends ConsumerState<_HeartsBottomSheet> {
                   padding: const EdgeInsets.symmetric(horizontal: 12),
                   child: Text(
                     'ya da hemen kazan',
-                    style: TextStyle(fontSize: 12, color: Colors.grey[500]),
+                    style: const TextStyle(fontSize: 12, color: AppColors.textSecondary),
                   ),
                 ),
                 const Expanded(child: Divider()),
@@ -572,7 +573,7 @@ class _CostRow extends StatelessWidget {
           style: const TextStyle(
             fontSize: 14,
             fontWeight: FontWeight.w700,
-            color: Color(0xFFEF4444),
+            color: AppColors.error,
           ),
         ),
       ],
