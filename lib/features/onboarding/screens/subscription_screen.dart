@@ -32,6 +32,10 @@ class _RolePricing {
   String get monthlyStr => '\$${monthly % 1 == 0 ? monthly.toInt() : monthly}';
   String get annualStr  => '\$${annual  % 1 == 0 ? annual.toInt()  : annual}';
   String get annualTotalStr => '\$${annualTotal % 1 == 0 ? annualTotal.toInt() : annualTotal}';
+
+  /// Yıllık alındığında kazanılan miktar (aylıkla karşılaştırma)
+  double get annualSaving => (monthly - annual) * 12;
+  String get annualSavingStr => '\$${annualSaving % 1 == 0 ? annualSaving.toInt() : annualSaving}';
 }
 
 const _allPlans = [
@@ -43,8 +47,8 @@ const _allPlans = [
     annual: 35,
     annualTotal: 420,
     highlights: [
-      '33+ ileri seviye ders',
-      'ATC, METAR, SID/STAR, kaza raporu',
+      '60 ders: ATC, METAR/TAF, SID/STAR, PIREP, CRM',
+      'Kaza raporu, IFR clearance, ops manual dili',
       'Pilot Ligi — sadece pilotlarla yarış',
     ],
   ),
@@ -56,8 +60,8 @@ const _allPlans = [
     annual: 17.5,
     annualTotal: 210,
     highlights: [
-      '10 kabin odaklı ders',
-      'Acil prosedür, CRM, DG dili',
+      '18 kabin odaklı ders + temel havacılık dersleri',
+      'Tahliye, tıbbi acil, CRM, DG, MAYDAY dili',
       'Kabin Ligi — kabin ekibiyle yarış',
     ],
   ),
@@ -69,8 +73,8 @@ const _allPlans = [
     annual: 17.5,
     annualTotal: 210,
     highlights: [
-      '10 teknik bakım dersi',
-      'AMM, AD, EASA Part-66 dili',
+      '18 teknik bakım dersi + temel havacılık dersleri',
+      'AMM, NDT, EASA Part-145, SMS, teknik günlük dili',
       'AMT Ligi — teknisyenlerle yarış',
     ],
   ),
@@ -82,8 +86,8 @@ const _allPlans = [
     annual: 7,
     annualTotal: 84,
     highlights: [
-      '14 temel havacılık dersi',
-      'Gramer, kelime, temel ATC',
+      '35+ temel ve orta seviye havacılık dersi',
+      'Gramer, kelime, ATC, METAR, uçuş fazları',
       'Öğrenci Ligi — öğrencilerle yarış',
     ],
   ),
@@ -235,7 +239,22 @@ class _SubscriptionScreenState extends ConsumerState<SubscriptionScreen> {
                       textAlign: TextAlign.center,
                     ),
                   ),
-                  const SizedBox(height: 20),
+                  const SizedBox(height: 12),
+                  // ── Fiyat özet etiketi ───────────────────────────────────
+                  Center(
+                    child: Wrap(
+                      spacing: 8,
+                      runSpacing: 6,
+                      alignment: WrapAlignment.center,
+                      children: const [
+                        _PriceBadge(emoji: '✈️', label: 'Pilot', price: '\$50'),
+                        _PriceBadge(emoji: '💺', label: 'Kabin', price: '\$25'),
+                        _PriceBadge(emoji: '🔧', label: 'AMT', price: '\$25'),
+                        _PriceBadge(emoji: '🎓', label: 'Öğrenci', price: '\$10'),
+                      ],
+                    ),
+                  ),
+                  const SizedBox(height: 16),
 
                   // ── Aylık / Yıllık toggle ────────────────────────────────
                   _PeriodToggle(
@@ -326,6 +345,35 @@ class _SubscriptionScreenState extends ConsumerState<SubscriptionScreen> {
               ),
             ),
           ),
+        ),
+      ),
+    );
+  }
+}
+
+// ── Fiyat özet etiketi ────────────────────────────────────────────────────────
+
+class _PriceBadge extends StatelessWidget {
+  final String emoji;
+  final String label;
+  final String price;
+  const _PriceBadge({required this.emoji, required this.label, required this.price});
+
+  @override
+  Widget build(BuildContext context) {
+    return Container(
+      padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 5),
+      decoration: BoxDecoration(
+        color: AppColors.surfaceVariant,
+        borderRadius: BorderRadius.circular(20),
+        border: Border.all(color: AppColors.divider),
+      ),
+      child: Text(
+        '$emoji $label · $price/ay',
+        style: const TextStyle(
+          fontSize: 11,
+          fontWeight: FontWeight.w600,
+          color: AppColors.textSecondary,
         ),
       ),
     );
@@ -487,7 +535,7 @@ class _PlanCard extends StatelessWidget {
                     ],
                   ),
                 ),
-                if (annual)
+                if (annual) ...[
                   Container(
                     margin: const EdgeInsets.only(top: 3),
                     padding: const EdgeInsets.symmetric(horizontal: 6, vertical: 2),
@@ -504,6 +552,15 @@ class _PlanCard extends StatelessWidget {
                       ),
                     ),
                   ),
+                  Text(
+                    'Yılda ${plan.annualSavingStr} tasarruf',
+                    style: const TextStyle(
+                      fontSize: 10,
+                      color: Color(0xFF16A34A),
+                      fontWeight: FontWeight.w500,
+                    ),
+                  ),
+                ],
               ],
             ),
           ],
