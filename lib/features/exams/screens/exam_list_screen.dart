@@ -45,7 +45,7 @@ class ExamListScreen extends ConsumerWidget {
 
     return Column(
       children: [
-        const HeartsEmptyBanner(),
+        HeartsEmptyBanner(),
         Expanded(
           child: Center(
             child: ConstrainedBox(
