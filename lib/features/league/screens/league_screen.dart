@@ -93,7 +93,7 @@ class _LeagueBody extends StatelessWidget {
 
     return Center(
       child: ConstrainedBox(
-        constraints: const BoxConstraints(maxWidth: 480),
+        constraints: const BoxConstraints(maxWidth: 680),
         child: CustomScrollView(
           slivers: [
             // ── Lig başlığı ──────────────────────────────────────────────────

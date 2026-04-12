@@ -215,7 +215,7 @@ class _SubscriptionScreenState extends ConsumerState<SubscriptionScreen> {
       body: SafeArea(
         child: Center(
           child: ConstrainedBox(
-            constraints: const BoxConstraints(maxWidth: 520),
+            constraints: const BoxConstraints(maxWidth: 640),
             child: SingleChildScrollView(
               padding: EdgeInsets.fromLTRB(20, canPop ? 4 : 20, 20, 24),
               child: Column(

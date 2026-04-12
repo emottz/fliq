@@ -95,7 +95,7 @@ class _SideNav extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      width: 200,
+      width: 220,
       color: AppColors.background,
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,

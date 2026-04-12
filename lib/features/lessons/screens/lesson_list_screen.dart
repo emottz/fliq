@@ -114,7 +114,7 @@ class _LessonListScreenState extends ConsumerState<LessonListScreen> {
 
             return Center(
               child: ConstrainedBox(
-                constraints: const BoxConstraints(maxWidth: 480),
+                constraints: const BoxConstraints(maxWidth: 560),
                 child: SingleChildScrollView(
                   child: Column(
                     children: [
