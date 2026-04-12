@@ -8,6 +8,7 @@ import '../../../data/models/lesson_content_model.dart';
 import '../../../shared/providers/app_providers.dart';
 import '../../../shared/widgets/streak_celebration_overlay.dart';
 import '../widgets/lesson_card_widgets.dart';
+import '../../../shared/widgets/report_error_sheet.dart';
 
 class LessonSessionScreen extends ConsumerStatefulWidget {
   final String lessonId;
@@ -167,6 +168,27 @@ class _LessonSessionScreenState extends ConsumerState<LessonSessionScreen>
                       style: const TextStyle(
                         fontSize: 12,
                         fontWeight: FontWeight.w600,
+                        color: AppColors.textSecondary,
+                      ),
+                    ),
+                  ),
+                  const SizedBox(width: 6),
+                  GestureDetector(
+                    onTap: () => showReportErrorSheet(
+                      context,
+                      screen: 'Ders',
+                      lessonName: lesson.title,
+                    ),
+                    child: Container(
+                      width: 36,
+                      height: 36,
+                      decoration: BoxDecoration(
+                        color: AppColors.surfaceVariant,
+                        borderRadius: BorderRadius.circular(10),
+                      ),
+                      child: const Icon(
+                        Icons.flag_outlined,
+                        size: 18,
                         color: AppColors.textSecondary,
                       ),
                     ),

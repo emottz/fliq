@@ -7,6 +7,7 @@ import '../../../core/constants/app_text_styles.dart';
 import '../../../data/models/question_model.dart';
 import '../../../shared/providers/app_providers.dart';
 import '../../../shared/widgets/streak_celebration_overlay.dart';
+import '../../../shared/widgets/report_error_sheet.dart';
 
 class ExamSessionScreen extends ConsumerStatefulWidget {
   final Map<String, dynamic> config;
@@ -151,6 +152,16 @@ class _ExamSessionScreenState extends ConsumerState<ExamSessionScreen> {
         title: Text('${_current + 1} / $total', style: AppTextStyles.body),
         centerTitle: true,
         actions: [
+          IconButton(
+            icon: const Icon(Icons.flag_outlined, size: 20),
+            tooltip: 'Hata bildir',
+            color: AppColors.textSecondary,
+            onPressed: () => showReportErrorSheet(
+              context,
+              screen: 'Sınav',
+              questionText: _questions![_current].questionText,
+            ),
+          ),
           Container(
             margin: const EdgeInsets.symmetric(vertical: 10, horizontal: 12),
             padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 4),
