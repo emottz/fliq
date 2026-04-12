@@ -32,6 +32,41 @@
 
   <title>fliq</title>
   <link rel="manifest" href="manifest.json">
+
+  <!--
+    AdSense H5 Games Rewarded Ads
+    Publisher ID'ni buraya gir: ca-pub-XXXXXXXXXXXXXXXXX
+    Gerçek ID'yi AdSense hesabından alıp aşağıdaki PLACEHOLDER'ı değiştir.
+    https://support.google.com/adsense/answer/12026638
+  -->
+  <script async
+    src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-PLACEHOLDER"
+    crossorigin="anonymous"></script>
+
+  <script>
+    // AdSense preload ayarı — Flutter başlatmadan önce çağrılır
+    window.fliqAdConfig = function () {
+      if (typeof adConfig !== 'undefined') {
+        adConfig({ preloadAdBreaks: 'on', sound: 'off' });
+      }
+    };
+
+    // Rewarded ad göster; izlenirse onViewed, her durumda onComplete çağrılır
+    window.fliqShowRewardedAd = function (onViewed, onComplete) {
+      if (typeof adBreak === 'undefined') {
+        if (onComplete) onComplete();
+        return;
+      }
+      adBreak({
+        type: 'reward',
+        name: 'fliq-hearts-reward',
+        beforeReward: function (showAdFn) { showAdFn(); },
+        adViewed: function () { if (onViewed) onViewed(); },
+        adDismissed: function () {},
+        afterAd: function () { if (onComplete) onComplete(); },
+      });
+    };
+  </script>
 </head>
 <body>
   <script src="flutter_bootstrap.js" async></script>
