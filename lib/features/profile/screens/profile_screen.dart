@@ -8,6 +8,7 @@ import '../../../core/constants/app_text_styles.dart';
 import '../../../core/constants/rank_constants.dart';
 import '../../../data/models/user_profile_model.dart';
 import '../../../shared/providers/app_providers.dart';
+import '../../../shared/widgets/premium_upsell_card.dart';
 import '../../../shared/widgets/xp_progress_bar.dart';
 
 class ProfileScreen extends ConsumerWidget {
@@ -35,6 +36,9 @@ class ProfileScreen extends ConsumerWidget {
                   // ── Google kullanıcı bilgileri ─────────────────────────────
                   _UserInfoCard(),
                   const SizedBox(height: 16),
+                  // ── Premium durum / upsell ─────────────────────────────────
+                  const PremiumMemberBadge(),
+                  const PremiumUpsellCard(source: 'profile'),
                   // Rank badge
                   Container(
                     width: double.infinity,

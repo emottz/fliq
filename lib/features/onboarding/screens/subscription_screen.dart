@@ -275,6 +275,10 @@ class _SubscriptionScreenState extends ConsumerState<SubscriptionScreen> {
 
                   // ── Seçili planın özellikleri ────────────────────────────
                   _SelectedPlanFeatures(pricing: selectedPricing),
+                  const SizedBox(height: 16),
+
+                  // ── Neden Premium? ───────────────────────────────────────
+                  const _WhyPremiumSection(),
                   const SizedBox(height: 20),
 
                   // ── Hata mesajı ──────────────────────────────────────────
@@ -282,12 +286,12 @@ class _SubscriptionScreenState extends ConsumerState<SubscriptionScreen> {
                     Container(
                       padding: const EdgeInsets.symmetric(horizontal: 14, vertical: 10),
                       decoration: BoxDecoration(
-                        color: const Color(0xFFFEE2E2),
+                        color: AppColors.errorLight,
                         borderRadius: BorderRadius.circular(10),
                       ),
                       child: Text(
                         _errorMessage!,
-                        style: const TextStyle(color: Color(0xFFDC2626), fontSize: 13),
+                        style: const TextStyle(color: AppColors.error, fontSize: 13),
                         textAlign: TextAlign.center,
                       ),
                     ),
@@ -540,7 +544,7 @@ class _PlanCard extends StatelessWidget {
                     margin: const EdgeInsets.only(top: 3),
                     padding: const EdgeInsets.symmetric(horizontal: 6, vertical: 2),
                     decoration: BoxDecoration(
-                      color: const Color(0xFF22C55E).withValues(alpha: 0.15),
+                      color: AppColors.success.withValues(alpha: 0.15),
                       borderRadius: BorderRadius.circular(6),
                     ),
                     child: const Text(
@@ -548,7 +552,7 @@ class _PlanCard extends StatelessWidget {
                       style: TextStyle(
                         fontSize: 10,
                         fontWeight: FontWeight.w600,
-                        color: Color(0xFF16A34A),
+                        color: AppColors.successDark,
                       ),
                     ),
                   ),
@@ -556,7 +560,7 @@ class _PlanCard extends StatelessWidget {
                     'Yılda ${plan.annualSavingStr} tasarruf',
                     style: const TextStyle(
                       fontSize: 10,
-                      color: Color(0xFF16A34A),
+                      color: AppColors.successDark,
                       fontWeight: FontWeight.w500,
                     ),
                   ),
@@ -565,6 +569,92 @@ class _PlanCard extends StatelessWidget {
             ),
           ],
         ),
+      ),
+    );
+  }
+}
+
+// ── Neden Premium? ────────────────────────────────────────────────────────────
+
+class _WhyPremiumSection extends StatelessWidget {
+  const _WhyPremiumSection();
+
+  static const _items = [
+    (Icons.lock_open_rounded,      'Tüm derslere erişim',    'Role özel 18–60 ders, 1895+ soru bankası'),
+    (Icons.emoji_events_rounded,   'Lig sistemi',            'Haftalık XP — kendi rolündekilere karşı yarış'),
+    (Icons.bar_chart_rounded,      'Kişisel analiz',         'Zayıf kategoriler tespit edilir, önerilir'),
+    (Icons.quiz_rounded,           'Sınırsız sınav',         'Günlük ve kategori sınavlarını sınırsız başlat'),
+    (Icons.workspace_premium,      'Öncelikli içerik',       'Yeni ders ve sorular premium üyelere önce gelir'),
+  ];
+
+  @override
+  Widget build(BuildContext context) {
+    return Container(
+      padding: const EdgeInsets.all(16),
+      decoration: BoxDecoration(
+        color: AppColors.surface,
+        borderRadius: BorderRadius.circular(16),
+        border: Border.all(color: AppColors.divider),
+      ),
+      child: Column(
+        crossAxisAlignment: CrossAxisAlignment.start,
+        children: [
+          const Row(
+            children: [
+              Text('✨', style: TextStyle(fontSize: 16)),
+              SizedBox(width: 8),
+              Text(
+                'Neden Premium?',
+                style: TextStyle(
+                  fontSize: 14,
+                  fontWeight: FontWeight.w700,
+                  color: AppColors.textPrimary,
+                ),
+              ),
+            ],
+          ),
+          const SizedBox(height: 14),
+          ..._items.map((item) => Padding(
+            padding: const EdgeInsets.only(bottom: 12),
+            child: Row(
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: [
+                Container(
+                  padding: const EdgeInsets.all(8),
+                  decoration: BoxDecoration(
+                    color: AppColors.surfaceVariant,
+                    borderRadius: BorderRadius.circular(10),
+                  ),
+                  child: Icon(item.$1, color: AppColors.primary, size: 18),
+                ),
+                const SizedBox(width: 12),
+                Expanded(
+                  child: Column(
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    children: [
+                      Text(
+                        item.$2,
+                        style: const TextStyle(
+                          fontSize: 13,
+                          fontWeight: FontWeight.w700,
+                          color: AppColors.textPrimary,
+                        ),
+                      ),
+                      const SizedBox(height: 1),
+                      Text(
+                        item.$3,
+                        style: const TextStyle(
+                          fontSize: 11,
+                          color: AppColors.textSecondary,
+                        ),
+                      ),
+                    ],
+                  ),
+                ),
+              ],
+            ),
+          )),
+        ],
       ),
     );
   }

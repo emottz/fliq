@@ -8,6 +8,7 @@ import '../../../data/models/lesson_content_model.dart';
 import '../../../data/models/user_profile_model.dart';
 import '../../../shared/providers/app_providers.dart';
 import '../../../shared/widgets/hearts_display.dart';
+import '../../../shared/widgets/premium_upsell_card.dart';
 
 class LessonListScreen extends ConsumerStatefulWidget {
   const LessonListScreen({super.key});
@@ -125,7 +126,13 @@ class _LessonListScreenState extends ConsumerState<LessonListScreen> {
                         levelLabel: _levelLabel(level),
                       ),
 
-                      const SizedBox(height: 8),
+                      const SizedBox(height: 12),
+
+                      // ── Premium upsell ────────────────────────────
+                      const Padding(
+                        padding: EdgeInsets.symmetric(horizontal: 24),
+                        child: PremiumUpsellCard(source: 'lessons'),
+                      ),
 
                       // ── Yol ──────────────────────────────────────
                       Padding(

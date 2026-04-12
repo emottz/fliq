@@ -6,6 +6,7 @@ import '../../../core/constants/rank_constants.dart';
 import '../../../shared/providers/app_providers.dart';
 import '../../../shared/widgets/airplane_logo.dart';
 import '../../../shared/widgets/hearts_display.dart';
+import '../../../shared/widgets/premium_upsell_card.dart';
 
 // Geniş ekran eşiği (px)
 const _kWideBreakpoint = 720.0;
@@ -120,6 +121,15 @@ class _SideNav extends StatelessWidget {
           }),
 
           const Spacer(),
+
+          // ── Premium CTA ──────────────────────────────────────────────────────
+          const Padding(
+            padding: EdgeInsets.symmetric(horizontal: 10),
+            child: PremiumUpsellCard(
+              source: 'sidebar',
+              margin: EdgeInsets.only(bottom: 8),
+            ),
+          ),
 
           // ── XP / Seri bilgisi ────────────────────────────────────────────────
           _SideXpStreak(profileAsync: profileAsync),
@@ -264,6 +274,8 @@ class _XpStreakHeader extends StatelessWidget {
         children: [
           const AirplaneLogo(size: 32, showText: true, horizontal: true),
           const Spacer(),
+          const PremiumChip(),
+          const SizedBox(width: 8),
           // Kalpler her zaman görünür (profile'dan bağımsız)
           const HeartsDisplay(),
           profileAsync.when(

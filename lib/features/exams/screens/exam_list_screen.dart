@@ -7,6 +7,7 @@ import '../../../core/services/hearts_service.dart';
 import '../../../data/models/question_model.dart';
 import '../../../shared/providers/app_providers.dart';
 import '../../../shared/widgets/hearts_display.dart';
+import '../../../shared/widgets/premium_upsell_card.dart';
 import '../../../shared/widgets/primary_button.dart';
 
 class ExamListScreen extends ConsumerWidget {
@@ -59,7 +60,8 @@ class ExamListScreen extends ConsumerWidget {
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
                     const Text('Sınavlar', style: AppTextStyles.heading2),
-                    const SizedBox(height: 16),
+                    const SizedBox(height: 12),
+                    const PremiumUpsellCard(source: 'exams'),
 
                     // ── Uçak Bakım Teknisyeni Özel Sınavı ──────────────────────
                     if (isAmt) ...[
