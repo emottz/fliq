@@ -144,6 +144,7 @@ class _LeagueBody extends StatelessWidget {
                     final isMe = member.uid == myUid;
                     final isPromo = rank <= 5 && total >= 10;
                     final isDemote = total >= 10 && rank > (total - 5);
+                    final isStay = total >= 10 && !isPromo && !isDemote;
 
                     return _LeaderboardRow(
                       rank: rank,
@@ -151,6 +152,7 @@ class _LeagueBody extends StatelessWidget {
                       isMe: isMe,
                       isPromo: isPromo,
                       isDemote: isDemote,
+                      isStay: isStay,
                       leagueId: league.id,
                     );
                   },
@@ -330,9 +332,11 @@ class _ZoneLegend extends StatelessWidget {
     }
     return Row(
       children: [
-        _ZonePill(color: AppColors.success, label: '↑ Yükseliyor (ilk 5)'),
-        const SizedBox(width: 8),
-        _ZonePill(color: AppColors.error, label: '↓ Düşüyor (son 5)'),
+        _ZonePill(color: AppColors.success, label: '↑ Yükseliyor'),
+        const SizedBox(width: 6),
+        _ZonePill(color: AppColors.textSecondary, label: '→ Kalıyor'),
+        const SizedBox(width: 6),
+        _ZonePill(color: AppColors.error, label: '↓ Düşüyor'),
       ],
     );
   }
@@ -371,6 +375,7 @@ class _LeaderboardRow extends StatelessWidget {
   final bool isMe;
   final bool isPromo;
   final bool isDemote;
+  final bool isStay;
   final int leagueId;
 
   const _LeaderboardRow({
@@ -379,6 +384,7 @@ class _LeaderboardRow extends StatelessWidget {
     required this.isMe,
     required this.isPromo,
     required this.isDemote,
+    required this.isStay,
     required this.leagueId,
   });
 
@@ -495,12 +501,20 @@ class _LeaderboardRow extends StatelessWidget {
             ],
           ),
           // Zone badge
-          if (isPromo || isDemote) ...[
+          if (isPromo || isDemote || isStay) ...[
             const SizedBox(width: 8),
             Icon(
-              isPromo ? Icons.arrow_upward_rounded : Icons.arrow_downward_rounded,
+              isPromo
+                  ? Icons.arrow_upward_rounded
+                  : isDemote
+                      ? Icons.arrow_downward_rounded
+                      : Icons.remove_rounded,
               size: 16,
-              color: isPromo ? AppColors.success : AppColors.error,
+              color: isPromo
+                  ? AppColors.success
+                  : isDemote
+                      ? AppColors.error
+                      : AppColors.textSecondary,
             ),
           ],
         ],
