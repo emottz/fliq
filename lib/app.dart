@@ -2,12 +2,15 @@ import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'core/constants/app_colors.dart';
 import 'core/router/app_router.dart';
+import 'shared/providers/app_providers.dart';
 
 class FliqApp extends ConsumerWidget {
   const FliqApp({super.key});
 
   @override
   Widget build(BuildContext context, WidgetRef ref) {
+    // IAP satın alma stream'ini uygulama boyunca dinle
+    ref.watch(iapListenerProvider);
     final router = ref.watch(routerProvider);
 
     return MaterialApp.router(

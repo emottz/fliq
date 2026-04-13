@@ -1,6 +1,7 @@
 import 'dart:async';
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
+import 'package:go_router/go_router.dart';
 import '../../core/constants/app_colors.dart';
 import '../../core/services/hearts_service.dart';
 import '../providers/app_providers.dart';
@@ -583,7 +584,7 @@ class _CostRow extends StatelessWidget {
 
 // ── showNoHeartsDialog ────────────────────────────────────────────────────────
 
-/// Kalp yetersizse sheet açar. true → devam et, false → iptal.
+/// Kalp yetersizse merkezi popup açar. true → devam et, false → iptal.
 Future<bool> showNoHeartsDialog(
   BuildContext context,
   WidgetRef ref,
@@ -595,31 +596,413 @@ Future<bool> showNoHeartsDialog(
     nullable = ref.read(heartsProvider).value;
   }
   if (nullable == null) return true;
-  final heartsState = nullable;
-
-  if (heartsState.count >= cost) return true;
-
-  final remaining = heartsState.resetTime != null
-      ? heartsState.resetTime!.difference(DateTime.now())
-      : Duration.zero;
-
-  await showModalBottomSheet(
+  if (nullable.count >= cost) return true;
+  // ignore: use_build_context_synchronously
+  final result = await showGeneralDialog<bool>(
     context: context,
-    isScrollControlled: true,
-    shape: const RoundedRectangleBorder(
-      borderRadius: BorderRadius.vertical(top: Radius.circular(20)),
-    ),
-    builder: (ctx) => ProviderScope(
+    barrierDismissible: false,
+    barrierColor: Colors.black.withValues(alpha: 0.55),
+    transitionDuration: const Duration(milliseconds: 300),
+    transitionBuilder: (ctx, anim, _, child) {
+      final curved = CurvedAnimation(parent: anim, curve: Curves.easeOutBack);
+      return ScaleTransition(scale: curved, child: FadeTransition(opacity: anim, child: child));
+    },
+    pageBuilder: (ctx, _, __) => ProviderScope(
       parent: ProviderScope.containerOf(context),
-      child: _HeartsBottomSheet(
-        count: heartsState.count,
-        resetTime: heartsState.resetTime,
-        remaining: remaining.isNegative ? Duration.zero : remaining,
-      ),
+      child: _NoHeartsDialog(cost: cost),
     ),
   );
 
-  final updated = ref.read(heartsProvider).value;
-  if (updated != null && updated.count >= cost) return true;
-  return false;
+  return result == true;
+}
+
+// ── Kalp bitti popup ──────────────────────────────────────────────────────────
+
+class _NoHeartsDialog extends ConsumerStatefulWidget {
+  final int cost;
+  const _NoHeartsDialog({required this.cost});
+
+  @override
+  ConsumerState<_NoHeartsDialog> createState() => _NoHeartsDialogState();
+}
+
+class _NoHeartsDialogState extends ConsumerState<_NoHeartsDialog>
+    with SingleTickerProviderStateMixin {
+  late AnimationController _bounceCtrl;
+  late Animation<double> _bounceAnim;
+  Timer? _countdownTicker;
+  Duration _remaining = Duration.zero;
+  bool _adWatched = false;
+
+  @override
+  void initState() {
+    super.initState();
+
+    _bounceCtrl = AnimationController(
+      vsync: this,
+      duration: const Duration(milliseconds: 900),
+    )..repeat(reverse: true);
+    _bounceAnim = Tween<double>(begin: 0.0, end: -8.0).animate(
+      CurvedAnimation(parent: _bounceCtrl, curve: Curves.easeInOut),
+    );
+
+    _startCountdown();
+  }
+
+  void _startCountdown() {
+    final resetTime = ref.read(heartsProvider).value?.resetTime;
+    if (resetTime == null) return;
+    final diff = resetTime.difference(DateTime.now());
+    _remaining = diff.isNegative ? Duration.zero : diff;
+    _countdownTicker = Timer.periodic(const Duration(seconds: 1), (_) {
+      if (!mounted) return;
+      final rt = ref.read(heartsProvider).value?.resetTime;
+      if (rt == null) { setState(() => _remaining = Duration.zero); return; }
+      final d = rt.difference(DateTime.now());
+      setState(() => _remaining = d.isNegative ? Duration.zero : d);
+    });
+  }
+
+  @override
+  void dispose() {
+    _bounceCtrl.dispose();
+    _countdownTicker?.cancel();
+    super.dispose();
+  }
+
+  String _fmtCountdown(Duration d) {
+    final h = d.inHours;
+    final m = d.inMinutes.remainder(60);
+    final s = d.inSeconds.remainder(60);
+    if (h > 0) return '${h}s ${m.toString().padLeft(2, '0')}d ${s.toString().padLeft(2, '0')}sn';
+    if (m > 0) return '${m}d ${s.toString().padLeft(2, '0')}sn';
+    return '${s}sn';
+  }
+
+  // Reklam izleme butonu içeriği
+  Widget _buildAdButton(BuildContext context) {
+    final adService = ref.read(adServiceProvider);
+
+    if (_adWatched) {
+      return Container(
+        width: double.infinity,
+        padding: const EdgeInsets.symmetric(vertical: 15),
+        decoration: BoxDecoration(
+          color: AppColors.successLight,
+          borderRadius: BorderRadius.circular(16),
+        ),
+        child: const Row(
+          mainAxisAlignment: MainAxisAlignment.center,
+          children: [
+            Text('✅', style: TextStyle(fontSize: 18)),
+            SizedBox(width: 10),
+            Text(
+              '+5 ❤️ kazanıldı!',
+              style: TextStyle(
+                fontSize: 15,
+                fontWeight: FontWeight.w700,
+                color: AppColors.successDark,
+              ),
+            ),
+          ],
+        ),
+      );
+    }
+
+    if (!adService.isSupported) return const SizedBox.shrink();
+
+    final nav = Navigator.of(context);
+    return _AdWatchButton(
+      onRewarded: () async {
+        await ref.read(heartsProvider.notifier).addFromAd(_adRewardAmount);
+        if (!mounted) return;
+        setState(() => _adWatched = true);
+        await Future.delayed(const Duration(milliseconds: 800));
+        final updated = ref.read(heartsProvider).value;
+        if (mounted && updated != null && updated.count >= widget.cost) {
+          nav.pop(true);
+        }
+      },
+    );
+  }
+
+  @override
+  Widget build(BuildContext context) {
+    final hasCountdown = _remaining > Duration.zero;
+
+    return Dialog(
+      backgroundColor: Colors.transparent,
+      insetPadding: const EdgeInsets.symmetric(horizontal: 28, vertical: 40),
+      child: ConstrainedBox(
+        constraints: const BoxConstraints(maxWidth: 360),
+        child: Container(
+          decoration: BoxDecoration(
+            color: Colors.white,
+            borderRadius: BorderRadius.circular(28),
+            boxShadow: [
+              BoxShadow(
+                color: Colors.black.withValues(alpha: 0.18),
+                blurRadius: 40,
+                offset: const Offset(0, 12),
+              ),
+            ],
+          ),
+          child: Column(
+            mainAxisSize: MainAxisSize.min,
+            children: [
+              // ── Kırmızı header ────────────────────────────────────────────
+              Container(
+                width: double.infinity,
+                padding: const EdgeInsets.fromLTRB(24, 28, 24, 24),
+                decoration: const BoxDecoration(
+                  gradient: LinearGradient(
+                    colors: [Color(0xFFB91C1C), Color(0xFFEF4444)],
+                    begin: Alignment.topLeft,
+                    end: Alignment.bottomRight,
+                  ),
+                  borderRadius: BorderRadius.vertical(top: Radius.circular(28)),
+                ),
+                child: Column(
+                  children: [
+                    // Zıplayan kalpler
+                    AnimatedBuilder(
+                      animation: _bounceAnim,
+                      builder: (_, __) => Transform.translate(
+                        offset: Offset(0, _bounceAnim.value),
+                        child: const Text('❤️', style: TextStyle(fontSize: 52)),
+                      ),
+                    ),
+                    const SizedBox(height: 12),
+                    const Text(
+                      'Hakkın Bitti!',
+                      style: TextStyle(
+                        color: Colors.white,
+                        fontSize: 22,
+                        fontWeight: FontWeight.w800,
+                      ),
+                    ),
+                    const SizedBox(height: 4),
+                    const Text(
+                      'Devam etmek için bir seçenek seç',
+                      style: TextStyle(color: Colors.white70, fontSize: 13),
+                      textAlign: TextAlign.center,
+                    ),
+                    // Geri sayım
+                    if (hasCountdown) ...[
+                      const SizedBox(height: 12),
+                      Container(
+                        padding: const EdgeInsets.symmetric(horizontal: 14, vertical: 7),
+                        decoration: BoxDecoration(
+                          color: Colors.white.withValues(alpha: 0.18),
+                          borderRadius: BorderRadius.circular(20),
+                        ),
+                        child: Row(
+                          mainAxisSize: MainAxisSize.min,
+                          children: [
+                            const Icon(Icons.timer_outlined, color: Colors.white70, size: 14),
+                            const SizedBox(width: 6),
+                            Text(
+                              'Otomatik yenileme: ${_fmtCountdown(_remaining)}',
+                              style: const TextStyle(
+                                color: Colors.white,
+                                fontSize: 12,
+                                fontWeight: FontWeight.w600,
+                              ),
+                            ),
+                          ],
+                        ),
+                      ),
+                    ],
+                  ],
+                ),
+              ),
+
+              // ── Seçenekler ────────────────────────────────────────────────
+              Padding(
+                padding: const EdgeInsets.fromLTRB(20, 22, 20, 8),
+                child: Column(
+                  children: [
+                    // 1) Premium butonu
+                    GestureDetector(
+                      onTap: () {
+                        Navigator.of(context).pop(false);
+                        // Push yerine context.push → geri dönülebilir
+                        // Go Router bağlamı olmayabileceğinden Navigator kullan
+                        final router = GoRouter.maybeOf(context);
+                        if (router != null) {
+                          router.push('/subscription');
+                        }
+                      },
+                      child: Container(
+                        width: double.infinity,
+                        padding: const EdgeInsets.symmetric(vertical: 15),
+                        decoration: BoxDecoration(
+                          gradient: const LinearGradient(
+                            colors: [Color(0xFF92400E), Color(0xFFF59E0B), Color(0xFFFCD34D)],
+                            begin: Alignment.centerLeft,
+                            end: Alignment.centerRight,
+                          ),
+                          borderRadius: BorderRadius.circular(16),
+                          boxShadow: [
+                            BoxShadow(
+                              color: const Color(0xFFF59E0B).withValues(alpha: 0.35),
+                              blurRadius: 12,
+                              offset: const Offset(0, 4),
+                            ),
+                          ],
+                        ),
+                        child: const Row(
+                          mainAxisAlignment: MainAxisAlignment.center,
+                          children: [
+                            Text('👑', style: TextStyle(fontSize: 18)),
+                            SizedBox(width: 8),
+                            Column(
+                              crossAxisAlignment: CrossAxisAlignment.start,
+                              children: [
+                                Text(
+                                  'Sınırsız Premium',
+                                  style: TextStyle(
+                                    color: Colors.white,
+                                    fontSize: 15,
+                                    fontWeight: FontWeight.w800,
+                                  ),
+                                ),
+                                Text(
+                                  'Hiç kalp bitmesin • Tüm içerikler',
+                                  style: TextStyle(color: Colors.white70, fontSize: 11),
+                                ),
+                              ],
+                            ),
+                          ],
+                        ),
+                      ),
+                    ),
+                    const SizedBox(height: 12),
+
+                    // Ayırıcı
+                    Row(
+                      children: [
+                        const Expanded(child: Divider()),
+                        Padding(
+                          padding: const EdgeInsets.symmetric(horizontal: 12),
+                          child: Text(
+                            'veya',
+                            style: TextStyle(fontSize: 12, color: Colors.grey.shade500),
+                          ),
+                        ),
+                        const Expanded(child: Divider()),
+                      ],
+                    ),
+                    const SizedBox(height: 12),
+
+                    // 2) Video izle butonu
+                    _buildAdButton(context),
+
+                    const SizedBox(height: 16),
+
+                    // Bekle linki
+                    GestureDetector(
+                      onTap: () => Navigator.of(context).pop(false),
+                      child: Padding(
+                        padding: const EdgeInsets.only(bottom: 8),
+                        child: Text(
+                          'Bekle',
+                          style: TextStyle(
+                            fontSize: 13,
+                            color: Colors.grey.shade500,
+                            fontWeight: FontWeight.w500,
+                          ),
+                        ),
+                      ),
+                    ),
+                  ],
+                ),
+              ),
+            ],
+          ),
+        ),
+      ),
+    );
+  }
+}
+
+// ── Reklam izleme butonu (dialog içi) ────────────────────────────────────────
+
+class _AdWatchButton extends ConsumerStatefulWidget {
+  final VoidCallback onRewarded;
+  const _AdWatchButton({required this.onRewarded});
+
+  @override
+  ConsumerState<_AdWatchButton> createState() => _AdWatchButtonState();
+}
+
+class _AdWatchButtonState extends ConsumerState<_AdWatchButton> {
+  bool _loading = false;
+
+  Future<void> _watch() async {
+    final adService = ref.read(adServiceProvider);
+    final messenger = ScaffoldMessenger.of(context);
+
+    if (!adService.isAdReady) {
+      setState(() => _loading = true);
+      await adService.load();
+      for (int i = 0; i < 10; i++) {
+        await Future.delayed(const Duration(milliseconds: 500));
+        if (adService.isAdReady) break;
+      }
+      if (!mounted) return;
+      setState(() => _loading = false);
+    }
+
+    if (!adService.isAdReady) {
+      if (!mounted) return;
+      messenger.showSnackBar(
+        const SnackBar(
+          content: Text('Şu an reklam mevcut değil. Biraz sonra tekrar dene.'),
+          behavior: SnackBarBehavior.floating,
+        ),
+      );
+      return;
+    }
+
+    await adService.show(onRewarded: widget.onRewarded);
+  }
+
+  @override
+  Widget build(BuildContext context) {
+    return GestureDetector(
+      onTap: _loading ? null : _watch,
+      child: Container(
+        width: double.infinity,
+        padding: const EdgeInsets.symmetric(vertical: 15),
+        decoration: BoxDecoration(
+          color: _loading ? AppColors.locked : AppColors.error,
+          borderRadius: BorderRadius.circular(16),
+        ),
+        child: _loading
+            ? const Center(
+                child: SizedBox(
+                  width: 20,
+                  height: 20,
+                  child: CircularProgressIndicator(color: Colors.white, strokeWidth: 2.5),
+                ),
+              )
+            : const Row(
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: [
+                  Icon(Icons.play_circle_filled_rounded, color: Colors.white, size: 22),
+                  SizedBox(width: 8),
+                  Text(
+                    'Video İzle  →  +5 ❤️',
+                    style: TextStyle(
+                      color: Colors.white,
+                      fontSize: 15,
+                      fontWeight: FontWeight.w800,
+                    ),
+                  ),
+                ],
+              ),
+      ),
+    );
+  }
 }

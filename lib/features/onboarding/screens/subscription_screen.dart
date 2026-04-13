@@ -1,9 +1,14 @@
+import 'dart:io';
+
+import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:go_router/go_router.dart';
 import 'package:url_launcher/url_launcher.dart';
 import '../../../core/constants/app_colors.dart';
 import '../../../core/constants/app_text_styles.dart';
+import '../../../core/constants/iap_constants.dart';
+import '../../../core/services/iap_service.dart';
 import '../../../shared/providers/app_providers.dart';
 import '../../../shared/widgets/airplane_logo.dart';
 import '../../../shared/widgets/primary_button.dart';
@@ -117,8 +122,48 @@ class _SubscriptionScreenState extends ConsumerState<SubscriptionScreen> {
     }
   }
 
+  /// Mobil → Google Play Billing, Web → iyzico
   Future<void> _purchase() async {
     setState(() { _purchasing = true; _errorMessage = null; });
+    try {
+      if (!kIsWeb && (Platform.isAndroid || Platform.isIOS)) {
+        await _purchaseMobile();
+      } else {
+        await _purchaseWeb();
+      }
+    } finally {
+      if (mounted) setState(() => _purchasing = false);
+    }
+  }
+
+  // ── Google Play Billing ───────────────────────────────────────────────────
+
+  Future<void> _purchaseMobile() async {
+    final svc = IapService.instance;
+
+    final available = await svc.isAvailable();
+    if (!available) {
+      setState(() => _errorMessage = 'Google Play Store erişilemiyor. İnternet bağlantını kontrol et.');
+      return;
+    }
+
+    final productId = IapConstants.productId(roleKey: _selectedRoleKey, annual: _annual);
+    final product = await svc.getProduct(productId);
+
+    if (product == null) {
+      setState(() => _errorMessage =
+          'Bu plan şu an mevcut değil (ID: $productId). Google Play Console\'da tanımlandığından emin ol.');
+      return;
+    }
+
+    await svc.buy(product);
+    // Satın alma sonucu iapListenerProvider'daki stream üzerinden gelir,
+    // isPremiumProvider otomatik güncellenir → router yönlendirir.
+  }
+
+  // ── iyzico (sadece Web) ───────────────────────────────────────────────────
+
+  Future<void> _purchaseWeb() async {
     try {
       final service = ref.read(subscriptionServiceProvider);
       final url = await service.createCheckout(
@@ -129,20 +174,12 @@ class _SubscriptionScreenState extends ConsumerState<SubscriptionScreen> {
       final uri = Uri.parse(url);
       if (await canLaunchUrl(uri)) {
         await launchUrl(uri, mode: LaunchMode.externalApplication);
-        // Firestore stream otomatik güncelleyecek — kullanıcı geri döndüğünde yansır
-        setState(() { _purchasing = false; });
       } else {
-        setState(() {
-          _purchasing = false;
-          _errorMessage = 'Ödeme sayfası açılamadı. Lütfen tekrar deneyin.';
-        });
+        setState(() => _errorMessage = 'Ödeme sayfası açılamadı. Lütfen tekrar deneyin.');
       }
     } catch (e) {
       if (!mounted) return;
-      setState(() {
-        _purchasing = false;
-        _errorMessage = e.toString().replaceAll('Exception: ', '');
-      });
+      setState(() => _errorMessage = e.toString().replaceAll('Exception: ', ''));
     }
   }
 
@@ -150,7 +187,7 @@ class _SubscriptionScreenState extends ConsumerState<SubscriptionScreen> {
     if (Navigator.canPop(context)) {
       context.pop();
     } else {
-      context.go('/assessment-intro');
+      context.go('/home/exams');
     }
   }
 
@@ -279,10 +316,13 @@ class _SubscriptionScreenState extends ConsumerState<SubscriptionScreen> {
                   ),
 
                   const SizedBox(height: 4),
-                  const Center(
+                  Center(
                     child: Text(
-                      'Güvenli ödeme · iyzico · İstediğin zaman iptal et',
+                      kIsWeb
+                          ? 'Güvenli ödeme · iyzico · İstediğin zaman iptal et'
+                          : 'Google Play üzerinden güvenli ödeme · İstediğin zaman iptal et',
                       style: AppTextStyles.caption,
+                      textAlign: TextAlign.center,
                     ),
                   ),
                 ],

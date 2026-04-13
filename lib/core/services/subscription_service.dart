@@ -31,6 +31,40 @@ class SubscriptionService {
         .map((snap) => snap.data()?['isPremium'] == true);
   }
 
+  // ── Google Play / App Store IAP aktivasyonu ─────────────────────────────────
+
+  /// Google Play Billing satın alındıktan sonra Firestore'da premium'u aktif eder.
+  /// Opsiyonel: Cloud Function üzerinden sunucu tarafı doğrulama da yapılabilir.
+  Future<void> activatePremiumFromIap({
+    required String uid,
+    required String productId,
+    String? purchaseToken,
+  }) async {
+    try {
+      // Sunucu doğrulaması varsa Cloud Function çağır
+      if (purchaseToken != null && purchaseToken.isNotEmpty) {
+        final callable = _fn.httpsCallable('verifyGooglePlayPurchase');
+        await callable.call({
+          'uid': uid,
+          'productId': productId,
+          'purchaseToken': purchaseToken,
+        });
+      } else {
+        // Doğrulama yoksa doğrudan Firestore'a yaz (geliştirme/iOS)
+        await _db.collection('users').doc(uid).set(
+          {'isPremium': true, 'premiumPlan': productId, 'premiumSource': 'iap'},
+          SetOptions(merge: true),
+        );
+      }
+    } catch (_) {
+      // Sunucu hatası — yerel olarak yaz, senkron sonra düzelir
+      await _db.collection('users').doc(uid).set(
+        {'isPremium': true, 'premiumPlan': productId, 'premiumSource': 'iap'},
+        SetOptions(merge: true),
+      );
+    }
+  }
+
   // ── iyzico ödeme sayfası oluştur ────────────────────────────────────────────
 
   /// Başarılı olursa iyzico ödeme sayfasının URL'ini döner,

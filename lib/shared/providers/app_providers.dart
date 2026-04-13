@@ -1,9 +1,15 @@
+import 'dart:io';
+
 import 'package:firebase_auth/firebase_auth.dart';
+import 'package:flutter/foundation.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
+import 'package:in_app_purchase/in_app_purchase.dart';
+import '../../core/constants/iap_constants.dart';
 import '../../core/constants/league_constants.dart';
 import '../../core/services/auth_service.dart';
 import '../../core/services/ad_service.dart';
 import '../../core/services/hearts_service.dart';
+import '../../core/services/iap_service.dart';
 import '../../core/services/league_service.dart';
 import '../../core/services/subscription_service.dart';
 import '../../data/datasources/asset_question_source.dart';
@@ -152,6 +158,80 @@ class HeartsNotifier extends AsyncNotifier<HeartsState> {
 // ── AdMob ─────────────────────────────────────────────────────────────────────
 
 final adServiceProvider = Provider<AdService>((ref) => AdService());
+
+// ── In-App Purchase ───────────────────────────────────────────────────────────
+
+/// Kullanılabilir Play Store ürünlerini tutar.
+final iapProductsProvider =
+    AsyncNotifierProvider<IapProductsNotifier, List<ProductDetails>>(
+      IapProductsNotifier.new,
+    );
+
+class IapProductsNotifier extends AsyncNotifier<List<ProductDetails>> {
+  @override
+  Future<List<ProductDetails>> build() async {
+    final svc = IapService.instance;
+    if (!svc.isSupported) return [];
+    final available = await svc.isAvailable();
+    if (!available) return [];
+    return svc.queryProducts();
+  }
+
+  Future<void> refresh() async {
+    state = const AsyncLoading();
+    state = AsyncData(await IapService.instance.queryProducts());
+  }
+}
+
+/// Satın alma akışını dinler ve Firestore'u günceller.
+/// main.dart veya app.dart'ta bir kez initialize edilmeli.
+final iapListenerProvider = Provider<void>((ref) {
+  if (kIsWeb) return;
+  if (!Platform.isAndroid && !Platform.isIOS) return;
+
+  IapService.instance.initialize(
+    onPurchase: (purchase) async {
+      final uid = FirebaseAuth.instance.currentUser?.uid;
+      if (uid == null) return;
+
+      if (purchase.status == PurchaseStatus.purchased ||
+          purchase.status == PurchaseStatus.restored) {
+        // Cloud Function üzerinden premium aktif et
+        try {
+          final token = IapService.instance.androidPurchaseToken(purchase);
+          final svc = ref.read(subscriptionServiceProvider);
+          await svc.activatePremiumFromIap(
+            uid: uid,
+            productId: purchase.productID,
+            purchaseToken: token,
+          );
+        } catch (_) {}
+        await IapService.instance.completePurchase(purchase);
+      } else if (purchase.status == PurchaseStatus.error) {
+        await IapService.instance.completePurchase(purchase);
+      }
+    },
+  );
+
+  ref.onDispose(() => IapService.instance.dispose());
+});
+
+/// Belirli bir rol+periyot için ProductDetails
+final iapProductProvider =
+    Provider.family<ProductDetails?, ({String roleKey, bool annual})>(
+      (ref, params) {
+        final products = ref.watch(iapProductsProvider).value ?? [];
+        final targetId = IapConstants.productId(
+          roleKey: params.roleKey,
+          annual: params.annual,
+        );
+        try {
+          return products.firstWhere((p) => p.id == targetId);
+        } catch (_) {
+          return null;
+        }
+      },
+    );
 
 // ── League Providers ──────────────────────────────────────────────────────────
 

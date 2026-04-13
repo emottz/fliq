@@ -83,7 +83,6 @@ final routerProvider = Provider<GoRouter>((ref) {
         '/assessment-intro',
         '/assessment',
         '/assessment-analysis',
-        '/subscription',
       ];
 
       final hasProfile = await userRepo.hasProfile;
