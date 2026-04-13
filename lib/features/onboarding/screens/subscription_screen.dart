@@ -6,94 +6,119 @@ import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:go_router/go_router.dart';
 import 'package:url_launcher/url_launcher.dart';
 import '../../../core/constants/app_colors.dart';
-import '../../../core/constants/app_text_styles.dart';
 import '../../../core/constants/iap_constants.dart';
 import '../../../core/services/iap_service.dart';
 import '../../../shared/providers/app_providers.dart';
-import '../../../shared/widgets/airplane_logo.dart';
 import '../../../shared/widgets/primary_button.dart';
 
-// ── Rol bazlı fiyatlandırma modeli ───────────────────────────────────────────
+// ── Plan modeli ───────────────────────────────────────────────────────────────
 
-class _RolePricing {
+class _Plan {
   final String roleKey;
-  final String roleLabel;
-  final String roleEmoji;
-  final double monthly;
-  final double annual;       // aylık eşdeğer
-  final double annualTotal;
-  final List<String> highlights; // 3 kısa madde
+  final String label;
+  final String emoji;
+  final Color accent;
+  final Color accentLight;
+  final int monthlyPrice;   // ₺/ay
+  final String tagline;
+  final List<_Feature> features;
 
-  const _RolePricing({
+  const _Plan({
     required this.roleKey,
-    required this.roleLabel,
-    required this.roleEmoji,
-    required this.monthly,
-    required this.annual,
-    required this.annualTotal,
-    required this.highlights,
+    required this.label,
+    required this.emoji,
+    required this.accent,
+    required this.accentLight,
+    required this.monthlyPrice,
+    required this.tagline,
+    required this.features,
   });
 
-  String get monthlyStr => '\$${monthly % 1 == 0 ? monthly.toInt() : monthly}';
-  String get annualStr  => '\$${annual  % 1 == 0 ? annual.toInt()  : annual}';
-  String get annualTotalStr => '\$${annualTotal % 1 == 0 ? annualTotal.toInt() : annualTotal}';
-
-  /// Yıllık alındığında kazanılan miktar (aylıkla karşılaştırma)
-  double get annualSaving => (monthly - annual) * 12;
-  String get annualSavingStr => '\$${annualSaving % 1 == 0 ? annualSaving.toInt() : annualSaving}';
+  int get fourMonthPrice => (monthlyPrice * 0.7).round(); // %30 indirim
+  int get fourMonthTotal => fourMonthPrice * 4;
+  int get fourMonthSaving => monthlyPrice * 4 - fourMonthTotal;
 }
 
-const _allPlans = [
-  _RolePricing(
+class _Feature {
+  final IconData icon;
+  final String text;
+  final bool highlight; // sarı rozet
+  const _Feature(this.icon, this.text, {this.highlight = false});
+}
+
+const _kDiscount = 0.30; // %30
+
+final _plans = [
+  _Plan(
     roleKey: 'pilot',
-    roleLabel: 'Pilot',
-    roleEmoji: '✈️',
-    monthly: 50,
-    annual: 35,
-    annualTotal: 420,
-    highlights: [
-      '60 ders: ATC, METAR/TAF, SID/STAR, PIREP, CRM',
-      'Kaza raporu, IFR clearance, ops manual dili',
-      'Pilot Ligi — sadece pilotlarla yarış',
+    label: 'Pilot',
+    emoji: '✈️',
+    accent: AppColors.primary,
+    accentLight: Color(0xFFEFF6FF),
+    monthlyPrice: 2000,
+    tagline: 'ICAO sınavına hazır en kapsamlı içerik',
+    features: [
+      _Feature(Icons.school_rounded,        '60+ ders: ATC iletişimi, METAR/TAF, SID/STAR, PIREP', highlight: true),
+      _Feature(Icons.record_voice_over,     'Gerçek ATC ses senaryoları ile dinleme pratiği'),
+      _Feature(Icons.description_outlined,  'Kaza raporu, IFR clearance, ops manual terminolojisi'),
+      _Feature(Icons.emoji_events_rounded,  'Pilot Ligi — sadece pilotlarla haftalık yarış'),
+      _Feature(Icons.bar_chart_rounded,     'Zayıf kategori analizi + kişisel çalışma planı'),
+      _Feature(Icons.quiz_rounded,          'Sınırsız ICAO Level 4-6 odaklı sınav'),
+      _Feature(Icons.auto_awesome,          'Her sınavdan sonra AI koçluk yorumu'),
     ],
   ),
-  _RolePricing(
+  _Plan(
     roleKey: 'cabin_crew',
-    roleLabel: 'Kabin Görevlisi',
-    roleEmoji: '💺',
-    monthly: 25,
-    annual: 17.5,
-    annualTotal: 210,
-    highlights: [
-      '18 kabin odaklı ders + temel havacılık dersleri',
-      'Tahliye, tıbbi acil, CRM, DG, MAYDAY dili',
-      'Kabin Ligi — kabin ekibiyle yarış',
+    label: 'Kabin Görevlisi',
+    emoji: '💺',
+    accent: Color(0xFF7C3AED),
+    accentLight: Color(0xFFF5F3FF),
+    monthlyPrice: 1500,
+    tagline: 'Kabin ekibine özel dil ve prosedür eğitimi',
+    features: [
+      _Feature(Icons.school_rounded,        '18 kabin dersi + tüm temel havacılık dersleri', highlight: true),
+      _Feature(Icons.local_hospital_outlined,'Tahliye, tıbbi acil ve CRM prosedür dili'),
+      _Feature(Icons.warning_amber_rounded, 'Dangerous Goods, MAYDAY, PAN-PAN komut pratiği'),
+      _Feature(Icons.people_rounded,        'Yolcu iletişimi ve hizmet senaryoları'),
+      _Feature(Icons.emoji_events_rounded,  'Kabin Ligi — kabin ekibiyle haftalık yarış'),
+      _Feature(Icons.bar_chart_rounded,     'Kişisel analiz + öncelikli zayıf alan takibi'),
+      _Feature(Icons.quiz_rounded,          'Sınırsız kategori sınavı'),
     ],
   ),
-  _RolePricing(
+  _Plan(
     roleKey: 'amt',
-    roleLabel: 'Uçak Bakım Teknisyeni',
-    roleEmoji: '🔧',
-    monthly: 25,
-    annual: 17.5,
-    annualTotal: 210,
-    highlights: [
-      '18 teknik bakım dersi + temel havacılık dersleri',
-      'AMM, NDT, EASA Part-145, SMS, teknik günlük dili',
-      'AMT Ligi — teknisyenlerle yarış',
+    label: 'Uçak Bakım Teknikeri',
+    emoji: '🔧',
+    accent: Color(0xFFD97706),
+    accentLight: Color(0xFFFFFBEB),
+    monthlyPrice: 1500,
+    tagline: 'EASA Part-145 odaklı teknik İngilizce',
+    features: [
+      _Feature(Icons.school_rounded,        '18 teknik bakım dersi + temel havacılık dersleri', highlight: true),
+      _Feature(Icons.build_outlined,        'AMM, NDT, EASA Part-145 terminolojisi'),
+      _Feature(Icons.security_outlined,     'SMS (Safety Management System) dili'),
+      _Feature(Icons.edit_note_rounded,     'Teknik günlük ve squawk yazma pratiği'),
+      _Feature(Icons.emoji_events_rounded,  'AMT Ligi — teknisyenlerle haftalık yarış'),
+      _Feature(Icons.bar_chart_rounded,     'Teknik terim analizi ve hafıza önerileri'),
+      _Feature(Icons.quiz_rounded,          'Sınırsız teknik terminoloji sınavı'),
     ],
   ),
-  _RolePricing(
+  _Plan(
     roleKey: 'student',
-    roleLabel: 'Öğrenci',
-    roleEmoji: '🎓',
-    monthly: 10,
-    annual: 7,
-    annualTotal: 84,
-    highlights: [
-      '35+ temel ve orta seviye havacılık dersi',
-      'Gramer, kelime, ATC, METAR, uçuş fazları',
-      'Öğrenci Ligi — öğrencilerle yarış',
+    label: 'Öğrenci',
+    emoji: '🎓',
+    accent: Color(0xFF059669),
+    accentLight: Color(0xFFECFDF5),
+    monthlyPrice: 500,
+    tagline: 'Sıfırdan ICAO giriş seviyesine',
+    features: [
+      _Feature(Icons.school_rounded,        '35+ temel ve orta seviye havacılık dersi', highlight: true),
+      _Feature(Icons.spellcheck_rounded,    'Gramer, kelime bilgisi ve cümle yapıları'),
+      _Feature(Icons.headset_mic_rounded,   'ATC iletişim temelleri ve phraseology'),
+      _Feature(Icons.cloud_outlined,        'METAR/TAF okuma ve hava durumu dili'),
+      _Feature(Icons.flight_takeoff_rounded,'Uçuş fazları ve çevre terminolojisi'),
+      _Feature(Icons.emoji_events_rounded,  'Öğrenci Ligi — diğer öğrencilerle yarış'),
+      _Feature(Icons.trending_up_rounded,   'A2\'den C1\'e seviye ilerleme sistemi'),
     ],
   ),
 ];
@@ -110,7 +135,7 @@ class SubscriptionScreen extends ConsumerStatefulWidget {
 class _SubscriptionScreenState extends ConsumerState<SubscriptionScreen> {
   bool _purchasing = false;
   String? _errorMessage;
-  bool _annual = true;
+  bool _fourMonth = false;
   String _selectedRoleKey = 'pilot';
 
   @override
@@ -122,7 +147,11 @@ class _SubscriptionScreenState extends ConsumerState<SubscriptionScreen> {
     }
   }
 
-  /// Mobil → Google Play Billing, Web → iyzico
+  _Plan get _selected =>
+      _plans.firstWhere((p) => p.roleKey == _selectedRoleKey, orElse: () => _plans.first);
+
+  // ── Satın alma ────────────────────────────────────────────────────────────
+
   Future<void> _purchase() async {
     setState(() { _purchasing = true; _errorMessage = null; });
     try {
@@ -136,40 +165,26 @@ class _SubscriptionScreenState extends ConsumerState<SubscriptionScreen> {
     }
   }
 
-  // ── Google Play Billing ───────────────────────────────────────────────────
-
   Future<void> _purchaseMobile() async {
     final svc = IapService.instance;
-
     final available = await svc.isAvailable();
     if (!available) {
       setState(() => _errorMessage = 'Google Play Store erişilemiyor. İnternet bağlantını kontrol et.');
       return;
     }
-
-    final productId = IapConstants.productId(roleKey: _selectedRoleKey, annual: _annual);
+    final productId = IapConstants.productId(roleKey: _selectedRoleKey, annual: _fourMonth);
     final product = await svc.getProduct(productId);
-
     if (product == null) {
-      setState(() => _errorMessage =
-          'Bu plan şu an mevcut değil (ID: $productId). Google Play Console\'da tanımlandığından emin ol.');
+      setState(() => _errorMessage = 'Bu plan şu an mevcut değil (ID: $productId).');
       return;
     }
-
     await svc.buy(product);
-    // Satın alma sonucu iapListenerProvider'daki stream üzerinden gelir,
-    // isPremiumProvider otomatik güncellenir → router yönlendirir.
   }
-
-  // ── iyzico (sadece Web) ───────────────────────────────────────────────────
 
   Future<void> _purchaseWeb() async {
     try {
       final service = ref.read(subscriptionServiceProvider);
-      final url = await service.createCheckout(
-        planKey: _selectedRoleKey,
-        annual: _annual,
-      );
+      final url = await service.createCheckout(planKey: _selectedRoleKey, annual: _fourMonth);
       if (!mounted) return;
       final uri = Uri.parse(url);
       if (await canLaunchUrl(uri)) {
@@ -183,7 +198,7 @@ class _SubscriptionScreenState extends ConsumerState<SubscriptionScreen> {
     }
   }
 
-  void _goNext() {
+  void _goBack() {
     if (Navigator.canPop(context)) {
       context.pop();
     } else {
@@ -191,202 +206,127 @@ class _SubscriptionScreenState extends ConsumerState<SubscriptionScreen> {
     }
   }
 
-  void _continueFree() => _goNext();
+  // ── Build ─────────────────────────────────────────────────────────────────
 
   @override
   Widget build(BuildContext context) {
+    final plan = _selected;
     final canPop = Navigator.canPop(context);
-    final selectedPricing = _allPlans.firstWhere(
-      (p) => p.roleKey == _selectedRoleKey,
-      orElse: () => _allPlans.first,
-    );
 
     return Scaffold(
-      backgroundColor: AppColors.background,
-      appBar: canPop
-          ? AppBar(
-              backgroundColor: Colors.transparent,
-              elevation: 0,
-              leading: IconButton(
-                icon: const Icon(Icons.close, color: AppColors.textSecondary),
-                onPressed: _continueFree,
-              ),
-            )
-          : null,
-      body: SafeArea(
-        child: Center(
-          child: ConstrainedBox(
-            constraints: const BoxConstraints(maxWidth: 640),
-            child: SingleChildScrollView(
-              padding: EdgeInsets.fromLTRB(20, canPop ? 4 : 20, 20, 24),
-              child: Column(
-                crossAxisAlignment: CrossAxisAlignment.start,
-                children: [
-                  // ── Başlık ───────────────────────────────────────────────
-                  Center(child: const AirplaneLogo(size: 48)),
-                  const SizedBox(height: 16),
-                  const Center(
-                    child: Text(
-                      'Planını Seç',
-                      style: AppTextStyles.heading1,
-                      textAlign: TextAlign.center,
-                    ),
-                  ),
-                  const SizedBox(height: 6),
-                  const Center(
-                    child: Text(
-                      'Mesleğine özel içerik, kendi liginde yarış',
-                      style: AppTextStyles.caption,
-                      textAlign: TextAlign.center,
-                    ),
-                  ),
-                  const SizedBox(height: 12),
-                  // ── Fiyat özet etiketi ───────────────────────────────────
-                  Center(
-                    child: Wrap(
-                      spacing: 8,
-                      runSpacing: 6,
-                      alignment: WrapAlignment.center,
-                      children: const [
-                        _PriceBadge(emoji: '✈️', label: 'Pilot', price: '\$50'),
-                        _PriceBadge(emoji: '💺', label: 'Kabin', price: '\$25'),
-                        _PriceBadge(emoji: '🔧', label: 'AMT', price: '\$25'),
-                        _PriceBadge(emoji: '🎓', label: 'Öğrenci', price: '\$10'),
-                      ],
-                    ),
-                  ),
-                  const SizedBox(height: 16),
-
-                  // ── Aylık / Yıllık toggle ────────────────────────────────
-                  _PeriodToggle(
-                    annual: _annual,
-                    onToggle: (v) => setState(() => _annual = v),
-                  ),
-                  const SizedBox(height: 16),
-
-                  // ── 4 Plan kartı ─────────────────────────────────────────
-                  ..._allPlans.map((plan) => _PlanCard(
-                    plan: plan,
-                    annual: _annual,
-                    isSelected: plan.roleKey == _selectedRoleKey,
-                    onTap: () => setState(() => _selectedRoleKey = plan.roleKey),
-                  )),
-
-                  const SizedBox(height: 8),
-
-                  // ── Seçili planın özellikleri ────────────────────────────
-                  _SelectedPlanFeatures(pricing: selectedPricing),
-                  const SizedBox(height: 16),
-
-                  // ── Neden Premium? ───────────────────────────────────────
-                  const _WhyPremiumSection(),
-                  const SizedBox(height: 20),
-
-                  // ── Hata mesajı ──────────────────────────────────────────
-                  if (_errorMessage != null) ...[
-                    Container(
-                      padding: const EdgeInsets.symmetric(horizontal: 14, vertical: 10),
-                      decoration: BoxDecoration(
-                        color: AppColors.errorLight,
-                        borderRadius: BorderRadius.circular(10),
-                      ),
-                      child: Text(
-                        _errorMessage!,
-                        style: const TextStyle(color: AppColors.error, fontSize: 13),
-                        textAlign: TextAlign.center,
-                      ),
-                    ),
-                    const SizedBox(height: 12),
-                  ],
-
-                  // ── Satın Al butonu ──────────────────────────────────────
-                  _purchasing
-                      ? const Center(child: CircularProgressIndicator(color: AppColors.primary))
-                      : PrimaryButton(
-                          label: '${selectedPricing.roleEmoji}  ${selectedPricing.roleLabel} Planını Al',
-                          onPressed: _purchase,
-                        ),
-
-                  const SizedBox(height: 10),
-
-                  PrimaryButton(
-                    label: 'Ücretsiz Devam Et',
-                    outlined: true,
-                    onPressed: _continueFree,
-                  ),
-
-                  const SizedBox(height: 4),
-                  Center(
-                    child: Text(
-                      kIsWeb
-                          ? 'Güvenli ödeme · iyzico · İstediğin zaman iptal et'
-                          : 'Google Play üzerinden güvenli ödeme · İstediğin zaman iptal et',
-                      style: AppTextStyles.caption,
-                      textAlign: TextAlign.center,
-                    ),
-                  ),
-                ],
-              ),
+      backgroundColor: const Color(0xFFF8FAFF),
+      body: CustomScrollView(
+        slivers: [
+          // ── Hero app bar ───────────────────────────────────────────────────
+          SliverAppBar(
+            expandedHeight: 200,
+            pinned: true,
+            backgroundColor: AppColors.primary,
+            leading: canPop
+                ? IconButton(
+                    icon: const Icon(Icons.close_rounded, color: Colors.white),
+                    onPressed: _goBack,
+                  )
+                : null,
+            flexibleSpace: FlexibleSpaceBar(
+              background: _HeroHeader(),
             ),
           ),
-        ),
-      ),
-    );
-  }
-}
 
-// ── Fiyat özet etiketi ────────────────────────────────────────────────────────
+          SliverToBoxAdapter(
+            child: Center(
+              child: ConstrainedBox(
+                constraints: const BoxConstraints(maxWidth: 640),
+                child: Padding(
+                  padding: const EdgeInsets.fromLTRB(16, 24, 16, 32),
+                  child: Column(
+                    crossAxisAlignment: CrossAxisAlignment.stretch,
+                    children: [
 
-class _PriceBadge extends StatelessWidget {
-  final String emoji;
-  final String label;
-  final String price;
-  const _PriceBadge({required this.emoji, required this.label, required this.price});
+                      // ── Periyot toggle ──────────────────────────────────────
+                      _PeriodToggle(
+                        fourMonth: _fourMonth,
+                        onToggle: (v) => setState(() => _fourMonth = v),
+                      ),
+                      const SizedBox(height: 20),
 
-  @override
-  Widget build(BuildContext context) {
-    return Container(
-      padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 5),
-      decoration: BoxDecoration(
-        color: AppColors.surfaceVariant,
-        borderRadius: BorderRadius.circular(20),
-        border: Border.all(color: AppColors.divider),
-      ),
-      child: Text(
-        '$emoji $label · $price/ay',
-        style: const TextStyle(
-          fontSize: 11,
-          fontWeight: FontWeight.w600,
-          color: AppColors.textSecondary,
-        ),
-      ),
-    );
-  }
-}
+                      // ── Plan kartları ───────────────────────────────────────
+                      ..._plans.map((p) => _PlanCard(
+                        plan: p,
+                        isSelected: p.roleKey == _selectedRoleKey,
+                        fourMonth: _fourMonth,
+                        onTap: () => setState(() => _selectedRoleKey = p.roleKey),
+                      )),
 
-// ── Aylık / Yıllık geçiş ─────────────────────────────────────────────────────
+                      const SizedBox(height: 8),
 
-class _PeriodToggle extends StatelessWidget {
-  final bool annual;
-  final ValueChanged<bool> onToggle;
+                      // ── Hata ────────────────────────────────────────────────
+                      if (_errorMessage != null) ...[
+                        Container(
+                          padding: const EdgeInsets.symmetric(horizontal: 14, vertical: 10),
+                          decoration: BoxDecoration(
+                            color: AppColors.errorLight,
+                            borderRadius: BorderRadius.circular(12),
+                          ),
+                          child: Row(
+                            children: [
+                              const Icon(Icons.error_outline, color: AppColors.error, size: 18),
+                              const SizedBox(width: 8),
+                              Expanded(
+                                child: Text(
+                                  _errorMessage!,
+                                  style: const TextStyle(color: AppColors.error, fontSize: 13),
+                                ),
+                              ),
+                            ],
+                          ),
+                        ),
+                        const SizedBox(height: 12),
+                      ],
 
-  const _PeriodToggle({required this.annual, required this.onToggle});
+                      // ── CTA butonu ──────────────────────────────────────────
+                      _purchasing
+                          ? const Center(
+                              child: Padding(
+                                padding: EdgeInsets.symmetric(vertical: 14),
+                                child: CircularProgressIndicator(color: AppColors.primary),
+                              ),
+                            )
+                          : _BuyButton(plan: plan, fourMonth: _fourMonth, onPressed: _purchase),
 
-  @override
-  Widget build(BuildContext context) {
-    return Container(
-      padding: const EdgeInsets.all(4),
-      decoration: BoxDecoration(
-        color: AppColors.surfaceVariant,
-        borderRadius: BorderRadius.circular(14),
-      ),
-      child: Row(
-        children: [
-          _Tab(label: 'Aylık', selected: !annual, onTap: () => onToggle(false)),
-          _Tab(
-            label: 'Yıllık  🔥 %30 İndirim',
-            selected: annual,
-            onTap: () => onToggle(true),
+                      const SizedBox(height: 12),
+
+                      // Ücretsiz devam
+                      Center(
+                        child: TextButton(
+                          onPressed: _goBack,
+                          child: const Text(
+                            'Ücretsiz devam et',
+                            style: TextStyle(
+                              fontSize: 13,
+                              color: AppColors.textSecondary,
+                              fontWeight: FontWeight.w500,
+                            ),
+                          ),
+                        ),
+                      ),
+
+                      // Güven metni
+                      Center(
+                        child: Text(
+                          kIsWeb
+                              ? 'Güvenli ödeme · iyzico · İstediğin zaman iptal et'
+                              : 'Google Play üzerinden güvenli ödeme · İstediğin zaman iptal et',
+                          style: const TextStyle(fontSize: 11, color: AppColors.textHint),
+                          textAlign: TextAlign.center,
+                        ),
+                      ),
+                      const SizedBox(height: 8),
+                    ],
+                  ),
+                ),
+              ),
+            ),
           ),
         ],
       ),
@@ -394,12 +334,168 @@ class _PeriodToggle extends StatelessWidget {
   }
 }
 
-class _Tab extends StatelessWidget {
+// ── Hero header ───────────────────────────────────────────────────────────────
+
+class _HeroHeader extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return Container(
+      decoration: const BoxDecoration(
+        gradient: LinearGradient(
+          colors: [AppColors.primaryDeep, AppColors.primary, AppColors.primaryLight],
+          begin: Alignment.topLeft,
+          end: Alignment.bottomRight,
+        ),
+      ),
+      child: SafeArea(
+        child: Padding(
+          padding: const EdgeInsets.fromLTRB(24, 48, 24, 24),
+          child: Column(
+            mainAxisAlignment: MainAxisAlignment.end,
+            crossAxisAlignment: CrossAxisAlignment.start,
+            children: [
+              const Text(
+                '👑  Avialish Premium',
+                style: TextStyle(
+                  color: Colors.white,
+                  fontSize: 24,
+                  fontWeight: FontWeight.w900,
+                  letterSpacing: 0.3,
+                ),
+              ),
+              const SizedBox(height: 6),
+              const Text(
+                'Mesleğine özel içerik · Sınırsız pratik · Lig sistemi',
+                style: TextStyle(color: Colors.white70, fontSize: 13),
+              ),
+              const SizedBox(height: 14),
+              // Trust chips
+              Wrap(
+                spacing: 8,
+                children: const [
+                  _TrustChip('🔒 Güvenli ödeme'),
+                  _TrustChip('↩️ İstediğin zaman iptal'),
+                  _TrustChip('⚡ Anında erişim'),
+                ],
+              ),
+            ],
+          ),
+        ),
+      ),
+    );
+  }
+}
+
+class _TrustChip extends StatelessWidget {
   final String label;
+  const _TrustChip(this.label);
+
+  @override
+  Widget build(BuildContext context) {
+    return Container(
+      padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 5),
+      decoration: BoxDecoration(
+        color: Colors.white.withValues(alpha: 0.15),
+        borderRadius: BorderRadius.circular(20),
+        border: Border.all(color: Colors.white.withValues(alpha: 0.25)),
+      ),
+      child: Text(
+        label,
+        style: const TextStyle(color: Colors.white, fontSize: 11, fontWeight: FontWeight.w500),
+      ),
+    );
+  }
+}
+
+// ── Periyot toggle ────────────────────────────────────────────────────────────
+
+class _PeriodToggle extends StatelessWidget {
+  final bool fourMonth;
+  final ValueChanged<bool> onToggle;
+  const _PeriodToggle({required this.fourMonth, required this.onToggle});
+
+  @override
+  Widget build(BuildContext context) {
+    return Stack(
+      clipBehavior: Clip.none,
+      children: [
+        Container(
+          padding: const EdgeInsets.all(4),
+          decoration: BoxDecoration(
+            color: Colors.white,
+            borderRadius: BorderRadius.circular(14),
+            border: Border.all(color: AppColors.divider),
+            boxShadow: [
+              BoxShadow(
+                color: Colors.black.withValues(alpha: 0.05),
+                blurRadius: 8,
+                offset: const Offset(0, 2),
+              ),
+            ],
+          ),
+          child: Row(
+            children: [
+              _ToggleTab(
+                label: 'Aylık',
+                sublabel: 'Normal fiyat',
+                selected: !fourMonth,
+                onTap: () => onToggle(false),
+              ),
+              _ToggleTab(
+                label: '4 Aylık',
+                sublabel: '%30 daha ucuz',
+                selected: fourMonth,
+                onTap: () => onToggle(true),
+                badge: '%30',
+              ),
+            ],
+          ),
+        ),
+        // Badge
+        if (fourMonth)
+          Positioned(
+            top: -10,
+            right: 12,
+            child: Container(
+              padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 3),
+              decoration: BoxDecoration(
+                gradient: const LinearGradient(
+                  colors: [Color(0xFFD97706), Color(0xFFF59E0B)],
+                ),
+                borderRadius: BorderRadius.circular(20),
+                boxShadow: [
+                  BoxShadow(
+                    color: const Color(0xFFF59E0B).withValues(alpha: 0.4),
+                    blurRadius: 6,
+                    offset: const Offset(0, 2),
+                  ),
+                ],
+              ),
+              child: const Text(
+                '🔥 En Popüler',
+                style: TextStyle(color: Colors.white, fontSize: 10, fontWeight: FontWeight.w700),
+              ),
+            ),
+          ),
+      ],
+    );
+  }
+}
+
+class _ToggleTab extends StatelessWidget {
+  final String label;
+  final String sublabel;
   final bool selected;
   final VoidCallback onTap;
+  final String? badge;
 
-  const _Tab({required this.label, required this.selected, required this.onTap});
+  const _ToggleTab({
+    required this.label,
+    required this.sublabel,
+    required this.selected,
+    required this.onTap,
+    this.badge,
+  });
 
   @override
   Widget build(BuildContext context) {
@@ -407,23 +503,34 @@ class _Tab extends StatelessWidget {
       child: GestureDetector(
         onTap: onTap,
         child: AnimatedContainer(
-          duration: const Duration(milliseconds: 180),
-          padding: const EdgeInsets.symmetric(vertical: 10),
+          duration: const Duration(milliseconds: 200),
+          padding: const EdgeInsets.symmetric(vertical: 12),
           decoration: BoxDecoration(
-            color: selected ? Colors.white : Colors.transparent,
+            color: selected ? AppColors.primary : Colors.transparent,
             borderRadius: BorderRadius.circular(10),
             boxShadow: selected
-                ? [BoxShadow(color: Colors.black.withValues(alpha: 0.08), blurRadius: 4, offset: const Offset(0, 1))]
+                ? [BoxShadow(color: AppColors.primary.withValues(alpha: 0.3), blurRadius: 8, offset: const Offset(0, 2))]
                 : null,
           ),
-          child: Text(
-            label,
-            textAlign: TextAlign.center,
-            style: TextStyle(
-              fontSize: 13,
-              fontWeight: selected ? FontWeight.w700 : FontWeight.w500,
-              color: selected ? AppColors.primary : AppColors.textSecondary,
-            ),
+          child: Column(
+            children: [
+              Text(
+                label,
+                style: TextStyle(
+                  fontSize: 14,
+                  fontWeight: FontWeight.w800,
+                  color: selected ? Colors.white : AppColors.textSecondary,
+                ),
+              ),
+              const SizedBox(height: 2),
+              Text(
+                sublabel,
+                style: TextStyle(
+                  fontSize: 11,
+                  color: selected ? Colors.white70 : AppColors.textHint,
+                ),
+              ),
+            ],
           ),
         ),
       ),
@@ -434,257 +541,330 @@ class _Tab extends StatelessWidget {
 // ── Plan kartı ────────────────────────────────────────────────────────────────
 
 class _PlanCard extends StatelessWidget {
-  final _RolePricing plan;
-  final bool annual;
+  final _Plan plan;
   final bool isSelected;
+  final bool fourMonth;
   final VoidCallback onTap;
 
   const _PlanCard({
     required this.plan,
-    required this.annual,
     required this.isSelected,
+    required this.fourMonth,
     required this.onTap,
   });
 
   @override
   Widget build(BuildContext context) {
-    final price = annual ? plan.annualStr : plan.monthlyStr;
-    final period = annual ? '/ay' : '/ay';
-    final note = annual ? '${plan.annualTotalStr}/yıl faturalandırılır' : 'Aylık faturalandırılır';
+    final price = fourMonth ? plan.fourMonthPrice : plan.monthlyPrice;
+    final priceStr = '₺${_fmt(price)}';
+    final billNote = fourMonth
+        ? '₺${_fmt(plan.fourMonthTotal)} · 4 ayda bir ödenir'
+        : 'Her ay yenilenir';
+    final saving = fourMonth ? '₺${_fmt(plan.fourMonthSaving)} tasarruf' : '';
 
     return GestureDetector(
       onTap: onTap,
       child: AnimatedContainer(
-        duration: const Duration(milliseconds: 180),
-        margin: const EdgeInsets.only(bottom: 10),
-        padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 14),
+        duration: const Duration(milliseconds: 220),
+        margin: const EdgeInsets.only(bottom: 12),
         decoration: BoxDecoration(
-          color: isSelected ? AppColors.primary.withValues(alpha: 0.06) : AppColors.surface,
-          borderRadius: BorderRadius.circular(16),
+          color: isSelected ? plan.accentLight : Colors.white,
+          borderRadius: BorderRadius.circular(20),
           border: Border.all(
-            color: isSelected ? AppColors.primary : AppColors.divider,
+            color: isSelected ? plan.accent : AppColors.divider,
             width: isSelected ? 2 : 1,
           ),
+          boxShadow: isSelected
+              ? [BoxShadow(color: plan.accent.withValues(alpha: 0.12), blurRadius: 16, offset: const Offset(0, 4))]
+              : [BoxShadow(color: Colors.black.withValues(alpha: 0.04), blurRadius: 6, offset: const Offset(0, 2))],
         ),
-        child: Row(
+        child: Column(
           children: [
-            // Seçim göstergesi
-            Icon(
-              isSelected ? Icons.radio_button_checked : Icons.radio_button_unchecked,
-              color: isSelected ? AppColors.primary : AppColors.textHint,
-              size: 20,
-            ),
-            const SizedBox(width: 12),
-            // Emoji + isim
-            Text(plan.roleEmoji, style: const TextStyle(fontSize: 22)),
-            const SizedBox(width: 10),
-            Expanded(
-              child: Column(
-                crossAxisAlignment: CrossAxisAlignment.start,
+            // ── Kart başlığı ──────────────────────────────────────────────
+            Padding(
+              padding: const EdgeInsets.fromLTRB(16, 16, 16, 12),
+              child: Row(
                 children: [
-                  Text(
-                    plan.roleLabel,
-                    style: TextStyle(
-                      fontSize: 14,
-                      fontWeight: FontWeight.w700,
-                      color: isSelected ? AppColors.primary : AppColors.textPrimary,
+                  // Seçim indikatörü
+                  AnimatedContainer(
+                    duration: const Duration(milliseconds: 200),
+                    width: 22,
+                    height: 22,
+                    decoration: BoxDecoration(
+                      shape: BoxShape.circle,
+                      color: isSelected ? plan.accent : Colors.transparent,
+                      border: Border.all(
+                        color: isSelected ? plan.accent : AppColors.divider,
+                        width: 2,
+                      ),
+                    ),
+                    child: isSelected
+                        ? const Icon(Icons.check_rounded, color: Colors.white, size: 14)
+                        : null,
+                  ),
+                  const SizedBox(width: 12),
+                  // Emoji
+                  Text(plan.emoji, style: const TextStyle(fontSize: 26)),
+                  const SizedBox(width: 10),
+                  // İsim + tagline
+                  Expanded(
+                    child: Column(
+                      crossAxisAlignment: CrossAxisAlignment.start,
+                      children: [
+                        Text(
+                          plan.label,
+                          style: TextStyle(
+                            fontSize: 15,
+                            fontWeight: FontWeight.w800,
+                            color: isSelected ? plan.accent : AppColors.textPrimary,
+                          ),
+                        ),
+                        Text(
+                          plan.tagline,
+                          style: TextStyle(
+                            fontSize: 11,
+                            color: isSelected
+                                ? plan.accent.withValues(alpha: 0.7)
+                                : AppColors.textHint,
+                          ),
+                        ),
+                      ],
                     ),
                   ),
-                  Text(
-                    note,
-                    style: const TextStyle(fontSize: 11, color: AppColors.textHint),
+                  // Fiyat
+                  Column(
+                    crossAxisAlignment: CrossAxisAlignment.end,
+                    children: [
+                      RichText(
+                        text: TextSpan(
+                          children: [
+                            TextSpan(
+                              text: priceStr,
+                              style: TextStyle(
+                                fontSize: 20,
+                                fontWeight: FontWeight.w900,
+                                color: isSelected ? plan.accent : AppColors.textPrimary,
+                              ),
+                            ),
+                            TextSpan(
+                              text: '/ay',
+                              style: TextStyle(
+                                fontSize: 11,
+                                color: isSelected
+                                    ? plan.accent.withValues(alpha: 0.7)
+                                    : AppColors.textHint,
+                              ),
+                            ),
+                          ],
+                        ),
+                      ),
+                      if (fourMonth)
+                        Container(
+                          margin: const EdgeInsets.only(top: 3),
+                          padding: const EdgeInsets.symmetric(horizontal: 7, vertical: 2),
+                          decoration: BoxDecoration(
+                            color: const Color(0xFFDCFCE7),
+                            borderRadius: BorderRadius.circular(6),
+                          ),
+                          child: Text(
+                            saving,
+                            style: const TextStyle(
+                              fontSize: 10,
+                              fontWeight: FontWeight.w700,
+                              color: Color(0xFF15803D),
+                            ),
+                          ),
+                        ),
+                      Text(
+                        billNote,
+                        style: const TextStyle(fontSize: 10, color: AppColors.textHint),
+                      ),
+                    ],
                   ),
                 ],
               ),
             ),
-            // Fiyat
-            Column(
-              crossAxisAlignment: CrossAxisAlignment.end,
-              children: [
-                RichText(
-                  text: TextSpan(
-                    children: [
-                      TextSpan(
-                        text: price,
-                        style: TextStyle(
-                          fontSize: 18,
-                          fontWeight: FontWeight.w800,
-                          color: isSelected ? AppColors.primary : AppColors.textPrimary,
-                        ),
-                      ),
-                      TextSpan(
-                        text: period,
-                        style: const TextStyle(fontSize: 11, color: AppColors.textSecondary),
-                      ),
-                    ],
-                  ),
-                ),
-                if (annual) ...[
-                  Container(
-                    margin: const EdgeInsets.only(top: 3),
-                    padding: const EdgeInsets.symmetric(horizontal: 6, vertical: 2),
-                    decoration: BoxDecoration(
-                      color: AppColors.success.withValues(alpha: 0.15),
-                      borderRadius: BorderRadius.circular(6),
-                    ),
-                    child: const Text(
-                      '%30 İndirim',
-                      style: TextStyle(
-                        fontSize: 10,
-                        fontWeight: FontWeight.w600,
-                        color: AppColors.successDark,
-                      ),
-                    ),
-                  ),
-                  Text(
-                    'Yılda ${plan.annualSavingStr} tasarruf',
-                    style: const TextStyle(
-                      fontSize: 10,
-                      color: AppColors.successDark,
-                      fontWeight: FontWeight.w500,
-                    ),
-                  ),
-                ],
-              ],
+
+            // ── Özellikler (sadece seçiliyken) ───────────────────────────
+            AnimatedCrossFade(
+              duration: const Duration(milliseconds: 250),
+              crossFadeState: isSelected
+                  ? CrossFadeState.showFirst
+                  : CrossFadeState.showSecond,
+              firstChild: _FeatureList(plan: plan),
+              secondChild: const SizedBox.shrink(),
             ),
           ],
         ),
       ),
     );
   }
+
+  static String _fmt(int n) {
+    if (n >= 1000) {
+      final s = n.toString();
+      final List<String> parts = [];
+      int start = s.length % 3;
+      if (start > 0) parts.add(s.substring(0, start));
+      for (int i = start; i < s.length; i += 3) {
+        parts.add(s.substring(i, i + 3));
+      }
+      return parts.join('.');
+    }
+    return n.toString();
+  }
 }
 
-// ── Neden Premium? ────────────────────────────────────────────────────────────
+// ── Özellik listesi ───────────────────────────────────────────────────────────
 
-class _WhyPremiumSection extends StatelessWidget {
-  const _WhyPremiumSection();
-
-  static const _items = [
-    (Icons.lock_open_rounded,      'Tüm derslere erişim',    'Role özel 18–60 ders, 1895+ soru bankası'),
-    (Icons.emoji_events_rounded,   'Lig sistemi',            'Haftalık XP — kendi rolündekilere karşı yarış'),
-    (Icons.bar_chart_rounded,      'Kişisel analiz',         'Zayıf kategoriler tespit edilir, önerilir'),
-    (Icons.quiz_rounded,           'Sınırsız sınav',         'Günlük ve kategori sınavlarını sınırsız başlat'),
-    (Icons.workspace_premium,      'Öncelikli içerik',       'Yeni ders ve sorular premium üyelere önce gelir'),
-  ];
+class _FeatureList extends StatelessWidget {
+  final _Plan plan;
+  const _FeatureList({required this.plan});
 
   @override
   Widget build(BuildContext context) {
     return Container(
-      padding: const EdgeInsets.all(16),
+      margin: const EdgeInsets.fromLTRB(16, 0, 16, 16),
+      padding: const EdgeInsets.all(14),
       decoration: BoxDecoration(
-        color: AppColors.surface,
-        borderRadius: BorderRadius.circular(16),
-        border: Border.all(color: AppColors.divider),
+        color: Colors.white,
+        borderRadius: BorderRadius.circular(14),
+        border: Border.all(color: plan.accent.withValues(alpha: 0.15)),
       ),
       child: Column(
+        children: plan.features.map((f) => _FeatureRow(feature: f, accent: plan.accent)).toList(),
+      ),
+    );
+  }
+}
+
+class _FeatureRow extends StatelessWidget {
+  final _Feature feature;
+  final Color accent;
+  const _FeatureRow({required this.feature, required this.accent});
+
+  @override
+  Widget build(BuildContext context) {
+    return Padding(
+      padding: const EdgeInsets.only(bottom: 10),
+      child: Row(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
-          const Row(
-            children: [
-              Text('✨', style: TextStyle(fontSize: 16)),
-              SizedBox(width: 8),
-              Text(
-                'Neden Premium?',
-                style: TextStyle(
-                  fontSize: 14,
-                  fontWeight: FontWeight.w700,
-                  color: AppColors.textPrimary,
-                ),
-              ),
-            ],
-          ),
-          const SizedBox(height: 14),
-          ..._items.map((item) => Padding(
-            padding: const EdgeInsets.only(bottom: 12),
-            child: Row(
-              crossAxisAlignment: CrossAxisAlignment.start,
-              children: [
-                Container(
-                  padding: const EdgeInsets.all(8),
-                  decoration: BoxDecoration(
-                    color: AppColors.surfaceVariant,
-                    borderRadius: BorderRadius.circular(10),
-                  ),
-                  child: Icon(item.$1, color: AppColors.primary, size: 18),
-                ),
-                const SizedBox(width: 12),
-                Expanded(
-                  child: Column(
-                    crossAxisAlignment: CrossAxisAlignment.start,
-                    children: [
-                      Text(
-                        item.$2,
-                        style: const TextStyle(
-                          fontSize: 13,
-                          fontWeight: FontWeight.w700,
-                          color: AppColors.textPrimary,
-                        ),
-                      ),
-                      const SizedBox(height: 1),
-                      Text(
-                        item.$3,
-                        style: const TextStyle(
-                          fontSize: 11,
-                          color: AppColors.textSecondary,
-                        ),
-                      ),
-                    ],
-                  ),
-                ),
-              ],
+          Container(
+            width: 28,
+            height: 28,
+            decoration: BoxDecoration(
+              color: accent.withValues(alpha: 0.1),
+              borderRadius: BorderRadius.circular(8),
             ),
-          )),
+            child: Icon(feature.icon, size: 15, color: accent),
+          ),
+          const SizedBox(width: 10),
+          Expanded(
+            child: Padding(
+              padding: const EdgeInsets.only(top: 5),
+              child: Row(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: [
+                  Expanded(
+                    child: Text(
+                      feature.text,
+                      style: const TextStyle(
+                        fontSize: 13,
+                        color: AppColors.textPrimary,
+                        height: 1.3,
+                      ),
+                    ),
+                  ),
+                  if (feature.highlight) ...[
+                    const SizedBox(width: 6),
+                    Container(
+                      padding: const EdgeInsets.symmetric(horizontal: 6, vertical: 2),
+                      decoration: BoxDecoration(
+                        color: const Color(0xFFFEF3C7),
+                        borderRadius: BorderRadius.circular(6),
+                      ),
+                      child: const Text(
+                        '⭐ Öne çıkan',
+                        style: TextStyle(
+                          fontSize: 9,
+                          fontWeight: FontWeight.w700,
+                          color: Color(0xFFD97706),
+                        ),
+                      ),
+                    ),
+                  ],
+                ],
+              ),
+            ),
+          ),
         ],
       ),
     );
   }
 }
 
-// ── Seçili planın özellikleri ─────────────────────────────────────────────────
+// ── Satın al butonu ───────────────────────────────────────────────────────────
 
-class _SelectedPlanFeatures extends StatelessWidget {
-  final _RolePricing pricing;
-  const _SelectedPlanFeatures({required this.pricing});
+class _BuyButton extends StatelessWidget {
+  final _Plan plan;
+  final bool fourMonth;
+  final VoidCallback onPressed;
+
+  const _BuyButton({required this.plan, required this.fourMonth, required this.onPressed});
 
   @override
   Widget build(BuildContext context) {
-    return AnimatedSize(
-      duration: const Duration(milliseconds: 250),
-      curve: Curves.easeOut,
+    final price = fourMonth ? plan.fourMonthPrice : plan.monthlyPrice;
+    final priceStr = '₺${_PlanCard._fmt(price)}/ay';
+
+    return GestureDetector(
+      onTap: onPressed,
       child: Container(
         width: double.infinity,
-        padding: const EdgeInsets.all(16),
+        padding: const EdgeInsets.symmetric(vertical: 16),
         decoration: BoxDecoration(
-          color: AppColors.surfaceVariant,
-          borderRadius: BorderRadius.circular(14),
+          gradient: LinearGradient(
+            colors: [
+              plan.accent,
+              Color.lerp(plan.accent, Colors.black, 0.15)!,
+            ],
+            begin: Alignment.centerLeft,
+            end: Alignment.centerRight,
+          ),
+          borderRadius: BorderRadius.circular(16),
+          boxShadow: [
+            BoxShadow(
+              color: plan.accent.withValues(alpha: 0.35),
+              blurRadius: 16,
+              offset: const Offset(0, 6),
+            ),
+          ],
         ),
         child: Column(
-          crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            Text(
-              '${pricing.roleEmoji}  ${pricing.roleLabel} Planı İçeriği',
-              style: const TextStyle(
-                fontSize: 13,
-                fontWeight: FontWeight.w700,
-                color: AppColors.textPrimary,
-              ),
-            ),
-            const SizedBox(height: 10),
-            ...pricing.highlights.map((h) => Padding(
-              padding: const EdgeInsets.only(bottom: 6),
-              child: Row(
-                children: [
-                  const Icon(Icons.check_circle, color: AppColors.success, size: 16),
-                  const SizedBox(width: 8),
-                  Expanded(
-                    child: Text(
-                      h,
-                      style: const TextStyle(fontSize: 13, color: AppColors.textPrimary),
-                    ),
+            Row(
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: [
+                Text(plan.emoji, style: const TextStyle(fontSize: 18)),
+                const SizedBox(width: 8),
+                Text(
+                  '${plan.label} Planını Al',
+                  style: const TextStyle(
+                    color: Colors.white,
+                    fontSize: 16,
+                    fontWeight: FontWeight.w800,
                   ),
-                ],
-              ),
-            )),
+                ),
+              ],
+            ),
+            const SizedBox(height: 2),
+            Text(
+              fourMonth
+                  ? '$priceStr · ${_PlanCard._fmt(plan.fourMonthTotal)} ₺ 4 ayda bir'
+                  : '$priceStr · Her ay yenilenir',
+              style: const TextStyle(color: Colors.white70, fontSize: 12),
+            ),
           ],
         ),
       ),

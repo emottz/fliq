@@ -11,22 +11,23 @@ class IapConstants {
   static const String amtMonthly        = 'fliq_amt_monthly';
   static const String studentMonthly    = 'fliq_student_monthly';
 
-  // ── Yıllık abonelikler ────────────────────────────────────────────────────
-  static const String pilotAnnual       = 'fliq_pilot_annual';
-  static const String cabinAnnual       = 'fliq_cabin_annual';
-  static const String amtAnnual         = 'fliq_amt_annual';
-  static const String studentAnnual     = 'fliq_student_annual';
+  // ── 4 Aylık abonelikler (%30 indirimli) ──────────────────────────────────
+  static const String pilotQuarterly    = 'fliq_pilot_quarterly';
+  static const String cabinQuarterly    = 'fliq_cabin_quarterly';
+  static const String amtQuarterly      = 'fliq_amt_quarterly';
+  static const String studentQuarterly  = 'fliq_student_quarterly';
 
   /// Rol + periyot → product ID
+  /// [annual] parametresi burada "4 aylık" anlamına gelir (UI'dan geliyor)
   static String productId({required String roleKey, required bool annual}) {
-    return switch ('${roleKey}_${annual ? 'y' : 'm'}') {
-      'pilot_y'       => pilotAnnual,
+    return switch ('${roleKey}_${annual ? 'q' : 'm'}') {
+      'pilot_q'       => pilotQuarterly,
       'pilot_m'       => pilotMonthly,
-      'cabin_crew_y'  => cabinAnnual,
+      'cabin_crew_q'  => cabinQuarterly,
       'cabin_crew_m'  => cabinMonthly,
-      'amt_y'         => amtAnnual,
+      'amt_q'         => amtQuarterly,
       'amt_m'         => amtMonthly,
-      'student_y'     => studentAnnual,
+      'student_q'     => studentQuarterly,
       'student_m'     => studentMonthly,
       _               => studentMonthly,
     };
@@ -34,9 +35,9 @@ class IapConstants {
 
   /// Tüm ürün ID seti — queryProductDetails için
   static Set<String> get allProductIds => {
-    pilotMonthly, pilotAnnual,
-    cabinMonthly, cabinAnnual,
-    amtMonthly,   amtAnnual,
-    studentMonthly, studentAnnual,
+    pilotMonthly,   pilotQuarterly,
+    cabinMonthly,   cabinQuarterly,
+    amtMonthly,     amtQuarterly,
+    studentMonthly, studentQuarterly,
   };
 }
