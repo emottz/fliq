@@ -97,7 +97,6 @@ class _AssessmentScreenState extends ConsumerState<AssessmentScreen> {
       final updated = profile.copyWith(level: level, weakCategories: weakCategories);
       await ref.read(userProfileProvider.notifier).saveLevel(updated);
       FirestoreService.saveAssessment(updated, categoryResults); // fire-and-forget
-      await repo.skipLessonsForLevel(level); // pre-complete lessons below user's level
     }
 
     if (mounted) {
