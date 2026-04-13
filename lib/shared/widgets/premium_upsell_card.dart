@@ -78,6 +78,8 @@ class PremiumUpsellCard extends ConsumerWidget {
   Widget build(BuildContext context, WidgetRef ref) {
     final isPremium = ref.watch(isPremiumProvider).value ?? false;
     if (isPremium) return const SizedBox.shrink();
+    // Sidebar dar olduğu için ayrı kompakt layout kullan
+    if (source == 'sidebar') return _SidebarCard(margin: margin);
     return _UpsellCard(source: source, margin: margin);
   }
 }
@@ -152,6 +154,82 @@ class _UpsellCard extends StatelessWidget {
                 style: TextStyle(
                   color: Color(0xFF92400E),
                   fontSize: 12,
+                  fontWeight: FontWeight.w800,
+                ),
+              ),
+            ),
+          ],
+        ),
+      ),
+    );
+  }
+}
+
+// ── Sidebar kompakt kart (dar alan için) ─────────────────────────────────────
+
+/// Sol nav sidebar gibi dar (≤220px) alanlarda kullanılan dikey layout.
+class _SidebarCard extends StatelessWidget {
+  final EdgeInsetsGeometry margin;
+  const _SidebarCard({required this.margin});
+
+  static const _gradient = LinearGradient(
+    colors: [Color(0xFF92400E), AppColors.warning, AppColors.rankGold],
+    begin: Alignment.topLeft,
+    end: Alignment.bottomRight,
+  );
+
+  @override
+  Widget build(BuildContext context) {
+    return GestureDetector(
+      onTap: () => context.push('/subscription'),
+      child: Container(
+        margin: margin,
+        padding: const EdgeInsets.all(12),
+        decoration: BoxDecoration(
+          gradient: _gradient,
+          borderRadius: BorderRadius.circular(14),
+          boxShadow: [
+            BoxShadow(
+              color: AppColors.warning.withValues(alpha: 0.25),
+              blurRadius: 10,
+              offset: const Offset(0, 4),
+            ),
+          ],
+        ),
+        child: Column(
+          crossAxisAlignment: CrossAxisAlignment.start,
+          children: [
+            const Row(
+              children: [
+                Text('👑', style: TextStyle(fontSize: 16)),
+                SizedBox(width: 6),
+                Flexible(
+                  child: Text(
+                    'Avialish Premium',
+                    style: TextStyle(
+                      color: Colors.white,
+                      fontSize: 13,
+                      fontWeight: FontWeight.w800,
+                    ),
+                    overflow: TextOverflow.ellipsis,
+                  ),
+                ),
+              ],
+            ),
+            const SizedBox(height: 8),
+            Container(
+              width: double.infinity,
+              padding: const EdgeInsets.symmetric(vertical: 6),
+              decoration: BoxDecoration(
+                color: Colors.white,
+                borderRadius: BorderRadius.circular(8),
+              ),
+              child: const Text(
+                'Planları Gör →',
+                textAlign: TextAlign.center,
+                style: TextStyle(
+                  color: Color(0xFF92400E),
+                  fontSize: 11,
                   fontWeight: FontWeight.w800,
                 ),
               ),
