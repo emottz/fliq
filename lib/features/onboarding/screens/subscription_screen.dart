@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:go_router/go_router.dart';
-import 'package:purchases_flutter/purchases_flutter.dart';
+import 'package:url_launcher/url_launcher.dart';
 import '../../../core/constants/app_colors.dart';
 import '../../../core/constants/app_text_styles.dart';
 import '../../../shared/providers/app_providers.dart';
@@ -103,81 +103,45 @@ class SubscriptionScreen extends ConsumerStatefulWidget {
 }
 
 class _SubscriptionScreenState extends ConsumerState<SubscriptionScreen> {
-  Offerings? _offerings;
-  Package? _selectedPackage;
-  bool _loadingOfferings = true;
   bool _purchasing = false;
-  bool _restoring = false;
   String? _errorMessage;
   bool _annual = true;
-  String _selectedRoleKey = 'pilot'; // hangi plan seçili
-
-  @override
-  void initState() {
-    super.initState();
-    _loadOfferings();
-  }
+  String _selectedRoleKey = 'pilot';
 
   @override
   void didChangeDependencies() {
     super.didChangeDependencies();
-    // Kullanıcının kendi rolünü varsayılan seçili yap
     final profile = ref.read(userProfileProvider).valueOrNull;
     if (profile != null && profile.role.isNotEmpty) {
       _selectedRoleKey = profile.role;
     }
   }
 
-  Future<void> _loadOfferings() async {
-    final service = ref.read(subscriptionServiceProvider);
-    final offerings = await service.getOfferings();
-    if (!mounted) return;
-    setState(() {
-      _offerings = offerings;
-      _loadingOfferings = false;
-      if (offerings != null) {
-        final packages = offerings.current?.availablePackages ?? [];
-        if (packages.isNotEmpty) {
-          _selectedPackage = packages.firstWhere(
-            (p) => p.packageType == PackageType.annual,
-            orElse: () => packages.first,
-          );
-        }
-      }
-    });
-  }
-
   Future<void> _purchase() async {
-    if (_selectedPackage == null) {
-      _goNext();
-      return;
-    }
     setState(() { _purchasing = true; _errorMessage = null; });
-    final service = ref.read(subscriptionServiceProvider);
-    final (success, error) = await service.purchasePackage(_selectedPackage!);
-    if (!mounted) return;
-    if (success) {
-      await ref.read(isPremiumProvider.notifier).refresh();
-      _goNext();
-    } else if (error != null) {
-      setState(() { _errorMessage = error; _purchasing = false; });
-    } else {
-      setState(() { _purchasing = false; });
-    }
-  }
-
-  Future<void> _restore() async {
-    setState(() { _restoring = true; _errorMessage = null; });
-    final service = ref.read(subscriptionServiceProvider);
-    final ok = await service.restorePurchases();
-    if (!mounted) return;
-    if (ok) {
-      await ref.read(isPremiumProvider.notifier).refresh();
-      _goNext();
-    } else {
+    try {
+      final service = ref.read(subscriptionServiceProvider);
+      final url = await service.createCheckout(
+        planKey: _selectedRoleKey,
+        annual: _annual,
+      );
+      if (!mounted) return;
+      final uri = Uri.parse(url);
+      if (await canLaunchUrl(uri)) {
+        await launchUrl(uri, mode: LaunchMode.externalApplication);
+        // Firestore stream otomatik güncelleyecek — kullanıcı geri döndüğünde yansır
+        setState(() { _purchasing = false; });
+      } else {
+        setState(() {
+          _purchasing = false;
+          _errorMessage = 'Ödeme sayfası açılamadı. Lütfen tekrar deneyin.';
+        });
+      }
+    } catch (e) {
+      if (!mounted) return;
       setState(() {
-        _restoring = false;
-        _errorMessage = 'Geri yüklenecek aktif abonelik bulunamadı.';
+        _purchasing = false;
+        _errorMessage = e.toString().replaceAll('Exception: ', '');
       });
     }
   }
@@ -299,16 +263,12 @@ class _SubscriptionScreenState extends ConsumerState<SubscriptionScreen> {
                   ],
 
                   // ── Satın Al butonu ──────────────────────────────────────
-                  _loadingOfferings
+                  _purchasing
                       ? const Center(child: CircularProgressIndicator(color: AppColors.primary))
-                      : _purchasing
-                          ? const Center(child: CircularProgressIndicator(color: AppColors.primary))
-                          : PrimaryButton(
-                              label: _selectedPackage != null
-                                  ? '${selectedPricing.roleEmoji}  ${selectedPricing.roleLabel} Planını Al'
-                                  : '${selectedPricing.roleEmoji}  Devam Et',
-                              onPressed: _purchase,
-                            ),
+                      : PrimaryButton(
+                          label: '${selectedPricing.roleEmoji}  ${selectedPricing.roleLabel} Planını Al',
+                          onPressed: _purchase,
+                        ),
 
                   const SizedBox(height: 10),
 
@@ -318,30 +278,10 @@ class _SubscriptionScreenState extends ConsumerState<SubscriptionScreen> {
                     onPressed: _continueFree,
                   ),
 
-                  const SizedBox(height: 14),
-
-                  Center(
-                    child: _restoring
-                        ? const SizedBox(
-                            height: 20, width: 20,
-                            child: CircularProgressIndicator(strokeWidth: 2, color: AppColors.primary),
-                          )
-                        : TextButton(
-                            onPressed: _restore,
-                            child: const Text(
-                              'Satın Alımları Geri Yükle',
-                              style: TextStyle(
-                                fontSize: 13,
-                                color: AppColors.textSecondary,
-                                decoration: TextDecoration.underline,
-                              ),
-                            ),
-                          ),
-                  ),
                   const SizedBox(height: 4),
                   const Center(
                     child: Text(
-                      'Kredi kartı gerekmez · İstediğin zaman iptal et',
+                      'Güvenli ödeme · iyzico · İstediğin zaman iptal et',
                       style: AppTextStyles.caption,
                     ),
                   ),

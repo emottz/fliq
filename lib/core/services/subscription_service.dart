@@ -1,85 +1,57 @@
-import 'package:flutter/foundation.dart';
-import 'package:purchases_flutter/purchases_flutter.dart';
+import 'package:cloud_firestore/cloud_firestore.dart';
+import 'package:cloud_functions/cloud_functions.dart';
+import 'package:firebase_auth/firebase_auth.dart';
 
-// Çalıştırma: flutter run --dart-define=RC_KEY_ANDROID=YOUR_KEY
-// Build:      flutter build appbundle --dart-define=RC_KEY_ANDROID=YOUR_KEY
-const _rcKeyAndroid = String.fromEnvironment('RC_KEY_ANDROID');
-const _rcKeyIos = String.fromEnvironment('RC_KEY_IOS');
-
-/// RevenueCat'i saran abonelik servisi.
-/// Web veya API key yoksa tüm metotlar güvenli biçimde hayır döner.
+/// iyzico tabanlı abonelik servisi.
+/// Ödeme akışı Cloud Functions üzerinden yapılır,
+/// isPremium durumu doğrudan Firestore'dan okunur.
 class SubscriptionService {
-  bool get isSupported {
-    if (kIsWeb) return false;
-    if (defaultTargetPlatform == TargetPlatform.android) return _rcKeyAndroid.isNotEmpty;
-    if (defaultTargetPlatform == TargetPlatform.iOS) return _rcKeyIos.isNotEmpty;
-    return false;
-  }
+  FirebaseFirestore get _db => FirebaseFirestore.instance;
+  FirebaseFunctions get _fn => FirebaseFunctions.instance;
 
-  String get _apiKey => defaultTargetPlatform == TargetPlatform.iOS ? _rcKeyIos : _rcKeyAndroid;
-
-  Future<void> init(String userId) async {
-    if (!isSupported) return;
-    try {
-      await Purchases.configure(
-        PurchasesConfiguration(_apiKey)..appUserID = userId,
-      );
-    } catch (_) {}
-  }
+  // ── Premium durumu ──────────────────────────────────────────────────────────
 
   Future<bool> get isPremium async {
-    if (!isSupported) return false;
+    final uid = FirebaseAuth.instance.currentUser?.uid;
+    if (uid == null) return false;
     try {
-      final info = await Purchases.getCustomerInfo();
-      return info.entitlements.active.containsKey('premium');
+      final doc = await _db.collection('users').doc(uid).get();
+      return doc.data()?['isPremium'] == true;
     } catch (_) {
       return false;
     }
   }
 
-  Future<Offerings?> getOfferings() async {
-    if (!isSupported) return null;
-    try {
-      return await Purchases.getOfferings();
-    } catch (_) {
-      return null;
-    }
+  /// Gerçek zamanlı premium stream — ödeme tamamlanınca otomatik güncellenir.
+  Stream<bool> premiumStream(String uid) {
+    return _db
+        .collection('users')
+        .doc(uid)
+        .snapshots()
+        .map((snap) => snap.data()?['isPremium'] == true);
   }
 
-  /// Paketi satın alır. (true, null) → başarılı, (false, null) → iptal edildi,
-  /// (false, mesaj) → hata.
-  Future<(bool, String?)> purchasePackage(Package package) async {
-    if (!isSupported) return (false, 'Bu platformda satın alma desteklenmiyor.');
-    try {
-      final result = await Purchases.purchasePackage(package);
-      final active = result.customerInfo.entitlements.active.containsKey('premium');
-      return (active, null);
-    } on PurchasesError catch (e) {
-      if (e.code == PurchasesErrorCode.purchaseCancelledError) return (false, null);
-      return (false, e.message);
-    } catch (e) {
-      return (false, e.toString());
-    }
-  }
+  // ── iyzico ödeme sayfası oluştur ────────────────────────────────────────────
 
-  /// Önceki satın alımları geri yükler.
-  Future<bool> restorePurchases() async {
-    if (!isSupported) return false;
-    try {
-      final info = await Purchases.restorePurchases();
-      return info.entitlements.active.containsKey('premium');
-    } catch (_) {
-      return false;
-    }
-  }
+  /// Başarılı olursa iyzico ödeme sayfasının URL'ini döner,
+  /// hata varsa exception fırlatır.
+  Future<String> createCheckout({
+    required String planKey,
+    required bool annual,
+  }) async {
+    final user = FirebaseAuth.instance.currentUser;
+    if (user == null) throw Exception('Giriş yapılmamış.');
 
-  void addListener(void Function(CustomerInfo) listener) {
-    if (!isSupported) return;
-    Purchases.addCustomerInfoUpdateListener(listener);
-  }
+    final callable = _fn.httpsCallable('createIyzicoCheckout');
+    final result = await callable.call({
+      'planKey': planKey,
+      'annual': annual,
+      'email': user.email ?? '',
+      'name': user.displayName ?? '',
+    });
 
-  void removeListener(void Function(CustomerInfo) listener) {
-    if (!isSupported) return;
-    Purchases.removeCustomerInfoUpdateListener(listener);
+    final url = result.data['paymentPageUrl'] as String?;
+    if (url == null || url.isEmpty) throw Exception('Ödeme sayfası oluşturulamadı.');
+    return url;
   }
 }

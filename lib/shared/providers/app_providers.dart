@@ -104,27 +104,13 @@ class UserProfileNotifier extends AsyncNotifier<UserProfileModel?> {
 
 final subscriptionServiceProvider = Provider<SubscriptionService>((ref) => SubscriptionService());
 
-final isPremiumProvider = AsyncNotifierProvider<PremiumNotifier, bool>(() => PremiumNotifier());
-
-class PremiumNotifier extends AsyncNotifier<bool> {
-  @override
-  Future<bool> build() async {
-    // Auth değişince RevenueCat'i yeniden başlat
-    final user = ref.watch(authStateProvider).value;
-    final service = ref.read(subscriptionServiceProvider);
-    if (user != null) {
-      await service.init(user.uid);
-    }
-    return service.isPremium;
-  }
-
-  Future<void> refresh() async {
-    state = const AsyncLoading();
-    state = await AsyncValue.guard(
-      () => ref.read(subscriptionServiceProvider).isPremium,
-    );
-  }
-}
+/// Firestore stream üzerinden gerçek zamanlı premium durumu.
+/// Ödeme tamamlanınca Cloud Function Firestore'u günceller → otomatik yansır.
+final isPremiumProvider = StreamProvider<bool>((ref) {
+  final user = ref.watch(authStateProvider).value;
+  if (user == null) return Stream.value(false);
+  return ref.read(subscriptionServiceProvider).premiumStream(user.uid);
+});
 
 // ── Hearts ────────────────────────────────────────────────────────────────────
 
