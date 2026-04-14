@@ -77,7 +77,6 @@ class ExamListScreen extends ConsumerWidget {
                     ],
 
                     _DailyExamCard(
-                      isPremium: isPremium,
                       onTap: () => _startExam(context, ref, {
                         'count': 20,
                         'mode': 'daily',
