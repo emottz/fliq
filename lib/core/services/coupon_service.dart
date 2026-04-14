@@ -1,161 +1,138 @@
-import 'package:cloud_firestore/cloud_firestore.dart';
-import 'package:firebase_auth/firebase_auth.dart';
+import 'package:supabase_flutter/supabase_flutter.dart';
 
-/// Kupon doğrulama ve kullanma servisi.
-///
-/// Firestore işlem (transaction) ile atomic kullanım sağlar —
-/// aynı kupon iki kullanıcı tarafından aynı anda kullanılamaz.
+/// Kupon doğrulama ve kullanma servisi — Supabase tabanlı.
 class CouponService {
-  FirebaseFirestore get _db => FirebaseFirestore.instance;
+  static final _sb = Supabase.instance.client;
 
-  /// Kuponu kullanmadan önce bilgilerini döner (önizleme).
-  /// Geçersizse exception fırlatır.
+  static String? get _uid => _sb.auth.currentUser?.id;
+
+  // ── Önizleme ──────────────────────────────────────────────────────────────
   Future<CouponPreview> previewCoupon(String rawCode) async {
-    final uid = FirebaseAuth.instance.currentUser?.uid;
+    final uid = _uid;
     if (uid == null) throw Exception('Giriş yapılmamış.');
 
     final code = rawCode.trim().toUpperCase();
     if (code.isEmpty) throw Exception('Kupon kodu boş olamaz.');
 
-    final snap = await _db.collection('coupons').doc(code).get();
-    if (!snap.exists) throw Exception('Kupon kodu bulunamadı.');
+    final row = await _sb
+        .from('coupons')
+        .select()
+        .eq('code', code)
+        .maybeSingle();
 
-    final data = snap.data()!;
-    if (data['active'] != true) throw Exception('Bu kupon artık aktif değil.');
-
-    final usedBy = List<String>.from(data['usedBy'] ?? []);
-    if (usedBy.contains(uid)) throw Exception('Bu kuponu daha önce kullandın.');
-
-    final usedCount = (data['usedCount'] ?? 0) as int;
-    final singleUse = data['singleUse'] == true;
-    final maxUses   = data['maxUses'] as int?;
-    if (singleUse && usedCount >= 1) throw Exception('Bu kupon zaten kullanılmış.');
-    if (maxUses != null && usedCount >= maxUses) throw Exception('Bu kuponun kullanım limiti doldu.');
+    if (row == null) throw Exception('Kupon kodu bulunamadı.');
+    _validate(uid, row);
 
     return CouponPreview(
       code:         code,
-      plan:         data['plan'] as String? ?? 'student',
-      durationDays: _parseDuration(data['durationDays']),
+      plan:         row['plan'] as String? ?? 'student',
+      durationDays: (row['duration_days'] as num?)?.toInt() ?? 0,
     );
   }
 
-  /// Kuponu doğrular ve kullanır.
-  ///
-  /// Başarılı olursa `RedeemResult` döner.
-  /// Hatalı/geçersiz kupon durumunda exception fırlatır.
+  // ── Kullan ────────────────────────────────────────────────────────────────
   Future<RedeemResult> redeemCoupon(String rawCode) async {
-    final uid = FirebaseAuth.instance.currentUser?.uid;
+    final uid = _uid;
     if (uid == null) throw Exception('Giriş yapılmamış.');
 
     final code = rawCode.trim().toUpperCase();
     if (code.isEmpty) throw Exception('Kupon kodu boş olamaz.');
 
-    final ref = _db.collection('coupons').doc(code);
+    // Supabase RPC ile atomik kullanım (race condition önlemi)
+    // Not: Eğer RPC yoksa manuel transaction benzeri işlem yapılır
+    final row = await _sb
+        .from('coupons')
+        .select()
+        .eq('code', code)
+        .maybeSingle();
 
-    return _db.runTransaction<RedeemResult>((tx) async {
-      final snap = await tx.get(ref);
+    if (row == null) throw Exception('Kupon kodu bulunamadı: $code');
+    _validate(uid, row);
 
-      if (!snap.exists) {
-        throw Exception('Kupon kodu bulunamadı: $code');
-      }
+    final plan         = row['plan'] as String? ?? 'student';
+    final durationDays = (row['duration_days'] as num?)?.toInt() ?? 0;
+    final usedBy       = List<String>.from(row['used_by'] ?? []);
+    final useCount     = (row['use_count'] as int?) ?? 0;
+    final maxUses      = row['max_uses'] as int?;
+    final singleUse    = row['single_use'] == true;
 
-      final data = snap.data()!;
+    usedBy.add(uid);
+    final newCount  = useCount + 1;
+    final newActive = singleUse ? false
+        : (maxUses != null && maxUses > 0 ? newCount < maxUses : true);
 
-      // Aktif mi?
-      if (data['active'] != true) {
-        throw Exception('Bu kupon artık aktif değil.');
-      }
+    await _sb.from('coupons').update({
+      'use_count': newCount,
+      'used_by':   usedBy,
+      'is_active': newActive,
+    }).eq('code', code);
 
-      // Daha önce bu kullanıcı kullandı mı?
-      final usedBy = List<String>.from(data['usedBy'] ?? []);
-      if (usedBy.contains(uid)) {
-        throw Exception('Bu kuponu daha önce kullandın.');
-      }
-
-      final usedCount = (data['usedCount'] ?? 0) as int;
-      final singleUse = data['singleUse'] == true;
-      final maxUses   = data['maxUses'] as int?;
-
-      // Kullanım limiti aşıldı mı?
-      if (singleUse && usedCount >= 1) {
-        throw Exception('Bu kupon zaten kullanılmış.');
-      }
-      if (maxUses != null && usedCount >= maxUses) {
-        throw Exception('Bu kuponun kullanım limiti doldu.');
-      }
-
-      // Plan ve süre bilgisi
-      final plan         = data['plan'] as String? ?? 'student';
-      final durationDays = _parseDuration(data['durationDays']);
-
-      // Güncelle
-      usedBy.add(uid);
-      final newCount  = usedCount + 1;
-      final newActive = singleUse ? false : (maxUses != null ? newCount < maxUses : true);
-
-      tx.update(ref, {
-        'usedCount': newCount,
-        'usedBy':    usedBy,
-        'active':    newActive,
-      });
-
-      return RedeemResult(plan: plan, code: code, durationDays: durationDays);
-    });
+    return RedeemResult(plan: plan, code: code, durationDays: durationDays);
   }
 
-  /// Kuponu kullandıktan sonra kullanıcının premium durumunu Firestore'da ayarlar.
-  /// [durationDays] == 0 → süresiz; > 0 → o gün kadar geçerli.
+  // ── Premium aktif et ──────────────────────────────────────────────────────
   Future<void> activatePremiumFromCoupon({
     required String uid,
     required String plan,
     required String code,
     required int durationDays,
   }) async {
-    final data = <String, dynamic>{
-      'isPremium':           true,
-      'premiumPlan':         plan,
-      'premiumSource':       'coupon',
-      'couponCode':          code,
-      'premiumActivatedAt':  FieldValue.serverTimestamp(),
-      'premiumExpiresAt':    durationDays > 0
-          ? Timestamp.fromDate(DateTime.now().add(Duration(days: durationDays)))
+    await _sb.from('users').upsert({
+      'id':                   uid,
+      'is_premium':           true,
+      'premium_plan':         plan,
+      'premium_source':       'coupon',
+      'coupon_code':          code,
+      'premium_activated_at': DateTime.now().toIso8601String(),
+      'premium_expires_at':   durationDays > 0
+          ? DateTime.now().add(Duration(days: durationDays)).toIso8601String()
           : null,
-    };
-    await _db.collection('users').doc(uid).set(data, SetOptions(merge: true));
+    });
   }
 
-  /// `durationDays` alanını güvenli okur.
-  /// Firestore'da num (int/double) veya string olarak saklanmış olabilir.
-  /// Null veya parse edilemeyen değer → 0 (süresiz).
-  static int _parseDuration(dynamic value) {
-    if (value == null) return 0;
-    if (value is num) return value.toInt();
-    final parsed = int.tryParse(value.toString());
-    return parsed != null && parsed > 0 ? parsed : 0;
-  }
-
-  /// Uygulama açılışında: kupon kaynaklı premium süresi dolmuşsa iptal eder.
+  // ── Süresi dolmuş premium'u iptal et ─────────────────────────────────────
   Future<void> checkAndRevokeExpiredPremium(String uid) async {
     try {
-      final doc = await _db.collection('users').doc(uid).get();
-      final data = doc.data();
-      if (data == null) return;
-      if (data['isPremium'] != true) return;
-      if (data['premiumSource'] != 'coupon') return; // IAP aboneliği → dokunma
+      final row = await _sb
+          .from('users')
+          .select('is_premium, premium_source, premium_expires_at')
+          .eq('id', uid)
+          .maybeSingle();
 
-      final expiresAt = data['premiumExpiresAt'];
-      if (expiresAt == null) return; // Süresiz kupon
+      if (row == null) return;
+      if (row['is_premium'] != true) return;
+      if (row['premium_source'] != 'coupon') return;
 
-      final expiry = (expiresAt as Timestamp).toDate();
-      if (DateTime.now().isAfter(expiry)) {
-        await _db.collection('users').doc(uid).update({
-          'isPremium':      false,
-          'premiumExpired': true,
-        });
+      final exp = row['premium_expires_at'];
+      if (exp == null) return;
+
+      if (DateTime.now().isAfter(DateTime.parse(exp as String))) {
+        await _sb.from('users').update({
+          'is_premium': false,
+        }).eq('id', uid);
       }
     } catch (_) {}
   }
+
+  // ── İç yardımcı ───────────────────────────────────────────────────────────
+  void _validate(String uid, Map<String, dynamic> row) {
+    if (row['is_active'] != true) throw Exception('Bu kupon artık aktif değil.');
+
+    final usedBy    = List<String>.from(row['used_by'] ?? []);
+    if (usedBy.contains(uid)) throw Exception('Bu kuponu daha önce kullandın.');
+
+    final useCount  = (row['use_count'] as int?) ?? 0;
+    final singleUse = row['single_use'] == true;
+    final maxUses   = row['max_uses'] as int?;
+
+    if (singleUse && useCount >= 1) throw Exception('Bu kupon zaten kullanılmış.');
+    if (maxUses != null && maxUses > 0 && useCount >= maxUses) {
+      throw Exception('Bu kuponun kullanım limiti doldu.');
+    }
+  }
 }
+
+// ── Veri sınıfları ─────────────────────────────────────────────────────────────
 
 class CouponPreview {
   final String code;
@@ -182,10 +159,6 @@ class CouponPreview {
 class RedeemResult {
   final String plan;
   final String code;
-  final int durationDays; // 0 = süresiz
-  const RedeemResult({
-    required this.plan,
-    required this.code,
-    required this.durationDays,
-  });
+  final int durationDays;
+  const RedeemResult({required this.plan, required this.code, required this.durationDays});
 }

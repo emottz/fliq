@@ -1,100 +1,101 @@
-import 'package:cloud_firestore/cloud_firestore.dart';
-import 'package:cloud_functions/cloud_functions.dart';
-import 'package:firebase_auth/firebase_auth.dart';
+import 'package:supabase_flutter/supabase_flutter.dart';
 
-/// iyzico tabanlı abonelik servisi.
-/// Ödeme akışı Cloud Functions üzerinden yapılır,
-/// isPremium durumu doğrudan Firestore'dan okunur.
+/// Supabase tabanlı abonelik servisi.
+/// iyzico ödeme akışı Supabase Edge Functions üzerinden yapılır.
 class SubscriptionService {
-  FirebaseFirestore get _db => FirebaseFirestore.instance;
-  FirebaseFunctions get _fn => FirebaseFunctions.instance;
+  static final _sb = Supabase.instance.client;
 
   // ── Premium durumu ──────────────────────────────────────────────────────────
 
   Future<bool> get isPremium async {
-    final uid = FirebaseAuth.instance.currentUser?.uid;
+    final uid = _sb.auth.currentUser?.id;
     if (uid == null) return false;
     try {
-      final doc = await _db.collection('users').doc(uid).get();
-      return doc.data()?['isPremium'] == true;
+      final row = await _sb
+          .from('users')
+          .select('is_premium, premium_expires_at')
+          .eq('id', uid)
+          .maybeSingle();
+      if (row == null || row['is_premium'] != true) return false;
+      final exp = row['premium_expires_at'];
+      if (exp != null && DateTime.now().isAfter(DateTime.parse(exp))) return false;
+      return true;
     } catch (_) {
       return false;
     }
   }
 
   /// Gerçek zamanlı premium stream — ödeme/kupon tamamlanınca otomatik güncellenir.
-  /// Süre dolan kupon premium'larını false olarak döner.
-  Stream<bool> premiumStream(String uid) {
-    return _db
-        .collection('users')
-        .doc(uid)
-        .snapshots()
-        .map((snap) {
-          final data = snap.data();
-          if (data?['isPremium'] != true) return false;
-          final expiresAt = data?['premiumExpiresAt'];
-          if (expiresAt != null) {
-            final expiry = (expiresAt as Timestamp).toDate();
-            if (DateTime.now().isAfter(expiry)) return false;
-          }
-          return true;
-        });
+  Stream<bool> premiumStream(String uid) async* {
+    // Initial fetch
+    yield await isPremium;
+
+    // Poll every 30 seconds for updates (avoids Realtime WebSocket issues on web)
+    await for (final _ in Stream.periodic(const Duration(seconds: 30))) {
+      try {
+        yield await isPremium;
+      } catch (_) {
+        yield false;
+      }
+    }
   }
 
   // ── Google Play / App Store IAP aktivasyonu ─────────────────────────────────
 
-  /// Google Play Billing satın alındıktan sonra Firestore'da premium'u aktif eder.
-  /// Opsiyonel: Cloud Function üzerinden sunucu tarafı doğrulama da yapılabilir.
   Future<void> activatePremiumFromIap({
     required String uid,
     required String productId,
     String? purchaseToken,
   }) async {
     try {
-      // Sunucu doğrulaması varsa Cloud Function çağır
       if (purchaseToken != null && purchaseToken.isNotEmpty) {
-        final callable = _fn.httpsCallable('verifyGooglePlayPurchase');
-        await callable.call({
+        // Supabase Edge Function üzerinden sunucu doğrulaması
+        await _sb.functions.invoke('verify-google-play-purchase', body: {
           'uid': uid,
           'productId': productId,
           'purchaseToken': purchaseToken,
         });
       } else {
-        // Doğrulama yoksa doğrudan Firestore'a yaz (geliştirme/iOS)
-        await _db.collection('users').doc(uid).set(
-          {'isPremium': true, 'premiumPlan': productId, 'premiumSource': 'iap'},
-          SetOptions(merge: true),
-        );
+        await _sb.from('users').upsert({
+          'id': uid,
+          'is_premium': true,
+          'premium_plan': productId,
+          'premium_source': 'iap',
+          'premium_activated_at': DateTime.now().toIso8601String(),
+        });
       }
     } catch (_) {
-      // Sunucu hatası — yerel olarak yaz, senkron sonra düzelir
-      await _db.collection('users').doc(uid).set(
-        {'isPremium': true, 'premiumPlan': productId, 'premiumSource': 'iap'},
-        SetOptions(merge: true),
-      );
+      await _sb.from('users').upsert({
+        'id': uid,
+        'is_premium': true,
+        'premium_plan': productId,
+        'premium_source': 'iap',
+        'premium_activated_at': DateTime.now().toIso8601String(),
+      });
     }
   }
 
   // ── iyzico ödeme sayfası oluştur ────────────────────────────────────────────
 
-  /// Başarılı olursa iyzico ödeme sayfasının URL'ini döner,
-  /// hata varsa exception fırlatır.
   Future<String> createCheckout({
     required String planKey,
     required bool annual,
   }) async {
-    final user = FirebaseAuth.instance.currentUser;
+    final user = _sb.auth.currentUser;
     if (user == null) throw Exception('Giriş yapılmamış.');
 
-    final callable = _fn.httpsCallable('createIyzicoCheckout');
-    final result = await callable.call({
+    final res = await _sb.functions.invoke('create-iyzico-checkout', body: {
       'planKey': planKey,
       'annual': annual,
       'email': user.email ?? '',
-      'name': user.displayName ?? '',
+      'name': user.userMetadata?['full_name'] ?? '',
     });
 
-    final url = result.data['paymentPageUrl'] as String?;
+    if (res.status != 200) {
+      throw Exception('Ödeme sayfası oluşturulamadı.');
+    }
+
+    final url = (res.data as Map<String, dynamic>?)?['paymentPageUrl'] as String?;
     if (url == null || url.isEmpty) throw Exception('Ödeme sayfası oluşturulamadı.');
     return url;
   }

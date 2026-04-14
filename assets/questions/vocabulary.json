@@ -6373,5 +6373,1535 @@
     "passage": null,
     "passageTitle": null,
     "passageId": null
+  },
+  {
+    "id": 1906,
+    "cat": "vocabulary",
+    "orig": 1906,
+    "q": "Be ………… when you apply heat near the materials that can burn.",
+    "opts": [
+      "polite",
+      "helpful",
+      "careful",
+      "clever"
+    ],
+    "ans": 2,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 1907,
+    "cat": "vocabulary",
+    "orig": 1907,
+    "q": "‘………… this procedure for galleys with more than one support bracket and tie rod assemblies.’",
+    "opts": [
+      "Provide",
+      "Repeat",
+      "Connect",
+      "Remove"
+    ],
+    "ans": 1,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 1908,
+    "cat": "vocabulary",
+    "orig": 1908,
+    "q": "Replace the passenger seat(s) that does not operate correctly. The word ‘operate’ means: ………….",
+    "opts": [
+      "function",
+      "affect",
+      "manage",
+      "change"
+    ],
+    "ans": 0,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 1909,
+    "cat": "vocabulary",
+    "orig": 1909,
+    "q": "Remove and replace the stabilizer fitting stop as needed to help the …………of the galley bearing block.",
+    "opts": [
+      "install",
+      "installs",
+      "installation",
+      "installed"
+    ],
+    "ans": 2,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 1910,
+    "cat": "vocabulary",
+    "orig": 1910,
+    "q": "The decorative surfaces in the airplane are ………… different materials.",
+    "opts": [
+      "asked for",
+      "accused of",
+      "looked for",
+      "made of"
+    ],
+    "ans": 3,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 1911,
+    "cat": "vocabulary",
+    "orig": 1911,
+    "q": "If the carpet is badly stained or dirty, we recommend that you …………the carpet from the airplane and    dry clean it.",
+    "opts": [
+      "clear",
+      "remove",
+      "displace",
+      "pull"
+    ],
+    "ans": 1,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 1912,
+    "cat": "vocabulary",
+    "orig": 1912,
+    "q": "Disconnect the hose from the lining assembly. The word ‘disconnect’ does not mean: ………… .",
+    "opts": [
+      "demount",
+      "disassemble",
+      "dismantle",
+      "disappear"
+    ],
+    "ans": 3,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 1913,
+    "cat": "vocabulary",
+    "orig": 1913,
+    "q": "Do the procedure ………… for the channel B of the FADEC.",
+    "opts": [
+      "over",
+      "then",
+      "more",
+      "down"
+    ],
+    "ans": 1,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 1914,
+    "cat": "vocabulary",
+    "orig": 1914,
+    "q": "Make sure that igniter 1 of the engine 1 makes a ………… for 10 seconds and after about 2 seconds the igniter 2 of the engine 1.",
+    "opts": [
+      "mistake",
+      "plan",
+      "call",
+      "noise"
+    ],
+    "ans": 3,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 1915,
+    "cat": "vocabulary",
+    "orig": 1915,
+    "q": "The engine speed ………… from ground idle to flight idle.",
+    "opts": [
+      "becomes",
+      "leaves",
+      "increases",
+      "brings"
+    ],
+    "ans": 2,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 1916,
+    "cat": "vocabulary",
+    "orig": 1916,
+    "q": "When the capacitors ………… approximately 2850 volts, they discharge a combined voltage of approximately 5700 volts.",
+    "opts": [
+      "reach",
+      "stand",
+      "write",
+      "move"
+    ],
+    "ans": 0,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 1917,
+    "cat": "vocabulary",
+    "orig": 1917,
+    "q": "Voltage output can be dangerous. Do not touch the electrical contacts, exciters may …………  an electrical charge even when they are not energized.",
+    "opts": [
+      "happen",
+      "continue",
+      "spend",
+      "contain"
+    ],
+    "ans": 3,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 1918,
+    "cat": "vocabulary",
+    "orig": 1918,
+    "q": "The ignition exciter ………… of an input circuit, rectifier circuit and storage capacitor circuit, and a discharge circuit.",
+    "opts": [
+      "depends",
+      "interests",
+      "consists",
+      "keen"
+    ],
+    "ans": 2,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 1919,
+    "cat": "vocabulary",
+    "orig": 1919,
+    "q": "The ignition leads are constructed of insulated wire in a sealed flexible conduit having a copper ………… braid and a nickel outer braid.",
+    "opts": [
+      "inner",
+      "external",
+      "outside",
+      "center"
+    ],
+    "ans": 0,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 1920,
+    "cat": "vocabulary",
+    "orig": 1920,
+    "q": "Start the engine and let it become ………… at minimum idle for 2 minutes.",
+    "opts": [
+      "different",
+      "stable",
+      "soft",
+      "broken"
+    ],
+    "ans": 1,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 1986,
+    "cat": "vocabulary",
+    "orig": 1986,
+    "q": "If you find the area ………… with acid or alkali spillage, do the cleaning procedure of the related area.",
+    "opts": [
+      "performed",
+      "illuminated",
+      "contaminated",
+      "replenished"
+    ],
+    "ans": 2,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 1987,
+    "cat": "vocabulary",
+    "orig": 1987,
+    "q": "N, R or D …………  pages which are New, Revised or Deleted respectively.",
+    "opts": [
+      "applies",
+      "occurs",
+      "decreases",
+      "indicates"
+    ],
+    "ans": 0,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 1988,
+    "cat": "vocabulary",
+    "orig": 1988,
+    "q": "Visually inspect the ………… area for signs of fluid spillage.",
+    "opts": [
+      "applicable",
+      "retractable",
+      "breakable",
+      "adjustable"
+    ],
+    "ans": 1,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 1989,
+    "cat": "vocabulary",
+    "orig": 1989,
+    "q": "Insert the affected pages and …………  the Record of Revisions",
+    "opts": [
+      "take-off",
+      "complete",
+      "loose",
+      "repeat"
+    ],
+    "ans": 3,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 1990,
+    "cat": "vocabulary",
+    "orig": 1990,
+    "q": "Do ………… to find the cause of the sewage spillage and do the necessary action.",
+    "opts": [
+      "a selection",
+      "an oscillation",
+      "an inspection",
+      "an isolation"
+    ],
+    "ans": 0,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 1991,
+    "cat": "vocabulary",
+    "orig": 1991,
+    "q": "…………  the torque switch on top of the torque switch mechanism  assembly.",
+    "opts": [
+      "Set",
+      "Cut",
+      "Play",
+      "Drop"
+    ],
+    "ans": 2,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 1992,
+    "cat": "vocabulary",
+    "orig": 1992,
+    "q": "Turn the actuator assembly so that the electrical connector is toward the …………  end of the airplane.",
+    "opts": [
+      "dent",
+      "plug",
+      "aft",
+      "chip"
+    ],
+    "ans": 1,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 1993,
+    "cat": "vocabulary",
+    "orig": 1993,
+    "q": "The HOT AIR pb-sw on the CARGO HEAT overhead panel is ………… to OFF.",
+    "opts": [
+      "met",
+      "moved",
+      "closed",
+      "set"
+    ],
+    "ans": 0,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 1994,
+    "cat": "vocabulary",
+    "orig": 1994,
+    "q": "The avionics ventilation system is ………… before each flight.",
+    "opts": [
+      "looked for",
+      "checked",
+      "given",
+      "taken"
+    ],
+    "ans": 3,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 1995,
+    "cat": "vocabulary",
+    "orig": 1995,
+    "q": "Unequal passengers distribution may cause ………… temperature in the rear cabin.",
+    "opts": [
+      "practical",
+      "alternative",
+      "high",
+      "superior"
+    ],
+    "ans": 2,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 1996,
+    "cat": "vocabulary",
+    "orig": 1996,
+    "q": "It is ………… that repairs be accomplished at the earliest opportunity.",
+    "opts": [
+      "important",
+      "portable",
+      "partial",
+      "impossible"
+    ],
+    "ans": 0,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 1997,
+    "cat": "vocabulary",
+    "orig": 1997,
+    "q": "The cockpit handset interphone is used for ………… between the cockpit and the cabin.",
+    "opts": [
+      "condition",
+      "combination",
+      "correction",
+      "communication"
+    ],
+    "ans": 1,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 1998,
+    "cat": "vocabulary",
+    "orig": 1998,
+    "q": "The passenger ………… can be heard throughout the cabin during the flight.",
+    "opts": [
+      "announcement",
+      "arrangement",
+      "adjustment",
+      "engagement"
+    ],
+    "ans": 3,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 1999,
+    "cat": "vocabulary",
+    "orig": 1999,
+    "q": "In the case of depressurization at altitudes higher than 37 000 ft (11 200 m), oxygen masks may ………… during the descent.",
+    "opts": [
+      "take away",
+      "drop down",
+      "put up",
+      "turn down"
+    ],
+    "ans": 2,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 2000,
+    "cat": "vocabulary",
+    "orig": 2000,
+    "q": "The avionics skin exchanger inlet bypass valve is …………  secured in the closed position.",
+    "opts": [
+      "accidentally",
+      "clearly",
+      "manually",
+      "purposefully"
+    ],
+    "ans": 0,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 2066,
+    "cat": "vocabulary",
+    "orig": 2066,
+    "q": "Control column position transmitters ………… control column information to the FADU.",
+    "opts": [
+      "get – götürmek/ulaştırmak",
+      "send - göndermek",
+      "travel  - seyahat etmek",
+      "leave – ayrılmak/bırakmak"
+    ],
+    "ans": 0,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 2067,
+    "cat": "vocabulary",
+    "orig": 2067,
+    "q": "The bank angle of the engine can sometimes get less than 6 degrees when you ………… the CWS mode.",
+    "opts": [
+      "Start - başlatmak",
+      "Will – gelecek zaman aux.",
+      "do  - yapmak",
+      "visit – ziyaret etmek"
+    ],
+    "ans": 0,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 2068,
+    "cat": "vocabulary",
+    "orig": 2068,
+    "q": "The exact ………… of the concerned connection point can be measured vertically.",
+    "opts": [
+      "locate",
+      "located",
+      "location",
+      "locative"
+    ],
+    "ans": 0,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 2069,
+    "cat": "vocabulary",
+    "orig": 2069,
+    "q": "General wiring designs used on transport ………… can be very different in models.",
+    "opts": [
+      "airport",
+      "aircraft",
+      "airholder",
+      "aircar"
+    ],
+    "ans": 0,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 2070,
+    "cat": "vocabulary",
+    "orig": 2070,
+    "q": "No single electrical failure should simultaneously affect electrical supplies of aircraft systems 1 and 2. The underlined word “failure” can mean:",
+    "opts": [
+      "something good",
+      "something interesting",
+      "something fast",
+      "something bad"
+    ],
+    "ans": 0,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 2071,
+    "cat": "vocabulary",
+    "orig": 2071,
+    "q": "For intrinsic safety reasons, wiring associated with the fuel quantity system must be included in the specific Q route. The opposite of the underlined word “safety” is:",
+    "opts": [
+      "happiness",
+      "slow",
+      "quiet",
+      "danger"
+    ],
+    "ans": 0,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 2072,
+    "cat": "vocabulary",
+    "orig": 2072,
+    "q": "Rib 13 is sealed to separate the main component and the feed tank areas. The underlined word “main” will most likely have the meaning of:",
+    "opts": [
+      "short",
+      "close",
+      "important",
+      "expensive"
+    ],
+    "ans": 0,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 2073,
+    "cat": "vocabulary",
+    "orig": 2073,
+    "q": "The ………… of the unbalance on the filter and piston assembly allows supply pressure to overcome spring pressure.",
+    "opts": [
+      "change\t- değişim",
+      "electrical - elektriksel",
+      "aircraft\t - hava aracı",
+      "single – tekil/tek"
+    ],
+    "ans": 0,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 2074,
+    "cat": "vocabulary",
+    "orig": 2074,
+    "q": "The APU is installed to supply the aircraft with bleed air for air conditioning during turnaround. The opposite of the underlined word “installed” could be:",
+    "opts": [
+      "placed",
+      "removed",
+      "changed",
+      "joined"
+    ],
+    "ans": 0,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 2075,
+    "cat": "vocabulary",
+    "orig": 2075,
+    "q": "All relevant safety precautions should be observed when working on the system. The word “observed” can have the following meaning:",
+    "opts": [
+      "opened",
+      "followed",
+      "translated",
+      "tried"
+    ],
+    "ans": 0,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 2076,
+    "cat": "vocabulary",
+    "orig": 2076,
+    "q": "NH (High Pressure) system consists of a combination of seven stage axial and other components. The underlined word “combination “can mean:",
+    "opts": [
+      "production",
+      "rotation",
+      "mixture",
+      "attachment"
+    ],
+    "ans": 0,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 2077,
+    "cat": "vocabulary",
+    "orig": 2077,
+    "q": "Too low fuel pressure can result in engine faults or engine failure.  The word \"failure\" is the opposite of:",
+    "opts": [
+      "satisfaction",
+      "problem",
+      "success",
+      "damage"
+    ],
+    "ans": 0,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 2078,
+    "cat": "vocabulary",
+    "orig": 2078,
+    "q": "Pressurization indication and warning   describes the equipment provided for monitoring cabin pressure.  The word \" monitoring\" is the opposite of:",
+    "opts": [
+      "controlling",
+      "recording",
+      "omitting",
+      "managing"
+    ],
+    "ans": 0,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 2079,
+    "cat": "vocabulary",
+    "orig": 2079,
+    "q": "The ASA warning and aural alert can be reset if the pilot pushes the A/P disconnect switch. The word \"disconnect\" is closest in meaning to:",
+    "opts": [
+      "join",
+      "cut off",
+      "unite",
+      "combine"
+    ],
+    "ans": 0,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 2080,
+    "cat": "vocabulary",
+    "orig": 2080,
+    "q": "The lubrication system has to be designed such that operating temperatures will not exceed the specified limits. The word \"designed\" is closest in meaning to:",
+    "opts": [
+      "destroyed",
+      "ruined",
+      "broken",
+      "arranged"
+    ],
+    "ans": 0,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 2144,
+    "cat": "vocabulary",
+    "orig": 2144,
+    "q": "…………to the submenu SYSTEM DATA FLAP.",
+    "opts": [
+      "Find",
+      "Leave",
+      "Go",
+      "Close"
+    ],
+    "ans": 0,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 2145,
+    "cat": "vocabulary",
+    "orig": 2145,
+    "q": "Do a ………… and repair the aircraft wiring.",
+    "opts": [
+      "check",
+      "call",
+      "help",
+      "fall"
+    ],
+    "ans": 0,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 2146,
+    "cat": "vocabulary",
+    "orig": 2146,
+    "q": "This flow can push particles in the hydraulic fluid against the valve block filter and………… a blockage.",
+    "opts": [
+      "need",
+      "pass",
+      "use",
+      "cause"
+    ],
+    "ans": 0,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 2147,
+    "cat": "vocabulary",
+    "orig": 2147,
+    "q": "If you find a fault, correct or ………… as necessary.",
+    "opts": [
+      "take",
+      "repair",
+      "mix",
+      "dry"
+    ],
+    "ans": 0,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 2148,
+    "cat": "vocabulary",
+    "orig": 2148,
+    "q": "…………the time necessary to extend the flaps and to retract the flaps.",
+    "opts": [
+      "Join",
+      "Record",
+      "Match",
+      "Collect"
+    ],
+    "ans": 0,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 2149,
+    "cat": "vocabulary",
+    "orig": 2149,
+    "q": "If the fault …………, do a check of the aircraft wiring between the SFCC 1(2) and the CSU.",
+    "opts": [
+      "breaks",
+      "moves",
+      "continues",
+      "grows"
+    ],
+    "ans": 0,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 2150,
+    "cat": "vocabulary",
+    "orig": 2150,
+    "q": "This data will ………… you compare APPU and FPPU angles, before removal and after installation of a part of the flap transmission system.",
+    "opts": [
+      "let",
+      "charge",
+      "decide",
+      "damage"
+    ],
+    "ans": 0,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 2151,
+    "cat": "vocabulary",
+    "orig": 2151,
+    "q": "Do not use sharp and/or metallic ………… or objects to remove the windshield.",
+    "opts": [
+      "tests",
+      "floors",
+      "windows",
+      "tools"
+    ],
+    "ans": 0,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 2152,
+    "cat": "vocabulary",
+    "orig": 2152,
+    "q": "The sliding side windows have a mechanism to open, close and to ………… them.",
+    "opts": [
+      "provide",
+      "lock",
+      "fix",
+      "put"
+    ],
+    "ans": 0,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 2153,
+    "cat": "vocabulary",
+    "orig": 2153,
+    "q": "Electrical heating elements give ………… vision in all conditions.",
+    "opts": [
+      "small",
+      "outer",
+      "sliding",
+      "clear"
+    ],
+    "ans": 0,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 2154,
+    "cat": "vocabulary",
+    "orig": 2154,
+    "q": "When the measurement is …………, the measured value is shown on the LCD.",
+    "opts": [
+      "watched",
+      "looked",
+      "completed",
+      "cleaned"
+    ],
+    "ans": 0,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 2155,
+    "cat": "vocabulary",
+    "orig": 2155,
+    "q": "When the Surface Tester is off, push the POWER/DATA key and the START/STOP key at the ………… time to retract the detector.",
+    "opts": [
+      "past",
+      "similar",
+      "simple",
+      "same"
+    ],
+    "ans": 0,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 2156,
+    "cat": "vocabulary",
+    "orig": 2156,
+    "q": "The fixed side windows are ………… directly into the frame structure.",
+    "opts": [
+      "installed",
+      "repaired",
+      "made",
+      "opened"
+    ],
+    "ans": 0,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 2157,
+    "cat": "vocabulary",
+    "orig": 2157,
+    "q": "The windshields are chemically strengthened and are ………… to hail and birdstrike damage.",
+    "opts": [
+      "different",
+      "empty",
+      "resistant",
+      "necessary"
+    ],
+    "ans": 0,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 2158,
+    "cat": "vocabulary",
+    "orig": 2158,
+    "q": "Get ………… help if your skin or eyes become irritated.",
+    "opts": [
+      "historical",
+      "economical",
+      "special",
+      "medical"
+    ],
+    "ans": 0,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 2224,
+    "cat": "vocabulary",
+    "orig": 2224,
+    "q": "Isolate the green hydraulic supply to the landing gear and doors so that no damage can ………….",
+    "opts": [
+      "fail",
+      "allow",
+      "occur",
+      "ban"
+    ],
+    "ans": 0,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 2225,
+    "cat": "vocabulary",
+    "orig": 2225,
+    "q": "If a maintenance message is not shown, no ………… maintenance work is necessary.",
+    "opts": [
+      "many",
+      "more",
+      "sooner",
+      "longer"
+    ],
+    "ans": 0,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 2226,
+    "cat": "vocabulary",
+    "orig": 2226,
+    "q": "Put the safety devices and the warning notices in position before you ………… a task on or near.",
+    "opts": [
+      "start",
+      "limit",
+      "lose",
+      "install"
+    ],
+    "ans": 0,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 2227,
+    "cat": "vocabulary",
+    "orig": 2227,
+    "q": "If the ………… are not correct during the check, do the same steps one more time.",
+    "opts": [
+      "symptoms",
+      "indications",
+      "faults",
+      "problems"
+    ],
+    "ans": 0,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 2228,
+    "cat": "vocabulary",
+    "orig": 2228,
+    "q": "System 1 and System 2 each operate the baulk solenoid circuit ………….",
+    "opts": [
+      "independence",
+      "independent",
+      "independently",
+      "depend"
+    ],
+    "ans": 0,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 2229,
+    "cat": "vocabulary",
+    "orig": 2229,
+    "q": "If the component is defective, there can be ………… leakage at the port.",
+    "opts": [
+      "easy",
+      "important",
+      "difficult",
+      "medium"
+    ],
+    "ans": 0,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 2230,
+    "cat": "vocabulary",
+    "orig": 2230,
+    "q": "If there is no corrosion, the connector is in good ………….",
+    "opts": [
+      "condition",
+      "way",
+      "mood",
+      "health"
+    ],
+    "ans": 0,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 2231,
+    "cat": "vocabulary",
+    "orig": 2231,
+    "q": "Do not ………… the lamp glass with your fingers.",
+    "opts": [
+      "touch",
+      "catch",
+      "match",
+      "watch"
+    ],
+    "ans": 0,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 2232,
+    "cat": "vocabulary",
+    "orig": 2232,
+    "q": "………… the component interface and/or the adjacent area.",
+    "opts": [
+      "Make",
+      "Have",
+      "Work",
+      "Clean"
+    ],
+    "ans": 0,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 2233,
+    "cat": "vocabulary",
+    "orig": 2233,
+    "q": "The aircraft lighting system provides illumination inside and ………… of the aircraft.",
+    "opts": [
+      "top",
+      "outside",
+      "back",
+      "outer"
+    ],
+    "ans": 0,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 2234,
+    "cat": "vocabulary",
+    "orig": 2234,
+    "q": "The instrument and panel integral lighting permit the crew to ………… the indications on these panels and instruments during night flights or flights in stormy conditions.",
+    "opts": [
+      "make",
+      "like",
+      "take",
+      "read"
+    ],
+    "ans": 0,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 2235,
+    "cat": "vocabulary",
+    "orig": 2235,
+    "q": "The cockpit lighting system has 5 …………: dome lights,  side consoles,  instrument panels, reading lights, service outlets.",
+    "opts": [
+      "actions",
+      "ideas",
+      "functions",
+      "movements"
+    ],
+    "ans": 0,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 2236,
+    "cat": "vocabulary",
+    "orig": 2236,
+    "q": "Batteries supply electrical power for these lights ………… of the aircraft power supplies.",
+    "opts": [
+      "individually",
+      "advisedly",
+      "independently",
+      "purposely"
+    ],
+    "ans": 0,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 2237,
+    "cat": "vocabulary",
+    "orig": 2237,
+    "q": "When the switch is in the DIM position, the light ………… decreases.",
+    "opts": [
+      "intensity",
+      "peace",
+      "weakness",
+      "moderation"
+    ],
+    "ans": 0,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 2238,
+    "cat": "vocabulary",
+    "orig": 2238,
+    "q": "The supplementary reading light 29LE is equipped with a / an ………… halogen lamp and swivels.",
+    "opts": [
+      "chronic",
+      "long lasting",
+      "immortal",
+      "unlikely"
+    ],
+    "ans": 0,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 2303,
+    "cat": "vocabulary",
+    "orig": 2303,
+    "q": "The illustrations in this document ………… the typical construction.",
+    "opts": [
+      "open",
+      "show",
+      "raise",
+      "claim"
+    ],
+    "ans": 0,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 2304,
+    "cat": "vocabulary",
+    "orig": 2304,
+    "q": "You should ………… the eyes with water for at least ten minutes.",
+    "opts": [
+      "put",
+      "give",
+      "get",
+      "clean"
+    ],
+    "ans": 0,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 2305,
+    "cat": "vocabulary",
+    "orig": 2305,
+    "q": "When the handles are ………… they will open automatically.",
+    "opts": [
+      "released",
+      "received",
+      "reclaimed",
+      "recurred"
+    ],
+    "ans": 0,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 2306,
+    "cat": "vocabulary",
+    "orig": 2306,
+    "q": "If the safety cable is not within the ………… limits given, cut and remove the installed cable.",
+    "opts": [
+      "affordable",
+      "trackable",
+      "doable",
+      "acceptable"
+    ],
+    "ans": 0,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 2307,
+    "cat": "vocabulary",
+    "orig": 2307,
+    "q": "Aspiration of kerosene is very dangerous and can ………… dangerous pneumonitis.",
+    "opts": [
+      "cause",
+      "lead",
+      "ensure",
+      "observe"
+    ],
+    "ans": 0,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 2308,
+    "cat": "vocabulary",
+    "orig": 2308,
+    "q": "Many aviation fuels ………… additives.",
+    "opts": [
+      "measure",
+      "explore",
+      "disclose",
+      "contain"
+    ],
+    "ans": 0,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 2309,
+    "cat": "vocabulary",
+    "orig": 2309,
+    "q": "Highly refined petroleum-derived ………… oils only give light acute oral toxicity.",
+    "opts": [
+      "lubrication",
+      "contraction",
+      "accumulation",
+      "preservation"
+    ],
+    "ans": 0,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 2310,
+    "cat": "vocabulary",
+    "orig": 2310,
+    "q": "………… which have been revised are outlined below, together with the highlights of the revision.",
+    "opts": [
+      "Cars",
+      "Buses",
+      "Pages",
+      "Pencils"
+    ],
+    "ans": 0,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 2311,
+    "cat": "vocabulary",
+    "orig": 2311,
+    "q": "On the cockpit rear panel 121VU open, ………… for 5 seconds and close R the circuit breaker 7YA.",
+    "opts": [
+      "pass",
+      "change",
+      "delete",
+      "wait"
+    ],
+    "ans": 0,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 2312,
+    "cat": "vocabulary",
+    "orig": 2312,
+    "q": "If the fault continues, do a check and ………… the wiring from IGGS CTL UNIT (1YA) pin A/115 to CSAS CTL UNIT.",
+    "opts": [
+      "repair",
+      "calculate",
+      "improve",
+      "develop"
+    ],
+    "ans": 0,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 2313,
+    "cat": "vocabulary",
+    "orig": 2313,
+    "q": "………… the BITE test of the IGGS without bleed air.",
+    "opts": [
+      "Do",
+      "Play",
+      "Replace",
+      "Taste"
+    ],
+    "ans": 0,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 2314,
+    "cat": "vocabulary",
+    "orig": 2314,
+    "q": "………… separation module replacement procedure should be carefully administered.",
+    "opts": [
+      "Ship",
+      "Air",
+      "Plane",
+      "Train"
+    ],
+    "ans": 0,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 2315,
+    "cat": "vocabulary",
+    "orig": 2315,
+    "q": "After the subsequent flight, make sure that the ………… does not continue.",
+    "opts": [
+      "payload",
+      "fault",
+      "congestion",
+      "comprise"
+    ],
+    "ans": 0,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 2316,
+    "cat": "vocabulary",
+    "orig": 2316,
+    "q": "Fault Isolation procedure has to start with the ………… of the DUAL FLOW SOV.",
+    "opts": [
+      "replacement",
+      "confirmation",
+      "settlement",
+      "adjustment"
+    ],
+    "ans": 0,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 2317,
+    "cat": "vocabulary",
+    "orig": 2317,
+    "q": "Do the subsequent steps to ………… the fault",
+    "opts": [
+      "cut",
+      "confirm",
+      "operate",
+      "keep"
+    ],
+    "ans": 0,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
   }
 ]

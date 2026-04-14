@@ -157,10 +157,13 @@ class _LessonListScreenState extends ConsumerState<LessonListScreen> {
   }
 
   Future<void> _startLesson(BuildContext context, String lessonId) async {
-    final ok = await showNoHeartsDialog(context, ref, HeartsService.lessonCost);
-    if (!ok || !context.mounted) return;
-    await ref.read(heartsProvider.notifier).use(HeartsService.lessonCost);
-    if (!context.mounted) return;
+    final isPremium = ref.read(isPremiumProvider).value ?? false;
+    if (!isPremium) {
+      final ok = await showNoHeartsDialog(context, ref, HeartsService.lessonCost);
+      if (!ok || !context.mounted) return;
+      await ref.read(heartsProvider.notifier).use(HeartsService.lessonCost);
+      if (!context.mounted) return;
+    }
     context.go('/lesson/$lessonId');
   }
 

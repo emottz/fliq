@@ -106,7 +106,7 @@ class ProfileScreen extends ConsumerWidget {
                       _StatCard(
                         label: 'Sınav Tarihi',
                         value: profile.targetExamDate != null
-                            ? DateFormat('dd MMM yyyy').format(profile.targetExamDate!)
+                            ? DateFormat('dd.MM.yyyy').format(profile.targetExamDate!)
                             : '—',
                         icon: Icons.calendar_today_outlined,
                         iconColor: AppColors.textSecondary,

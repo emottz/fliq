@@ -1,7 +1,7 @@
 import 'dart:io';
 
-import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/foundation.dart';
+import 'package:supabase_flutter/supabase_flutter.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:go_router/go_router.dart';
@@ -139,6 +139,7 @@ class _SubscriptionScreenState extends ConsumerState<SubscriptionScreen> {
   String? _errorMessage;
   bool _fourMonth = false;
   String _selectedRoleKey = 'pilot';
+  bool _paymentResultHandled = false;
 
   @override
   void didChangeDependencies() {
@@ -146,6 +147,43 @@ class _SubscriptionScreenState extends ConsumerState<SubscriptionScreen> {
     final profile = ref.read(userProfileProvider).valueOrNull;
     if (profile != null && profile.role.isNotEmpty) {
       _selectedRoleKey = profile.role;
+    }
+    // iyzico callback'ten dönen ?payment= parametresini yakala
+    if (!_paymentResultHandled) {
+      _paymentResultHandled = true;
+      final payment = GoRouterState.of(context).uri.queryParameters['payment'];
+      if (payment != null) {
+        WidgetsBinding.instance.addPostFrameCallback((_) => _handlePaymentReturn(payment));
+      }
+    }
+  }
+
+  void _handlePaymentReturn(String status) {
+    if (!mounted) return;
+    if (status == 'success') {
+      showDialog(
+        context: context,
+        builder: (_) => AlertDialog(
+          shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(20)),
+          title: const Text('Ödeme Başarılı! 🎉'),
+          content: const Text(
+            'Premium üyeliğin aktif edildi. Tüm içeriklere erişebilirsin.',
+          ),
+          actions: [
+            TextButton(
+              onPressed: () {
+                Navigator.of(context).pop();
+                context.go('/home/exams');
+              },
+              child: const Text('Harika!'),
+            ),
+          ],
+        ),
+      );
+    } else if (status == 'failed') {
+      setState(() => _errorMessage = 'Ödeme tamamlanamadı. Kart bilgilerini kontrol edip tekrar dene.');
+    } else if (status == 'error') {
+      setState(() => _errorMessage = 'Bir hata oluştu. Lütfen daha sonra tekrar dene.');
     }
   }
 
@@ -890,7 +928,7 @@ class _CouponSectionState extends ConsumerState<_CouponSection>
     setState(() { _loading = true; _error = null; });
     try {
       final svc = ref.read(couponServiceProvider);
-      final uid = FirebaseAuth.instance.currentUser?.uid;
+      final uid = Supabase.instance.client.auth.currentUser?.id;
       if (uid == null) throw Exception('Giriş yapılmamış.');
 
       final result = await svc.redeemCoupon(preview.code);

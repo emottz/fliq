@@ -1,5 +1,5 @@
-import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
+import 'package:supabase_flutter/supabase_flutter.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import '../../../core/constants/app_colors.dart';
 import '../../../core/constants/app_text_styles.dart';
@@ -53,8 +53,8 @@ class _AuthScreenState extends ConsumerState<AuthScreen>
         await svc.signInWithEmail(_emailCtrl.text, _passCtrl.text);
       }
       // GoRouter will auto-redirect based on auth state change
-    } on FirebaseAuthException catch (e) {
-      setState(() => _error = ref.read(authServiceProvider).errorMessage(e.code));
+    } on AuthException catch (e) {
+      setState(() => _error = ref.read(authServiceProvider).errorMessage(e.message));
     } catch (_) {
       setState(() => _error = 'Bir hata oluştu. Lütfen tekrar deneyin.');
     } finally {
@@ -67,8 +67,8 @@ class _AuthScreenState extends ConsumerState<AuthScreen>
     try {
       final result = await ref.read(authServiceProvider).signInWithGoogle();
       if (result == null && mounted) setState(() => _error = 'Google girişi iptal edildi.');
-    } on FirebaseAuthException catch (e) {
-      setState(() => _error = ref.read(authServiceProvider).errorMessage(e.code));
+    } on AuthException catch (e) {
+      setState(() => _error = ref.read(authServiceProvider).errorMessage(e.message));
     } catch (_) {
       if (mounted) setState(() => _error = 'Google ile giriş başarısız oldu.');
     } finally {

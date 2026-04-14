@@ -37,6 +37,9 @@ class _HeartsDisplayState extends ConsumerState<HeartsDisplay> {
 
   @override
   Widget build(BuildContext context) {
+    final isPremium = ref.watch(isPremiumProvider).value ?? false;
+    if (isPremium) return const SizedBox.shrink();
+
     final async = ref.watch(heartsProvider);
     return async.when(
       data: (s) => _HeartsChip(count: s.count, resetTime: s.resetTime),

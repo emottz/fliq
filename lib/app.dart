@@ -1,6 +1,6 @@
-import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
+import 'package:supabase_flutter/supabase_flutter.dart';
 import 'core/constants/app_colors.dart';
 import 'core/router/app_router.dart';
 import 'core/services/coupon_service.dart';
@@ -16,9 +16,9 @@ class FliqApp extends ConsumerWidget {
 
     // Kullanıcı oturum açıkken kupon süresi kontrolü yap
     ref.listen(authStateProvider, (_, next) {
-      final uid = next.value?.uid;
-      if (uid != null) {
-        CouponService().checkAndRevokeExpiredPremium(uid);
+      final user = next.value;
+      if (user != null) {
+        CouponService().checkAndRevokeExpiredPremium(user.id);
       }
     });
 

@@ -26,6 +26,17 @@ class LeagueMemberModel {
     );
   }
 
+  factory LeagueMemberModel.fromSupabase(Map<String, dynamic> row) {
+    return LeagueMemberModel(
+      uid:         row['uid'] as String? ?? '',
+      displayName: row['display_name'] as String? ?? 'Kullanıcı',
+      photoUrl:    row['photo_url'] as String?,
+      weeklyXp:    row['weekly_xp'] as int? ?? 0,
+      streakDays:  row['streak_days'] as int? ?? 0,
+      role:        row['role'] as String? ?? 'student',
+    );
+  }
+
   Map<String, dynamic> toJson() => {
         'displayName': displayName,
         'photoUrl': photoUrl,

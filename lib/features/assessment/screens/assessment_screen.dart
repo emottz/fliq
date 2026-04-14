@@ -5,7 +5,7 @@ import '../../../core/constants/app_colors.dart';
 import '../../../core/constants/app_text_styles.dart';
 import '../../../data/models/question_model.dart';
 import '../../../data/models/user_profile_model.dart';
-import '../../../core/services/firestore_service.dart';
+import '../../../core/services/supabase_service.dart';
 import '../../../shared/providers/app_providers.dart';
 
 class AssessmentScreen extends ConsumerStatefulWidget {
@@ -100,7 +100,7 @@ class _AssessmentScreenState extends ConsumerState<AssessmentScreen> {
     if (profile != null) {
       final updated = profile.copyWith(level: level, weakCategories: weakCategories);
       await ref.read(userProfileProvider.notifier).saveLevel(updated);
-      FirestoreService.saveAssessment(updated, categoryResults); // fire-and-forget
+      SupabaseService.saveAssessment(updated, categoryResults); // fire-and-forget
     }
 
     if (mounted) {

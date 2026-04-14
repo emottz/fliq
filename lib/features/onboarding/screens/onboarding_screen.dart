@@ -3,7 +3,7 @@ import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:go_router/go_router.dart';
 import '../../../core/constants/app_colors.dart';
 import '../../../data/models/user_profile_model.dart';
-import '../../../core/services/firestore_service.dart';
+import '../../../core/services/supabase_service.dart';
 import '../../../shared/providers/app_providers.dart';
 import '../../../shared/widgets/primary_button.dart';
 
@@ -300,7 +300,7 @@ class _OnboardingScreenState extends ConsumerState<OnboardingScreen>
       categoryProgress: {},
     );
     await ref.read(userProfileProvider.notifier).saveProfile(profile);
-    FirestoreService.saveOnboarding(profile);
+    SupabaseService.saveOnboarding(profile);
     if (mounted) context.go('/assessment-intro');
   }
 

@@ -6373,5 +6373,1535 @@
     "passage": null,
     "passageTitle": null,
     "passageId": null
+  },
+  {
+    "id": 1921,
+    "cat": "translation",
+    "orig": 1921,
+    "q": "The pilots use the aileron control wheels to move the ailerons and flight spoilers.",
+    "opts": [
+      "Pilotlar kanatçık kontrol çarklarını kanatçıkları ve uçuş spoylerlerini hareket ettirmek için kullanırlar.",
+      "Pilotların kullandığı kanatçık çarkları kanatçıkların ve uçuş spoylerlerinin hareket etmesini sağlar.",
+      "Kanatçıklar ve uçuş spoylerleri pilotların kumanda ettiği kanatçık çarkları sayesinde hareket eder.",
+      "Kanatçık kontrol çarkları pilotlar tarafından kullanılır ve kanatçıkların ve uçuş spoylerlerinin hareketini sağlar."
+    ],
+    "ans": 0,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 1922,
+    "cat": "translation",
+    "orig": 1922,
+    "q": "The components of the flight spoiler control systems are in the main landing gear wheel well and the wings.",
+    "opts": [
+      "Uçuş spoyleri, ana iniş takımının tekerlek yuvasında ve kanatlarda bulunan bileşenler ile kontrol edilir.",
+      "Uçuş spoyleri, kanatları ve ana iniş takımının tekerlek yuvasındaki bileşenleri kontrol eder.",
+      "Uçuş spoyleri kontrol sistemlerinin ana iniş takımının ve kanatların kontrolü altında olması gereklidir.",
+      "Uçuş spoyleri kontrol sistemlerinin bileşenleri ana iniş takımının tekerlek yuvasında ve kanatlardadır."
+    ],
+    "ans": 3,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 1923,
+    "cat": "translation",
+    "orig": 1923,
+    "q": "The flight control panel has hydraulic control switches and caution lights for several of the flight control systems.",
+    "opts": [
+      "Uçuş kontrol paneli uçuş kontrol sistemleri için hidrolik kontrol düğmelerinin ve ikaz ışıklarının bulunduğu yerdir.",
+      "Uçuş kontrol panelinin uçuş kontrol sistemlerinin birçoğu için hidrolik kontrol düğmeleri ve ikaz ışıkları vardır.",
+      "Uçuş kontrol panelindeki hidrolik kontrol düğmeleri ve ikaz ışıkları birçok uçuş kontrol sisteminde bulunur.",
+      "Uçuş kontrol paneli hidrolik düğmeler ile kontrol edilir ve üzerinde birçok kontrol sistemi için ikaz ışıkları vardır."
+    ],
+    "ans": 1,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 1924,
+    "cat": "translation",
+    "orig": 1924,
+    "q": "The upper and lower input cranks move slides in the control valve and supply hydraulic pressure to the actuator.",
+    "opts": [
+      "Üst ve alt girdi manivelaları kontrol vanasına parçalar taşır ve aktüatöre hidrolik basınç sağlar.",
+      "Üst ve alt girdi manivelaları kontrol vanasında bulunan parçaları hidrolik basınç ile aktüatöre aktarır.",
+      "Üst ve alt girdi manivelaları kontrol vanasına taşınan parçalar vasıtasıyla aktüatöre hidrolik basınç sağlar.",
+      "Üst ve alt girdi manivelaları kontrol vanasının parçalarını ve aktüatöre giden hidrolik basıncı kontrol eder."
+    ],
+    "ans": 0,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 1925,
+    "cat": "translation",
+    "orig": 1925,
+    "q": "If the internal leakage is more than permitted, replace or repair the defective component.",
+    "opts": [
+      "Eğer iç sızıntı izin verilenden fazlaysa, hatalı parçayı değiştirin ya da tamir edin.",
+      "Eğer iç sızıntı izin verilenden fazlaysa, hatalı parça değiştirilemez sadece tamir edilebilir",
+      "Eğer dış sızıntı izin verilenden fazlaysa, hatalı parçayı değiştirin ya da tamir edin",
+      "Eğer iç sızıntı olması gerekenden azsa, hatalı parçayı değiştirin ya da tamir edin"
+    ],
+    "ans": 0,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 1926,
+    "cat": "translation",
+    "orig": 1926,
+    "q": "If the drain valve has a leak, replace the drain valve.",
+    "opts": [
+      "Eğer tahliye vanasında çatlak varsa, tahliye vanasını değiştirin",
+      "Eğer tahliye vanasının çatlama ihtimali varsa, tahliye vanasını değiştirin",
+      "Eğer tahliye vanasında çatlak varsa, tahliye vanasını onarın",
+      "Eğer tahliye vanasında çatlak varsa, vanayı onarın"
+    ],
+    "ans": 0,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 1927,
+    "cat": "translation",
+    "orig": 1927,
+    "q": "The LP system returns the fluid from the consumers to the reservoir.",
+    "opts": [
+      "LP sistemi sıvıyı depodan alıcıya geri götürür",
+      "LP sistemi sıvıyı alıcıdan depoya geri götürür",
+      "LP sistemi sıvıyı alıcıdan depoya götürür",
+      "LP sistemi sıvıyı depoya geri götürür"
+    ],
+    "ans": 1,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 1928,
+    "cat": "translation",
+    "orig": 1928,
+    "q": "If necessary, pressurize the reservoir.",
+    "opts": [
+      "Eğer gerekecekse, depoya basınç uygulayın",
+      "Eğer gerekliyse, basınç uygulayın",
+      "Eğer gerekliyse, depoya basınç uygulayın",
+      "Eğer gerekliyse, depoya basıncı durdurun"
+    ],
+    "ans": 2,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 1929,
+    "cat": "translation",
+    "orig": 1929,
+    "q": "Hata tespiti durumunda FADEC bir kanaldan diğerine geçer.",
+    "opts": [
+      "When there is failure detection, the FADEC switches from one channel to the other.",
+      "In case of failure detection, the FADEC switches from one channel to the other.",
+      "If the FADEC switches from one channel to the other, there is failure detection.",
+      "The FADEC is switched from one channel to the other because of failure detection."
+    ],
+    "ans": 1,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 1930,
+    "cat": "translation",
+    "orig": 1930,
+    "q": "Yakıt vericiye gider ve türbini çalıştırır.",
+    "opts": [
+      "Fuel goes into the transmitter and drives the turbine",
+      "Fuel goes into the transmitter but drives the turbine",
+      "Fuel and turbine do not go into the transmitter or turbine",
+      "Fuel does not go into the transmitter and drive the turbine."
+    ],
+    "ans": 0,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 1931,
+    "cat": "translation",
+    "orig": 1931,
+    "q": "FCOC’tan gelen yakıt, filtre elementinden LP/HP yakıt pompasının yüksek basınç dişlisine gider.",
+    "opts": [
+      "The fuel from the FCOC goes through the filter element into the high pressure gear of an LP/HP fuel pump.",
+      "The filter element goes through the fuel from the FCOC into the high pressure gear of an LP/HP fuel pump.",
+      "The fuel from FCOC and the filter element have gone into the high pressure gear of an LP/HP fuel pump.",
+      "The fuel of the FCOC goes through the filter element by the high pressure gear of an LP/HP fuel pump."
+    ],
+    "ans": 0,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 1932,
+    "cat": "translation",
+    "orig": 1932,
+    "q": "Ana iniş takımları için kapaklar on saniye içerisinde kapanır.",
+    "opts": [
+      "The doors for the main landing gear close in twenty seconds.",
+      "The doors for the nose landing gear close in twenty seconds.",
+      "The doors for the main landing gear close in ten seconds.",
+      "The doors for the nose landing gear open in ten seconds."
+    ],
+    "ans": 2,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 1933,
+    "cat": "translation",
+    "orig": 1933,
+    "q": "Güç kaynağı motorunu diğer bir 5 dakikalık süre için çalıştırmadan önce 120 degress F ‘nin altına kadar soğumasını bekleyiniz.",
+    "opts": [
+      "You should wait for the power pack motor to cool below 120 degrees F before you operate it for another 5 minute interval.",
+      "Don’t wait for the power pack motor to cool below 120 degrees F after you operate it for another 5 minute interval.",
+      "You don’t need to wait for the power pack motor to cool below 120 degrees F before you operate it for another 5 minute interval.",
+      "Wait for the power pack motor to cool below 120 degrees F before you operate it for another 5 minute interval."
+    ],
+    "ans": 3,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 1934,
+    "cat": "translation",
+    "orig": 1934,
+    "q": "Genişletilmiş gösterge, üç iniş takımının her biri için birer dikdörtgen olmak üzere toplamda üç dikdörtgen gösterir.",
+    "opts": [
+      "The expanded display shows three rectangles in total, with one rectangle for each of the three landing gears.",
+      "The expanded display shows two rectangles in total, with one rectangle for two of the three landing gears.",
+      "The normal display shows three rectangles in total, with three rectangles for three landing gears.",
+      "The expanded display may show three rectangles in total, with one rectangle for one of the three landing gears."
+    ],
+    "ans": 0,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 1935,
+    "cat": "translation",
+    "orig": 1935,
+    "q": "Bakım işlevlerinde iniş takımı kapılarını açmak ve kapatmak için ana kapak salma sistemini kullanınız.",
+    "opts": [
+      "You can use the ground door release system to open and close the landing gear doors for maintenance functions.",
+      "You use the ground door release system to open and close the landing gear doors for maintenance functions.",
+      "You don’t need to use the ground door release system to open and close the landing gear doors for maintenance functions.",
+      "You use the ground door release system just to open the landing gear doors for maintenance functions."
+    ],
+    "ans": 2,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 2001,
+    "cat": "translation",
+    "orig": 2001,
+    "q": "You can speak with people in the flight compartment.",
+    "opts": [
+      "Kokpitteki insanlarla konuşabilirsiniz.",
+      "İnsanlarla yalnızca kokpitte konuşunuz.",
+      "Kokpit insanlarla konuşabileceğiniz bir yerdir.",
+      "İnsanlar kokpitte birbirleriyle konuşabilir."
+    ],
+    "ans": 0,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 2002,
+    "cat": "translation",
+    "orig": 2002,
+    "q": "Engine noise can cause temporary and permanent loss of hearing.",
+    "opts": [
+      "Motor sesinin yüksek olması geçici olarak işitme kaybına yol açar.",
+      "İşitme kaybı motor çevresinde çalışan insanlarda görülebilir.",
+      "Motor sesi geçici ve kalıcı işitme kaybına neden olabilir.",
+      "Geçici ve kalıcı işitme kaybının en önemli nedeni motor sesidir."
+    ],
+    "ans": 3,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 2003,
+    "cat": "translation",
+    "orig": 2003,
+    "q": "The engine fuel and control system sends the necessary fuel to the engine air system in order to make the operation of the engine efficient and stable.",
+    "opts": [
+      "Motorun çalışmasını verimli ve düzenli hale getirmek için motor yakıt ve kontrol sistemi gerekli olan yakıtı motor hava sistemine gönderir.",
+      "Motorun verimli ve düzenli çalışması motor yakıt ve kontrol sisteminin motor hava sistemine gerekli olan yakıtı sağlamasıyla gerçekleşir.",
+      "Motorun çalışmasını verimli ve düzeni hale getirme görevi motor yakıt ve kontrol sisteminin görevidir.",
+      "Motor yakıt ve kontrol sistemi gereken yakıtı motor hava sistemine gönderir ve motorun verimli ve düzenli çalışmasını sağlar."
+    ],
+    "ans": 1,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 2004,
+    "cat": "translation",
+    "orig": 2004,
+    "q": "The oil quantity indicating system uses an oil quantity transmitter to measure the oil quantity in the oil tank.",
+    "opts": [
+      "Yağ tankında kalan yağın miktarının yağ gösterge sistemine iletilebilmesi için yağ miktar transmiteri kullanılmalıdır.",
+      "Yağ miktar transmiteri yağ miktarı gösterge sistemine yağ tankındaki yağ miktarıyla ilgili bilgiler ulaştırır.",
+      "Yağ miktarının ölçümünün yapılabilmesi için yağ göstergelerine yağ tankındaki yağ miktarıyla ilgili bilgi iletilmesi gerekir.",
+      "Yağ miktarı gösterge sistemi yağ tankındaki yağ miktarını ölçmek için bir yağ miktar transmiteri kullanır."
+    ],
+    "ans": 2,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 2005,
+    "cat": "translation",
+    "orig": 2005,
+    "q": "The performance maintenance page also shows the value for these indications.",
+    "opts": [
+      "Bakım sayfası performans ile ilgili değerleri bu göstergelerde gösterir.",
+      "Performans bakımı sayfası aynı zamanda bu göstergeler için olan değeri gösterir.",
+      "Performans bakımı sayfası bu göstergelere olan değeri ifade eder.",
+      "Bakım sayfası performansı aynı zamanda bu göstergeler için olan değerleri gösterir."
+    ],
+    "ans": 0,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 2006,
+    "cat": "translation",
+    "orig": 2006,
+    "q": "The EEC sends digital speed signals to the AIMS on the systems ARINC 629 buses.",
+    "opts": [
+      "EEC ARINC 629 veri yollarındaki sistemlerdeki AIMS e dijital hız sinyalleri gönderir.",
+      "Hız sinyalleri EEC tarafından ARINC 629 veri yollarına dijital hız sinyalleri gönderir.",
+      "EEC ARINC 629 veri yollarındaki sistemlerdeki AIMS e dijital hız sinyallerini ulaştırır.",
+      "Hız sinyalleri EEC den AIMS e ARIN 629 veri yolları üzerinden gönderilir."
+    ],
+    "ans": 1,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 2007,
+    "cat": "translation",
+    "orig": 2007,
+    "q": "When you select FLIGHT HISTORY, the MAT shows the N1 VIBRATION FLIGHT HISTORY display.",
+    "opts": [
+      "Uçuş Geçmişi sizi seçtiğinde, MAT N1 Uçuş Titreşim Geçmişi ekranını gösterir.",
+      "MAT N1 Uçuş Titreşim Geçmişi ekranını gösterdiğinde Uçuş Geçmişi ekranını seçin.",
+      "Uçuş Geçmişini seçtiğinizde, MAT N1 Uçuş Titreşim Geçmişi ekranını gösterilir.",
+      "Uçuş Geçmişini seçtiğinizde, MAT N1 Uçuş Titreşim Geçmişi ekranını gösterir."
+    ],
+    "ans": 3,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 2008,
+    "cat": "translation",
+    "orig": 2008,
+    "q": "Maximum N1 is the highest rotor speed that will not cause the engine to exceed maximum rated thrust.",
+    "opts": [
+      "Maksimum N1 motorun maksimum nominal hızı aşmasına sebep olmayacak en yüksek rotor hızıdır.",
+      "En yüksek hız olan Maksimum N1 motorun aşınmasına sebep olmaz.",
+      "Maksimum N1 motor maksimum nominal hızının aşılmasına sebep olmayabilecek rotor hızıdır.",
+      "En yüksek hız olan Maksimum N1 motor hızının aşılmasına sebep olmaz."
+    ],
+    "ans": 0,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 2009,
+    "cat": "translation",
+    "orig": 2009,
+    "q": "Elektriksel bağlayıcıları anten birleştiricisinden ayırın.",
+    "opts": [
+      "Separate the antenna coupler from the electrical connectors.",
+      "Disconnect the electrical connectors from the antenna coupler.",
+      "Electrical connectors are disconnected from the antenna coupler.",
+      "Electrical connectors and the antenna coupler are separated."
+    ],
+    "ans": 1,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 2010,
+    "cat": "translation",
+    "orig": 2010,
+    "q": "Bu test boyunca uçak, açık alanda olmalıdır.",
+    "opts": [
+      "During this test, the aircraft must be in an open area.",
+      "An open area is needed for this test.",
+      "During the test, keep the aircraft in an open area.",
+      "During this test, there must be an open area for the aircraft."
+    ],
+    "ans": 2,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 2011,
+    "cat": "translation",
+    "orig": 2011,
+    "q": "Eğer transceiver fan çalışmazsa, veri aktarımını derhal kapatın.",
+    "opts": [
+      "If the transceiver fan doesn’t operate, close the transmission.",
+      "If the transmission stops, do not operate the transceiver fan.",
+      "Stop the transmission if the transceiver does not work immediately.",
+      "If the transceiver fan does not operate, stop the transmission immediately."
+    ],
+    "ans": 0,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 2012,
+    "cat": "translation",
+    "orig": 2012,
+    "q": "Tek bir motorda sadece aynı tip konektör kullanın.",
+    "opts": [
+      "Use only one connector on the same type of engine.",
+      "Use the same connector on one engine.",
+      "Use only the same type of connectors on one engine.",
+      "The same type of connectors may be used on one engine."
+    ],
+    "ans": 3,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 2013,
+    "cat": "translation",
+    "orig": 2013,
+    "q": "Tüm prosedürleri tekrar edin.",
+    "opts": [
+      "Use some of the procedures.",
+      "Repeat all the procedures.",
+      "Apply all the procedures.",
+      "Control all the procedures"
+    ],
+    "ans": 1,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 2014,
+    "cat": "translation",
+    "orig": 2014,
+    "q": "Karşılık gelen koruma hortumunu kaydırın.",
+    "opts": [
+      "Change the hose if there is a problem.",
+      "Take the corresponding hose out.",
+      "Place the corresponding hose into the hole.",
+      "Slide corresponding protection hose."
+    ],
+    "ans": 0,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 2015,
+    "cat": "translation",
+    "orig": 2015,
+    "q": "Dönüşümden sonra ateşleme kontrolünü de içeren testi uygulayın.",
+    "opts": [
+      "After conversion carry out the test including check of ignition.",
+      "Check ignition conversion and carry out the test.",
+      "Before the test check the ignition system.",
+      "While applying test, check the ignition system."
+    ],
+    "ans": 2,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 2081,
+    "cat": "translation",
+    "orig": 2081,
+    "q": "Do not apply over torque to the fasteners; otherwise, a broken fastener can cause loss of the door in flight.",
+    "opts": [
+      "Bağlantı elemanlarına aşırı tork uygulanmamalıdır, aksi takdirde kırılan bir bağlantı elemanı uçuşta kapı kaybına sebep olur.",
+      "Bağlantı elemanlarına tork uygulamayın, yoksa kırılan bir bağlantı elemanı uçuşta kapı kaybına sebep olur.",
+      "Bağlantı elemanlarına aşırı tork uygulamayın, aksi takdirde kırılan bir bağlantı elemanı uçuşta kapı kaybına sebep olabilir.",
+      "Bağlantı elemanlarına tork uygulanmamalıdır, yoksa uçuşta kapıyı kaybetmeye neden olabilirsiniz."
+    ],
+    "ans": 0,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 2082,
+    "cat": "translation",
+    "orig": 2082,
+    "q": "The left and right wing tips are similar to each other in structure.",
+    "opts": [
+      "Sol ve sağ kanatlar yapısal olarak birbirinin aynısıdır.",
+      "Sol ve sağ kanat uçları yapısal olarak birbirine benzerdir.",
+      "Sol ve sağ kanat tipleri yapısal olarak birbirinin aynısıdır.",
+      "Sol ve sağ kanat uçları yapıca birbirinin aynısıdır."
+    ],
+    "ans": 0,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 2083,
+    "cat": "translation",
+    "orig": 2083,
+    "q": "Make sure that circuit breakers are open and “DO NOT CLOSE” tags are installed.",
+    "opts": [
+      "Devre kesiciler açık olmalı ve etiketler takılırken “kapatılmamalıdır”.",
+      "Devre kesicilerin açık olduğundan emin olun ve etiketler takılırken “kapatmayın”.",
+      "Devre kesicilerin açık ve “kapatmayın” etiketlerinin takılı olduğundan emin olun.",
+      "Devre kesiciler açıktır ve “kapatmayın” etiketleri takılır."
+    ],
+    "ans": 0,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 2084,
+    "cat": "translation",
+    "orig": 2084,
+    "q": "If the panel has opened due to excess pressure, then re-install the panel to the “T” structure.",
+    "opts": [
+      "Eğer aşırı basınç sonucunda panel açılırsa, “T” yapıya yeniden takılmalıdır.",
+      "Aşırı basınç yüzünden panel açılmışsa “T” yapıya daha sonra yeniden takın.",
+      "Aşırı basınç sonucundan panel açılmışsa, daha sonra “T” yapıya yeniden takılmalıdır.",
+      "Eğer aşırı basınçla kapı açılırsa daha sonra “T” yapıya yeniden takılır."
+    ],
+    "ans": 0,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 2085,
+    "cat": "translation",
+    "orig": 2085,
+    "q": "Linings cover the interior structure of the flight compartment.",
+    "opts": [
+      "Uçuş kompartmanının iç yüzeyi astarlarla kaplıdır.",
+      "Astarlar sayesinde uçuş kompartmanının iç yapısı kapatılır.",
+      "Astarlar uçuş kompartmanının iç yüzeyini kapatır.",
+      "Uçuş kompartmanının iç yapısını astarlar kaplar."
+    ],
+    "ans": 0,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 2086,
+    "cat": "translation",
+    "orig": 2086,
+    "q": "You don’t have to defuel main tank 1to remove fuel temperature bulb.",
+    "opts": [
+      "Yakıt sıcaklık ampulünü sökmek için ana tank 1’i boşaltmak zorunda değilsiniz.",
+      "Yakıt sıcaklık ampulünü sökmek için ana tank 1’i boşaltmamalısınız.",
+      "Ana tank 1’i boşaltmak veya yakıt sıcaklık ampulünü sökmek zorunda değilsiniz.",
+      "Ana tank 1’i boşaltmamalı veya yakıt sıcaklık ampulünü sökmemelisiniz."
+    ],
+    "ans": 0,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 2087,
+    "cat": "translation",
+    "orig": 2087,
+    "q": "The crossfeed valve permits a single fuel tank to supply fuel to both engines.",
+    "opts": [
+      "Her iki motor da tek bir yakıt tankından çapraz besleme valfi ile beslenebilir.",
+      "Çapraz besleme valfi motorların sadece tek bir tanktan beslenmesine izin verebilir.",
+      "Çapraz besleme valfi tek bir yakıt tankına yakıt sağlar ve her iki motoru da besler.",
+      "Çapraz besleme valfi tek bir yakıt tankın her iki motora da yakıt beslemesine olanak sağlar."
+    ],
+    "ans": 0,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 2088,
+    "cat": "translation",
+    "orig": 2088,
+    "q": "Remove the jacks from under the nose raising points when the aircraft is on its wheels.",
+    "opts": [
+      "Jakları burun kaldırma noktalarının altından aldığın zaman uçak tekerlerinin üzerindedir.",
+      "Uçak tekerlerinin üzerindeyken jakları burun kaldırma noktalarının altından alın.",
+      "Uçak tekerlerinin üzerindeyken jakları burun kaldırma noktalarının almalısınız.",
+      "Jakları burun kaldırma noktalarının altından aldığın zaman uçak dümendedir."
+    ],
+    "ans": 0,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 2089,
+    "cat": "translation",
+    "orig": 2089,
+    "q": "İniş takımı kirişi üzerindeki gövde yüzey bağlantılarını kontrol et.",
+    "opts": [
+      "Release the fuselage skin joints above the landing gear beam.",
+      "To examine the fuselage skin joints below the landing gear beam",
+      "To release the fuselage skin joints above the landing gear beam",
+      "Examine the fuselage skin joints above the landing gear beam."
+    ],
+    "ans": 0,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 2090,
+    "cat": "translation",
+    "orig": 2090,
+    "q": "Mavi su kirlenmesi uçağın uçuş güvenliğinde istenmeyen bir etkiyle sonuçlanabilir.",
+    "opts": [
+      "Blue water contamination should result in an unwanted effect on the flight safety of    airplane.",
+      "Blue water contamination must cause an unwanted effect on the flight safety of airplane.",
+      "Blue water contamination can result in an unwanted effect on the flight safety of the airplane.",
+      "Blue water contamination have to result in an unwanted effect on the flight safery of the airplane"
+    ],
+    "ans": 0,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 2091,
+    "cat": "translation",
+    "orig": 2091,
+    "q": "Kanat yakıt tankı erişim panelleri,  her bir yakıt ve surge tanka erişimi sağlar.",
+    "opts": [
+      "Wing fuel tank access  panels prevent entry into each fuel and surge tank.",
+      "Wing fuel tank access  panels permit entry into each fuel and surge tank.",
+      "Wing fuel tank access  panels advance entry into each fuel and surge tank.",
+      "Wing fuel tank access  panels protect entry into each fuel and surge tank."
+    ],
+    "ans": 0,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 2092,
+    "cat": "translation",
+    "orig": 2092,
+    "q": "Su emiş jet pompası korozyonu önlemek için her bir tankın alçak noktasından suyu boşaltır.",
+    "opts": [
+      "The scavenge jet pumps remove water from the low points of each tank to prevent corrosion.",
+      "The scavenge jet pumps release water from the low points of each tank by prevent ing corrosion.",
+      "The scavenge jet pumps remove water into the low points of each tank not to prevent corrosion.",
+      "The scavenge jet pumps remove water from the high points of each tank preventing corrosion."
+    ],
+    "ans": 0,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 2093,
+    "cat": "translation",
+    "orig": 2093,
+    "q": "Aileron kumanda dümenleri aileron hissetme ve merkezleme ünitelerine girişi sağlayan kabloları hareket ettirir.",
+    "opts": [
+      "Aileron control wheels move cables and give input to the aileron feel and centering unit.",
+      "Aileron control wheels move cables to give input to the aileron feel and centering unit.",
+      "Aileron control wheels move cables that give input to the aileron feel and centering unit.",
+      "Aileron control wheels move cables and give input to the aileron feel and centering unit."
+    ],
+    "ans": 0,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 2094,
+    "cat": "translation",
+    "orig": 2094,
+    "q": "Pilot levyeyi döndürdüğünde, shaft krankı döndürür.",
+    "opts": [
+      "After the control wheel is turned by pilot, the shaft turns the crank",
+      "When the shaft turns the crank, the pilot turns the control wheel.",
+      "After the pilot turns the control wheel, the shaft turns the crank.",
+      "When the pilot turns the control wheel, the shaft turns the crank."
+    ],
+    "ans": 0,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 2095,
+    "cat": "translation",
+    "orig": 2095,
+    "q": "Valiz,  slaytı kapalı pozisyonda muhafaza eden koruyucu bir kılıftır.",
+    "opts": [
+      "The valise is a protective cover which holds the slide in the packed position.",
+      "The valise is a protective cover and holds the slide in the packed position",
+      "The valise holds the slide in the packed position and is a protective cover.",
+      "The valise holds protective cover which holds the slide."
+    ],
+    "ans": 0,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 2159,
+    "cat": "translation",
+    "orig": 2159,
+    "q": "The lights for the fuel shutoff valves have three positions.",
+    "opts": [
+      "Yakıt kapama valflerinin üzerinde üç pozisyonda ışık vardır.",
+      "Yakıt kapama valfinin üzerindeki ışıklar üç şekilde olabilir.",
+      "Işıkların yakıt kapama valfi için üç pozisyonu vardır.",
+      "Yakıt kapama valfleri için olan ışıkların üç pozisyonu vardır."
+    ],
+    "ans": 0,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 2160,
+    "cat": "translation",
+    "orig": 2160,
+    "q": "Install protective caps on the electrical connectors and related components.",
+    "opts": [
+      "Elektrik konektörü ve ilgili parçalara koruyucu kapakları takın.",
+      "Elektrik konektörünün üzerindeki koruyucu kapakları ilgili parçalara takın.",
+      "Koruyucu kapaklar elektrik konektörüne ve ilgili parçalara takılır.",
+      "Elektrik konektörü ve ilgili parçalar koruyucu kapaklardır."
+    ],
+    "ans": 0,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 2161,
+    "cat": "translation",
+    "orig": 2161,
+    "q": "If you do not obey the instructions, injuries to persons and damage to equipment can occur.",
+    "opts": [
+      "İnsanlara ve malzemelere zarar gelmemesi için kurallara uymalısınız.",
+      "İnsanların yaralanmaması ve malzemelerin zarar görmemesi için kurallara uymak şarttır.",
+      "Kurallara uymazsanız insanlar yaralanabilir ve malzemelere zarar gelebilir.",
+      "Kurallara uyulmazsa insanların yaralanması ve malzemelerin zarar görmesi mümkündür."
+    ],
+    "ans": 0,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 2162,
+    "cat": "translation",
+    "orig": 2162,
+    "q": "Parts which fall into the engine can cause engine damage at the first engine operation.",
+    "opts": [
+      "Motora parça düşerse, motor ilk çalıştığında motorda hasara yol açabilir.",
+      "Motorun içine düşen parçalar, motorun ilk çalışmasında motorda hasara neden olabilir.",
+      "Motordan düşen parçalar motorun ilk çalışmasında motorda hasara neden olabilir.",
+      "Motorun hasar görmesinin nedeni motora düen parçalar olabilir."
+    ],
+    "ans": 0,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 2163,
+    "cat": "translation",
+    "orig": 2163,
+    "q": "Go to the Fault Code Index in the FIM and find the fault code.",
+    "opts": [
+      "Hata kodu için FIM’de yer alan dizine gidiniz ve hata kodu dizinini bulunuz.",
+      "FIM’deki Hata Kodunu bulmak için ve dizine gidiniz hata kodunu bulunuz.",
+      "Hata Kodunu bulmak için FIM’deki Hata Kodu Dizinine gidiniz.",
+      "FIM’deki Hata Kodu Dizinine gidiniz ve hata kodunu bulunuz."
+    ],
+    "ans": 0,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 2164,
+    "cat": "translation",
+    "orig": 2164,
+    "q": "Do these tasks in sequence to safely open the left and right thrust reversers on the applicable engine.",
+    "opts": [
+      "Uygun motor üzerinde sol ve sağ itki ters çeviricilerini güvenli bir şekilde açmak için bu görevleri sırayla yapınız.",
+      "Uygun motor üzerinde sağ ve sol itki ters çeviricilerini güvenli bir şekilde açınız ve bu görevleri sırayla yapınız.",
+      "Sol ve sağ itki ters çeviricilerini uygun motor üzerinde bu görevleri sırayla yapmak suretiyle güvenli bir şekilde açınız.",
+      "Sağ ve sol itki ters çeviricileri uygun motor üzerinde güvenli bir şekilde açılır, bu nedenle verilen görevleri sırayla yapınız."
+    ],
+    "ans": 0,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 2165,
+    "cat": "translation",
+    "orig": 2165,
+    "q": "This task put the airplane back to its usual condition.",
+    "opts": [
+      "Uçağı her zamanki durumuna geri döndermek için bu görev kullanıldı.",
+      "Uçak bu görevle alışılagelmiş durumuna geri döndü.",
+      "Bu görev uçağı alışılagelmiş durumuna geri getirdi.",
+      "Bu görev vasıtasıyla uçak her zamanki durumuna geri getirildi."
+    ],
+    "ans": 0,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 2166,
+    "cat": "translation",
+    "orig": 2166,
+    "q": "Engine air tubes or air ducts with the exception of pneumatic supply ducts are not considered as Line Replaceable Units.",
+    "opts": [
+      "Motor hava boruları veya hava kanalları haricindeki hava basınçlı besleme kanalları Hat Değiştirilebilir Birimler olarak kabul edilirler.",
+      "Hava basınçlı besleme kanalları haricindeki motor hava boruları veya hava kanalları Hat Değiştirilebilir Birimler olarak kabul edilmezler.",
+      "Hava basınçlı besleme kanalları olarak adlandırılan motor hava boruları veya hava kanalları Hat Değiştirilebilir Birimler olarak kabul edilebilirler.",
+      "Motor hava kanalları veya hava boruları haricindeki hava basınçlı besleme kanalları Hat Değiştirilebilir Birimler olarak kabul edilmezler."
+    ],
+    "ans": 0,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 2167,
+    "cat": "translation",
+    "orig": 2167,
+    "q": "Hedef itiş gücü parametresinin üst limiti gaz kelebeği kumanda kolunun asıl pozisyonudur.",
+    "opts": [
+      "The position of the thrust parameter is the actual position of the thrust parameter.",
+      "The top limit value of the target thrust parameter is the actual position of the throttle control lever.",
+      "The high limit value of the thrust parameter is not actual positon of the throttle control lever.",
+      "The top limits of the target thrust parameter are the actual position of the throttle control lever."
+    ],
+    "ans": 0,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 2168,
+    "cat": "translation",
+    "orig": 2168,
+    "q": "Orta gaz aralığında, otomatik itiş fonksiyonu devreye alınmışsa aktive olabilir.",
+    "opts": [
+      "In the middle throttle range, the autothrust function is active if engaged.",
+      "Middle throttle range, the autothrust function can be active if engaged.",
+      "In the middle throttle range, the autothrust function can be active if engaged.",
+      "Middle throttle range of the autothrust function is active if engaged."
+    ],
+    "ans": 0,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 2169,
+    "cat": "translation",
+    "orig": 2169,
+    "q": "Yapay his gaz kontrol birimi kokpit merkezinin altında yer alır.",
+    "opts": [
+      "The artificial unit is located below the cockpit center pedestal.",
+      "The throttle control artificial feel unit is located below the cockpit center pedestal.",
+      "The artificial units are located below the cockpit center pedestal.",
+      "The control artificial feel unit is located below the cockpit center pedestal."
+    ],
+    "ans": 0,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 2170,
+    "cat": "translation",
+    "orig": 2170,
+    "q": "Düzeltilebilir yatay dengeleyciyi kaldırın.",
+    "opts": [
+      "Remove the trimmable horizontal stabilizer.",
+      "Do not remove the trimmable horizontal stabilizer.",
+      "Horizontal stabilizer cannot be removed.",
+      "Stabilizer can be moved from its position."
+    ],
+    "ans": 0,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 2171,
+    "cat": "translation",
+    "orig": 2171,
+    "q": "Yüzeylere zarar vermeyiniz.",
+    "opts": [
+      "Do not cause damage to the surfaces.",
+      "The surfaces can cause damages.",
+      "The surface can damage.",
+      "Damage to the surfaces can occur."
+    ],
+    "ans": 0,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 2172,
+    "cat": "translation",
+    "orig": 2172,
+    "q": "Parçalar güçlendirilmiş karbonfiber plastikten yapılmıştır.",
+    "opts": [
+      "Some of the components are made of carbonfiber plastic.",
+      "Reinforced plastic is used",
+      "The components are made of reinforced plastic.",
+      "The components are made of reinforced carbonfiber plastic."
+    ],
+    "ans": 0,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 2173,
+    "cat": "translation",
+    "orig": 2173,
+    "q": "Lastik şeritin uçak gövdesinin yüzeyine temas ettiğinden emin olun.",
+    "opts": [
+      "Make sure fuselage touches the strip.",
+      "You should check that the fuselage is near to the adjoining parts",
+      "Make sure that the rubber strip touches the fuselage skin.",
+      "Make sure that the fuselage is not far from the rubber strip."
+    ],
+    "ans": 0,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 2239,
+    "cat": "translation",
+    "orig": 2239,
+    "q": "This system provides a central maintenance aid.",
+    "opts": [
+      "Merkezi bakım desteği bu sistem tarafından sağlanır.",
+      "Bu sistem merkezi bakım desteği sağlar.",
+      "Bu sistem merkezi bakım desteği gerektirir.",
+      "Merkezi bakım desteği için bu sistem gereklidir."
+    ],
+    "ans": 0,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 2240,
+    "cat": "translation",
+    "orig": 2240,
+    "q": "The minutes digits are flashing first when the selector switch is in the SET position.",
+    "opts": [
+      "Selektörü SET konumuna getirmek dakika rakamlarının yanıp sönmesini sağlar.",
+      "Dakika gösteren sayıları yakmak için ilk önce selektörü SET konumuna getirin.",
+      "Dakika gösteren sayılar, selektör SET konumuna getiriliğinde yanıp söner.",
+      "Selektör SET konumuna getirildiğinde ilk önce dakika gösteren sayılar yanıp söner."
+    ],
+    "ans": 0,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 2241,
+    "cat": "translation",
+    "orig": 2241,
+    "q": "The aircraft is certificated to be operated by two pilots.",
+    "opts": [
+      "Uçağı çalıştırma yetkisi iki pilota verilmiştir.",
+      "Uçağı çalıştırmak için iki pilotun yetkisi gerekir.",
+      "Uçak iki pilot tarafından çalıştırılmak üzere yetkilendirilmiştir.",
+      "Uçağı çalıştırmak için iki pilot yetkilendirilmiştir."
+    ],
+    "ans": 0,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 2242,
+    "cat": "translation",
+    "orig": 2242,
+    "q": "The overhead panel is dedicated to aircraft system controls.",
+    "opts": [
+      "Başüstü paneli uçak sistem kontrollerine tahsis edilmiştir.",
+      "Başüstü panelinde uçak sistem kontrolleri bulunur.",
+      "Uçak sistem kontrolleri başüstü panellerindedir.",
+      "Uçak sistem kontrolleri için tahsis edilen paneller başüstünde yer alır."
+    ],
+    "ans": 0,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 2243,
+    "cat": "translation",
+    "orig": 2243,
+    "q": "All the measures must be taken and confirmed by the competent people.",
+    "opts": [
+      "Bütün önlemler uzman kişiler onaylandıktan sonra alınmak zorundadır.",
+      "Uzman kişiler önlemleri almada onaylanmıştır.",
+      "Önmlemler alanında yeterli kişiler tarafından alınmalı ve onaylanmalıdır.",
+      "Bütün önlemler uzman kişiler tarafından alınmalı ve onaylanmalıdır."
+    ],
+    "ans": 0,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 2244,
+    "cat": "translation",
+    "orig": 2244,
+    "q": "Carry out work on a cold engine.",
+    "opts": [
+      "Soğuk bir motoru çalıştırın.",
+      "Soğuk bir motor üzerinde çalışın.",
+      "Motor soğuksa çalıştırın.",
+      "Motoru soğuk yere taşıyın."
+    ],
+    "ans": 0,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 2245,
+    "cat": "translation",
+    "orig": 2245,
+    "q": "Connect negative terminal of aircraft battery.",
+    "opts": [
+      "Uçak aküsünün negatif yönde tutun.",
+      "Uçak aküsünün ilk olarak negatif terminalini bağlayın.",
+      "Uçak aküsünün negatif terminalini bağlayın.",
+      "Negatif terminali uçak aküsüne yerleştirin."
+    ],
+    "ans": 0,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 2246,
+    "cat": "translation",
+    "orig": 2246,
+    "q": "Conduct leakage test of fuel pomp assy.",
+    "opts": [
+      "Yakıt pompasının sızıntı testini yapın.",
+      "Yakıt pompasındaki sızıntıyı kontrol edin.",
+      "Yakıt pompasınındaki sızıntıyı durdurun.",
+      "Yakıt testi sızıntı varken uygulanmaz."
+    ],
+    "ans": 0,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 2247,
+    "cat": "translation",
+    "orig": 2247,
+    "q": "Bu arızayı yerde doğrulayamazsınız.",
+    "opts": [
+      "You cannot find this fault on the ground.",
+      "You cannot confirm this fault on the ground.",
+      "You cannot find the fault on the ground.",
+      "You cannot fix this fault on the ground."
+    ],
+    "ans": 0,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 2248,
+    "cat": "translation",
+    "orig": 2248,
+    "q": "Direnç 500 ohm olmalıdır.",
+    "opts": [
+      "The resistance must be 500 ohms.",
+      "The resistance can be 500 ohms.",
+      "The resistance will be 500 ohms.",
+      "The resistance may be 500 ohms."
+    ],
+    "ans": 0,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 2249,
+    "cat": "translation",
+    "orig": 2249,
+    "q": "Bu değerler sadece bilgilendirme için verilir.",
+    "opts": [
+      "These values are given for information only.",
+      "These values can only be used for information.",
+      "These values were given for information only.",
+      "These values are just for information."
+    ],
+    "ans": 0,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 2250,
+    "cat": "translation",
+    "orig": 2250,
+    "q": "Gözenekli yüzeyleri istenmeyen materyellerden arındırmak için köpük ya da elektrik süpürgesi kullanın.",
+    "opts": [
+      "Using foam and vacuum cleaner removes the unwanted materials from perforated surfaces.",
+      "Use foam or vacuum cleaner for replacing some unwanted materials from hollow surfaces.",
+      "Use foam and vacuum cleaner to remove the unwanted materials from perforated surfaces.",
+      "To use foam and vacuum cleaner, it is easy to replace the unwanted materials from surfaces"
+    ],
+    "ans": 0,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 2251,
+    "cat": "translation",
+    "orig": 2251,
+    "q": "Kumaş, eğer çok fazla su eklerseniz ya da su çok soğuk olmazsa küçülebilir.",
+    "opts": [
+      "The fabric shrinks if you add too much water or the water is not cold.",
+      "Before you add too much water and the water is not cold, the fabric shrinks.",
+      "When you add too much water or the water is not cold, the fabric can shrink.",
+      "The fabric can shrink if you add too much water or the water is not cold."
+    ],
+    "ans": 0,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 2252,
+    "cat": "translation",
+    "orig": 2252,
+    "q": "Slide’ın açılacağı kapının alt tarafında herhangi bir  kişinin ya da ekipmanın olmadığından emin olunuz.",
+    "opts": [
+      "Make sure there are no persons or equipment in the area below the door where the slide will inflate.",
+      "Make sure that the door where the slide will inflate does not have any areas for persons or equipment.",
+      "You must make sure that the door which the slide will inflate does not have any areas for some persons or equipment",
+      "You may make sure that the door where the slide will inflate does not have any areas for a person or equipment."
+    ],
+    "ans": 0,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 2253,
+    "cat": "translation",
+    "orig": 2253,
+    "q": "Tuvalet takımı esnasında dikkatli olunuz.",
+    "opts": [
+      "You must install the lavatory to be careful.",
+      "Be careful during the installation of the lavatory.",
+      "During installation of the lavatory you must be careful.",
+      "You need to be careful when you install the lavatory."
+    ],
+    "ans": 0,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 2318,
+    "cat": "translation",
+    "orig": 2318,
+    "q": "Put the aircraft back to its initial configuration.",
+    "opts": [
+      "Uçağı başlangıç yapılandırmasında bırakın.",
+      "Uçağı başlangıç noktasına götürün.",
+      "Uçağı ilk yapılandırma haline geri getirin.",
+      "Başlangıç yapılandırmasını uçağa uyarlayın."
+    ],
+    "ans": 0,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 2319,
+    "cat": "translation",
+    "orig": 2319,
+    "q": "If you have not found the cause of EGT over limit, do the steps again.",
+    "opts": [
+      "Eğer EGT de sınır aşımı olursa, adımları tekrarlayınız.",
+      "EGT’nin üst sınırını bulmazsanız, adımları tekrarlayınız.",
+      "EGT limiti aşılırsa adımları tekrarlamada fayda var.",
+      "Eğer EGT ‘nin sınır aşımının sebebini bulamazsanız, adımları tekrarlayın."
+    ],
+    "ans": 0,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 2320,
+    "cat": "translation",
+    "orig": 2320,
+    "q": "Examine the ignition leads.",
+    "opts": [
+      "Ateşleme uçlarının çalıştığından emin olun.",
+      "Ateşleme uçlarını kontrol edin.",
+      "Ateşleme uçlarını düzgün yerleştirin.",
+      "Ateşleme uçlarını temizleyin."
+    ],
+    "ans": 0,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 2321,
+    "cat": "translation",
+    "orig": 2321,
+    "q": "If warning fault messages or the maintenance messages are not identified, restart the system.",
+    "opts": [
+      "Hata uyarı mesajları veya bakım mesajları tespit edilmezse, sistemi yeniden başlatın.",
+      "Sistemi yeniden başlatırsanız hata uyarı veya bakım mesajı tespit edemezsiniz..",
+      "Hata uyarı mesajları veya bakım mesajları tespit edemezseniz, sistemi yeniden başlatın.",
+      "Hata uyarı tespit edilir de bakım mesajı tespit edilmezse, sitemi yeniden başlatın."
+    ],
+    "ans": 0,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 2322,
+    "cat": "translation",
+    "orig": 2322,
+    "q": "The boiling point depends on other factors such as the system pressure.",
+    "opts": [
+      "Kaynama noktası sistem basıncı gibi başka faktörlere bağlıdır.",
+      "Kaynama noktası daha başka faktörlere bağlıdır; sistem baskısı da buna dahildir.",
+      "Kaynama noktası için faktörler değişkenlik gösterebilir.",
+      "Tüm faktörler kaynama noktasını etkiler."
+    ],
+    "ans": 0,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 2323,
+    "cat": "translation",
+    "orig": 2323,
+    "q": "All work has to be performed in accordance with the relevant manuel.",
+    "opts": [
+      "Tüm çalışmalar uygun kılavuza göre yapılmalıdır.",
+      "Uygun olmayan kılavuz kullanılmamalıdır.",
+      "Tüm çalışmalar birviriyle uygunluk içinde olmalıdır.",
+      "Tüm çalışmalar uygun olmalıdır."
+    ],
+    "ans": 0,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 2324,
+    "cat": "translation",
+    "orig": 2324,
+    "q": "Cooling capacity is too low.",
+    "opts": [
+      "Soğutma kapasitesi düşüktür.",
+      "Isıtma kapasitesi çok düşüktür.",
+      "Soğutma kapasitesi çok düşüktür.",
+      "Soğutma yapılamayacak kadar düşüktür."
+    ],
+    "ans": 0,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 2325,
+    "cat": "translation",
+    "orig": 2325,
+    "q": "Information is useful for better handling.",
+    "opts": [
+      "Bilgi kullanışlıdır.",
+      "Bilgi, daha iyi işlem için kullanışlıdır.",
+      "Daha iyi işlem için kullanım şarttır.",
+      "Daha iyi işlem için uygun bilgiler vardır."
+    ],
+    "ans": 0,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 2326,
+    "cat": "translation",
+    "orig": 2326,
+    "q": "Bazı uçak sistemleri dahili test donanıına sahiptir.",
+    "opts": [
+      "There are some built-in test equipment in airplane systems.",
+      "Some built-in test equipment are in the airplane systems.",
+      "Some airplanes have fixed equipment system.",
+      "Some airplane systems have built-in test equipment."
+    ],
+    "ans": 0,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 2327,
+    "cat": "translation",
+    "orig": 2327,
+    "q": "Olası sebepler listesinde, en yüksek olasılıklı sebep ilk, en düşük olasılıklı sebep son olarak gelir.",
+    "opts": [
+      "The list of possible causes has the most likely cause first and the least likely cause last.",
+      "In the list of possible causes the most likely cause is the first while the least likely cause is the last.",
+      "The list of possible causes has both the most likely cause and the least likely cause.",
+      "In the list of possible causes there are the most likely causes and the least likely causes."
+    ],
+    "ans": 0,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 2328,
+    "cat": "translation",
+    "orig": 2328,
+    "q": "BITE test yaptığınızda sistem hata bulursa size bir bakım mesajı verecektir.",
+    "opts": [
+      "The system would give you a maintenance message, if it found a fault in the BITE test.",
+      "If the system finds a fault when you do a BITE test, it will give you a maintenance message.",
+      "If the BITE test finds a fault in the system, it will give you a maintenance message.",
+      "The system will give you a maintenance message when it finds a fault in the BITE test."
+    ],
+    "ans": 0,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 2329,
+    "cat": "translation",
+    "orig": 2329,
+    "q": "Hata kodunun ilk iki basamağına bakın.",
+    "opts": [
+      "Just first two digits are important for the fault code.",
+      "You have to look at the first two digits of the fault code.",
+      "The first two digits of the fault code are important.",
+      "Look at the first two digits of the fault code"
+    ],
+    "ans": 0,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 2330,
+    "cat": "translation",
+    "orig": 2330,
+    "q": "Sorunu çözmek için adımları okuyun.",
+    "opts": [
+      "To solve the problem, read the steps.",
+      "To read the steps solve the problems.",
+      "Solving problems is reading the steps.",
+      "To solve the problems is to read the steps."
+    ],
+    "ans": 0,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 2331,
+    "cat": "translation",
+    "orig": 2331,
+    "q": "Başlamadan önce hangi gerekli parçaların hazır olduğunu görmek için bu listeyi kullanabilirsiniz.",
+    "opts": [
+      "You can use the necessary parts in this list before you begin.",
+      "Before you begin make sure that you have all parts which are necessary.",
+      "You can use this list to find out what necessary parts are available before you begin",
+      "When you begin check the list if you have all the necessary parts or not."
+    ],
+    "ans": 0,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 2332,
+    "cat": "translation",
+    "orig": 2332,
+    "q": "Bu liste devre kesicilerin isimlerini panelde göreceğinizle aynı şekilde verir.",
+    "opts": [
+      "Use this list to see the same names of the circuit breakers on the panel.",
+      "This list gives the name of the circuit breakers the same as you will see on the panel.",
+      "On the panel the circuit breakers’ names are the same as the list.",
+      "This list includes the names of circuit breakers which are the same on the panel."
+    ],
+    "ans": 0,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
   }
 ]

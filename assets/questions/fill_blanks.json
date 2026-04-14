@@ -4588,5 +4588,1535 @@
     "passage": null,
     "passageTitle": null,
     "passageId": null
+  },
+  {
+    "id": 1951,
+    "cat": "fill_blanks",
+    "orig": 1951,
+    "q": "…………… all personnel, equipment, and flammable materials from …………… the engine when you start the engine. there can be fuel in the combustion chamber. This fuel can burn in the exhaust nozzle. …………… you do not obey thıs instruction, injury to personnel or damage to equipment …………… occur.",
+    "opts": [
+      "To keep",
+      "Keep",
+      "Keeping",
+      "Kept"
+    ],
+    "ans": 1,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 1952,
+    "cat": "fill_blanks",
+    "orig": 1952,
+    "q": "…………… all personnel, equipment, and flammable materials from …………… the engine when you start the engine. there can be fuel in the combustion chamber. This fuel can burn in the exhaust nozzle. …………… you do not obey thıs instruction, injury to personnel or damage to equipment …………… occur.",
+    "opts": [
+      "into",
+      "behind",
+      "next",
+      "in front"
+    ],
+    "ans": 3,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 1953,
+    "cat": "fill_blanks",
+    "orig": 1953,
+    "q": "…………… all personnel, equipment, and flammable materials from …………… the engine when you start the engine. there can be fuel in the combustion chamber. This fuel can burn in the exhaust nozzle. …………… you do not obey thıs instruction, injury to personnel or damage to equipment …………… occur.",
+    "opts": [
+      "However",
+      "Despite",
+      "If",
+      "Unless"
+    ],
+    "ans": 2,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 1954,
+    "cat": "fill_blanks",
+    "orig": 1954,
+    "q": "…………… all personnel, equipment, and flammable materials from …………… the engine when you start the engine. there can be fuel in the combustion chamber. This fuel can burn in the exhaust nozzle. …………… you do not obey thıs instruction, injury to personnel or damage to equipment …………… occur.",
+    "opts": [
+      "must",
+      "has to",
+      "should",
+      "can"
+    ],
+    "ans": 2,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 1955,
+    "cat": "fill_blanks",
+    "orig": 1955,
+    "q": "…………… all personnel, equipment, and flammable materials from …………… the engine when you start the engine. there can be fuel in the combustion chamber. This fuel can burn in the exhaust nozzle. …………… you do not obey thıs instruction, injury to personnel or damage to equipment …………… occur. The Power Assurance Test maximum EGT values ……………   an allowance for the normal loss of EGT margin that ……………    shortly after installation of a new or fully overhauled engine. If the engine is being tested after installation and has completed a Quick Turn Engine Shop Visit or …………… for more than 1,000 hours, the maximum EGT can be increased by 7 degrees C.",
+    "opts": [
+      "include",
+      "included",
+      "includes",
+      "including"
+    ],
+    "ans": 2,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 1956,
+    "cat": "fill_blanks",
+    "orig": 1956,
+    "q": "…………… all personnel, equipment, and flammable materials from …………… the engine when you start the engine. there can be fuel in the combustion chamber. This fuel can burn in the exhaust nozzle. …………… you do not obey thıs instruction, injury to personnel or damage to equipment …………… occur. The Power Assurance Test maximum EGT values ……………   an allowance for the normal loss of EGT margin that ……………    shortly after installation of a new or fully overhauled engine. If the engine is being tested after installation and has completed a Quick Turn Engine Shop Visit or …………… for more than 1,000 hours, the maximum EGT can be increased by 7 degrees C.",
+    "opts": [
+      "reckons",
+      "occurs",
+      "allows",
+      "provides"
+    ],
+    "ans": 1,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 1957,
+    "cat": "fill_blanks",
+    "orig": 1957,
+    "q": "…………… all personnel, equipment, and flammable materials from …………… the engine when you start the engine. there can be fuel in the combustion chamber. This fuel can burn in the exhaust nozzle. …………… you do not obey thıs instruction, injury to personnel or damage to equipment …………… occur. The Power Assurance Test maximum EGT values ……………   an allowance for the normal loss of EGT margin that ……………    shortly after installation of a new or fully overhauled engine. If the engine is being tested after installation and has completed a Quick Turn Engine Shop Visit or …………… for more than 1,000 hours, the maximum EGT can be increased by 7 degrees C.",
+    "opts": [
+      "had been installed",
+      "is being installed",
+      "was installed",
+      "has been installed"
+    ],
+    "ans": 3,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 1958,
+    "cat": "fill_blanks",
+    "orig": 1958,
+    "q": "…………… all personnel, equipment, and flammable materials from …………… the engine when you start the engine. there can be fuel in the combustion chamber. This fuel can burn in the exhaust nozzle. …………… you do not obey thıs instruction, injury to personnel or damage to equipment …………… occur. The Power Assurance Test maximum EGT values ……………   an allowance for the normal loss of EGT margin that ……………    shortly after installation of a new or fully overhauled engine. If the engine is being tested after installation and has completed a Quick Turn Engine Shop Visit or …………… for more than 1,000 hours, the maximum EGT can be increased by 7 degrees C. The adapter drive can be in one …………… three positions on the torque wrench. The\nillustration in the Instructions for Torque task shows …………… positions. A change in\nthe position of the adapter drive on the torque wrench will also change the torque\n……………. Use the examples in the Instructions for Torque task …………… find the correct torque values.",
+    "opts": [
+      "at",
+      "of",
+      "in",
+      "by"
+    ],
+    "ans": 1,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 1959,
+    "cat": "fill_blanks",
+    "orig": 1959,
+    "q": "…………… all personnel, equipment, and flammable materials from …………… the engine when you start the engine. there can be fuel in the combustion chamber. This fuel can burn in the exhaust nozzle. …………… you do not obey thıs instruction, injury to personnel or damage to equipment …………… occur. The Power Assurance Test maximum EGT values ……………   an allowance for the normal loss of EGT margin that ……………    shortly after installation of a new or fully overhauled engine. If the engine is being tested after installation and has completed a Quick Turn Engine Shop Visit or …………… for more than 1,000 hours, the maximum EGT can be increased by 7 degrees C. The adapter drive can be in one …………… three positions on the torque wrench. The\nillustration in the Instructions for Torque task shows …………… positions. A change in\nthe position of the adapter drive on the torque wrench will also change the torque\n……………. Use the examples in the Instructions for Torque task …………… find the correct torque values.",
+    "opts": [
+      "these",
+      "that",
+      "it",
+      "this"
+    ],
+    "ans": 3,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 1960,
+    "cat": "fill_blanks",
+    "orig": 1960,
+    "q": "…………… all personnel, equipment, and flammable materials from …………… the engine when you start the engine. there can be fuel in the combustion chamber. This fuel can burn in the exhaust nozzle. …………… you do not obey thıs instruction, injury to personnel or damage to equipment …………… occur. The Power Assurance Test maximum EGT values ……………   an allowance for the normal loss of EGT margin that ……………    shortly after installation of a new or fully overhauled engine. If the engine is being tested after installation and has completed a Quick Turn Engine Shop Visit or …………… for more than 1,000 hours, the maximum EGT can be increased by 7 degrees C. The adapter drive can be in one …………… three positions on the torque wrench. The\nillustration in the Instructions for Torque task shows …………… positions. A change in\nthe position of the adapter drive on the torque wrench will also change the torque\n……………. Use the examples in the Instructions for Torque task …………… find the correct torque values.",
+    "opts": [
+      "to apply",
+      "applied",
+      "applying",
+      "to be applied"
+    ],
+    "ans": 0,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 1961,
+    "cat": "fill_blanks",
+    "orig": 1961,
+    "q": "…………… all personnel, equipment, and flammable materials from …………… the engine when you start the engine. there can be fuel in the combustion chamber. This fuel can burn in the exhaust nozzle. …………… you do not obey thıs instruction, injury to personnel or damage to equipment …………… occur. The Power Assurance Test maximum EGT values ……………   an allowance for the normal loss of EGT margin that ……………    shortly after installation of a new or fully overhauled engine. If the engine is being tested after installation and has completed a Quick Turn Engine Shop Visit or …………… for more than 1,000 hours, the maximum EGT can be increased by 7 degrees C. The adapter drive can be in one …………… three positions on the torque wrench. The\nillustration in the Instructions for Torque task shows …………… positions. A change in\nthe position of the adapter drive on the torque wrench will also change the torque\n……………. Use the examples in the Instructions for Torque task …………… find the correct torque values. .",
+    "opts": [
+      "helped",
+      "help",
+      "to help",
+      "helping"
+    ],
+    "ans": 2,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 1962,
+    "cat": "fill_blanks",
+    "orig": 1962,
+    "q": "…………… all personnel, equipment, and flammable materials from …………… the engine when you start the engine. there can be fuel in the combustion chamber. This fuel can burn in the exhaust nozzle. …………… you do not obey thıs instruction, injury to personnel or damage to equipment …………… occur. The Power Assurance Test maximum EGT values ……………   an allowance for the normal loss of EGT margin that ……………    shortly after installation of a new or fully overhauled engine. If the engine is being tested after installation and has completed a Quick Turn Engine Shop Visit or …………… for more than 1,000 hours, the maximum EGT can be increased by 7 degrees C. The adapter drive can be in one …………… three positions on the torque wrench. The\nillustration in the Instructions for Torque task shows …………… positions. A change in\nthe position of the adapter drive on the torque wrench will also change the torque\n……………. Use the examples in the Instructions for Torque task …………… find the correct torque values. . You must be very careful when you …………… maintenance operations in engine critical areas. Foreign objects (FOD) …………… go into the engine and engine parts not correctly attached can cause damage to the engine. You must make sure that all critical areas at and around the engine are clean …………… you operate the engine. If an object falls ……………   an engine component, stop the procedure immediately. You must find and remove the object before you continue with the procedure.",
+    "opts": [
+      "do",
+      "have",
+      "send",
+      "make"
+    ],
+    "ans": 0,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 1963,
+    "cat": "fill_blanks",
+    "orig": 1963,
+    "q": "…………… all personnel, equipment, and flammable materials from …………… the engine when you start the engine. there can be fuel in the combustion chamber. This fuel can burn in the exhaust nozzle. …………… you do not obey thıs instruction, injury to personnel or damage to equipment …………… occur. The Power Assurance Test maximum EGT values ……………   an allowance for the normal loss of EGT margin that ……………    shortly after installation of a new or fully overhauled engine. If the engine is being tested after installation and has completed a Quick Turn Engine Shop Visit or …………… for more than 1,000 hours, the maximum EGT can be increased by 7 degrees C. The adapter drive can be in one …………… three positions on the torque wrench. The\nillustration in the Instructions for Torque task shows …………… positions. A change in\nthe position of the adapter drive on the torque wrench will also change the torque\n……………. Use the examples in the Instructions for Torque task …………… find the correct torque values. . You must be very careful when you …………… maintenance operations in engine critical areas. Foreign objects (FOD) …………… go into the engine and engine parts not correctly attached can cause damage to the engine. You must make sure that all critical areas at and around the engine are clean …………… you operate the engine. If an object falls ……………   an engine component, stop the procedure immediately. You must find and remove the object before you continue with the procedure.",
+    "opts": [
+      "when",
+      "that",
+      "who",
+      "where"
+    ],
+    "ans": 1,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 1964,
+    "cat": "fill_blanks",
+    "orig": 1964,
+    "q": "…………… all personnel, equipment, and flammable materials from …………… the engine when you start the engine. there can be fuel in the combustion chamber. This fuel can burn in the exhaust nozzle. …………… you do not obey thıs instruction, injury to personnel or damage to equipment …………… occur. The Power Assurance Test maximum EGT values ……………   an allowance for the normal loss of EGT margin that ……………    shortly after installation of a new or fully overhauled engine. If the engine is being tested after installation and has completed a Quick Turn Engine Shop Visit or …………… for more than 1,000 hours, the maximum EGT can be increased by 7 degrees C. The adapter drive can be in one …………… three positions on the torque wrench. The\nillustration in the Instructions for Torque task shows …………… positions. A change in\nthe position of the adapter drive on the torque wrench will also change the torque\n……………. Use the examples in the Instructions for Torque task …………… find the correct torque values. . You must be very careful when you …………… maintenance operations in engine critical areas. Foreign objects (FOD) …………… go into the engine and engine parts not correctly attached can cause damage to the engine. You must make sure that all critical areas at and around the engine are clean …………… you operate the engine. If an object falls ……………   an engine component, stop the procedure immediately. You must find and remove the object before you continue with the procedure.",
+    "opts": [
+      "due to",
+      "before",
+      "suddenly",
+      "despite"
+    ],
+    "ans": 0,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 1965,
+    "cat": "fill_blanks",
+    "orig": 1965,
+    "q": "…………… all personnel, equipment, and flammable materials from …………… the engine when you start the engine. there can be fuel in the combustion chamber. This fuel can burn in the exhaust nozzle. …………… you do not obey thıs instruction, injury to personnel or damage to equipment …………… occur. The Power Assurance Test maximum EGT values ……………   an allowance for the normal loss of EGT margin that ……………    shortly after installation of a new or fully overhauled engine. If the engine is being tested after installation and has completed a Quick Turn Engine Shop Visit or …………… for more than 1,000 hours, the maximum EGT can be increased by 7 degrees C. The adapter drive can be in one …………… three positions on the torque wrench. The\nillustration in the Instructions for Torque task shows …………… positions. A change in\nthe position of the adapter drive on the torque wrench will also change the torque\n……………. Use the examples in the Instructions for Torque task …………… find the correct torque values. . You must be very careful when you …………… maintenance operations in engine critical areas. Foreign objects (FOD) …………… go into the engine and engine parts not correctly attached can cause damage to the engine. You must make sure that all critical areas at and around the engine are clean …………… you operate the engine. If an object falls ……………   an engine component, stop the procedure immediately. You must find and remove the object before you continue with the procedure.",
+    "opts": [
+      "at",
+      "off",
+      "with",
+      "into"
+    ],
+    "ans": 3,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 2031,
+    "cat": "fill_blanks",
+    "orig": 2031,
+    "q": "Inspect magneto inner side for any foreign particles and the taper surface. Under normal circumstances it is not necessary …………… the flywhell apart. Check Woodruff key in crankshaft for tight fit and degrease taper of crankshaft and flywheel hub. Apply LOCTITE 221 sparingly, but well spread into the taper of magneto hub. …………… flywheel hub ass’y, washer 17/36/5, lock washer and hex. Screw M16x1,5x40 and tighten to 120 Nm. Make sure that the Woodruf key …………… in the keyway. A loose or a loss of Woodruf key can create failures …………… no-starting or advanced ignition timing.",
+    "opts": [
+      "take",
+      "to take",
+      "taking",
+      "takes"
+    ],
+    "ans": 1,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 2032,
+    "cat": "fill_blanks",
+    "orig": 2032,
+    "q": "Inspect magneto inner side for any foreign particles and the taper surface. Under normal circumstances it is not necessary …………… the flywhell apart. Check Woodruff key in crankshaft for tight fit and degrease taper of crankshaft and flywheel hub. Apply LOCTITE 221 sparingly, but well spread into the taper of magneto hub. …………… flywheel hub ass’y, washer 17/36/5, lock washer and hex. Screw M16x1,5x40 and tighten to 120 Nm. Make sure that the Woodruf key …………… in the keyway. A loose or a loss of Woodruf key can create failures …………… no-starting or advanced ignition timing.",
+    "opts": [
+      "Fitting",
+      "To fit",
+      "Fit",
+      "Fits"
+    ],
+    "ans": 0,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 2033,
+    "cat": "fill_blanks",
+    "orig": 2033,
+    "q": "Inspect magneto inner side for any foreign particles and the taper surface. Under normal circumstances it is not necessary …………… the flywhell apart. Check Woodruff key in crankshaft for tight fit and degrease taper of crankshaft and flywheel hub. Apply LOCTITE 221 sparingly, but well spread into the taper of magneto hub. …………… flywheel hub ass’y, washer 17/36/5, lock washer and hex. Screw M16x1,5x40 and tighten to 120 Nm. Make sure that the Woodruf key …………… in the keyway. A loose or a loss of Woodruf key can create failures …………… no-starting or advanced ignition timing.",
+    "opts": [
+      "remains",
+      "keeps",
+      "closes",
+      "stays"
+    ],
+    "ans": 2,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 2034,
+    "cat": "fill_blanks",
+    "orig": 2034,
+    "q": "Inspect magneto inner side for any foreign particles and the taper surface. Under normal circumstances it is not necessary …………… the flywhell apart. Check Woodruff key in crankshaft for tight fit and degrease taper of crankshaft and flywheel hub. Apply LOCTITE 221 sparingly, but well spread into the taper of magneto hub. …………… flywheel hub ass’y, washer 17/36/5, lock washer and hex. Screw M16x1,5x40 and tighten to 120 Nm. Make sure that the Woodruf key …………… in the keyway. A loose or a loss of Woodruf key can create failures …………… no-starting or advanced ignition timing.",
+    "opts": [
+      "includes",
+      "which is included",
+      "included",
+      "including"
+    ],
+    "ans": 3,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 2035,
+    "cat": "fill_blanks",
+    "orig": 2035,
+    "q": "Inspect magneto inner side for any foreign particles and the taper surface. Under normal circumstances it is not necessary …………… the flywhell apart. Check Woodruff key in crankshaft for tight fit and degrease taper of crankshaft and flywheel hub. Apply LOCTITE 221 sparingly, but well spread into the taper of magneto hub. …………… flywheel hub ass’y, washer 17/36/5, lock washer and hex. Screw M16x1,5x40 and tighten to 120 Nm. Make sure that the Woodruf key …………… in the keyway. A loose or a loss of Woodruf key can create failures …………… no-starting or advanced ignition timing. At the installation of the stator ensure proper grounding of the grounding cables via the screw head/thread to the ignition housing. Also ensure proper contact of the fixation screw to the ignition housing, …………… by careful examination and cleaning of all contact surfaces. Failures to do so may result …………… engine failures or stoppage. At replacement …………… re-installation of the stator take care for correct routing of cable assembly and not to damage the stator.",
+    "opts": [
+      "is achieved",
+      "achieving",
+      "which is achieving",
+      "which is achieved"
+    ],
+    "ans": 0,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 2036,
+    "cat": "fill_blanks",
+    "orig": 2036,
+    "q": "Inspect magneto inner side for any foreign particles and the taper surface. Under normal circumstances it is not necessary …………… the flywhell apart. Check Woodruff key in crankshaft for tight fit and degrease taper of crankshaft and flywheel hub. Apply LOCTITE 221 sparingly, but well spread into the taper of magneto hub. …………… flywheel hub ass’y, washer 17/36/5, lock washer and hex. Screw M16x1,5x40 and tighten to 120 Nm. Make sure that the Woodruf key …………… in the keyway. A loose or a loss of Woodruf key can create failures …………… no-starting or advanced ignition timing. At the installation of the stator ensure proper grounding of the grounding cables via the screw head/thread to the ignition housing. Also ensure proper contact of the fixation screw to the ignition housing, …………… by careful examination and cleaning of all contact surfaces. Failures to do so may result …………… engine failures or stoppage. At replacement …………… re-installation of the stator take care for correct routing of cable assembly and not to damage the stator.",
+    "opts": [
+      "in",
+      "on",
+      "of",
+      "about"
+    ],
+    "ans": 1,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 2037,
+    "cat": "fill_blanks",
+    "orig": 2037,
+    "q": "Inspect magneto inner side for any foreign particles and the taper surface. Under normal circumstances it is not necessary …………… the flywhell apart. Check Woodruff key in crankshaft for tight fit and degrease taper of crankshaft and flywheel hub. Apply LOCTITE 221 sparingly, but well spread into the taper of magneto hub. …………… flywheel hub ass’y, washer 17/36/5, lock washer and hex. Screw M16x1,5x40 and tighten to 120 Nm. Make sure that the Woodruf key …………… in the keyway. A loose or a loss of Woodruf key can create failures …………… no-starting or advanced ignition timing. At the installation of the stator ensure proper grounding of the grounding cables via the screw head/thread to the ignition housing. Also ensure proper contact of the fixation screw to the ignition housing, …………… by careful examination and cleaning of all contact surfaces. Failures to do so may result …………… engine failures or stoppage. At replacement …………… re-installation of the stator take care for correct routing of cable assembly and not to damage the stator.",
+    "opts": [
+      "but",
+      "or",
+      "so",
+      "because"
+    ],
+    "ans": 2,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 2038,
+    "cat": "fill_blanks",
+    "orig": 2038,
+    "q": "Inspect magneto inner side for any foreign particles and the taper surface. Under normal circumstances it is not necessary …………… the flywhell apart. Check Woodruff key in crankshaft for tight fit and degrease taper of crankshaft and flywheel hub. Apply LOCTITE 221 sparingly, but well spread into the taper of magneto hub. …………… flywheel hub ass’y, washer 17/36/5, lock washer and hex. Screw M16x1,5x40 and tighten to 120 Nm. Make sure that the Woodruf key …………… in the keyway. A loose or a loss of Woodruf key can create failures …………… no-starting or advanced ignition timing. At the installation of the stator ensure proper grounding of the grounding cables via the screw head/thread to the ignition housing. Also ensure proper contact of the fixation screw to the ignition housing, …………… by careful examination and cleaning of all contact surfaces. Failures to do so may result …………… engine failures or stoppage. At replacement …………… re-installation of the stator take care for correct routing of cable assembly and not to damage the stator. The DFCS system is a two-axis (pitch and roll) system …………… operates the elevators and ailerons to designated locations and make automatic  landings.  Control functions are also translated …………… flight director commands for display on the pilots' electronic attitude director  indicators (EADI's), thereby providing the pilots' flight attitude  commands during manual operation or allowing the pilots …………… autopilot operation.  Automatic stabilizer trimming relieves sustained elevator loads which might be incurred …………… fuel burnoff.",
+    "opts": [
+      "which",
+      "where",
+      "whose",
+      "who"
+    ],
+    "ans": 3,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 2039,
+    "cat": "fill_blanks",
+    "orig": 2039,
+    "q": "Inspect magneto inner side for any foreign particles and the taper surface. Under normal circumstances it is not necessary …………… the flywhell apart. Check Woodruff key in crankshaft for tight fit and degrease taper of crankshaft and flywheel hub. Apply LOCTITE 221 sparingly, but well spread into the taper of magneto hub. …………… flywheel hub ass’y, washer 17/36/5, lock washer and hex. Screw M16x1,5x40 and tighten to 120 Nm. Make sure that the Woodruf key …………… in the keyway. A loose or a loss of Woodruf key can create failures …………… no-starting or advanced ignition timing. At the installation of the stator ensure proper grounding of the grounding cables via the screw head/thread to the ignition housing. Also ensure proper contact of the fixation screw to the ignition housing, …………… by careful examination and cleaning of all contact surfaces. Failures to do so may result …………… engine failures or stoppage. At replacement …………… re-installation of the stator take care for correct routing of cable assembly and not to damage the stator. The DFCS system is a two-axis (pitch and roll) system …………… operates the elevators and ailerons to designated locations and make automatic  landings.  Control functions are also translated …………… flight director commands for display on the pilots' electronic attitude director  indicators (EADI's), thereby providing the pilots' flight attitude  commands during manual operation or allowing the pilots …………… autopilot operation.  Automatic stabilizer trimming relieves sustained elevator loads which might be incurred …………… fuel burnoff.",
+    "opts": [
+      "from",
+      "near",
+      "into",
+      "with"
+    ],
+    "ans": 0,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 2040,
+    "cat": "fill_blanks",
+    "orig": 2040,
+    "q": "Inspect magneto inner side for any foreign particles and the taper surface. Under normal circumstances it is not necessary …………… the flywhell apart. Check Woodruff key in crankshaft for tight fit and degrease taper of crankshaft and flywheel hub. Apply LOCTITE 221 sparingly, but well spread into the taper of magneto hub. …………… flywheel hub ass’y, washer 17/36/5, lock washer and hex. Screw M16x1,5x40 and tighten to 120 Nm. Make sure that the Woodruf key …………… in the keyway. A loose or a loss of Woodruf key can create failures …………… no-starting or advanced ignition timing. At the installation of the stator ensure proper grounding of the grounding cables via the screw head/thread to the ignition housing. Also ensure proper contact of the fixation screw to the ignition housing, …………… by careful examination and cleaning of all contact surfaces. Failures to do so may result …………… engine failures or stoppage. At replacement …………… re-installation of the stator take care for correct routing of cable assembly and not to damage the stator. The DFCS system is a two-axis (pitch and roll) system …………… operates the elevators and ailerons to designated locations and make automatic  landings.  Control functions are also translated …………… flight director commands for display on the pilots' electronic attitude director  indicators (EADI's), thereby providing the pilots' flight attitude  commands during manual operation or allowing the pilots …………… autopilot operation.  Automatic stabilizer trimming relieves sustained elevator loads which might be incurred …………… fuel burnoff.",
+    "opts": [
+      "being monitored",
+      "monitored",
+      "to be monitored",
+      "to monitor"
+    ],
+    "ans": 1,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 2041,
+    "cat": "fill_blanks",
+    "orig": 2041,
+    "q": "Inspect magneto inner side for any foreign particles and the taper surface. Under normal circumstances it is not necessary …………… the flywhell apart. Check Woodruff key in crankshaft for tight fit and degrease taper of crankshaft and flywheel hub. Apply LOCTITE 221 sparingly, but well spread into the taper of magneto hub. …………… flywheel hub ass’y, washer 17/36/5, lock washer and hex. Screw M16x1,5x40 and tighten to 120 Nm. Make sure that the Woodruf key …………… in the keyway. A loose or a loss of Woodruf key can create failures …………… no-starting or advanced ignition timing. At the installation of the stator ensure proper grounding of the grounding cables via the screw head/thread to the ignition housing. Also ensure proper contact of the fixation screw to the ignition housing, …………… by careful examination and cleaning of all contact surfaces. Failures to do so may result …………… engine failures or stoppage. At replacement …………… re-installation of the stator take care for correct routing of cable assembly and not to damage the stator. The DFCS system is a two-axis (pitch and roll) system …………… operates the elevators and ailerons to designated locations and make automatic  landings.  Control functions are also translated …………… flight director commands for display on the pilots' electronic attitude director  indicators (EADI's), thereby providing the pilots' flight attitude  commands during manual operation or allowing the pilots …………… autopilot operation.  Automatic stabilizer trimming relieves sustained elevator loads which might be incurred …………… fuel burnoff.",
+    "opts": [
+      "despite",
+      "due to",
+      "because",
+      "therefore"
+    ],
+    "ans": 2,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 2042,
+    "cat": "fill_blanks",
+    "orig": 2042,
+    "q": "Inspect magneto inner side for any foreign particles and the taper surface. Under normal circumstances it is not necessary …………… the flywhell apart. Check Woodruff key in crankshaft for tight fit and degrease taper of crankshaft and flywheel hub. Apply LOCTITE 221 sparingly, but well spread into the taper of magneto hub. …………… flywheel hub ass’y, washer 17/36/5, lock washer and hex. Screw M16x1,5x40 and tighten to 120 Nm. Make sure that the Woodruf key …………… in the keyway. A loose or a loss of Woodruf key can create failures …………… no-starting or advanced ignition timing. At the installation of the stator ensure proper grounding of the grounding cables via the screw head/thread to the ignition housing. Also ensure proper contact of the fixation screw to the ignition housing, …………… by careful examination and cleaning of all contact surfaces. Failures to do so may result …………… engine failures or stoppage. At replacement …………… re-installation of the stator take care for correct routing of cable assembly and not to damage the stator. The DFCS system is a two-axis (pitch and roll) system …………… operates the elevators and ailerons to designated locations and make automatic  landings.  Control functions are also translated …………… flight director commands for display on the pilots' electronic attitude director  indicators (EADI's), thereby providing the pilots' flight attitude  commands during manual operation or allowing the pilots …………… autopilot operation.  Automatic stabilizer trimming relieves sustained elevator loads which might be incurred …………… fuel burnoff. The flight control computers …………… analog and digital input signals which …………… to provide guidance commands for the autopilot and flight director systems.      …………… autopilot A or autopilot B can be engaged for autopilot control of the airplane to pilot selected guidance commands on the mode control panel.  Both   autopilot channels …………… simultaneously to accomplish automatic  approaches.  Control wheel steering (CWS) is used for manual control of  the airplane through the autopilot system.",
+    "opts": [
+      "use",
+      "uses",
+      "using",
+      "used"
+    ],
+    "ans": 0,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 2043,
+    "cat": "fill_blanks",
+    "orig": 2043,
+    "q": "Inspect magneto inner side for any foreign particles and the taper surface. Under normal circumstances it is not necessary …………… the flywhell apart. Check Woodruff key in crankshaft for tight fit and degrease taper of crankshaft and flywheel hub. Apply LOCTITE 221 sparingly, but well spread into the taper of magneto hub. …………… flywheel hub ass’y, washer 17/36/5, lock washer and hex. Screw M16x1,5x40 and tighten to 120 Nm. Make sure that the Woodruf key …………… in the keyway. A loose or a loss of Woodruf key can create failures …………… no-starting or advanced ignition timing. At the installation of the stator ensure proper grounding of the grounding cables via the screw head/thread to the ignition housing. Also ensure proper contact of the fixation screw to the ignition housing, …………… by careful examination and cleaning of all contact surfaces. Failures to do so may result …………… engine failures or stoppage. At replacement …………… re-installation of the stator take care for correct routing of cable assembly and not to damage the stator. The DFCS system is a two-axis (pitch and roll) system …………… operates the elevators and ailerons to designated locations and make automatic  landings.  Control functions are also translated …………… flight director commands for display on the pilots' electronic attitude director  indicators (EADI's), thereby providing the pilots' flight attitude  commands during manual operation or allowing the pilots …………… autopilot operation.  Automatic stabilizer trimming relieves sustained elevator loads which might be incurred …………… fuel burnoff. The flight control computers …………… analog and digital input signals which …………… to provide guidance commands for the autopilot and flight director systems.      …………… autopilot A or autopilot B can be engaged for autopilot control of the airplane to pilot selected guidance commands on the mode control panel.  Both   autopilot channels …………… simultaneously to accomplish automatic  approaches.  Control wheel steering (CWS) is used for manual control of  the airplane through the autopilot system.",
+    "opts": [
+      "are processed",
+      "have been processed",
+      "had processed",
+      "are being processed"
+    ],
+    "ans": 3,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 2044,
+    "cat": "fill_blanks",
+    "orig": 2044,
+    "q": "Inspect magneto inner side for any foreign particles and the taper surface. Under normal circumstances it is not necessary …………… the flywhell apart. Check Woodruff key in crankshaft for tight fit and degrease taper of crankshaft and flywheel hub. Apply LOCTITE 221 sparingly, but well spread into the taper of magneto hub. …………… flywheel hub ass’y, washer 17/36/5, lock washer and hex. Screw M16x1,5x40 and tighten to 120 Nm. Make sure that the Woodruf key …………… in the keyway. A loose or a loss of Woodruf key can create failures …………… no-starting or advanced ignition timing. At the installation of the stator ensure proper grounding of the grounding cables via the screw head/thread to the ignition housing. Also ensure proper contact of the fixation screw to the ignition housing, …………… by careful examination and cleaning of all contact surfaces. Failures to do so may result …………… engine failures or stoppage. At replacement …………… re-installation of the stator take care for correct routing of cable assembly and not to damage the stator. The DFCS system is a two-axis (pitch and roll) system …………… operates the elevators and ailerons to designated locations and make automatic  landings.  Control functions are also translated …………… flight director commands for display on the pilots' electronic attitude director  indicators (EADI's), thereby providing the pilots' flight attitude  commands during manual operation or allowing the pilots …………… autopilot operation.  Automatic stabilizer trimming relieves sustained elevator loads which might be incurred …………… fuel burnoff. The flight control computers …………… analog and digital input signals which …………… to provide guidance commands for the autopilot and flight director systems.      …………… autopilot A or autopilot B can be engaged for autopilot control of the airplane to pilot selected guidance commands on the mode control panel.  Both   autopilot channels …………… simultaneously to accomplish automatic  approaches.  Control wheel steering (CWS) is used for manual control of  the airplane through the autopilot system.",
+    "opts": [
+      "Neither",
+      "Not only",
+      "Either",
+      "But also"
+    ],
+    "ans": 1,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 2045,
+    "cat": "fill_blanks",
+    "orig": 2045,
+    "q": "Inspect magneto inner side for any foreign particles and the taper surface. Under normal circumstances it is not necessary …………… the flywhell apart. Check Woodruff key in crankshaft for tight fit and degrease taper of crankshaft and flywheel hub. Apply LOCTITE 221 sparingly, but well spread into the taper of magneto hub. …………… flywheel hub ass’y, washer 17/36/5, lock washer and hex. Screw M16x1,5x40 and tighten to 120 Nm. Make sure that the Woodruf key …………… in the keyway. A loose or a loss of Woodruf key can create failures …………… no-starting or advanced ignition timing. At the installation of the stator ensure proper grounding of the grounding cables via the screw head/thread to the ignition housing. Also ensure proper contact of the fixation screw to the ignition housing, …………… by careful examination and cleaning of all contact surfaces. Failures to do so may result …………… engine failures or stoppage. At replacement …………… re-installation of the stator take care for correct routing of cable assembly and not to damage the stator. The DFCS system is a two-axis (pitch and roll) system …………… operates the elevators and ailerons to designated locations and make automatic  landings.  Control functions are also translated …………… flight director commands for display on the pilots' electronic attitude director  indicators (EADI's), thereby providing the pilots' flight attitude  commands during manual operation or allowing the pilots …………… autopilot operation.  Automatic stabilizer trimming relieves sustained elevator loads which might be incurred …………… fuel burnoff. The flight control computers …………… analog and digital input signals which …………… to provide guidance commands for the autopilot and flight director systems.      …………… autopilot A or autopilot B can be engaged for autopilot control of the airplane to pilot selected guidance commands on the mode control panel.  Both   autopilot channels …………… simultaneously to accomplish automatic  approaches.  Control wheel steering (CWS) is used for manual control of  the airplane through the autopilot system.",
+    "opts": [
+      "must engage",
+      "shall be engaged",
+      "would engage",
+      "may be engaged"
+    ],
+    "ans": 2,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 2109,
+    "cat": "fill_blanks",
+    "orig": 2109,
+    "q": "Fuel configuration messages appear on the CDS. These messages show a problem with the configuration of the fuel. The LOW mesages show that either main tank 1 or main tank 2 …………… less than 907 kg of fuel.  This message …………… when there is more than 1133 kg. of fuel in that tank. The IMBAL message shows that there is a  difference of 453 kg of fuel …………… the main tank 1 and main tank 2. The IMBAL message …………… only when the airplane is in the air. The IMBAL  message does not show when there is a LOW message, in other words, they do not occur …………….",
+    "opts": [
+      "have",
+      "has",
+      "had",
+      "having"
+    ],
+    "ans": 0,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 2110,
+    "cat": "fill_blanks",
+    "orig": 2110,
+    "q": "Fuel configuration messages appear on the CDS. These messages show a problem with the configuration of the fuel. The LOW mesages show that either main tank 1 or main tank 2 …………… less than 907 kg of fuel.  This message …………… when there is more than 1133 kg. of fuel in that tank. The IMBAL message shows that there is a  difference of 453 kg of fuel …………… the main tank 1 and main tank 2. The IMBAL message …………… only when the airplane is in the air. The IMBAL  message does not show when there is a LOW message, in other words, they do not occur …………….",
+    "opts": [
+      "goes away – kaybolmak/gitmek",
+      "goes down - düşmek",
+      "goes over – üzerinden gitmek",
+      "goes off – devreye girmek/alarma geçmek"
+    ],
+    "ans": 0,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 2111,
+    "cat": "fill_blanks",
+    "orig": 2111,
+    "q": "Fuel configuration messages appear on the CDS. These messages show a problem with the configuration of the fuel. The LOW mesages show that either main tank 1 or main tank 2 …………… less than 907 kg of fuel.  This message …………… when there is more than 1133 kg. of fuel in that tank. The IMBAL message shows that there is a  difference of 453 kg of fuel …………… the main tank 1 and main tank 2. The IMBAL message …………… only when the airplane is in the air. The IMBAL  message does not show when there is a LOW message, in other words, they do not occur …………….",
+    "opts": [
+      "from",
+      "in",
+      "between",
+      "through"
+    ],
+    "ans": 0,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 2112,
+    "cat": "fill_blanks",
+    "orig": 2112,
+    "q": "Fuel configuration messages appear on the CDS. These messages show a problem with the configuration of the fuel. The LOW mesages show that either main tank 1 or main tank 2 …………… less than 907 kg of fuel.  This message …………… when there is more than 1133 kg. of fuel in that tank. The IMBAL message shows that there is a  difference of 453 kg of fuel …………… the main tank 1 and main tank 2. The IMBAL message …………… only when the airplane is in the air. The IMBAL  message does not show when there is a LOW message, in other words, they do not occur …………….",
+    "opts": [
+      "must be seen",
+      "should be seen",
+      "will be seen",
+      "can be seen"
+    ],
+    "ans": 0,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 2113,
+    "cat": "fill_blanks",
+    "orig": 2113,
+    "q": "Fuel configuration messages appear on the CDS. These messages show a problem with the configuration of the fuel. The LOW mesages show that either main tank 1 or main tank 2 …………… less than 907 kg of fuel.  This message …………… when there is more than 1133 kg. of fuel in that tank. The IMBAL message shows that there is a  difference of 453 kg of fuel …………… the main tank 1 and main tank 2. The IMBAL message …………… only when the airplane is in the air. The IMBAL  message does not show when there is a LOW message, in other words, they do not occur …………….",
+    "opts": [
+      "spontaneously",
+      "simultaneously",
+      "instantaneously",
+      "monotonously"
+    ],
+    "ans": 0,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 2114,
+    "cat": "fill_blanks",
+    "orig": 2114,
+    "q": "Fuel configuration messages appear on the CDS. These messages show a problem with the configuration of the fuel. The LOW mesages show that either main tank 1 or main tank 2 …………… less than 907 kg of fuel.  This message …………… when there is more than 1133 kg. of fuel in that tank. The IMBAL message shows that there is a  difference of 453 kg of fuel …………… the main tank 1 and main tank 2. The IMBAL message …………… only when the airplane is in the air. The IMBAL  message does not show when there is a LOW message, in other words, they do not occur ……………. The leading edge (LE) devices …………… two flaps and four slats on each wing. During cruise, these surfaces fully retract. These surfaces extend during take-off to increase lift, …………… permits slower speeds for airplane rotation. While landing,  the LE slats fully extend to increase lift and help prevent a stall. In normal operation, the LE flaps and slats are mechanically controlled; ……………, during alternate operation, they are electrically controlled. The LE uncommended motion detection function …………… the LE normal operation if two or more flaps or slats move away from the commanded position.  The built-in test equipment (BITE) in the electronic unit enables the flaps and slats …………….",
+    "opts": [
+      "provide",
+      "obtain",
+      "require",
+      "include"
+    ],
+    "ans": 0,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 2115,
+    "cat": "fill_blanks",
+    "orig": 2115,
+    "q": "Fuel configuration messages appear on the CDS. These messages show a problem with the configuration of the fuel. The LOW mesages show that either main tank 1 or main tank 2 …………… less than 907 kg of fuel.  This message …………… when there is more than 1133 kg. of fuel in that tank. The IMBAL message shows that there is a  difference of 453 kg of fuel …………… the main tank 1 and main tank 2. The IMBAL message …………… only when the airplane is in the air. The IMBAL  message does not show when there is a LOW message, in other words, they do not occur ……………. The leading edge (LE) devices …………… two flaps and four slats on each wing. During cruise, these surfaces fully retract. These surfaces extend during take-off to increase lift, …………… permits slower speeds for airplane rotation. While landing,  the LE slats fully extend to increase lift and help prevent a stall. In normal operation, the LE flaps and slats are mechanically controlled; ……………, during alternate operation, they are electrically controlled. The LE uncommended motion detection function …………… the LE normal operation if two or more flaps or slats move away from the commanded position.  The built-in test equipment (BITE) in the electronic unit enables the flaps and slats …………….",
+    "opts": [
+      "what",
+      "that",
+      "which",
+      "where"
+    ],
+    "ans": 0,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 2116,
+    "cat": "fill_blanks",
+    "orig": 2116,
+    "q": "Fuel configuration messages appear on the CDS. These messages show a problem with the configuration of the fuel. The LOW mesages show that either main tank 1 or main tank 2 …………… less than 907 kg of fuel.  This message …………… when there is more than 1133 kg. of fuel in that tank. The IMBAL message shows that there is a  difference of 453 kg of fuel …………… the main tank 1 and main tank 2. The IMBAL message …………… only when the airplane is in the air. The IMBAL  message does not show when there is a LOW message, in other words, they do not occur ……………. The leading edge (LE) devices …………… two flaps and four slats on each wing. During cruise, these surfaces fully retract. These surfaces extend during take-off to increase lift, …………… permits slower speeds for airplane rotation. While landing,  the LE slats fully extend to increase lift and help prevent a stall. In normal operation, the LE flaps and slats are mechanically controlled; ……………, during alternate operation, they are electrically controlled. The LE uncommended motion detection function …………… the LE normal operation if two or more flaps or slats move away from the commanded position.  The built-in test equipment (BITE) in the electronic unit enables the flaps and slats …………….",
+    "opts": [
+      "furthermore",
+      "therefore",
+      "since",
+      "however"
+    ],
+    "ans": 0,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 2117,
+    "cat": "fill_blanks",
+    "orig": 2117,
+    "q": "Fuel configuration messages appear on the CDS. These messages show a problem with the configuration of the fuel. The LOW mesages show that either main tank 1 or main tank 2 …………… less than 907 kg of fuel.  This message …………… when there is more than 1133 kg. of fuel in that tank. The IMBAL message shows that there is a  difference of 453 kg of fuel …………… the main tank 1 and main tank 2. The IMBAL message …………… only when the airplane is in the air. The IMBAL  message does not show when there is a LOW message, in other words, they do not occur ……………. The leading edge (LE) devices …………… two flaps and four slats on each wing. During cruise, these surfaces fully retract. These surfaces extend during take-off to increase lift, …………… permits slower speeds for airplane rotation. While landing,  the LE slats fully extend to increase lift and help prevent a stall. In normal operation, the LE flaps and slats are mechanically controlled; ……………, during alternate operation, they are electrically controlled. The LE uncommended motion detection function …………… the LE normal operation if two or more flaps or slats move away from the commanded position.  The built-in test equipment (BITE) in the electronic unit enables the flaps and slats …………….",
+    "opts": [
+      "stop",
+      "stops",
+      "stopped",
+      "stopping"
+    ],
+    "ans": 0,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 2118,
+    "cat": "fill_blanks",
+    "orig": 2118,
+    "q": "Fuel configuration messages appear on the CDS. These messages show a problem with the configuration of the fuel. The LOW mesages show that either main tank 1 or main tank 2 …………… less than 907 kg of fuel.  This message …………… when there is more than 1133 kg. of fuel in that tank. The IMBAL message shows that there is a  difference of 453 kg of fuel …………… the main tank 1 and main tank 2. The IMBAL message …………… only when the airplane is in the air. The IMBAL  message does not show when there is a LOW message, in other words, they do not occur ……………. The leading edge (LE) devices …………… two flaps and four slats on each wing. During cruise, these surfaces fully retract. These surfaces extend during take-off to increase lift, …………… permits slower speeds for airplane rotation. While landing,  the LE slats fully extend to increase lift and help prevent a stall. In normal operation, the LE flaps and slats are mechanically controlled; ……………, during alternate operation, they are electrically controlled. The LE uncommended motion detection function …………… the LE normal operation if two or more flaps or slats move away from the commanded position.  The built-in test equipment (BITE) in the electronic unit enables the flaps and slats …………….",
+    "opts": [
+      "to be tested",
+      "to test",
+      "testing",
+      "to be testing"
+    ],
+    "ans": 0,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 2119,
+    "cat": "fill_blanks",
+    "orig": 2119,
+    "q": "Fuel configuration messages appear on the CDS. These messages show a problem with the configuration of the fuel. The LOW mesages show that either main tank 1 or main tank 2 …………… less than 907 kg of fuel.  This message …………… when there is more than 1133 kg. of fuel in that tank. The IMBAL message shows that there is a  difference of 453 kg of fuel …………… the main tank 1 and main tank 2. The IMBAL message …………… only when the airplane is in the air. The IMBAL  message does not show when there is a LOW message, in other words, they do not occur ……………. The leading edge (LE) devices …………… two flaps and four slats on each wing. During cruise, these surfaces fully retract. These surfaces extend during take-off to increase lift, …………… permits slower speeds for airplane rotation. While landing,  the LE slats fully extend to increase lift and help prevent a stall. In normal operation, the LE flaps and slats are mechanically controlled; ……………, during alternate operation, they are electrically controlled. The LE uncommended motion detection function …………… the LE normal operation if two or more flaps or slats move away from the commanded position.  The built-in test equipment (BITE) in the electronic unit enables the flaps and slats ……………. The APU shroud is a titanium compartment ……………fully protects the APU power plant. The APU shroud gives the protection ……………an APU fire and decrease the noise from the APU power plant. The upper shroud …………… in the APU compartment. The upper shroud attaches to the shroud rings. The shroud rings attach to the APU compartment with eight ring mounts. When the APU is ……………from the airplane, the upper shroud will stay in the APU compartment. The lower shroud attaches to the upper shroud with ten shroud latches. The lower shroud has the openings to the filler port for the oil tank and to the overboard exhaust for the APU cooling air. …………… there is an access panel that is removed to read the elapsed time indicator.",
+    "opts": [
+      "in which",
+      "where",
+      "whose",
+      "that"
+    ],
+    "ans": 0,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 2120,
+    "cat": "fill_blanks",
+    "orig": 2120,
+    "q": "Fuel configuration messages appear on the CDS. These messages show a problem with the configuration of the fuel. The LOW mesages show that either main tank 1 or main tank 2 …………… less than 907 kg of fuel.  This message …………… when there is more than 1133 kg. of fuel in that tank. The IMBAL message shows that there is a  difference of 453 kg of fuel …………… the main tank 1 and main tank 2. The IMBAL message …………… only when the airplane is in the air. The IMBAL  message does not show when there is a LOW message, in other words, they do not occur ……………. The leading edge (LE) devices …………… two flaps and four slats on each wing. During cruise, these surfaces fully retract. These surfaces extend during take-off to increase lift, …………… permits slower speeds for airplane rotation. While landing,  the LE slats fully extend to increase lift and help prevent a stall. In normal operation, the LE flaps and slats are mechanically controlled; ……………, during alternate operation, they are electrically controlled. The LE uncommended motion detection function …………… the LE normal operation if two or more flaps or slats move away from the commanded position.  The built-in test equipment (BITE) in the electronic unit enables the flaps and slats ……………. The APU shroud is a titanium compartment ……………fully protects the APU power plant. The APU shroud gives the protection ……………an APU fire and decrease the noise from the APU power plant. The upper shroud …………… in the APU compartment. The upper shroud attaches to the shroud rings. The shroud rings attach to the APU compartment with eight ring mounts. When the APU is ……………from the airplane, the upper shroud will stay in the APU compartment. The lower shroud attaches to the upper shroud with ten shroud latches. The lower shroud has the openings to the filler port for the oil tank and to the overboard exhaust for the APU cooling air. …………… there is an access panel that is removed to read the elapsed time indicator.",
+    "opts": [
+      "along",
+      "into",
+      "from",
+      "onto"
+    ],
+    "ans": 0,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 2121,
+    "cat": "fill_blanks",
+    "orig": 2121,
+    "q": "Fuel configuration messages appear on the CDS. These messages show a problem with the configuration of the fuel. The LOW mesages show that either main tank 1 or main tank 2 …………… less than 907 kg of fuel.  This message …………… when there is more than 1133 kg. of fuel in that tank. The IMBAL message shows that there is a  difference of 453 kg of fuel …………… the main tank 1 and main tank 2. The IMBAL message …………… only when the airplane is in the air. The IMBAL  message does not show when there is a LOW message, in other words, they do not occur ……………. The leading edge (LE) devices …………… two flaps and four slats on each wing. During cruise, these surfaces fully retract. These surfaces extend during take-off to increase lift, …………… permits slower speeds for airplane rotation. While landing,  the LE slats fully extend to increase lift and help prevent a stall. In normal operation, the LE flaps and slats are mechanically controlled; ……………, during alternate operation, they are electrically controlled. The LE uncommended motion detection function …………… the LE normal operation if two or more flaps or slats move away from the commanded position.  The built-in test equipment (BITE) in the electronic unit enables the flaps and slats ……………. The APU shroud is a titanium compartment ……………fully protects the APU power plant. The APU shroud gives the protection ……………an APU fire and decrease the noise from the APU power plant. The upper shroud …………… in the APU compartment. The upper shroud attaches to the shroud rings. The shroud rings attach to the APU compartment with eight ring mounts. When the APU is ……………from the airplane, the upper shroud will stay in the APU compartment. The lower shroud attaches to the upper shroud with ten shroud latches. The lower shroud has the openings to the filler port for the oil tank and to the overboard exhaust for the APU cooling air. …………… there is an access panel that is removed to read the elapsed time indicator.",
+    "opts": [
+      "installed",
+      "being installed",
+      "has been installed",
+      "is installed"
+    ],
+    "ans": 0,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 2122,
+    "cat": "fill_blanks",
+    "orig": 2122,
+    "q": "Fuel configuration messages appear on the CDS. These messages show a problem with the configuration of the fuel. The LOW mesages show that either main tank 1 or main tank 2 …………… less than 907 kg of fuel.  This message …………… when there is more than 1133 kg. of fuel in that tank. The IMBAL message shows that there is a  difference of 453 kg of fuel …………… the main tank 1 and main tank 2. The IMBAL message …………… only when the airplane is in the air. The IMBAL  message does not show when there is a LOW message, in other words, they do not occur ……………. The leading edge (LE) devices …………… two flaps and four slats on each wing. During cruise, these surfaces fully retract. These surfaces extend during take-off to increase lift, …………… permits slower speeds for airplane rotation. While landing,  the LE slats fully extend to increase lift and help prevent a stall. In normal operation, the LE flaps and slats are mechanically controlled; ……………, during alternate operation, they are electrically controlled. The LE uncommended motion detection function …………… the LE normal operation if two or more flaps or slats move away from the commanded position.  The built-in test equipment (BITE) in the electronic unit enables the flaps and slats ……………. The APU shroud is a titanium compartment ……………fully protects the APU power plant. The APU shroud gives the protection ……………an APU fire and decrease the noise from the APU power plant. The upper shroud …………… in the APU compartment. The upper shroud attaches to the shroud rings. The shroud rings attach to the APU compartment with eight ring mounts. When the APU is ……………from the airplane, the upper shroud will stay in the APU compartment. The lower shroud attaches to the upper shroud with ten shroud latches. The lower shroud has the openings to the filler port for the oil tank and to the overboard exhaust for the APU cooling air. …………… there is an access panel that is removed to read the elapsed time indicator.",
+    "opts": [
+      "applied",
+      "attached",
+      "removed",
+      "deployed"
+    ],
+    "ans": 0,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 2123,
+    "cat": "fill_blanks",
+    "orig": 2123,
+    "q": "Fuel configuration messages appear on the CDS. These messages show a problem with the configuration of the fuel. The LOW mesages show that either main tank 1 or main tank 2 …………… less than 907 kg of fuel.  This message …………… when there is more than 1133 kg. of fuel in that tank. The IMBAL message shows that there is a  difference of 453 kg of fuel …………… the main tank 1 and main tank 2. The IMBAL message …………… only when the airplane is in the air. The IMBAL  message does not show when there is a LOW message, in other words, they do not occur ……………. The leading edge (LE) devices …………… two flaps and four slats on each wing. During cruise, these surfaces fully retract. These surfaces extend during take-off to increase lift, …………… permits slower speeds for airplane rotation. While landing,  the LE slats fully extend to increase lift and help prevent a stall. In normal operation, the LE flaps and slats are mechanically controlled; ……………, during alternate operation, they are electrically controlled. The LE uncommended motion detection function …………… the LE normal operation if two or more flaps or slats move away from the commanded position.  The built-in test equipment (BITE) in the electronic unit enables the flaps and slats ……………. The APU shroud is a titanium compartment ……………fully protects the APU power plant. The APU shroud gives the protection ……………an APU fire and decrease the noise from the APU power plant. The upper shroud …………… in the APU compartment. The upper shroud attaches to the shroud rings. The shroud rings attach to the APU compartment with eight ring mounts. When the APU is ……………from the airplane, the upper shroud will stay in the APU compartment. The lower shroud attaches to the upper shroud with ten shroud latches. The lower shroud has the openings to the filler port for the oil tank and to the overboard exhaust for the APU cooling air. …………… there is an access panel that is removed to read the elapsed time indicator.",
+    "opts": [
+      "Also,",
+      "However,",
+      "As well",
+      "Despite"
+    ],
+    "ans": 0,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 2189,
+    "cat": "fill_blanks",
+    "orig": 2189,
+    "q": "The specified data apply only …………… the engine and not to specific applications in particular aircraft. The aircraft manufacturer’s Operators Manual is therefore definitive           …………… the operation of the engine, as it …………… all of the aircraft-specific instructions.",
+    "opts": [
+      "from",
+      "to",
+      "in",
+      "on"
+    ],
+    "ans": 1,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 2190,
+    "cat": "fill_blanks",
+    "orig": 2190,
+    "q": "The specified data apply only …………… the engine and not to specific applications in particular aircraft. The aircraft manufacturer’s Operators Manual is therefore definitive           …………… the operation of the engine, as it …………… all of the aircraft-specific instructions.",
+    "opts": [
+      "in terms of",
+      "due to",
+      "because of",
+      "since"
+    ],
+    "ans": 0,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 2191,
+    "cat": "fill_blanks",
+    "orig": 2191,
+    "q": "The specified data apply only …………… the engine and not to specific applications in particular aircraft. The aircraft manufacturer’s Operators Manual is therefore definitive           …………… the operation of the engine, as it …………… all of the aircraft-specific instructions.",
+    "opts": [
+      "considers",
+      "confesses",
+      "consults",
+      "contains"
+    ],
+    "ans": 0,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 2192,
+    "cat": "fill_blanks",
+    "orig": 2192,
+    "q": "The specified data apply only …………… the engine and not to specific applications in particular aircraft. The aircraft manufacturer’s Operators Manual is therefore definitive           …………… the operation of the engine, as it …………… all of the aircraft-specific instructions. Certain areas, altitudes and conditions …………… greater risk than others. The engine may require humidity or dust/sand preventative equipment, or additional maintenance may be required. You …………… be aware that any engine may seize or stall at any time. This could lead to a crash landing and possible severe injury …………… death. For this reason, we recommend strict compliance with the maintenance and operation and any additional information which may be given to you by …………… distributor.",
+    "opts": [
+      "neglect",
+      "comprehend",
+      "present",
+      "refrain"
+    ],
+    "ans": 0,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 2193,
+    "cat": "fill_blanks",
+    "orig": 2193,
+    "q": "The specified data apply only …………… the engine and not to specific applications in particular aircraft. The aircraft manufacturer’s Operators Manual is therefore definitive           …………… the operation of the engine, as it …………… all of the aircraft-specific instructions. Certain areas, altitudes and conditions …………… greater risk than others. The engine may require humidity or dust/sand preventative equipment, or additional maintenance may be required. You …………… be aware that any engine may seize or stall at any time. This could lead to a crash landing and possible severe injury …………… death. For this reason, we recommend strict compliance with the maintenance and operation and any additional information which may be given to you by …………… distributor.",
+    "opts": [
+      "would",
+      "wouldn’t",
+      "should",
+      "shouldn’t"
+    ],
+    "ans": 0,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 2194,
+    "cat": "fill_blanks",
+    "orig": 2194,
+    "q": "The specified data apply only …………… the engine and not to specific applications in particular aircraft. The aircraft manufacturer’s Operators Manual is therefore definitive           …………… the operation of the engine, as it …………… all of the aircraft-specific instructions. Certain areas, altitudes and conditions …………… greater risk than others. The engine may require humidity or dust/sand preventative equipment, or additional maintenance may be required. You …………… be aware that any engine may seize or stall at any time. This could lead to a crash landing and possible severe injury …………… death. For this reason, we recommend strict compliance with the maintenance and operation and any additional information which may be given to you by …………… distributor.",
+    "opts": [
+      "but",
+      "yet",
+      "as",
+      "or"
+    ],
+    "ans": 0,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 2195,
+    "cat": "fill_blanks",
+    "orig": 2195,
+    "q": "The specified data apply only …………… the engine and not to specific applications in particular aircraft. The aircraft manufacturer’s Operators Manual is therefore definitive           …………… the operation of the engine, as it …………… all of the aircraft-specific instructions. Certain areas, altitudes and conditions …………… greater risk than others. The engine may require humidity or dust/sand preventative equipment, or additional maintenance may be required. You …………… be aware that any engine may seize or stall at any time. This could lead to a crash landing and possible severe injury …………… death. For this reason, we recommend strict compliance with the maintenance and operation and any additional information which may be given to you by …………… distributor.",
+    "opts": [
+      "your",
+      "my",
+      "their",
+      "its"
+    ],
+    "ans": 0,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 2196,
+    "cat": "fill_blanks",
+    "orig": 2196,
+    "q": "The specified data apply only …………… the engine and not to specific applications in particular aircraft. The aircraft manufacturer’s Operators Manual is therefore definitive           …………… the operation of the engine, as it …………… all of the aircraft-specific instructions. Certain areas, altitudes and conditions …………… greater risk than others. The engine may require humidity or dust/sand preventative equipment, or additional maintenance may be required. You …………… be aware that any engine may seize or stall at any time. This could lead to a crash landing and possible severe injury …………… death. For this reason, we recommend strict compliance with the maintenance and operation and any additional information which may be given to you by …………… distributor. For airplane flight data which …………… systems capable …………… at least eight (8) samples per second, the following can be used: An indication of a hard landing on the main landing gear is a peak recorded vertical acceleration that exceeds 2.1 G (incremental 1.1 G). This vertical accelerometer data …………… by the flight data recorder accelerometer at a data sampling rate of at least eight (8) samples per second. The peak recorded vertical acceleration for a …………… can be significantly less than 2.1.",
+    "opts": [
+      "records",
+      "recorded",
+      "recording",
+      "record"
+    ],
+    "ans": 0,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 2197,
+    "cat": "fill_blanks",
+    "orig": 2197,
+    "q": "The specified data apply only …………… the engine and not to specific applications in particular aircraft. The aircraft manufacturer’s Operators Manual is therefore definitive           …………… the operation of the engine, as it …………… all of the aircraft-specific instructions. Certain areas, altitudes and conditions …………… greater risk than others. The engine may require humidity or dust/sand preventative equipment, or additional maintenance may be required. You …………… be aware that any engine may seize or stall at any time. This could lead to a crash landing and possible severe injury …………… death. For this reason, we recommend strict compliance with the maintenance and operation and any additional information which may be given to you by …………… distributor. For airplane flight data which …………… systems capable …………… at least eight (8) samples per second, the following can be used: An indication of a hard landing on the main landing gear is a peak recorded vertical acceleration that exceeds 2.1 G (incremental 1.1 G). This vertical accelerometer data …………… by the flight data recorder accelerometer at a data sampling rate of at least eight (8) samples per second. The peak recorded vertical acceleration for a …………… can be significantly less than 2.1.",
+    "opts": [
+      "at",
+      "of",
+      "in",
+      "by"
+    ],
+    "ans": 0,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 2198,
+    "cat": "fill_blanks",
+    "orig": 2198,
+    "q": "The specified data apply only …………… the engine and not to specific applications in particular aircraft. The aircraft manufacturer’s Operators Manual is therefore definitive           …………… the operation of the engine, as it …………… all of the aircraft-specific instructions. Certain areas, altitudes and conditions …………… greater risk than others. The engine may require humidity or dust/sand preventative equipment, or additional maintenance may be required. You …………… be aware that any engine may seize or stall at any time. This could lead to a crash landing and possible severe injury …………… death. For this reason, we recommend strict compliance with the maintenance and operation and any additional information which may be given to you by …………… distributor. For airplane flight data which …………… systems capable …………… at least eight (8) samples per second, the following can be used: An indication of a hard landing on the main landing gear is a peak recorded vertical acceleration that exceeds 2.1 G (incremental 1.1 G). This vertical accelerometer data …………… by the flight data recorder accelerometer at a data sampling rate of at least eight (8) samples per second. The peak recorded vertical acceleration for a …………… can be significantly less than 2.1.",
+    "opts": [
+      "must measure",
+      "must be measured",
+      "measures",
+      "is measuring"
+    ],
+    "ans": 0,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 2199,
+    "cat": "fill_blanks",
+    "orig": 2199,
+    "q": "The specified data apply only …………… the engine and not to specific applications in particular aircraft. The aircraft manufacturer’s Operators Manual is therefore definitive           …………… the operation of the engine, as it …………… all of the aircraft-specific instructions. Certain areas, altitudes and conditions …………… greater risk than others. The engine may require humidity or dust/sand preventative equipment, or additional maintenance may be required. You …………… be aware that any engine may seize or stall at any time. This could lead to a crash landing and possible severe injury …………… death. For this reason, we recommend strict compliance with the maintenance and operation and any additional information which may be given to you by …………… distributor. For airplane flight data which …………… systems capable …………… at least eight (8) samples per second, the following can be used: An indication of a hard landing on the main landing gear is a peak recorded vertical acceleration that exceeds 2.1 G (incremental 1.1 G). This vertical accelerometer data …………… by the flight data recorder accelerometer at a data sampling rate of at least eight (8) samples per second. The peak recorded vertical acceleration for a …………… can be significantly less than 2.1.",
+    "opts": [
+      "light",
+      "hard",
+      "tight",
+      "loose"
+    ],
+    "ans": 0,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 2200,
+    "cat": "fill_blanks",
+    "orig": 2200,
+    "q": "The specified data apply only …………… the engine and not to specific applications in particular aircraft. The aircraft manufacturer’s Operators Manual is therefore definitive           …………… the operation of the engine, as it …………… all of the aircraft-specific instructions. Certain areas, altitudes and conditions …………… greater risk than others. The engine may require humidity or dust/sand preventative equipment, or additional maintenance may be required. You …………… be aware that any engine may seize or stall at any time. This could lead to a crash landing and possible severe injury …………… death. For this reason, we recommend strict compliance with the maintenance and operation and any additional information which may be given to you by …………… distributor. For airplane flight data which …………… systems capable …………… at least eight (8) samples per second, the following can be used: An indication of a hard landing on the main landing gear is a peak recorded vertical acceleration that exceeds 2.1 G (incremental 1.1 G). This vertical accelerometer data …………… by the flight data recorder accelerometer at a data sampling rate of at least eight (8) samples per second. The peak recorded vertical acceleration for a …………… can be significantly less than 2.1. Continue the following inspection if any cabin damage was found in the above Cabin  …………… including the ceiling panels, central overhead bins, or the video monitors. If no damage was found, no further cabin inspection …………… and it is not necessary …………… continue this Cabin Inspection. If ceiling panels without video monitors are found dislodged or damaged: Check for proper latching and installation. Repair as necessary. If central overhead stowage bins are found with impact damage or are loose, or if ceiling panels …………… video monitors are found with broken latches: repair as necessary.",
+    "opts": [
+      "inspection",
+      "search",
+      "coordination",
+      "scan"
+    ],
+    "ans": 0,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 2201,
+    "cat": "fill_blanks",
+    "orig": 2201,
+    "q": "The specified data apply only …………… the engine and not to specific applications in particular aircraft. The aircraft manufacturer’s Operators Manual is therefore definitive           …………… the operation of the engine, as it …………… all of the aircraft-specific instructions. Certain areas, altitudes and conditions …………… greater risk than others. The engine may require humidity or dust/sand preventative equipment, or additional maintenance may be required. You …………… be aware that any engine may seize or stall at any time. This could lead to a crash landing and possible severe injury …………… death. For this reason, we recommend strict compliance with the maintenance and operation and any additional information which may be given to you by …………… distributor. For airplane flight data which …………… systems capable …………… at least eight (8) samples per second, the following can be used: An indication of a hard landing on the main landing gear is a peak recorded vertical acceleration that exceeds 2.1 G (incremental 1.1 G). This vertical accelerometer data …………… by the flight data recorder accelerometer at a data sampling rate of at least eight (8) samples per second. The peak recorded vertical acceleration for a …………… can be significantly less than 2.1. Continue the following inspection if any cabin damage was found in the above Cabin  …………… including the ceiling panels, central overhead bins, or the video monitors. If no damage was found, no further cabin inspection …………… and it is not necessary …………… continue this Cabin Inspection. If ceiling panels without video monitors are found dislodged or damaged: Check for proper latching and installation. Repair as necessary. If central overhead stowage bins are found with impact damage or are loose, or if ceiling panels …………… video monitors are found with broken latches: repair as necessary.",
+    "opts": [
+      "requires",
+      "is required",
+      "requiring",
+      "is being required"
+    ],
+    "ans": 0,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 2202,
+    "cat": "fill_blanks",
+    "orig": 2202,
+    "q": "The specified data apply only …………… the engine and not to specific applications in particular aircraft. The aircraft manufacturer’s Operators Manual is therefore definitive           …………… the operation of the engine, as it …………… all of the aircraft-specific instructions. Certain areas, altitudes and conditions …………… greater risk than others. The engine may require humidity or dust/sand preventative equipment, or additional maintenance may be required. You …………… be aware that any engine may seize or stall at any time. This could lead to a crash landing and possible severe injury …………… death. For this reason, we recommend strict compliance with the maintenance and operation and any additional information which may be given to you by …………… distributor. For airplane flight data which …………… systems capable …………… at least eight (8) samples per second, the following can be used: An indication of a hard landing on the main landing gear is a peak recorded vertical acceleration that exceeds 2.1 G (incremental 1.1 G). This vertical accelerometer data …………… by the flight data recorder accelerometer at a data sampling rate of at least eight (8) samples per second. The peak recorded vertical acceleration for a …………… can be significantly less than 2.1. Continue the following inspection if any cabin damage was found in the above Cabin  …………… including the ceiling panels, central overhead bins, or the video monitors. If no damage was found, no further cabin inspection …………… and it is not necessary …………… continue this Cabin Inspection. If ceiling panels without video monitors are found dislodged or damaged: Check for proper latching and installation. Repair as necessary. If central overhead stowage bins are found with impact damage or are loose, or if ceiling panels …………… video monitors are found with broken latches: repair as necessary.",
+    "opts": [
+      "to",
+      "for",
+      "at",
+      "by"
+    ],
+    "ans": 0,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 2203,
+    "cat": "fill_blanks",
+    "orig": 2203,
+    "q": "The specified data apply only …………… the engine and not to specific applications in particular aircraft. The aircraft manufacturer’s Operators Manual is therefore definitive           …………… the operation of the engine, as it …………… all of the aircraft-specific instructions. Certain areas, altitudes and conditions …………… greater risk than others. The engine may require humidity or dust/sand preventative equipment, or additional maintenance may be required. You …………… be aware that any engine may seize or stall at any time. This could lead to a crash landing and possible severe injury …………… death. For this reason, we recommend strict compliance with the maintenance and operation and any additional information which may be given to you by …………… distributor. For airplane flight data which …………… systems capable …………… at least eight (8) samples per second, the following can be used: An indication of a hard landing on the main landing gear is a peak recorded vertical acceleration that exceeds 2.1 G (incremental 1.1 G). This vertical accelerometer data …………… by the flight data recorder accelerometer at a data sampling rate of at least eight (8) samples per second. The peak recorded vertical acceleration for a …………… can be significantly less than 2.1. Continue the following inspection if any cabin damage was found in the above Cabin  …………… including the ceiling panels, central overhead bins, or the video monitors. If no damage was found, no further cabin inspection …………… and it is not necessary …………… continue this Cabin Inspection. If ceiling panels without video monitors are found dislodged or damaged: Check for proper latching and installation. Repair as necessary. If central overhead stowage bins are found with impact damage or are loose, or if ceiling panels …………… video monitors are found with broken latches: repair as necessary.",
+    "opts": [
+      "tackle with",
+      "built in",
+      "depend on",
+      "equipped with"
+    ],
+    "ans": 0,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 2268,
+    "cat": "fill_blanks",
+    "orig": 2268,
+    "q": "The oil pump sucks the motor oil from the oil ………… (56) via the oil cooler and forces it  ………… (57) the oil filter to the points of lubrication (lubricates also the propeller governor). The surplus oil emerging from the points of lubrication accumulates on the bottom of crankcase and is forced back to the oil tank by the piston blow-by gases. The oil circuit is vented via nipple in the oil tank. For the completion of the lubrication system only the following connections…………  (58).",
+    "opts": [
+      "56. A)  box",
+      "chain",
+      "problem",
+      "tank"
+    ],
+    "ans": 0,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 2269,
+    "cat": "fill_blanks",
+    "orig": 2269,
+    "q": "The oil pump sucks the motor oil from the oil ………… (56) via the oil cooler and forces it  ………… (57) the oil filter to the points of lubrication (lubricates also the propeller governor). The surplus oil emerging from the points of lubrication accumulates on the bottom of crankcase and is forced back to the oil tank by the piston blow-by gases. The oil circuit is vented via nipple in the oil tank. For the completion of the lubrication system only the following connections…………  (58).",
+    "opts": [
+      "57. A)  at",
+      "on",
+      "through",
+      "by"
+    ],
+    "ans": 0,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 2270,
+    "cat": "fill_blanks",
+    "orig": 2270,
+    "q": "The oil pump sucks the motor oil from the oil ………… (56) via the oil cooler and forces it  ………… (57) the oil filter to the points of lubrication (lubricates also the propeller governor). The surplus oil emerging from the points of lubrication accumulates on the bottom of crankcase and is forced back to the oil tank by the piston blow-by gases. The oil circuit is vented via nipple in the oil tank. For the completion of the lubrication system only the following connections…………  (58).",
+    "opts": [
+      "58. A)  need to be established",
+      "need to establish",
+      "establish",
+      "are established"
+    ],
+    "ans": 0,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 2271,
+    "cat": "fill_blanks",
+    "orig": 2271,
+    "q": "The oil pump sucks the motor oil from the oil ………… (56) via the oil cooler and forces it  ………… (57) the oil filter to the points of lubrication (lubricates also the propeller governor). The surplus oil emerging from the points of lubrication accumulates on the bottom of crankcase and is forced back to the oil tank by the piston blow-by gases. The oil circuit is vented via nipple in the oil tank. For the completion of the lubrication system only the following connections…………  (58). The fuel ………… (59) from the tank via a coarse filter/water trap to the mechanical fuel pump, from the pumps fuel passes on via the fuel manifold to the two carburetors. Depending ………… (60) the configuration of the engine the fuel lines from fuel pump to the     carburetors ………… (61) by the manufacturer (optional on some engine). The fuel system ………… tank to (62) the inlet of engine-driven fuel pump has to be installed by the aircraft manufacturer. Via the return line surplus fuel flows back to the fuel tank and suction side of fuel system.",
+    "opts": [
+      "59. A)  is flowing",
+      "flows",
+      "flowed",
+      "was flowing"
+    ],
+    "ans": 0,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 2272,
+    "cat": "fill_blanks",
+    "orig": 2272,
+    "q": "The oil pump sucks the motor oil from the oil ………… (56) via the oil cooler and forces it  ………… (57) the oil filter to the points of lubrication (lubricates also the propeller governor). The surplus oil emerging from the points of lubrication accumulates on the bottom of crankcase and is forced back to the oil tank by the piston blow-by gases. The oil circuit is vented via nipple in the oil tank. For the completion of the lubrication system only the following connections…………  (58). The fuel ………… (59) from the tank via a coarse filter/water trap to the mechanical fuel pump, from the pumps fuel passes on via the fuel manifold to the two carburetors. Depending ………… (60) the configuration of the engine the fuel lines from fuel pump to the     carburetors ………… (61) by the manufacturer (optional on some engine). The fuel system ………… tank to (62) the inlet of engine-driven fuel pump has to be installed by the aircraft manufacturer. Via the return line surplus fuel flows back to the fuel tank and suction side of fuel system.",
+    "opts": [
+      "60. A)  at",
+      "by",
+      "on",
+      "of"
+    ],
+    "ans": 0,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 2273,
+    "cat": "fill_blanks",
+    "orig": 2273,
+    "q": "The oil pump sucks the motor oil from the oil ………… (56) via the oil cooler and forces it  ………… (57) the oil filter to the points of lubrication (lubricates also the propeller governor). The surplus oil emerging from the points of lubrication accumulates on the bottom of crankcase and is forced back to the oil tank by the piston blow-by gases. The oil circuit is vented via nipple in the oil tank. For the completion of the lubrication system only the following connections…………  (58). The fuel ………… (59) from the tank via a coarse filter/water trap to the mechanical fuel pump, from the pumps fuel passes on via the fuel manifold to the two carburetors. Depending ………… (60) the configuration of the engine the fuel lines from fuel pump to the     carburetors ………… (61) by the manufacturer (optional on some engine). The fuel system ………… tank to (62) the inlet of engine-driven fuel pump has to be installed by the aircraft manufacturer. Via the return line surplus fuel flows back to the fuel tank and suction side of fuel system.",
+    "opts": [
+      "61. A)  are installed",
+      "is installed",
+      "is installing",
+      "installs"
+    ],
+    "ans": 0,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 2274,
+    "cat": "fill_blanks",
+    "orig": 2274,
+    "q": "The oil pump sucks the motor oil from the oil ………… (56) via the oil cooler and forces it  ………… (57) the oil filter to the points of lubrication (lubricates also the propeller governor). The surplus oil emerging from the points of lubrication accumulates on the bottom of crankcase and is forced back to the oil tank by the piston blow-by gases. The oil circuit is vented via nipple in the oil tank. For the completion of the lubrication system only the following connections…………  (58). The fuel ………… (59) from the tank via a coarse filter/water trap to the mechanical fuel pump, from the pumps fuel passes on via the fuel manifold to the two carburetors. Depending ………… (60) the configuration of the engine the fuel lines from fuel pump to the     carburetors ………… (61) by the manufacturer (optional on some engine). The fuel system ………… tank to (62) the inlet of engine-driven fuel pump has to be installed by the aircraft manufacturer. Via the return line surplus fuel flows back to the fuel tank and suction side of fuel system.",
+    "opts": [
+      "62. A)  by",
+      "of",
+      "from",
+      "on"
+    ],
+    "ans": 0,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 2275,
+    "cat": "fill_blanks",
+    "orig": 2275,
+    "q": "The oil pump sucks the motor oil from the oil ………… (56) via the oil cooler and forces it  ………… (57) the oil filter to the points of lubrication (lubricates also the propeller governor). The surplus oil emerging from the points of lubrication accumulates on the bottom of crankcase and is forced back to the oil tank by the piston blow-by gases. The oil circuit is vented via nipple in the oil tank. For the completion of the lubrication system only the following connections…………  (58). The fuel ………… (59) from the tank via a coarse filter/water trap to the mechanical fuel pump, from the pumps fuel passes on via the fuel manifold to the two carburetors. Depending ………… (60) the configuration of the engine the fuel lines from fuel pump to the     carburetors ………… (61) by the manufacturer (optional on some engine). The fuel system ………… tank to (62) the inlet of engine-driven fuel pump has to be installed by the aircraft manufacturer. Via the return line surplus fuel flows back to the fuel tank and suction side of fuel system. Each operator may establish threshold and repeat intervals based upon their utilization and revise the repeat interval as necessary based ………… (63) service experience. Refer to service letters 737-SL-38-019 and 737-SL-38-018-B for guidelines on cleaning methods and intervals. Operators ………… (64) also use other methods not listed in the service letters. For new 737 operators, the interval guidelines as ………… (65) in the service letters may be ………… (66) as a starting point for waste line servicing maintenance.",
+    "opts": [
+      "63.  A) throughout",
+      "B) on",
+      "C) in",
+      "D) from"
+    ],
+    "ans": 0,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 2276,
+    "cat": "fill_blanks",
+    "orig": 2276,
+    "q": "The oil pump sucks the motor oil from the oil ………… (56) via the oil cooler and forces it  ………… (57) the oil filter to the points of lubrication (lubricates also the propeller governor). The surplus oil emerging from the points of lubrication accumulates on the bottom of crankcase and is forced back to the oil tank by the piston blow-by gases. The oil circuit is vented via nipple in the oil tank. For the completion of the lubrication system only the following connections…………  (58). The fuel ………… (59) from the tank via a coarse filter/water trap to the mechanical fuel pump, from the pumps fuel passes on via the fuel manifold to the two carburetors. Depending ………… (60) the configuration of the engine the fuel lines from fuel pump to the     carburetors ………… (61) by the manufacturer (optional on some engine). The fuel system ………… tank to (62) the inlet of engine-driven fuel pump has to be installed by the aircraft manufacturer. Via the return line surplus fuel flows back to the fuel tank and suction side of fuel system. Each operator may establish threshold and repeat intervals based upon their utilization and revise the repeat interval as necessary based ………… (63) service experience. Refer to service letters 737-SL-38-019 and 737-SL-38-018-B for guidelines on cleaning methods and intervals. Operators ………… (64) also use other methods not listed in the service letters. For new 737 operators, the interval guidelines as ………… (65) in the service letters may be ………… (66) as a starting point for waste line servicing maintenance.",
+    "opts": [
+      "64.  A) have",
+      "B) will be",
+      "C) may",
+      "D) should have"
+    ],
+    "ans": 0,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 2277,
+    "cat": "fill_blanks",
+    "orig": 2277,
+    "q": "The oil pump sucks the motor oil from the oil ………… (56) via the oil cooler and forces it  ………… (57) the oil filter to the points of lubrication (lubricates also the propeller governor). The surplus oil emerging from the points of lubrication accumulates on the bottom of crankcase and is forced back to the oil tank by the piston blow-by gases. The oil circuit is vented via nipple in the oil tank. For the completion of the lubrication system only the following connections…………  (58). The fuel ………… (59) from the tank via a coarse filter/water trap to the mechanical fuel pump, from the pumps fuel passes on via the fuel manifold to the two carburetors. Depending ………… (60) the configuration of the engine the fuel lines from fuel pump to the     carburetors ………… (61) by the manufacturer (optional on some engine). The fuel system ………… tank to (62) the inlet of engine-driven fuel pump has to be installed by the aircraft manufacturer. Via the return line surplus fuel flows back to the fuel tank and suction side of fuel system. Each operator may establish threshold and repeat intervals based upon their utilization and revise the repeat interval as necessary based ………… (63) service experience. Refer to service letters 737-SL-38-019 and 737-SL-38-018-B for guidelines on cleaning methods and intervals. Operators ………… (64) also use other methods not listed in the service letters. For new 737 operators, the interval guidelines as ………… (65) in the service letters may be ………… (66) as a starting point for waste line servicing maintenance.",
+    "opts": [
+      "65.  A) stated",
+      "B) undefined",
+      "C) irregular",
+      "D) unstable"
+    ],
+    "ans": 0,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 2278,
+    "cat": "fill_blanks",
+    "orig": 2278,
+    "q": "The oil pump sucks the motor oil from the oil ………… (56) via the oil cooler and forces it  ………… (57) the oil filter to the points of lubrication (lubricates also the propeller governor). The surplus oil emerging from the points of lubrication accumulates on the bottom of crankcase and is forced back to the oil tank by the piston blow-by gases. The oil circuit is vented via nipple in the oil tank. For the completion of the lubrication system only the following connections…………  (58). The fuel ………… (59) from the tank via a coarse filter/water trap to the mechanical fuel pump, from the pumps fuel passes on via the fuel manifold to the two carburetors. Depending ………… (60) the configuration of the engine the fuel lines from fuel pump to the     carburetors ………… (61) by the manufacturer (optional on some engine). The fuel system ………… tank to (62) the inlet of engine-driven fuel pump has to be installed by the aircraft manufacturer. Via the return line surplus fuel flows back to the fuel tank and suction side of fuel system. Each operator may establish threshold and repeat intervals based upon their utilization and revise the repeat interval as necessary based ………… (63) service experience. Refer to service letters 737-SL-38-019 and 737-SL-38-018-B for guidelines on cleaning methods and intervals. Operators ………… (64) also use other methods not listed in the service letters. For new 737 operators, the interval guidelines as ………… (65) in the service letters may be ………… (66) as a starting point for waste line servicing maintenance.",
+    "opts": [
+      "66.  A) in use",
+      "B) using",
+      "C) used to",
+      "D) used"
+    ],
+    "ans": 0,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 2279,
+    "cat": "fill_blanks",
+    "orig": 2279,
+    "q": "The oil pump sucks the motor oil from the oil ………… (56) via the oil cooler and forces it  ………… (57) the oil filter to the points of lubrication (lubricates also the propeller governor). The surplus oil emerging from the points of lubrication accumulates on the bottom of crankcase and is forced back to the oil tank by the piston blow-by gases. The oil circuit is vented via nipple in the oil tank. For the completion of the lubrication system only the following connections…………  (58). The fuel ………… (59) from the tank via a coarse filter/water trap to the mechanical fuel pump, from the pumps fuel passes on via the fuel manifold to the two carburetors. Depending ………… (60) the configuration of the engine the fuel lines from fuel pump to the     carburetors ………… (61) by the manufacturer (optional on some engine). The fuel system ………… tank to (62) the inlet of engine-driven fuel pump has to be installed by the aircraft manufacturer. Via the return line surplus fuel flows back to the fuel tank and suction side of fuel system. Each operator may establish threshold and repeat intervals based upon their utilization and revise the repeat interval as necessary based ………… (63) service experience. Refer to service letters 737-SL-38-019 and 737-SL-38-018-B for guidelines on cleaning methods and intervals. Operators ………… (64) also use other methods not listed in the service letters. For new 737 operators, the interval guidelines as ………… (65) in the service letters may be ………… (66) as a starting point for waste line servicing maintenance. The antenna coupler opens the key interlock discrete to stop the transceiver transmit mode. The coupler ………… (67) the tune in progress discrete to request tuning power from the transceiver ………… (68) the coupler detects a fault external to the coupler. The coupler sends the coupler fault discrete to the transceiver when it detects ………… (69) internal failure. Received RF from the antenna ………… (70) sent to the transceiver during receive mode.",
+    "opts": [
+      "67. A) sent",
+      "B) sending",
+      "C) sends",
+      "D) to send"
+    ],
+    "ans": 0,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 2280,
+    "cat": "fill_blanks",
+    "orig": 2280,
+    "q": "The oil pump sucks the motor oil from the oil ………… (56) via the oil cooler and forces it  ………… (57) the oil filter to the points of lubrication (lubricates also the propeller governor). The surplus oil emerging from the points of lubrication accumulates on the bottom of crankcase and is forced back to the oil tank by the piston blow-by gases. The oil circuit is vented via nipple in the oil tank. For the completion of the lubrication system only the following connections…………  (58). The fuel ………… (59) from the tank via a coarse filter/water trap to the mechanical fuel pump, from the pumps fuel passes on via the fuel manifold to the two carburetors. Depending ………… (60) the configuration of the engine the fuel lines from fuel pump to the     carburetors ………… (61) by the manufacturer (optional on some engine). The fuel system ………… tank to (62) the inlet of engine-driven fuel pump has to be installed by the aircraft manufacturer. Via the return line surplus fuel flows back to the fuel tank and suction side of fuel system. Each operator may establish threshold and repeat intervals based upon their utilization and revise the repeat interval as necessary based ………… (63) service experience. Refer to service letters 737-SL-38-019 and 737-SL-38-018-B for guidelines on cleaning methods and intervals. Operators ………… (64) also use other methods not listed in the service letters. For new 737 operators, the interval guidelines as ………… (65) in the service letters may be ………… (66) as a starting point for waste line servicing maintenance. The antenna coupler opens the key interlock discrete to stop the transceiver transmit mode. The coupler ………… (67) the tune in progress discrete to request tuning power from the transceiver ………… (68) the coupler detects a fault external to the coupler. The coupler sends the coupler fault discrete to the transceiver when it detects ………… (69) internal failure. Received RF from the antenna ………… (70) sent to the transceiver during receive mode.",
+    "opts": [
+      "68. A) whether",
+      "B) as to",
+      "C) with",
+      "D) when"
+    ],
+    "ans": 0,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 2281,
+    "cat": "fill_blanks",
+    "orig": 2281,
+    "q": "The oil pump sucks the motor oil from the oil ………… (56) via the oil cooler and forces it  ………… (57) the oil filter to the points of lubrication (lubricates also the propeller governor). The surplus oil emerging from the points of lubrication accumulates on the bottom of crankcase and is forced back to the oil tank by the piston blow-by gases. The oil circuit is vented via nipple in the oil tank. For the completion of the lubrication system only the following connections…………  (58). The fuel ………… (59) from the tank via a coarse filter/water trap to the mechanical fuel pump, from the pumps fuel passes on via the fuel manifold to the two carburetors. Depending ………… (60) the configuration of the engine the fuel lines from fuel pump to the     carburetors ………… (61) by the manufacturer (optional on some engine). The fuel system ………… tank to (62) the inlet of engine-driven fuel pump has to be installed by the aircraft manufacturer. Via the return line surplus fuel flows back to the fuel tank and suction side of fuel system. Each operator may establish threshold and repeat intervals based upon their utilization and revise the repeat interval as necessary based ………… (63) service experience. Refer to service letters 737-SL-38-019 and 737-SL-38-018-B for guidelines on cleaning methods and intervals. Operators ………… (64) also use other methods not listed in the service letters. For new 737 operators, the interval guidelines as ………… (65) in the service letters may be ………… (66) as a starting point for waste line servicing maintenance. The antenna coupler opens the key interlock discrete to stop the transceiver transmit mode. The coupler ………… (67) the tune in progress discrete to request tuning power from the transceiver ………… (68) the coupler detects a fault external to the coupler. The coupler sends the coupler fault discrete to the transceiver when it detects ………… (69) internal failure. Received RF from the antenna ………… (70) sent to the transceiver during receive mode.",
+    "opts": [
+      "69. A) a",
+      "B) an",
+      "C) the",
+      "D) –"
+    ],
+    "ans": 0,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 2282,
+    "cat": "fill_blanks",
+    "orig": 2282,
+    "q": "The oil pump sucks the motor oil from the oil ………… (56) via the oil cooler and forces it  ………… (57) the oil filter to the points of lubrication (lubricates also the propeller governor). The surplus oil emerging from the points of lubrication accumulates on the bottom of crankcase and is forced back to the oil tank by the piston blow-by gases. The oil circuit is vented via nipple in the oil tank. For the completion of the lubrication system only the following connections…………  (58). The fuel ………… (59) from the tank via a coarse filter/water trap to the mechanical fuel pump, from the pumps fuel passes on via the fuel manifold to the two carburetors. Depending ………… (60) the configuration of the engine the fuel lines from fuel pump to the     carburetors ………… (61) by the manufacturer (optional on some engine). The fuel system ………… tank to (62) the inlet of engine-driven fuel pump has to be installed by the aircraft manufacturer. Via the return line surplus fuel flows back to the fuel tank and suction side of fuel system. Each operator may establish threshold and repeat intervals based upon their utilization and revise the repeat interval as necessary based ………… (63) service experience. Refer to service letters 737-SL-38-019 and 737-SL-38-018-B for guidelines on cleaning methods and intervals. Operators ………… (64) also use other methods not listed in the service letters. For new 737 operators, the interval guidelines as ………… (65) in the service letters may be ………… (66) as a starting point for waste line servicing maintenance. The antenna coupler opens the key interlock discrete to stop the transceiver transmit mode. The coupler ………… (67) the tune in progress discrete to request tuning power from the transceiver ………… (68) the coupler detects a fault external to the coupler. The coupler sends the coupler fault discrete to the transceiver when it detects ………… (69) internal failure. Received RF from the antenna ………… (70) sent to the transceiver during receive mode.",
+    "opts": [
+      "70. A) is",
+      "B) are",
+      "C) should",
+      "D) shall"
+    ],
+    "ans": 0,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 2348,
+    "cat": "fill_blanks",
+    "orig": 2348,
+    "q": "The primary problem is …………… a fire or explosion. Leakage must be contained and isolated …………… all sources of ignition and persons. Water courses and drainage systems must have protection to prevent contamination. The material, …………… leakage, must be removed with the use of absorbents, such as sand or keiselguhur. It must then be kept in the correct containers in a safe area which is open to the air. The absorbents …………… by the use of conditions approved by the local authority.",
+    "opts": [
+      "56. A)  for preventing",
+      "to prevent",
+      "to be prevented",
+      "for being prevented"
+    ],
+    "ans": 0,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 2349,
+    "cat": "fill_blanks",
+    "orig": 2349,
+    "q": "The primary problem is …………… a fire or explosion. Leakage must be contained and isolated …………… all sources of ignition and persons. Water courses and drainage systems must have protection to prevent contamination. The material, …………… leakage, must be removed with the use of absorbents, such as sand or keiselguhur. It must then be kept in the correct containers in a safe area which is open to the air. The absorbents …………… by the use of conditions approved by the local authority.",
+    "opts": [
+      "57. A)  with",
+      "to",
+      "into",
+      "from"
+    ],
+    "ans": 0,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 2350,
+    "cat": "fill_blanks",
+    "orig": 2350,
+    "q": "The primary problem is …………… a fire or explosion. Leakage must be contained and isolated …………… all sources of ignition and persons. Water courses and drainage systems must have protection to prevent contamination. The material, …………… leakage, must be removed with the use of absorbents, such as sand or keiselguhur. It must then be kept in the correct containers in a safe area which is open to the air. The absorbents …………… by the use of conditions approved by the local authority.",
+    "opts": [
+      "58. A)  because of",
+      "in spite of",
+      "despite",
+      "so as to"
+    ],
+    "ans": 0,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 2351,
+    "cat": "fill_blanks",
+    "orig": 2351,
+    "q": "The primary problem is …………… a fire or explosion. Leakage must be contained and isolated …………… all sources of ignition and persons. Water courses and drainage systems must have protection to prevent contamination. The material, …………… leakage, must be removed with the use of absorbents, such as sand or keiselguhur. It must then be kept in the correct containers in a safe area which is open to the air. The absorbents …………… by the use of conditions approved by the local authority.",
+    "opts": [
+      "59. A)  must be discarded",
+      "should discard",
+      "could have discarded",
+      "can be discarding"
+    ],
+    "ans": 0,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 2352,
+    "cat": "fill_blanks",
+    "orig": 2352,
+    "q": "The primary problem is …………… a fire or explosion. Leakage must be contained and isolated …………… all sources of ignition and persons. Water courses and drainage systems must have protection to prevent contamination. The material, …………… leakage, must be removed with the use of absorbents, such as sand or keiselguhur. It must then be kept in the correct containers in a safe area which is open to the air. The absorbents …………… by the use of conditions approved by the local authority. Gasolines …………… primary skin irritants that dry the skin …………… cause dermatitis. If the skin touches fuel for long lengths of time, skin lesions (gasoline burns) ……………. Moderately high quantities of gasoline in to the eyes will cause smarting of the eyes.",
+    "opts": [
+      "60. A)  am",
+      "is",
+      "are",
+      "was"
+    ],
+    "ans": 0,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 2353,
+    "cat": "fill_blanks",
+    "orig": 2353,
+    "q": "The primary problem is …………… a fire or explosion. Leakage must be contained and isolated …………… all sources of ignition and persons. Water courses and drainage systems must have protection to prevent contamination. The material, …………… leakage, must be removed with the use of absorbents, such as sand or keiselguhur. It must then be kept in the correct containers in a safe area which is open to the air. The absorbents …………… by the use of conditions approved by the local authority. Gasolines …………… primary skin irritants that dry the skin …………… cause dermatitis. If the skin touches fuel for long lengths of time, skin lesions (gasoline burns) ……………. Moderately high quantities of gasoline in to the eyes will cause smarting of the eyes.",
+    "opts": [
+      "61. A)  as",
+      "and",
+      "but",
+      "for"
+    ],
+    "ans": 0,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 2354,
+    "cat": "fill_blanks",
+    "orig": 2354,
+    "q": "The primary problem is …………… a fire or explosion. Leakage must be contained and isolated …………… all sources of ignition and persons. Water courses and drainage systems must have protection to prevent contamination. The material, …………… leakage, must be removed with the use of absorbents, such as sand or keiselguhur. It must then be kept in the correct containers in a safe area which is open to the air. The absorbents …………… by the use of conditions approved by the local authority. Gasolines …………… primary skin irritants that dry the skin …………… cause dermatitis. If the skin touches fuel for long lengths of time, skin lesions (gasoline burns) ……………. Moderately high quantities of gasoline in to the eyes will cause smarting of the eyes.",
+    "opts": [
+      "62. A)  occurred",
+      "has occurred",
+      "will occur",
+      "was occurred"
+    ],
+    "ans": 0,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 2355,
+    "cat": "fill_blanks",
+    "orig": 2355,
+    "q": "The primary problem is …………… a fire or explosion. Leakage must be contained and isolated …………… all sources of ignition and persons. Water courses and drainage systems must have protection to prevent contamination. The material, …………… leakage, must be removed with the use of absorbents, such as sand or keiselguhur. It must then be kept in the correct containers in a safe area which is open to the air. The absorbents …………… by the use of conditions approved by the local authority. Gasolines …………… primary skin irritants that dry the skin …………… cause dermatitis. If the skin touches fuel for long lengths of time, skin lesions (gasoline burns) ……………. Moderately high quantities of gasoline in to the eyes will cause smarting of the eyes. A sump drain valve is installed in the left and right surge tank. Each sump drain valve is installed to do a check for fuel in the surge tank …………… you remove the access door for entry.  If the main fuel tanks are filled to capacity and there is fuel in the surge tank, fuel in the surge tank  …………… into the main fuel tanks through the drain check valve in the each surge tank when the fuel level in the main tanks is lower  …………… flight. You can also defuel the main tank to a lower level to …………… the fuel in the surge tank into the main fuel tank.",
+    "opts": [
+      "63. A)  such that",
+      "before",
+      "as if",
+      "on the other hand"
+    ],
+    "ans": 0,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 2356,
+    "cat": "fill_blanks",
+    "orig": 2356,
+    "q": "The primary problem is …………… a fire or explosion. Leakage must be contained and isolated …………… all sources of ignition and persons. Water courses and drainage systems must have protection to prevent contamination. The material, …………… leakage, must be removed with the use of absorbents, such as sand or keiselguhur. It must then be kept in the correct containers in a safe area which is open to the air. The absorbents …………… by the use of conditions approved by the local authority. Gasolines …………… primary skin irritants that dry the skin …………… cause dermatitis. If the skin touches fuel for long lengths of time, skin lesions (gasoline burns) ……………. Moderately high quantities of gasoline in to the eyes will cause smarting of the eyes. A sump drain valve is installed in the left and right surge tank. Each sump drain valve is installed to do a check for fuel in the surge tank …………… you remove the access door for entry.  If the main fuel tanks are filled to capacity and there is fuel in the surge tank, fuel in the surge tank  …………… into the main fuel tanks through the drain check valve in the each surge tank when the fuel level in the main tanks is lower  …………… flight. You can also defuel the main tank to a lower level to …………… the fuel in the surge tank into the main fuel tank.",
+    "opts": [
+      "64. A)  will drain",
+      "would drain",
+      "will have been drained",
+      "could be drained"
+    ],
+    "ans": 0,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 2357,
+    "cat": "fill_blanks",
+    "orig": 2357,
+    "q": "The primary problem is …………… a fire or explosion. Leakage must be contained and isolated …………… all sources of ignition and persons. Water courses and drainage systems must have protection to prevent contamination. The material, …………… leakage, must be removed with the use of absorbents, such as sand or keiselguhur. It must then be kept in the correct containers in a safe area which is open to the air. The absorbents …………… by the use of conditions approved by the local authority. Gasolines …………… primary skin irritants that dry the skin …………… cause dermatitis. If the skin touches fuel for long lengths of time, skin lesions (gasoline burns) ……………. Moderately high quantities of gasoline in to the eyes will cause smarting of the eyes. A sump drain valve is installed in the left and right surge tank. Each sump drain valve is installed to do a check for fuel in the surge tank …………… you remove the access door for entry.  If the main fuel tanks are filled to capacity and there is fuel in the surge tank, fuel in the surge tank  …………… into the main fuel tanks through the drain check valve in the each surge tank when the fuel level in the main tanks is lower  …………… flight. You can also defuel the main tank to a lower level to …………… the fuel in the surge tank into the main fuel tank.",
+    "opts": [
+      "65. A)  between",
+      "among",
+      "on",
+      "during"
+    ],
+    "ans": 0,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 2358,
+    "cat": "fill_blanks",
+    "orig": 2358,
+    "q": "The primary problem is …………… a fire or explosion. Leakage must be contained and isolated …………… all sources of ignition and persons. Water courses and drainage systems must have protection to prevent contamination. The material, …………… leakage, must be removed with the use of absorbents, such as sand or keiselguhur. It must then be kept in the correct containers in a safe area which is open to the air. The absorbents …………… by the use of conditions approved by the local authority. Gasolines …………… primary skin irritants that dry the skin …………… cause dermatitis. If the skin touches fuel for long lengths of time, skin lesions (gasoline burns) ……………. Moderately high quantities of gasoline in to the eyes will cause smarting of the eyes. A sump drain valve is installed in the left and right surge tank. Each sump drain valve is installed to do a check for fuel in the surge tank …………… you remove the access door for entry.  If the main fuel tanks are filled to capacity and there is fuel in the surge tank, fuel in the surge tank  …………… into the main fuel tanks through the drain check valve in the each surge tank when the fuel level in the main tanks is lower  …………… flight. You can also defuel the main tank to a lower level to …………… the fuel in the surge tank into the main fuel tank.",
+    "opts": [
+      "66. A)  have",
+      "make",
+      "move",
+      "blow"
+    ],
+    "ans": 0,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 2359,
+    "cat": "fill_blanks",
+    "orig": 2359,
+    "q": "The primary problem is …………… a fire or explosion. Leakage must be contained and isolated …………… all sources of ignition and persons. Water courses and drainage systems must have protection to prevent contamination. The material, …………… leakage, must be removed with the use of absorbents, such as sand or keiselguhur. It must then be kept in the correct containers in a safe area which is open to the air. The absorbents …………… by the use of conditions approved by the local authority. Gasolines …………… primary skin irritants that dry the skin …………… cause dermatitis. If the skin touches fuel for long lengths of time, skin lesions (gasoline burns) ……………. Moderately high quantities of gasoline in to the eyes will cause smarting of the eyes. A sump drain valve is installed in the left and right surge tank. Each sump drain valve is installed to do a check for fuel in the surge tank …………… you remove the access door for entry.  If the main fuel tanks are filled to capacity and there is fuel in the surge tank, fuel in the surge tank  …………… into the main fuel tanks through the drain check valve in the each surge tank when the fuel level in the main tanks is lower  …………… flight. You can also defuel the main tank to a lower level to …………… the fuel in the surge tank into the main fuel tank. When the overflow drain hose is connected to the overflow drain valve, use a short hose with its end hung vertically and open to the air. Do not bend the hose or let the end of the hose             …………… below the oil level in the container. Approximately 1 quart of oil …………… drain from the overflow drain hose when you fill the IDG with oil. This will make sure the overflow valve adapter has put the IDG drain valve in the open position. If you fill the IDG without the drain valve open, you can overfill the IDG with oil. If you overfill the IDG with oil, the oil can …………… and cause damage to the IDG. Do not do this task for a disconnected IDG. The operation …………… a defective IDG can cause damage to equipment.",
+    "opts": [
+      "67. A)  extending",
+      "extend",
+      "to extend",
+      "entends"
+    ],
+    "ans": 0,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 2360,
+    "cat": "fill_blanks",
+    "orig": 2360,
+    "q": "The primary problem is …………… a fire or explosion. Leakage must be contained and isolated …………… all sources of ignition and persons. Water courses and drainage systems must have protection to prevent contamination. The material, …………… leakage, must be removed with the use of absorbents, such as sand or keiselguhur. It must then be kept in the correct containers in a safe area which is open to the air. The absorbents …………… by the use of conditions approved by the local authority. Gasolines …………… primary skin irritants that dry the skin …………… cause dermatitis. If the skin touches fuel for long lengths of time, skin lesions (gasoline burns) ……………. Moderately high quantities of gasoline in to the eyes will cause smarting of the eyes. A sump drain valve is installed in the left and right surge tank. Each sump drain valve is installed to do a check for fuel in the surge tank …………… you remove the access door for entry.  If the main fuel tanks are filled to capacity and there is fuel in the surge tank, fuel in the surge tank  …………… into the main fuel tanks through the drain check valve in the each surge tank when the fuel level in the main tanks is lower  …………… flight. You can also defuel the main tank to a lower level to …………… the fuel in the surge tank into the main fuel tank. When the overflow drain hose is connected to the overflow drain valve, use a short hose with its end hung vertically and open to the air. Do not bend the hose or let the end of the hose             …………… below the oil level in the container. Approximately 1 quart of oil …………… drain from the overflow drain hose when you fill the IDG with oil. This will make sure the overflow valve adapter has put the IDG drain valve in the open position. If you fill the IDG without the drain valve open, you can overfill the IDG with oil. If you overfill the IDG with oil, the oil can …………… and cause damage to the IDG. Do not do this task for a disconnected IDG. The operation …………… a defective IDG can cause damage to equipment.",
+    "opts": [
+      "68. A)  must",
+      "might",
+      "had to",
+      "would"
+    ],
+    "ans": 0,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 2361,
+    "cat": "fill_blanks",
+    "orig": 2361,
+    "q": "The primary problem is …………… a fire or explosion. Leakage must be contained and isolated …………… all sources of ignition and persons. Water courses and drainage systems must have protection to prevent contamination. The material, …………… leakage, must be removed with the use of absorbents, such as sand or keiselguhur. It must then be kept in the correct containers in a safe area which is open to the air. The absorbents …………… by the use of conditions approved by the local authority. Gasolines …………… primary skin irritants that dry the skin …………… cause dermatitis. If the skin touches fuel for long lengths of time, skin lesions (gasoline burns) ……………. Moderately high quantities of gasoline in to the eyes will cause smarting of the eyes. A sump drain valve is installed in the left and right surge tank. Each sump drain valve is installed to do a check for fuel in the surge tank …………… you remove the access door for entry.  If the main fuel tanks are filled to capacity and there is fuel in the surge tank, fuel in the surge tank  …………… into the main fuel tanks through the drain check valve in the each surge tank when the fuel level in the main tanks is lower  …………… flight. You can also defuel the main tank to a lower level to …………… the fuel in the surge tank into the main fuel tank. When the overflow drain hose is connected to the overflow drain valve, use a short hose with its end hung vertically and open to the air. Do not bend the hose or let the end of the hose             …………… below the oil level in the container. Approximately 1 quart of oil …………… drain from the overflow drain hose when you fill the IDG with oil. This will make sure the overflow valve adapter has put the IDG drain valve in the open position. If you fill the IDG without the drain valve open, you can overfill the IDG with oil. If you overfill the IDG with oil, the oil can …………… and cause damage to the IDG. Do not do this task for a disconnected IDG. The operation …………… a defective IDG can cause damage to equipment.",
+    "opts": [
+      "69. A)  fall",
+      "appear",
+      "overheat",
+      "produce"
+    ],
+    "ans": 0,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 2362,
+    "cat": "fill_blanks",
+    "orig": 2362,
+    "q": "The primary problem is …………… a fire or explosion. Leakage must be contained and isolated …………… all sources of ignition and persons. Water courses and drainage systems must have protection to prevent contamination. The material, …………… leakage, must be removed with the use of absorbents, such as sand or keiselguhur. It must then be kept in the correct containers in a safe area which is open to the air. The absorbents …………… by the use of conditions approved by the local authority. Gasolines …………… primary skin irritants that dry the skin …………… cause dermatitis. If the skin touches fuel for long lengths of time, skin lesions (gasoline burns) ……………. Moderately high quantities of gasoline in to the eyes will cause smarting of the eyes. A sump drain valve is installed in the left and right surge tank. Each sump drain valve is installed to do a check for fuel in the surge tank …………… you remove the access door for entry.  If the main fuel tanks are filled to capacity and there is fuel in the surge tank, fuel in the surge tank  …………… into the main fuel tanks through the drain check valve in the each surge tank when the fuel level in the main tanks is lower  …………… flight. You can also defuel the main tank to a lower level to …………… the fuel in the surge tank into the main fuel tank. When the overflow drain hose is connected to the overflow drain valve, use a short hose with its end hung vertically and open to the air. Do not bend the hose or let the end of the hose             …………… below the oil level in the container. Approximately 1 quart of oil …………… drain from the overflow drain hose when you fill the IDG with oil. This will make sure the overflow valve adapter has put the IDG drain valve in the open position. If you fill the IDG without the drain valve open, you can overfill the IDG with oil. If you overfill the IDG with oil, the oil can …………… and cause damage to the IDG. Do not do this task for a disconnected IDG. The operation …………… a defective IDG can cause damage to equipment.",
+    "opts": [
+      "70. A)  at",
+      "over",
+      "under",
+      "of"
+    ],
+    "ans": 0,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
   }
 ]

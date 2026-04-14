@@ -1,12 +1,11 @@
 import 'dart:convert';
-import 'package:cloud_firestore/cloud_firestore.dart';
-import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:http/http.dart' as http;
+import 'package:supabase_flutter/supabase_flutter.dart';
 import '../../../core/constants/app_colors.dart';
 import '../../../core/constants/app_text_styles.dart';
-import '../../../core/services/firestore_service.dart';
+import '../../../core/services/supabase_service.dart';
 
 const _adminEmail = 'emottz199@gmail.com';
 const _geminiApiKey = 'AIzaSyBF2g68U1DltnnMWc2s1M1BHjCq6ErGDL4';
@@ -30,7 +29,7 @@ class _AdminScreenState extends State<AdminScreen>
   late TabController _tabController;
 
   String get _currentEmail =>
-      (FirebaseAuth.instance.currentUser?.email ?? '').toLowerCase().trim();
+      (Supabase.instance.client.auth.currentUser?.email ?? '').toLowerCase().trim();
   bool get _isAdmin =>
       _currentEmail == _adminEmail.toLowerCase().trim();
 
@@ -50,7 +49,7 @@ class _AdminScreenState extends State<AdminScreen>
   Future<void> _load() async {
     setState(() { _loading = true; _error = null; });
     try {
-      final users = await FirestoreService.getAllUsers();
+      final users = await SupabaseService.getAllUsers();
       setState(() { _users = users; _loading = false; });
     } catch (e) {
       setState(() { _error = e.toString(); _loading = false; });
@@ -643,7 +642,7 @@ class _CouponManagementTab extends StatefulWidget {
 }
 
 class _CouponManagementTabState extends State<_CouponManagementTab> {
-  final _db = FirebaseFirestore.instance;
+  static final _sb = Supabase.instance.client;
 
   List<Map<String, dynamic>> _coupons = [];
   bool _loading = true;
@@ -658,26 +657,18 @@ class _CouponManagementTabState extends State<_CouponManagementTab> {
   Future<void> _loadCoupons() async {
     setState(() { _loading = true; _error = null; });
     try {
-      final snap = await _db.collection('coupons').orderBy('createdAt', descending: true).get();
-      final list = snap.docs.map((d) {
-        final data = Map<String, dynamic>.from(d.data());
-        data['_id'] = d.id;
+      final rows = await _sb
+          .from('coupons')
+          .select()
+          .order('created_at', ascending: false);
+      final list = (rows as List).map((r) {
+        final data = Map<String, dynamic>.from(r as Map);
+        data['_id'] = data['id'];
         return data;
       }).toList();
       setState(() { _coupons = list; _loading = false; });
-    } catch (_) {
-      // createdAt alanı yoksa sıralama başarısız olabilir, sıralama olmadan dene
-      try {
-        final snap = await _db.collection('coupons').get();
-        final list = snap.docs.map((d) {
-          final data = Map<String, dynamic>.from(d.data());
-          data['_id'] = d.id;
-          return data;
-        }).toList();
-        setState(() { _coupons = list; _loading = false; });
-      } catch (e2) {
-        setState(() { _error = e2.toString(); _loading = false; });
-      }
+    } catch (e) {
+      setState(() { _error = e.toString(); _loading = false; });
     }
   }
 
@@ -689,16 +680,18 @@ class _CouponManagementTabState extends State<_CouponManagementTab> {
   }
 
   Future<void> _toggleActive(String id, bool current) async {
-    await _db.collection('coupons').doc(id).update({'active': !current});
+    await _sb.from('coupons').update({'is_active': !current}).eq('id', id);
     _loadCoupons();
   }
 
-  Future<void> _deleteCoupon(String id) async {
+  Future<void> _deleteCoupon(String id, String code) async {
     final ok = await showDialog<bool>(
       context: context,
       builder: (_) => AlertDialog(
         title: const Text('Kuponu sil?'),
-        content: Text('$id kodlu kupon silinecek.'),
+        content: Text(
+          '$code kodu silinecek ve bu kuponla aktif edilen tüm premium erişimler iptal edilecek.',
+        ),
         actions: [
           TextButton(onPressed: () => Navigator.pop(context, false), child: const Text('İptal')),
           TextButton(
@@ -709,7 +702,10 @@ class _CouponManagementTabState extends State<_CouponManagementTab> {
       ),
     );
     if (ok == true) {
-      await _db.collection('coupons').doc(id).delete();
+      // Bu kuponla aktif edilen premium erişimleri iptal et
+      await _sb.rpc('revoke_coupon_premium', params: {'coupon_code_param': code});
+      // Kuponu sil
+      await _sb.from('coupons').delete().eq('id', id);
       _loadCoupons();
     }
   }
@@ -784,9 +780,12 @@ class _CouponManagementTabState extends State<_CouponManagementTab> {
                     data: _coupons[i],
                     onToggle: () => _toggleActive(
                       _coupons[i]['_id'] as String,
-                      _coupons[i]['active'] == true,
+                      _coupons[i]['is_active'] == true,
                     ),
-                    onDelete: () => _deleteCoupon(_coupons[i]['_id'] as String),
+                    onDelete: () => _deleteCoupon(
+                      _coupons[i]['_id'] as String,
+                      _coupons[i]['code'] as String? ?? '',
+                    ),
                   ),
                 ),
         ),
@@ -806,12 +805,12 @@ class _CouponCard extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final id           = data['_id'] as String;
-    final active       = data['active'] == true;
+    final active       = data['is_active'] == true;
     final plan         = data['plan'] as String? ?? '—';
-    final durationDays = (data['durationDays'] as num?)?.toInt() ?? 0;
-    final usedCount    = (data['usedCount'] as num?)?.toInt() ?? 0;
-    final maxUses      = data['maxUses'] as int?;
-    final singleUse    = data['singleUse'] == true;
+    final durationDays = (data['duration_days'] as num?)?.toInt() ?? 0;
+    final usedCount    = (data['use_count'] as num?)?.toInt() ?? 0;
+    final maxUses      = data['max_uses'] as int?;
+    final singleUse    = data['single_use'] == true;
 
     final isTimed      = durationDays > 0;
     final durationLabel = isTimed ? '$durationDays Gün' : 'Süresiz';
@@ -923,7 +922,7 @@ class _CreateCouponDialog extends StatefulWidget {
 }
 
 class _CreateCouponDialogState extends State<_CreateCouponDialog> {
-  final _db          = FirebaseFirestore.instance;
+  static final _sb   = Supabase.instance.client;
   final _codeCtrl    = TextEditingController();
   final _daysCtrl    = TextEditingController();
   final _maxUsesCtrl = TextEditingController();
@@ -978,25 +977,29 @@ class _CreateCouponDialogState extends State<_CreateCouponDialog> {
     setState(() { _saving = true; _err = null; });
 
     try {
-      final ref = _db.collection('coupons').doc(code);
-      final existing = await ref.get();
-      if (existing.exists) {
+      // Aynı kod var mı kontrol et
+      final existing = await _sb
+          .from('coupons')
+          .select('code')
+          .eq('code', code)
+          .maybeSingle();
+      if (existing != null) {
         setState(() { _err = '$code zaten mevcut.'; _saving = false; });
         return;
       }
 
-      final data = <String, dynamic>{
-        'active':       true,
-        'plan':         _plan,
-        'durationDays': durationDays,   // int — 0 = süresiz, >0 = süreli
-        'singleUse':    _singleUse,
-        'usedCount':    0,
-        'usedBy':       <String>[],
-        'createdAt':    FieldValue.serverTimestamp(),
-      };
-      if (maxUses != null) data['maxUses'] = maxUses;
+      await _sb.from('coupons').insert({
+        'code':          code,
+        'is_active':     true,
+        'plan':          _plan,
+        'duration_days': durationDays,
+        'single_use':    _singleUse,
+        'use_count':     0,
+        'used_by':       <String>[],
+        'max_uses':      maxUses ?? 0,
+        'created_at':    DateTime.now().toIso8601String(),
+      });
 
-      await ref.set(data);
       if (mounted) {
         Navigator.of(context).pop();
         widget.onCreated();
