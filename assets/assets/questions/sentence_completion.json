@@ -4248,5 +4248,1025 @@
     "passage": null,
     "passageTitle": null,
     "passageId": null
+  },
+  {
+    "id": 1966,
+    "cat": "sentence_completion",
+    "orig": 1966,
+    "q": "Make sure the HMU is not loose. If the HMU is loose, ………….",
+    "opts": [
+      "tighten the bolts and the nuts",
+      "loosened the bolts and the nuts",
+      "the HMU up is optional",
+      "use the HMU"
+    ],
+    "ans": 0,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 1967,
+    "cat": "sentence_completion",
+    "orig": 1967,
+    "q": "Pull the string around the new preformed packing twice ………….",
+    "opts": [
+      "that you feel the plug makes a click sound during the installation",
+      "to remove any twisting of the preformed packing",
+      "which do not twist the preformed packing, fuel leakage can occur",
+      "with removing the preformed packing"
+    ],
+    "ans": 1,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 1968,
+    "cat": "sentence_completion",
+    "orig": 1968,
+    "q": "Remove and discard the upper preformed packing and lower preformed packing ………….",
+    "opts": [
+      "from the interstage strainer assembly",
+      "put the interstage strainer assembly [7] in a protective cover",
+      "install a protective cover in the strainer port of the main fuel pump",
+      "make sure that you feel a click-click-click"
+    ],
+    "ans": 0,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 1969,
+    "cat": "sentence_completion",
+    "orig": 1969,
+    "q": "Do not use the bolts to push the strainer into the strainer housing, damage to the strainer, strainer cover can occur, thus ………….",
+    "opts": [
+      "push only with your hands",
+      "there is need to push it",
+      "you would install a new packing",
+      "the shaft and the bumper pad"
+    ],
+    "ans": 0,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 1970,
+    "cat": "sentence_completion",
+    "orig": 1970,
+    "q": "Only use drills that have an air-powered drill motor. Electrical and battery-powered drill motors can cause sparks that can  ………….",
+    "opts": [
+      "using a vacuum cleaner",
+      "be the two lockscrews",
+      "have set the stroke of the self-feed drill",
+      "cause a fire or exposition"
+    ],
+    "ans": 3,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 1971,
+    "cat": "sentence_completion",
+    "orig": 1971,
+    "q": "If there are Continue-In-Service Limit extensions, ………… .",
+    "opts": [
+      "they are included with the maximum serviceable limits",
+      "can be expected to make it on",
+      "it is limited",
+      "it would help us"
+    ],
+    "ans": 0,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 1972,
+    "cat": "sentence_completion",
+    "orig": 1972,
+    "q": "To prepare for a borescope examination, ………… .",
+    "opts": [
+      "doing it really easy",
+      "to make it better you need an exam",
+      "you must do some steps",
+      "it should be excluded"
+    ],
+    "ans": 2,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 1973,
+    "cat": "sentence_completion",
+    "orig": 1973,
+    "q": "When the adjacent areas are too hot ………… .",
+    "opts": [
+      "there is no danger",
+      "It is easy to use",
+      "you can touch it",
+      "do not touch them"
+    ],
+    "ans": 3,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 1974,
+    "cat": "sentence_completion",
+    "orig": 1974,
+    "q": "You do not see the tip cavity shelf because either a part ………… .",
+    "opts": [
+      "only two tips are broken",
+      "nor one tip is broken",
+      "or all of the tip cap is missing",
+      "and tips are hidden"
+    ],
+    "ans": 2,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 1975,
+    "cat": "sentence_completion",
+    "orig": 1975,
+    "q": "This task provides the steps ………… .",
+    "opts": [
+      "learn how driving",
+      "on how to clean the engine gas path",
+      "makes avoid misunderstanding",
+      "taking advantages of cleaning"
+    ],
+    "ans": 1,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 2046,
+    "cat": "sentence_completion",
+    "orig": 2046,
+    "q": "You can connect the plug connectors ………….",
+    "opts": [
+      "into its main circuit",
+      "to the throttle control unit",
+      "by releasing it beforehand",
+      "without bending it during the process"
+    ],
+    "ans": 0,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 2047,
+    "cat": "sentence_completion",
+    "orig": 2047,
+    "q": "Start the engine by the normal engine automatic start procedure ………….",
+    "opts": [
+      "and let it become stable",
+      "or they will be damaged",
+      "as their procedure is different",
+      "so that you can alter it"
+    ],
+    "ans": 1,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 2048,
+    "cat": "sentence_completion",
+    "orig": 2048,
+    "q": "Make sure that the warning message appears ………….",
+    "opts": [
+      "whenever there was a problem with the temperature",
+      "on the other warning message",
+      "when the thrust control levers are in the correct position",
+      "but the derated take off level was not set at take off"
+    ],
+    "ans": 2,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 2049,
+    "cat": "sentence_completion",
+    "orig": 2049,
+    "q": "………… you must adjust the Artificial Feel Unit.",
+    "opts": [
+      "The unit might not work properly",
+      "In order for them to be safe",
+      "Although it can be done differently",
+      "If the resistance value is not correct"
+    ],
+    "ans": 0,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 2050,
+    "cat": "sentence_completion",
+    "orig": 2050,
+    "q": "If the resistance values are in the specified limits, ………….",
+    "opts": [
+      "make sure that the master control switch is set to OFF position",
+      "taking General Service Harness from the FMU to pylon disconnect panel",
+      "you should put it back to its initial configuration",
+      "try reconnecting it to the General Service Harness connections"
+    ],
+    "ans": 3,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 2051,
+    "cat": "sentence_completion",
+    "orig": 2051,
+    "q": "Do a check and repair the wiring ………….",
+    "opts": [
+      "between the MCU and the related Power Wall Disconnect-Box",
+      "the aircraft from the relay base",
+      "the indication panel shows",
+      "find the related cables"
+    ],
+    "ans": 0,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 2052,
+    "cat": "sentence_completion",
+    "orig": 2052,
+    "q": "Adjust the lumbar rest in the vertical and horizontal directions  ………….",
+    "opts": [
+      "open the Circuit Breakers of the Air Chiller Unit",
+      "with the two knobs, located on the pedestal side of the backrest",
+      "electrical connectors on the air chiller unit",
+      "during the initial 30 seconds of chiller operation, the run and the fault lamps flashes both"
+    ],
+    "ans": 1,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 2053,
+    "cat": "sentence_completion",
+    "orig": 2053,
+    "q": "The ON lamp of the PED switch ………….",
+    "opts": [
+      "check the trolley grills for blockage",
+      "air valves in the galley trolley compartment",
+      "in the cabin does not come on",
+      "clean the related filter"
+    ],
+    "ans": 2,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 2054,
+    "cat": "sentence_completion",
+    "orig": 2054,
+    "q": "If the circuit breaker stays closed, ………….",
+    "opts": [
+      "there would be no holes or leaks in the air ducts from the galley to the air chiller unit",
+      "connect the disconnected LRUs one at a time",
+      "there were no unwanted objects in the air duct",
+      "Espresso-Maker could not have operated"
+    ],
+    "ans": 0,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 2055,
+    "cat": "sentence_completion",
+    "orig": 2055,
+    "q": "The Power supply is not available ………….",
+    "opts": [
+      "the bun warmer does not operate during the test",
+      "if the hot cup did not operate during the test",
+      "if necessary repair the related circuit breaker at the galley",
+      "when the flaps lever is set to the zero flaps position"
+    ],
+    "ans": 3,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 2124,
+    "cat": "sentence_completion",
+    "orig": 2124,
+    "q": "The nose radome serves both to provide fairing ………….",
+    "opts": [
+      "but it is the most exposed part of the aircraft",
+      "and to house the weather radar and glide slope antennas",
+      "so it has a preventive and protective characteristics",
+      "since its form is extremely hard and robust"
+    ],
+    "ans": 0,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 2125,
+    "cat": "sentence_completion",
+    "orig": 2125,
+    "q": "Do not get solvents in your mouth or eyes or………….",
+    "opts": [
+      "you will get poisoned or irritated",
+      "they are hazardous materials",
+      "you may cause a fire or damage",
+      "they don’t harm if it’s not for too long"
+    ],
+    "ans": 0,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 2126,
+    "cat": "sentence_completion",
+    "orig": 2126,
+    "q": "To avoid any contamination during removal or installation of the power plant, ………….",
+    "opts": [
+      "it must be hoisted to its position under the wing carefully",
+      "the working area must be clear of tools and other equipment",
+      "all the openings on it must be covered by approved caps",
+      "the aircraft and the mating parts must be de-energized"
+    ],
+    "ans": 0,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 2127,
+    "cat": "sentence_completion",
+    "orig": 2127,
+    "q": "In installation or attachment tasks, technicians frequently use methyl ethyl ketone (MEK), ………….",
+    "opts": [
+      "why it’s easy and cheap to provide by companies",
+      "that is a flammable material and may cause fire",
+      "whose fume might be harmful if it is inhaled",
+      "which shortens the curing time when applied"
+    ],
+    "ans": 0,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 2128,
+    "cat": "sentence_completion",
+    "orig": 2128,
+    "q": "If one of the Wing Anti-Ice (WAI) pressure sensors fails to supply feedback to the WAI ACIPS control card, ………….",
+    "opts": [
+      "the card sets the related valve to fully open or closed as precaution",
+      "either the left or the right valves would get under risk",
+      "which controls the operation of both wing anti-ice valves",
+      "what causes WAI valve control and position indication failure"
+    ],
+    "ans": 0,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 2129,
+    "cat": "sentence_completion",
+    "orig": 2129,
+    "q": "Besides controlling the aircraft automatically, the autopilot …………to allow manual control.",
+    "opts": [
+      "has  the command of the aircraft",
+      "supplies altitude indications to crew",
+      "is in charge during landing",
+      "requires control for take off"
+    ],
+    "ans": 0,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 2130,
+    "cat": "sentence_completion",
+    "orig": 2130,
+    "q": "While rubber is safe clothing for working in the fuel tank, ………….",
+    "opts": [
+      "it is one of the most fire-resistant materials",
+      "nylon may cause sparks and is not approved",
+      "it is quite visible when the area is dark",
+      "it is also used in some components of the aircraft"
+    ],
+    "ans": 0,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 2131,
+    "cat": "sentence_completion",
+    "orig": 2131,
+    "q": "Normally, circuit breakers are similar to each other in shape, because of this, ………….",
+    "opts": [
+      "they can break different circuits simultaneously",
+      "crew and technicians avoid using them",
+      "they are identified with labels to distinguish",
+      "you can install and remove them easily"
+    ],
+    "ans": 0,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 2132,
+    "cat": "sentence_completion",
+    "orig": 2132,
+    "q": "You must make sure that IDG is locked in the QAD ring; otherwise, vibration………….",
+    "opts": [
+      "oil lubricates IDG and prevents overheating",
+      "may damage the ring and IDG mounting flange",
+      "must be tightened by hand, not by a torque",
+      "supplying electrical power to the airplane"
+    ],
+    "ans": 0,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 2133,
+    "cat": "sentence_completion",
+    "orig": 2133,
+    "q": "In order to help the crew vision against icing, ………….",
+    "opts": [
+      "the cockpit is equipped with sun visors over the windshield",
+      "the flight deck windows are electrically heated",
+      "electric systems help freezing in waste lines and fittings",
+      "there are wipers sweeping the windshield"
+    ],
+    "ans": 0,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 2204,
+    "cat": "sentence_completion",
+    "orig": 2204,
+    "q": "Do the deactivation procedure for the spoilers………….",
+    "opts": [
+      "so the spoiler can cause damage to equipment.",
+      "and they can retract quickly during an operation.",
+      "or move all  equipment away from the spoilers.",
+      "but also you can do this procedure for the spoilers"
+    ],
+    "ans": 0,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 2205,
+    "cat": "sentence_completion",
+    "orig": 2205,
+    "q": "If the fuel boost pumps are on and the spar fuel valve opens, ………….",
+    "opts": [
+      "this test will provide electrical power",
+      "the fuel will go into the burner.",
+      "the spar fuel valve will remains closed",
+      "you may open these circuit breakers"
+    ],
+    "ans": 0,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 2206,
+    "cat": "sentence_completion",
+    "orig": 2206,
+    "q": "…………make sure that you can rotate the panel along the lower edge.",
+    "opts": [
+      "In order to remove them",
+      "So that you can connect them",
+      "Because of installing the four screws",
+      "Before you tighten the screws"
+    ],
+    "ans": 0,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 2207,
+    "cat": "sentence_completion",
+    "orig": 2207,
+    "q": "Release the thirteen quick-release fasteners ………….",
+    "opts": [
+      "that install these three washers and nuts",
+      "which hold the side panel to the control stand",
+      "that it attaches the DO-NOT-OPERATE tags",
+      "which removes the applicable side panels"
+    ],
+    "ans": 0,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 2208,
+    "cat": "sentence_completion",
+    "orig": 2208,
+    "q": "…………to the connector of the wire bundle assembly.",
+    "opts": [
+      "Connect the electrical connector",
+      "Setting the seal in its location",
+      "To install the detent plate",
+      "Removes the cover assembly"
+    ],
+    "ans": 0,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 2209,
+    "cat": "sentence_completion",
+    "orig": 2209,
+    "q": "For the right engine, ………….",
+    "opts": [
+      "each engine has two exciters",
+      "you disconnect them easily",
+      "open these circuit breakers and install safety tags",
+      "an installation of the system 1 or sytem 2 ignition exciter"
+    ],
+    "ans": 0,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 2210,
+    "cat": "sentence_completion",
+    "orig": 2210,
+    "q": "Ignition voltage is dangerously high and ………….",
+    "opts": [
+      "tighten the bolts to 55-70 pound-inches by hand",
+      "electrical input cable connectors were loose",
+      "to safely close the left thrust reverser",
+      "can cause injury to persons"
+    ],
+    "ans": 0,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 2211,
+    "cat": "sentence_completion",
+    "orig": 2211,
+    "q": "You can use this procedure ………….",
+    "opts": [
+      "for the removal of an exciter.",
+      "but open the left fan cowl panel and the left thrust reverser",
+      "and do the deactivation procedure for the leading edge slats",
+      "disconnect the electrical input cables and the ignition leads from the exciters"
+    ],
+    "ans": 0,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 2212,
+    "cat": "sentence_completion",
+    "orig": 2212,
+    "q": "Each engine has two ignition leads ………….",
+    "opts": [
+      "where you can disconnect the ignition lead from the exciter and the igniter",
+      "which connect the ignition exciter to the igniters",
+      "although the task provides the instructions to attach the ignition lead",
+      "however, open the left fan cowl panel and the left thrust reversers"
+    ],
+    "ans": 0,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 2213,
+    "cat": "sentence_completion",
+    "orig": 2213,
+    "q": "Minor chips around upper edge of the ceramic are acceptable  ………….",
+    "opts": [
+      "which measures the distance from the flat surface of the firing tip to the top of the center electrode",
+      "when you do these tasks in sequence to safely open the left thrust reverser on the applicable engine",
+      "whereas you should have put the protective covers over the fuel manifold adjacent to the ignitor.",
+      "if each chip is not more than the radial width of 0.020 inch (0.05 cm)"
+    ],
+    "ans": 0,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 2283,
+    "cat": "sentence_completion",
+    "orig": 2283,
+    "q": "Remove the air conditioning duct section ………….",
+    "opts": [
+      "secures the loose electrical connectors for flight",
+      "to install this equipment from this section",
+      "installed in front of the keel beam access hole",
+      "which are manually closed the bleed air valve"
+    ],
+    "ans": 0,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 2284,
+    "cat": "sentence_completion",
+    "orig": 2284,
+    "q": "………… do the steps to manually lock the isolation valve",
+    "opts": [
+      "So secure the loose connectors.",
+      "Before opening them during start",
+      "After the engine is started",
+      "When they push the manual handle"
+    ],
+    "ans": 0,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 2285,
+    "cat": "sentence_completion",
+    "orig": 2285,
+    "q": "Get access to the bleed air isolation valve ………….",
+    "opts": [
+      "so this task puts the airplane back to its usual condition",
+      "others remove the air conditioning duct section",
+      "but also you can secure the loose electrical connector",
+      "through the keel beam access hole from the ESC bay"
+    ],
+    "ans": 0,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 2286,
+    "cat": "sentence_completion",
+    "orig": 2286,
+    "q": "Install a cap on both the valve side ………….",
+    "opts": [
+      "and the pressure line side",
+      "between the precooler",
+      "from the pneumatic ducts",
+      "until the position indicator"
+    ],
+    "ans": 0,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 2287,
+    "cat": "sentence_completion",
+    "orig": 2287,
+    "q": "………… to close the thrust reversers.",
+    "opts": [
+      "Reconnected sense lines for the procedure",
+      "Obey the instructions in the procedure",
+      "Carrying out these procedures correctly",
+      "To decrease the pressure from some sources"
+    ],
+    "ans": 0,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 2288,
+    "cat": "sentence_completion",
+    "orig": 2288,
+    "q": "The relay configurations ………….",
+    "opts": [
+      "to replace the SW-INT LT/STBY COMPASS",
+      "a check for 28VDC at pin 1 of the lighted icing indicator",
+      "is on the INT LT section of the overhead control",
+      "are valid for their applicable diagram"
+    ],
+    "ans": 0,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 2289,
+    "cat": "sentence_completion",
+    "orig": 2289,
+    "q": "The temperature of the ducts stays high for some time ………….",
+    "opts": [
+      "after the engine stops",
+      "water servicing panel heatings",
+      "also, don’t remove the Inner Line Heater",
+      "there is no ground signal"
+    ],
+    "ans": 0,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 2290,
+    "cat": "sentence_completion",
+    "orig": 2290,
+    "q": "Do not touch the anti-ice ducts ………….",
+    "opts": [
+      "the circuit breakers are closed",
+      "until they are cool",
+      "when it is turned off",
+      "and the engine is hot"
+    ],
+    "ans": 0,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 2291,
+    "cat": "sentence_completion",
+    "orig": 2291,
+    "q": "If the fault continues, ………….",
+    "opts": [
+      "setting the ICE IND&/STBY COMPASS switch to ON",
+      "the lighting of the standby compass was operative",
+      "do the trouble shooting procedure for the fault",
+      "one signal is missing on the panel 49VU"
+    ],
+    "ans": 0,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 2292,
+    "cat": "sentence_completion",
+    "orig": 2292,
+    "q": "Make sure that there is no maintenance message ………….",
+    "opts": [
+      "that is related to the landing gear system",
+      "which stay cold during a check of the related microfuses",
+      "whose inspection takes a lot of time",
+      "where the loss of GND/FLT information occurred"
+    ],
+    "ans": 0,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 2363,
+    "cat": "sentence_completion",
+    "orig": 2363,
+    "q": "Apply mixed detergent to the dirty area ………….",
+    "opts": [
+      "can cause damage to the surface",
+      "and connecting the seven tie-rods",
+      "with a spray bottle or moist sponge",
+      "disconnects the electrical connector"
+    ],
+    "ans": 0,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 2364,
+    "cat": "sentence_completion",
+    "orig": 2364,
+    "q": "The second task gives the instructions ………….",
+    "opts": [
+      "near the aft edge of the close out panel",
+      "to paint the airplane equipment and furnishings",
+      "it isn’t part of the forward lowered ceiling",
+      "the two brackets at the forward edge of the panel"
+    ],
+    "ans": 0,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 2365,
+    "cat": "sentence_completion",
+    "orig": 2365,
+    "q": "Use foam and vacuum cleaner to remove ………….",
+    "opts": [
+      "the unwanted materials from acoustic surfaces",
+      "particles into the surface of the material",
+      "is difficult to get the surface clean",
+      "to clean a small area on the surface"
+    ],
+    "ans": 0,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 2366,
+    "cat": "sentence_completion",
+    "orig": 2366,
+    "q": "The first task is the task ………….",
+    "opts": [
+      "continues to lower the right side of the bezel",
+      "you can disengage the spring clips on the left side",
+      "lifting it up a small amount and move it forward",
+      "that cleans the airplane equipment and furnishings"
+    ],
+    "ans": 0,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 2367,
+    "cat": "sentence_completion",
+    "orig": 2367,
+    "q": "You must fold the plug panels up ………….",
+    "opts": [
+      "you can remove the oxygen masks and the generator",
+      "also, service units have easy access to the back side",
+      "until you get them past the stowage bins",
+      "the lavatory ceiling can be opened"
+    ],
+    "ans": 0,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 2368,
+    "cat": "sentence_completion",
+    "orig": 2368,
+    "q": "Ensure proper contact of the fixation screw to the ignition housing ………….",
+    "opts": [
+      "which is achieved by careful examination and cleaning of all contact surfaces",
+      "may result in engine failures",
+      "however the coils are damaged",
+      "checking the complete wiring and connections for damage  is required"
+    ],
+    "ans": 0,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 2369,
+    "cat": "sentence_completion",
+    "orig": 2369,
+    "q": "Remove the deposits carefully, without applying any tension ………….",
+    "opts": [
+      "renew the stator if the cables are damaged",
+      "on the cables with a suitable tool",
+      "do not squeeze the cable harness",
+      "by installing the cable harness"
+    ],
+    "ans": 0,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 2370,
+    "cat": "sentence_completion",
+    "orig": 2370,
+    "q": "To lock the crankshaft ………….",
+    "opts": [
+      "remove the plug screw",
+      "sealing ring from the crankcase half",
+      "of the ignition housing",
+      "according to the following instructions"
+    ],
+    "ans": 0,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 2371,
+    "cat": "sentence_completion",
+    "orig": 2371,
+    "q": "At replacement or reinstallation of the stator take care ………….",
+    "opts": [
+      "for the correct routing of cable assembly",
+      "to harm the stator",
+      "application of the new materials",
+      "as the removal is very important"
+    ],
+    "ans": 0,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
+  },
+  {
+    "id": 2372,
+    "cat": "sentence_completion",
+    "orig": 2372,
+    "q": "All redundant parts which cannot be used ………….",
+    "opts": [
+      "in accordance with the group subdivision in the following instruction",
+      "as for instance simultaneous engine overhaul is not covered in this scope",
+      "must be returned at the user’s cost to an authorized Rotax Distributor or Service Centre",
+      "has to be connected with stator attachment screw"
+    ],
+    "ans": 0,
+    "diff": "medium",
+    "passage": null,
+    "passageTitle": null,
+    "passageId": null
   }
 ]
