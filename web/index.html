@@ -18,6 +18,7 @@
 
   <meta name="google-signin-client_id" content="560944576659-07uh0u45a5rgnaed27c9v00rnvn3vioj.apps.googleusercontent.com">
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta content="IE=Edge" http-equiv="X-UA-Compatible">
   <meta name="description" content="Avialish — Aviation English Exam &amp; Learning App">
 
@@ -34,6 +35,16 @@
 
   <title>Avialish</title>
   <link rel="manifest" href="manifest.json">
+
+  <style>
+    html, body {
+      height: 100%;
+      margin: 0;
+      padding: 0;
+      background-color: #FFFFFF;
+      overflow: hidden;
+    }
+  </style>
 
   <!--
     AdSense H5 Games Rewarded Ads
@@ -71,6 +82,32 @@
   </script>
 </head>
 <body>
+  <script>
+    // Service worker otomatik güncelleme:
+    // Yeni versiyon deploy edilince sayfa kendiliğinden yenilenir,
+    // kullanıcının cache temizlemesine gerek kalmaz.
+    if ('serviceWorker' in navigator) {
+      navigator.serviceWorker.addEventListener('controllerchange', function () {
+        window.location.reload();
+      });
+
+      navigator.serviceWorker.ready.then(function (reg) {
+        // Her sayfa açılışında güncelleme kontrol et
+        reg.update();
+
+        reg.addEventListener('updatefound', function () {
+          var newWorker = reg.installing;
+          if (!newWorker) return;
+          newWorker.addEventListener('statechange', function () {
+            // Yeni SW yüklenip beklemeye geçince hemen aktifleştir
+            if (newWorker.state === 'installed' && navigator.serviceWorker.controller) {
+              newWorker.postMessage({ type: 'SKIP_WAITING' });
+            }
+          });
+        });
+      });
+    }
+  </script>
   <script src="flutter_bootstrap.js" async></script>
 </body>
 </html>
