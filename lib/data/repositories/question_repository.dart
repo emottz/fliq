@@ -7,9 +7,17 @@ class QuestionRepository {
 
   QuestionRepository(this._source);
 
-  /// Soru metni 200 karakterden uzun olanlar ekranda kullanılamaz
-  /// (pasaj gömülü çok-boşluklu fill_blanks soruları).
-  static bool _isUsable(QuestionModel q) => q.questionText.length <= 200;
+  /// Ekranda kullanılamayacak soruları filtreler:
+  /// - Soru metni 200+ karakter → pasaj gömülü fill_blanks soruları
+  /// - Reading şıkları 100+ karakter → pasaja bağlı/bozuk sorular
+  static bool _isUsable(QuestionModel q) {
+    if (q.questionText.length > 200) return false;
+    if (q.category == QuestionCategory.reading) {
+      final maxOptLen = q.options.fold(0, (m, o) => o.length > m ? o.length : m);
+      if (maxOptLen > 100) return false;
+    }
+    return true;
+  }
 
   Future<List<QuestionModel>> getAll() async {
     _cache ??= (await _source.loadAll()).where(_isUsable).toList();
