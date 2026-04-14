@@ -1,9 +1,9 @@
 import 'dart:async';
 
-import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:go_router/go_router.dart';
+import 'package:supabase_flutter/supabase_flutter.dart';
 import '../../data/repositories/user_repository.dart';
 import '../../data/models/user_profile_model.dart';
 import '../../features/splash/screens/splash_screen.dart';
@@ -20,7 +20,6 @@ import '../../features/exams/screens/exam_result_screen.dart';
 import '../../features/lessons/screens/lesson_list_screen.dart';
 import '../../features/lessons/screens/lesson_session_screen.dart';
 import '../../features/admin/screens/admin_screen.dart';
-import '../../features/league/screens/league_screen.dart';
 import '../../features/profile/screens/profile_screen.dart';
 
 // Her uygulama başlangıcında splash bir kez gösterilir
@@ -29,10 +28,11 @@ void markSplashShown() => _splashShown = true;
 
 // Auth değişikliklerini GoRouter'a bildiren notifier
 class _AuthNotifier extends ChangeNotifier {
-  StreamSubscription<User?>? _sub;
+  StreamSubscription<AuthState>? _sub;
 
   _AuthNotifier() {
-    _sub = FirebaseAuth.instance.authStateChanges().listen((_) => notifyListeners());
+    _sub = Supabase.instance.client.auth.onAuthStateChange
+        .listen((_) => notifyListeners());
   }
 
   @override
@@ -61,7 +61,7 @@ final routerProvider = Provider<GoRouter>((ref) {
       // ── Admin paneli → yönlendirme yapma ──────────────────
       if (path == '/admin') return null;
 
-      final user = FirebaseAuth.instance.currentUser;
+      final user = Supabase.instance.client.auth.currentUser;
 
       // ── Giriş yapılmamış → auth ekranı ────────────────────
       if (user == null) {
@@ -164,11 +164,7 @@ final routerProvider = Provider<GoRouter>((ref) {
             path: '/home/lessons',
             builder: (context, state) => const LessonListScreen(),
           ),
-          GoRoute(
-            path: '/home/league',
-            builder: (context, state) => const LeagueScreen(),
-          ),
-          GoRoute(
+GoRoute(
             path: '/home/profile',
             builder: (context, state) => const ProfileScreen(),
           ),

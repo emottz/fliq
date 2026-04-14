@@ -1,3 +1,5 @@
+import 'dart:math';
+
 import 'package:equatable/equatable.dart';
 
 enum Difficulty { easy, medium, hard }
@@ -103,6 +105,23 @@ class QuestionModel extends Equatable {
         'passageTitle': passageTitle,
         'passageId': passageId,
       };
+
+  /// Şıkları karıştırır ve correctIndex'i günceller.
+  QuestionModel withShuffledOptions() {
+    final indices = List<int>.generate(options.length, (i) => i)..shuffle(Random());
+    return QuestionModel(
+      id: id,
+      category: category,
+      originalNumber: originalNumber,
+      questionText: questionText,
+      options: indices.map((i) => options[i]).toList(),
+      correctIndex: indices.indexOf(correctIndex),
+      difficulty: difficulty,
+      passageText: passageText,
+      passageTitle: passageTitle,
+      passageId: passageId,
+    );
+  }
 
   @override
   List<Object?> get props => [id];

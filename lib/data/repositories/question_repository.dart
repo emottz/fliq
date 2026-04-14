@@ -7,8 +7,12 @@ class QuestionRepository {
 
   QuestionRepository(this._source);
 
+  /// Soru metni 200 karakterden uzun olanlar ekranda kullanılamaz
+  /// (pasaj gömülü çok-boşluklu fill_blanks soruları).
+  static bool _isUsable(QuestionModel q) => q.questionText.length <= 200;
+
   Future<List<QuestionModel>> getAll() async {
-    _cache ??= await _source.loadAll();
+    _cache ??= (await _source.loadAll()).where(_isUsable).toList();
     return _cache!;
   }
 
@@ -43,7 +47,7 @@ class QuestionRepository {
       result.addAll(pool.take(entry.value));
     }
     result.shuffle();
-    return result;
+    return result.map((q) => q.withShuffledOptions()).toList();
   }
 
   /// Returns a shuffled exam session of [count] questions.
@@ -57,7 +61,7 @@ class QuestionRepository {
     if (category != null) pool = pool.where((q) => q.category == category).toList();
     if (difficulty != null) pool = pool.where((q) => q.difficulty == difficulty).toList();
     pool.shuffle();
-    return pool.take(count).toList();
+    return pool.take(count).map((q) => q.withShuffledOptions()).toList();
   }
 
   /// Uçak Bakım Teknisyeni Yabancı Dil Sınavı — 80 soru, SHGM dağılımına uygun.
@@ -89,6 +93,6 @@ class QuestionRepository {
       result.addAll(pool.take(entry.value));
     }
     result.shuffle();
-    return result;
+    return result.map((q) => q.withShuffledOptions()).toList();
   }
 }
