@@ -1,6 +1,8 @@
 import 'dart:convert';
+import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
 import 'package:http/http.dart' as http;
 import '../../../core/constants/app_colors.dart';
 import '../../../core/constants/app_text_styles.dart';
@@ -18,12 +20,14 @@ class AdminScreen extends StatefulWidget {
   State<AdminScreen> createState() => _AdminScreenState();
 }
 
-class _AdminScreenState extends State<AdminScreen> {
+class _AdminScreenState extends State<AdminScreen>
+    with SingleTickerProviderStateMixin {
   List<Map<String, dynamic>> _users = [];
   bool _loading = true;
   String? _error;
   String? _aiInsight;
   bool _aiLoading = false;
+  late TabController _tabController;
 
   String get _currentEmail =>
       (FirebaseAuth.instance.currentUser?.email ?? '').toLowerCase().trim();
@@ -33,7 +37,14 @@ class _AdminScreenState extends State<AdminScreen> {
   @override
   void initState() {
     super.initState();
+    _tabController = TabController(length: 2, vsync: this);
     _load();
+  }
+
+  @override
+  void dispose() {
+    _tabController.dispose();
+    super.dispose();
   }
 
   Future<void> _load() async {
@@ -140,12 +151,30 @@ Türkçe olarak 5 maddede içgörü ver: kullanıcı profili, kritik içerik iht
         actions: [
           IconButton(icon: const Icon(Icons.refresh), onPressed: _load),
         ],
+        bottom: TabBar(
+          controller: _tabController,
+          labelColor: AppColors.primary,
+          unselectedLabelColor: AppColors.textSecondary,
+          indicatorColor: AppColors.primary,
+          tabs: const [
+            Tab(icon: Icon(Icons.people_outline, size: 18), text: 'Kullanıcılar'),
+            Tab(icon: Icon(Icons.confirmation_number_outlined, size: 18), text: 'Kuponlar'),
+          ],
+        ),
       ),
-      body: _loading
-          ? const Center(child: CircularProgressIndicator(color: AppColors.primary))
-          : _error != null
-              ? _buildError()
-              : _buildContent(),
+      body: TabBarView(
+        controller: _tabController,
+        children: [
+          // Tab 1: Kullanıcılar
+          _loading
+              ? const Center(child: CircularProgressIndicator(color: AppColors.primary))
+              : _error != null
+                  ? _buildError()
+                  : _buildContent(),
+          // Tab 2: Kuponlar
+          const _CouponManagementTab(),
+        ],
+      ),
     );
   }
 
@@ -602,4 +631,604 @@ class _UserCardList extends StatelessWidget {
     'not_planned' => 'Planlanmadı', '6_months_plus' => '6ay+',
     '6_months' => '6ay', '1_month' => '1ay', _ => '—',
   };
+}
+
+// ── Kupon Yönetimi Sekmesi ────────────────────────────────────────────────────
+
+class _CouponManagementTab extends StatefulWidget {
+  const _CouponManagementTab();
+
+  @override
+  State<_CouponManagementTab> createState() => _CouponManagementTabState();
+}
+
+class _CouponManagementTabState extends State<_CouponManagementTab> {
+  final _db = FirebaseFirestore.instance;
+
+  List<Map<String, dynamic>> _coupons = [];
+  bool _loading = true;
+  String? _error;
+
+  @override
+  void initState() {
+    super.initState();
+    _loadCoupons();
+  }
+
+  Future<void> _loadCoupons() async {
+    setState(() { _loading = true; _error = null; });
+    try {
+      final snap = await _db.collection('coupons').orderBy('createdAt', descending: true).get();
+      final list = snap.docs.map((d) {
+        final data = Map<String, dynamic>.from(d.data());
+        data['_id'] = d.id;
+        return data;
+      }).toList();
+      setState(() { _coupons = list; _loading = false; });
+    } catch (_) {
+      // createdAt alanı yoksa sıralama başarısız olabilir, sıralama olmadan dene
+      try {
+        final snap = await _db.collection('coupons').get();
+        final list = snap.docs.map((d) {
+          final data = Map<String, dynamic>.from(d.data());
+          data['_id'] = d.id;
+          return data;
+        }).toList();
+        setState(() { _coupons = list; _loading = false; });
+      } catch (e2) {
+        setState(() { _error = e2.toString(); _loading = false; });
+      }
+    }
+  }
+
+  void _showCreateDialog() {
+    showDialog(
+      context: context,
+      builder: (_) => _CreateCouponDialog(onCreated: _loadCoupons),
+    );
+  }
+
+  Future<void> _toggleActive(String id, bool current) async {
+    await _db.collection('coupons').doc(id).update({'active': !current});
+    _loadCoupons();
+  }
+
+  Future<void> _deleteCoupon(String id) async {
+    final ok = await showDialog<bool>(
+      context: context,
+      builder: (_) => AlertDialog(
+        title: const Text('Kuponu sil?'),
+        content: Text('$id kodlu kupon silinecek.'),
+        actions: [
+          TextButton(onPressed: () => Navigator.pop(context, false), child: const Text('İptal')),
+          TextButton(
+            onPressed: () => Navigator.pop(context, true),
+            child: const Text('Sil', style: TextStyle(color: Colors.red)),
+          ),
+        ],
+      ),
+    );
+    if (ok == true) {
+      await _db.collection('coupons').doc(id).delete();
+      _loadCoupons();
+    }
+  }
+
+  @override
+  Widget build(BuildContext context) {
+    if (_loading) {
+      return const Center(child: CircularProgressIndicator(color: AppColors.primary));
+    }
+    if (_error != null) {
+      return Center(
+        child: Padding(
+          padding: const EdgeInsets.all(24),
+          child: Column(
+            mainAxisSize: MainAxisSize.min,
+            children: [
+              const Icon(Icons.error_outline, color: AppColors.error, size: 48),
+              const SizedBox(height: 12),
+              Text(_error!, style: AppTextStyles.caption, textAlign: TextAlign.center),
+              const SizedBox(height: 12),
+              TextButton(onPressed: _loadCoupons, child: const Text('Tekrar Dene')),
+            ],
+          ),
+        ),
+      );
+    }
+
+    return Column(
+      children: [
+        Padding(
+          padding: const EdgeInsets.fromLTRB(16, 16, 16, 8),
+          child: Row(
+            children: [
+              Text('${_coupons.length} kupon', style: AppTextStyles.bodyBold),
+              const Spacer(),
+              FilledButton.icon(
+                onPressed: _showCreateDialog,
+                icon: const Icon(Icons.add, size: 18),
+                label: const Text('Yeni Kupon'),
+                style: FilledButton.styleFrom(
+                  backgroundColor: AppColors.primary,
+                  padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 10),
+                ),
+              ),
+              const SizedBox(width: 8),
+              IconButton(
+                onPressed: _loadCoupons,
+                icon: const Icon(Icons.refresh, size: 20),
+                tooltip: 'Yenile',
+              ),
+            ],
+          ),
+        ),
+        const Divider(height: 1),
+        Expanded(
+          child: _coupons.isEmpty
+              ? const Center(
+                  child: Column(
+                    mainAxisSize: MainAxisSize.min,
+                    children: [
+                      Icon(Icons.confirmation_number_outlined, size: 48, color: AppColors.textHint),
+                      SizedBox(height: 12),
+                      Text('Henüz kupon yok', style: AppTextStyles.caption),
+                    ],
+                  ),
+                )
+              : ListView.separated(
+                  padding: const EdgeInsets.all(16),
+                  itemCount: _coupons.length,
+                  separatorBuilder: (_, __) => const SizedBox(height: 10),
+                  itemBuilder: (_, i) => _CouponCard(
+                    data: _coupons[i],
+                    onToggle: () => _toggleActive(
+                      _coupons[i]['_id'] as String,
+                      _coupons[i]['active'] == true,
+                    ),
+                    onDelete: () => _deleteCoupon(_coupons[i]['_id'] as String),
+                  ),
+                ),
+        ),
+      ],
+    );
+  }
+}
+
+// ── Kupon kartı ───────────────────────────────────────────────────────────────
+
+class _CouponCard extends StatelessWidget {
+  final Map<String, dynamic> data;
+  final VoidCallback onToggle;
+  final VoidCallback onDelete;
+  const _CouponCard({required this.data, required this.onToggle, required this.onDelete});
+
+  @override
+  Widget build(BuildContext context) {
+    final id           = data['_id'] as String;
+    final active       = data['active'] == true;
+    final plan         = data['plan'] as String? ?? '—';
+    final durationDays = (data['durationDays'] as num?)?.toInt() ?? 0;
+    final usedCount    = (data['usedCount'] as num?)?.toInt() ?? 0;
+    final maxUses      = data['maxUses'] as int?;
+    final singleUse    = data['singleUse'] == true;
+
+    final isTimed      = durationDays > 0;
+    final durationLabel = isTimed ? '$durationDays Gün' : 'Süresiz';
+    final durationColor = isTimed ? const Color(0xFF2563EB) : const Color(0xFF16A34A);
+
+    final String usageLabel;
+    if (singleUse) {
+      usageLabel = usedCount >= 1 ? 'Kullanıldı' : 'Tek kullanım';
+    } else if (maxUses != null) {
+      usageLabel = '$usedCount / $maxUses kullanım';
+    } else {
+      usageLabel = '$usedCount kullanım';
+    }
+
+    final planLabel = const {
+      'pilot':      'Pilot',
+      'cabin_crew': 'Kabin',
+      'amt':        'AMT',
+      'student':    'Öğrenci',
+      'free':       'Ücretsiz',
+    }[plan] ?? plan;
+
+    return Container(
+      padding: const EdgeInsets.all(14),
+      decoration: BoxDecoration(
+        color: active ? AppColors.surface : const Color(0xFFF9FAFB),
+        borderRadius: BorderRadius.circular(12),
+        border: Border.all(color: active ? AppColors.divider : const Color(0xFFD1D5DB)),
+      ),
+      child: Row(
+        children: [
+          Expanded(
+            child: Column(
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: [
+                Row(
+                  children: [
+                    GestureDetector(
+                      onTap: () {
+                        Clipboard.setData(ClipboardData(text: id));
+                        ScaffoldMessenger.of(context).showSnackBar(
+                          SnackBar(content: Text('$id kopyalandı'), duration: const Duration(seconds: 1)),
+                        );
+                      },
+                      child: Text(
+                        id,
+                        style: const TextStyle(
+                          fontSize: 14, fontWeight: FontWeight.w800,
+                          color: AppColors.textPrimary, fontFamily: 'monospace',
+                          letterSpacing: 1.2,
+                        ),
+                      ),
+                    ),
+                    const SizedBox(width: 6),
+                    const Icon(Icons.copy_outlined, size: 13, color: AppColors.textHint),
+                  ],
+                ),
+                const SizedBox(height: 8),
+                Wrap(
+                  spacing: 6, runSpacing: 4,
+                  children: [
+                    _badge(planLabel, AppColors.primary),
+                    _badge(durationLabel, durationColor),
+                    _badge(usageLabel, AppColors.textSecondary),
+                    if (!active) _badge('Pasif', AppColors.error),
+                  ],
+                ),
+              ],
+            ),
+          ),
+          Column(
+            children: [
+              Switch(
+                value: active,
+                onChanged: (_) => onToggle(),
+                activeThumbColor: AppColors.primary,
+                materialTapTargetSize: MaterialTapTargetSize.shrinkWrap,
+              ),
+              const SizedBox(height: 4),
+              GestureDetector(
+                onTap: onDelete,
+                child: const Icon(Icons.delete_outline, size: 18, color: AppColors.error),
+              ),
+            ],
+          ),
+        ],
+      ),
+    );
+  }
+
+  Widget _badge(String label, Color color) => Container(
+    padding: const EdgeInsets.symmetric(horizontal: 8, vertical: 3),
+    decoration: BoxDecoration(
+      color: color.withValues(alpha: 0.1),
+      borderRadius: BorderRadius.circular(6),
+    ),
+    child: Text(label, style: TextStyle(fontSize: 11, fontWeight: FontWeight.w600, color: color)),
+  );
+}
+
+// ── Kupon oluşturma dialog'u ──────────────────────────────────────────────────
+
+class _CreateCouponDialog extends StatefulWidget {
+  final VoidCallback onCreated;
+  const _CreateCouponDialog({required this.onCreated});
+
+  @override
+  State<_CreateCouponDialog> createState() => _CreateCouponDialogState();
+}
+
+class _CreateCouponDialogState extends State<_CreateCouponDialog> {
+  final _db          = FirebaseFirestore.instance;
+  final _codeCtrl    = TextEditingController();
+  final _daysCtrl    = TextEditingController();
+  final _maxUsesCtrl = TextEditingController();
+
+  String _plan        = 'student';
+  bool   _singleUse   = false;
+  bool   _hasDuration = true;   // true = süreli, false = süresiz
+  bool   _hasMaxUses  = false;
+  bool   _saving      = false;
+  String? _err;
+
+  static const _plans = {
+    'pilot':      'Pilot',
+    'cabin_crew': 'Kabin Görevlisi',
+    'amt':        'Uçak Bakım Teknikeri',
+    'student':    'Öğrenci',
+    'free':       'Ücretsiz Erişim',
+  };
+
+  @override
+  void dispose() {
+    _codeCtrl.dispose();
+    _daysCtrl.dispose();
+    _maxUsesCtrl.dispose();
+    super.dispose();
+  }
+
+  Future<void> _save() async {
+    final code = _codeCtrl.text.trim().toUpperCase();
+    if (code.isEmpty) { setState(() => _err = 'Kupon kodu girin.'); return; }
+
+    int durationDays = 0;
+    if (_hasDuration) {
+      final parsed = int.tryParse(_daysCtrl.text.trim());
+      if (parsed == null || parsed <= 0) {
+        setState(() => _err = 'Geçerli bir gün sayısı girin (>0).');
+        return;
+      }
+      durationDays = parsed;
+    }
+
+    int? maxUses;
+    if (_hasMaxUses && !_singleUse) {
+      final parsed = int.tryParse(_maxUsesCtrl.text.trim());
+      if (parsed == null || parsed <= 0) {
+        setState(() => _err = 'Geçerli bir kullanım limiti girin (>0).');
+        return;
+      }
+      maxUses = parsed;
+    }
+
+    setState(() { _saving = true; _err = null; });
+
+    try {
+      final ref = _db.collection('coupons').doc(code);
+      final existing = await ref.get();
+      if (existing.exists) {
+        setState(() { _err = '$code zaten mevcut.'; _saving = false; });
+        return;
+      }
+
+      final data = <String, dynamic>{
+        'active':       true,
+        'plan':         _plan,
+        'durationDays': durationDays,   // int — 0 = süresiz, >0 = süreli
+        'singleUse':    _singleUse,
+        'usedCount':    0,
+        'usedBy':       <String>[],
+        'createdAt':    FieldValue.serverTimestamp(),
+      };
+      if (maxUses != null) data['maxUses'] = maxUses;
+
+      await ref.set(data);
+      if (mounted) {
+        Navigator.of(context).pop();
+        widget.onCreated();
+      }
+    } catch (e) {
+      setState(() { _err = e.toString(); _saving = false; });
+    }
+  }
+
+  @override
+  Widget build(BuildContext context) {
+    return Dialog(
+      backgroundColor: Colors.white,
+      insetPadding: const EdgeInsets.symmetric(horizontal: 24, vertical: 40),
+      shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(20)),
+      child: ConstrainedBox(
+        constraints: const BoxConstraints(maxWidth: 400),
+        child: SingleChildScrollView(
+          padding: const EdgeInsets.all(24),
+          child: Column(
+            mainAxisSize: MainAxisSize.min,
+            crossAxisAlignment: CrossAxisAlignment.start,
+            children: [
+              Row(
+                children: [
+                  const Icon(Icons.confirmation_number_outlined, color: AppColors.primary),
+                  const SizedBox(width: 10),
+                  const Text('Yeni Kupon Oluştur', style: AppTextStyles.heading3),
+                  const Spacer(),
+                  IconButton(
+                    onPressed: () => Navigator.of(context).pop(),
+                    icon: const Icon(Icons.close, size: 20),
+                    padding: EdgeInsets.zero,
+                    constraints: const BoxConstraints(),
+                  ),
+                ],
+              ),
+              const SizedBox(height: 20),
+
+              const _CouponLabel('Kupon Kodu'),
+              const SizedBox(height: 6),
+              TextField(
+                controller: _codeCtrl,
+                textCapitalization: TextCapitalization.characters,
+                style: const TextStyle(fontFamily: 'monospace', letterSpacing: 1.5, fontWeight: FontWeight.w700),
+                decoration: _inputDec('Örn: FLIQ2024'),
+              ),
+              const SizedBox(height: 16),
+
+              const _CouponLabel('Plan'),
+              const SizedBox(height: 6),
+              DropdownButtonFormField<String>(
+                initialValue: _plan,
+                decoration: _inputDec(null),
+                items: _plans.entries
+                    .map((e) => DropdownMenuItem(value: e.key, child: Text(e.value)))
+                    .toList(),
+                onChanged: (v) => setState(() => _plan = v!),
+              ),
+              const SizedBox(height: 16),
+
+              Row(
+                children: [
+                  const _CouponLabel('Süre'),
+                  const Spacer(),
+                  const Text('Süresiz', style: TextStyle(fontSize: 12, color: AppColors.textSecondary)),
+                  Switch(
+                    value: _hasDuration,
+                    onChanged: (v) => setState(() { _hasDuration = v; if (!v) _daysCtrl.clear(); }),
+                    activeThumbColor: AppColors.primary,
+                    materialTapTargetSize: MaterialTapTargetSize.shrinkWrap,
+                  ),
+                  const Text('Süreli', style: TextStyle(fontSize: 12, color: AppColors.textSecondary)),
+                ],
+              ),
+              if (_hasDuration) ...[
+                const SizedBox(height: 6),
+                TextField(
+                  controller: _daysCtrl,
+                  keyboardType: TextInputType.number,
+                  inputFormatters: [FilteringTextInputFormatter.digitsOnly],
+                  decoration: _inputDec('Kaç gün? (ör: 30, 90, 365)'),
+                ),
+              ] else
+                Padding(
+                  padding: const EdgeInsets.only(top: 4),
+                  child: Text(
+                    'Bu kupon süresiz erişim verecek.',
+                    style: const TextStyle(fontSize: 12, color: Color(0xFF16A34A)),
+                  ),
+                ),
+              const SizedBox(height: 16),
+
+              const _CouponLabel('Kullanım Tipi'),
+              const SizedBox(height: 6),
+              Row(
+                children: [
+                  Expanded(
+                    child: _TypeButton(
+                      label: 'Tek Kullanım',
+                      icon: Icons.person_outlined,
+                      selected: _singleUse,
+                      onTap: () => setState(() { _singleUse = true; _hasMaxUses = false; }),
+                    ),
+                  ),
+                  const SizedBox(width: 10),
+                  Expanded(
+                    child: _TypeButton(
+                      label: 'Çok Kullanım',
+                      icon: Icons.people_outlined,
+                      selected: !_singleUse,
+                      onTap: () => setState(() => _singleUse = false),
+                    ),
+                  ),
+                ],
+              ),
+              if (!_singleUse) ...[
+                const SizedBox(height: 10),
+                Row(
+                  children: [
+                    Checkbox(
+                      value: _hasMaxUses,
+                      onChanged: (v) => setState(() { _hasMaxUses = v!; if (!v) _maxUsesCtrl.clear(); }),
+                      fillColor: WidgetStateProperty.resolveWith((s) =>
+                          s.contains(WidgetState.selected) ? AppColors.primary : null),
+                    ),
+                    const Text('Kullanım limiti koy', style: TextStyle(fontSize: 13)),
+                  ],
+                ),
+                if (_hasMaxUses) ...[
+                  const SizedBox(height: 6),
+                  TextField(
+                    controller: _maxUsesCtrl,
+                    keyboardType: TextInputType.number,
+                    inputFormatters: [FilteringTextInputFormatter.digitsOnly],
+                    decoration: _inputDec('Maksimum kullanım sayısı'),
+                  ),
+                ],
+              ],
+
+              if (_err != null) ...[
+                const SizedBox(height: 12),
+                Container(
+                  padding: const EdgeInsets.all(10),
+                  decoration: BoxDecoration(
+                    color: AppColors.error.withValues(alpha: 0.08),
+                    borderRadius: BorderRadius.circular(8),
+                  ),
+                  child: Row(
+                    children: [
+                      const Icon(Icons.error_outline, size: 16, color: AppColors.error),
+                      const SizedBox(width: 8),
+                      Flexible(child: Text(_err!, style: const TextStyle(fontSize: 12, color: AppColors.error))),
+                    ],
+                  ),
+                ),
+              ],
+
+              const SizedBox(height: 24),
+
+              SizedBox(
+                width: double.infinity,
+                child: FilledButton(
+                  onPressed: _saving ? null : _save,
+                  style: FilledButton.styleFrom(
+                    backgroundColor: AppColors.primary,
+                    padding: const EdgeInsets.symmetric(vertical: 14),
+                    shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(12)),
+                  ),
+                  child: _saving
+                      ? const SizedBox(width: 20, height: 20, child: CircularProgressIndicator(strokeWidth: 2, color: Colors.white))
+                      : const Text('Kuponu Oluştur', style: TextStyle(fontSize: 15, fontWeight: FontWeight.w700)),
+                ),
+              ),
+            ],
+          ),
+        ),
+      ),
+    );
+  }
+
+  InputDecoration _inputDec(String? hint) => InputDecoration(
+    hintText: hint,
+    hintStyle: const TextStyle(color: AppColors.textHint, fontSize: 13),
+    border: OutlineInputBorder(borderRadius: BorderRadius.circular(10), borderSide: const BorderSide(color: AppColors.divider)),
+    enabledBorder: OutlineInputBorder(borderRadius: BorderRadius.circular(10), borderSide: const BorderSide(color: AppColors.divider)),
+    focusedBorder: OutlineInputBorder(borderRadius: BorderRadius.circular(10), borderSide: const BorderSide(color: AppColors.primary, width: 1.5)),
+    contentPadding: const EdgeInsets.symmetric(horizontal: 14, vertical: 12),
+    filled: true,
+    fillColor: const Color(0xFFFAFAFA),
+  );
+}
+
+class _CouponLabel extends StatelessWidget {
+  final String text;
+  const _CouponLabel(this.text);
+  @override
+  Widget build(BuildContext context) => Text(
+    text,
+    style: const TextStyle(fontSize: 13, fontWeight: FontWeight.w600, color: AppColors.textPrimary),
+  );
+}
+
+class _TypeButton extends StatelessWidget {
+  final String label;
+  final IconData icon;
+  final bool selected;
+  final VoidCallback onTap;
+  const _TypeButton({required this.label, required this.icon, required this.selected, required this.onTap});
+
+  @override
+  Widget build(BuildContext context) => GestureDetector(
+    onTap: onTap,
+    child: AnimatedContainer(
+      duration: const Duration(milliseconds: 150),
+      padding: const EdgeInsets.symmetric(vertical: 10, horizontal: 12),
+      decoration: BoxDecoration(
+        color: selected ? AppColors.primary.withValues(alpha: 0.1) : const Color(0xFFFAFAFA),
+        borderRadius: BorderRadius.circular(10),
+        border: Border.all(
+          color: selected ? AppColors.primary : AppColors.divider,
+          width: selected ? 1.5 : 1,
+        ),
+      ),
+      child: Row(
+        mainAxisAlignment: MainAxisAlignment.center,
+        children: [
+          Icon(icon, size: 16, color: selected ? AppColors.primary : AppColors.textSecondary),
+          const SizedBox(width: 6),
+          Text(label, style: TextStyle(fontSize: 12, fontWeight: FontWeight.w600, color: selected ? AppColors.primary : AppColors.textSecondary)),
+        ],
+      ),
+    ),
+  );
 }

@@ -1,5 +1,6 @@
 import 'dart:io';
 
+import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
@@ -7,6 +8,7 @@ import 'package:go_router/go_router.dart';
 import 'package:url_launcher/url_launcher.dart';
 import '../../../core/constants/app_colors.dart';
 import '../../../core/constants/iap_constants.dart';
+import '../../../core/services/coupon_service.dart';
 import '../../../core/services/iap_service.dart';
 import '../../../shared/providers/app_providers.dart';
 import '../../../shared/widgets/primary_button.dart';
@@ -310,6 +312,11 @@ class _SubscriptionScreenState extends ConsumerState<SubscriptionScreen> {
                           ),
                         ),
                       ),
+
+                      const SizedBox(height: 8),
+                      // ── Kupon girişi ────────────────────────────────────────
+                      const _CouponSection(),
+                      const SizedBox(height: 12),
 
                       // Güven metni
                       Center(
@@ -799,6 +806,501 @@ class _FeatureRow extends StatelessWidget {
             ),
           ),
         ],
+      ),
+    );
+  }
+}
+
+// ── Kupon girişi ──────────────────────────────────────────────────────────────
+
+class _CouponSection extends ConsumerStatefulWidget {
+  const _CouponSection();
+  @override
+  ConsumerState<_CouponSection> createState() => _CouponSectionState();
+}
+
+class _CouponSectionState extends ConsumerState<_CouponSection>
+    with SingleTickerProviderStateMixin {
+  bool _expanded = false;
+  bool _loading = false;
+  String? _error;
+  final _ctrl = TextEditingController();
+  late final AnimationController _chevron;
+  late final Animation<double> _chevronAnim;
+
+  @override
+  void initState() {
+    super.initState();
+    _chevron = AnimationController(vsync: this, duration: const Duration(milliseconds: 250));
+    _chevronAnim = Tween<double>(begin: 0, end: 0.5)
+        .animate(CurvedAnimation(parent: _chevron, curve: Curves.easeInOut));
+  }
+
+  @override
+  void dispose() { _ctrl.dispose(); _chevron.dispose(); super.dispose(); }
+
+  void _toggle() {
+    setState(() { _expanded = !_expanded; _error = null; });
+    _expanded ? _chevron.forward() : _chevron.reverse();
+    if (!_expanded) _ctrl.clear();
+  }
+
+  // Adım 1: önizle → onay dialog'u göster
+  Future<void> _preview() async {
+    final code = _ctrl.text.trim();
+    if (code.isEmpty) { setState(() => _error = 'Kupon kodunu gir.'); return; }
+
+    setState(() { _loading = true; _error = null; });
+    try {
+      final svc = ref.read(couponServiceProvider);
+      final preview = await svc.previewCoupon(code);
+      if (!mounted) return;
+      setState(() => _loading = false);
+      _showConfirm(preview);
+    } catch (e) {
+      if (!mounted) return;
+      setState(() {
+        _error = e.toString().replaceAll('Exception: ', '');
+        _loading = false;
+      });
+    }
+  }
+
+  // Adım 2: onay dialog'u
+  void _showConfirm(CouponPreview preview) {
+    showGeneralDialog(
+      context: context,
+      barrierDismissible: true,
+      barrierLabel: '',
+      barrierColor: Colors.black54,
+      transitionDuration: const Duration(milliseconds: 260),
+      transitionBuilder: (_, anim, __, child) => ScaleTransition(
+        scale: CurvedAnimation(parent: anim, curve: Curves.easeOutBack),
+        child: FadeTransition(opacity: anim, child: child),
+      ),
+      pageBuilder: (ctx, _, __) => _ConfirmDialog(
+        preview: preview,
+        onConfirm: () => _redeem(preview),
+      ),
+    );
+  }
+
+  // Adım 3: kullan + kutlama
+  Future<void> _redeem(CouponPreview preview) async {
+    setState(() { _loading = true; _error = null; });
+    try {
+      final svc = ref.read(couponServiceProvider);
+      final uid = FirebaseAuth.instance.currentUser?.uid;
+      if (uid == null) throw Exception('Giriş yapılmamış.');
+
+      final result = await svc.redeemCoupon(preview.code);
+      await svc.activatePremiumFromCoupon(
+        uid: uid,
+        plan: result.plan,
+        code: result.code,
+        durationDays: result.durationDays,
+      );
+    } catch (e) {
+      if (!mounted) return;
+      setState(() {
+        _error = e.toString().replaceAll('Exception: ', '');
+        _loading = false;
+      });
+      return;
+    }
+    if (!mounted) return;
+    setState(() => _loading = false);
+
+    // Kutlama popup'ı
+    await showGeneralDialog(
+      context: context,
+      barrierDismissible: false,
+      barrierColor: Colors.black.withValues(alpha: 0.65),
+      transitionDuration: const Duration(milliseconds: 350),
+      transitionBuilder: (_, anim, __, child) => ScaleTransition(
+        scale: CurvedAnimation(parent: anim, curve: Curves.easeOutBack),
+        child: FadeTransition(opacity: anim, child: child),
+      ),
+      pageBuilder: (ctx, _, __) => _PremiumCelebrationDialog(preview: preview),
+    );
+
+    if (!mounted) return;
+    if (Navigator.canPop(context)) {
+      context.pop();
+    } else {
+      context.go('/home/exams');
+    }
+  }
+
+  @override
+  Widget build(BuildContext context) {
+    return Container(
+      decoration: BoxDecoration(
+        color: Colors.white,
+        borderRadius: BorderRadius.circular(16),
+        border: Border.all(color: AppColors.divider),
+        boxShadow: [BoxShadow(color: Colors.black.withValues(alpha: 0.04), blurRadius: 8, offset: const Offset(0, 2))],
+      ),
+      child: Column(
+        children: [
+          InkWell(
+            onTap: _toggle,
+            borderRadius: BorderRadius.circular(16),
+            child: Padding(
+              padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 14),
+              child: Row(
+                children: [
+                  Container(
+                    width: 34, height: 34,
+                    decoration: BoxDecoration(color: const Color(0xFFF0FDF4), borderRadius: BorderRadius.circular(10)),
+                    child: const Icon(Icons.local_offer_outlined, size: 18, color: Color(0xFF16A34A)),
+                  ),
+                  const SizedBox(width: 12),
+                  const Expanded(child: Text('Kupon kodum var', style: TextStyle(fontSize: 14, fontWeight: FontWeight.w700, color: AppColors.textPrimary))),
+                  RotationTransition(
+                    turns: _chevronAnim,
+                    child: const Icon(Icons.expand_more_rounded, color: AppColors.textSecondary),
+                  ),
+                ],
+              ),
+            ),
+          ),
+          AnimatedCrossFade(
+            duration: const Duration(milliseconds: 220),
+            crossFadeState: _expanded ? CrossFadeState.showFirst : CrossFadeState.showSecond,
+            firstChild: Padding(
+              padding: const EdgeInsets.fromLTRB(16, 0, 16, 16),
+              child: Column(
+                crossAxisAlignment: CrossAxisAlignment.stretch,
+                children: [
+                  const Divider(height: 1),
+                  const SizedBox(height: 14),
+                  Row(
+                    children: [
+                      Expanded(
+                        child: TextField(
+                          controller: _ctrl,
+                          textCapitalization: TextCapitalization.characters,
+                          style: const TextStyle(fontSize: 15, fontWeight: FontWeight.w700, letterSpacing: 2),
+                          decoration: InputDecoration(
+                            hintText: 'KUPON KODUNU GİR',
+                            hintStyle: const TextStyle(color: AppColors.textHint, letterSpacing: 1, fontWeight: FontWeight.w500, fontSize: 13),
+                            filled: true,
+                            fillColor: const Color(0xFFF8FAFF),
+                            border: OutlineInputBorder(borderRadius: BorderRadius.circular(12), borderSide: BorderSide(color: AppColors.divider)),
+                            enabledBorder: OutlineInputBorder(borderRadius: BorderRadius.circular(12), borderSide: BorderSide(color: AppColors.divider)),
+                            focusedBorder: OutlineInputBorder(borderRadius: BorderRadius.circular(12), borderSide: const BorderSide(color: Color(0xFF16A34A), width: 1.5)),
+                            contentPadding: const EdgeInsets.symmetric(horizontal: 14, vertical: 13),
+                          ),
+                          onSubmitted: (_) => _preview(),
+                        ),
+                      ),
+                      const SizedBox(width: 10),
+                      _loading
+                          ? const SizedBox(width: 48, height: 48, child: Center(child: SizedBox(width: 22, height: 22, child: CircularProgressIndicator(strokeWidth: 2.5, color: Color(0xFF16A34A)))))
+                          : GestureDetector(
+                              onTap: _preview,
+                              child: Container(
+                                width: 48, height: 48,
+                                decoration: BoxDecoration(
+                                  gradient: const LinearGradient(colors: [Color(0xFF16A34A), Color(0xFF15803D)]),
+                                  borderRadius: BorderRadius.circular(12),
+                                  boxShadow: [BoxShadow(color: const Color(0xFF16A34A).withValues(alpha: 0.35), blurRadius: 8, offset: const Offset(0, 3))],
+                                ),
+                                child: const Icon(Icons.arrow_forward_rounded, color: Colors.white, size: 20),
+                              ),
+                            ),
+                    ],
+                  ),
+                  if (_error != null) ...[
+                    const SizedBox(height: 10),
+                    Row(children: [
+                      const Icon(Icons.error_outline, color: AppColors.error, size: 15),
+                      const SizedBox(width: 6),
+                      Expanded(child: Text(_error!, style: const TextStyle(fontSize: 12, color: AppColors.error))),
+                    ]),
+                  ],
+                ],
+              ),
+            ),
+            secondChild: const SizedBox.shrink(),
+          ),
+        ],
+      ),
+    );
+  }
+}
+
+// ── Onay dialog'u ─────────────────────────────────────────────────────────────
+
+class _ConfirmDialog extends StatelessWidget {
+  final CouponPreview preview;
+  final VoidCallback onConfirm;
+  const _ConfirmDialog({required this.preview, required this.onConfirm});
+
+  @override
+  Widget build(BuildContext context) {
+    final expiresAt = preview.expiresAt;
+    final expiryStr = expiresAt != null
+        ? '${expiresAt.day}.${expiresAt.month.toString().padLeft(2,'0')}.${expiresAt.year}'
+        : 'Süresiz';
+
+    return Dialog(
+      backgroundColor: Colors.transparent,
+      insetPadding: const EdgeInsets.symmetric(horizontal: 28, vertical: 40),
+      child: ConstrainedBox(
+        constraints: const BoxConstraints(maxWidth: 340),
+        child: Container(
+          decoration: BoxDecoration(color: Colors.white, borderRadius: BorderRadius.circular(24),
+            boxShadow: [BoxShadow(color: Colors.black.withValues(alpha: 0.15), blurRadius: 40, offset: const Offset(0, 12))]),
+          child: Column(
+            mainAxisSize: MainAxisSize.min,
+            children: [
+              // Başlık
+              Container(
+                width: double.infinity,
+                padding: const EdgeInsets.fromLTRB(24, 28, 24, 22),
+                decoration: const BoxDecoration(
+                  gradient: LinearGradient(colors: [Color(0xFF14532D), Color(0xFF16A34A)], begin: Alignment.topLeft, end: Alignment.bottomRight),
+                  borderRadius: BorderRadius.vertical(top: Radius.circular(24)),
+                ),
+                child: Column(children: [
+                  const Text('🎟️', style: TextStyle(fontSize: 42)),
+                  const SizedBox(height: 10),
+                  const Text('Kupon Bulundu!', style: TextStyle(color: Colors.white, fontSize: 20, fontWeight: FontWeight.w800)),
+                  const SizedBox(height: 4),
+                  Text('Kuponu uygulamak istiyor musun?', style: TextStyle(color: Colors.white.withValues(alpha: 0.8), fontSize: 13), textAlign: TextAlign.center),
+                ]),
+              ),
+              // Detaylar
+              Padding(
+                padding: const EdgeInsets.all(20),
+                child: Column(
+                  children: [
+                    _DetailRow(icon: Icons.workspace_premium_rounded, label: 'Plan', value: preview.planLabel, color: const Color(0xFF16A34A)),
+                    const SizedBox(height: 10),
+                    _DetailRow(icon: Icons.timer_outlined, label: 'Süre', value: preview.durationLabel, color: AppColors.primary),
+                    if (expiresAt != null) ...[
+                      const SizedBox(height: 10),
+                      _DetailRow(icon: Icons.event_outlined, label: 'Bitiş', value: expiryStr, color: const Color(0xFFD97706)),
+                    ],
+                    const SizedBox(height: 20),
+                    // Onayla butonu
+                    GestureDetector(
+                      onTap: () { Navigator.of(context).pop(); onConfirm(); },
+                      child: Container(
+                        width: double.infinity,
+                        padding: const EdgeInsets.symmetric(vertical: 14),
+                        decoration: BoxDecoration(
+                          gradient: const LinearGradient(colors: [Color(0xFF16A34A), Color(0xFF15803D)]),
+                          borderRadius: BorderRadius.circular(14),
+                          boxShadow: [BoxShadow(color: const Color(0xFF16A34A).withValues(alpha: 0.35), blurRadius: 12, offset: const Offset(0, 4))],
+                        ),
+                        child: const Text('✅  Kuponu Uygula', textAlign: TextAlign.center, style: TextStyle(color: Colors.white, fontSize: 15, fontWeight: FontWeight.w800)),
+                      ),
+                    ),
+                    const SizedBox(height: 10),
+                    GestureDetector(
+                      onTap: () => Navigator.of(context).pop(),
+                      child: const Padding(
+                        padding: EdgeInsets.symmetric(vertical: 6),
+                        child: Text('İptal', style: TextStyle(fontSize: 13, color: AppColors.textSecondary)),
+                      ),
+                    ),
+                  ],
+                ),
+              ),
+            ],
+          ),
+        ),
+      ),
+    );
+  }
+}
+
+class _DetailRow extends StatelessWidget {
+  final IconData icon;
+  final String label;
+  final String value;
+  final Color color;
+  const _DetailRow({required this.icon, required this.label, required this.value, required this.color});
+
+  @override
+  Widget build(BuildContext context) {
+    return Container(
+      padding: const EdgeInsets.symmetric(horizontal: 14, vertical: 11),
+      decoration: BoxDecoration(
+        color: color.withValues(alpha: 0.07),
+        borderRadius: BorderRadius.circular(12),
+        border: Border.all(color: color.withValues(alpha: 0.18)),
+      ),
+      child: Row(
+        children: [
+          Icon(icon, size: 18, color: color),
+          const SizedBox(width: 10),
+          Text(label, style: TextStyle(fontSize: 12, fontWeight: FontWeight.w600, color: color)),
+          const Spacer(),
+          Text(value, style: TextStyle(fontSize: 13, fontWeight: FontWeight.w800, color: color)),
+        ],
+      ),
+    );
+  }
+}
+
+// ── Premium kutlama popup'ı ───────────────────────────────────────────────────
+
+class _PremiumCelebrationDialog extends StatefulWidget {
+  final CouponPreview preview;
+  const _PremiumCelebrationDialog({required this.preview});
+  @override
+  State<_PremiumCelebrationDialog> createState() => _PremiumCelebrationDialogState();
+}
+
+class _PremiumCelebrationDialogState extends State<_PremiumCelebrationDialog>
+    with TickerProviderStateMixin {
+  late AnimationController _crownCtrl;
+  late AnimationController _sparkCtrl;
+  late Animation<double> _crownAnim;
+  late Animation<double> _sparkAnim;
+
+  @override
+  void initState() {
+    super.initState();
+    _crownCtrl = AnimationController(vsync: this, duration: const Duration(milliseconds: 1200))..repeat(reverse: true);
+    _sparkCtrl = AnimationController(vsync: this, duration: const Duration(milliseconds: 1600))..repeat();
+    _crownAnim = Tween<double>(begin: 0, end: -10).animate(CurvedAnimation(parent: _crownCtrl, curve: Curves.easeInOut));
+    _sparkAnim = Tween<double>(begin: 0, end: 1).animate(CurvedAnimation(parent: _sparkCtrl, curve: Curves.linear));
+  }
+
+  @override
+  void dispose() { _crownCtrl.dispose(); _sparkCtrl.dispose(); super.dispose(); }
+
+  @override
+  Widget build(BuildContext context) {
+    final expiresAt = widget.preview.expiresAt;
+    final expiryStr = expiresAt != null
+        ? '${expiresAt.day}.${expiresAt.month.toString().padLeft(2,'0')}.${expiresAt.year} tarihine kadar'
+        : 'Süresiz kullanım';
+
+    return Dialog(
+      backgroundColor: Colors.transparent,
+      insetPadding: const EdgeInsets.symmetric(horizontal: 24, vertical: 40),
+      child: ConstrainedBox(
+        constraints: const BoxConstraints(maxWidth: 360),
+        child: Container(
+          decoration: BoxDecoration(
+            color: Colors.white,
+            borderRadius: BorderRadius.circular(28),
+            boxShadow: [BoxShadow(color: Colors.black.withValues(alpha: 0.2), blurRadius: 50, offset: const Offset(0, 16))],
+          ),
+          child: Column(
+            mainAxisSize: MainAxisSize.min,
+            children: [
+              // ── Altın gradient header ───────────────────────────────────
+              Container(
+                width: double.infinity,
+                padding: const EdgeInsets.fromLTRB(24, 32, 24, 28),
+                decoration: const BoxDecoration(
+                  gradient: LinearGradient(
+                    colors: [Color(0xFF78350F), Color(0xFFD97706), Color(0xFFFBBF24), Color(0xFFFDE68A)],
+                    begin: Alignment.topLeft,
+                    end: Alignment.bottomRight,
+                  ),
+                  borderRadius: BorderRadius.vertical(top: Radius.circular(28)),
+                ),
+                child: Column(
+                  children: [
+                    // Parıldayan arka plan + zıplayan taç
+                    AnimatedBuilder(
+                      animation: Listenable.merge([_crownAnim, _sparkAnim]),
+                      builder: (_, __) {
+                        return Stack(
+                          alignment: Alignment.center,
+                          children: [
+                            // Parlama halkası
+                            ...List.generate(6, (i) {
+                              final angle = (_sparkAnim.value + i / 6) * 2 * 3.14159;
+                              final r = 52.0;
+                              return Positioned(
+                                left: 60 + r * 0.8 * (0.5 + 0.5 * (i % 2 == 0 ? 1 : -1)) * (1 - _sparkAnim.value % 0.5),
+                                top:  60 + r * (i / 6),
+                                child: Opacity(
+                                  opacity: (0.6 - (_sparkAnim.value * 0.4)).clamp(0.0, 1.0),
+                                  child: Text(['✨','⭐','💫','✨','⭐','💫'][i], style: const TextStyle(fontSize: 14)),
+                                ),
+                              );
+                            }),
+                            // Zıplayan taç
+                            Transform.translate(
+                              offset: Offset(0, _crownAnim.value),
+                              child: const Text('👑', style: TextStyle(fontSize: 64)),
+                            ),
+                          ],
+                        );
+                      },
+                    ),
+                    const SizedBox(height: 16),
+                    const Text(
+                      'Premium Aktif! 🎉',
+                      style: TextStyle(color: Colors.white, fontSize: 24, fontWeight: FontWeight.w900, shadows: [Shadow(color: Colors.black26, blurRadius: 6)]),
+                    ),
+                    const SizedBox(height: 6),
+                    Text(
+                      widget.preview.planLabel,
+                      style: TextStyle(color: Colors.white.withValues(alpha: 0.9), fontSize: 15, fontWeight: FontWeight.w600),
+                    ),
+                  ],
+                ),
+              ),
+
+              // ── Bilgi ve buton ──────────────────────────────────────────
+              Padding(
+                padding: const EdgeInsets.fromLTRB(24, 22, 24, 24),
+                child: Column(
+                  children: [
+                    // Süre
+                    Container(
+                      padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 12),
+                      decoration: BoxDecoration(
+                        color: const Color(0xFFFEF3C7),
+                        borderRadius: BorderRadius.circular(14),
+                        border: Border.all(color: const Color(0xFFFBBF24)),
+                      ),
+                      child: Row(
+                        mainAxisAlignment: MainAxisAlignment.center,
+                        children: [
+                          const Icon(Icons.timer_outlined, color: Color(0xFFD97706), size: 18),
+                          const SizedBox(width: 8),
+                          Text(expiryStr, style: const TextStyle(fontSize: 13, fontWeight: FontWeight.w700, color: Color(0xFF92400E))),
+                        ],
+                      ),
+                    ),
+                    const SizedBox(height: 8),
+                    Text(
+                      'Tüm premium içeriklere erişimin açıldı.\nİyi çalışmalar! ✈️',
+                      textAlign: TextAlign.center,
+                      style: const TextStyle(fontSize: 13, color: AppColors.textSecondary, height: 1.5),
+                    ),
+                    const SizedBox(height: 20),
+                    GestureDetector(
+                      onTap: () => Navigator.of(context).pop(),
+                      child: Container(
+                        width: double.infinity,
+                        padding: const EdgeInsets.symmetric(vertical: 15),
+                        decoration: BoxDecoration(
+                          gradient: const LinearGradient(colors: [Color(0xFF78350F), Color(0xFFD97706), Color(0xFFFBBF24)], begin: Alignment.centerLeft, end: Alignment.centerRight),
+                          borderRadius: BorderRadius.circular(16),
+                          boxShadow: [BoxShadow(color: const Color(0xFFD97706).withValues(alpha: 0.4), blurRadius: 16, offset: const Offset(0, 6))],
+                        ),
+                        child: const Text('🚀  Hadi Başlayalım', textAlign: TextAlign.center, style: TextStyle(color: Colors.white, fontSize: 16, fontWeight: FontWeight.w800)),
+                      ),
+                    ),
+                  ],
+                ),
+              ),
+            ],
+          ),
+        ),
       ),
     );
   }

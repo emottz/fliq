@@ -159,6 +159,8 @@ class HeartsEmptyBanner extends ConsumerWidget {
 
   @override
   Widget build(BuildContext context, WidgetRef ref) {
+    final isPremium = ref.watch(isPremiumProvider).value ?? false;
+    if (isPremium) return const SizedBox.shrink();
     final hearts = ref.watch(heartsProvider).value;
     if (hearts == null || hearts.count > 0) return const SizedBox.shrink();
 
@@ -585,15 +587,24 @@ class _CostRow extends StatelessWidget {
 // ── showNoHeartsDialog ────────────────────────────────────────────────────────
 
 /// Kalp yetersizse merkezi popup açar. true → devam et, false → iptal.
+/// Premium kullanıcılar her zaman true döner (sınırsız hak).
 Future<bool> showNoHeartsDialog(
   BuildContext context,
   WidgetRef ref,
   int cost,
 ) async {
+  // Premium kullanıcılar kalp kontrolünü atlar
+  final isPremium = ref.read(isPremiumProvider).value ?? false;
+  if (isPremium) return true;
+
+  // Kalp durumunu yükle (max 600ms bekle)
   HeartsState? nullable = ref.read(heartsProvider).value;
   if (nullable == null) {
-    await Future.delayed(const Duration(milliseconds: 300));
-    nullable = ref.read(heartsProvider).value;
+    for (int i = 0; i < 6; i++) {
+      await Future.delayed(const Duration(milliseconds: 100));
+      nullable = ref.read(heartsProvider).value;
+      if (nullable != null) break;
+    }
   }
   if (nullable == null) return true;
   if (nullable.count >= cost) return true;
@@ -879,24 +890,30 @@ class _NoHeartsDialogState extends ConsumerState<_NoHeartsDialog>
                     ),
                     const SizedBox(height: 12),
 
-                    // Ayırıcı
-                    Row(
-                      children: [
-                        const Expanded(child: Divider()),
-                        Padding(
-                          padding: const EdgeInsets.symmetric(horizontal: 12),
-                          child: Text(
-                            'veya',
-                            style: TextStyle(fontSize: 12, color: Colors.grey.shade500),
+                    // 2) Video izle butonu + ayırıcı (yalnızca reklam destekleniyorsa)
+                    Builder(builder: (ctx) {
+                      final adSvc = ref.read(adServiceProvider);
+                      if (!adSvc.isSupported) return const SizedBox.shrink();
+                      return Column(
+                        children: [
+                          Row(
+                            children: [
+                              const Expanded(child: Divider()),
+                              Padding(
+                                padding: const EdgeInsets.symmetric(horizontal: 12),
+                                child: Text(
+                                  'veya',
+                                  style: TextStyle(fontSize: 12, color: Colors.grey.shade500),
+                                ),
+                              ),
+                              const Expanded(child: Divider()),
+                            ],
                           ),
-                        ),
-                        const Expanded(child: Divider()),
-                      ],
-                    ),
-                    const SizedBox(height: 12),
-
-                    // 2) Video izle butonu
-                    _buildAdButton(context),
+                          const SizedBox(height: 12),
+                          _buildAdButton(ctx),
+                        ],
+                      );
+                    }),
 
                     const SizedBox(height: 16),
 

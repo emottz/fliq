@@ -13,7 +13,9 @@ class IapService {
   IapService._();
   static final IapService instance = IapService._();
 
-  final InAppPurchase _iap = InAppPurchase.instance;
+  // Web'de InAppPurchase.instance erişimi UnsupportedError fırlatır.
+  // Lazy getter ile sadece mobilde erişilir.
+  InAppPurchase get _iap => InAppPurchase.instance;
 
   StreamSubscription<List<PurchaseDetails>>? _purchaseSub;
 

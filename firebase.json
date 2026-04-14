@@ -1,1 +1,53 @@
-{"flutter":{"platforms":{"android":{"default":{"projectId":"fliq-1638d","appId":"1:560944576659:android:15be224f53156a5b7b7566","fileOutput":"android/app/google-services.json"}},"dart":{"lib/firebase_options.dart":{"projectId":"fliq-1638d","configurations":{"android":"1:560944576659:android:15be224f53156a5b7b7566","ios":"1:560944576659:ios:ffca7cfa40f4996b7b7566","web":"1:560944576659:web:1a1c82c76cd009e97b7566"}}}}}}
+{
+  "flutter": {
+    "platforms": {
+      "android": {
+        "default": {
+          "projectId": "fliq-1638d",
+          "appId": "1:560944576659:android:15be224f53156a5b7b7566",
+          "fileOutput": "android/app/google-services.json"
+        }
+      },
+      "dart": {
+        "lib/firebase_options.dart": {
+          "projectId": "fliq-1638d",
+          "configurations": {
+            "android": "1:560944576659:android:15be224f53156a5b7b7566",
+            "ios": "1:560944576659:ios:ffca7cfa40f4996b7b7566",
+            "web": "1:560944576659:web:1a1c82c76cd009e97b7566"
+          }
+        }
+      }
+    }
+  },
+  "hosting": {
+    "public": "build/web",
+    "ignore": ["firebase.json", "**/.*", "**/node_modules/**"],
+    "rewrites": [
+      {
+        "source": "**",
+        "destination": "/index.html"
+      }
+    ],
+    "headers": [
+      {
+        "source": "**/*.@(js|css|wasm)",
+        "headers": [
+          {
+            "key": "Cache-Control",
+            "value": "public, max-age=31536000, immutable"
+          }
+        ]
+      },
+      {
+        "source": "index.html",
+        "headers": [
+          {
+            "key": "Cache-Control",
+            "value": "no-cache"
+          }
+        ]
+      }
+    ]
+  }
+}

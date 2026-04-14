@@ -30,9 +30,13 @@ class _AssessmentScreenState extends ConsumerState<AssessmentScreen> {
   }
 
   Future<void> _load() async {
-    final repo = ref.read(questionRepositoryProvider);
-    final questions = await repo.getAssessmentQuestions();
-    if (mounted) setState(() { _questions = questions; _loading = false; });
+    try {
+      final repo = ref.read(questionRepositoryProvider);
+      final questions = await repo.getAssessmentQuestions();
+      if (mounted) setState(() { _questions = questions; _loading = false; });
+    } catch (e) {
+      if (mounted) setState(() { _questions = []; _loading = false; });
+    }
   }
 
   void _select(int index) {
@@ -116,6 +120,27 @@ class _AssessmentScreenState extends ConsumerState<AssessmentScreen> {
       return const Scaffold(
         backgroundColor: AppColors.background,
         body: Center(child: CircularProgressIndicator(color: AppColors.primary)),
+      );
+    }
+
+    if (_questions!.isEmpty) {
+      return Scaffold(
+        backgroundColor: AppColors.background,
+        body: Center(
+          child: Padding(
+            padding: const EdgeInsets.all(32),
+            child: Column(
+              mainAxisSize: MainAxisSize.min,
+              children: [
+                const Icon(Icons.error_outline, color: Colors.red, size: 48),
+                const SizedBox(height: 16),
+                const Text('Sorular yüklenemedi. Lütfen internet bağlantını kontrol et ve tekrar dene.', textAlign: TextAlign.center),
+                const SizedBox(height: 16),
+                ElevatedButton(onPressed: () { setState(() { _loading = true; _questions = null; }); _load(); }, child: const Text('Tekrar Dene')),
+              ],
+            ),
+          ),
+        ),
       );
     }
 

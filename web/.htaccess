@@ -1,0 +1,24 @@
+Options -MultiViews
+RewriteEngine On
+
+# ── HTTP → HTTPS yönlendirmesi ────────────────────────────────────────────────
+# cPanel proxy'si SSL'i terminate ettiğinde %{HTTPS} "off" görünür.
+# İkinci koşul sonsuz döngüyü önler.
+RewriteCond %{HTTPS} off
+RewriteCond %{HTTP:X-Forwarded-Proto} !https
+RewriteRule ^ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+
+# ── Service Worker her zaman sunucudan alınsın (stale cache engeli) ───────────
+<FilesMatch "flutter_service_worker\.js$">
+  Header set Cache-Control "no-store, no-cache, must-revalidate"
+  Header set Pragma "no-cache"
+</FilesMatch>
+
+# ── www olmadan yönlendirme (opsiyonel — sadece www.avialish.com varsa sil) ───
+# RewriteCond %{HTTP_HOST} ^www\.(.+)$ [NC]
+# RewriteRule ^ https://%1%{REQUEST_URI} [L,R=301]
+
+# ── Flutter SPA routing — tüm yollar index.html'e gider ──────────────────────
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^ /index.html [L]

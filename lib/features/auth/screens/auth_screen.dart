@@ -22,7 +22,6 @@ class _AuthScreenState extends ConsumerState<AuthScreen>
   final _formKey = GlobalKey<FormState>();
   bool _loading = false;
   bool _googleLoading = false;
-  bool _guestLoading = false;
   bool _obscurePass = true;
   bool _obscureConfirm = true;
   String? _error;
@@ -74,19 +73,6 @@ class _AuthScreenState extends ConsumerState<AuthScreen>
       if (mounted) setState(() => _error = 'Google ile giriş başarısız oldu.');
     } finally {
       if (mounted) setState(() => _googleLoading = false);
-    }
-  }
-
-  Future<void> _guestSignIn() async {
-    setState(() { _guestLoading = true; _error = null; });
-    try {
-      // Eski profil varsa temizle → onboarding'den başlasın
-      await ref.read(userRepositoryProvider).clearAll();
-      await ref.read(authServiceProvider).signInAnonymously();
-    } catch (_) {
-      if (mounted) setState(() => _error = 'Misafir girişi başarısız oldu.');
-    } finally {
-      if (mounted) setState(() => _guestLoading = false);
     }
   }
 
@@ -331,17 +317,6 @@ class _AuthScreenState extends ConsumerState<AuthScreen>
       ),
       const SizedBox(height: 16),
 
-      // ── Misafir ───────────────────────────────────────────────────────────
-      Center(
-        child: TextButton(
-          onPressed: (_loading || _googleLoading || _guestLoading) ? null : _guestSignIn,
-          child: _guestLoading
-              ? const SizedBox(width: 16, height: 16,
-                  child: CircularProgressIndicator(strokeWidth: 2, color: AppColors.textHint))
-              : const Text('Giriş yapmadan devam et →',
-                  style: TextStyle(fontSize: 13, color: AppColors.textSecondary)),
-        ),
-      ),
     ];
   }
 
@@ -428,7 +403,7 @@ class _TabBtn extends StatelessWidget {
             color: selected ? Colors.white : Colors.transparent,
             borderRadius: BorderRadius.circular(11),
             boxShadow: selected
-                ? [BoxShadow(color: Colors.black.withOpacity(0.07), blurRadius: 6, offset: const Offset(0, 2))]
+                ? [BoxShadow(color: Colors.black.withValues(alpha: 0.07), blurRadius: 6, offset: const Offset(0, 2))]
                 : null,
           ),
           child: Text(

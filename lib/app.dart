@@ -1,7 +1,9 @@
+import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'core/constants/app_colors.dart';
 import 'core/router/app_router.dart';
+import 'core/services/coupon_service.dart';
 import 'shared/providers/app_providers.dart';
 
 class FliqApp extends ConsumerWidget {
@@ -11,6 +13,15 @@ class FliqApp extends ConsumerWidget {
   Widget build(BuildContext context, WidgetRef ref) {
     // IAP satın alma stream'ini uygulama boyunca dinle
     ref.watch(iapListenerProvider);
+
+    // Kullanıcı oturum açıkken kupon süresi kontrolü yap
+    ref.listen(authStateProvider, (_, next) {
+      final uid = next.value?.uid;
+      if (uid != null) {
+        CouponService().checkAndRevokeExpiredPremium(uid);
+      }
+    });
+
     final router = ref.watch(routerProvider);
 
     return MaterialApp.router(

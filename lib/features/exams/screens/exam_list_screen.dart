@@ -31,16 +31,20 @@ class ExamListScreen extends ConsumerWidget {
     WidgetRef ref,
     Map<String, dynamic> config,
   ) async {
-    final ok = await showNoHeartsDialog(context, ref, HeartsService.examCost);
-    if (!ok || !context.mounted) return;
-    await ref.read(heartsProvider.notifier).use(HeartsService.examCost);
-    if (!context.mounted) return;
+    final isPremium = ref.read(isPremiumProvider).value ?? false;
+    if (!isPremium) {
+      final ok = await showNoHeartsDialog(context, ref, HeartsService.examCost);
+      if (!ok || !context.mounted) return;
+      await ref.read(heartsProvider.notifier).use(HeartsService.examCost);
+      if (!context.mounted) return;
+    }
     context.go('/exam/session', extra: config);
   }
 
   @override
   Widget build(BuildContext context, WidgetRef ref) {
     final profile = ref.watch(userProfileProvider).value;
+    final isPremium = ref.watch(isPremiumProvider).value ?? false;
     final weakCategories = profile?.weakCategories ?? [];
     final isAmt = profile?.role == 'amt';
 
@@ -73,6 +77,7 @@ class ExamListScreen extends ConsumerWidget {
                     ],
 
                     _DailyExamCard(
+                      isPremium: isPremium,
                       onTap: () => _startExam(context, ref, {
                         'count': 20,
                         'mode': 'daily',
@@ -116,22 +121,24 @@ class ExamListScreen extends ConsumerWidget {
                         'mode': 'quick',
                       }),
                     ),
-                    const SizedBox(height: 8),
-                    const Row(
-                      mainAxisAlignment: MainAxisAlignment.center,
-                      children: [
-                        Text('Sınav başlatmak ', style: AppTextStyles.caption),
-                        const Text(
-                          '❤️ 10',
-                          style: TextStyle(
-                            fontSize: 12,
-                            fontWeight: FontWeight.w700,
-                            color: AppColors.error,
+                    if (!isPremium) ...[
+                      const SizedBox(height: 8),
+                      const Row(
+                        mainAxisAlignment: MainAxisAlignment.center,
+                        children: [
+                          Text('Sınav başlatmak ', style: AppTextStyles.caption),
+                          Text(
+                            '❤️ 10',
+                            style: TextStyle(
+                              fontSize: 12,
+                              fontWeight: FontWeight.w700,
+                              color: AppColors.error,
+                            ),
                           ),
-                        ),
-                        Text(' hak kullanır', style: AppTextStyles.caption),
-                      ],
-                    ),
+                          Text(' hak kullanır', style: AppTextStyles.caption),
+                        ],
+                      ),
+                    ],
                   ],
                 ),
               ),

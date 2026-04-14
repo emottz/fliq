@@ -22,13 +22,23 @@ class SubscriptionService {
     }
   }
 
-  /// Gerçek zamanlı premium stream — ödeme tamamlanınca otomatik güncellenir.
+  /// Gerçek zamanlı premium stream — ödeme/kupon tamamlanınca otomatik güncellenir.
+  /// Süre dolan kupon premium'larını false olarak döner.
   Stream<bool> premiumStream(String uid) {
     return _db
         .collection('users')
         .doc(uid)
         .snapshots()
-        .map((snap) => snap.data()?['isPremium'] == true);
+        .map((snap) {
+          final data = snap.data();
+          if (data?['isPremium'] != true) return false;
+          final expiresAt = data?['premiumExpiresAt'];
+          if (expiresAt != null) {
+            final expiry = (expiresAt as Timestamp).toDate();
+            if (DateTime.now().isAfter(expiry)) return false;
+          }
+          return true;
+        });
   }
 
   // ── Google Play / App Store IAP aktivasyonu ─────────────────────────────────

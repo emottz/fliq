@@ -11,6 +11,7 @@ import '../../core/services/ad_service.dart';
 import '../../core/services/hearts_service.dart';
 import '../../core/services/iap_service.dart';
 import '../../core/services/league_service.dart';
+import '../../core/services/coupon_service.dart';
 import '../../core/services/subscription_service.dart';
 import '../../data/datasources/asset_question_source.dart';
 import '../../data/models/league_member_model.dart';
@@ -110,6 +111,8 @@ class UserProfileNotifier extends AsyncNotifier<UserProfileModel?> {
 
 final subscriptionServiceProvider = Provider<SubscriptionService>((ref) => SubscriptionService());
 
+final couponServiceProvider = Provider<CouponService>((ref) => CouponService());
+
 /// Firestore stream üzerinden gerçek zamanlı premium durumu.
 /// Ödeme tamamlanınca Cloud Function Firestore'u günceller → otomatik yansır.
 final isPremiumProvider = StreamProvider<bool>((ref) {
@@ -170,6 +173,7 @@ final iapProductsProvider =
 class IapProductsNotifier extends AsyncNotifier<List<ProductDetails>> {
   @override
   Future<List<ProductDetails>> build() async {
+    if (kIsWeb) return [];
     final svc = IapService.instance;
     if (!svc.isSupported) return [];
     final available = await svc.isAvailable();
