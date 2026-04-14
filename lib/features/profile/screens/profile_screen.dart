@@ -1,5 +1,5 @@
-import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
+import 'package:supabase_flutter/supabase_flutter.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:go_router/go_router.dart';
 import 'package:intl/intl.dart';
@@ -21,7 +21,8 @@ class ProfileScreen extends ConsumerWidget {
     return profileAsync.when(
       data: (profile) {
         if (profile == null) return const SizedBox();
-        final rank = RankConstants.getRankForXp(profile.totalXp, profile.role);
+        final role = profile.role.isNotEmpty ? profile.role : 'pilot';
+        final rank = RankConstants.getRankForXp(profile.totalXp, role);
 
         return Center(
           child: ConstrainedBox(
@@ -65,7 +66,7 @@ class ProfileScreen extends ConsumerWidget {
                         ),
                         const SizedBox(height: 4),
                         Text(
-                          profile.role.replaceAll('_', ' ').toUpperCase(),
+                          role.replaceAll('_', ' ').toUpperCase(),
                           style: const TextStyle(color: Colors.white70, fontSize: 12, letterSpacing: 1),
                         ),
                       ],
@@ -73,7 +74,7 @@ class ProfileScreen extends ConsumerWidget {
                   ),
                   const SizedBox(height: 20),
                   // XP bar
-                  XpProgressBar(xp: profile.totalXp, role: profile.role),
+                  XpProgressBar(xp: profile.totalXp, role: role),
                   const SizedBox(height: 20),
                   // Stats grid
                   GridView.count(
@@ -162,7 +163,7 @@ class ProfileScreen extends ConsumerWidget {
                   const SizedBox(height: 8),
                   const Text('Rütbeler', style: AppTextStyles.heading3),
                   const SizedBox(height: 12),
-                  ...RankConstants.ranksForRole(profile.role).map((r) {
+                  ...RankConstants.ranksForRole(role).map((r) {
                     final unlocked = profile.totalXp >= r.xpRequired;
                     final isCurrent = r.title == rank.title;
                     return Container(
@@ -271,14 +272,15 @@ class _StatCard extends StatelessWidget {
 class _UserInfoCard extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    final user = FirebaseAuth.instance.currentUser;
+    final user = Supabase.instance.client.auth.currentUser;
     if (user == null) return const SizedBox();
 
-    final isAnon = user.isAnonymous;
-    final name = isAnon
-        ? 'user_${user.uid.substring(user.uid.length - 6)}'
-        : user.displayName ?? user.email ?? 'Kullanıcı';
-    final photoUrl = user.photoURL;
+    final name = user.userMetadata?['full_name'] as String? ??
+        user.userMetadata?['name'] as String? ??
+        user.email ??
+        'Kullanıcı';
+    final photoUrl = user.userMetadata?['avatar_url'] as String?;
+    final isGoogle = user.appMetadata['provider'] == 'google';
 
     return Container(
       padding: const EdgeInsets.all(16),
@@ -296,7 +298,7 @@ class _UserInfoCard extends StatelessWidget {
             backgroundImage: photoUrl != null ? NetworkImage(photoUrl) : null,
             child: photoUrl == null
                 ? Text(
-                    isAnon ? '?' : name[0].toUpperCase(),
+                    name.isNotEmpty ? name[0].toUpperCase() : '?',
                     style: const TextStyle(
                       fontSize: 22,
                       fontWeight: FontWeight.w700,
@@ -324,7 +326,7 @@ class _UserInfoCard extends StatelessWidget {
             ),
           ),
           // Google rozeti
-          if (!isAnon && user.providerData.any((p) => p.providerId == 'google.com'))
+          if (isGoogle)
             Container(
               padding: const EdgeInsets.symmetric(horizontal: 8, vertical: 4),
               decoration: BoxDecoration(
