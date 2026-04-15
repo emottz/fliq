@@ -21,6 +21,7 @@ import '../../features/lessons/screens/lesson_list_screen.dart';
 import '../../features/lessons/screens/lesson_session_screen.dart';
 import '../../features/admin/screens/admin_screen.dart';
 import '../../features/profile/screens/profile_screen.dart';
+import '../../features/auth/screens/password_reset_screen.dart';
 
 // Her uygulama başlangıcında splash bir kez gösterilir
 bool _splashShown = false;
@@ -29,10 +30,13 @@ void markSplashShown() => _splashShown = true;
 // Auth değişikliklerini GoRouter'a bildiren notifier
 class _AuthNotifier extends ChangeNotifier {
   StreamSubscription<AuthState>? _sub;
+  bool isRecovery = false;
 
   _AuthNotifier() {
-    _sub = Supabase.instance.client.auth.onAuthStateChange
-        .listen((_) => notifyListeners());
+    _sub = Supabase.instance.client.auth.onAuthStateChange.listen((data) {
+      isRecovery = data.event == AuthChangeEvent.passwordRecovery;
+      notifyListeners();
+    });
   }
 
   @override
@@ -60,6 +64,12 @@ final routerProvider = Provider<GoRouter>((ref) {
 
       // ── Admin paneli → yönlendirme yapma ──────────────────
       if (path == '/admin') return null;
+
+      // ── Şifre sıfırlama recovery akışı ────────────────────
+      if (authNotifier.isRecovery) {
+        if (path == '/auth/reset-password') return null;
+        return '/auth/reset-password';
+      }
 
       final user = Supabase.instance.client.auth.currentUser;
 
@@ -117,6 +127,10 @@ final routerProvider = Provider<GoRouter>((ref) {
       GoRoute(
         path: '/auth',
         builder: (context, state) => const AuthScreen(),
+      ),
+      GoRoute(
+        path: '/auth/reset-password',
+        builder: (context, state) => const PasswordResetScreen(),
       ),
       GoRoute(
         path: '/onboarding',

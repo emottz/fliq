@@ -60,7 +60,10 @@ class AuthService {
   }
 
   Future<void> sendPasswordReset(String email) async {
-    await _sb.auth.resetPasswordForEmail(email.trim());
+    await _sb.auth.resetPasswordForEmail(
+      email.trim(),
+      redirectTo: kIsWeb ? '${Uri.base.origin}/' : null,
+    );
   }
 
   Future<void> signOut() async {
