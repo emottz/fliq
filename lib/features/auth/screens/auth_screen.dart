@@ -49,11 +49,28 @@ class _AuthScreenState extends ConsumerState<AuthScreen>
     try {
       final svc = ref.read(authServiceProvider);
       if (_isSignUp) {
-        await svc.signUpWithEmail(_emailCtrl.text, _passCtrl.text);
+        final hasSession = await svc.signUpWithEmail(_emailCtrl.text, _passCtrl.text);
+        if (!hasSession && mounted) {
+          // E-posta onayı gerekiyor — kullanıcıya bildir ve giriş moduna geç
+          ScaffoldMessenger.of(context).showSnackBar(
+            SnackBar(
+              content: Text(
+                '✉️  ${_emailCtrl.text.trim()} adresine doğrulama e-postası gönderildi. '
+                'E-postayı onayladıktan sonra giriş yapabilirsiniz.',
+              ),
+              backgroundColor: AppColors.success,
+              behavior: SnackBarBehavior.floating,
+              duration: const Duration(seconds: 6),
+              shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(12)),
+            ),
+          );
+          setState(() { _isSignUp = false; _error = null; });
+        }
+        // hasSession == true ise GoRouter otomatik yönlendirir
       } else {
         await svc.signInWithEmail(_emailCtrl.text, _passCtrl.text);
+        // GoRouter will auto-redirect based on auth state change
       }
-      // GoRouter will auto-redirect based on auth state change
     } on AuthException catch (e) {
       setState(() => _error = ref.read(authServiceProvider).errorMessage(e.message));
     } catch (_) {

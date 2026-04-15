@@ -17,12 +17,14 @@ class AuthService {
   User? get currentUser => _sb.auth.currentUser;
   bool get isSignedIn => _sb.auth.currentUser != null;
 
-  Future<void> signUpWithEmail(String email, String password) async {
+  /// Kayıt ol. Session açıldıysa true, e-posta onayı bekliyorsa false döner.
+  Future<bool> signUpWithEmail(String email, String password) async {
     final res = await _sb.auth.signUp(
       email: email.trim(),
       password: password,
     );
     if (res.user == null) throw Exception('Kayıt başarısız.');
+    return res.session != null;
   }
 
   Future<void> signInWithEmail(String email, String password) async {
