@@ -22,6 +22,7 @@ class _AuthScreenState extends ConsumerState<AuthScreen>
   final _formKey = GlobalKey<FormState>();
   bool _loading = false;
   bool _googleLoading = false;
+  bool _guestLoading = false;
   bool _obscurePass = true;
   bool _obscureConfirm = true;
   String? _error;
@@ -59,6 +60,17 @@ class _AuthScreenState extends ConsumerState<AuthScreen>
       setState(() => _error = 'Bir hata oluştu. Lütfen tekrar deneyin.');
     } finally {
       if (mounted) setState(() => _loading = false);
+    }
+  }
+
+  Future<void> _continueAsGuest() async {
+    setState(() { _guestLoading = true; _error = null; });
+    try {
+      await ref.read(authServiceProvider).signInAnonymously();
+    } catch (_) {
+      if (mounted) setState(() => _error = 'Misafir girişi başarısız oldu.');
+    } finally {
+      if (mounted) setState(() => _guestLoading = false);
     }
   }
 
@@ -301,7 +313,7 @@ class _AuthScreenState extends ConsumerState<AuthScreen>
       SizedBox(
         height: 52,
         child: OutlinedButton.icon(
-          onPressed: (_loading || _googleLoading) ? null : _googleSignIn,
+          onPressed: (_loading || _googleLoading || _guestLoading) ? null : _googleSignIn,
           style: OutlinedButton.styleFrom(
             foregroundColor: AppColors.textPrimary,
             side: const BorderSide(color: AppColors.divider, width: 1.5),
@@ -315,7 +327,28 @@ class _AuthScreenState extends ConsumerState<AuthScreen>
               style: TextStyle(fontSize: 15, fontWeight: FontWeight.w600)),
         ),
       ),
-      const SizedBox(height: 16),
+      const SizedBox(height: 12),
+
+      // ── Misafir girişi ────────────────────────────────────────────────────
+      Center(
+        child: TextButton(
+          onPressed: (_loading || _googleLoading || _guestLoading) ? null : _continueAsGuest,
+          child: _guestLoading
+              ? const SizedBox(
+                  width: 18, height: 18,
+                  child: CircularProgressIndicator(strokeWidth: 2, color: AppColors.textSecondary),
+                )
+              : const Text(
+                  'Giriş yapmadan ilerle',
+                  style: TextStyle(
+                    fontSize: 13,
+                    color: AppColors.textSecondary,
+                    decoration: TextDecoration.underline,
+                  ),
+                ),
+        ),
+      ),
+      const SizedBox(height: 4),
 
     ];
   }

@@ -53,6 +53,10 @@ class AuthService {
     return res.user;
   }
 
+  Future<void> signInAnonymously() async {
+    await _sb.auth.signInAnonymously();
+  }
+
   Future<void> sendPasswordReset(String email) async {
     await _sb.auth.resetPasswordForEmail(email.trim());
   }
