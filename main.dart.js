@@ -51267,7 +51267,7 @@ g=g.c
 if(g.length!==0){r=A.b([B.bs,B.aDG,B.bz],j)
 B.b.H(r,new A.kC(g,A.a0(g).h("kC<1>")).ge8().dL(0,new A.ayb(),t.o))
 B.b.H(q,r)}q.push(B.iN)
-q.push(A.UM(!1,"Ana Sayfaya Git",new A.ayc(i),!1))
+q.push(A.UM(!1,"Hemen Ba\u015fla  \u2192",new A.ayc(i),!1))
 q.push(B.bs)
 return new A.cc(s,!1,A.fK(A.aj(q,B.B,h,B.e,B.f),h,B.A,B.dg,h,B.ac),h)}}
 A.ayd.prototype={
