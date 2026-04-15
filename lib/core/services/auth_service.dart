@@ -71,14 +71,23 @@ class AuthService {
     await _sb.auth.signOut();
   }
 
-  String errorMessage(String code) => switch (code) {
-        'user_already_exists'       => 'Bu e-posta adresi zaten kullanımda.',
-        'weak_password'             => 'Şifre en az 6 karakter olmalıdır.',
-        'invalid_credentials'       => 'E-posta veya şifre hatalı.',
-        'email_not_confirmed'       => 'E-posta adresinizi doğrulayın.',
-        'user_not_found'            => 'Bu e-posta ile kayıtlı kullanıcı bulunamadı.',
-        'too_many_requests'         => 'Çok fazla deneme. Lütfen bekleyin.',
-        'network_failure'           => 'İnternet bağlantısı hatası.',
-        _                           => 'Bir hata oluştu. Lütfen tekrar deneyin.',
-      };
+  String errorMessage(String msg) {
+    final m = msg.toLowerCase();
+    if (m.contains('invalid') || m.contains('credentials') || m.contains('wrong password'))
+      return 'E-posta veya şifre hatalı.';
+    if (m.contains('already') || m.contains('exists') || m.contains('registered'))
+      return 'Bu e-posta adresi zaten kullanımda.';
+    if (m.contains('not confirmed') || m.contains('email_not_confirmed') || m.contains('confirm'))
+      return 'E-posta adresinizi doğrulayın, ardından giriş yapın.';
+    if (m.contains('too many') || m.contains('rate limit'))
+      return 'Çok fazla deneme. Lütfen biraz bekleyin.';
+    if (m.contains('weak') || m.contains('password'))
+      return 'Şifre en az 6 karakter olmalıdır.';
+    if (m.contains('network') || m.contains('connection') || m.contains('timeout'))
+      return 'İnternet bağlantısı hatası.';
+    if (m.contains('user not found') || m.contains('no user'))
+      return 'Bu e-posta ile kayıtlı kullanıcı bulunamadı.';
+    // Tanımlanamayan hata — orijinal mesajı göster
+    return msg;
+  }
 }

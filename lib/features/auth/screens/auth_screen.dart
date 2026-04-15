@@ -73,8 +73,8 @@ class _AuthScreenState extends ConsumerState<AuthScreen>
       }
     } on AuthException catch (e) {
       setState(() => _error = ref.read(authServiceProvider).errorMessage(e.message));
-    } catch (_) {
-      setState(() => _error = 'Bir hata oluştu. Lütfen tekrar deneyin.');
+    } catch (e) {
+      setState(() => _error = ref.read(authServiceProvider).errorMessage(e.toString()));
     } finally {
       if (mounted) setState(() => _loading = false);
     }
@@ -98,8 +98,8 @@ class _AuthScreenState extends ConsumerState<AuthScreen>
       if (result == null && mounted) setState(() => _error = 'Google girişi iptal edildi.');
     } on AuthException catch (e) {
       setState(() => _error = ref.read(authServiceProvider).errorMessage(e.message));
-    } catch (_) {
-      if (mounted) setState(() => _error = 'Google ile giriş başarısız oldu.');
+    } catch (e) {
+      if (mounted) setState(() => _error = ref.read(authServiceProvider).errorMessage(e.toString()));
     } finally {
       if (mounted) setState(() => _googleLoading = false);
     }
