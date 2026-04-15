@@ -1,8 +1,10 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_riverpod/flutter_riverpod.dart';
 import '../../../core/constants/app_colors.dart';
 import '../../../core/constants/app_text_styles.dart';
 import '../../../data/models/lesson_content_model.dart';
 import '../../../data/models/question_model.dart';
+import '../../../shared/providers/app_providers.dart';
 import 'grammar_animations.dart';
 
 const _kPassThreshold = 0.60; // 60% to pass
@@ -12,6 +14,7 @@ class LessonCardWidget extends StatelessWidget {
   final LessonSection section;
   final int sectionIndex;
   final String lessonEmoji;
+  final String lessonCategoryId;
   /// Called only for practice sections when the user completes the quiz.
   final void Function(bool passed)? onPracticeResult;
 
@@ -20,6 +23,7 @@ class LessonCardWidget extends StatelessWidget {
     required this.section,
     required this.sectionIndex,
     required this.lessonEmoji,
+    required this.lessonCategoryId,
     this.onPracticeResult,
   });
 
@@ -30,7 +34,11 @@ class LessonCardWidget extends StatelessWidget {
       LessonSectionType.rule => _RuleCard(section: section),
       LessonSectionType.examples => _ExamplesCard(section: section),
       LessonSectionType.animation => _AnimationCard(section: section),
-      LessonSectionType.practice => _PracticeCard(section: section, onResult: onPracticeResult),
+      LessonSectionType.practice => _PracticeCard(
+          section: section,
+          categoryId: lessonCategoryId,
+          onResult: onPracticeResult,
+        ),
       LessonSectionType.tip => _TipCard(section: section),
     };
   }
@@ -609,23 +617,57 @@ class _AnimationCard extends StatelessWidget {
 // PRACTICE CARD — interactive quiz
 // ─────────────────────────────────────────────────────────────────────────────
 
-class _PracticeCard extends StatefulWidget {
+class _PracticeCard extends ConsumerStatefulWidget {
   final LessonSection section;
+  final String categoryId;
   final void Function(bool passed)? onResult;
-  const _PracticeCard({required this.section, this.onResult});
+  const _PracticeCard({required this.section, required this.categoryId, this.onResult});
 
   @override
-  State<_PracticeCard> createState() => _PracticeCardState();
+  ConsumerState<_PracticeCard> createState() => _PracticeCardState();
 }
 
-class _PracticeCardState extends State<_PracticeCard> {
+class _PracticeCardState extends ConsumerState<_PracticeCard> {
   final Map<int, int> _answers = {};
   int _current = 0;
   bool _answered = false;
   bool _allDone = false;
   int _score = 0;
+  bool _loadingFromBank = false;
 
-  List<QuestionModel> get _questions => widget.section.practiceQuestions ?? [];
+  List<QuestionModel> _questions = [];
+
+  @override
+  void initState() {
+    super.initState();
+    _initQuestions();
+  }
+
+  Future<void> _initQuestions() async {
+    // Önce hardcoded soruları yükle (anında gösterim)
+    final hardcoded = widget.section.practiceQuestions ?? [];
+
+    // Bank'tan yüklemeyi dene
+    setState(() { _loadingFromBank = true; });
+    try {
+      final repo = ref.read(questionRepositoryProvider);
+      final category = QuestionCategory.fromId(widget.categoryId);
+      var pool = await repo.getByCategory(category);
+      // Pasaj içeren soruları filtrele — practice card onları gösteremiyor
+      pool = pool.where((q) => q.passageText == null).toList();
+      if (pool.isNotEmpty) {
+        pool.shuffle();
+        final count = widget.section.practiceCount;
+        _questions = pool.take(count).map((q) => q.withShuffledOptions()).toList();
+      } else {
+        _questions = List.of(hardcoded)..shuffle();
+      }
+    } catch (_) {
+      _questions = List.of(hardcoded)..shuffle();
+    } finally {
+      if (mounted) setState(() { _loadingFromBank = false; });
+    }
+  }
 
   void _select(int i) {
     if (_answered) return;
@@ -648,13 +690,22 @@ class _PracticeCardState extends State<_PracticeCard> {
 
   void _restart() {
     final wasPass = _questions.isNotEmpty && _score / _questions.length >= _kPassThreshold;
-    // Only reset pass if they're retrying after failing
     if (!wasPass) widget.onResult?.call(false);
     setState(() { _answers.clear(); _current = 0; _answered = false; _allDone = false; _score = 0; });
+    _initQuestions(); // yeni rastgele sorular çek
   }
 
   @override
   Widget build(BuildContext context) {
+    if (_loadingFromBank) {
+      return const Center(
+        child: Padding(
+          padding: EdgeInsets.all(40),
+          child: CircularProgressIndicator(color: AppColors.primary),
+        ),
+      );
+    }
+
     if (_questions.isEmpty) return const SizedBox();
 
     return SingleChildScrollView(

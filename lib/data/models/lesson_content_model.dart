@@ -30,6 +30,8 @@ class LessonSection {
   final List<ExampleSentence>? examples;
   final GrammarAnimationType? animationType;
   final List<QuestionModel>? practiceQuestions;
+  /// Number of questions to show per practice attempt (default 4).
+  final int practiceCount;
 
   const LessonSection({
     required this.type,
@@ -38,6 +40,7 @@ class LessonSection {
     this.examples,
     this.animationType,
     this.practiceQuestions,
+    this.practiceCount = 4,
   });
 }
 

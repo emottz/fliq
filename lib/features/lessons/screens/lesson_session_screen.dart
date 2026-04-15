@@ -229,6 +229,7 @@ class _LessonSessionScreenState extends ConsumerState<LessonSessionScreen>
                         section: lesson.sections[i],
                         sectionIndex: i,
                         lessonEmoji: lesson.emoji,
+                        lessonCategoryId: lesson.categoryId,
                         onPracticeResult: (passed) {
                           setState(() => _practicePassed = passed);
                         },
