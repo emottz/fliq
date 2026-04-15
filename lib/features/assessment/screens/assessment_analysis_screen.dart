@@ -232,6 +232,7 @@ class _AssessmentAnalysisScreenState extends State<AssessmentAnalysisScreen>
         QuestionCategory.reading => Icons.article_outlined,
         QuestionCategory.fillBlanks => Icons.edit_outlined,
         QuestionCategory.sentenceCompletion => Icons.short_text_outlined,
+        QuestionCategory.aviationTerms => Icons.flight_outlined,
       };
 
   // ── Build ─────────────────────────────────────────────────────────────────

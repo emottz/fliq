@@ -10,7 +10,8 @@ enum QuestionCategory {
   translation,
   reading,
   fillBlanks,
-  sentenceCompletion;
+  sentenceCompletion,
+  aviationTerms;
 
   String get displayName {
     switch (this) {
@@ -26,6 +27,8 @@ enum QuestionCategory {
         return 'Fill in the Blanks';
       case sentenceCompletion:
         return 'Sentence Completion';
+      case aviationTerms:
+        return 'Aviation Terms';
     }
   }
 
@@ -43,6 +46,8 @@ enum QuestionCategory {
         return 'fill_blanks';
       case sentenceCompletion:
         return 'sentence_completion';
+      case aviationTerms:
+        return 'aviation_terms';
     }
   }
 

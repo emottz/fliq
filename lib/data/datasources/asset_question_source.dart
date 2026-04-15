@@ -12,6 +12,7 @@ class AssetQuestionSource {
     QuestionCategory.reading: '$_basePath/reading.json',
     QuestionCategory.fillBlanks: '$_basePath/fill_blanks.json',
     QuestionCategory.sentenceCompletion: '$_basePath/sentence_completion.json',
+    QuestionCategory.aviationTerms: '$_basePath/aviation_terms.json',
   };
 
   Future<List<QuestionModel>> loadAll() async {

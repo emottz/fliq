@@ -24,6 +24,11 @@ class ExamListScreen extends ConsumerWidget {
       Icons.format_quote,
       'Cümle Tamamlama',
     ),
+    (
+      QuestionCategory.aviationTerms,
+      Icons.flight,
+      'Havacılık Terimleri',
+    ),
   ];
 
   Future<void> _startExam(
@@ -76,6 +81,16 @@ class ExamListScreen extends ConsumerWidget {
                       ),
                       const SizedBox(height: 16),
                     ],
+
+                    // ── Havacılık Terimleri Sınavı ─────────────────────────────
+                    _AviationTermsExamCard(
+                      onTap: () => _startExam(context, ref, {
+                        'count': 20,
+                        'category': 'aviation_terms',
+                        'mode': 'category',
+                      }),
+                    ),
+                    const SizedBox(height: 16),
 
                     _DailyExamCard(
                       onTap: () => _startExam(context, ref, {
@@ -258,6 +273,116 @@ class _AmtExamCard extends StatelessWidget {
               ),
               child: const Center(
                 child: Text('🔧', style: TextStyle(fontSize: 24)),
+              ),
+            ),
+          ],
+        ),
+      ),
+    );
+  }
+
+  Widget _chip(IconData icon, String label) {
+    return Row(
+      mainAxisSize: MainAxisSize.min,
+      children: [
+        Icon(icon, color: Colors.white70, size: 13),
+        const SizedBox(width: 4),
+        Text(
+          label,
+          style: const TextStyle(color: Colors.white70, fontSize: 11),
+        ),
+      ],
+    );
+  }
+}
+
+// ── Havacılık Terimleri Sınav Kartı ──────────────────────────────────────────
+
+class _AviationTermsExamCard extends StatelessWidget {
+  final VoidCallback onTap;
+  const _AviationTermsExamCard({required this.onTap});
+
+  @override
+  Widget build(BuildContext context) {
+    return GestureDetector(
+      onTap: onTap,
+      child: Container(
+        padding: const EdgeInsets.all(20),
+        decoration: BoxDecoration(
+          gradient: const LinearGradient(
+            colors: [Color(0xFF1565C0), Color(0xFF1976D2)],
+            begin: Alignment.topLeft,
+            end: Alignment.bottomRight,
+          ),
+          borderRadius: BorderRadius.circular(20),
+          boxShadow: [
+            BoxShadow(
+              color: const Color(0xFF1565C0).withValues(alpha: 0.35),
+              blurRadius: 16,
+              offset: const Offset(0, 6),
+            ),
+          ],
+        ),
+        child: Row(
+          children: [
+            Expanded(
+              child: Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: [
+                  Container(
+                    padding: const EdgeInsets.symmetric(
+                      horizontal: 8,
+                      vertical: 3,
+                    ),
+                    decoration: BoxDecoration(
+                      color: Colors.white.withValues(alpha: 0.2),
+                      borderRadius: BorderRadius.circular(8),
+                    ),
+                    child: const Text(
+                      '✈️ Teknik İngilizce',
+                      style: TextStyle(
+                        color: Colors.white,
+                        fontSize: 11,
+                        fontWeight: FontWeight.w600,
+                      ),
+                    ),
+                  ),
+                  const SizedBox(height: 8),
+                  const Text(
+                    'Havacılık Terimleri',
+                    style: TextStyle(
+                      color: Colors.white,
+                      fontSize: 20,
+                      fontWeight: FontWeight.w800,
+                    ),
+                  ),
+                  const SizedBox(height: 4),
+                  const Text(
+                    '1000 teknik terim — İngilizce karşılıkları',
+                    style: TextStyle(color: Colors.white70, fontSize: 12),
+                  ),
+                  const SizedBox(height: 10),
+                  Wrap(
+                    spacing: 12,
+                    runSpacing: 6,
+                    children: [
+                      _chip(Icons.quiz_outlined, '20 soru'),
+                      _chip(Icons.category_outlined, '1000 terim havuzu'),
+                    ],
+                  ),
+                ],
+              ),
+            ),
+            const SizedBox(width: 12),
+            Container(
+              width: 48,
+              height: 48,
+              decoration: BoxDecoration(
+                color: Colors.white.withValues(alpha: 0.15),
+                shape: BoxShape.circle,
+              ),
+              child: const Center(
+                child: Text('✈️', style: TextStyle(fontSize: 24)),
               ),
             ),
           ],
