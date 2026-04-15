@@ -190,7 +190,7 @@ class _ExamSessionScreenState extends ConsumerState<ExamSessionScreen> {
       body: Center(
         child: ConstrainedBox(
           constraints: const BoxConstraints(maxWidth: 480),
-          child: Padding(
+          child: SingleChildScrollView(
             padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 8),
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.start,
@@ -202,7 +202,7 @@ class _ExamSessionScreenState extends ConsumerState<ExamSessionScreen> {
                   valueColor: const AlwaysStoppedAnimation<Color>(AppColors.primary),
                   borderRadius: BorderRadius.circular(2),
                 ),
-                const SizedBox(height: 16),
+                const SizedBox(height: 14),
                 if (question.passageText != null)
                   _PassageCard(title: question.passageTitle, text: question.passageText!),
                 if (isWeakQuestion) ...[
@@ -221,91 +221,38 @@ class _ExamSessionScreenState extends ConsumerState<ExamSessionScreen> {
                         SizedBox(width: 6),
                         Text(
                           'Bu konuda eksik var — iyi pratik fırsatı!',
-                          style: TextStyle(
-                            fontSize: 12,
-                            fontWeight: FontWeight.w600,
-                            color: Color(0xFF92400E),
-                          ),
+                          style: TextStyle(fontSize: 12, fontWeight: FontWeight.w600, color: Color(0xFF92400E)),
                         ),
                       ],
                     ),
                   ),
                 ],
-                Container(
-                  padding: const EdgeInsets.all(20),
-                  decoration: BoxDecoration(
-                    color: AppColors.surface,
-                    borderRadius: BorderRadius.circular(16),
-                    border: Border.all(color: AppColors.divider),
-                  ),
-                  child: Text(question.questionText, style: AppTextStyles.body),
-                ),
+                _QuestionCard(text: question.questionText),
+                const SizedBox(height: 12),
+                ...List.generate(question.options.length, (i) {
+                  Color? bg;
+                  Color? border;
+                  if (_answered) {
+                    if (i == question.correctIndex) {
+                      bg = AppColors.successLight;
+                      border = AppColors.success;
+                    } else if (i == _selected && i != question.correctIndex) {
+                      bg = AppColors.errorLight;
+                      border = AppColors.error;
+                    }
+                  }
+                  return _OptionTile(
+                    label: String.fromCharCode(65 + i),
+                    text: question.options[i],
+                    bg: bg,
+                    border: border,
+                    selected: _selected == i,
+                    answered: _answered,
+                    isCorrect: i == question.correctIndex,
+                    onTap: () => _select(i),
+                  );
+                }),
                 const SizedBox(height: 16),
-                Expanded(
-                  child: ListView.builder(
-                    itemCount: question.options.length,
-                    itemBuilder: (_, i) {
-                      Color? bg;
-                      Color? border;
-                      if (_answered) {
-                        if (i == question.correctIndex) {
-                          bg = AppColors.successLight;
-                          border = AppColors.success;
-                        } else if (i == _selected && i != question.correctIndex) {
-                          bg = AppColors.errorLight;
-                          border = AppColors.error;
-                        }
-                      }
-
-                      return GestureDetector(
-                        onTap: () => _select(i),
-                        child: AnimatedContainer(
-                          duration: const Duration(milliseconds: 200),
-                          margin: const EdgeInsets.only(bottom: 10),
-                          padding: const EdgeInsets.symmetric(horizontal: 18, vertical: 16),
-                          decoration: BoxDecoration(
-                            color: bg ?? AppColors.surface,
-                            borderRadius: BorderRadius.circular(12),
-                            border: Border.all(
-                              color: border ?? (_selected == i ? AppColors.primary : AppColors.divider),
-                              width: _selected == i || border != null ? 2 : 1,
-                            ),
-                          ),
-                          child: Row(
-                            children: [
-                              Container(
-                                width: 28,
-                                height: 28,
-                                decoration: BoxDecoration(
-                                  shape: BoxShape.circle,
-                                  color: bg != null
-                                      ? (i == question.correctIndex ? AppColors.success : AppColors.error)
-                                      : (_selected == i ? AppColors.primary : AppColors.surfaceVariant),
-                                ),
-                                child: Center(
-                                  child: Text(
-                                    String.fromCharCode(65 + i),
-                                    style: TextStyle(
-                                      fontWeight: FontWeight.w700,
-                                      fontSize: 13,
-                                      color: bg != null || _selected == i ? Colors.white : AppColors.textSecondary,
-                                    ),
-                                  ),
-                                ),
-                              ),
-                              const SizedBox(width: 12),
-                              Expanded(child: Text(question.options[i], style: AppTextStyles.body)),
-                              if (_answered && i == question.correctIndex)
-                                const Icon(Icons.check_circle, color: AppColors.success, size: 20),
-                              if (_answered && i == _selected && i != question.correctIndex)
-                                const Icon(Icons.cancel, color: AppColors.error, size: 20),
-                            ],
-                          ),
-                        ),
-                      );
-                    },
-                  ),
-                ),
               ],
             ),
           ),
@@ -335,6 +282,113 @@ class _ExamSessionScreenState extends ConsumerState<ExamSessionScreen> {
     );
   }
 }
+
+// ── Adaptif soru kartı ────────────────────────────────────────────────────────
+
+class _QuestionCard extends StatelessWidget {
+  final String text;
+  const _QuestionCard({required this.text});
+
+  @override
+  Widget build(BuildContext context) {
+    final fontSize = text.length > 180 ? 13.0 : text.length > 100 ? 14.0 : 15.0;
+    return Container(
+      width: double.infinity,
+      padding: const EdgeInsets.all(16),
+      decoration: BoxDecoration(
+        color: AppColors.surface,
+        borderRadius: BorderRadius.circular(16),
+        border: Border.all(color: AppColors.divider),
+      ),
+      child: Text(
+        text,
+        style: TextStyle(fontSize: fontSize, color: AppColors.textPrimary, height: 1.45),
+      ),
+    );
+  }
+}
+
+// ── Adaptif şık kartı ─────────────────────────────────────────────────────────
+
+class _OptionTile extends StatelessWidget {
+  final String label;
+  final String text;
+  final Color? bg;
+  final Color? border;
+  final bool selected;
+  final bool answered;
+  final bool isCorrect;
+  final VoidCallback onTap;
+
+  const _OptionTile({
+    required this.label,
+    required this.text,
+    required this.bg,
+    required this.border,
+    required this.selected,
+    required this.answered,
+    required this.isCorrect,
+    required this.onTap,
+  });
+
+  @override
+  Widget build(BuildContext context) {
+    final fontSize = text.length > 80 ? 13.0 : 14.5;
+    final padV     = text.length > 80 ? 10.0 : 13.0;
+    final circleColor = bg != null
+        ? (isCorrect ? AppColors.success : AppColors.error)
+        : (selected ? AppColors.primary : AppColors.surfaceVariant);
+
+    return GestureDetector(
+      onTap: onTap,
+      child: AnimatedContainer(
+        duration: const Duration(milliseconds: 200),
+        margin: const EdgeInsets.only(bottom: 8),
+        padding: EdgeInsets.symmetric(horizontal: 14, vertical: padV),
+        decoration: BoxDecoration(
+          color: bg ?? AppColors.surface,
+          borderRadius: BorderRadius.circular(12),
+          border: Border.all(
+            color: border ?? (selected ? AppColors.primary : AppColors.divider),
+            width: selected || border != null ? 2 : 1,
+          ),
+        ),
+        child: Row(
+          children: [
+            Container(
+              width: 26,
+              height: 26,
+              decoration: BoxDecoration(shape: BoxShape.circle, color: circleColor),
+              child: Center(
+                child: Text(
+                  label,
+                  style: TextStyle(
+                    fontWeight: FontWeight.w700,
+                    fontSize: 12,
+                    color: bg != null || selected ? Colors.white : AppColors.textSecondary,
+                  ),
+                ),
+              ),
+            ),
+            const SizedBox(width: 10),
+            Expanded(
+              child: Text(
+                text,
+                style: TextStyle(fontSize: fontSize, color: AppColors.textPrimary, height: 1.4),
+              ),
+            ),
+            if (answered && isCorrect)
+              const Icon(Icons.check_circle, color: AppColors.success, size: 18),
+            if (answered && selected && !isCorrect)
+              const Icon(Icons.cancel, color: AppColors.error, size: 18),
+          ],
+        ),
+      ),
+    );
+  }
+}
+
+// ── Pasaj kartı ───────────────────────────────────────────────────────────────
 
 class _PassageCard extends StatefulWidget {
   final String? title;

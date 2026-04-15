@@ -147,6 +147,12 @@ class _AssessmentScreenState extends ConsumerState<AssessmentScreen> {
     final question = _questions![_current];
     final total = _questions!.length;
 
+    final qLen = question.questionText.length;
+    final qFontSize = qLen > 180 ? 13.0 : qLen > 100 ? 14.0 : 15.0;
+    final maxOptLen = question.options.fold(0, (m, o) => o.length > m ? o.length : m);
+    final optFontSize = maxOptLen > 80 ? 13.0 : 14.5;
+    final optPadV = maxOptLen > 80 ? 10.0 : 12.0;
+
     return Scaffold(
       backgroundColor: AppColors.background,
       appBar: AppBar(
@@ -159,8 +165,8 @@ class _AssessmentScreenState extends ConsumerState<AssessmentScreen> {
       body: Center(
         child: ConstrainedBox(
           constraints: const BoxConstraints(maxWidth: 480),
-          child: Padding(
-            padding: const EdgeInsets.symmetric(horizontal: 24, vertical: 12),
+          child: SingleChildScrollView(
+            padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 12),
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
@@ -173,17 +179,21 @@ class _AssessmentScreenState extends ConsumerState<AssessmentScreen> {
                 ),
                 const SizedBox(height: 8),
                 Text('${_current + 1} / $total', style: AppTextStyles.caption),
-                const SizedBox(height: 24),
+                const SizedBox(height: 16),
                 Container(
-                  padding: const EdgeInsets.all(20),
+                  width: double.infinity,
+                  padding: const EdgeInsets.all(16),
                   decoration: BoxDecoration(
                     color: AppColors.surface,
                     borderRadius: BorderRadius.circular(16),
                     border: Border.all(color: AppColors.divider),
                   ),
-                  child: Text(question.questionText, style: AppTextStyles.body),
+                  child: Text(
+                    question.questionText,
+                    style: TextStyle(fontSize: qFontSize, color: AppColors.textPrimary, height: 1.45),
+                  ),
                 ),
-                const SizedBox(height: 20),
+                const SizedBox(height: 14),
                 ...List.generate(question.options.length, (i) {
                   Color? bg;
                   Color? border;
@@ -201,8 +211,8 @@ class _AssessmentScreenState extends ConsumerState<AssessmentScreen> {
                     onTap: () => _select(i),
                     child: AnimatedContainer(
                       duration: const Duration(milliseconds: 200),
-                      margin: const EdgeInsets.only(bottom: 10),
-                      padding: const EdgeInsets.symmetric(horizontal: 18, vertical: 16),
+                      margin: const EdgeInsets.only(bottom: 8),
+                      padding: EdgeInsets.symmetric(horizontal: 14, vertical: optPadV),
                       decoration: BoxDecoration(
                         color: bg ?? AppColors.surface,
                         borderRadius: BorderRadius.circular(12),
@@ -214,8 +224,8 @@ class _AssessmentScreenState extends ConsumerState<AssessmentScreen> {
                       child: Row(
                         children: [
                           Container(
-                            width: 28,
-                            height: 28,
+                            width: 26,
+                            height: 26,
                             decoration: BoxDecoration(
                               shape: BoxShape.circle,
                               color: _selected == i ? AppColors.primary : AppColors.surfaceVariant,
@@ -225,19 +235,29 @@ class _AssessmentScreenState extends ConsumerState<AssessmentScreen> {
                                 String.fromCharCode(65 + i),
                                 style: TextStyle(
                                   fontWeight: FontWeight.w700,
-                                  fontSize: 13,
+                                  fontSize: 12,
                                   color: _selected == i ? Colors.white : AppColors.textSecondary,
                                 ),
                               ),
                             ),
                           ),
-                          const SizedBox(width: 12),
-                          Expanded(child: Text(question.options[i], style: AppTextStyles.body)),
+                          const SizedBox(width: 10),
+                          Expanded(
+                            child: Text(
+                              question.options[i],
+                              style: TextStyle(fontSize: optFontSize, color: AppColors.textPrimary, height: 1.4),
+                            ),
+                          ),
+                          if (_answered && i == question.correctIndex)
+                            const Icon(Icons.check_circle, color: AppColors.success, size: 18),
+                          if (_answered && i == _selected && i != question.correctIndex)
+                            const Icon(Icons.cancel, color: AppColors.error, size: 18),
                         ],
                       ),
                     ),
                   );
                 }),
+                const SizedBox(height: 16),
               ],
             ),
           ),
