@@ -518,7 +518,7 @@ class _AssessmentAnalysisScreenState extends State<AssessmentAnalysisScreen>
 
             const SizedBox(height: 32),
             PrimaryButton(
-              label: 'Ana Sayfaya Git',
+              label: 'Hemen Başla  →',
               onPressed: () => context.go('/home/exams'),
             ),
             const SizedBox(height: 24),
