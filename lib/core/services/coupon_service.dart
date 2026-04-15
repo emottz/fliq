@@ -143,7 +143,7 @@ class CouponPreview {
   String get planLabel => const {
     'pilot':      '✈️  Pilot',
     'cabin_crew': '💺  Kabin Görevlisi',
-    'amt':        '🔧  Uçak Bakım Teknikeri',
+    'amt':        '🔧  Uçak Bakım Teknisyeni',
     'student':    '🎓  Öğrenci',
     'free':       '🆓  Ücretsiz Erişim',
   }[plan] ?? plan;

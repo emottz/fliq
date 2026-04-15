@@ -89,7 +89,7 @@ final _plans = [
   ),
   _Plan(
     roleKey: 'amt',
-    label: 'Uçak Bakım Teknikeri',
+    label: 'Uçak Bakım Teknisyeni',
     emoji: '🔧',
     accent: Color(0xFFD97706),
     accentLight: Color(0xFFFFFBEB),

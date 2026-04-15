@@ -937,7 +937,7 @@ class _CreateCouponDialogState extends State<_CreateCouponDialog> {
   static const _plans = {
     'pilot':      'Pilot',
     'cabin_crew': 'Kabin Görevlisi',
-    'amt':        'Uçak Bakım Teknikeri',
+    'amt':        'Uçak Bakım Teknisyeni',
     'student':    'Öğrenci',
     'free':       'Ücretsiz Erişim',
   };
