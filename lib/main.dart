@@ -22,19 +22,15 @@ void main() async {
 
     // Release modda gri kutu yerine sayfa yenile butonu göster
     ErrorWidget.builder = (FlutterErrorDetails details) {
-      return Material(
+      // ignore: avoid_print
+      print('FLIQ_ERROR_WIDGET: ${details.exception}\n${details.stack}');
+      // Küçük kırmızı nokta göster — tamamen boş yerine hata olduğunu belirtir
+      return Container(
         color: Colors.transparent,
-        child: Center(
-          child: GestureDetector(
-            onTap: () {
-              // Sayfayı yenile
-              if (kIsWeb) {
-                // ignore: avoid_print
-                print('FLIQ_ERROR_WIDGET: ${details.exception}');
-              }
-            },
-            child: const SizedBox.shrink(),
-          ),
+        alignment: Alignment.topLeft,
+        child: Tooltip(
+          message: details.exception.toString(),
+          child: const SizedBox(width: 8, height: 8),
         ),
       );
     };
@@ -42,6 +38,9 @@ void main() async {
     await Supabase.initialize(
       url: SupabaseConfig.url,
       anonKey: SupabaseConfig.anonKey,
+      authOptions: const FlutterAuthClientOptions(
+        authFlowType: AuthFlowType.implicit,
+      ),
     );
 
     // AdMob başlat (web'de atla)

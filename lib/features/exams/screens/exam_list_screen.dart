@@ -43,6 +43,7 @@ class ExamListScreen extends ConsumerWidget {
 
   @override
   Widget build(BuildContext context, WidgetRef ref) {
+    try {
     final profile = ref.watch(userProfileProvider).value;
     final isPremium = ref.watch(isPremiumProvider).value ?? false;
     final weakCategories = profile?.weakCategories ?? [];
@@ -146,6 +147,25 @@ class ExamListScreen extends ConsumerWidget {
         ),
       ],
     );
+    } catch (e, stack) {
+      // ignore: avoid_print
+      print('EXAM_LIST_BUILD_ERROR: $e\n$stack');
+      return Center(
+        child: Padding(
+          padding: const EdgeInsets.all(24),
+          child: Column(
+            mainAxisSize: MainAxisSize.min,
+            children: [
+              const Icon(Icons.warning_amber_rounded, color: Colors.orange, size: 48),
+              const SizedBox(height: 12),
+              const Text('Sınavlar yüklenemedi', style: TextStyle(fontSize: 16, fontWeight: FontWeight.w600)),
+              const SizedBox(height: 8),
+              Text(e.toString(), style: const TextStyle(fontSize: 12, color: Colors.grey)),
+            ],
+          ),
+        ),
+      );
+    }
   }
 }
 
