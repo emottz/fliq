@@ -26,24 +26,27 @@ class AdService {
   Future<void> load() async {}
 
   /// Rewarded ad gösterir. Kullanıcı izlerse [onRewarded] çağrılır.
-  Future<void> show({required void Function() onRewarded}) async {
-    final completer = Completer<void>();
+  /// Reklam gerçekten izlendiyse true, izlenmediyse (onay yok, reklam yok) false döner.
+  Future<bool> show({required void Function() onRewarded}) async {
+    final completer = Completer<bool>();
+    bool _viewed = false;
 
     void onViewed() {
+      _viewed = true;
       onRewarded();
     }
 
     void onComplete() {
-      if (!completer.isCompleted) completer.complete();
+      if (!completer.isCompleted) completer.complete(_viewed);
     }
 
     try {
       _fliqShowRewardedAd(onViewed.toJS, onComplete.toJS);
     } catch (_) {
-      // adBreak tanımlı değilse (reklam engelleyici vs.) sessizce atla
-      completer.complete();
+      // adBreak tanımlı değilse (reklam engelleyici vs.)
+      if (!completer.isCompleted) completer.complete(false);
     }
 
-    await completer.future;
+    return completer.future;
   }
 }

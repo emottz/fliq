@@ -64,12 +64,13 @@ class AdService {
     }
   }
 
-  Future<void> show({required void Function() onRewarded}) async {
-    if (!isSupported || _ad == null) return;
+  Future<bool> show({required void Function() onRewarded}) async {
+    if (!isSupported || _ad == null) return false;
 
     final ad = _ad!;
     _ad = null;
     _available = false;
+    bool _rewarded = false;
 
     ad.fullScreenContentCallback = FullScreenContentCallback(
       onAdDismissedFullScreenContent: (ad) {
@@ -83,7 +84,11 @@ class AdService {
     );
 
     await ad.show(
-      onUserEarnedReward: (ad, reward) => onRewarded(),
+      onUserEarnedReward: (ad, reward) {
+        _rewarded = true;
+        onRewarded();
+      },
     );
+    return _rewarded;
   }
 }

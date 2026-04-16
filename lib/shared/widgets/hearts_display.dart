@@ -264,7 +264,7 @@ class _WatchAdButtonState extends ConsumerState<WatchAdButton> {
       return;
     }
 
-    await adService.show(
+    final rewarded = await adService.show(
       onRewarded: () async {
         await ref.read(heartsProvider.notifier).addFromAd(_adRewardAmount);
         if (mounted) {
@@ -273,6 +273,16 @@ class _WatchAdButtonState extends ConsumerState<WatchAdButton> {
         }
       },
     );
+
+    if (!rewarded && mounted && !_watched) {
+      ScaffoldMessenger.of(context).showSnackBar(
+        const SnackBar(
+          content: Text('Reklamlar henüz aktif değil. Site onayı bekleniyor.'),
+          behavior: SnackBarBehavior.floating,
+          duration: Duration(seconds: 4),
+        ),
+      );
+    }
   }
 
   @override
@@ -985,7 +995,17 @@ class _AdWatchButtonState extends ConsumerState<_AdWatchButton> {
       return;
     }
 
-    await adService.show(onRewarded: widget.onRewarded);
+    final rewarded = await adService.show(onRewarded: widget.onRewarded);
+
+    if (!rewarded && mounted) {
+      messenger.showSnackBar(
+        const SnackBar(
+          content: Text('Reklamlar henüz aktif değil. Site onayı bekleniyor.'),
+          behavior: SnackBarBehavior.floating,
+          duration: Duration(seconds: 4),
+        ),
+      );
+    }
   }
 
   @override
