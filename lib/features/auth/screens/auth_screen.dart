@@ -397,7 +397,7 @@ class _AuthScreenState extends ConsumerState<AuthScreen>
       SizedBox(
         height: 52,
         child: OutlinedButton.icon(
-          onPressed: (_loading || _googleLoading || _guestLoading) ? null : _googleSignIn,
+          onPressed: (_loading || _googleLoading || _guestLoading || !_kvkkAccepted) ? null : _googleSignIn,
           style: OutlinedButton.styleFrom(
             foregroundColor: AppColors.textPrimary,
             side: const BorderSide(color: AppColors.divider, width: 1.5),
