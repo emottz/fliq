@@ -42,6 +42,12 @@ RewriteRule ^ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
   Header set Cache-Control "public, max-age=3600"
 </FilesMatch>
 
+# ── ads.txt — Google AdSense doğrulaması için plain text ─────────────────────
+<FilesMatch "^ads\.txt$">
+  Header set Content-Type "text/plain; charset=utf-8"
+  Header set Cache-Control "no-cache, no-store"
+</FilesMatch>
+
 # ── Flutter SPA routing — tüm yollar index.html'e gider ──────────────────────
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteCond %{REQUEST_FILENAME} !-d
