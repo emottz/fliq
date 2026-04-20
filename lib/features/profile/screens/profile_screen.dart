@@ -8,7 +8,8 @@ import '../../../core/constants/app_text_styles.dart';
 import '../../../core/constants/rank_constants.dart';
 import '../../../data/models/user_profile_model.dart';
 import '../../../shared/providers/app_providers.dart';
-import '../../../shared/widgets/premium_upsell_card.dart';
+import '../../../shared/widgets/coupon_bottom_sheet.dart';
+import '../../../shared/widgets/premium_upsell_card.dart' show PremiumMemberBadge, PremiumUpsellCard, AuthorizedMemberBadge;
 import '../../../shared/widgets/xp_progress_bar.dart';
 
 class ProfileScreen extends ConsumerWidget {
@@ -37,8 +38,9 @@ class ProfileScreen extends ConsumerWidget {
                   // ── Google kullanıcı bilgileri ─────────────────────────────
                   _UserInfoCard(),
                   const SizedBox(height: 16),
-                  // ── Premium durum / upsell ─────────────────────────────────
-                  const PremiumMemberBadge(),
+                  // ── Premium / Yetkili durum ────────────────────────────────
+                  const AuthorizedMemberBadge(),
+                  PremiumMemberBadge(onTap: () => context.push('/subscription')),
                   const PremiumUpsellCard(source: 'profile'),
                   // Rank badge
                   Container(
@@ -144,6 +146,9 @@ class ProfileScreen extends ConsumerWidget {
                     ),
                   ],
                   const SizedBox(height: 24),
+                  // ── Kupon kodu ─────────────────────────────────────────
+                  _CouponTile(),
+                  const SizedBox(height: 12),
                   // ── Çıkış butonu ───────────────────────────────────────
                   OutlinedButton.icon(
                     onPressed: () async {
@@ -354,3 +359,37 @@ String _levelName(ProficiencyLevel level) => switch (level) {
       ProficiencyLevel.intermediate => 'Orta',
       ProficiencyLevel.advanced => 'İleri',
     };
+
+class _CouponTile extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return GestureDetector(
+      onTap: () => showCouponBottomSheet(context),
+      child: Container(
+        width: double.infinity,
+        padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 14),
+        decoration: BoxDecoration(
+          color: const Color(0xFFF0FDF4),
+          borderRadius: BorderRadius.circular(14),
+          border: Border.all(color: const Color(0xFF16A34A).withValues(alpha: 0.35)),
+        ),
+        child: const Row(
+          children: [
+            Icon(Icons.local_offer_outlined, color: Color(0xFF16A34A), size: 20),
+            SizedBox(width: 12),
+            Expanded(
+              child: Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: [
+                  Text('Kupon Kodum Var', style: TextStyle(fontSize: 14, fontWeight: FontWeight.w700, color: Color(0xFF15803D))),
+                  Text('Kodu girerek premium veya özel erişim kazan', style: TextStyle(fontSize: 11, color: Color(0xFF16A34A))),
+                ],
+              ),
+            ),
+            Icon(Icons.chevron_right_rounded, color: Color(0xFF16A34A), size: 20),
+          ],
+        ),
+      ),
+    );
+  }
+}

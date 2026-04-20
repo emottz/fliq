@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:go_router/go_router.dart';
 import 'package:supabase_flutter/supabase_flutter.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import '../../../core/constants/app_colors.dart';
@@ -26,6 +27,7 @@ class _AuthScreenState extends ConsumerState<AuthScreen>
   bool _obscurePass = true;
   bool _obscureConfirm = true;
   String? _error;
+  bool _kvkkAccepted = false;
 
   @override
   void dispose() {
@@ -39,12 +41,21 @@ class _AuthScreenState extends ConsumerState<AuthScreen>
     setState(() {
       _isSignUp = !_isSignUp;
       _error = null;
+      _kvkkAccepted = false;
       _confirmCtrl.clear();
     });
   }
 
+  void _showKvkkDialog() {
+    context.push('/privacy');
+  }
+
   Future<void> _submit() async {
     if (!_formKey.currentState!.validate()) return;
+    if (_isSignUp && !_kvkkAccepted) {
+      setState(() => _error = 'Devam edebilmek için KVKK metnini onaylamanız gerekiyor.');
+      return;
+    }
     setState(() { _loading = true; _error = null; });
     try {
       final svc = ref.read(authServiceProvider);
@@ -92,6 +103,10 @@ class _AuthScreenState extends ConsumerState<AuthScreen>
   }
 
   Future<void> _googleSignIn() async {
+    if (!_kvkkAccepted) {
+      setState(() => _error = 'Devam edebilmek için KVKK metnini onaylamanız gerekiyor.');
+      return;
+    }
     setState(() { _googleLoading = true; _error = null; });
     try {
       final result = await ref.read(authServiceProvider).signInWithGoogle();
@@ -268,6 +283,58 @@ class _AuthScreenState extends ConsumerState<AuthScreen>
             ),
             child: const Text('Şifremi unuttum',
                 style: TextStyle(fontSize: 12, color: AppColors.primary)),
+          ),
+        ),
+      ],
+
+      // ── KVKK onay kutusu ─────────────────────────────────────────────────
+      ...[
+        const SizedBox(height: 18),
+        GestureDetector(
+          onTap: () => setState(() => _kvkkAccepted = !_kvkkAccepted),
+          child: Row(
+            crossAxisAlignment: CrossAxisAlignment.start,
+            children: [
+              SizedBox(
+                width: 22,
+                height: 22,
+                child: Checkbox(
+                  value: _kvkkAccepted,
+                  onChanged: (v) => setState(() => _kvkkAccepted = v ?? false),
+                  activeColor: AppColors.primary,
+                  shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(4)),
+                  materialTapTargetSize: MaterialTapTargetSize.shrinkWrap,
+                  visualDensity: VisualDensity.compact,
+                ),
+              ),
+              const SizedBox(width: 10),
+              Expanded(
+                child: RichText(
+                  text: TextSpan(
+                    style: const TextStyle(fontSize: 12.5, color: AppColors.textSecondary, height: 1.5),
+                    children: [
+                      const TextSpan(text: 'Devam ederek '),
+                      WidgetSpan(
+                        child: GestureDetector(
+                          onTap: _showKvkkDialog,
+                          child: const Text(
+                            'KVKK Aydınlatma Metni',
+                            style: TextStyle(
+                              fontSize: 12.5,
+                              color: AppColors.primary,
+                              fontWeight: FontWeight.w600,
+                              decoration: TextDecoration.underline,
+                              height: 1.5,
+                            ),
+                          ),
+                        ),
+                      ),
+                      const TextSpan(text: '\'ni ve Kullanım Koşulları\'nı okuduğumu, kişisel verilerimin işlenmesine onay verdiğimi kabul ediyorum.'),
+                    ],
+                  ),
+                ),
+              ),
+            ],
           ),
         ),
       ],

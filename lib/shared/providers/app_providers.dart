@@ -8,6 +8,7 @@ import '../../core/constants/iap_constants.dart';
 import '../../core/services/auth_service.dart';
 import '../../core/services/ad_service.dart';
 import '../../core/services/hearts_service.dart';
+import '../../core/services/vocabulary_service.dart';
 import '../../core/services/iap_service.dart';
 import '../../core/services/coupon_service.dart';
 import '../../core/services/subscription_service.dart';
@@ -86,6 +87,33 @@ final isPremiumProvider = StreamProvider<bool>((ref) {
   return ref.read(subscriptionServiceProvider).premiumStream(user.id);
 });
 
+/// Supabase stream üzerinden yetkili üye durumu.
+final isAuthorizedProvider = StreamProvider<bool>((ref) {
+  final user = ref.watch(authStateProvider).value;
+  if (user == null) return Stream.value(false);
+  return ref.read(couponServiceProvider).authorizedStream(user.id);
+});
+
+// ── Vocabulary / Sözlük ───────────────────────────────────────────────────────
+
+final vocabularyServiceProvider =
+    Provider<VocabularyService>((ref) => VocabularyService());
+
+final learnedTermsProvider =
+    AsyncNotifierProvider<LearnedTermsNotifier, Set<String>>(
+        LearnedTermsNotifier.new);
+
+class LearnedTermsNotifier extends AsyncNotifier<Set<String>> {
+  @override
+  Future<Set<String>> build() async =>
+      ref.read(vocabularyServiceProvider).getLearnedTerms();
+
+  Future<void> markLearned(String term) async {
+    await ref.read(vocabularyServiceProvider).markLearned(term);
+    state = AsyncData((state.value ?? {})..add(term));
+  }
+}
+
 // ── Hearts ────────────────────────────────────────────────────────────────────
 
 final heartsServiceProvider = Provider<HeartsService>((ref) => HeartsService());
@@ -108,13 +136,6 @@ class HeartsNotifier extends AsyncNotifier<HeartsState> {
     final ok = await svc.useHearts(cost);
     if (ok) state = AsyncData(await svc.getState());
     return ok;
-  }
-
-  /// Reklam ödülü ile kalp ekler.
-  Future<void> addFromAd(int amount) async {
-    final svc = ref.read(heartsServiceProvider);
-    await svc.addHearts(amount);
-    state = AsyncData(await svc.getState());
   }
 
   Future<void> refresh() async {

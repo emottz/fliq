@@ -40,6 +40,7 @@ class LessonCardWidget extends StatelessWidget {
           onResult: onPracticeResult,
         ),
       LessonSectionType.tip => _TipCard(section: section),
+      LessonSectionType.dialogue => _DialogueCard(section: section),
     };
   }
 }
@@ -168,8 +169,8 @@ class _RuleCardState extends State<_RuleCard> with SingleTickerProviderStateMixi
   @override
   void initState() {
     super.initState();
-    _ctrl = AnimationController(vsync: this, duration: const Duration(milliseconds: 500));
-    _fade = CurvedAnimation(parent: _ctrl, curve: Curves.easeOut);
+    _ctrl = AnimationController(vsync: this, duration: const Duration(milliseconds: 900));
+    _fade = CurvedAnimation(parent: _ctrl, curve: const Interval(0.0, 0.4, curve: Curves.easeOut));
     _ctrl.forward();
   }
 
@@ -245,8 +246,14 @@ class _RuleCardState extends State<_RuleCard> with SingleTickerProviderStateMixi
                       children: parts.asMap().entries.expand((entry) {
                         final i = entry.key;
                         final p = entry.value;
+                        final start = (0.15 + i * 0.12).clamp(0.0, 0.65);
+                        final end = (start + 0.35).clamp(0.0, 1.0);
+                        final chipAnim = CurvedAnimation(
+                          parent: _ctrl,
+                          curve: Interval(start, end, curve: Curves.elasticOut),
+                        );
                         return [
-                          _FormulaChip(text: p, index: i),
+                          _FormulaChip(text: p, index: i, entryAnim: chipAnim),
                           if (i < parts.length - 1)
                             const Padding(
                               padding: EdgeInsets.symmetric(horizontal: 2),
@@ -283,7 +290,8 @@ class _RuleCardState extends State<_RuleCard> with SingleTickerProviderStateMixi
 class _FormulaChip extends StatelessWidget {
   final String text;
   final int index;
-  const _FormulaChip({required this.text, required this.index});
+  final Animation<double>? entryAnim;
+  const _FormulaChip({required this.text, required this.index, this.entryAnim});
 
   static const _colors = [
     Color(0xFF2563EB),
@@ -296,7 +304,7 @@ class _FormulaChip extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final color = _colors[index % _colors.length];
-    return Container(
+    final chip = Container(
       padding: const EdgeInsets.symmetric(horizontal: 14, vertical: 8),
       decoration: BoxDecoration(
         color: color.withOpacity(0.1),
@@ -305,12 +313,13 @@ class _FormulaChip extends StatelessWidget {
       ),
       child: Text(
         text,
-        style: TextStyle(
-          fontSize: 14,
-          fontWeight: FontWeight.w700,
-          color: color,
-        ),
+        style: TextStyle(fontSize: 14, fontWeight: FontWeight.w700, color: color),
       ),
+    );
+    if (entryAnim == null) return chip;
+    return ScaleTransition(
+      scale: entryAnim!,
+      child: FadeTransition(opacity: entryAnim!, child: chip),
     );
   }
 }
@@ -319,17 +328,45 @@ class _FormulaChip extends StatelessWidget {
 // EXAMPLES CARD — flip-style reveal cards
 // ─────────────────────────────────────────────────────────────────────────────
 
-class _ExamplesCard extends StatelessWidget {
+class _ExamplesCard extends StatefulWidget {
   final LessonSection section;
   const _ExamplesCard({required this.section});
 
   @override
+  State<_ExamplesCard> createState() => _ExamplesCardState();
+}
+
+class _ExamplesCardState extends State<_ExamplesCard> with SingleTickerProviderStateMixin {
+  late AnimationController _ctrl;
+
+  @override
+  void initState() {
+    super.initState();
+    final count = (widget.section.examples?.length ?? 1).clamp(1, 10);
+    _ctrl = AnimationController(
+      vsync: this,
+      duration: Duration(milliseconds: 400 + (count - 1) * 120),
+    );
+    _ctrl.forward();
+  }
+
+  @override
+  void dispose() {
+    _ctrl.dispose();
+    super.dispose();
+  }
+
+  @override
   Widget build(BuildContext context) {
+    final examples = widget.section.examples ?? [];
+    final count = examples.length.clamp(1, 10);
+    final totalMs = 400 + (count - 1) * 120;
+
     return SingleChildScrollView(
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
-          if (section.title != null) ...[
+          if (widget.section.title != null) ...[
             Row(
               children: [
                 Container(
@@ -344,15 +381,24 @@ class _ExamplesCard extends StatelessWidget {
                   ),
                 ),
                 const SizedBox(width: 10),
-                Expanded(
-                  child: Text(section.title!, style: AppTextStyles.heading3),
-                ),
+                Expanded(child: Text(widget.section.title!, style: AppTextStyles.heading3)),
               ],
             ),
             const SizedBox(height: 16),
           ],
-          if (section.examples != null)
-            ...section.examples!.map((e) => _FlipExampleCard(example: e)),
+          ...examples.asMap().entries.map((entry) {
+            final i = entry.key;
+            final startT = (i * 120) / totalMs;
+            final endT = ((i * 120) + 400) / totalMs;
+            final anim = CurvedAnimation(
+              parent: _ctrl,
+              curve: Interval(startT.clamp(0.0, 0.9), endT.clamp(0.1, 1.0), curve: Curves.easeOut),
+            );
+            return SlideTransition(
+              position: Tween<Offset>(begin: const Offset(0, 0.25), end: Offset.zero).animate(anim),
+              child: FadeTransition(opacity: anim, child: _FlipExampleCard(example: entry.value)),
+            );
+          }),
         ],
       ),
     );
@@ -370,14 +416,13 @@ class _FlipExampleCard extends StatefulWidget {
 class _FlipExampleCardState extends State<_FlipExampleCard>
     with SingleTickerProviderStateMixin {
   bool _flipped = false;
+  bool _animating = false;
   late AnimationController _ctrl;
-  late Animation<double> _anim;
 
   @override
   void initState() {
     super.initState();
-    _ctrl = AnimationController(vsync: this, duration: const Duration(milliseconds: 350));
-    _anim = CurvedAnimation(parent: _ctrl, curve: Curves.easeInOut);
+    _ctrl = AnimationController(vsync: this, duration: const Duration(milliseconds: 380));
   }
 
   @override
@@ -386,14 +431,22 @@ class _FlipExampleCardState extends State<_FlipExampleCard>
     super.dispose();
   }
 
-  void _toggle() {
-    if (widget.example.translation == null) return;
-    setState(() => _flipped = !_flipped);
-    if (_flipped) {
-      _ctrl.forward();
-    } else {
-      _ctrl.reverse();
-    }
+  Future<void> _toggle() async {
+    if (widget.example.translation == null || _animating) return;
+    _animating = true;
+    // Phase 1: squish to flat (0 → 0.5)
+    await _ctrl.animateTo(0.5, curve: Curves.easeIn);
+    if (mounted) setState(() => _flipped = !_flipped);
+    // Phase 2: expand back (0.5 → 1.0)
+    await _ctrl.animateTo(1.0, curve: Curves.elasticOut);
+    _ctrl.reset();
+    _animating = false;
+  }
+
+  double get _scaleY {
+    final v = _ctrl.value;
+    if (v <= 0.5) return 1.0 - v * 2.0;
+    return (v - 0.5) * 2.0;
   }
 
   @override
@@ -403,72 +456,68 @@ class _FlipExampleCardState extends State<_FlipExampleCard>
 
     return GestureDetector(
       onTap: _toggle,
-      child: AnimatedContainer(
-        duration: const Duration(milliseconds: 300),
-        margin: const EdgeInsets.only(bottom: 12),
-        padding: const EdgeInsets.all(18),
-        decoration: BoxDecoration(
-          color: _flipped ? const Color(0xFFF0FDF4) : AppColors.surface,
-          borderRadius: BorderRadius.circular(16),
-          border: Border.all(
-            color: _flipped ? AppColors.success.withOpacity(0.5) : AppColors.divider,
-            width: _flipped ? 1.5 : 1,
-          ),
-          boxShadow: [
-            BoxShadow(
-              color: Colors.black.withOpacity(0.04),
-              blurRadius: 8,
-              offset: const Offset(0, 2),
-            ),
-          ],
-        ),
-        child: Column(
-          crossAxisAlignment: CrossAxisAlignment.start,
-          children: [
-            // Highlighted sentence
-            _HighlightedSentence(sentence: e.sentence, highlight: e.highlight),
-
-            if (hasTranslation) ...[
-              const SizedBox(height: 12),
-              AnimatedSwitcher(
-                duration: const Duration(milliseconds: 250),
-                child: _flipped
-                    ? Column(
-                        key: const ValueKey('tr'),
-                        crossAxisAlignment: CrossAxisAlignment.start,
-                        children: [
-                          const Divider(height: 1),
-                          const SizedBox(height: 10),
-                          Row(
-                            children: [
-                              const Icon(Icons.translate, color: AppColors.success, size: 14),
-                              const SizedBox(width: 5),
-                              Text(
-                                e.translation!,
-                                style: const TextStyle(
-                                  fontSize: 14,
-                                  color: Color(0xFF166534),
-                                  fontStyle: FontStyle.italic,
-                                ),
-                              ),
-                            ],
-                          ),
-                        ],
-                      )
-                    : Row(
-                        key: const ValueKey('hint'),
-                        children: [
-                          const Icon(Icons.touch_app_outlined, size: 13, color: AppColors.textHint),
-                          const SizedBox(width: 4),
-                          Text(
-                            'Türkçe çeviriyi görmek için dokun',
-                            style: const TextStyle(fontSize: 11, color: AppColors.textHint),
-                          ),
-                        ],
-                      ),
+      child: AnimatedBuilder(
+        animation: _ctrl,
+        builder: (_, __) => Transform(
+          alignment: Alignment.center,
+          transform: Matrix4.identity()
+            ..setEntry(3, 2, 0.001)
+            ..setEntry(1, 1, _scaleY.clamp(0.001, 1.0)),
+          child: Container(
+            margin: const EdgeInsets.only(bottom: 12),
+            padding: const EdgeInsets.all(18),
+            decoration: BoxDecoration(
+              color: _flipped ? const Color(0xFFF0FDF4) : AppColors.surface,
+              borderRadius: BorderRadius.circular(16),
+              border: Border.all(
+                color: _flipped ? AppColors.success.withOpacity(0.5) : AppColors.divider,
+                width: _flipped ? 1.5 : 1,
               ),
-            ],
-          ],
+              boxShadow: [
+                BoxShadow(
+                  color: Colors.black.withOpacity(0.04),
+                  blurRadius: 8,
+                  offset: const Offset(0, 2),
+                ),
+              ],
+            ),
+            child: Column(
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: [
+                _HighlightedSentence(sentence: e.sentence, highlight: e.highlight),
+                if (hasTranslation) ...[
+                  const SizedBox(height: 12),
+                  if (_flipped) ...[
+                    const Divider(height: 1),
+                    const SizedBox(height: 10),
+                    Row(
+                      children: [
+                        const Icon(Icons.translate, color: AppColors.success, size: 14),
+                        const SizedBox(width: 5),
+                        Expanded(
+                          child: Text(
+                            e.translation!,
+                            style: const TextStyle(
+                              fontSize: 14, color: Color(0xFF166634), fontStyle: FontStyle.italic,
+                            ),
+                          ),
+                        ),
+                      ],
+                    ),
+                  ] else ...[
+                    Row(
+                      children: const [
+                        Icon(Icons.touch_app_outlined, size: 13, color: AppColors.textHint),
+                        SizedBox(width: 4),
+                        Text('Türkçe çeviriyi görmek için dokun',
+                            style: TextStyle(fontSize: 11, color: AppColors.textHint)),
+                      ],
+                    ),
+                  ],
+                ],
+              ],
+            ),
+          ),
         ),
       ),
     );
@@ -606,7 +655,7 @@ class _AnimationCard extends StatelessWidget {
             const SizedBox(height: 16),
           ],
           if (section.animationType != null)
-            GrammarAnimationWidget(type: section.animationType!),
+            GrammarAnimationWidget(type: section.animationType!, section: section),
         ],
       ),
     );
@@ -658,7 +707,9 @@ class _PracticeCardState extends ConsumerState<_PracticeCard> {
       if (pool.isNotEmpty) {
         pool.shuffle();
         final count = widget.section.practiceCount;
-        _questions = pool.take(count).map((q) => q.withShuffledOptions()).toList();
+        final selected = pool.take(count).toList();
+        final withFifth = await repo.addFifthOptions(selected);
+        _questions = withFifth.map((q) => q.withShuffledOptions()).toList();
       } else {
         _questions = List.of(hardcoded)..shuffle();
       }
@@ -786,13 +837,67 @@ class _PracticeCardState extends ConsumerState<_PracticeCard> {
   }
 }
 
-class _QuestionCard extends StatelessWidget {
+class _QuestionCard extends StatefulWidget {
   final QuestionModel question;
   final int? selectedIndex;
   final bool answered;
   final ValueChanged<int> onSelect;
 
   const _QuestionCard({required this.question, required this.selectedIndex, required this.answered, required this.onSelect});
+
+  @override
+  State<_QuestionCard> createState() => _QuestionCardState();
+}
+
+class _QuestionCardState extends State<_QuestionCard> with TickerProviderStateMixin {
+  late List<AnimationController> _ctrls;
+
+  // Shake: offset sequence for wrong answer
+  Animation<Offset> _shakeAnim(AnimationController c) => TweenSequence<Offset>([
+    TweenSequenceItem(tween: Tween(begin: Offset.zero, end: const Offset(-0.04, 0)), weight: 1),
+    TweenSequenceItem(tween: Tween(begin: const Offset(-0.04, 0), end: const Offset(0.04, 0)), weight: 2),
+    TweenSequenceItem(tween: Tween(begin: const Offset(0.04, 0), end: const Offset(-0.03, 0)), weight: 2),
+    TweenSequenceItem(tween: Tween(begin: const Offset(-0.03, 0), end: Offset.zero), weight: 1),
+  ]).animate(CurvedAnimation(parent: c, curve: Curves.easeInOut));
+
+  // Bounce: scale sequence for correct answer
+  Animation<double> _bounceAnim(AnimationController c) => TweenSequence<double>([
+    TweenSequenceItem(tween: Tween(begin: 1.0, end: 1.10), weight: 1),
+    TweenSequenceItem(tween: Tween(begin: 1.10, end: 0.96), weight: 1),
+    TweenSequenceItem(tween: Tween(begin: 0.96, end: 1.0), weight: 1),
+  ]).animate(CurvedAnimation(parent: c, curve: Curves.easeInOut));
+
+  @override
+  void initState() {
+    super.initState();
+    _ctrls = List.generate(
+      widget.question.options.length,
+      (_) => AnimationController(vsync: this, duration: const Duration(milliseconds: 400)),
+    );
+  }
+
+  @override
+  void didUpdateWidget(_QuestionCard old) {
+    super.didUpdateWidget(old);
+    if (!old.answered && widget.answered && widget.selectedIndex != null) {
+      final sel = widget.selectedIndex!;
+      final correct = widget.question.correctIndex;
+      if (sel == correct) {
+        _ctrls[correct].forward(from: 0);
+      } else {
+        _ctrls[sel].forward(from: 0);
+        Future.delayed(const Duration(milliseconds: 220), () {
+          if (mounted && correct < _ctrls.length) _ctrls[correct].forward(from: 0);
+        });
+      }
+    }
+  }
+
+  @override
+  void dispose() {
+    for (final c in _ctrls) c.dispose();
+    super.dispose();
+  }
 
   @override
   Widget build(BuildContext context) {
@@ -806,54 +911,69 @@ class _QuestionCard extends StatelessWidget {
             borderRadius: BorderRadius.circular(14),
             border: Border.all(color: AppColors.divider),
           ),
-          child: Text(question.questionText, style: AppTextStyles.body),
+          child: Text(widget.question.questionText, style: AppTextStyles.body),
         ),
         const SizedBox(height: 10),
-        ...List.generate(question.options.length, (i) {
+        ...List.generate(widget.question.options.length, (i) {
           Color? bg;
           Color border = AppColors.divider;
-          final selected = selectedIndex == i;
-          if (answered) {
-            if (i == question.correctIndex) { bg = AppColors.successLight; border = AppColors.success; }
+          final selected = widget.selectedIndex == i;
+          final isCorrect = i == widget.question.correctIndex;
+          final isWrongSelected = widget.answered && selected && !isCorrect;
+          if (widget.answered) {
+            if (isCorrect) { bg = AppColors.successLight; border = AppColors.success; }
             else if (selected) { bg = AppColors.errorLight; border = AppColors.error; }
           } else if (selected) { border = AppColors.primary; }
 
-          return GestureDetector(
-            onTap: () => onSelect(i),
-            child: AnimatedContainer(
-              duration: const Duration(milliseconds: 180),
-              margin: const EdgeInsets.only(bottom: 8),
-              padding: const EdgeInsets.symmetric(horizontal: 14, vertical: 13),
-              decoration: BoxDecoration(
-                color: bg ?? AppColors.surface,
-                borderRadius: BorderRadius.circular(11),
-                border: Border.all(color: border, width: selected || bg != null ? 2 : 1),
-              ),
-              child: Row(
-                children: [
-                  Container(
-                    width: 28,
-                    height: 28,
-                    decoration: BoxDecoration(
-                      shape: BoxShape.circle,
-                      color: bg != null ? (i == question.correctIndex ? AppColors.success : AppColors.error)
-                          : (selected ? AppColors.primary : AppColors.surfaceVariant),
-                    ),
-                    child: Center(
-                      child: Text(
-                        String.fromCharCode(65 + i),
-                        style: TextStyle(fontWeight: FontWeight.w700, fontSize: 13,
-                            color: bg != null || selected ? Colors.white : AppColors.textSecondary),
+          final ctrl = _ctrls[i];
+          final shake = _shakeAnim(ctrl);
+          final bounce = _bounceAnim(ctrl);
+
+          return AnimatedBuilder(
+            animation: ctrl,
+            builder: (_, child) {
+              Widget option = child!;
+              if (isWrongSelected) option = SlideTransition(position: shake, child: option);
+              if (widget.answered && isCorrect) option = ScaleTransition(scale: bounce, child: option);
+              return option;
+            },
+            child: GestureDetector(
+              onTap: () => widget.onSelect(i),
+              child: AnimatedContainer(
+                duration: const Duration(milliseconds: 180),
+                margin: const EdgeInsets.only(bottom: 8),
+                padding: const EdgeInsets.symmetric(horizontal: 14, vertical: 13),
+                decoration: BoxDecoration(
+                  color: bg ?? AppColors.surface,
+                  borderRadius: BorderRadius.circular(11),
+                  border: Border.all(color: border, width: selected || bg != null ? 2 : 1),
+                ),
+                child: Row(
+                  children: [
+                    Container(
+                      width: 28,
+                      height: 28,
+                      decoration: BoxDecoration(
+                        shape: BoxShape.circle,
+                        color: bg != null ? (isCorrect ? AppColors.success : AppColors.error)
+                            : (selected ? AppColors.primary : AppColors.surfaceVariant),
+                      ),
+                      child: Center(
+                        child: Text(
+                          String.fromCharCode(65 + i),
+                          style: TextStyle(fontWeight: FontWeight.w700, fontSize: 13,
+                              color: bg != null || selected ? Colors.white : AppColors.textSecondary),
+                        ),
                       ),
                     ),
-                  ),
-                  const SizedBox(width: 10),
-                  Expanded(child: Text(question.options[i], style: AppTextStyles.body)),
-                  if (answered && i == question.correctIndex)
-                    const Icon(Icons.check_circle, color: AppColors.success, size: 18),
-                  if (answered && selected && i != question.correctIndex)
-                    const Icon(Icons.cancel, color: AppColors.error, size: 18),
-                ],
+                    const SizedBox(width: 10),
+                    Expanded(child: Text(widget.question.options[i], style: AppTextStyles.body)),
+                    if (widget.answered && isCorrect)
+                      const Icon(Icons.check_circle, color: AppColors.success, size: 18),
+                    if (widget.answered && selected && !isCorrect)
+                      const Icon(Icons.cancel, color: AppColors.error, size: 18),
+                  ],
+                ),
               ),
             ),
           );
@@ -1064,5 +1184,281 @@ class _RichBody extends StatelessWidget {
     }
     if (last < line.length) spans.add(TextSpan(text: line.substring(last)));
     return RichText(text: TextSpan(style: AppTextStyles.body, children: spans));
+  }
+}
+
+// ─────────────────────────────────────────────────────────────────────────────
+// DIALOGUE CARD — animated chat bubbles between ATC/Pilot, Cabin/Passenger etc.
+// ─────────────────────────────────────────────────────────────────────────────
+
+class _DialogueCard extends StatefulWidget {
+  final LessonSection section;
+  const _DialogueCard({required this.section});
+
+  @override
+  State<_DialogueCard> createState() => _DialogueCardState();
+}
+
+class _DialogueCardState extends State<_DialogueCard> with TickerProviderStateMixin {
+  late List<AnimationController> _ctrs;
+  late List<Animation<double>> _fades;
+  late List<Animation<Offset>> _slides;
+  bool _showTranslations = false;
+
+  static Color _speakerColor(DialogueSpeaker s) => switch (s) {
+    DialogueSpeaker.atc       => const Color(0xFF1D4ED8),
+    DialogueSpeaker.pilot     => const Color(0xFFD97706),
+    DialogueSpeaker.captain   => const Color(0xFF0F3460),
+    DialogueSpeaker.cabin     => const Color(0xFF7C3AED),
+    DialogueSpeaker.passenger => const Color(0xFF6B7280),
+    DialogueSpeaker.amt       => const Color(0xFFB45309),
+    DialogueSpeaker.engineer  => const Color(0xFF059669),
+  };
+
+  static String _speakerLabel(DialogueSpeaker s) => switch (s) {
+    DialogueSpeaker.atc       => 'ATC',
+    DialogueSpeaker.pilot     => 'PILOT',
+    DialogueSpeaker.captain   => 'CAPTAIN',
+    DialogueSpeaker.cabin     => 'CABIN',
+    DialogueSpeaker.passenger => 'PAX',
+    DialogueSpeaker.amt       => 'AMT',
+    DialogueSpeaker.engineer  => 'ENG',
+  };
+
+  static String _speakerEmoji(DialogueSpeaker s) => switch (s) {
+    DialogueSpeaker.atc       => '🗼',
+    DialogueSpeaker.pilot     => '✈️',
+    DialogueSpeaker.captain   => '👨‍✈️',
+    DialogueSpeaker.cabin     => '💺',
+    DialogueSpeaker.passenger => '🧑',
+    DialogueSpeaker.amt       => '🔧',
+    DialogueSpeaker.engineer  => '📋',
+  };
+
+  // "right-side" speakers (bubble on right)
+  static bool _isRight(DialogueSpeaker s) =>
+      s == DialogueSpeaker.pilot || s == DialogueSpeaker.captain ||
+      s == DialogueSpeaker.cabin || s == DialogueSpeaker.amt;
+
+  @override
+  void initState() {
+    super.initState();
+    final lines = widget.section.dialogueLines ?? [];
+    _ctrs = List.generate(lines.length, (i) =>
+        AnimationController(vsync: this, duration: const Duration(milliseconds: 380)));
+    _fades = _ctrs.map((c) => CurvedAnimation(parent: c, curve: Curves.easeOut)).toList();
+    _slides = _ctrs.asMap().entries.map((e) {
+      final right = _isRight(lines[e.key].speaker);
+      return Tween<Offset>(
+        begin: Offset(right ? 0.2 : -0.2, 0),
+        end: Offset.zero,
+      ).animate(CurvedAnimation(parent: e.value, curve: Curves.easeOut));
+    }).toList();
+
+    // Staggered entry: each bubble 140ms after the previous
+    for (int i = 0; i < _ctrs.length; i++) {
+      Future.delayed(Duration(milliseconds: 120 + i * 160), () {
+        if (mounted) _ctrs[i].forward();
+      });
+    }
+  }
+
+  @override
+  void dispose() {
+    for (final c in _ctrs) { c.dispose(); }
+    super.dispose();
+  }
+
+  @override
+  Widget build(BuildContext context) {
+    final lines = widget.section.dialogueLines ?? [];
+    final hasTranslations = lines.any((l) => l.translation != null);
+
+    return Container(
+      color: const Color(0xFFF0F4FF),
+      child: Column(
+        children: [
+          // ── Header ─────────────────────────────────────────────────────────
+          Container(
+            width: double.infinity,
+            padding: const EdgeInsets.fromLTRB(20, 20, 20, 14),
+            decoration: const BoxDecoration(
+              gradient: LinearGradient(
+                colors: [Color(0xFF1E3A5F), Color(0xFF2563EB)],
+                begin: Alignment.topLeft,
+                end: Alignment.bottomRight,
+              ),
+            ),
+            child: Column(
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: [
+                Row(
+                  children: [
+                    const Text('📡', style: TextStyle(fontSize: 20)),
+                    const SizedBox(width: 10),
+                    Expanded(
+                      child: Text(
+                        widget.section.title ?? 'Radyo İletişimi',
+                        style: const TextStyle(color: Colors.white, fontSize: 16, fontWeight: FontWeight.w800),
+                      ),
+                    ),
+                    if (hasTranslations)
+                      GestureDetector(
+                        onTap: () => setState(() => _showTranslations = !_showTranslations),
+                        child: AnimatedContainer(
+                          duration: const Duration(milliseconds: 200),
+                          padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 5),
+                          decoration: BoxDecoration(
+                            color: _showTranslations
+                                ? Colors.white
+                                : Colors.white.withValues(alpha: 0.15),
+                            borderRadius: BorderRadius.circular(20),
+                            border: Border.all(color: Colors.white.withValues(alpha: 0.4)),
+                          ),
+                          child: Text(
+                            _showTranslations ? '🇬🇧 İngilizce' : '🇹🇷 Çeviri',
+                            style: TextStyle(
+                              color: _showTranslations ? const Color(0xFF1E3A5F) : Colors.white,
+                              fontSize: 11, fontWeight: FontWeight.w700,
+                            ),
+                          ),
+                        ),
+                      ),
+                  ],
+                ),
+                if (widget.section.body != null) ...[
+                  const SizedBox(height: 6),
+                  Text(widget.section.body!, style: const TextStyle(color: Colors.white70, fontSize: 12)),
+                ],
+              ],
+            ),
+          ),
+
+          // ── Chat bubbles ───────────────────────────────────────────────────
+          Expanded(
+            child: ListView.builder(
+              padding: const EdgeInsets.fromLTRB(12, 16, 12, 24),
+              itemCount: lines.length,
+              itemBuilder: (_, i) {
+                final line = lines[i];
+                final right = _isRight(line.speaker);
+                final color = _speakerColor(line.speaker);
+                final displayText = _showTranslations && line.translation != null
+                    ? line.translation!
+                    : line.text;
+
+                return FadeTransition(
+                  opacity: _fades[i],
+                  child: SlideTransition(
+                    position: _slides[i],
+                    child: Padding(
+                      padding: const EdgeInsets.only(bottom: 12),
+                      child: Row(
+                        mainAxisAlignment: right ? MainAxisAlignment.end : MainAxisAlignment.start,
+                        crossAxisAlignment: CrossAxisAlignment.end,
+                        children: [
+                          if (!right) _buildAvatar(line.speaker, color),
+                          if (!right) const SizedBox(width: 8),
+                          Flexible(
+                            child: Column(
+                              crossAxisAlignment: right ? CrossAxisAlignment.end : CrossAxisAlignment.start,
+                              children: [
+                                Padding(
+                                  padding: EdgeInsets.only(
+                                    left: right ? 0 : 4,
+                                    right: right ? 4 : 0,
+                                    bottom: 3,
+                                  ),
+                                  child: Text(
+                                    '${_speakerEmoji(line.speaker)} ${_speakerLabel(line.speaker)}',
+                                    style: TextStyle(
+                                      fontSize: 10,
+                                      fontWeight: FontWeight.w700,
+                                      color: color,
+                                      letterSpacing: 0.5,
+                                    ),
+                                  ),
+                                ),
+                                Container(
+                                  padding: const EdgeInsets.symmetric(horizontal: 14, vertical: 10),
+                                  constraints: BoxConstraints(maxWidth: MediaQuery.of(context).size.width * 0.68),
+                                  decoration: BoxDecoration(
+                                    color: right ? color : Colors.white,
+                                    borderRadius: BorderRadius.only(
+                                      topLeft: const Radius.circular(16),
+                                      topRight: const Radius.circular(16),
+                                      bottomLeft: Radius.circular(right ? 16 : 4),
+                                      bottomRight: Radius.circular(right ? 4 : 16),
+                                    ),
+                                    boxShadow: [
+                                      BoxShadow(
+                                        color: color.withValues(alpha: right ? 0.3 : 0.08),
+                                        blurRadius: 8,
+                                        offset: const Offset(0, 2),
+                                      ),
+                                    ],
+                                    border: right ? null : Border.all(color: color.withValues(alpha: 0.2)),
+                                  ),
+                                  child: Text(
+                                    displayText,
+                                    style: TextStyle(
+                                      fontSize: 13.5,
+                                      color: right ? Colors.white : const Color(0xFF1E293B),
+                                      height: 1.45,
+                                      fontWeight: line.highlight ? FontWeight.w700 : FontWeight.w400,
+                                    ),
+                                  ),
+                                ),
+                                if (line.highlight)
+                                  Padding(
+                                    padding: EdgeInsets.only(
+                                      top: 4,
+                                      left: right ? 0 : 4,
+                                      right: right ? 4 : 0,
+                                    ),
+                                    child: Container(
+                                      padding: const EdgeInsets.symmetric(horizontal: 8, vertical: 3),
+                                      decoration: BoxDecoration(
+                                        color: color.withValues(alpha: 0.1),
+                                        borderRadius: BorderRadius.circular(8),
+                                        border: Border.all(color: color.withValues(alpha: 0.3)),
+                                      ),
+                                      child: Text(
+                                        '⭐ Önemli ifade',
+                                        style: TextStyle(fontSize: 10, color: color, fontWeight: FontWeight.w600),
+                                      ),
+                                    ),
+                                  ),
+                              ],
+                            ),
+                          ),
+                          if (right) const SizedBox(width: 8),
+                          if (right) _buildAvatar(line.speaker, color),
+                        ],
+                      ),
+                    ),
+                  ),
+                );
+              },
+            ),
+          ),
+        ],
+      ),
+    );
+  }
+
+  Widget _buildAvatar(DialogueSpeaker speaker, Color color) {
+    return Container(
+      width: 36,
+      height: 36,
+      decoration: BoxDecoration(
+        color: color.withValues(alpha: 0.12),
+        shape: BoxShape.circle,
+        border: Border.all(color: color.withValues(alpha: 0.35), width: 1.5),
+      ),
+      child: Center(
+        child: Text(_speakerEmoji(speaker), style: const TextStyle(fontSize: 18)),
+      ),
+    );
   }
 }

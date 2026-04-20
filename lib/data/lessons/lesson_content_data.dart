@@ -1,4 +1,5 @@
-﻿import '../models/lesson_content_model.dart';
+﻿import 'package:flutter/material.dart' show Color;
+import '../models/lesson_content_model.dart';
 import '../models/question_model.dart';
 import '../models/user_profile_model.dart';
 
@@ -99,6 +100,11 @@ class LessonContentData {
   // Not: all listesi zaten yeni dersleri içeriyor, sadece rol-özel dersler eklenir
   static const List<LessonContent> _everything = [
     ...all,
+    // Dialogue lessons
+    _pilotDlg1, _pilotDlg2, _pilotDlg3,
+    _cabinDlg1, _cabinDlg2,
+    _amtDlg1,
+    _studentDlg1,
     // Cabin crew lessons
     _cabin1SafetyAnnouncements,
     _cabin2PassengerComm,
@@ -143,7 +149,10 @@ class LessonContentData {
   static List<LessonContent> forRole(String role) {
     switch (role) {
       case 'pilot':
-        return all;
+        return const [
+          ...all,
+          _pilotDlg1, _pilotDlg2, _pilotDlg3,
+        ];
       case 'cabin_crew':
         return const [
           // Temel dil bilgisi (beginner)
@@ -165,6 +174,8 @@ class LessonContentData {
           _cabin13ConflictResolution, _cabin14CustomsForms,
           _cabin15CrewRest, _cabin16MaydayPanPan,
           _cabin17InfantSafety, _cabin18ServiceFailure,
+          // Kabin diyalog dersleri
+          _cabinDlg1, _cabinDlg2,
         ];
       case 'amt':
         return const [
@@ -185,6 +196,8 @@ class LessonContentData {
           _amt13AvionicsTroubleshooting, _amt14PartsLogistics,
           _amt15CertificationRelease, _amt16FuelSystem,
           _amt17LandingGear, _amt18SafetyMgmt,
+          // AMT diyalog dersleri
+          _amtDlg1,
         ];
       case 'student':
       default:
@@ -205,6 +218,8 @@ class LessonContentData {
           _notamReading, _reportedSpeech, _instrumentSystems,
           _flightPlanReading, _ifrClearance, _atisDecoding,
           _navSystemsVocab, _tafReading,
+          // Diyalog dersleri
+          _studentDlg1,
         ];
     }
   }
@@ -261,6 +276,29 @@ class LessonContentData {
             highlight: 'must be placed',
             translation: 'Bakımdan önce kokpite uyarı levhaları yerleştirilmelidir.',
           ),
+        ],
+      ),
+      LessonSection(
+        type: LessonSectionType.animation,
+        title: 'Cümle Yapısını Gör',
+        animationType: GrammarAnimationType.sentenceStructure,
+        sentenceTokens: [
+          [
+            SentenceToken('The fuel filter', 'subject', 'Özne'),
+            SentenceToken('was replaced', 'verb', 'Fiil (Edilgen)'),
+            SentenceToken('by the engineer', 'adverbial', 'Zarflık'),
+          ],
+          [
+            SentenceToken('All checklists', 'subject', 'Özne'),
+            SentenceToken('must be completed', 'verb', 'Fiil (Edilgen)'),
+            SentenceToken('before departure', 'adverbial', 'Zarflık'),
+          ],
+          [
+            SentenceToken('The aircraft', 'subject', 'Özne'),
+            SentenceToken('was cleared', 'verb', 'Fiil (Edilgen)'),
+            SentenceToken('for landing', 'adverbial', 'Zarflık'),
+            SentenceToken('by ATC', 'adverbial', 'Zarflık'),
+          ],
         ],
       ),
       LessonSection(
@@ -453,6 +491,34 @@ class LessonContentData {
         title: '🔧 Hidrolik & İniş Takımı',
         body:
             '**Hydraulic actuator** — converts hydraulic pressure to mechanical movement\n**Hydraulic pump** — pressurizes hydraulic fluid\n**Landing gear strut** — shock-absorbing leg of landing gear\n**Torque link** — scissors linkage preventing wheel rotation on strut\n**Brake assembly** — disc brakes on main landing gear wheels',
+      ),
+      LessonSection(
+        type: LessonSectionType.animation,
+        title: 'Kelime Yapısını Keşfet',
+        animationType: GrammarAnimationType.wordBuilder,
+        wordMorphemes: [
+          ('AIRWORTHINESS', [
+            WordMorpheme('AIR', 'root', 'hava'),
+            WordMorpheme('WORTH', 'root', 'değer/layık'),
+            WordMorpheme('I', 'suffix', 'bağlaç'),
+            WordMorpheme('NESS', 'suffix', 'durum/nitelik'),
+          ]),
+          ('UNSERVICEABLE', [
+            WordMorpheme('UN', 'prefix', 'olumsuzluk'),
+            WordMorpheme('SERVICE', 'root', 'hizmet'),
+            WordMorpheme('ABLE', 'suffix', 'yeteneğinde'),
+          ]),
+          ('PRESSURIZATION', [
+            WordMorpheme('PRESSURE', 'root', 'basınç'),
+            WordMorpheme('IZA', 'suffix', 'dönüşüm'),
+            WordMorpheme('TION', 'suffix', 'eylem adı'),
+          ]),
+          ('TROUBLESHOOTING', [
+            WordMorpheme('TROUBLE', 'root', 'sorun'),
+            WordMorpheme('SHOOT', 'root', 'çözme'),
+            WordMorpheme('ING', 'suffix', 'devam eden eylem'),
+          ]),
+        ],
       ),
       LessonSection(
         type: LessonSectionType.examples,
@@ -7622,6 +7688,975 @@ class LessonContentData {
             ],
             correctIndex: 1,
             difficulty: Difficulty.medium,
+          ),
+        ],
+      ),
+    ],
+  );
+
+  // ── DIALOGUE LESSONS ────────────────────────────────────────────────────────
+
+  static const _pilotDlg1 = LessonContent(
+    id: 'pilot_dlg_1',
+    title: 'Kalkış İzni: ATC ↔ Pilot',
+    subtitle: 'Gerçek radyo iletişimi — departure clearance diyaloğu',
+    categoryId: 'phraseology',
+    estimatedTime: '8 dk',
+    emoji: '🗼',
+    sections: [
+      LessonSection(
+        type: LessonSectionType.intro,
+        title: 'Kalkış İzni Nedir?',
+        body:
+            'Kalkış öncesi pilot, ATC\'den **departure clearance** (kalkış izni) alır. Bu iletişim, standart ICAO phraseology ile gerçekleşir ve pilot her talimatı **readback** (tekrar okuma) ile onaylar.\n\n'
+            'Bu derste gerçek bir kalkış iznini adım adım dinleyecek ve ifadeleri öğreneceksin.',
+      ),
+      LessonSection(
+        type: LessonSectionType.rule,
+        title: 'Readback Kuralı',
+        body:
+            'Pilot, ATC\'nin talimatını **aynen tekrar etmek** zorundadır:\n\n'
+            '**ATC:** "THY123, cleared to Istanbul, runway 36L, squawk 2341."\n'
+            '**PILOT:** "Cleared to Istanbul, runway 36L, squawk 2341, THY123."\n\n'
+            '• Uçuş numarası sona eklenir\n'
+            '• Rakamlar tek tek okunur: **2341 → two three four one**\n'
+            '• "Runway" yerine sadece numara: **"three six left"**',
+      ),
+      LessonSection(
+        type: LessonSectionType.dialogue,
+        title: 'Kalkış İzni — LTBA Yer Kontrolü',
+        body: 'Uçuş: THY123 · Rota: LTBA → LTFM · Pistler: 36L',
+        dialogueLines: [
+          DialogueLine(
+            speaker: DialogueSpeaker.pilot,
+            text: 'Istanbul Clearance, Turkish 123, request IFR clearance to Istanbul Sabiha, information Bravo.',
+            translation: 'İstanbul Yer Kontrolü, Turkish 123, İstanbul Sabiha\'ya IFR izni talep ediyorum, Bravo bilgisini aldım.',
+          ),
+          DialogueLine(
+            speaker: DialogueSpeaker.atc,
+            text: 'Turkish 123, cleared to Istanbul Sabiha airport via IXU1B departure, climb initially to flight level 100, squawk 2341.',
+            translation: 'Turkish 123, İstanbul Sabiha havalimanına IXU1B kalkış prosedürü ile kalkış izni verildi, başlangıçta FL100\'e tırman, transponder 2341.',
+            highlight: true,
+          ),
+          DialogueLine(
+            speaker: DialogueSpeaker.pilot,
+            text: 'Cleared to Istanbul Sabiha, IXU1B departure, climb flight level 100, squawk 2341, Turkish 123.',
+            translation: 'İstanbul Sabiha\'ya, IXU1B kalkış, FL100\'e tırmanış, transponder 2341, Turkish 123.',
+            highlight: true,
+          ),
+          DialogueLine(
+            speaker: DialogueSpeaker.atc,
+            text: 'Turkish 123, readback correct. Contact ground 121.8, good day.',
+            translation: 'Turkish 123, tekrar okumanız doğru. Yer kontrolü 121.8\'i arayın, güle güle.',
+          ),
+          DialogueLine(
+            speaker: DialogueSpeaker.pilot,
+            text: 'Ground 121.8, Turkish 123, good day.',
+            translation: 'Yer kontrolü 121.8, Turkish 123, güle güle.',
+          ),
+        ],
+      ),
+      LessonSection(
+        type: LessonSectionType.examples,
+        title: 'Temel Readback İfadeleri',
+        examples: [
+          ExampleSentence(sentence: 'Cleared to [destination] via [route].', translation: '[Varış noktasına] [rota] üzerinden kalkış izni verildi.', highlight: 'Cleared to'),
+          ExampleSentence(sentence: 'Climb initially to flight level [X].', translation: 'Başlangıçta FL[X]\'e tırman.', highlight: 'Climb initially'),
+          ExampleSentence(sentence: 'Squawk [code].', translation: 'Transponder kodu [kod].', highlight: 'Squawk'),
+          ExampleSentence(sentence: 'Readback correct, contact [frequency].', translation: 'Tekrar okumanız doğru, [frekans]\'ı arayın.', highlight: 'Readback correct'),
+        ],
+      ),
+      LessonSection(
+        type: LessonSectionType.tip,
+        title: '✈️ Sınav İpucu',
+        body:
+            'ICAO sınavında sık sorulan: **"What should a pilot do after receiving a clearance?"**\n\n'
+            'Cevap: **Read back all items** of the clearance correctly and in the same sequence.',
+      ),
+      LessonSection(
+        type: LessonSectionType.practice,
+        title: 'Pratik Sorular',
+        practiceQuestions: [
+          QuestionModel(
+            id: -300,
+            category: QuestionCategory.grammar,
+            originalNumber: 3000,
+            questionText: 'A pilot receives: "Cleared to Berlin, squawk 4521." The correct readback is:',
+            options: [
+              '"Cleared to Berlin, squawk 4521, [callsign]."',
+              '"Roger, understood."',
+              '"Affirmative, Berlin."',
+              '"Copy that, 4521."',
+            ],
+            correctIndex: 0,
+            difficulty: Difficulty.easy,
+          ),
+          QuestionModel(
+            id: -301,
+            category: QuestionCategory.grammar,
+            originalNumber: 3001,
+            questionText: 'In ICAO phraseology, "Readback correct" means:',
+            options: [
+              'The pilot has made an error in readback',
+              'The controller confirms the pilot repeated the clearance accurately',
+              'The pilot should read back again',
+              'The clearance has been changed',
+            ],
+            correctIndex: 1,
+            difficulty: Difficulty.easy,
+          ),
+          QuestionModel(
+            id: -302,
+            category: QuestionCategory.grammar,
+            originalNumber: 3002,
+            questionText: 'How is squawk code "2341" spoken in radio communication?',
+            options: [
+              '"Two thousand three hundred forty-one"',
+              '"Two three four one"',
+              '"Twenty-three forty-one"',
+              '"Code 2341"',
+            ],
+            correctIndex: 1,
+            difficulty: Difficulty.medium,
+          ),
+          QuestionModel(
+            id: -303,
+            category: QuestionCategory.grammar,
+            originalNumber: 3003,
+            questionText: '"Climb initially to flight level 100" means:',
+            options: [
+              'Climb to 100 feet',
+              'Climb to 10,000 feet as the first assigned altitude',
+              'Climb at 100 feet per minute',
+              'The final cruise altitude is FL100',
+            ],
+            correctIndex: 1,
+            difficulty: Difficulty.medium,
+          ),
+        ],
+      ),
+    ],
+  );
+
+  static const _pilotDlg2 = LessonContent(
+    id: 'pilot_dlg_2',
+    title: 'MAYDAY Çağrısı: Acil Durum İletişimi',
+    subtitle: 'Engine failure — gerçek acil durum diyaloğu',
+    categoryId: 'phraseology',
+    estimatedTime: '10 dk',
+    emoji: '🚨',
+    sections: [
+      LessonSection(
+        type: LessonSectionType.intro,
+        title: 'MAYDAY — En Yüksek Acil Seviyesi',
+        body:
+            '**MAYDAY**, can güvenliğini tehdit eden ciddi acil durumlarda kullanılan uluslararası distress çağrısıdır. Üç kez tekrarlanır.\n\n'
+            '• **MAYDAY MAYDAY MAYDAY** → Hayati tehlike\n'
+            '• **PAN-PAN PAN-PAN PAN-PAN** → Acil durum (hayati tehlike yok)\n\n'
+            'Bu derste bir motor arızasında kule ile pilot arasındaki iletişimi inceleyeceksin.',
+      ),
+      LessonSection(
+        type: LessonSectionType.animation,
+        title: 'MAYDAY vs PAN-PAN',
+        animationType: GrammarAnimationType.compareContrast,
+        contrastPair: ContrastPair(
+          leftLabel: 'MAYDAY',
+          rightLabel: 'PAN-PAN',
+          leftColor: Color(0xFFDC2626),
+          rightColor: Color(0xFFD97706),
+          leftEmoji: '🚨',
+          rightEmoji: '⚠️',
+          rows: [
+            ('Can tehlikesi — hayati tehdit', 'Acil durum — hayati tehdit YOK'),
+            ('"MAYDAY MAYDAY MAYDAY"', '"PAN-PAN PAN-PAN PAN-PAN"'),
+            ('Motor yangını, çarpışma, yapısal hasar', 'Yakıt azlığı, tıbbi durum, mekanik arıza'),
+            ('En yüksek öncelik — tüm trafik kesilir', 'Yüksek öncelik — diğer trafik devam eder'),
+            ('Fransızca: "m\'aider" → yardım et', 'Fransızca: "panne" → arıza/duruş'),
+          ],
+        ),
+      ),
+      LessonSection(
+        type: LessonSectionType.rule,
+        title: 'MAYDAY Formatı',
+        body:
+            'MAYDAY çağrısında 7 bilgi verilir:\n\n'
+            '1. **MAYDAY MAYDAY MAYDAY**\n'
+            '2. Muhatap birim: *"[Station name]"*\n'
+            '3. Uçak adı: *"[Aircraft callsign]"*\n'
+            '4. Acil durum türü: *"Engine failure"*\n'
+            '5. Pilot niyeti: *"Declaring emergency, requesting vectors to nearest airport"*\n'
+            '6. Mevcut pozisyon/irtifa: *"FL220, 40 miles east of Istanbul"*\n'
+            '7. Diğer bilgiler: *"Souls on board: 189, fuel: 2 hours"*',
+      ),
+      LessonSection(
+        type: LessonSectionType.dialogue,
+        title: 'Motor Arızası — Acil İniş',
+        body: 'Uçuş: THY456 · FL220 · Motor 2 arızası',
+        dialogueLines: [
+          DialogueLine(
+            speaker: DialogueSpeaker.pilot,
+            text: 'MAYDAY MAYDAY MAYDAY, Istanbul Radar, Turkish 456, engine number two failure, declaring emergency, request immediate descent and vectors to nearest suitable airport.',
+            translation: 'MAYDAY MAYDAY MAYDAY, İstanbul Radar, Turkish 456, motor iki arızası, acil durum ilan ediyorum, en yakın uygun havalimanına acil iniş ve yönlendirme talep ediyorum.',
+            highlight: true,
+          ),
+          DialogueLine(
+            speaker: DialogueSpeaker.atc,
+            text: 'Turkish 456, MAYDAY acknowledged. Turn left heading 270, descend flight level 100, Istanbul Atatürk is 35 miles to your west. Emergency services alerted.',
+            translation: 'Turkish 456, MAYDAY alındı. Sola 270 dereceye dön, FL100\'e alçal, İstanbul Atatürk batında 35 mil. Acil servisler uyarıldı.',
+            highlight: true,
+          ),
+          DialogueLine(
+            speaker: DialogueSpeaker.pilot,
+            text: 'Left heading 270, descending flight level 100, Turkish 456. Souls on board 189, fuel endurance 2 hours.',
+            translation: 'Sola 270 derece, FL100\'e alçalıyor, Turkish 456. Uçaktaki kişi sayısı 189, yakıt süresi 2 saat.',
+          ),
+          DialogueLine(
+            speaker: DialogueSpeaker.atc,
+            text: 'Turkish 456, roger. You are cleared direct Istanbul, descend altitude 3000 feet, QNH 1013. Runway 05 available, ILS approach.',
+            translation: 'Turkish 456, anlaşıldı. Doğruca İstanbul\'a izinlisiniz, 3000 feet\'e alçalın, QNH 1013. Pist 05 hazır, ILS yaklaşması.',
+          ),
+          DialogueLine(
+            speaker: DialogueSpeaker.pilot,
+            text: 'Direct Istanbul, altitude 3000 feet, QNH 1013, runway 05, Turkish 456. Request crash and fire services on standby.',
+            translation: 'Doğruca İstanbul, 3000 feet, QNH 1013, pist 05, Turkish 456. Kaza ve yangın ekiplerinin hazır beklemesini talep ediyoruz.',
+            highlight: true,
+          ),
+          DialogueLine(
+            speaker: DialogueSpeaker.atc,
+            text: 'Turkish 456, crash and fire services on standby runway 05. You are cleared ILS approach runway 05. Report established.',
+            translation: 'Turkish 456, kaza ve yangın ekipleri pist 05\'te hazır bekliyor. Pist 05 ILS yaklaşmasına izinlisiniz. Lokalizatöre girdiğinizde bildirin.',
+          ),
+        ],
+      ),
+      LessonSection(
+        type: LessonSectionType.examples,
+        title: 'Acil Durum İfadeleri',
+        examples: [
+          ExampleSentence(sentence: 'Declaring emergency, [reason].', translation: 'Acil durum ilan ediyorum, [sebep].', highlight: 'Declaring emergency'),
+          ExampleSentence(sentence: 'Request immediate descent and vectors.', translation: 'Acil iniş ve yönlendirme talep ediyorum.', highlight: 'Request immediate'),
+          ExampleSentence(sentence: 'Souls on board [number], fuel endurance [time].', translation: 'Uçaktaki kişi sayısı [sayı], yakıt süresi [süre].', highlight: 'Souls on board'),
+          ExampleSentence(sentence: 'Request crash and fire services on standby.', translation: 'Kaza ve yangın ekiplerinin hazır beklemesini talep ediyoruz.', highlight: 'crash and fire services'),
+        ],
+      ),
+      LessonSection(
+        type: LessonSectionType.tip,
+        title: '🚨 Sınav İpucu',
+        body:
+            'ICAO sınavında **MAYDAY vs PAN-PAN** farkı sık sorulur:\n\n'
+            '• **MAYDAY** = imminent danger to life (can tehlikesi mevcut)\n'
+            '• **PAN-PAN** = urgency, no immediate danger to life (acil ama hayati tehlike yok)\n\n'
+            'Örnek: Yakıt azlığı → **PAN-PAN** | Motor yangını → **MAYDAY**',
+      ),
+      LessonSection(
+        type: LessonSectionType.practice,
+        title: 'Pratik Sorular',
+        practiceQuestions: [
+          QuestionModel(
+            id: -304,
+            category: QuestionCategory.grammar,
+            originalNumber: 3004,
+            questionText: 'How many times is "MAYDAY" repeated at the beginning of a distress call?',
+            options: ['Once', 'Twice', 'Three times', 'As many times as needed'],
+            correctIndex: 2,
+            difficulty: Difficulty.easy,
+          ),
+          QuestionModel(
+            id: -305,
+            category: QuestionCategory.grammar,
+            originalNumber: 3005,
+            questionText: '"Souls on board" refers to:',
+            options: ['Number of passengers only', 'Total number of people on the aircraft', 'Number of crew members', 'Number of conscious people'],
+            correctIndex: 1,
+            difficulty: Difficulty.easy,
+          ),
+          QuestionModel(
+            id: -306,
+            category: QuestionCategory.grammar,
+            originalNumber: 3006,
+            questionText: 'A pilot experiences cabin depressurization with no immediate threat to life. The correct call is:',
+            options: ['MAYDAY MAYDAY MAYDAY', 'PAN-PAN PAN-PAN PAN-PAN', 'EMERGENCY EMERGENCY', 'DISTRESS DISTRESS'],
+            correctIndex: 1,
+            difficulty: Difficulty.medium,
+          ),
+          QuestionModel(
+            id: -307,
+            category: QuestionCategory.grammar,
+            originalNumber: 3007,
+            questionText: '"Crash and fire services on standby" means:',
+            options: [
+              'A crash has already occurred',
+              'Fire trucks and rescue teams are ready at the airport in case of incident',
+              'The aircraft must land immediately',
+              'The runway is closed for other traffic',
+            ],
+            correctIndex: 1,
+            difficulty: Difficulty.medium,
+          ),
+        ],
+      ),
+    ],
+  );
+
+  static const _pilotDlg3 = LessonContent(
+    id: 'pilot_dlg_3',
+    title: 'Yaklaşma ve İniş: Approach ↔ Pilot',
+    subtitle: 'ILS yaklaşması, irtifa bildirimleri ve iniş izni',
+    categoryId: 'phraseology',
+    estimatedTime: '9 dk',
+    emoji: '🛬',
+    sections: [
+      LessonSection(
+        type: LessonSectionType.intro,
+        title: 'İniş Yaklaşması Süreci',
+        body:
+            'Iniş yaklaşmasında pilot **Approach Control** ve ardından **Tower** ile iletişim kurar. Süreç:\n\n'
+            '1. **Approach** frekansına geçiş\n'
+            '2. Pozisyon ve irtifa bildirimi\n'
+            '3. ILS frekansı ve pist bilgisi\n'
+            '4. **Tower** frekansına geçiş\n'
+            '5. İniş izni ve **"cleared to land"**',
+      ),
+      LessonSection(
+        type: LessonSectionType.dialogue,
+        title: 'ILS Yaklaşması — İstanbul',
+        body: 'Uçuş: THY789 · Yaklaşma pistı: 36R · QNH: 1015',
+        dialogueLines: [
+          DialogueLine(
+            speaker: DialogueSpeaker.pilot,
+            text: 'Istanbul Approach, Turkish 789, passing flight level 120, descending to 4000 feet, information Charlie.',
+            translation: 'İstanbul Yaklaşma, Turkish 789, FL120\'den geçiyor, 4000 feet\'e alçalıyor, Charlie bilgisini aldım.',
+          ),
+          DialogueLine(
+            speaker: DialogueSpeaker.atc,
+            text: 'Turkish 789, Istanbul Approach, radar contact. Descend altitude 3000 feet, QNH 1015. Expect ILS approach runway 36 right.',
+            translation: 'Turkish 789, İstanbul Yaklaşma, radar teması kuruldu. 3000 feet\'e alçal, QNH 1015. Pist 36 sağ ILS yaklaşması bekleniyor.',
+            highlight: true,
+          ),
+          DialogueLine(
+            speaker: DialogueSpeaker.pilot,
+            text: 'Descend 3000 feet, QNH 1015, Turkish 789. Request ILS frequency for runway 36 right.',
+            translation: '3000 feet\'e alçal, QNH 1015, Turkish 789. Pist 36 sağ ILS frekansını talep ediyorum.',
+          ),
+          DialogueLine(
+            speaker: DialogueSpeaker.atc,
+            text: 'Turkish 789, ILS 36R frequency 109.5. Turn left heading 060, intercept localizer. Report established.',
+            translation: 'Turkish 789, ILS 36R frekansı 109.5. Sola 060 dereceye dön, lokalizatörü kesmek için. Kurulduğunuzda bildirin.',
+            highlight: true,
+          ),
+          DialogueLine(
+            speaker: DialogueSpeaker.pilot,
+            text: 'Left heading 060, Turkish 789. Established ILS runway 36 right.',
+            translation: 'Sola 060 derece, Turkish 789. Pist 36 sağ ILS\'e kuruldu.',
+          ),
+          DialogueLine(
+            speaker: DialogueSpeaker.atc,
+            text: 'Turkish 789, contact Istanbul Tower 118.1. Good day.',
+            translation: 'Turkish 789, İstanbul Kule 118.1\'i arayın. Güle güle.',
+          ),
+          DialogueLine(
+            speaker: DialogueSpeaker.pilot,
+            text: 'Istanbul Tower, Turkish 789, ILS runway 36 right, fully established.',
+            translation: 'İstanbul Kule, Turkish 789, pist 36 sağ ILS\'e tam olarak kuruldu.',
+          ),
+          DialogueLine(
+            speaker: DialogueSpeaker.atc,
+            text: 'Turkish 789, wind 350 degrees 12 knots, runway 36 right, cleared to land.',
+            translation: 'Turkish 789, rüzgar 350 derece 12 knot, pist 36 sağ, iniş izni verildi.',
+            highlight: true,
+          ),
+          DialogueLine(
+            speaker: DialogueSpeaker.pilot,
+            text: 'Cleared to land, runway 36 right, Turkish 789.',
+            translation: 'İniş izni, pist 36 sağ, Turkish 789.',
+          ),
+        ],
+      ),
+      LessonSection(
+        type: LessonSectionType.examples,
+        title: 'Yaklaşma İfadeleri',
+        examples: [
+          ExampleSentence(sentence: 'Radar contact. Descend altitude [X] feet, QNH [Y].', translation: 'Radar teması. [X] feet\'e alçal, QNH [Y].', highlight: 'Radar contact'),
+          ExampleSentence(sentence: 'Report established [ILS/VOR approach].', translation: '[ILS/VOR] yaklaşmasına kurulduğunuzda bildirin.', highlight: 'Report established'),
+          ExampleSentence(sentence: 'Wind [direction] degrees [speed] knots, cleared to land.', translation: 'Rüzgar [yön] derece [hız] knot, iniş izni verildi.', highlight: 'cleared to land'),
+          ExampleSentence(sentence: 'Go around, I say again, go around.', translation: 'Alçalışı kes, tekrar ediyorum, alçalışı kes.', highlight: 'Go around'),
+        ],
+      ),
+      LessonSection(
+        type: LessonSectionType.practice,
+        title: 'Pratik Sorular',
+        practiceQuestions: [
+          QuestionModel(
+            id: -308,
+            category: QuestionCategory.grammar,
+            originalNumber: 3008,
+            questionText: '"Cleared to land" is given by:',
+            options: ['Approach Control', 'Tower Control', 'Ground Control', 'Area Control Centre'],
+            correctIndex: 1,
+            difficulty: Difficulty.easy,
+          ),
+          QuestionModel(
+            id: -309,
+            category: QuestionCategory.grammar,
+            originalNumber: 3009,
+            questionText: '"Report established" means the pilot should report when:',
+            options: [
+              'The aircraft reaches cruise altitude',
+              'The aircraft has intercepted and is tracking the ILS localizer/glideslope',
+              'The aircraft has landed',
+              'The pilot has received the ATIS information',
+            ],
+            correctIndex: 1,
+            difficulty: Difficulty.medium,
+          ),
+          QuestionModel(
+            id: -310,
+            category: QuestionCategory.grammar,
+            originalNumber: 3010,
+            questionText: 'What does "Go around" instruct the pilot to do?',
+            options: [
+              'Circle the airport at holding altitude',
+              'Abort the landing approach and climb away',
+              'Reduce speed and extend flaps',
+              'Contact tower on a different frequency',
+            ],
+            correctIndex: 1,
+            difficulty: Difficulty.medium,
+          ),
+          QuestionModel(
+            id: -311,
+            category: QuestionCategory.grammar,
+            originalNumber: 3011,
+            questionText: 'QNH refers to:',
+            options: [
+              'The wind speed at ground level',
+              'The altimeter setting to indicate altitude above mean sea level',
+              'The runway visual range',
+              'The ILS glideslope frequency',
+            ],
+            correctIndex: 1,
+            difficulty: Difficulty.medium,
+          ),
+        ],
+      ),
+    ],
+  );
+
+  static const _cabinDlg1 = LessonContent(
+    id: 'cabin_dlg_1',
+    title: 'Turbülans: Kabin ↔ Yolcu',
+    subtitle: 'Yolcu sakinleştirme ve güvenlik talimatları',
+    categoryId: 'phraseology',
+    estimatedTime: '8 dk',
+    emoji: '🌩️',
+    sections: [
+      LessonSection(
+        type: LessonSectionType.intro,
+        title: 'Turbülansta Kabin Yönetimi',
+        body:
+            'Turbülans anında kabin görevlisi **hem yolcuları sakinleştirmeli** hem de **güvenlik talimatlarını net biçimde iletmelidir**. İletişim tonu:\n\n'
+            '• **Sakin ama otoriter** — panik yaratmadan net talimat\n'
+            '• **Basit ve anlaşılır İngilizce** — yolcunun anlayacağı kelimeler\n'
+            '• **Empatik** — yolcunun korkusunu onaylamak',
+      ),
+      LessonSection(
+        type: LessonSectionType.dialogue,
+        title: 'Ciddi Turbülans Anında',
+        body: 'Uçuş sırasında beklenmeyen ciddi turbülans',
+        dialogueLines: [
+          DialogueLine(
+            speaker: DialogueSpeaker.captain,
+            text: 'Cabin crew, be seated immediately.',
+            translation: 'Kabin ekibi, hemen oturun.',
+            highlight: true,
+          ),
+          DialogueLine(
+            speaker: DialogueSpeaker.cabin,
+            text: 'Ladies and gentlemen, the captain has switched on the fasten seatbelt sign. Please return to your seats and fasten your seatbelts immediately.',
+            translation: 'Bayanlar ve baylar, kaptan emniyet kemeri işaretini yaktı. Lütfen hemen yerinize dönün ve emniyet kemerinizi bağlayın.',
+            highlight: true,
+          ),
+          DialogueLine(
+            speaker: DialogueSpeaker.passenger,
+            text: 'Excuse me, is this dangerous? I\'m very scared.',
+            translation: 'Affedersiniz, bu tehlikeli mi? Çok korkuyorum.',
+          ),
+          DialogueLine(
+            speaker: DialogueSpeaker.cabin,
+            text: 'I completely understand your concern. This is moderate turbulence — it is uncomfortable but completely safe. The aircraft is designed for this. Please keep your seatbelt fastened.',
+            translation: 'Endişenizi çok iyi anlıyorum. Bu orta şiddette turbülans — rahatsız edici ama tamamen güvenli. Uçak bunun için tasarlanmış. Lütfen emniyet kemerinizi bağlı tutun.',
+            highlight: true,
+          ),
+          DialogueLine(
+            speaker: DialogueSpeaker.passenger,
+            text: 'Can I go to the lavatory?',
+            translation: 'Tuvalete gidebilir miyim?',
+          ),
+          DialogueLine(
+            speaker: DialogueSpeaker.cabin,
+            text: 'I\'m sorry, that is not possible right now for your safety. Please remain seated with your seatbelt fastened until the sign is switched off.',
+            translation: 'Üzgünüm, güvenliğiniz için şu an bu mümkün değil. İşaret söndürülene kadar lütfen emniyet kemerinizle oturmaya devam edin.',
+          ),
+          DialogueLine(
+            speaker: DialogueSpeaker.cabin,
+            text: 'Ladies and gentlemen, the fasten seatbelt sign has been switched off. You may move around the cabin, but we recommend keeping your seatbelt fastened while seated.',
+            translation: 'Bayanlar ve baylar, emniyet kemeri işareti söndürüldü. Kabinde dolaşabilirsiniz, ancak oturduğunuzda emniyet kemerinizi bağlı tutmanızı öneririz.',
+          ),
+        ],
+      ),
+      LessonSection(
+        type: LessonSectionType.examples,
+        title: 'Kabin Güvenlik İfadeleri',
+        examples: [
+          ExampleSentence(sentence: 'Please fasten your seatbelt immediately.', translation: 'Lütfen emniyet kemerinizi hemen bağlayın.', highlight: 'fasten your seatbelt'),
+          ExampleSentence(sentence: 'This is [light/moderate/severe] turbulence.', translation: 'Bu [hafif/orta/şiddetli] turbülanstır.', highlight: 'turbulence'),
+          ExampleSentence(sentence: 'The aircraft is designed for this condition.', translation: 'Uçak bu durum için tasarlanmıştır.', highlight: 'designed for'),
+          ExampleSentence(sentence: 'Please remain seated until the sign is off.', translation: 'İşaret söndürülene kadar lütfen oturmaya devam edin.', highlight: 'remain seated'),
+        ],
+      ),
+      LessonSection(
+        type: LessonSectionType.practice,
+        title: 'Pratik Sorular',
+        practiceQuestions: [
+          QuestionModel(
+            id: -312,
+            category: QuestionCategory.grammar,
+            originalNumber: 3012,
+            questionText: 'When the captain says "Cabin crew, be seated immediately," the crew should:',
+            options: [
+              'Continue service and then sit down',
+              'Sit down immediately regardless of what they are doing',
+              'Ask the captain for clarification',
+              'Check the passengers first',
+            ],
+            correctIndex: 1,
+            difficulty: Difficulty.easy,
+          ),
+          QuestionModel(
+            id: -313,
+            category: QuestionCategory.grammar,
+            originalNumber: 3013,
+            questionText: '"Moderate turbulence" can be described to passengers as:',
+            options: [
+              '"Extremely dangerous, hold on tight"',
+              '"Uncomfortable but completely safe — the aircraft is designed for this"',
+              '"We may need to make an emergency landing"',
+              '"Minor bumps that pose no risk whatsoever"',
+            ],
+            correctIndex: 1,
+            difficulty: Difficulty.medium,
+          ),
+          QuestionModel(
+            id: -314,
+            category: QuestionCategory.grammar,
+            originalNumber: 3014,
+            questionText: 'A passenger asks to use the lavatory during heavy turbulence. The best response is:',
+            options: [
+              '"Of course, go ahead."',
+              '"I\'m sorry, for your safety please remain seated until the sign is off."',
+              '"Wait 5 minutes and then go."',
+              '"Only if you are quick."',
+            ],
+            correctIndex: 1,
+            difficulty: Difficulty.easy,
+          ),
+        ],
+      ),
+    ],
+  );
+
+  static const _cabinDlg2 = LessonContent(
+    id: 'cabin_dlg_2',
+    title: 'Tıbbi Acil: Kabin ↔ Kaptan',
+    subtitle: 'Havada tıbbi acil durum yönetimi ve bildirim',
+    categoryId: 'phraseology',
+    estimatedTime: '9 dk',
+    emoji: '🏥',
+    sections: [
+      LessonSection(
+        type: LessonSectionType.intro,
+        title: 'Havada Tıbbi Acil Durumlar',
+        body:
+            'Havada tıbbi acil durumda kabin görevlisi üç adımı hızla uygular:\n\n'
+            '1. **İlk değerlendirme** — bilinci, solunumu, nabzı kontrol et\n'
+            '2. **Kaptan bildirim** — belirlenen formatta bildir\n'
+            '3. **Doktor çağrısı** — "Is there a doctor on board?"\n\n'
+            'Kaptan, gerekirse **divert** (rota değişikliği) kararı verir.',
+      ),
+      LessonSection(
+        type: LessonSectionType.dialogue,
+        title: 'Yolcu Bayılma — Kabin ↔ Kokpit',
+        body: 'Koltuk 24A yolcusu bilincini kaybetti',
+        dialogueLines: [
+          DialogueLine(
+            speaker: DialogueSpeaker.cabin,
+            text: 'Captain, this is the senior cabin crew. We have a medical situation in the cabin. Passenger in seat 24A is unconscious, unresponsive. CPR may be required.',
+            translation: 'Kaptan, ben baş kabin görevlisiyim. Kabinde tıbbi bir durum var. 24A koltuğundaki yolcu bilinçsiz, yanıt vermiyor. CPR gerekebilir.',
+            highlight: true,
+          ),
+          DialogueLine(
+            speaker: DialogueSpeaker.captain,
+            text: 'Understood. Is there a medical professional on board?',
+            translation: 'Anlaşıldı. Uçakta tıbbi personel var mı?',
+          ),
+          DialogueLine(
+            speaker: DialogueSpeaker.cabin,
+            text: 'We are asking now. Ladies and gentlemen, is there a doctor or medical professional on board? Please press the call button or come to seat 24A.',
+            translation: 'Şu an soruyoruz. Bayanlar ve baylar, uçakta doktor veya tıbbi personel var mı? Lütfen çağrı butonuna basın veya 24A koltuğuna gelin.',
+          ),
+          DialogueLine(
+            speaker: DialogueSpeaker.passenger,
+            text: 'I\'m a cardiologist. I can help.',
+            translation: 'Ben kardiyologum. Yardımcı olabilirim.',
+          ),
+          DialogueLine(
+            speaker: DialogueSpeaker.cabin,
+            text: 'Captain, we have a cardiologist assisting. Patient is breathing but unconscious. Doctor requests supplemental oxygen and medical kit.',
+            translation: 'Kaptan, bir kardiyolog yardım ediyor. Hasta nefes alıyor ama bilinçsiz. Doktor ek oksijen ve tıbbi kit talep ediyor.',
+            highlight: true,
+          ),
+          DialogueLine(
+            speaker: DialogueSpeaker.captain,
+            text: 'Roger. I am contacting medical ground support. Prepare for possible diversion. Keep me updated every 5 minutes.',
+            translation: 'Anlaşıldı. Medikal yer desteğiyle iletişime geçiyorum. Olası rota değişikliğine hazırlanın. Her 5 dakikada güncelleyin.',
+            highlight: true,
+          ),
+          DialogueLine(
+            speaker: DialogueSpeaker.cabin,
+            text: 'Understood. Captain, doctor advises diversion is necessary. Patient condition is deteriorating.',
+            translation: 'Anlaşıldı. Kaptan, doktor rota değişikliğinin gerekli olduğunu söylüyor. Hastanın durumu kötüleşiyor.',
+          ),
+          DialogueLine(
+            speaker: DialogueSpeaker.captain,
+            text: 'Cabin crew, we are diverting to Ankara. ETA 25 minutes. Medical team will be at the gate.',
+            translation: 'Kabin ekibi, Ankara\'ya sapıyoruz. Tahmini varış 25 dakika. Tıbbi ekip kapıda bekliyor olacak.',
+          ),
+        ],
+      ),
+      LessonSection(
+        type: LessonSectionType.examples,
+        title: 'Tıbbi Acil İfadeleri',
+        examples: [
+          ExampleSentence(sentence: 'We have a medical situation in the cabin.', translation: 'Kabinde tıbbi bir durum var.', highlight: 'medical situation'),
+          ExampleSentence(sentence: 'Is there a doctor or medical professional on board?', translation: 'Uçakta doktor veya tıbbi personel var mı?', highlight: 'doctor on board'),
+          ExampleSentence(sentence: 'Patient is conscious/unconscious and breathing/not breathing.', translation: 'Hasta bilinçli/bilinçsiz ve nefes alıyor/almıyor.', highlight: 'conscious'),
+          ExampleSentence(sentence: 'We are diverting to [airport]. ETA [X] minutes.', translation: '[Havalimanı]\'na sapıyoruz. Tahmini varış [X] dakika.', highlight: 'diverting'),
+        ],
+      ),
+      LessonSection(
+        type: LessonSectionType.practice,
+        title: 'Pratik Sorular',
+        practiceQuestions: [
+          QuestionModel(
+            id: -315,
+            category: QuestionCategory.grammar,
+            originalNumber: 3015,
+            questionText: 'When reporting a medical situation to the captain, the cabin crew should include:',
+            options: [
+              'Only the passenger\'s name',
+              'Seat number, patient condition, and what is needed',
+              'A request to land immediately without explanation',
+              'Only the doctor\'s assessment',
+            ],
+            correctIndex: 1,
+            difficulty: Difficulty.easy,
+          ),
+          QuestionModel(
+            id: -316,
+            category: QuestionCategory.grammar,
+            originalNumber: 3016,
+            questionText: '"Diversion" in this context means:',
+            options: [
+              'Entertainment system malfunction',
+              'Changing the flight route to land at a different airport',
+              'Passenger disturbance',
+              'A detour to avoid weather',
+            ],
+            correctIndex: 1,
+            difficulty: Difficulty.easy,
+          ),
+          QuestionModel(
+            id: -317,
+            category: QuestionCategory.grammar,
+            originalNumber: 3017,
+            questionText: '"ETA" stands for:',
+            options: ['Emergency Technical Alert', 'Estimated Time of Arrival', 'Engine Thrust Adjustment', 'Evacuation Team Alert'],
+            correctIndex: 1,
+            difficulty: Difficulty.easy,
+          ),
+        ],
+      ),
+    ],
+  );
+
+  static const _amtDlg1 = LessonContent(
+    id: 'amt_dlg_1',
+    title: 'Arıza Teslimi: Teknisyen ↔ Kaptan',
+    subtitle: 'Teknik arıza bildirimi ve aircraft release diyaloğu',
+    categoryId: 'phraseology',
+    estimatedTime: '9 dk',
+    emoji: '🔧',
+    sections: [
+      LessonSection(
+        type: LessonSectionType.intro,
+        title: 'Uçuş Öncesi Teknik Teslim',
+        body:
+            'Bakım işlemi sonrasında teknisyen, uçağı **certify** ederek kaptana **release** (teslim) eder. Bu süreçte:\n\n'
+            '• Yapılan iş açıkça tarif edilir\n'
+            '• Herhangi bir **limitation** (kısıtlama) varsa bildirilir\n'
+            '• **Certificate of Release to Service (CRS)** verilir\n\n'
+            'Kaptan teknik günlüğü (technical log) imzalamadan önce soruları sorabilir.',
+      ),
+      LessonSection(
+        type: LessonSectionType.dialogue,
+        title: 'Hidrolik Arıza Sonrası Teslim',
+        body: 'Uçuş öncesi apron — AMT kaptan ile buluşuyor',
+        dialogueLines: [
+          DialogueLine(
+            speaker: DialogueSpeaker.amt,
+            text: 'Good morning, Captain. I\'m the certifying engineer. I need to brief you on the maintenance carried out overnight.',
+            translation: 'Günaydın Kaptan. Ben sertifika mühendisiyim. Geceyi kapsayan bakım hakkında sizi bilgilendirmem gerekiyor.',
+          ),
+          DialogueLine(
+            speaker: DialogueSpeaker.captain,
+            text: 'Good morning. What was the defect?',
+            translation: 'Günaydın. Arıza neydi?',
+          ),
+          DialogueLine(
+            speaker: DialogueSpeaker.amt,
+            text: 'We had a hydraulic fluid leak on the green system, identified at the actuator on the left main gear door. We replaced the actuator seal and re-sealed the line. System was pressure-tested and certified serviceable.',
+            translation: 'Yeşil sistemde hidrolik sıvı kaçağı vardı, sol ana iniş takımı kapı aktüatöründe tespit edildi. Aktüatör contasını değiştirdik ve hattı yeniden sızdırmaz hale getirdik. Sistem basınç testine tabi tutuldu ve hizmete uygun olarak sertifikalandırıldı.',
+            highlight: true,
+          ),
+          DialogueLine(
+            speaker: DialogueSpeaker.captain,
+            text: 'Any limitations or deferred items?',
+            translation: 'Herhangi bir kısıtlama veya ertelenen iş var mı?',
+            highlight: true,
+          ),
+          DialogueLine(
+            speaker: DialogueSpeaker.amt,
+            text: 'No limitations. All systems are serviceable. The MEL item from yesterday — the reading light in seat 12B — has also been rectified.',
+            translation: 'Kısıtlama yok. Tüm sistemler hizmete hazır. Dünden kalan MEL maddesi — 12B koltuğundaki okuma lambası — da giderildi.',
+          ),
+          DialogueLine(
+            speaker: DialogueSpeaker.captain,
+            text: 'Understood. What\'s the current hydraulic fluid level?',
+            translation: 'Anlaşıldı. Mevcut hidrolik sıvı seviyesi ne?',
+          ),
+          DialogueLine(
+            speaker: DialogueSpeaker.amt,
+            text: 'Green system is full — serviced to maximum per AMM 29-10-00. Total fluid added: 1.2 litres Skydrol LD-4.',
+            translation: 'Yeşil sistem dolu — AMM 29-10-00\'a göre maksimum seviyeye servis yapıldı. Toplam eklenen sıvı: 1,2 litre Skydrol LD-4.',
+          ),
+          DialogueLine(
+            speaker: DialogueSpeaker.captain,
+            text: 'Good. I\'m satisfied. I\'ll sign the tech log now.',
+            translation: 'Güzel. Tatmin oldum. Şimdi teknik günlüğü imzalayacağım.',
+          ),
+          DialogueLine(
+            speaker: DialogueSpeaker.amt,
+            text: 'Thank you, Captain. Certificate of Release to Service is on page 4. Safe flight.',
+            translation: 'Teşekkürler Kaptan. Hizmete Verme Sertifikası 4. sayfada. İyi uçuşlar.',
+            highlight: true,
+          ),
+        ],
+      ),
+      LessonSection(
+        type: LessonSectionType.examples,
+        title: 'Teknik Teslim İfadeleri',
+        examples: [
+          ExampleSentence(sentence: 'We replaced the [component] and pressure-tested the system.', translation: '[Bileşeni] değiştirdik ve sistemi basınç testine tabi tuttuk.', highlight: 'replaced'),
+          ExampleSentence(sentence: 'System was certified serviceable.', translation: 'Sistem hizmete uygun olarak sertifikalandırıldı.', highlight: 'certified serviceable'),
+          ExampleSentence(sentence: 'No limitations, all systems are serviceable.', translation: 'Kısıtlama yok, tüm sistemler hizmete hazır.', highlight: 'serviceable'),
+          ExampleSentence(sentence: 'Certificate of Release to Service is on page [X].', translation: 'Hizmete Verme Sertifikası [X]. sayfada.', highlight: 'Certificate of Release'),
+        ],
+      ),
+      LessonSection(
+        type: LessonSectionType.practice,
+        title: 'Pratik Sorular',
+        practiceQuestions: [
+          QuestionModel(
+            id: -318,
+            category: QuestionCategory.translation,
+            originalNumber: 3018,
+            questionText: '"Any limitations or deferred items?" — what is the captain asking?',
+            options: [
+              'If the flight will be delayed',
+              'If there are any operational restrictions or maintenance items postponed to a later date',
+              'If the MEL book is on board',
+              'If the maintenance was expensive',
+            ],
+            correctIndex: 1,
+            difficulty: Difficulty.medium,
+          ),
+          QuestionModel(
+            id: -319,
+            category: QuestionCategory.translation,
+            originalNumber: 3019,
+            questionText: '"Certificate of Release to Service (CRS)" means:',
+            options: [
+              'A document that records all flight hours',
+              'A document issued by a certifying engineer confirming the aircraft is airworthy after maintenance',
+              'A customs clearance document',
+              'The aircraft\'s insurance certificate',
+            ],
+            correctIndex: 1,
+            difficulty: Difficulty.medium,
+          ),
+          QuestionModel(
+            id: -320,
+            category: QuestionCategory.translation,
+            originalNumber: 3020,
+            questionText: 'Translate: "System was pressure-tested and certified serviceable."',
+            options: [
+              'Sistem kontrol edildi ve devre dışı bırakıldı.',
+              'Sistem basınç testine tabi tutuldu ve hizmete uygun olarak sertifikalandırıldı.',
+              'Sistem basınç altında arızalandı.',
+              'Sistem yeniden test edilmesi için beklemede.',
+            ],
+            correctIndex: 1,
+            difficulty: Difficulty.medium,
+          ),
+        ],
+      ),
+    ],
+  );
+
+  static const _studentDlg1 = LessonContent(
+    id: 'student_dlg_1',
+    title: 'İlk Radyo Teması: Tower ↔ Pilot',
+    subtitle: 'Temel ATC iletişimi — yeni başlayanlar için adım adım',
+    categoryId: 'phraseology',
+    estimatedTime: '7 dk',
+    emoji: '📻',
+    sections: [
+      LessonSection(
+        type: LessonSectionType.intro,
+        title: 'Radyo İletişimine Giriş',
+        body:
+            'Pilotlar ATC ile **standart kelimeler** kullanarak iletişim kurar. Bu dilde:\n\n'
+            '• Her kelime belirli anlam taşır — serbest konuşma yapılmaz\n'
+            '• Sayılar tek tek okunur: **270 → "two seven zero"**\n'
+            '• "Anlaşıldı" için **"Roger"** kullanılır\n'
+            '• "Evet" için **"Affirm"**, "Hayır" için **"Negative"**\n\n'
+            'Bu diyalogda temel kalkış hazırlığını adım adım göreceksin.',
+      ),
+      LessonSection(
+        type: LessonSectionType.rule,
+        title: 'Temel Radyo Kelimeleri',
+        body:
+            '• **Roger** — mesajı aldım ve anladım\n'
+            '• **Wilco** — aldım ve yapacağım (will comply)\n'
+            '• **Affirm** — evet\n'
+            '• **Negative** — hayır\n'
+            '• **Say again** — tekrar et\n'
+            '• **Stand by** — bekle\n'
+            '• **Go ahead** — devam et, dinliyorum\n'
+            '• **[Callsign] with you** — frekansa ilk çağrıda kullanılır',
+      ),
+      LessonSection(
+        type: LessonSectionType.dialogue,
+        title: 'Basit Kalkış — Kule İletişimi',
+        body: 'Öğrenci pilotu ile kule arasındaki temel iletişim',
+        dialogueLines: [
+          DialogueLine(
+            speaker: DialogueSpeaker.pilot,
+            text: 'Ankara Tower, Student 01, at the holding point runway 21, ready for departure.',
+            translation: 'Ankara Kule, Student 01, pist 21 bekleme noktasında, kalkışa hazır.',
+          ),
+          DialogueLine(
+            speaker: DialogueSpeaker.atc,
+            text: 'Student 01, Ankara Tower, hold position. Traffic on final.',
+            translation: 'Student 01, Ankara Kule, bekle. Finalden gelen trafik var.',
+            highlight: true,
+          ),
+          DialogueLine(
+            speaker: DialogueSpeaker.pilot,
+            text: 'Holding, Student 01.',
+            translation: 'Bekliyoruz, Student 01.',
+          ),
+          DialogueLine(
+            speaker: DialogueSpeaker.atc,
+            text: 'Student 01, wind 210 degrees 8 knots, runway 21, cleared for takeoff.',
+            translation: 'Student 01, rüzgar 210 derece 8 knot, pist 21, kalkış izni verildi.',
+            highlight: true,
+          ),
+          DialogueLine(
+            speaker: DialogueSpeaker.pilot,
+            text: 'Runway 21, cleared for takeoff, Student 01.',
+            translation: 'Pist 21, kalkış izni, Student 01.',
+          ),
+          DialogueLine(
+            speaker: DialogueSpeaker.atc,
+            text: 'Student 01, after departure turn left heading 180, climb to 3000 feet.',
+            translation: 'Student 01, kalkış sonrası sola 180 dereceye dön, 3000 feet\'e tırman.',
+          ),
+          DialogueLine(
+            speaker: DialogueSpeaker.pilot,
+            text: 'Left heading 180, climb 3000 feet, Student 01.',
+            translation: 'Sola 180 derece, 3000 feet tırmanış, Student 01.',
+          ),
+        ],
+      ),
+      LessonSection(
+        type: LessonSectionType.examples,
+        title: 'Temel Kalkış İfadeleri',
+        examples: [
+          ExampleSentence(sentence: 'Ready for departure.', translation: 'Kalkışa hazır.', highlight: 'Ready for departure'),
+          ExampleSentence(sentence: 'Cleared for takeoff, runway [X].', translation: 'Pist [X], kalkış izni verildi.', highlight: 'Cleared for takeoff'),
+          ExampleSentence(sentence: 'Hold position. Traffic on final.', translation: 'Bekle. Finalden gelen trafik var.', highlight: 'Hold position'),
+          ExampleSentence(sentence: 'After departure turn [left/right] heading [X].', translation: 'Kalkış sonrası [sola/sağa] [X] dereceye dön.', highlight: 'After departure'),
+        ],
+      ),
+      LessonSection(
+        type: LessonSectionType.tip,
+        title: '✈️ Başlangıç İpucu',
+        body:
+            'Radyo iletişiminde en çok yapılan hata: **gereksiz kelime kullanmak**.\n\n'
+            '❌ "Yes, I understand, we are going to hold, Student 01."\n'
+            '✅ "Holding, Student 01."\n\n'
+            'Kısa, net, standartta kal. **Less is more.**',
+      ),
+      LessonSection(
+        type: LessonSectionType.practice,
+        title: 'Pratik Sorular',
+        practiceQuestions: [
+          QuestionModel(
+            id: -321,
+            category: QuestionCategory.grammar,
+            originalNumber: 3021,
+            questionText: '"Roger" in aviation communication means:',
+            options: [
+              '"I will comply with your instruction"',
+              '"I have received and understood your message"',
+              '"Yes, I agree"',
+              '"Standby, I need to check"',
+            ],
+            correctIndex: 1,
+            difficulty: Difficulty.easy,
+          ),
+          QuestionModel(
+            id: -322,
+            category: QuestionCategory.grammar,
+            originalNumber: 3022,
+            questionText: 'How is the heading "270" spoken in radio communication?',
+            options: ['"Two seventy"', '"Two hundred seventy"', '"Two seven zero"', '"Heading 270"'],
+            correctIndex: 2,
+            difficulty: Difficulty.easy,
+          ),
+          QuestionModel(
+            id: -323,
+            category: QuestionCategory.grammar,
+            originalNumber: 3023,
+            questionText: '"Cleared for takeoff" is given when:',
+            options: [
+              'The aircraft is ready to start engines',
+              'The runway is free and the aircraft is authorized to take off',
+              'The aircraft has received the ATIS information',
+              'The squawk code has been assigned',
+            ],
+            correctIndex: 1,
+            difficulty: Difficulty.easy,
           ),
         ],
       ),

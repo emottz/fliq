@@ -140,6 +140,28 @@ class _SubscriptionScreenState extends ConsumerState<SubscriptionScreen> {
   bool _fourMonth = false;
   String _selectedRoleKey = 'pilot';
   bool _paymentResultHandled = false;
+  String? _currentPlanKey;
+
+  @override
+  void initState() {
+    super.initState();
+    _loadCurrentPlan();
+  }
+
+  Future<void> _loadCurrentPlan() async {
+    final uid = Supabase.instance.client.auth.currentUser?.id;
+    if (uid == null) return;
+    try {
+      final row = await Supabase.instance.client
+          .from('users')
+          .select('premium_plan')
+          .eq('id', uid)
+          .maybeSingle();
+      if (mounted && row != null) {
+        setState(() => _currentPlanKey = row['premium_plan'] as String?);
+      }
+    } catch (_) {}
+  }
 
   @override
   void didChangeDependencies() {
@@ -252,6 +274,7 @@ class _SubscriptionScreenState extends ConsumerState<SubscriptionScreen> {
   Widget build(BuildContext context) {
     final plan = _selected;
     final canPop = Navigator.canPop(context);
+    final isPremium = ref.watch(isPremiumProvider).value ?? false;
 
     return Scaffold(
       backgroundColor: const Color(0xFFF8FAFF),
@@ -269,7 +292,7 @@ class _SubscriptionScreenState extends ConsumerState<SubscriptionScreen> {
                   )
                 : null,
             flexibleSpace: FlexibleSpaceBar(
-              background: _HeroHeader(),
+              background: _HeroHeader(isPremium: isPremium),
             ),
           ),
 
@@ -283,6 +306,36 @@ class _SubscriptionScreenState extends ConsumerState<SubscriptionScreen> {
                     crossAxisAlignment: CrossAxisAlignment.stretch,
                     children: [
 
+                      // ── Mevcut premium banner ───────────────────────────────
+                      if (isPremium) ...[
+                        Container(
+                          padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 14),
+                          margin: const EdgeInsets.only(bottom: 20),
+                          decoration: BoxDecoration(
+                            gradient: const LinearGradient(
+                              colors: [Color(0xFF92400E), Color(0xFFD97706), Color(0xFFFBBF24)],
+                              begin: Alignment.topLeft,
+                              end: Alignment.bottomRight,
+                            ),
+                            borderRadius: BorderRadius.circular(16),
+                            boxShadow: [BoxShadow(color: const Color(0xFFD97706).withValues(alpha: 0.25), blurRadius: 12, offset: const Offset(0, 4))],
+                          ),
+                          child: const Row(
+                            children: [
+                              Text('👑', style: TextStyle(fontSize: 22)),
+                              SizedBox(width: 12),
+                              Column(
+                                crossAxisAlignment: CrossAxisAlignment.start,
+                                children: [
+                                  Text('Premium Üye', style: TextStyle(color: Colors.white, fontSize: 14, fontWeight: FontWeight.w800)),
+                                  Text('Planını aşağıdan görüntüleyebilir veya değiştirebilirsin', style: TextStyle(color: Colors.white70, fontSize: 11)),
+                                ],
+                              ),
+                            ],
+                          ),
+                        ),
+                      ],
+
                       // ── Periyot toggle ──────────────────────────────────────
                       _PeriodToggle(
                         fourMonth: _fourMonth,
@@ -294,6 +347,7 @@ class _SubscriptionScreenState extends ConsumerState<SubscriptionScreen> {
                       ..._plans.map((p) => _PlanCard(
                         plan: p,
                         isSelected: p.roleKey == _selectedRoleKey,
+                        isCurrentPlan: isPremium && p.roleKey == _currentPlanKey,
                         fourMonth: _fourMonth,
                         onTap: () => setState(() => _selectedRoleKey = p.roleKey),
                       )),
@@ -332,17 +386,22 @@ class _SubscriptionScreenState extends ConsumerState<SubscriptionScreen> {
                                 child: CircularProgressIndicator(color: AppColors.primary),
                               ),
                             )
-                          : _BuyButton(plan: plan, fourMonth: _fourMonth, onPressed: _purchase),
+                          : _BuyButton(
+                              plan: plan,
+                              fourMonth: _fourMonth,
+                              isPremium: isPremium,
+                              onPressed: _purchase,
+                            ),
 
                       const SizedBox(height: 12),
 
-                      // Ücretsiz devam
+                      // Geri dön / Ücretsiz devam
                       Center(
                         child: TextButton(
                           onPressed: _goBack,
-                          child: const Text(
-                            'Ücretsiz devam et',
-                            style: TextStyle(
+                          child: Text(
+                            isPremium ? 'Geri Dön' : 'Ücretsiz devam et',
+                            style: const TextStyle(
                               fontSize: 13,
                               color: AppColors.textSecondary,
                               fontWeight: FontWeight.w500,
@@ -360,7 +419,7 @@ class _SubscriptionScreenState extends ConsumerState<SubscriptionScreen> {
                       Center(
                         child: Text(
                           kIsWeb
-                              ? 'Güvenli ödeme · iyzico · İstediğin zaman iptal et'
+                              ? 'Güvenli ödeme · PayTR · İstediğin zaman iptal et'
                               : 'Google Play üzerinden güvenli ödeme · İstediğin zaman iptal et',
                           style: const TextStyle(fontSize: 11, color: AppColors.textHint),
                           textAlign: TextAlign.center,
@@ -382,6 +441,9 @@ class _SubscriptionScreenState extends ConsumerState<SubscriptionScreen> {
 // ── Hero header ───────────────────────────────────────────────────────────────
 
 class _HeroHeader extends StatelessWidget {
+  final bool isPremium;
+  const _HeroHeader({this.isPremium = false});
+
   @override
   Widget build(BuildContext context) {
     return Container(
@@ -399,9 +461,9 @@ class _HeroHeader extends StatelessWidget {
             mainAxisAlignment: MainAxisAlignment.end,
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
-              const Text(
-                '👑  Avialish Premium',
-                style: TextStyle(
+              Text(
+                isPremium ? '👑  Planlarını Yönet' : '👑  Avialish Premium',
+                style: const TextStyle(
                   color: Colors.white,
                   fontSize: 24,
                   fontWeight: FontWeight.w900,
@@ -409,9 +471,11 @@ class _HeroHeader extends StatelessWidget {
                 ),
               ),
               const SizedBox(height: 6),
-              const Text(
-                'Mesleğine özel içerik · Sınırsız pratik · Lig sistemi',
-                style: TextStyle(color: Colors.white70, fontSize: 13),
+              Text(
+                isPremium
+                    ? 'Mevcut planını görüntüle veya değiştir'
+                    : 'Mesleğine özel içerik · Sınırsız pratik · Lig sistemi',
+                style: const TextStyle(color: Colors.white70, fontSize: 13),
               ),
               const SizedBox(height: 14),
               // Trust chips
@@ -588,12 +652,14 @@ class _ToggleTab extends StatelessWidget {
 class _PlanCard extends StatelessWidget {
   final _Plan plan;
   final bool isSelected;
+  final bool isCurrentPlan;
   final bool fourMonth;
   final VoidCallback onTap;
 
   const _PlanCard({
     required this.plan,
     required this.isSelected,
+    this.isCurrentPlan = false,
     required this.fourMonth,
     required this.onTap,
   });
@@ -656,13 +722,31 @@ class _PlanCard extends StatelessWidget {
                     child: Column(
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
-                        Text(
-                          plan.label,
-                          style: TextStyle(
-                            fontSize: 15,
-                            fontWeight: FontWeight.w800,
-                            color: isSelected ? plan.accent : AppColors.textPrimary,
-                          ),
+                        Row(
+                          children: [
+                            Text(
+                              plan.label,
+                              style: TextStyle(
+                                fontSize: 15,
+                                fontWeight: FontWeight.w800,
+                                color: isSelected ? plan.accent : AppColors.textPrimary,
+                              ),
+                            ),
+                            if (isCurrentPlan) ...[
+                              const SizedBox(width: 6),
+                              Container(
+                                padding: const EdgeInsets.symmetric(horizontal: 7, vertical: 2),
+                                decoration: BoxDecoration(
+                                  color: const Color(0xFFD97706),
+                                  borderRadius: BorderRadius.circular(6),
+                                ),
+                                child: const Text(
+                                  '👑 Mevcut',
+                                  style: TextStyle(fontSize: 9, fontWeight: FontWeight.w800, color: Colors.white),
+                                ),
+                              ),
+                            ],
+                          ],
                         ),
                         Text(
                           plan.tagline,
@@ -932,12 +1016,16 @@ class _CouponSectionState extends ConsumerState<_CouponSection>
       if (uid == null) throw Exception('Giriş yapılmamış.');
 
       final result = await svc.redeemCoupon(preview.code);
-      await svc.activatePremiumFromCoupon(
-        uid: uid,
-        plan: result.plan,
-        code: result.code,
-        durationDays: result.durationDays,
-      );
+      if (result.plan == 'authorized') {
+        await svc.activateAuthorizedFromCoupon(uid: uid, code: result.code);
+      } else {
+        await svc.activatePremiumFromCoupon(
+          uid: uid,
+          plan: result.plan,
+          code: result.code,
+          durationDays: result.durationDays,
+        );
+      }
     } catch (e) {
       if (!mounted) return;
       setState(() {
@@ -1278,9 +1366,9 @@ class _PremiumCelebrationDialogState extends State<_PremiumCelebrationDialog>
                       },
                     ),
                     const SizedBox(height: 16),
-                    const Text(
-                      'Premium Aktif! 🎉',
-                      style: TextStyle(color: Colors.white, fontSize: 24, fontWeight: FontWeight.w900, shadows: [Shadow(color: Colors.black26, blurRadius: 6)]),
+                    Text(
+                      widget.preview.isAuthorized ? 'Yetkili Üye! 🎉' : 'Premium Aktif! 🎉',
+                      style: const TextStyle(color: Colors.white, fontSize: 24, fontWeight: FontWeight.w900, shadows: [Shadow(color: Colors.black26, blurRadius: 6)]),
                     ),
                     const SizedBox(height: 6),
                     Text(
@@ -1349,9 +1437,10 @@ class _PremiumCelebrationDialogState extends State<_PremiumCelebrationDialog>
 class _BuyButton extends StatelessWidget {
   final _Plan plan;
   final bool fourMonth;
+  final bool isPremium;
   final VoidCallback onPressed;
 
-  const _BuyButton({required this.plan, required this.fourMonth, required this.onPressed});
+  const _BuyButton({required this.plan, required this.fourMonth, this.isPremium = false, required this.onPressed});
 
   @override
   Widget build(BuildContext context) {
@@ -1389,7 +1478,7 @@ class _BuyButton extends StatelessWidget {
                 Text(plan.emoji, style: const TextStyle(fontSize: 18)),
                 const SizedBox(width: 8),
                 Text(
-                  '${plan.label} Planını Al',
+                  isPremium ? '${plan.label} Planına Geç' : '${plan.label} Planını Al',
                   style: const TextStyle(
                     color: Colors.white,
                     fontSize: 16,

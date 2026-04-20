@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:go_router/go_router.dart';
+import 'dart:math' as math;
 import '../../../core/constants/app_colors.dart';
 import '../../../core/constants/app_text_styles.dart';
 import '../../../data/lessons/lesson_content_data.dart';
@@ -424,7 +425,7 @@ class _SegmentedProgress extends StatelessWidget {
 
 // ── Continue button ───────────────────────────────────────────────────────────
 
-class _ContinueButton extends StatelessWidget {
+class _ContinueButton extends StatefulWidget {
   final bool isLast;
   final bool isLoading;
   final bool locked;
@@ -437,66 +438,101 @@ class _ContinueButton extends StatelessWidget {
   });
 
   @override
+  State<_ContinueButton> createState() => _ContinueButtonState();
+}
+
+class _ContinueButtonState extends State<_ContinueButton> with SingleTickerProviderStateMixin {
+  late AnimationController _pulse;
+  late Animation<double> _scale;
+
+  @override
+  void initState() {
+    super.initState();
+    _pulse = AnimationController(vsync: this, duration: const Duration(milliseconds: 900));
+    _scale = Tween<double>(begin: 1.0, end: 1.03)
+        .animate(CurvedAnimation(parent: _pulse, curve: Curves.easeInOut));
+    if (!widget.locked && !widget.isLoading) _pulse.repeat(reverse: true);
+  }
+
+  @override
+  void didUpdateWidget(_ContinueButton old) {
+    super.didUpdateWidget(old);
+    if (widget.locked || widget.isLoading) {
+      _pulse.stop();
+    } else if (!_pulse.isAnimating) {
+      _pulse.repeat(reverse: true);
+    }
+  }
+
+  @override
+  void dispose() {
+    _pulse.dispose();
+    super.dispose();
+  }
+
+  @override
   Widget build(BuildContext context) {
     return GestureDetector(
-      onTap: (isLoading || locked) ? null : onTap,
-      child: AnimatedContainer(
-        duration: const Duration(milliseconds: 200),
-        width: double.infinity,
-        height: 52,
-        decoration: BoxDecoration(
-          gradient: locked
-              ? null
-              : LinearGradient(
-                  colors: isLast
-                      ? [const Color(0xFF10B981), const Color(0xFF059669)]
-                      : [AppColors.primary, const Color(0xFF1D4ED8)],
-                  begin: Alignment.centerLeft,
-                  end: Alignment.centerRight,
-                ),
-          color: locked ? AppColors.divider : null,
-          borderRadius: BorderRadius.circular(14),
-          boxShadow: locked
-              ? null
-              : [
-                  BoxShadow(
-                    color: (isLast ? const Color(0xFF10B981) : AppColors.primary).withOpacity(0.35),
-                    blurRadius: 12,
-                    offset: const Offset(0, 4),
+      onTap: (widget.isLoading || widget.locked) ? null : widget.onTap,
+      child: AnimatedBuilder(
+        animation: _scale,
+        builder: (_, child) => Transform.scale(scale: _scale.value, child: child),
+        child: AnimatedContainer(
+          duration: const Duration(milliseconds: 200),
+          width: double.infinity,
+          height: 52,
+          decoration: BoxDecoration(
+            gradient: widget.locked
+                ? null
+                : LinearGradient(
+                    colors: widget.isLast
+                        ? [const Color(0xFF10B981), const Color(0xFF059669)]
+                        : [AppColors.primary, const Color(0xFF1D4ED8)],
+                    begin: Alignment.centerLeft,
+                    end: Alignment.centerRight,
                   ),
-                ],
-        ),
-        child: Center(
-          child: isLoading
-              ? const SizedBox(
-                  width: 22,
-                  height: 22,
-                  child: CircularProgressIndicator(color: Colors.white, strokeWidth: 2.5),
-                )
-              : Row(
-                  mainAxisSize: MainAxisSize.min,
-                  children: [
-                    if (locked) ...[
-                      const Icon(Icons.lock_outline, color: AppColors.textSecondary, size: 18),
-                      const SizedBox(width: 8),
-                      const Text(
-                        'Önce Alıştırmayı Tamamla',
-                        style: TextStyle(color: AppColors.textSecondary, fontSize: 15, fontWeight: FontWeight.w600),
-                      ),
-                    ] else ...[
-                      Text(
-                        isLast ? 'Dersi Tamamla' : 'Devam',
-                        style: const TextStyle(color: Colors.white, fontSize: 16, fontWeight: FontWeight.w700),
-                      ),
-                      const SizedBox(width: 8),
-                      Icon(
-                        isLast ? Icons.check_circle_outline : Icons.arrow_forward_rounded,
-                        color: Colors.white,
-                        size: 20,
-                      ),
-                    ],
+            color: widget.locked ? AppColors.divider : null,
+            borderRadius: BorderRadius.circular(14),
+            boxShadow: widget.locked
+                ? null
+                : [
+                    BoxShadow(
+                      color: (widget.isLast ? const Color(0xFF10B981) : AppColors.primary).withOpacity(0.35),
+                      blurRadius: 12,
+                      offset: const Offset(0, 4),
+                    ),
                   ],
-                ),
+          ),
+          child: Center(
+            child: widget.isLoading
+                ? const SizedBox(
+                    width: 22,
+                    height: 22,
+                    child: CircularProgressIndicator(color: Colors.white, strokeWidth: 2.5),
+                  )
+                : Row(
+                    mainAxisSize: MainAxisSize.min,
+                    children: [
+                      if (widget.locked) ...[
+                        const Icon(Icons.lock_outline, color: AppColors.textSecondary, size: 18),
+                        const SizedBox(width: 8),
+                        const Text('Önce Alıştırmayı Tamamla',
+                            style: TextStyle(color: AppColors.textSecondary, fontSize: 15, fontWeight: FontWeight.w600)),
+                      ] else ...[
+                        Text(
+                          widget.isLast ? 'Dersi Tamamla' : 'Devam',
+                          style: const TextStyle(color: Colors.white, fontSize: 16, fontWeight: FontWeight.w700),
+                        ),
+                        const SizedBox(width: 8),
+                        Icon(
+                          widget.isLast ? Icons.check_circle_outline : Icons.arrow_forward_rounded,
+                          color: Colors.white,
+                          size: 20,
+                        ),
+                      ],
+                    ],
+                  ),
+          ),
         ),
       ),
     );
@@ -515,23 +551,46 @@ class _CelebrationDialog extends StatefulWidget {
 }
 
 class _CelebrationDialogState extends State<_CelebrationDialog>
-    with SingleTickerProviderStateMixin {
+    with TickerProviderStateMixin {
   late AnimationController _ctrl;
+  late AnimationController _confettiCtrl;
   late Animation<double> _scale;
   late Animation<double> _fade;
+
+  static const _confettiColors = [
+    Color(0xFF2563EB), Color(0xFF10B981), Color(0xFFF59E0B),
+    Color(0xFFEF4444), Color(0xFF8B5CF6), Color(0xFF06B6D4),
+  ];
+
+  late final List<_ConfettiParticle> _particles;
 
   @override
   void initState() {
     super.initState();
-    _ctrl = AnimationController(vsync: this, duration: const Duration(milliseconds: 500));
+    final rng = math.Random();
+    _particles = List.generate(22, (i) => _ConfettiParticle(
+      x: rng.nextDouble(),
+      delay: rng.nextDouble() * 0.4,
+      speed: 0.5 + rng.nextDouble() * 0.5,
+      size: 5.0 + rng.nextDouble() * 6,
+      color: _confettiColors[i % _confettiColors.length],
+      angle: rng.nextDouble() * math.pi * 2,
+      spin: (rng.nextDouble() - 0.5) * 8,
+    ));
+
+    _ctrl = AnimationController(vsync: this, duration: const Duration(milliseconds: 550));
     _scale = CurvedAnimation(parent: _ctrl, curve: Curves.elasticOut);
     _fade = CurvedAnimation(parent: _ctrl, curve: Curves.easeIn);
     _ctrl.forward();
+
+    _confettiCtrl = AnimationController(vsync: this, duration: const Duration(milliseconds: 1800));
+    _confettiCtrl.forward();
   }
 
   @override
   void dispose() {
     _ctrl.dispose();
+    _confettiCtrl.dispose();
     super.dispose();
   }
 
@@ -541,85 +600,90 @@ class _CelebrationDialogState extends State<_CelebrationDialog>
       opacity: _fade,
       child: Dialog(
         shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(24)),
-        child: Padding(
-          padding: const EdgeInsets.all(28),
-          child: Column(
-            mainAxisSize: MainAxisSize.min,
+        child: ClipRRect(
+          borderRadius: BorderRadius.circular(24),
+          child: Stack(
             children: [
-              ScaleTransition(
-                scale: _scale,
-                child: Container(
-                  width: 88,
-                  height: 88,
-                  decoration: BoxDecoration(
-                    gradient: const LinearGradient(
-                      colors: [Color(0xFF10B981), Color(0xFF059669)],
-                      begin: Alignment.topLeft,
-                      end: Alignment.bottomRight,
-                    ),
-                    shape: BoxShape.circle,
-                    boxShadow: [
-                      BoxShadow(
-                        color: const Color(0xFF10B981).withOpacity(0.4),
-                        blurRadius: 20,
-                        offset: const Offset(0, 6),
-                      ),
-                    ],
-                  ),
-                  child: Center(
-                    child: Text(widget.lesson.emoji,
-                        style: const TextStyle(fontSize: 38)),
+              // Konfeti katmanı
+              Positioned.fill(
+                child: AnimatedBuilder(
+                  animation: _confettiCtrl,
+                  builder: (_, __) => CustomPaint(
+                    painter: _ConfettiPainter(_particles, _confettiCtrl.value),
                   ),
                 ),
               ),
-              const SizedBox(height: 16),
-              const Text('Ders Tamamlandı!',
-                  style: TextStyle(fontSize: 22, fontWeight: FontWeight.w800)),
-              const SizedBox(height: 4),
-              Text(
-                widget.lesson.title,
-                style: AppTextStyles.caption,
-                textAlign: TextAlign.center,
-              ),
-              const SizedBox(height: 18),
-              Container(
-                padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 12),
-                decoration: BoxDecoration(
-                  color: const Color(0xFFFFF7ED),
-                  borderRadius: BorderRadius.circular(14),
-                ),
-                child: const Row(
+              // İçerik
+              Padding(
+                padding: const EdgeInsets.all(28),
+                child: Column(
                   mainAxisSize: MainAxisSize.min,
                   children: [
-                    Icon(Icons.bolt, color: AppColors.xpOrange, size: 24),
-                    SizedBox(width: 6),
-                    Text(
-                      '+20 XP',
-                      style: TextStyle(
-                        fontSize: 20,
-                        fontWeight: FontWeight.w800,
-                        color: AppColors.xpOrange,
+                    ScaleTransition(
+                      scale: _scale,
+                      child: Container(
+                        width: 88,
+                        height: 88,
+                        decoration: BoxDecoration(
+                          gradient: const LinearGradient(
+                            colors: [Color(0xFF10B981), Color(0xFF059669)],
+                            begin: Alignment.topLeft,
+                            end: Alignment.bottomRight,
+                          ),
+                          shape: BoxShape.circle,
+                          boxShadow: [
+                            BoxShadow(
+                              color: const Color(0xFF10B981).withOpacity(0.4),
+                              blurRadius: 20,
+                              offset: const Offset(0, 6),
+                            ),
+                          ],
+                        ),
+                        child: Center(
+                          child: Text(widget.lesson.emoji, style: const TextStyle(fontSize: 38)),
+                        ),
                       ),
                     ),
-                    SizedBox(width: 4),
-                    Text('kazanıldı', style: TextStyle(fontSize: 14, color: AppColors.xpOrange)),
+                    const SizedBox(height: 16),
+                    const Text('Ders Tamamlandı!',
+                        style: TextStyle(fontSize: 22, fontWeight: FontWeight.w800)),
+                    const SizedBox(height: 4),
+                    Text(widget.lesson.title, style: AppTextStyles.caption, textAlign: TextAlign.center),
+                    const SizedBox(height: 18),
+                    Container(
+                      padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 12),
+                      decoration: BoxDecoration(
+                        color: const Color(0xFFFFF7ED),
+                        borderRadius: BorderRadius.circular(14),
+                      ),
+                      child: const Row(
+                        mainAxisSize: MainAxisSize.min,
+                        children: [
+                          Icon(Icons.bolt, color: AppColors.xpOrange, size: 24),
+                          SizedBox(width: 6),
+                          Text('+20 XP', style: TextStyle(fontSize: 20, fontWeight: FontWeight.w800, color: AppColors.xpOrange)),
+                          SizedBox(width: 4),
+                          Text('kazanıldı', style: TextStyle(fontSize: 14, color: AppColors.xpOrange)),
+                        ],
+                      ),
+                    ),
+                    const SizedBox(height: 22),
+                    SizedBox(
+                      width: double.infinity,
+                      height: 48,
+                      child: ElevatedButton(
+                        onPressed: widget.onContinue,
+                        style: ElevatedButton.styleFrom(
+                          backgroundColor: AppColors.primary,
+                          foregroundColor: Colors.white,
+                          elevation: 0,
+                          shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(12)),
+                        ),
+                        child: const Text('Devam Et!',
+                            style: TextStyle(fontSize: 16, fontWeight: FontWeight.w700)),
+                      ),
+                    ),
                   ],
-                ),
-              ),
-              const SizedBox(height: 22),
-              SizedBox(
-                width: double.infinity,
-                height: 48,
-                child: ElevatedButton(
-                  onPressed: widget.onContinue,
-                  style: ElevatedButton.styleFrom(
-                    backgroundColor: AppColors.primary,
-                    foregroundColor: Colors.white,
-                    elevation: 0,
-                    shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(12)),
-                  ),
-                  child: const Text('Devam Et!',
-                      style: TextStyle(fontSize: 16, fontWeight: FontWeight.w700)),
                 ),
               ),
             ],
@@ -628,4 +692,45 @@ class _CelebrationDialogState extends State<_CelebrationDialog>
       ),
     );
   }
+}
+
+class _ConfettiParticle {
+  final double x;
+  final double delay;
+  final double speed;
+  final double size;
+  final Color color;
+  final double angle;
+  final double spin;
+  const _ConfettiParticle({
+    required this.x, required this.delay, required this.speed,
+    required this.size, required this.color, required this.angle, required this.spin,
+  });
+}
+
+class _ConfettiPainter extends CustomPainter {
+  final List<_ConfettiParticle> particles;
+  final double t;
+  _ConfettiPainter(this.particles, this.t);
+
+  @override
+  void paint(Canvas canvas, Size size) {
+    for (final p in particles) {
+      final progress = ((t - p.delay) * p.speed).clamp(0.0, 1.0);
+      if (progress <= 0) continue;
+      final opacity = progress < 0.8 ? 1.0 : (1.0 - (progress - 0.8) / 0.2);
+      final x = p.x * size.width;
+      final y = progress * size.height * 1.1 - size.height * 0.05;
+      final rotation = p.angle + p.spin * progress;
+      final paint = Paint()..color = p.color.withOpacity(opacity.clamp(0.0, 1.0));
+      canvas.save();
+      canvas.translate(x, y);
+      canvas.rotate(rotation);
+      canvas.drawRect(Rect.fromCenter(center: Offset.zero, width: p.size, height: p.size * 0.5), paint);
+      canvas.restore();
+    }
+  }
+
+  @override
+  bool shouldRepaint(_ConfettiPainter old) => old.t != t;
 }

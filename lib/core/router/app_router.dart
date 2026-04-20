@@ -22,6 +22,15 @@ import '../../features/lessons/screens/lesson_session_screen.dart';
 import '../../features/admin/screens/admin_screen.dart';
 import '../../features/profile/screens/profile_screen.dart';
 import '../../features/auth/screens/password_reset_screen.dart';
+import '../../features/minigames/screens/minigames_list_screen.dart';
+import '../../features/minigames/screens/word_match_game_screen.dart';
+import '../../features/minigames/screens/quick_quiz_game_screen.dart';
+import '../../features/minigames/screens/scramble_game_screen.dart';
+import '../../features/minigames/screens/hangman_game_screen.dart';
+import '../../features/minigames/screens/minigame_result_screen.dart';
+import '../../features/dictionary/screens/dictionary_screen.dart';
+import '../../features/dictionary/screens/word_learn_screen.dart';
+import '../../features/auth/screens/privacy_screen.dart';
 
 // Her uygulama başlangıcında splash bir kez gösterilir
 bool _splashShown = false;
@@ -62,8 +71,8 @@ final routerProvider = Provider<GoRouter>((ref) {
         return '/splash';
       }
 
-      // ── Admin paneli → yönlendirme yapma ──────────────────
-      if (path == '/admin') return null;
+      // ── Admin paneli ve gizlilik → yönlendirme yapma ──────
+      if (path == '/admin' || path == '/privacy') return null;
 
       // ── Şifre sıfırlama recovery akışı ────────────────────
       if (authNotifier.isRecovery) {
@@ -125,6 +134,10 @@ final routerProvider = Provider<GoRouter>((ref) {
         builder: (context, state) => const AdminScreen(),
       ),
       GoRoute(
+        path: '/privacy',
+        builder: (context, state) => const PrivacyScreen(),
+      ),
+      GoRoute(
         path: '/auth',
         builder: (context, state) => const AuthScreen(),
       ),
@@ -178,7 +191,15 @@ final routerProvider = Provider<GoRouter>((ref) {
             path: '/home/lessons',
             builder: (context, state) => const LessonListScreen(),
           ),
-GoRoute(
+          GoRoute(
+            path: '/home/dictionary',
+            builder: (context, state) => const DictionaryScreen(),
+          ),
+          GoRoute(
+            path: '/home/minigames',
+            builder: (context, state) => const MiniGamesListScreen(),
+          ),
+          GoRoute(
             path: '/home/profile',
             builder: (context, state) => const ProfileScreen(),
           ),
@@ -196,6 +217,40 @@ GoRoute(
         builder: (context, state) {
           final extra = state.extra as Map<String, dynamic>?;
           return ExamResultScreen(result: extra ?? {});
+        },
+      ),
+      GoRoute(
+        path: '/minigame/wordmatch',
+        builder: (context, state) => const WordMatchGameScreen(),
+      ),
+      GoRoute(
+        path: '/minigame/quickquiz',
+        builder: (context, state) => const QuickQuizGameScreen(),
+      ),
+      GoRoute(
+        path: '/minigame/scramble',
+        builder: (context, state) => const ScrambleGameScreen(),
+      ),
+      GoRoute(
+        path: '/minigame/hangman',
+        builder: (context, state) => const HangmanGameScreen(),
+      ),
+      GoRoute(
+        path: '/minigame/result',
+        builder: (context, state) {
+          final extra = state.extra as Map<String, dynamic>? ?? {};
+          return MiniGameResultScreen(result: extra);
+        },
+      ),
+      GoRoute(
+        path: '/dictionary/learn',
+        builder: (context, state) {
+          final extra = state.extra as Map<String, dynamic>? ?? {};
+          return WordLearnScreen(
+            term: extra['term'] as String? ?? '',
+            definition: extra['definition'] as String? ?? '',
+            category: extra['category'] as String? ?? '',
+          );
         },
       ),
       GoRoute(

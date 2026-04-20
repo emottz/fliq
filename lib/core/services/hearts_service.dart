@@ -3,31 +3,44 @@ import 'package:shared_preferences/shared_preferences.dart';
 class HeartsService {
   static const int maxHearts = 20;
   static const int lessonCost = 5;
+  static const int miniGameCost = 5;
   static const int examCost = 10;
+  static const int learnCost = 1;
+  static const int regenAmount = 5;
+  static const Duration regenInterval = Duration(minutes: 20);
 
   static const _keyCount = 'hearts_count';
-  static const _keyResetTime = 'hearts_reset_time';
+  static const _keyRegenTime = 'hearts_regen_time';
 
   Future<SharedPreferences> get _prefs => SharedPreferences.getInstance();
 
-  /// Mevcut kalp sayısı ve dolum zamanını döndürür.
-  /// Dolum zamanı geçmişse otomatik 20'ye tamamlar.
+  /// Mevcut kalp sayısı ve bir sonraki +5 zamanını döndürür.
+  /// Geçmiş regen dönemleri varsa otomatik uygular.
   Future<({int count, DateTime? resetTime})> getState() async {
     final p = await _prefs;
+    int count = p.getInt(_keyCount) ?? maxHearts;
 
-    final resetStr = p.getString(_keyResetTime);
-    if (resetStr != null) {
-      final resetTime = DateTime.tryParse(resetStr);
-      if (resetTime != null && DateTime.now().isAfter(resetTime)) {
-        await p.setInt(_keyCount, maxHearts);
-        await p.remove(_keyResetTime);
-        return (count: maxHearts, resetTime: null);
+    final regenStr = p.getString(_keyRegenTime);
+    if (regenStr != null) {
+      DateTime? regenTime = DateTime.tryParse(regenStr);
+      // Geçmiş tüm 20-dakikalık dönemleri uygula
+      while (regenTime != null && DateTime.now().isAfter(regenTime) && count < maxHearts) {
+        count = (count + regenAmount).clamp(0, maxHearts);
+        await p.setInt(_keyCount, count);
+        if (count >= maxHearts) {
+          await p.remove(_keyRegenTime);
+          regenTime = null;
+        } else {
+          regenTime = regenTime.add(regenInterval);
+          await p.setString(_keyRegenTime, regenTime.toIso8601String());
+        }
       }
-      final count = p.getInt(_keyCount) ?? maxHearts;
-      return (count: count, resetTime: resetTime);
+      if (count >= maxHearts) {
+        return (count: count, resetTime: null);
+      }
+      return (count: count, resetTime: regenTime);
     }
 
-    final count = p.getInt(_keyCount) ?? maxHearts;
     return (count: count, resetTime: null);
   }
 
@@ -40,10 +53,10 @@ class HeartsService {
     final newCount = state.count - cost;
     await p.setInt(_keyCount, newCount);
 
-    // Kalpler bittiyse 24 saat sonra dolum zamanını ayarla
-    if (newCount <= 0 && p.getString(_keyResetTime) == null) {
-      final resetTime = DateTime.now().add(const Duration(hours: 24));
-      await p.setString(_keyResetTime, resetTime.toIso8601String());
+    // Maks altında ve zamanlayıcı yoksa 20 dakika sonraya ayarla
+    if (newCount < maxHearts && p.getString(_keyRegenTime) == null) {
+      final regenTime = DateTime.now().add(regenInterval);
+      await p.setString(_keyRegenTime, regenTime.toIso8601String());
     }
 
     return true;
@@ -55,14 +68,13 @@ class HeartsService {
   }
 
   /// Kalplere [amount] ekler. Max [maxHearts]'ı geçemez.
-  /// Eğer dolu olursa dolum zamanını temizler.
   Future<void> addHearts(int amount) async {
     final state = await getState();
     final p = await _prefs;
     final newCount = (state.count + amount).clamp(0, maxHearts);
     await p.setInt(_keyCount, newCount);
     if (newCount >= maxHearts) {
-      await p.remove(_keyResetTime);
+      await p.remove(_keyRegenTime);
     }
   }
 }

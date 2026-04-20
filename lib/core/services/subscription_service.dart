@@ -75,7 +75,7 @@ class SubscriptionService {
     }
   }
 
-  // ── iyzico ödeme sayfası oluştur ────────────────────────────────────────────
+  // ── PayTR ödeme sayfası oluştur ─────────────────────────────────────────────
 
   Future<String> createCheckout({
     required String planKey,
@@ -84,7 +84,7 @@ class SubscriptionService {
     final user = _sb.auth.currentUser;
     if (user == null) throw Exception('Giriş yapılmamış.');
 
-    final res = await _sb.functions.invoke('create-iyzico-checkout', body: {
+    final res = await _sb.functions.invoke('create-paytr-checkout', body: {
       'planKey': planKey,
       'annual': annual,
       'email': user.email ?? '',
@@ -92,7 +92,8 @@ class SubscriptionService {
     });
 
     if (res.status != 200) {
-      throw Exception('Ödeme sayfası oluşturulamadı.');
+      final err = (res.data as Map<String, dynamic>?)?['error'] as String?;
+      throw Exception(err ?? 'Ödeme sayfası oluşturulamadı.');
     }
 
     final url = (res.data as Map<String, dynamic>?)?['paymentPageUrl'] as String?;

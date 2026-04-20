@@ -241,32 +241,28 @@ class _SidebarCard extends StatelessWidget {
   }
 }
 
-// ── Premium member badge (profile screen) ─────────────────────────────────────
+// ── Authorized member badge (profile screen) ──────────────────────────────────
 
-/// Profil ekranında gösterilen "Avialish Premium" üye rozeti.
-/// Sadece premium kullanıcılara gösterilir.
-class PremiumMemberBadge extends ConsumerWidget {
-  const PremiumMemberBadge({super.key});
+/// Profil ekranında gösterilen "Yetkili Üye" kırmızı rozeti.
+/// Sadece is_authorized = true olan kullanıcılara gösterilir.
+class AuthorizedMemberBadge extends ConsumerWidget {
+  const AuthorizedMemberBadge({super.key});
 
   @override
   Widget build(BuildContext context, WidgetRef ref) {
-    final isPremium = ref.watch(isPremiumProvider).value ?? false;
-    if (!isPremium) return const SizedBox.shrink();
+    final isAuthorized = ref.watch(isAuthorizedProvider).value ?? false;
+    if (!isAuthorized) return const SizedBox.shrink();
 
     return Container(
       width: double.infinity,
       margin: const EdgeInsets.only(bottom: 16),
       padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 14),
       decoration: BoxDecoration(
-        gradient: const LinearGradient(
-          colors: [Color(0xFF92400E), AppColors.warning, AppColors.rankGold],
-          begin: Alignment.topLeft,
-          end: Alignment.bottomRight,
-        ),
+        color: const Color(0xFFDC2626),
         borderRadius: BorderRadius.circular(16),
         boxShadow: [
           BoxShadow(
-            color: AppColors.warning.withValues(alpha: 0.22),
+            color: const Color(0xFFDC2626).withValues(alpha: 0.30),
             blurRadius: 12,
             offset: const Offset(0, 4),
           ),
@@ -274,13 +270,13 @@ class PremiumMemberBadge extends ConsumerWidget {
       ),
       child: const Row(
         children: [
-          Text('👑', style: TextStyle(fontSize: 24)),
+          Icon(Icons.verified_rounded, color: Colors.white, size: 24),
           SizedBox(width: 12),
           Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
               Text(
-                'Avialish Premium',
+                'Yetkili Üye',
                 style: TextStyle(
                   color: Colors.white,
                   fontSize: 15,
@@ -288,14 +284,89 @@ class PremiumMemberBadge extends ConsumerWidget {
                 ),
               ),
               Text(
-                'Tüm içeriklere erişimin aktif',
+                'Özel erişim izni verildi',
                 style: TextStyle(color: Colors.white70, fontSize: 12),
               ),
             ],
           ),
           Spacer(),
-          Icon(Icons.check_circle_rounded, color: Colors.white, size: 22),
+          Icon(Icons.shield_rounded, color: Colors.white70, size: 20),
         ],
+      ),
+    );
+  }
+}
+
+// ── Premium member badge (profile screen) ─────────────────────────────────────
+
+/// Profil ekranında gösterilen "Avialish Premium" üye rozeti.
+/// Sadece premium kullanıcılara gösterilir.
+class PremiumMemberBadge extends ConsumerWidget {
+  final VoidCallback? onTap;
+  const PremiumMemberBadge({super.key, this.onTap});
+
+  @override
+  Widget build(BuildContext context, WidgetRef ref) {
+    final isPremium = ref.watch(isPremiumProvider).value ?? false;
+    if (!isPremium) return const SizedBox.shrink();
+
+    return GestureDetector(
+      onTap: onTap,
+      child: Container(
+        width: double.infinity,
+        margin: const EdgeInsets.only(bottom: 16),
+        padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 14),
+        decoration: BoxDecoration(
+          gradient: const LinearGradient(
+            colors: [Color(0xFF92400E), AppColors.warning, AppColors.rankGold],
+            begin: Alignment.topLeft,
+            end: Alignment.bottomRight,
+          ),
+          borderRadius: BorderRadius.circular(16),
+          boxShadow: [
+            BoxShadow(
+              color: AppColors.warning.withValues(alpha: 0.22),
+              blurRadius: 12,
+              offset: const Offset(0, 4),
+            ),
+          ],
+        ),
+        child: Row(
+          children: [
+            const Text('👑', style: TextStyle(fontSize: 24)),
+            const SizedBox(width: 12),
+            const Column(
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: [
+                Text(
+                  'Avialish Premium',
+                  style: TextStyle(color: Colors.white, fontSize: 15, fontWeight: FontWeight.w800),
+                ),
+                Text(
+                  'Tüm içeriklere erişimin aktif',
+                  style: TextStyle(color: Colors.white70, fontSize: 12),
+                ),
+              ],
+            ),
+            const Spacer(),
+            if (onTap != null) ...[
+              Container(
+                padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 5),
+                decoration: BoxDecoration(
+                  color: Colors.white.withValues(alpha: 0.2),
+                  borderRadius: BorderRadius.circular(20),
+                  border: Border.all(color: Colors.white.withValues(alpha: 0.3)),
+                ),
+                child: const Text(
+                  'Planları Gör',
+                  style: TextStyle(color: Colors.white, fontSize: 11, fontWeight: FontWeight.w700),
+                ),
+              ),
+            ] else ...[
+              const Icon(Icons.check_circle_rounded, color: Colors.white, size: 22),
+            ],
+          ],
+        ),
       ),
     );
   }

@@ -90,6 +90,43 @@ class CouponService {
     });
   }
 
+  // ── Yetkili Üye aktif et (abonelik açmadan, sadece profil tag'i) ──────────
+  Future<void> activateAuthorizedFromCoupon({
+    required String uid,
+    required String code,
+  }) async {
+    await _sb.from('users').upsert({
+      'id':            uid,
+      'is_authorized': true,
+      'coupon_code':   code,
+    });
+  }
+
+  // ── Yetkili Üye durumu stream ─────────────────────────────────────────────
+  Stream<bool> authorizedStream(String uid) async* {
+    yield await _isAuthorized(uid);
+    await for (final _ in Stream.periodic(const Duration(seconds: 30))) {
+      try {
+        yield await _isAuthorized(uid);
+      } catch (_) {
+        yield false;
+      }
+    }
+  }
+
+  Future<bool> _isAuthorized(String uid) async {
+    try {
+      final row = await _sb
+          .from('users')
+          .select('is_authorized')
+          .eq('id', uid)
+          .maybeSingle();
+      return row?['is_authorized'] == true;
+    } catch (_) {
+      return false;
+    }
+  }
+
   // ── Süresi dolmuş premium'u iptal et ─────────────────────────────────────
   Future<void> checkAndRevokeExpiredPremium(String uid) async {
     try {
@@ -146,7 +183,10 @@ class CouponPreview {
     'amt':        '🔧  Uçak Bakım Teknisyeni',
     'student':    '🎓  Öğrenci',
     'free':       '🆓  Ücretsiz Erişim',
+    'authorized': '🔴  Yetkili Üye',
   }[plan] ?? plan;
+
+  bool get isAuthorized => plan == 'authorized';
 
   String get durationLabel =>
       durationDays == 0 ? 'Süresiz' : '$durationDays Gün';

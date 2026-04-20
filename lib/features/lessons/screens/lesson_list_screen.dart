@@ -446,26 +446,45 @@ class _LessonNode extends StatefulWidget {
 }
 
 class _LessonNodeState extends State<_LessonNode>
-    with SingleTickerProviderStateMixin {
+    with TickerProviderStateMixin {
   late AnimationController _pulse;
+  late AnimationController _entry;
+  late AnimationController _shake;
   late Animation<double> _scale;
+  late Animation<double> _entryFade;
+  late Animation<Offset> _entrySlide;
+  late Animation<Offset> _shakeAnim;
 
   @override
   void initState() {
     super.initState();
-    _pulse = AnimationController(
-      vsync: this,
-      duration: const Duration(milliseconds: 1200),
-    );
-    _scale = Tween<double>(begin: 1.0, end: 1.08).animate(
-      CurvedAnimation(parent: _pulse, curve: Curves.easeInOut),
-    );
+    _pulse = AnimationController(vsync: this, duration: const Duration(milliseconds: 1200));
+    _scale = Tween<double>(begin: 1.0, end: 1.08)
+        .animate(CurvedAnimation(parent: _pulse, curve: Curves.easeInOut));
     if (widget.isNextUp) _pulse.repeat(reverse: true);
+
+    _entry = AnimationController(vsync: this, duration: const Duration(milliseconds: 400));
+    _entryFade = CurvedAnimation(parent: _entry, curve: Curves.easeOut);
+    _entrySlide = Tween<Offset>(begin: const Offset(0, 0.3), end: Offset.zero)
+        .animate(CurvedAnimation(parent: _entry, curve: Curves.easeOut));
+    Future.delayed(Duration(milliseconds: widget.index * 55), () {
+      if (mounted) _entry.forward();
+    });
+
+    _shake = AnimationController(vsync: this, duration: const Duration(milliseconds: 320));
+    _shakeAnim = TweenSequence<Offset>([
+      TweenSequenceItem(tween: Tween(begin: Offset.zero, end: const Offset(-0.03, 0)), weight: 1),
+      TweenSequenceItem(tween: Tween(begin: const Offset(-0.03, 0), end: const Offset(0.03, 0)), weight: 2),
+      TweenSequenceItem(tween: Tween(begin: const Offset(0.03, 0), end: const Offset(-0.02, 0)), weight: 2),
+      TweenSequenceItem(tween: Tween(begin: const Offset(-0.02, 0), end: Offset.zero), weight: 1),
+    ]).animate(CurvedAnimation(parent: _shake, curve: Curves.easeInOut));
   }
 
   @override
   void dispose() {
     _pulse.dispose();
+    _entry.dispose();
+    _shake.dispose();
     super.dispose();
   }
 
@@ -477,8 +496,23 @@ class _LessonNodeState extends State<_LessonNode>
 
   @override
   Widget build(BuildContext context) {
+    return FadeTransition(
+      opacity: _entryFade,
+      child: SlideTransition(
+        position: _entrySlide,
+        child: SlideTransition(
+          position: _shakeAnim,
+          child: _buildContent(context),
+        ),
+      ),
+    );
+  }
+
+  Widget _buildContent(BuildContext context) {
     return GestureDetector(
-      onTap: widget.onTap,
+      onTap: widget.isUnlocked
+          ? widget.onTap
+          : () { _shake.forward(from: 0); },
       child: Column(
         children: [
           // Düğüm

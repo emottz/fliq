@@ -1,8 +1,10 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_riverpod/flutter_riverpod.dart';
 import '../../../core/constants/app_colors.dart';
 import '../../../core/constants/app_text_styles.dart';
 import '../../../data/models/lesson_content_model.dart';
 import '../../../data/models/question_model.dart';
+import '../../../shared/providers/app_providers.dart';
 import 'grammar_animations.dart';
 
 /// Renders a single LessonSection based on its type.
@@ -25,6 +27,7 @@ class LessonSectionWidget extends StatelessWidget {
       LessonSectionType.animation => _AnimationSection(section: section),
       LessonSectionType.practice => _PracticeSection(section: section),
       LessonSectionType.tip => _TipSection(section: section),
+      LessonSectionType.dialogue => _DialogueSectionPreview(section: section),
     };
   }
 }
@@ -237,7 +240,7 @@ class _AnimationSection extends StatelessWidget {
           const SizedBox(height: 12),
         ],
         if (section.animationType != null)
-          GrammarAnimationWidget(type: section.animationType!),
+          GrammarAnimationWidget(type: section.animationType!, section: section),
       ],
     );
   }
@@ -281,22 +284,40 @@ class _TipSection extends StatelessWidget {
 // ─────────────────────────────────────────────────────────────
 // PRACTICE SECTION — embedded mini-quiz (no timer, immediate feedback)
 // ─────────────────────────────────────────────────────────────
-class _PracticeSection extends StatefulWidget {
+class _PracticeSection extends ConsumerStatefulWidget {
   final LessonSection section;
   const _PracticeSection({required this.section});
 
   @override
-  State<_PracticeSection> createState() => _PracticeSectionState();
+  ConsumerState<_PracticeSection> createState() => _PracticeSectionState();
 }
 
-class _PracticeSectionState extends State<_PracticeSection> {
+class _PracticeSectionState extends ConsumerState<_PracticeSection> {
   final Map<int, int> _answers = {};
   int _current = 0;
   bool _answered = false;
   bool _allDone = false;
   int _score = 0;
 
-  List<QuestionModel> get _questions => widget.section.practiceQuestions ?? [];
+  List<QuestionModel> _questions = [];
+
+  @override
+  void initState() {
+    super.initState();
+    _loadWithFifthOptions();
+  }
+
+  Future<void> _loadWithFifthOptions() async {
+    final base = widget.section.practiceQuestions ?? [];
+    if (base.isEmpty) return;
+    try {
+      final repo = ref.read(questionRepositoryProvider);
+      final augmented = await repo.addFifthOptions(base);
+      if (mounted) setState(() => _questions = augmented.map((q) => q.withShuffledOptions()).toList());
+    } catch (_) {
+      if (mounted) setState(() => _questions = base);
+    }
+  }
 
   void _select(int optionIndex) {
     if (_answered) return;
@@ -635,6 +656,97 @@ class _RichBody extends StatelessWidget {
       text: TextSpan(
         style: AppTextStyles.body,
         children: spans,
+      ),
+    );
+  }
+}
+
+// ─────────────────────────────────────────────────────────────
+// DIALOGUE SECTION PREVIEW (compact, for lesson session list)
+// ─────────────────────────────────────────────────────────────
+
+class _DialogueSectionPreview extends StatelessWidget {
+  final LessonSection section;
+  const _DialogueSectionPreview({required this.section});
+
+  @override
+  Widget build(BuildContext context) {
+    final lines = section.dialogueLines ?? [];
+    final preview = lines.take(3).toList();
+
+    return Container(
+      margin: const EdgeInsets.only(bottom: 12),
+      decoration: BoxDecoration(
+        color: const Color(0xFFF0F4FF),
+        borderRadius: BorderRadius.circular(16),
+        border: Border.all(color: const Color(0xFF2563EB).withValues(alpha: 0.2)),
+      ),
+      child: Column(
+        crossAxisAlignment: CrossAxisAlignment.start,
+        children: [
+          Container(
+            padding: const EdgeInsets.symmetric(horizontal: 14, vertical: 10),
+            decoration: const BoxDecoration(
+              gradient: LinearGradient(colors: [Color(0xFF1E3A5F), Color(0xFF2563EB)]),
+              borderRadius: BorderRadius.vertical(top: Radius.circular(16)),
+            ),
+            child: Row(
+              children: [
+                const Text('📡', style: TextStyle(fontSize: 14)),
+                const SizedBox(width: 8),
+                Text(
+                  section.title ?? 'Radyo İletişimi',
+                  style: const TextStyle(color: Colors.white, fontSize: 13, fontWeight: FontWeight.w700),
+                ),
+                const Spacer(),
+                Text('${lines.length} satır', style: const TextStyle(color: Colors.white60, fontSize: 11)),
+              ],
+            ),
+          ),
+          Padding(
+            padding: const EdgeInsets.all(12),
+            child: Column(
+              children: preview.map((line) {
+                final isRight = line.speaker == DialogueSpeaker.pilot ||
+                    line.speaker == DialogueSpeaker.captain ||
+                    line.speaker == DialogueSpeaker.cabin ||
+                    line.speaker == DialogueSpeaker.amt;
+                return Padding(
+                  padding: const EdgeInsets.only(bottom: 6),
+                  child: Row(
+                    mainAxisAlignment: isRight ? MainAxisAlignment.end : MainAxisAlignment.start,
+                    children: [
+                      Container(
+                        constraints: BoxConstraints(maxWidth: MediaQuery.of(context).size.width * 0.55),
+                        padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 6),
+                        decoration: BoxDecoration(
+                          color: isRight ? const Color(0xFF2563EB) : Colors.white,
+                          borderRadius: BorderRadius.circular(10),
+                          border: isRight ? null : Border.all(color: const Color(0xFF2563EB).withValues(alpha: 0.2)),
+                        ),
+                        child: Text(
+                          line.text,
+                          style: TextStyle(
+                            fontSize: 11,
+                            color: isRight ? Colors.white : const Color(0xFF1E293B),
+                            fontWeight: FontWeight.w500,
+                          ),
+                          maxLines: 1,
+                          overflow: TextOverflow.ellipsis,
+                        ),
+                      ),
+                    ],
+                  ),
+                );
+              }).toList(),
+            ),
+          ),
+          if (lines.length > 3)
+            Padding(
+              padding: const EdgeInsets.only(bottom: 10, left: 14),
+              child: Text('+ ${lines.length - 3} daha...', style: const TextStyle(fontSize: 11, color: AppColors.textHint)),
+            ),
+        ],
       ),
     );
   }

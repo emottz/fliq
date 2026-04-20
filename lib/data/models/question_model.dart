@@ -128,6 +128,22 @@ class QuestionModel extends Equatable {
     );
   }
 
+  /// Mevcut şıklara ekstra bir 5. şık ekler (karıştırmadan önce çağrılmalı).
+  QuestionModel withFifthOption(String extraOption) {
+    return QuestionModel(
+      id: id,
+      category: category,
+      originalNumber: originalNumber,
+      questionText: questionText,
+      options: [...options, extraOption],
+      correctIndex: correctIndex,
+      difficulty: difficulty,
+      passageText: passageText,
+      passageTitle: passageTitle,
+      passageId: passageId,
+    );
+  }
+
   @override
   List<Object?> get props => [id];
 }

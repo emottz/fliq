@@ -1,3 +1,4 @@
+import 'dart:math';
 import '../datasources/asset_question_source.dart';
 import '../models/question_model.dart';
 
@@ -34,6 +35,24 @@ class QuestionRepository {
     return all.where((q) => q.difficulty == difficulty).toList();
   }
 
+  /// Her soruya aynı kategoriden rastgele bir 5. şık ekler.
+  Future<List<QuestionModel>> addFifthOptions(List<QuestionModel> questions) async {
+    if (questions.isEmpty) return questions;
+    final all = await getAll();
+    final rng = Random();
+    return questions.map((q) {
+      if (q.options.length >= 5) return q;
+      final candidates = all
+          .where((other) => other.id != q.id && other.category == q.category)
+          .expand((other) => other.options.where(
+              (o) => !q.options.contains(o) && o.length < 80 && o.isNotEmpty))
+          .toList();
+      if (candidates.isEmpty) return q;
+      candidates.shuffle(rng);
+      return q.withFifthOption(candidates.first);
+    }).toList();
+  }
+
   /// Returns 25 stratified questions for the level assessment.
   /// Distribution: Grammar 5, Vocabulary 4, Translation 4, Reading 5, FillBlanks 4, Completion 3
   Future<List<QuestionModel>> getAssessmentQuestions() async {
@@ -55,7 +74,8 @@ class QuestionRepository {
       result.addAll(pool.take(entry.value));
     }
     result.shuffle();
-    return result.map((q) => q.withShuffledOptions()).toList();
+    final withFifth = await addFifthOptions(result);
+    return withFifth.map((q) => q.withShuffledOptions()).toList();
   }
 
   /// Returns a shuffled exam session of [count] questions.
@@ -69,30 +89,32 @@ class QuestionRepository {
     if (category != null) pool = pool.where((q) => q.category == category).toList();
     if (difficulty != null) pool = pool.where((q) => q.difficulty == difficulty).toList();
     pool.shuffle();
-    return pool.take(count).map((q) => q.withShuffledOptions()).toList();
+    final selected = pool.take(count).toList();
+    final withFifth = await addFifthOptions(selected);
+    return withFifth.map((q) => q.withShuffledOptions()).toList();
   }
 
-  /// Uçak Bakım Teknisyeni Yabancı Dil Sınavı — 80 soru, SHGM dağılımına uygun.
+  /// Uçak Bakım Teknisyeni Yabancı Dil Sınavı — 80 soru, SHGM U 01 S UE 005 formatı.
   ///
-  /// Dağılım:
-  ///   Dil Bilgisi (Grammar)          20 soru — %25
-  ///   Kelime Bilgisi (Vocabulary)    15 soru — %19
-  ///   Çeviri (Translation)           15 soru — %19
-  ///   Okuma (Reading)                15 soru — %19
-  ///   Boşluk Doldurma (Fill Blanks)  10 soru — %12
-  ///   Cümle Tamamlama (Completion)    5 soru —  %6
+  /// Dağılım (resmi sınav kapsamına göre):
+  ///   Paragraf / Okuma (Reading)         15 soru
+  ///   Boşluk Doldurma (Fill Blanks)      15 soru
+  ///   Dil Bilgisi (Grammar)              10 soru
+  ///   Kelime Bilgisi (Vocabulary)        15 soru
+  ///   Çeviri (Translation)               15 soru
+  ///   Cümle Tamamlama (Completion)       10 soru
   ///   ───────────────────────────────────────────
-  ///   Toplam                         80 soru
+  ///   Toplam                             80 soru — 120 dakika
   Future<List<QuestionModel>> buildAmtExamSession() async {
     final all = await getAll();
 
     const distribution = {
-      QuestionCategory.grammar:            20,
+      QuestionCategory.reading:            15,
+      QuestionCategory.fillBlanks:         15,
+      QuestionCategory.grammar:            10,
       QuestionCategory.vocabulary:         15,
       QuestionCategory.translation:        15,
-      QuestionCategory.reading:            15,
-      QuestionCategory.fillBlanks:         10,
-      QuestionCategory.sentenceCompletion:  5,
+      QuestionCategory.sentenceCompletion: 10,
     };
 
     final result = <QuestionModel>[];
@@ -101,6 +123,7 @@ class QuestionRepository {
       result.addAll(pool.take(entry.value));
     }
     result.shuffle();
-    return result.map((q) => q.withShuffledOptions()).toList();
+    final withFifth = await addFifthOptions(result);
+    return withFifth.map((q) => q.withShuffledOptions()).toList();
   }
 }

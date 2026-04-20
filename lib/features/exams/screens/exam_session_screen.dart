@@ -28,7 +28,7 @@ class _ExamSessionScreenState extends ConsumerState<ExamSessionScreen> {
   Timer? _timer;
 
   bool get _isAmtExam => (widget.config['mode'] as String?) == 'amt_exam';
-  int get _totalSeconds => _isAmtExam ? 80 * 60 : (widget.config['count'] as int? ?? 20) * 60;
+  int get _totalSeconds => _isAmtExam ? 120 * 60 : (widget.config['count'] as int? ?? 20) * 60;
   bool get _isQuick => (widget.config['mode'] as String?) == 'quick';
 
   @override
@@ -79,7 +79,7 @@ class _ExamSessionScreenState extends ConsumerState<ExamSessionScreen> {
     setState(() { _selected = index; _answered = true; });
     _answers[_current] = index;
 
-    Future.delayed(const Duration(milliseconds: 900), () {
+    Future.delayed(const Duration(milliseconds: 350), () {
       if (!mounted) return;
       if (_current < (_questions?.length ?? 1) - 1) {
         setState(() { _current++; _selected = null; _answered = false; });
@@ -230,25 +230,11 @@ class _ExamSessionScreenState extends ConsumerState<ExamSessionScreen> {
                 _QuestionCard(text: question.questionText),
                 const SizedBox(height: 12),
                 ...List.generate(question.options.length, (i) {
-                  Color? bg;
-                  Color? border;
-                  if (_answered) {
-                    if (i == question.correctIndex) {
-                      bg = AppColors.successLight;
-                      border = AppColors.success;
-                    } else if (i == _selected && i != question.correctIndex) {
-                      bg = AppColors.errorLight;
-                      border = AppColors.error;
-                    }
-                  }
                   return _OptionTile(
                     label: String.fromCharCode(65 + i),
                     text: question.options[i],
-                    bg: bg,
-                    border: border,
                     selected: _selected == i,
                     answered: _answered,
-                    isCorrect: i == question.correctIndex,
                     onTap: () => _select(i),
                   );
                 }),
@@ -313,44 +299,36 @@ class _QuestionCard extends StatelessWidget {
 class _OptionTile extends StatelessWidget {
   final String label;
   final String text;
-  final Color? bg;
-  final Color? border;
   final bool selected;
   final bool answered;
-  final bool isCorrect;
   final VoidCallback onTap;
 
   const _OptionTile({
     required this.label,
     required this.text,
-    required this.bg,
-    required this.border,
     required this.selected,
     required this.answered,
-    required this.isCorrect,
     required this.onTap,
   });
 
   @override
   Widget build(BuildContext context) {
-    final fontSize = text.length > 80 ? 13.0 : 14.5;
-    final padV     = text.length > 80 ? 10.0 : 13.0;
-    final circleColor = bg != null
-        ? (isCorrect ? AppColors.success : AppColors.error)
-        : (selected ? AppColors.primary : AppColors.surfaceVariant);
+    final fontSize   = text.length > 80 ? 13.0 : 14.5;
+    final padV       = text.length > 80 ? 10.0 : 13.0;
+    final circleColor = selected ? AppColors.primary : AppColors.surfaceVariant;
 
     return GestureDetector(
-      onTap: onTap,
+      onTap: answered ? null : onTap,
       child: AnimatedContainer(
-        duration: const Duration(milliseconds: 200),
+        duration: const Duration(milliseconds: 150),
         margin: const EdgeInsets.only(bottom: 8),
         padding: EdgeInsets.symmetric(horizontal: 14, vertical: padV),
         decoration: BoxDecoration(
-          color: bg ?? AppColors.surface,
+          color: selected ? AppColors.primaryLight.withValues(alpha: 0.15) : AppColors.surface,
           borderRadius: BorderRadius.circular(12),
           border: Border.all(
-            color: border ?? (selected ? AppColors.primary : AppColors.divider),
-            width: selected || border != null ? 2 : 1,
+            color: selected ? AppColors.primary : AppColors.divider,
+            width: selected ? 2 : 1,
           ),
         ),
         child: Row(
@@ -365,7 +343,7 @@ class _OptionTile extends StatelessWidget {
                   style: TextStyle(
                     fontWeight: FontWeight.w700,
                     fontSize: 12,
-                    color: bg != null || selected ? Colors.white : AppColors.textSecondary,
+                    color: selected ? Colors.white : AppColors.textSecondary,
                   ),
                 ),
               ),
@@ -377,10 +355,6 @@ class _OptionTile extends StatelessWidget {
                 style: TextStyle(fontSize: fontSize, color: AppColors.textPrimary, height: 1.4),
               ),
             ),
-            if (answered && isCorrect)
-              const Icon(Icons.check_circle, color: AppColors.success, size: 18),
-            if (answered && selected && !isCorrect)
-              const Icon(Icons.cancel, color: AppColors.error, size: 18),
           ],
         ),
       ),

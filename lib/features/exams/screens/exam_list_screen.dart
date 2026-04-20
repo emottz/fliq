@@ -255,7 +255,7 @@ class _AmtExamCard extends StatelessWidget {
                     spacing: 12,
                     runSpacing: 6,
                     children: [
-                      _chip(Icons.timer_outlined, '80 dakika'),
+                      _chip(Icons.timer_outlined, '120 dakika'),
                       _chip(Icons.quiz_outlined, '80 soru'),
                       _chip(Icons.category_outlined, '6 bölüm'),
                     ],

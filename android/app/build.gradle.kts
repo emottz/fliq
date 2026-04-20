@@ -1,3 +1,5 @@
+import java.util.Properties
+
 plugins {
     id("com.android.application")
     // START: FlutterFire Configuration
@@ -10,7 +12,7 @@ plugins {
 
 android {
     namespace = "com.fliq.fliq"
-    compileSdk = 35
+    compileSdk = 36
     ndkVersion = flutter.ndkVersion
 
     compileOptions {
@@ -24,8 +26,8 @@ android {
 
     defaultConfig {
         applicationId = "com.fliq.fliq"
-        minSdk = 21
-        targetSdk = 35
+        minSdk = flutter.minSdkVersion
+        targetSdk = 36
         versionCode = flutter.versionCode
         versionName = flutter.versionName
     }
@@ -38,7 +40,7 @@ android {
     //   keyPassword=SIFREN
     val keyPropsFile = rootProject.file("key.properties")
     if (keyPropsFile.exists()) {
-        val keyProps = java.util.Properties().apply { load(keyPropsFile.inputStream()) }
+        val keyProps = Properties().apply { load(keyPropsFile.inputStream()) }
         signingConfigs {
             create("release") {
                 keyAlias      = keyProps["keyAlias"]      as String

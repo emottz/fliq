@@ -7,6 +7,7 @@ import '../../../shared/providers/app_providers.dart';
 import '../../../shared/widgets/airplane_logo.dart';
 import '../../../shared/widgets/hearts_display.dart';
 import '../../../shared/widgets/premium_upsell_card.dart';
+import '../../../shared/widgets/coupon_bottom_sheet.dart';
 
 // Geniş ekran eşiği (px)
 const _kWideBreakpoint = 720.0;
@@ -16,9 +17,11 @@ class HomeScreen extends ConsumerWidget {
   const HomeScreen({super.key, required this.child});
 
   static const _tabs = [
-    (path: '/home/exams',   icon: Icons.quiz_outlined,        activeIcon: Icons.quiz,           label: 'Sınavlar'),
-    (path: '/home/lessons', icon: Icons.school_outlined,      activeIcon: Icons.school,         label: 'Dersler'),
-(path: '/home/profile', icon: Icons.person_outline,       activeIcon: Icons.person,         label: 'Profil'),
+    (path: '/home/exams',       icon: Icons.quiz_outlined,           activeIcon: Icons.quiz,              label: 'Sınavlar'),
+    (path: '/home/lessons',     icon: Icons.school_outlined,         activeIcon: Icons.school,            label: 'Dersler'),
+    (path: '/home/dictionary',  icon: Icons.menu_book_outlined,      activeIcon: Icons.menu_book,         label: 'Sözlük'),
+    (path: '/home/minigames',   icon: Icons.sports_esports_outlined, activeIcon: Icons.sports_esports,    label: 'Oyunlar'),
+    (path: '/home/profile',     icon: Icons.person_outline,          activeIcon: Icons.person,            label: 'Profil'),
   ];
 
   int _tabIndex(String path) {
@@ -120,6 +123,14 @@ class _SideNav extends StatelessWidget {
           }),
 
           const Spacer(),
+
+          // ── Kupon butonu ─────────────────────────────────────────────────────
+          Padding(
+            padding: const EdgeInsets.symmetric(horizontal: 10),
+            child: Builder(
+              builder: (ctx) => _SidebarCouponButton(onTap: () => showCouponBottomSheet(ctx)),
+            ),
+          ),
 
           // ── Premium CTA ──────────────────────────────────────────────────────
           const Padding(
@@ -273,6 +284,8 @@ class _XpStreakHeader extends StatelessWidget {
         children: [
           const AirplaneLogo(size: 32, showText: true, horizontal: true),
           const Spacer(),
+          _CouponIconButton(),
+          const SizedBox(width: 6),
           const PremiumChip(),
           const SizedBox(width: 8),
           // Kalpler her zaman görünür (profile'dan bağımsız)
@@ -306,6 +319,60 @@ class _XpStreakHeader extends StatelessWidget {
             error: (_, __) => const SizedBox(),
           ),
         ],
+      ),
+    );
+  }
+}
+
+// ── Mobil header kupon ikonu butonu ───────────────────────────────────────────
+
+class _CouponIconButton extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return GestureDetector(
+      onTap: () => showCouponBottomSheet(context),
+      child: Container(
+        width: 34, height: 34,
+        decoration: BoxDecoration(
+          color: const Color(0xFFF0FDF4),
+          borderRadius: BorderRadius.circular(10),
+          border: Border.all(color: const Color(0xFF16A34A).withValues(alpha: 0.3)),
+        ),
+        child: const Icon(Icons.local_offer_outlined, size: 17, color: Color(0xFF16A34A)),
+      ),
+    );
+  }
+}
+
+// ── Sidebar kupon butonu ──────────────────────────────────────────────────────
+
+class _SidebarCouponButton extends StatelessWidget {
+  final VoidCallback onTap;
+  const _SidebarCouponButton({required this.onTap});
+
+  @override
+  Widget build(BuildContext context) {
+    return GestureDetector(
+      onTap: onTap,
+      child: Container(
+        width: double.infinity,
+        margin: const EdgeInsets.only(bottom: 8),
+        padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 10),
+        decoration: BoxDecoration(
+          color: const Color(0xFFF0FDF4),
+          borderRadius: BorderRadius.circular(12),
+          border: Border.all(color: const Color(0xFF16A34A).withValues(alpha: 0.3)),
+        ),
+        child: const Row(
+          children: [
+            Icon(Icons.local_offer_outlined, size: 18, color: Color(0xFF16A34A)),
+            SizedBox(width: 10),
+            Text(
+              'Kupon Kodu Gir',
+              style: TextStyle(fontSize: 13, fontWeight: FontWeight.w600, color: Color(0xFF16A34A)),
+            ),
+          ],
+        ),
       ),
     );
   }
