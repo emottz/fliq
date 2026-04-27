@@ -47,7 +47,11 @@ class _CouponSheetState extends ConsumerState<_CouponSheet> {
         // İndirim kuponu → subscription ekranına indirimli git
         Navigator.of(context).pop();
         if (!mounted) return;
-        context.go('/subscription?coupon=${preview.code}&discount=${preview.discountPercent}');
+        final restriction = preview.discountPlanRestriction;
+        final uri = restriction.isNotEmpty
+            ? '/subscription?coupon=${preview.code}&discount=${preview.discountPercent}&planRestriction=$restriction'
+            : '/subscription?coupon=${preview.code}&discount=${preview.discountPercent}';
+        context.go(uri);
       } else {
         _showConfirm(preview);
       }

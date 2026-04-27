@@ -205,10 +205,15 @@ class _SubscriptionScreenState extends ConsumerState<SubscriptionScreen> {
       if (couponCode != null && discountStr != null) {
         final pct = int.tryParse(discountStr) ?? 0;
         if (pct > 0) {
+          final planRestriction = params['planRestriction'] ?? '';
           WidgetsBinding.instance.addPostFrameCallback((_) {
             if (mounted) setState(() {
               _appliedDiscountPercent = pct;
               _appliedCouponCode = couponCode;
+              _appliedDiscountPlanRestriction = planRestriction;
+              if (planRestriction.isNotEmpty) {
+                _selectedRoleKey = planRestriction;
+              }
             });
           });
         }
