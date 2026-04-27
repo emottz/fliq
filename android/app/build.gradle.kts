@@ -11,7 +11,7 @@ plugins {
 }
 
 android {
-    namespace = "com.fliq.fliq"
+    namespace = "com.avialish.language"
     compileSdk = 36
     ndkVersion = flutter.ndkVersion
 
@@ -25,7 +25,7 @@ android {
     }
 
     defaultConfig {
-        applicationId = "com.fliq.fliq"
+        applicationId = "com.avialish.language"
         minSdk = flutter.minSdkVersion
         targetSdk = 36
         versionCode = flutter.versionCode

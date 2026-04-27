@@ -68,23 +68,6 @@
     "passageId": null
   },
   {
-    "id": 1005,
-    "cat": "reading",
-    "orig": 605,
-    "q": "According to the passage, what supplements the available lighting during a DI?",
-    "opts": [
-      "Ultraviolet lamps",
-      "Natural sunlight",
-      "Torch lights",
-      "A direct source of good lighting"
-    ],
-    "ans": 3,
-    "diff": "medium",
-    "passage": null,
-    "passageTitle": null,
-    "passageId": null
-  },
-  {
     "id": 1006,
     "cat": "reading",
     "orig": 606,
@@ -238,23 +221,6 @@
     "passageId": null
   },
   {
-    "id": 1015,
-    "cat": "reading",
-    "orig": 615,
-    "q": "According to the passage, when might fuel system messages appear again after the first run?",
-    "opts": [
-      "They will never appear again",
-      "Only if they are caused by a different reason",
-      "During every subsequent engine start",
-      "After 1000 flight hours"
-    ],
-    "ans": 1,
-    "diff": "medium",
-    "passage": null,
-    "passageTitle": null,
-    "passageId": null
-  },
-  {
     "id": 1016,
     "cat": "reading",
     "orig": 616,
@@ -298,23 +264,6 @@
       "Both in the air and on the ground",
       "Only on the ground",
       "Only in the cockpit"
-    ],
-    "ans": 2,
-    "diff": "medium",
-    "passage": null,
-    "passageTitle": null,
-    "passageId": null
-  },
-  {
-    "id": 1019,
-    "cat": "reading",
-    "orig": 619,
-    "q": "According to the passage, which function can be used for passenger announcements?",
-    "opts": [
-      "Service interphone",
-      "Flight interphone",
-      "Passenger Address (PA)",
-      "Cabin interphone"
     ],
     "ans": 2,
     "diff": "medium",
@@ -493,23 +442,6 @@
     "passageId": null
   },
   {
-    "id": 1030,
-    "cat": "reading",
-    "orig": 630,
-    "q": "According to the passage, what CANNOT be said about the pitot probe?",
-    "opts": [
-      "It measures air pressure",
-      "It has a built-in heater",
-      "It is flush with the aircraft skin",
-      "It faces forward"
-    ],
-    "ans": 2,
-    "diff": "medium",
-    "passage": null,
-    "passageTitle": null,
-    "passageId": null
-  },
-  {
     "id": 1031,
     "cat": "reading",
     "orig": 631,
@@ -570,40 +502,6 @@
       "To ensure reliable system operation",
       "To meet weight restrictions",
       "To prevent freezing at altitude"
-    ],
-    "ans": 1,
-    "diff": "medium",
-    "passage": null,
-    "passageTitle": null,
-    "passageId": null
-  },
-  {
-    "id": 1035,
-    "cat": "reading",
-    "orig": 635,
-    "q": "According to the passage, what is required as part of the maintenance program?",
-    "opts": [
-      "Complete fluid replacement every flight",
-      "Regular sampling and testing of the hydraulic fluid",
-      "Replacement of all seals every 100 hours",
-      "Weekly pump inspection"
-    ],
-    "ans": 1,
-    "diff": "medium",
-    "passage": null,
-    "passageTitle": null,
-    "passageId": null
-  },
-  {
-    "id": 1036,
-    "cat": "reading",
-    "orig": 636,
-    "q": "How is corrosion defined in the passage?",
-    "opts": [
-      "Physical damage from impact",
-      "Chemical deterioration of a metal by reaction with its environment",
-      "Damage caused by excessive heat",
-      "Mechanical wear of metal surfaces"
     ],
     "ans": 1,
     "diff": "medium",
@@ -1156,40 +1054,6 @@
     "passageId": null
   },
   {
-    "id": 1069,
-    "cat": "reading",
-    "orig": 669,
-    "q": "According to the passage, how long must the crew wait after three unsuccessful APU start attempts?",
-    "opts": [
-      "30 minutes",
-      "45 minutes",
-      "At least one hour",
-      "Two hours"
-    ],
-    "ans": 2,
-    "diff": "medium",
-    "passage": null,
-    "passageTitle": null,
-    "passageId": null
-  },
-  {
-    "id": 1070,
-    "cat": "reading",
-    "orig": 670,
-    "q": "Which of the following APU maintenance tasks is mentioned in the passage?",
-    "opts": [
-      "Turbine blade replacement",
-      "Regular oil changes, filter replacements, and exhaust system inspection",
-      "Fuel nozzle cleaning only",
-      "Compressor wash"
-    ],
-    "ans": 1,
-    "diff": "medium",
-    "passage": null,
-    "passageTitle": null,
-    "passageId": null
-  },
-  {
     "id": 1071,
     "cat": "reading",
     "orig": 671,
@@ -1252,23 +1116,6 @@
       "Every 3 years"
     ],
     "ans": 2,
-    "diff": "medium",
-    "passage": null,
-    "passageTitle": null,
-    "passageId": null
-  },
-  {
-    "id": 1075,
-    "cat": "reading",
-    "orig": 675,
-    "q": "According to the passage, what determines the interval between checks?",
-    "opts": [
-      "The airline's preference",
-      "Aircraft type and the operator's approved maintenance program",
-      "The age of the aircraft only",
-      "The number of flight cycles"
-    ],
-    "ans": 1,
     "diff": "medium",
     "passage": null,
     "passageTitle": null,
@@ -1938,23 +1785,6 @@
     "passageId": null
   },
   {
-    "id": 1115,
-    "cat": "reading",
-    "orig": 715,
-    "q": "According to the passage, when must flight controls not be operated by maintenance personnel?",
-    "opts": [
-      "Never, under any circumstances",
-      "Only during engine ground runs",
-      "When technicians are working on them without an all-clear signal",
-      "During cold weather conditions"
-    ],
-    "ans": 2,
-    "diff": "medium",
-    "passage": null,
-    "passageTitle": null,
-    "passageId": null
-  },
-  {
     "id": 1116,
     "cat": "reading",
     "orig": 716,
@@ -2238,23 +2068,6 @@
       "Composite dust only"
     ],
     "ans": 0,
-    "diff": "medium",
-    "passage": null,
-    "passageTitle": null,
-    "passageId": null
-  },
-  {
-    "id": 1133,
-    "cat": "reading",
-    "orig": 733,
-    "q": "What PPE must be worn according to the passage?",
-    "opts": [
-      "Fireproof suit only",
-      "Safety boots only",
-      "Gloves, safety glasses, and protective clothing",
-      "Hard hat and high-visibility vest only"
-    ],
-    "ans": 2,
     "diff": "medium",
     "passage": null,
     "passageTitle": null,
@@ -6392,91 +6205,6 @@
     "passageId": null
   },
   {
-    "id": 1937,
-    "cat": "reading",
-    "orig": 1937,
-    "q": "We can infer from the passage that the low pressure switch ………….",
-    "opts": [
-      "is open if the hydraulic pressure is unavailable to the flight controls",
-      "opens if the pressure is less than 1300 psi",
-      "closes and opens depending on the pressure inside the aircraft",
-      "is usually closed in order to supply a ground to the low pressure light"
-    ],
-    "ans": 0,
-    "diff": "medium",
-    "passage": null,
-    "passageTitle": null,
-    "passageId": null
-  },
-  {
-    "id": 1938,
-    "cat": "reading",
-    "orig": 1938,
-    "q": "According to the passage, STBY RUD position means that ………….",
-    "opts": [
-      "the low pressure warning and the low pressure light are not connected to each other",
-      "there is a problem related to the flight control switch and the low pressure light",
-      "the pressure inside the aircraft is normal and no assistance is necessary",
-      "the low pressure light is not functioning correctly"
-    ],
-    "ans": 1,
-    "diff": "medium",
-    "passage": null,
-    "passageTitle": null,
-    "passageId": null
-  },
-  {
-    "id": 1939,
-    "cat": "reading",
-    "orig": 1939,
-    "q": "It is stated in the passage that ………….",
-    "opts": [
-      "the standby rudder shutoff valve powers the low pressure light",
-      "the valve position relay can provide a ground to the low pressure light",
-      "the low pressure light turns on when the switch is in the open position",
-      "in order to remove the ground to the low pressure light, the valve needs to be closed"
-    ],
-    "ans": 1,
-    "diff": "medium",
-    "passage": null,
-    "passageTitle": null,
-    "passageId": null
-  },
-  {
-    "id": 1940,
-    "cat": "reading",
-    "orig": 1940,
-    "q": "According to the passage, in order to control the roll altitude of the airplane ………….",
-    "opts": [
-      "a transfer mechanism is used",
-      "the flight crew uses two control wheels",
-      "there needs to be a link between the control wheels",
-      "the first officer checks the cables and linkages"
-    ],
-    "ans": 1,
-    "diff": "medium",
-    "passage": null,
-    "passageTitle": null,
-    "passageId": null
-  },
-  {
-    "id": 1941,
-    "cat": "reading",
-    "orig": 1941,
-    "q": "It is stated in the passage that ………….",
-    "opts": [
-      "the output is taken from the power control unit through cables and linkages",
-      "if there is a failure in one control wheel, the other one stops working as well",
-      "the control wheels are controlled by the first officer",
-      "the housing moves because the hydraulic pressure goes to the PCU"
-    ],
-    "ans": 0,
-    "diff": "medium",
-    "passage": null,
-    "passageTitle": null,
-    "passageId": null
-  },
-  {
     "id": 1942,
     "cat": "reading",
     "orig": 1942,
@@ -6486,23 +6214,6 @@
       "The roll control wheel steering starts to control the sensors.",
       "Signals are sent to the flight control computers.",
       "The roll control wheel steering force transducer turns on and off."
-    ],
-    "ans": 3,
-    "diff": "medium",
-    "passage": null,
-    "passageTitle": null,
-    "passageId": null
-  },
-  {
-    "id": 1943,
-    "cat": "reading",
-    "orig": 1943,
-    "q": "The word “link” in the passage can be replaced with ………….",
-    "opts": [
-      "loop",
-      "branch",
-      "outline",
-      "network"
     ],
     "ans": 3,
     "diff": "medium",
@@ -6528,23 +6239,6 @@
     "passageId": null
   },
   {
-    "id": 1945,
-    "cat": "reading",
-    "orig": 1945,
-    "q": "In the event of seeing fuel leakage, according to the passage, you should",
-    "opts": [
-      "change seals.",
-      "turn off main pump.",
-      "inform your administration.",
-      "replace nuts."
-    ],
-    "ans": 0,
-    "diff": "medium",
-    "passage": null,
-    "passageTitle": null,
-    "passageId": null
-  },
-  {
     "id": 1946,
     "cat": "reading",
     "orig": 1946,
@@ -6556,23 +6250,6 @@
       "Change"
     ],
     "ans": 0,
-    "diff": "medium",
-    "passage": null,
-    "passageTitle": null,
-    "passageId": null
-  },
-  {
-    "id": 1947,
-    "cat": "reading",
-    "orig": 1947,
-    "q": "It can be inferred from the passage that",
-    "opts": [
-      "every possible flow in the engine can cause to leakage.",
-      "fuel leaks are dangerous.",
-      "stains that are seen some areas can be tolerable",
-      "cracks in the main fuel pump are not safe."
-    ],
-    "ans": 2,
     "diff": "medium",
     "passage": null,
     "passageTitle": null,
@@ -6596,108 +6273,6 @@
     "passageId": null
   },
   {
-    "id": 1949,
-    "cat": "reading",
-    "orig": 1949,
-    "q": "The underlined part of the passage means that",
-    "opts": [
-      "there is a problem about the plug.",
-      "clicking sound shows that everything works well.",
-      "listening to sound of the plug is good.",
-      "clicking sound does not show anything about the plug."
-    ],
-    "ans": 1,
-    "diff": "medium",
-    "passage": null,
-    "passageTitle": null,
-    "passageId": null
-  },
-  {
-    "id": 1950,
-    "cat": "reading",
-    "orig": 1950,
-    "q": "According to the passage, in which circumstances fuel leakage can occur?",
-    "opts": [
-      "By putting a short piece of string into the preformed packing.",
-      "By twisting preformed packing.",
-      "By pulling the string around the new performed packing away.",
-      "By using the torques."
-    ],
-    "ans": 1,
-    "diff": "medium",
-    "passage": null,
-    "passageTitle": null,
-    "passageId": null
-  },
-  {
-    "id": 2016,
-    "cat": "reading",
-    "orig": 2016,
-    "q": "According to the passage what happens when the difference is not more than 800 cm?",
-    "opts": [
-      "You can change blades one by one.",
-      "You can replace fans one by one.",
-      "You can cut one blade individually.",
-      "You can change individual pair of fan blades."
-    ],
-    "ans": 1,
-    "diff": "medium",
-    "passage": null,
-    "passageTitle": null,
-    "passageId": null
-  },
-  {
-    "id": 2017,
-    "cat": "reading",
-    "orig": 2017,
-    "q": "In the passage the word “removed” means ………….",
-    "opts": [
-      "located",
-      "set out",
-      "taken out",
-      "assigned"
-    ],
-    "ans": 2,
-    "diff": "medium",
-    "passage": null,
-    "passageTitle": null,
-    "passageId": null
-  },
-  {
-    "id": 2018,
-    "cat": "reading",
-    "orig": 2018,
-    "q": "In the passage the word “This” refers to ………….",
-    "opts": [
-      "Engine Vibration",
-      "Availability",
-      "Inspection and Correction",
-      "Optimization"
-    ],
-    "ans": 0,
-    "diff": "medium",
-    "passage": null,
-    "passageTitle": null,
-    "passageId": null
-  },
-  {
-    "id": 2019,
-    "cat": "reading",
-    "orig": 2019,
-    "q": "According to the passage in which condition can you change a blade by itself?",
-    "opts": [
-      "If a blade is loose.",
-      "If two of the blades are not ready.",
-      "If the fan is loose.",
-      "If two of the fans are not available."
-    ],
-    "ans": 3,
-    "diff": "medium",
-    "passage": null,
-    "passageTitle": null,
-    "passageId": null
-  },
-  {
     "id": 2020,
     "cat": "reading",
     "orig": 2020,
@@ -6709,91 +6284,6 @@
       "temperature problems"
     ],
     "ans": 0,
-    "diff": "medium",
-    "passage": null,
-    "passageTitle": null,
-    "passageId": null
-  },
-  {
-    "id": 2021,
-    "cat": "reading",
-    "orig": 2021,
-    "q": "It can be inferred from the passage that ………….",
-    "opts": [
-      "to maintain the engine health there should be certain conditions",
-      "high humidity can benefit to the some parts of the engine",
-      "fixed weather and storage conditions are not recommended for the engine",
-      "preservation procedures are not implemented into engine maintenance"
-    ],
-    "ans": 1,
-    "diff": "medium",
-    "passage": null,
-    "passageTitle": null,
-    "passageId": null
-  },
-  {
-    "id": 2022,
-    "cat": "reading",
-    "orig": 2022,
-    "q": "In the passage “a flexible program” may mean that ………….",
-    "opts": [
-      "a program provides different options",
-      "one cannot choose from different options",
-      "a system explains different part of the engine",
-      "different system provides different program"
-    ],
-    "ans": 2,
-    "diff": "medium",
-    "passage": null,
-    "passageTitle": null,
-    "passageId": null
-  },
-  {
-    "id": 2023,
-    "cat": "reading",
-    "orig": 2023,
-    "q": "According to the passage, it can be inferred that compared to active ones inactive engines ………….",
-    "opts": [
-      "are not needed to be stored in severe weather conditions",
-      "can be easily stored if they are stored in severe conditions",
-      "may need less attention due to weather conditions",
-      "should be carefully stored to protect its maintenance"
-    ],
-    "ans": 3,
-    "diff": "medium",
-    "passage": null,
-    "passageTitle": null,
-    "passageId": null
-  },
-  {
-    "id": 2024,
-    "cat": "reading",
-    "orig": 2024,
-    "q": "According to the passage what causes corrosion of aviation equipment?",
-    "opts": [
-      "Natural environment",
-      "Man-made environment",
-      "Natural and man-made environments",
-      "Industrial pollution"
-    ],
-    "ans": 0,
-    "diff": "medium",
-    "passage": null,
-    "passageTitle": null,
-    "passageId": null
-  },
-  {
-    "id": 2025,
-    "cat": "reading",
-    "orig": 2025,
-    "q": "What is the importance of understanding the conditions which are given in the paragraph for a maintenance worker?",
-    "opts": [
-      "People fly safely",
-      "Workers can earn more money",
-      "Workers will be better able to prevent aircraft damage",
-      "They can improve themselves"
-    ],
-    "ans": 1,
     "diff": "medium",
     "passage": null,
     "passageTitle": null,
@@ -6817,74 +6307,6 @@
     "passageId": null
   },
   {
-    "id": 2027,
-    "cat": "reading",
-    "orig": 2027,
-    "q": "It is stated in the passage that ………….",
-    "opts": [
-      "the paint stripper creates water and oxygen during the paint removal process",
-      "the paint stripper produces nothing during the removal process",
-      "during the removal process there can be an explosion",
-      "the paint stripper cannot be used on a thin layer"
-    ],
-    "ans": 0,
-    "diff": "medium",
-    "passage": null,
-    "passageTitle": null,
-    "passageId": null
-  },
-  {
-    "id": 2028,
-    "cat": "reading",
-    "orig": 2028,
-    "q": "According to the passage how many day/s do we need to cap container after collecting the stripper?",
-    "opts": [
-      "Four days",
-      "Two days",
-      "Three days",
-      "One day"
-    ],
-    "ans": 3,
-    "diff": "medium",
-    "passage": null,
-    "passageTitle": null,
-    "passageId": null
-  },
-  {
-    "id": 2029,
-    "cat": "reading",
-    "orig": 2029,
-    "q": "According to the passage the acid stripper can be used with magnesium parts if ………….",
-    "opts": [
-      "the parts are thin",
-      "the parts are masked",
-      "the parts are thick",
-      "the parts are colourful"
-    ],
-    "ans": 1,
-    "diff": "medium",
-    "passage": null,
-    "passageTitle": null,
-    "passageId": null
-  },
-  {
-    "id": 2030,
-    "cat": "reading",
-    "orig": 2030,
-    "q": "It is stated in the passage that acid strippers ………….",
-    "opts": [
-      "discolour clad aluminium",
-      "make aluminium powerful",
-      "burn the aluminium parts",
-      "make the aluminium parts thinner"
-    ],
-    "ans": 0,
-    "diff": "medium",
-    "passage": null,
-    "passageTitle": null,
-    "passageId": null
-  },
-  {
     "id": 2096,
     "cat": "reading",
     "orig": 2096,
@@ -6902,23 +6324,6 @@
     "passageId": null
   },
   {
-    "id": 2097,
-    "cat": "reading",
-    "orig": 2097,
-    "q": "According to the passage the escape slide…………",
-    "opts": [
-      "cannot float in water.",
-      "is used to remove the passengers and the crew from the airplane in an emergency.",
-      "installation has consists of two different parts.",
-      "has no extra features."
-    ],
-    "ans": 0,
-    "diff": "medium",
-    "passage": null,
-    "passageTitle": null,
-    "passageId": null
-  },
-  {
     "id": 2098,
     "cat": "reading",
     "orig": 2098,
@@ -6928,23 +6333,6 @@
       "quick-release detachable girts.",
       "a compartment on the aircraft exit door.",
       "A lighting system."
-    ],
-    "ans": 0,
-    "diff": "medium",
-    "passage": null,
-    "passageTitle": null,
-    "passageId": null
-  },
-  {
-    "id": 2099,
-    "cat": "reading",
-    "orig": 2099,
-    "q": "One can understand from the passage that…………",
-    "opts": [
-      "only some of the units are connected to each other on the network.",
-      "there is not a unit to check the integrity of the bits in the frame.",
-      "some of the fields can carry more than 46 bits.",
-      "if there is a mismatch, the units continues reading the frame."
     ],
     "ans": 0,
     "diff": "medium",
@@ -6996,23 +6384,6 @@
       "feel",
       "sense",
       "check"
-    ],
-    "ans": 0,
-    "diff": "medium",
-    "passage": null,
-    "passageTitle": null,
-    "passageId": null
-  },
-  {
-    "id": 2103,
-    "cat": "reading",
-    "orig": 2103,
-    "q": "According to the passage…………",
-    "opts": [
-      "surge tanks enables the vent scoop to be opened to the atmosphere.",
-      "the pressure relief valve opens if the negative pressure is not enough.",
-      "pulling the reset handle supplies extra vent in the surge tank.",
-      "fuel is drained into the tank through the vent tubes and vent channels."
     ],
     "ans": 0,
     "diff": "medium",
@@ -7089,23 +6460,6 @@
     "passageId": null
   },
   {
-    "id": 2108,
-    "cat": "reading",
-    "orig": 2108,
-    "q": "According to the passage …………",
-    "opts": [
-      "ıf the standby rudder is in open position, the ground is not energized and removed.",
-      "ıf the hydraulic pressure is ready to use for the flight controls, the low pressure switch is not open.",
-      "when in the STDBY RUD position, the low pressure light is attached to the low pressure warning.",
-      "the switch is closed if the pressure is 1200 psi."
-    ],
-    "ans": 0,
-    "diff": "medium",
-    "passage": null,
-    "passageTitle": null,
-    "passageId": null
-  },
-  {
     "id": 2174,
     "cat": "reading",
     "orig": 2174,
@@ -7115,23 +6469,6 @@
       "opens and closes fuel flow for nozzles.",
       "does not let the fuel flow in closed position.",
       "has only one position in the combustion chamber."
-    ],
-    "ans": 0,
-    "diff": "medium",
-    "passage": null,
-    "passageTitle": null,
-    "passageId": null
-  },
-  {
-    "id": 2175,
-    "cat": "reading",
-    "orig": 2175,
-    "q": "It is understood from the passage that…………",
-    "opts": [
-      "four switches provide BSV position for just channel A.",
-      "fuel may not flow through both the unstaged and staged nozzles.",
-      "the BSV Position information is received from two switches.",
-      "the EEC has a function to change the position of BSV"
     ],
     "ans": 0,
     "diff": "medium",
@@ -7191,23 +6528,6 @@
     "passageId": null
   },
   {
-    "id": 2179,
-    "cat": "reading",
-    "orig": 2179,
-    "q": "Which one is not true according to the passage?",
-    "opts": [
-      "Filling period of serial number will be all the time.",
-      "The fourth block is for service bulletins",
-      "The sixth block indicates the N1 trim",
-      "Second blocks show only take-off thrust"
-    ],
-    "ans": 0,
-    "diff": "medium",
-    "passage": null,
-    "passageTitle": null,
-    "passageId": null
-  },
-  {
     "id": 2180,
     "cat": "reading",
     "orig": 2180,
@@ -7217,40 +6537,6 @@
       "to allow different trust rating changes",
       "to display the changes to engine",
       "to show the thrust  rating history"
-    ],
-    "ans": 0,
-    "diff": "medium",
-    "passage": null,
-    "passageTitle": null,
-    "passageId": null
-  },
-  {
-    "id": 2181,
-    "cat": "reading",
-    "orig": 2181,
-    "q": "The passage is mainly about …………",
-    "opts": [
-      "the location of the engine nameplate",
-      "the ways of using the blocks",
-      "the name of the blocks in the engine",
-      "the history of the thrust rating"
-    ],
-    "ans": 0,
-    "diff": "medium",
-    "passage": null,
-    "passageTitle": null,
-    "passageId": null
-  },
-  {
-    "id": 2182,
-    "cat": "reading",
-    "orig": 2182,
-    "q": "We can understand from the passage that when you supply electrical power, engine start lever ………….",
-    "opts": [
-      "is always at the same position",
-      "can be in two positions",
-      "must be in closed position",
-      "should be neutral"
     ],
     "ans": 0,
     "diff": "medium",
@@ -7327,91 +6613,6 @@
     "passageId": null
   },
   {
-    "id": 2187,
-    "cat": "reading",
-    "orig": 2187,
-    "q": "The passage clearly shows that ………….",
-    "opts": [
-      "the minimum radius of the dent must be less than 0.070 inch",
-      "the minimum radius of the dent must be greater than 1.78 mm",
-      "the maximum radius of the dent must be greater than 1.78 mm",
-      "the maximum radius of the dent must be less than 0.070 inch"
-    ],
-    "ans": 0,
-    "diff": "medium",
-    "passage": null,
-    "passageTitle": null,
-    "passageId": null
-  },
-  {
-    "id": 2188,
-    "cat": "reading",
-    "orig": 2188,
-    "q": "We can infer from the passage that ………….",
-    "opts": [
-      "nicks, scratches, scores, and chafed areas have different limits",
-      "after the tube is blended to a smooth radius, the depth of the scratch must be 0.15mm",
-      "nicks, scratches, scores, and chafed areas have the same limits",
-      "before the tube is blended to a smooth radius, the depth of the scratch must be 0.20mm"
-    ],
-    "ans": 0,
-    "diff": "medium",
-    "passage": null,
-    "passageTitle": null,
-    "passageId": null
-  },
-  {
-    "id": 2254,
-    "cat": "reading",
-    "orig": 2254,
-    "q": "It is stated in the passage that the secondary fuel path ………….",
-    "opts": [
-      "accelerates the refueling process of the center tank",
-      "closes the fuel path when it is not in use",
-      "uses the same fuel path as the center tank refuel valve",
-      "is used as it is a faster way of refueling the center tank"
-    ],
-    "ans": 0,
-    "diff": "medium",
-    "passage": null,
-    "passageTitle": null,
-    "passageId": null
-  },
-  {
-    "id": 2255,
-    "cat": "reading",
-    "orig": 2255,
-    "q": "According to the passage, the function of the flapper is ………….",
-    "opts": [
-      "controlling a spring loaded diaphragm",
-      "preventing the tank from overflowing",
-      "opening and closing the valve",
-      "keeping fuel out of the tank"
-    ],
-    "ans": 0,
-    "diff": "medium",
-    "passage": null,
-    "passageTitle": null,
-    "passageId": null
-  },
-  {
-    "id": 2256,
-    "cat": "reading",
-    "orig": 2256,
-    "q": "According to the passage, the pressure on the upper diaphragm increases ………….",
-    "opts": [
-      "because of a change in the rate of fuel going into the center tank",
-      "until the pressure is the same as the pressure in the main distribution manifold",
-      "when the pressure in the main distribution manifold is lower than normal",
-      "if the flapper in the pilot float valve is closed"
-    ],
-    "ans": 0,
-    "diff": "medium",
-    "passage": null,
-    "passageTitle": null,
-    "passageId": null
-  },
-  {
     "id": 2257,
     "cat": "reading",
     "orig": 2257,
@@ -7421,74 +6622,6 @@
       "keeps",
       "bans",
       "harm"
-    ],
-    "ans": 0,
-    "diff": "medium",
-    "passage": null,
-    "passageTitle": null,
-    "passageId": null
-  },
-  {
-    "id": 2258,
-    "cat": "reading",
-    "orig": 2258,
-    "q": "According to the passage, vent scoops ………….",
-    "opts": [
-      "give pressurized air to the surge tanks",
-      "keep the air outside of the surge tanks",
-      "are the main causes of the pressure",
-      "let outside air into the surge tanks"
-    ],
-    "ans": 0,
-    "diff": "medium",
-    "passage": null,
-    "passageTitle": null,
-    "passageId": null
-  },
-  {
-    "id": 2259,
-    "cat": "reading",
-    "orig": 2259,
-    "q": "We can understand from the passage that ………….",
-    "opts": [
-      "the drain valves are not always covered by fuel",
-      "the fuel is drained via the vent scoops",
-      "the fuel in the center tank is for auxiliary purposes only",
-      "the pressure causes the vent scoops to open"
-    ],
-    "ans": 0,
-    "diff": "medium",
-    "passage": null,
-    "passageTitle": null,
-    "passageId": null
-  },
-  {
-    "id": 2260,
-    "cat": "reading",
-    "orig": 2260,
-    "q": "It is stated in the passage that the fuel vent float valves close ………….",
-    "opts": [
-      "when there is a leakage in the main tank vent channels",
-      "if the fuel level is lower than the recommended level",
-      "in order to prevent fuel from reaching the vent channels",
-      "unless there is a manual intervention"
-    ],
-    "ans": 0,
-    "diff": "medium",
-    "passage": null,
-    "passageTitle": null,
-    "passageId": null
-  },
-  {
-    "id": 2261,
-    "cat": "reading",
-    "orig": 2261,
-    "q": "The word “shape” in the passage can be replaced with ………….",
-    "opts": [
-      "format",
-      "layer",
-      "structure",
-      "frame"
     ],
     "ans": 0,
     "diff": "medium",
@@ -7599,40 +6732,6 @@
     "passageId": null
   },
   {
-    "id": 2333,
-    "cat": "reading",
-    "orig": 2333,
-    "q": "According to the passage before flight ………….",
-    "opts": [
-      "there should be an engine operator",
-      "you need to be sure that all engine controls are operative",
-      "there isn’t an emergency situation",
-      "it is not important to reach all the controls"
-    ],
-    "ans": 0,
-    "diff": "medium",
-    "passage": null,
-    "passageTitle": null,
-    "passageId": null
-  },
-  {
-    "id": 2334,
-    "cat": "reading",
-    "orig": 2334,
-    "q": "It is not stated in the passage that ………….",
-    "opts": [
-      "engine servicing should only be performed by a qualified trained mechanic",
-      "special tools and engines may be required during engine servicing",
-      "in case of an emergency, all controls should easily be reached",
-      "the engine may require humidity"
-    ],
-    "ans": 0,
-    "diff": "medium",
-    "passage": null,
-    "passageTitle": null,
-    "passageId": null
-  },
-  {
     "id": 2335,
     "cat": "reading",
     "orig": 2335,
@@ -7642,40 +6741,6 @@
       "expert",
       "specialist",
       "incompetent"
-    ],
-    "ans": 0,
-    "diff": "medium",
-    "passage": null,
-    "passageTitle": null,
-    "passageId": null
-  },
-  {
-    "id": 2336,
-    "cat": "reading",
-    "orig": 2336,
-    "q": "According to the passage, to eliminate possible injury or damage, you ………….",
-    "opts": [
-      "should protect the engine and fuel system from contamination",
-      "never operate the engine without sufficient quantities of operating fluids",
-      "should be sure that any loose equipment or tools are properly secured before starting the engine",
-      "never exceed the maximum permitted operational limits"
-    ],
-    "ans": 0,
-    "diff": "medium",
-    "passage": null,
-    "passageTitle": null,
-    "passageId": null
-  },
-  {
-    "id": 2337,
-    "cat": "reading",
-    "orig": 2337,
-    "q": "It is understood from the passage that ………….",
-    "opts": [
-      "there needs to be an extra protection against corrosion for the Rotax aircraft engines",
-      "the cylinder wall of Rotax aircraft engine is made of a special material",
-      "for long out of service periods, there is nothing to protect the valve guides against corrosion",
-      "you should always allow engine to cool down before start of any work"
     ],
     "ans": 0,
     "diff": "medium",
@@ -7701,23 +6766,6 @@
     "passageId": null
   },
   {
-    "id": 2339,
-    "cat": "reading",
-    "orig": 2339,
-    "q": "According to the passage before removing the air intake filters you ………….",
-    "opts": [
-      "should increase the idle speed",
-      "should let the engine cool down",
-      "shouldn’t switch off the engine",
-      "drain carburetor float chamber"
-    ],
-    "ans": 0,
-    "diff": "medium",
-    "passage": null,
-    "passageTitle": null,
-    "passageId": null
-  },
-  {
     "id": 2340,
     "cat": "reading",
     "orig": 2340,
@@ -7735,23 +6783,6 @@
     "passageId": null
   },
   {
-    "id": 2341,
-    "cat": "reading",
-    "orig": 2341,
-    "q": "It is understood from the passage that ………….",
-    "opts": [
-      "in only FMC SPD mode, A/T controls thrust",
-      "all active modes are selected in ARM mode",
-      "retard mode can be also flare retard on the FMA",
-      "it takes a long time for a box to show on the FMA"
-    ],
-    "ans": 0,
-    "diff": "medium",
-    "passage": null,
-    "passageTitle": null,
-    "passageId": null
-  },
-  {
     "id": 2342,
     "cat": "reading",
     "orig": 2342,
@@ -7761,23 +6792,6 @@
       "power is removed from the ASMs",
       "the ARM mode remains the same",
       "N1 or speed mode can be selected"
-    ],
-    "ans": 0,
-    "diff": "medium",
-    "passage": null,
-    "passageTitle": null,
-    "passageId": null
-  },
-  {
-    "id": 2343,
-    "cat": "reading",
-    "orig": 2343,
-    "q": "The passage is mainly about ………….",
-    "opts": [
-      "operation of RETARD modes",
-      "information about the A/T modes",
-      "steps of flight mode annunciation",
-      "information about no active modes"
     ],
     "ans": 0,
     "diff": "medium",
@@ -7829,23 +6843,6 @@
       "to install switches on the wheel",
       "to send the commands to autopilot",
       "to disconnect autopilot on the Wheel"
-    ],
-    "ans": 0,
-    "diff": "medium",
-    "passage": null,
-    "passageTitle": null,
-    "passageId": null
-  },
-  {
-    "id": 2347,
-    "cat": "reading",
-    "orig": 2347,
-    "q": "According to the paragraph, the word “sense” means ………….",
-    "opts": [
-      "show",
-      "follow",
-      "detect",
-      "occur"
     ],
     "ans": 0,
     "diff": "medium",

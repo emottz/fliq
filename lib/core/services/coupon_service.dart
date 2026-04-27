@@ -23,10 +23,19 @@ class CouponService {
     if (row == null) throw Exception('Kupon kodu bulunamadı.');
     _validate(uid, row);
 
+    final rawPlan = row['plan'] as String? ?? 'student';
+    // Yeni format: 'discount_30' → 30
+    // Eski format: 'discount' + discount_percent kolonu → DB'den oku
+    int pct = _parseDiscount(rawPlan);
+    if (pct == 0 && (rawPlan == 'discount' || rawPlan.startsWith('discount'))) {
+      pct = (row['discount_percent'] as num?)?.toInt() ?? 0;
+    }
     return CouponPreview(
-      code:         code,
-      plan:         row['plan'] as String? ?? 'student',
-      durationDays: (row['duration_days'] as num?)?.toInt() ?? 0,
+      code:                    code,
+      plan:                    rawPlan,
+      durationDays:            (row['duration_days'] as num?)?.toInt() ?? 0,
+      discountPercent:         pct,
+      discountPlanRestriction: _parsePlanRestriction(rawPlan),
     );
   }
 
@@ -49,7 +58,7 @@ class CouponService {
     if (row == null) throw Exception('Kupon kodu bulunamadı: $code');
     _validate(uid, row);
 
-    final plan         = row['plan'] as String? ?? 'student';
+    final plan = row['plan'] as String? ?? 'student';
     final durationDays = (row['duration_days'] as num?)?.toInt() ?? 0;
     final usedBy       = List<String>.from(row['used_by'] ?? []);
     final useCount     = (row['use_count'] as int?) ?? 0;
@@ -151,6 +160,23 @@ class CouponService {
     } catch (_) {}
   }
 
+  // ── plan adından indirim yüzdesi parse et ('discount_30' veya 'discount_30_pilot' → 30)
+  static int _parseDiscount(String plan) {
+    if (plan.startsWith('discount_')) {
+      return int.tryParse(plan.split('_')[1]) ?? 0;
+    }
+    return 0;
+  }
+
+  // ── plan adından kısıtlı plan parse et ('discount_30_pilot' → 'pilot', 'discount_30_cabin_crew' → 'cabin_crew')
+  static String _parsePlanRestriction(String plan) {
+    if (plan.startsWith('discount_')) {
+      final parts = plan.split('_');
+      if (parts.length >= 3) return parts.sublist(2).join('_');
+    }
+    return '';
+  }
+
   // ── İç yardımcı ───────────────────────────────────────────────────────────
   void _validate(String uid, Map<String, dynamic> row) {
     if (row['is_active'] != true) throw Exception('Bu kupon artık aktif değil.');
@@ -175,7 +201,25 @@ class CouponPreview {
   final String code;
   final String plan;
   final int durationDays;
-  const CouponPreview({required this.code, required this.plan, required this.durationDays});
+  final int discountPercent;
+  final String discountPlanRestriction;
+  const CouponPreview({
+    required this.code,
+    required this.plan,
+    required this.durationDays,
+    this.discountPercent = 0,
+    this.discountPlanRestriction = '',
+  });
+
+  bool get isDiscountCoupon => plan == 'discount' || plan.startsWith('discount_') || discountPercent > 0;
+  bool get hasDiscountPlanRestriction => discountPlanRestriction.isNotEmpty;
+
+  String get discountPlanLabel => const {
+    'pilot':      '✈️ Pilot',
+    'cabin_crew': '💺 Kabin',
+    'amt':        '🔧 AMT',
+    'student':    '🎓 Öğrenci',
+  }[discountPlanRestriction] ?? discountPlanRestriction;
 
   String get planLabel => const {
     'pilot':      '✈️  Pilot',

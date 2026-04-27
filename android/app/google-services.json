@@ -7,6 +7,42 @@
   "client": [
     {
       "client_info": {
+        "mobilesdk_app_id": "1:560944576659:android:310b931023a7c2c87b7566",
+        "android_client_info": {
+          "package_name": "com.avialish.language"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "560944576659-07uh0u45a5rgnaed27c9v00rnvn3vioj.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCsMfApleaIW_edXb2QH4TsV54dhbPD5SI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "560944576659-07uh0u45a5rgnaed27c9v00rnvn3vioj.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "560944576659-oimonijndu7u39rrk341s70rg4h5fn89.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.fliq.fliq"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
         "mobilesdk_app_id": "1:560944576659:android:15be224f53156a5b7b7566",
         "android_client_info": {
           "package_name": "com.fliq.fliq"

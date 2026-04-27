@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart' show Color;
 import 'question_model.dart';
 
+enum LessonType { avia, standard }
+
 enum LessonSectionType { intro, rule, examples, animation, practice, tip, dialogue }
 
 enum GrammarAnimationType {
@@ -127,6 +129,7 @@ class LessonContent {
   final String estimatedTime; // e.g. '8 min'
   final String emoji;
   final List<LessonSection> sections;
+  final LessonType lessonType;
 
   const LessonContent({
     required this.id,
@@ -136,6 +139,7 @@ class LessonContent {
     required this.estimatedTime,
     required this.emoji,
     required this.sections,
+    this.lessonType = LessonType.avia,
   });
 
   int get sectionCount => sections.length;

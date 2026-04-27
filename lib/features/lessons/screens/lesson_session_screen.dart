@@ -106,7 +106,7 @@ class _LessonSessionScreenState extends ConsumerState<LessonSessionScreen>
     }
   }
 
-  static const _freeLessonsCount = 5;
+  static const _freeLessonsCount = 6;
 
   @override
   Widget build(BuildContext context) {

@@ -1,9 +1,15 @@
+import 'dart:convert';
+import 'package:http/http.dart' as http;
 import 'package:supabase_flutter/supabase_flutter.dart';
 
-/// Supabase tabanlı abonelik servisi.
-/// iyzico ödeme akışı Supabase Edge Functions üzerinden yapılır.
+/// Ödeme altyapısı:
+///   Mobil  → Google Play Billing  → /api/iap/verify
+///   Web    → PayTR                → /api/paytr/create-checkout
 class SubscriptionService {
   static final _sb = Supabase.instance.client;
+
+  static const _serverBase = 'https://server.avialish.com'; // SERVER_BASE_URL
+  static const _apiKey     = 'avialish_mobile_api_2024';    // FLUTTER_API_KEY
 
   // ── Premium durumu ──────────────────────────────────────────────────────────
 
@@ -40,7 +46,7 @@ class SubscriptionService {
     }
   }
 
-  // ── Google Play / App Store IAP aktivasyonu ─────────────────────────────────
+  // ── Google Play IAP aktivasyonu ──────────────────────────────────────────────
 
   Future<void> activatePremiumFromIap({
     required String uid,
@@ -48,28 +54,23 @@ class SubscriptionService {
     String? purchaseToken,
   }) async {
     try {
-      if (purchaseToken != null && purchaseToken.isNotEmpty) {
-        // Supabase Edge Function üzerinden sunucu doğrulaması
-        await _sb.functions.invoke('verify-google-play-purchase', body: {
-          'uid': uid,
-          'productId': productId,
+      final response = await http.post(
+        Uri.parse('$_serverBase/api/iap/verify'),
+        headers: {'Content-Type': 'application/json', 'x-api-key': _apiKey},
+        body: jsonEncode({
+          'uid':           uid,
+          'productId':     productId,
           'purchaseToken': purchaseToken,
-        });
-      } else {
-        await _sb.from('users').upsert({
-          'id': uid,
-          'is_premium': true,
-          'premium_plan': productId,
-          'premium_source': 'iap',
-          'premium_activated_at': DateTime.now().toIso8601String(),
-        });
-      }
+        }),
+      );
+      if (response.statusCode != 200) throw Exception('Server error ${response.statusCode}');
     } catch (_) {
+      // Fallback: doğrudan DB'ye yaz
       await _sb.from('users').upsert({
-        'id': uid,
-        'is_premium': true,
-        'premium_plan': productId,
-        'premium_source': 'iap',
+        'id':                   uid,
+        'is_premium':           true,
+        'premium_plan':         productId,
+        'premium_source':       'google_play',
         'premium_activated_at': DateTime.now().toIso8601String(),
       });
     }
@@ -80,23 +81,32 @@ class SubscriptionService {
   Future<String> createCheckout({
     required String planKey,
     required bool annual,
+    int discountPercent = 0,
+    String? couponCode,
   }) async {
     final user = _sb.auth.currentUser;
     if (user == null) throw Exception('Giriş yapılmamış.');
 
-    final res = await _sb.functions.invoke('create-paytr-checkout', body: {
-      'planKey': planKey,
-      'annual': annual,
-      'email': user.email ?? '',
-      'name': user.userMetadata?['full_name'] ?? '',
-    });
+    final response = await http.post(
+      Uri.parse('$_serverBase/api/paytr/create-checkout'),
+      headers: {'Content-Type': 'application/json', 'x-api-key': _apiKey},
+      body: jsonEncode({
+        'uid':     user.id,
+        'email':   user.email ?? '',
+        'name':    user.userMetadata?['full_name'] ?? '',
+        'planKey': planKey,
+        'annual':  annual,
+        if (discountPercent > 0) 'discountPercent': discountPercent,
+        if (couponCode != null)  'couponCode': couponCode,
+      }),
+    );
 
-    if (res.status != 200) {
-      final err = (res.data as Map<String, dynamic>?)?['error'] as String?;
-      throw Exception(err ?? 'Ödeme sayfası oluşturulamadı.');
+    if (response.statusCode != 200) {
+      final body = jsonDecode(response.body) as Map<String, dynamic>;
+      throw Exception(body['error'] ?? 'Ödeme sayfası oluşturulamadı.');
     }
 
-    final url = (res.data as Map<String, dynamic>?)?['paymentPageUrl'] as String?;
+    final url = (jsonDecode(response.body) as Map<String, dynamic>)['paymentPageUrl'] as String?;
     if (url == null || url.isEmpty) throw Exception('Ödeme sayfası oluşturulamadı.');
     return url;
   }

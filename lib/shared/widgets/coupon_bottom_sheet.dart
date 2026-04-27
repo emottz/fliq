@@ -42,7 +42,15 @@ class _CouponSheetState extends ConsumerState<_CouponSheet> {
       final preview = await svc.previewCoupon(code);
       if (!mounted) return;
       setState(() => _loading = false);
-      _showConfirm(preview);
+
+      if (preview.isDiscountCoupon) {
+        // İndirim kuponu → subscription ekranına indirimli git
+        Navigator.of(context).pop();
+        if (!mounted) return;
+        context.go('/subscription?coupon=${preview.code}&discount=${preview.discountPercent}');
+      } else {
+        _showConfirm(preview);
+      }
     } catch (e) {
       if (!mounted) return;
       setState(() {
@@ -80,6 +88,9 @@ class _CouponSheetState extends ConsumerState<_CouponSheet> {
       final result = await svc.redeemCoupon(preview.code);
       if (result.plan == 'authorized') {
         await svc.activateAuthorizedFromCoupon(uid: uid, code: result.code);
+      } else if (result.plan == 'discount' || result.plan.startsWith('discount_')) {
+        // Güvenlik: indirim kuponu buraya düşmemeli
+        throw Exception('Bu kupon indirim kuponu, premium açmaz.');
       } else {
         await svc.activatePremiumFromCoupon(
           uid: uid,
@@ -99,10 +110,7 @@ class _CouponSheetState extends ConsumerState<_CouponSheet> {
     if (!mounted) return;
     setState(() => _loading = false);
 
-    // Bottom sheet'i kapat
     Navigator.of(context).pop();
-
-    // Kutlama popup'ı
     if (!mounted) return;
     await showGeneralDialog(
       context: context,

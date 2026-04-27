@@ -66,9 +66,16 @@ final routerProvider = Provider<GoRouter>((ref) {
       final path = state.uri.path;
 
       // ── Splash henüz gösterilmediyse her zaman oraya git ──
+      // Ödeme dönüşünde (/subscription?payment=...) splash atlanır,
+      // auth kontrolleri aşağıda devam eder.
       if (!_splashShown) {
         if (path == '/splash') return null;
-        return '/splash';
+        if (path == '/subscription' &&
+            state.uri.queryParameters.containsKey('payment')) {
+          markSplashShown(); // splash atla, auth kontrolüne geç
+        } else {
+          return '/splash';
+        }
       }
 
       // ── Admin paneli ve gizlilik → yönlendirme yapma ──────
@@ -144,6 +151,10 @@ final routerProvider = Provider<GoRouter>((ref) {
       GoRoute(
         path: '/auth/reset-password',
         builder: (context, state) => const PasswordResetScreen(),
+      ),
+      GoRoute(
+        path: '/auth/callback',
+        builder: (context, state) => const SplashScreen(),
       ),
       GoRoute(
         path: '/onboarding',

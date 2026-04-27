@@ -10,6 +10,10 @@ import '../../../shared/providers/app_providers.dart';
 import '../../../shared/widgets/hearts_display.dart';
 import '../../../shared/widgets/premium_upsell_card.dart';
 
+// Tip rozeti renkleri
+const _aviaColor   = Color(0xFF1D4ED8); // mavi — havacılık
+const _stdColor    = Color(0xFF059669); // yeşil — standart İngilizce
+
 class LessonListScreen extends ConsumerStatefulWidget {
   const LessonListScreen({super.key});
 
@@ -20,8 +24,10 @@ class LessonListScreen extends ConsumerStatefulWidget {
 class _LessonListScreenState extends ConsumerState<LessonListScreen> {
   int _refreshKey = 0;
 
+  static const _freeLessonsCount = 6;
+
   static const _minLevels = {
-    // Başlangıç
+    // ── Mevcut Avia dersleri ──────────────────────────────────
     'grammar_1': ProficiencyLevel.beginner,
     'grammar_2': ProficiencyLevel.beginner,
     'grammar_5': ProficiencyLevel.beginner,
@@ -30,7 +36,6 @@ class _LessonListScreenState extends ConsumerState<LessonListScreen> {
     'vocab_4': ProficiencyLevel.beginner,
     'fill_1': ProficiencyLevel.beginner,
     'fill_2': ProficiencyLevel.beginner,
-    // Temel
     'grammar_3': ProficiencyLevel.elementary,
     'vocab_2': ProficiencyLevel.elementary,
     'vocab_5': ProficiencyLevel.elementary,
@@ -38,7 +43,6 @@ class _LessonListScreenState extends ConsumerState<LessonListScreen> {
     'translation_2': ProficiencyLevel.elementary,
     'fill_3': ProficiencyLevel.elementary,
     'reading_3': ProficiencyLevel.elementary,
-    // Orta
     'reading_1': ProficiencyLevel.intermediate,
     'grammar_4': ProficiencyLevel.intermediate,
     'grammar_6': ProficiencyLevel.intermediate,
@@ -47,7 +51,6 @@ class _LessonListScreenState extends ConsumerState<LessonListScreen> {
     'fill_4': ProficiencyLevel.intermediate,
     'translation_3': ProficiencyLevel.intermediate,
     'completion_1': ProficiencyLevel.intermediate,
-    // İleri
     'grammar_7': ProficiencyLevel.advanced,
     'vocab_7': ProficiencyLevel.advanced,
     'reading_5': ProficiencyLevel.advanced,
@@ -57,20 +60,39 @@ class _LessonListScreenState extends ConsumerState<LessonListScreen> {
     'translation_4': ProficiencyLevel.advanced,
     'reading_6': ProficiencyLevel.advanced,
     'completion_2': ProficiencyLevel.advanced,
-    // Kabin Görevlisi Dersleri
     'cabin_1': ProficiencyLevel.beginner,
     'cabin_2': ProficiencyLevel.beginner,
     'cabin_3': ProficiencyLevel.elementary,
     'cabin_4': ProficiencyLevel.elementary,
     'cabin_5': ProficiencyLevel.elementary,
     'cabin_6': ProficiencyLevel.intermediate,
-    // AMT Dersleri
     'amt_1': ProficiencyLevel.beginner,
     'amt_2': ProficiencyLevel.beginner,
     'amt_3': ProficiencyLevel.elementary,
     'amt_4': ProficiencyLevel.elementary,
     'amt_5': ProficiencyLevel.elementary,
     'amt_6': ProficiencyLevel.intermediate,
+    // ── Standart İngilizce dersleri ───────────────────────────
+    'std_1':  ProficiencyLevel.beginner,
+    'std_2':  ProficiencyLevel.beginner,
+    'std_3':  ProficiencyLevel.beginner,
+    'std_4':  ProficiencyLevel.beginner,
+    'std_5':  ProficiencyLevel.beginner,
+    'std_6':  ProficiencyLevel.elementary,
+    'std_7':  ProficiencyLevel.elementary,
+    'std_8':  ProficiencyLevel.elementary,
+    'std_9':  ProficiencyLevel.elementary,
+    'std_10': ProficiencyLevel.elementary,
+    'std_11': ProficiencyLevel.intermediate,
+    'std_12': ProficiencyLevel.intermediate,
+    'std_13': ProficiencyLevel.intermediate,
+    'std_14': ProficiencyLevel.intermediate,
+    'std_15': ProficiencyLevel.intermediate,
+    'std_16': ProficiencyLevel.advanced,
+    'std_17': ProficiencyLevel.advanced,
+    'std_18': ProficiencyLevel.advanced,
+    'std_19': ProficiencyLevel.advanced,
+    'std_20': ProficiencyLevel.advanced,
   };
 
   static const _levelGroups = [
@@ -98,6 +120,7 @@ class _LessonListScreenState extends ConsumerState<LessonListScreen> {
   @override
   Widget build(BuildContext context) {
     final profileAsync = ref.watch(userProfileProvider);
+    final isPremium = ref.watch(isPremiumProvider).value ?? false;
 
     return profileAsync.when(
       data: (profile) {
@@ -138,7 +161,7 @@ class _LessonListScreenState extends ConsumerState<LessonListScreen> {
                       Padding(
                         padding: const EdgeInsets.symmetric(horizontal: 24),
                         child: Column(
-                          children: _buildPath(context, lessons, level, completed, weakCategories),
+                          children: _buildPath(context, lessons, level, completed, weakCategories, isPremium),
                         ),
                       ),
 
@@ -158,6 +181,16 @@ class _LessonListScreenState extends ConsumerState<LessonListScreen> {
 
   Future<void> _startLesson(BuildContext context, String lessonId) async {
     final isPremium = ref.read(isPremiumProvider).value ?? false;
+    final lessons = LessonContentData.forRole(
+      ref.read(userProfileProvider).value?.role ?? 'student',
+    );
+    final lessonIndex = lessons.indexWhere((l) => l.id == lessonId);
+
+    if (!isPremium && lessonIndex >= _freeLessonsCount) {
+      context.go('/subscription');
+      return;
+    }
+
     if (!isPremium) {
       final ok = await showNoHeartsDialog(context, ref, HeartsService.lessonCost);
       if (!ok || !context.mounted) return;
@@ -173,6 +206,7 @@ class _LessonListScreenState extends ConsumerState<LessonListScreen> {
     ProficiencyLevel userLevel,
     Set<String> completed,
     List<String> weakCategories,
+    bool isPremium,
   ) {
     final widgets = <Widget>[];
 
@@ -185,6 +219,7 @@ class _LessonListScreenState extends ConsumerState<LessonListScreen> {
       final isActive = isUnlocked && !isDone;
       final isNextUp = isActive &&
           (i == 0 || completed.contains(lessons[i - 1].id));
+      final isPremiumLocked = !isPremium && !isDone && i >= _freeLessonsCount;
 
       final minLevel = _minLevels[lesson.id] ?? ProficiencyLevel.beginner;
       if (minLevel != lastGroupLevel) {
@@ -211,7 +246,10 @@ class _LessonListScreenState extends ConsumerState<LessonListScreen> {
         isNextUp: isNextUp,
         isWeak: weakCategories.contains(lesson.categoryId),
         index: i,
-        onTap: isUnlocked ? () => _startLesson(context, lesson.id) : null,
+        isPremiumLocked: isPremiumLocked,
+        onTap: isPremiumLocked
+            ? () => context.go('/subscription')
+            : (isUnlocked ? () => _startLesson(context, lesson.id) : null),
       ));
     }
 
@@ -429,6 +467,7 @@ class _LessonNode extends StatefulWidget {
   final bool isNextUp;
   final bool isWeak;
   final int index;
+  final bool isPremiumLocked;
   final VoidCallback? onTap;
 
   const _LessonNode({
@@ -438,6 +477,7 @@ class _LessonNode extends StatefulWidget {
     required this.isNextUp,
     required this.isWeak,
     required this.index,
+    this.isPremiumLocked = false,
     this.onTap,
   });
 
@@ -490,6 +530,7 @@ class _LessonNodeState extends State<_LessonNode>
 
   Color get _nodeColor {
     if (widget.isDone) return AppColors.success;
+    if (widget.isPremiumLocked) return const Color(0xFFD97706); // altın
     if (widget.isUnlocked) return AppColors.primary;
     return AppColors.locked;
   }
@@ -510,9 +551,9 @@ class _LessonNodeState extends State<_LessonNode>
 
   Widget _buildContent(BuildContext context) {
     return GestureDetector(
-      onTap: widget.isUnlocked
+      onTap: widget.isPremiumLocked
           ? widget.onTap
-          : () { _shake.forward(from: 0); },
+          : (widget.isUnlocked ? widget.onTap : () { _shake.forward(from: 0); }),
       child: Column(
         children: [
           // Düğüm
@@ -555,9 +596,11 @@ class _LessonNodeState extends State<_LessonNode>
                   child: Center(
                     child: widget.isDone
                         ? const Icon(Icons.check_rounded, color: Colors.white, size: 32)
-                        : widget.isUnlocked
-                            ? Text(widget.lesson.emoji, style: const TextStyle(fontSize: 30))
-                            : const Icon(Icons.lock_outline, color: Colors.white, size: 26),
+                        : widget.isPremiumLocked
+                            ? const Icon(Icons.lock_rounded, color: Colors.white, size: 26)
+                            : widget.isUnlocked
+                                ? Text(widget.lesson.emoji, style: const TextStyle(fontSize: 30))
+                                : const Icon(Icons.lock_outline, color: Colors.white, size: 26),
                   ),
                 ),
                 // Tamamlandı rozeti
@@ -577,6 +620,24 @@ class _LessonNodeState extends State<_LessonNode>
                       ),
                     ),
                   ),
+                // Premium kilit tacı
+                if (widget.isPremiumLocked)
+                  Positioned(
+                    top: 0,
+                    right: 0,
+                    child: Container(
+                      width: 22,
+                      height: 22,
+                      decoration: const BoxDecoration(
+                        shape: BoxShape.circle,
+                        color: Colors.white,
+                      ),
+                      child: const Center(
+                        child: Text('👑', style: TextStyle(fontSize: 12)),
+                      ),
+                    ),
+                  ),
+
                 // Zayıf alan rozeti
                 if (widget.isWeak && !widget.isDone)
                   Positioned(
@@ -615,10 +676,16 @@ class _LessonNodeState extends State<_LessonNode>
               style: TextStyle(
                 fontSize: 12,
                 fontWeight: widget.isNextUp ? FontWeight.w700 : FontWeight.w500,
-                color: widget.isUnlocked ? AppColors.textPrimary : AppColors.textHint,
+                color: (widget.isUnlocked || widget.isPremiumLocked)
+                    ? AppColors.textPrimary
+                    : AppColors.textHint,
               ),
             ),
           ),
+
+          // Ders tipi rozeti
+          const SizedBox(height: 4),
+          _LessonTypeBadge(type: widget.lesson.lessonType),
 
           // Sonraki ders chip'i
           if (widget.isNextUp) ...[
@@ -641,6 +708,33 @@ class _LessonNodeState extends State<_LessonNode>
           ],
 
         ],
+      ),
+    );
+  }
+}
+
+// ── Ders tipi rozeti ──────────────────────────────────────────────────────────
+
+class _LessonTypeBadge extends StatelessWidget {
+  final LessonType type;
+  const _LessonTypeBadge({required this.type});
+
+  @override
+  Widget build(BuildContext context) {
+    final isAvia = type == LessonType.avia;
+    return Container(
+      padding: const EdgeInsets.symmetric(horizontal: 7, vertical: 2),
+      decoration: BoxDecoration(
+        color: (isAvia ? _aviaColor : _stdColor).withValues(alpha: 0.12),
+        borderRadius: BorderRadius.circular(8),
+      ),
+      child: Text(
+        isAvia ? '✈️ Havacılık' : '📘 İngilizce',
+        style: TextStyle(
+          fontSize: 9,
+          fontWeight: FontWeight.w700,
+          color: isAvia ? _aviaColor : _stdColor,
+        ),
       ),
     );
   }

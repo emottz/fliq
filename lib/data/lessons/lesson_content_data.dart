@@ -2,6 +2,7 @@
 import '../models/lesson_content_model.dart';
 import '../models/question_model.dart';
 import '../models/user_profile_model.dart';
+import 'lesson_standard_data.dart';
 
 /// All lesson content. Practice questions are embedded directly so they
 /// remain self-contained even before the JSON question bank is loaded.
@@ -97,9 +98,9 @@ class LessonContentData {
   }
 
   // Tüm dersler (rol bazlı listeler dahil)
-  // Not: all listesi zaten yeni dersleri içeriyor, sadece rol-özel dersler eklenir
   static const List<LessonContent> _everything = [
     ...all,
+    ...LessonStandardData.all,
     // Dialogue lessons
     _pilotDlg1, _pilotDlg2, _pilotDlg3,
     _cabinDlg1, _cabinDlg2,
@@ -145,80 +146,360 @@ class LessonContentData {
     _amt18SafetyMgmt,
   ];
 
-  // Rol bazlı ders listesi
+  // Rol bazlı ders listesi — Avia ve Standart dersler iç içe geçmiş
   static List<LessonContent> forRole(String role) {
     switch (role) {
       case 'pilot':
         return const [
-          ...all,
+          // ── BAŞLANGIÇ ─────────────────────────────────────────
+          LessonStandardData.presentSimple,          // STD
+          _natoAlphabet,                             // AVIA
+          LessonStandardData.thereIs,                // STD
+          _aircraftComponents,                       // AVIA
+          LessonStandardData.questions,              // STD
+          _basicAtcInstructions,                     // AVIA
+          LessonStandardData.adjectives,             // STD
+          _airportGround,                            // AVIA
+          LessonStandardData.prepositions,           // STD
+          _safetyEquipment,                          // AVIA
+          LessonStandardData.articles,               // STD ★
+          _aviationAbbreviations,                    // AVIA
+          LessonStandardData.pronouns,               // STD ★
+          _basicWeatherFill,                         // AVIA
+          LessonStandardData.presentSimpleKeywords,  // STD ★
+          _atcFillBlanks,                            // AVIA
+          _passiveVoice,                             // AVIA
+          _preflightChecklist,                       // AVIA
+          _runwayTaxiway,                            // AVIA
+          // ── TEMEL ─────────────────────────────────────────────
+          LessonStandardData.pastSimple,             // STD
+          _metarTranslation,                         // AVIA
+          LessonStandardData.pastSimpleKeywords,     // STD ★
+          _departureProcedures,                      // AVIA
+          LessonStandardData.futureWill,             // STD
+          _approachLanding,                          // AVIA
+          LessonStandardData.futureKeywords,         // STD ★
+          _modalVerbs,                               // AVIA
+          LessonStandardData.canCould,               // STD
+          _atisReading,                              // AVIA
+          LessonStandardData.presentContinuous,      // STD
+          _positionReports,                          // AVIA
+          LessonStandardData.comparatives,           // STD
+          _weatherNavigation,                        // AVIA
+          LessonStandardData.conjunctions,           // STD ★
+          _holdingPatterns,                          // AVIA
+          _squawkTransponder,                        // AVIA
+          _emergencyVocab,                           // AVIA
+          _atcReadbackDrills,                        // AVIA
+          _flightPhasesVocab,                        // AVIA
+          _atcPhraseology,                           // AVIA
+          _simpleTenses,                             // AVIA
+          // ── ORTA ──────────────────────────────────────────────
+          LessonStandardData.presentPerfect,         // STD
+          _notamReading,                             // AVIA
+          LessonStandardData.presentPerfectKeywords, // STD ★
+          _ifrClearance,                             // AVIA
+          LessonStandardData.conditionals1,          // STD
+          _emergencyPhraseology,                     // AVIA
+          LessonStandardData.relativeClauses,        // STD
+          _instrumentSystems,                        // AVIA
+          LessonStandardData.gerunds,                // STD
+          _flightPlanReading,                        // AVIA
+          LessonStandardData.pastContinuous,         // STD
+          _navSystemsVocab,                          // AVIA
+          LessonStandardData.pastPerfectKeywords,    // STD ★
+          _tafReading,                               // AVIA
+          LessonStandardData.passiveVoiceBasic,      // STD ★
+          _atisDecoding,                             // AVIA
+          _engineFailureLanguage,                    // AVIA
+          _conditionalEmergency,                     // AVIA
+          _reportedSpeech,                           // AVIA
+          _articlesAviation,                         // AVIA
+          _notamReadingAdv,                          // AVIA
+          _advancedPassiveVoice,                     // AVIA
+          _emergencyCompletion,                      // AVIA
+          _opsManualTranslation,                     // AVIA
+          // ── İLERİ ─────────────────────────────────────────────
+          LessonStandardData.conditionals2,          // STD
+          _sidStarReading,                           // AVIA
+          LessonStandardData.pastPerfect,            // STD
+          _accidentReport,                           // AVIA
+          LessonStandardData.reportedSpeechAdv,      // STD
+          _advancedAtcClearances,                    // AVIA
+          LessonStandardData.mustShouldHaveTo,       // STD ★
+          _humanFactorsCrm,                          // AVIA
+          LessonStandardData.inversion,              // STD
+          _smsLanguage,                              // AVIA
+          LessonStandardData.tagQuestions,           // STD ★
+          _complexStructures,                        // AVIA
+          LessonStandardData.discourseMarkers,       // STD
+          _expertVocab,                              // AVIA
+          LessonStandardData.wishIfOnly,             // STD ★
+          _regulatoryLanguage,                       // AVIA
+          LessonStandardData.usedToWould,            // STD ★
+          _pirepLanguage,                            // AVIA
+          LessonStandardData.quantifiers,            // STD ★
+          _cat3Completion,                           // AVIA
+          LessonStandardData.phrasalVerbs,           // STD ★
+          _fatigueLanguage,                          // AVIA
+          LessonStandardData.wordFormation,          // STD ★
+          _opManualSentences,                        // AVIA
+          _advancedCompletion,                       // AVIA
+          _accidentInvestigation,                    // AVIA
+          _accidentTranslation,                      // AVIA
+          _airworthinessDirectives,                  // AVIA
+          _advancedAtcCompletion,                    // AVIA
+          // Pilot diyalog dersleri
           _pilotDlg1, _pilotDlg2, _pilotDlg3,
         ];
+
       case 'cabin_crew':
         return const [
-          // Temel dil bilgisi (beginner)
-          _passiveVoice, _modalVerbs, _simpleTenses,
-          _aircraftComponents, _safetyEquipment, _airportGround,
-          _natoAlphabet, _basicAtcInstructions, _runwayTaxiway,
-          _aviationAbbreviations, _basicWeatherFill,
-          // Kabin ekibi özel
-          _cabin1SafetyAnnouncements, _cabin2PassengerComm,
-          _cabin3EmergencyProc, _cabin4CrmBriefing,
-          _cabin5MedicalTerms, _cabin6DangerousGoods,
-          _cabin7BoardingAnnouncements, _cabin8SeatbeltDemo,
-          _cabin9ServiceLanguage, _cabin10TurbulenceComm,
-          // Elementary dil (ortak)
-          _emergencyVocab, _metarTranslation, _weatherPhenomena,
-          _atcFillBlanks, _preflightChecklist,
-          // İleri kabin
-          _cabin11MedicalReporting, _cabin12EvacuationCommands,
-          _cabin13ConflictResolution, _cabin14CustomsForms,
-          _cabin15CrewRest, _cabin16MaydayPanPan,
-          _cabin17InfantSafety, _cabin18ServiceFailure,
+          // ── BAŞLANGIÇ ─────────────────────────────────────────
+          LessonStandardData.presentSimple,          // STD
+          _cabin1SafetyAnnouncements,                // AVIA
+          LessonStandardData.thereIs,                // STD
+          _aircraftComponents,                       // AVIA
+          LessonStandardData.questions,              // STD
+          _cabin2PassengerComm,                      // AVIA
+          LessonStandardData.adjectives,             // STD
+          _safetyEquipment,                          // AVIA
+          LessonStandardData.prepositions,           // STD
+          _airportGround,                            // AVIA
+          LessonStandardData.articles,               // STD ★
+          _natoAlphabet,                             // AVIA
+          LessonStandardData.pronouns,               // STD ★
+          _aviationAbbreviations,                    // AVIA
+          LessonStandardData.presentSimpleKeywords,  // STD ★
+          _cabin7BoardingAnnouncements,              // AVIA
+          _cabin8SeatbeltDemo,                       // AVIA
+          // ── TEMEL ─────────────────────────────────────────────
+          LessonStandardData.pastSimple,             // STD
+          _cabin3EmergencyProc,                      // AVIA
+          LessonStandardData.pastSimpleKeywords,     // STD ★
+          _cabin4CrmBriefing,                        // AVIA
+          LessonStandardData.futureWill,             // STD
+          _cabin5MedicalTerms,                       // AVIA
+          LessonStandardData.futureKeywords,         // STD ★
+          _cabin9ServiceLanguage,                    // AVIA
+          LessonStandardData.canCould,               // STD
+          _cabin10TurbulenceComm,                    // AVIA
+          LessonStandardData.presentContinuous,      // STD
+          _passiveVoice,                             // AVIA
+          LessonStandardData.comparatives,           // STD
+          _modalVerbs,                               // AVIA
+          LessonStandardData.conjunctions,           // STD ★
+          _emergencyVocab,                           // AVIA
+          _cabin6DangerousGoods,                     // AVIA
+          _weatherPhenomena,                         // AVIA
+          // ── ORTA ──────────────────────────────────────────────
+          LessonStandardData.presentPerfect,         // STD
+          _cabin11MedicalReporting,                  // AVIA
+          LessonStandardData.presentPerfectKeywords, // STD ★
+          _cabin12EvacuationCommands,                // AVIA
+          LessonStandardData.conditionals1,          // STD
+          _cabin13ConflictResolution,                // AVIA
+          LessonStandardData.relativeClauses,        // STD
+          _cabin14CustomsForms,                      // AVIA
+          LessonStandardData.gerunds,                // STD
+          _cabin15CrewRest,                          // AVIA
+          LessonStandardData.pastContinuous,         // STD
+          _atcFillBlanks,                            // AVIA
+          LessonStandardData.pastPerfectKeywords,    // STD ★
+          _preflightChecklist,                       // AVIA
+          LessonStandardData.passiveVoiceBasic,      // STD ★
+          _metarTranslation,                         // AVIA
+          _reportedSpeech,                           // AVIA
+          _simpleTenses,                             // AVIA
+          // ── İLERİ ─────────────────────────────────────────────
+          LessonStandardData.conditionals2,          // STD
+          _cabin16MaydayPanPan,                      // AVIA
+          LessonStandardData.pastPerfect,            // STD
+          _cabin17InfantSafety,                      // AVIA
+          LessonStandardData.reportedSpeechAdv,      // STD
+          _cabin18ServiceFailure,                    // AVIA
+          LessonStandardData.mustShouldHaveTo,       // STD ★
+          _humanFactorsCrm,                          // AVIA
+          LessonStandardData.inversion,              // STD
+          _smsLanguage,                              // AVIA
+          LessonStandardData.tagQuestions,           // STD ★
+          _emergencyPhraseology,                     // AVIA
+          LessonStandardData.discourseMarkers,       // STD
+          _regulatoryLanguage,                       // AVIA
+          LessonStandardData.wishIfOnly,             // STD ★
+          _expertVocab,                              // AVIA
+          LessonStandardData.usedToWould,            // STD ★
+          LessonStandardData.quantifiers,            // STD ★
+          LessonStandardData.phrasalVerbs,           // STD ★
+          LessonStandardData.wordFormation,          // STD ★
           // Kabin diyalog dersleri
           _cabinDlg1, _cabinDlg2,
         ];
+
       case 'amt':
         return const [
-          // Temel dil (beginner)
-          _passiveVoice, _modalVerbs, _simpleTenses,
-          _aircraftComponents, _aviationAbbreviations,
-          // AMT özel – başlangıç
-          _amt1AmmLanguage, _amt2Abbreviations,
-          _amt3Airworthiness, _amt4RegulatoryLang,
-          _amt5DefectReporting, _amt6WorkOrder,
-          // Ortak intermediate
-          _notamReading, _airworthinessDirectives,
-          _atcFillBlanks, _preflightChecklist,
-          // AMT özel – ileri
-          _amt7TechnicalLog, _amt8InspectionTerms,
-          _amt9EngineRunup, _amt10CorrosionReport,
-          _amt11NdtTerms, _amt12HydraulicSystem,
-          _amt13AvionicsTroubleshooting, _amt14PartsLogistics,
-          _amt15CertificationRelease, _amt16FuelSystem,
-          _amt17LandingGear, _amt18SafetyMgmt,
+          // ── BAŞLANGIÇ ─────────────────────────────────────────
+          LessonStandardData.presentSimple,          // STD
+          _amt1AmmLanguage,                          // AVIA
+          LessonStandardData.thereIs,                // STD
+          _aircraftComponents,                       // AVIA
+          LessonStandardData.questions,              // STD
+          _amt2Abbreviations,                        // AVIA
+          LessonStandardData.adjectives,             // STD
+          _aviationAbbreviations,                    // AVIA
+          LessonStandardData.prepositions,           // STD
+          _passiveVoice,                             // AVIA
+          LessonStandardData.articles,               // STD ★
+          _modalVerbs,                               // AVIA
+          LessonStandardData.pronouns,               // STD ★
+          _amt3Airworthiness,                        // AVIA
+          LessonStandardData.presentSimpleKeywords,  // STD ★
+          _amt4RegulatoryLang,                       // AVIA
+          // ── TEMEL ─────────────────────────────────────────────
+          LessonStandardData.pastSimple,             // STD
+          _amt5DefectReporting,                      // AVIA
+          LessonStandardData.pastSimpleKeywords,     // STD ★
+          _amt6WorkOrder,                            // AVIA
+          LessonStandardData.futureWill,             // STD
+          _amt7TechnicalLog,                         // AVIA
+          LessonStandardData.futureKeywords,         // STD ★
+          _amt8InspectionTerms,                      // AVIA
+          LessonStandardData.canCould,               // STD
+          _amt9EngineRunup,                          // AVIA
+          LessonStandardData.presentContinuous,      // STD
+          _simpleTenses,                             // AVIA
+          LessonStandardData.comparatives,           // STD
+          _atcFillBlanks,                            // AVIA
+          LessonStandardData.conjunctions,           // STD ★
+          _preflightChecklist,                       // AVIA
+          // ── ORTA ──────────────────────────────────────────────
+          LessonStandardData.presentPerfect,         // STD
+          _amt10CorrosionReport,                     // AVIA
+          LessonStandardData.presentPerfectKeywords, // STD ★
+          _amt11NdtTerms,                            // AVIA
+          LessonStandardData.conditionals1,          // STD
+          _amt12HydraulicSystem,                     // AVIA
+          LessonStandardData.relativeClauses,        // STD
+          _amt13AvionicsTroubleshooting,             // AVIA
+          LessonStandardData.gerunds,                // STD
+          _amt14PartsLogistics,                      // AVIA
+          LessonStandardData.pastContinuous,         // STD
+          _notamReading,                             // AVIA
+          LessonStandardData.pastPerfectKeywords,    // STD ★
+          _airworthinessDirectives,                  // AVIA
+          LessonStandardData.passiveVoiceBasic,      // STD ★
+          _reportedSpeech,                           // AVIA
+          _advancedPassiveVoice,                     // AVIA
+          // ── İLERİ ─────────────────────────────────────────────
+          LessonStandardData.conditionals2,          // STD
+          _amt15CertificationRelease,                // AVIA
+          LessonStandardData.pastPerfect,            // STD
+          _amt16FuelSystem,                          // AVIA
+          LessonStandardData.reportedSpeechAdv,      // STD
+          _amt17LandingGear,                         // AVIA
+          LessonStandardData.mustShouldHaveTo,       // STD ★
+          _amt18SafetyMgmt,                          // AVIA
+          LessonStandardData.inversion,              // STD
+          _regulatoryLanguage,                       // AVIA
+          LessonStandardData.tagQuestions,           // STD ★
+          _smsLanguage,                              // AVIA
+          LessonStandardData.discourseMarkers,       // STD
+          _humanFactorsCrm,                          // AVIA
+          LessonStandardData.wishIfOnly,             // STD ★
+          _expertVocab,                              // AVIA
+          LessonStandardData.usedToWould,            // STD ★
+          _complexStructures,                        // AVIA
+          LessonStandardData.quantifiers,            // STD ★
+          LessonStandardData.phrasalVerbs,           // STD ★
+          LessonStandardData.wordFormation,          // STD ★
           // AMT diyalog dersleri
           _amtDlg1,
         ];
+
       case 'student':
       default:
         return const [
-          // Beginner
-          _passiveVoice, _modalVerbs, _simpleTenses,
-          _aircraftComponents, _airportGround, _safetyEquipment,
-          _natoAlphabet, _basicAtcInstructions, _runwayTaxiway,
-          _aviationAbbreviations, _basicWeatherFill,
-          _atcFillBlanks, _preflightChecklist,
-          // Elementary
-          _conditionals, _weatherNavigation, _emergencyVocab,
-          _metarTranslation, _approachLanding, _atisReading,
-          _positionReports, _weatherPhenomena, _holdingPatterns,
-          _squawkTransponder, _departureProcedures, _atcReadbackDrills,
-          _flightPhasesVocab,
-          // Intermediate
-          _notamReading, _reportedSpeech, _instrumentSystems,
-          _flightPlanReading, _ifrClearance, _atisDecoding,
-          _navSystemsVocab, _tafReading,
-          // Diyalog dersleri
+          // ── BAŞLANGIÇ ─────────────────────────────────────────
+          LessonStandardData.presentSimple,          // STD
+          _natoAlphabet,                             // AVIA
+          LessonStandardData.thereIs,                // STD
+          _aircraftComponents,                       // AVIA
+          LessonStandardData.questions,              // STD
+          _basicAtcInstructions,                     // AVIA
+          LessonStandardData.adjectives,             // STD
+          _airportGround,                            // AVIA
+          LessonStandardData.prepositions,           // STD
+          _safetyEquipment,                          // AVIA
+          LessonStandardData.articles,               // STD ★
+          _aviationAbbreviations,                    // AVIA
+          LessonStandardData.pronouns,               // STD ★
+          _basicWeatherFill,                         // AVIA
+          LessonStandardData.presentSimpleKeywords,  // STD ★
+          _passiveVoice,                             // AVIA
+          _atcFillBlanks,                            // AVIA
+          _preflightChecklist,                       // AVIA
+          _runwayTaxiway,                            // AVIA
+          // ── TEMEL ─────────────────────────────────────────────
+          LessonStandardData.pastSimple,             // STD
+          _metarTranslation,                         // AVIA
+          LessonStandardData.pastSimpleKeywords,     // STD ★
+          _departureProcedures,                      // AVIA
+          LessonStandardData.futureWill,             // STD
+          _approachLanding,                          // AVIA
+          LessonStandardData.futureKeywords,         // STD ★
+          _modalVerbs,                               // AVIA
+          LessonStandardData.canCould,               // STD
+          _atisReading,                              // AVIA
+          LessonStandardData.presentContinuous,      // STD
+          _positionReports,                          // AVIA
+          LessonStandardData.comparatives,           // STD
+          _weatherNavigation,                        // AVIA
+          LessonStandardData.conjunctions,           // STD ★
+          _holdingPatterns,                          // AVIA
+          _squawkTransponder,                        // AVIA
+          _emergencyVocab,                           // AVIA
+          _atcReadbackDrills,                        // AVIA
+          _flightPhasesVocab,                        // AVIA
+          _simpleTenses,                             // AVIA
+          // ── ORTA ──────────────────────────────────────────────
+          LessonStandardData.presentPerfect,         // STD
+          _notamReading,                             // AVIA
+          LessonStandardData.presentPerfectKeywords, // STD ★
+          _ifrClearance,                             // AVIA
+          LessonStandardData.conditionals1,          // STD
+          _emergencyPhraseology,                     // AVIA
+          LessonStandardData.relativeClauses,        // STD
+          _instrumentSystems,                        // AVIA
+          LessonStandardData.gerunds,                // STD
+          _flightPlanReading,                        // AVIA
+          LessonStandardData.pastContinuous,         // STD
+          _navSystemsVocab,                          // AVIA
+          LessonStandardData.pastPerfectKeywords,    // STD ★
+          _tafReading,                               // AVIA
+          LessonStandardData.passiveVoiceBasic,      // STD ★
+          _reportedSpeech,                           // AVIA
+          _articlesAviation,                         // AVIA
+          // ── İLERİ ─────────────────────────────────────────────
+          LessonStandardData.conditionals2,          // STD
+          _sidStarReading,                           // AVIA
+          LessonStandardData.pastPerfect,            // STD
+          _accidentReport,                           // AVIA
+          LessonStandardData.reportedSpeechAdv,      // STD
+          _humanFactorsCrm,                          // AVIA
+          LessonStandardData.mustShouldHaveTo,       // STD ★
+          _smsLanguage,                              // AVIA
+          LessonStandardData.inversion,              // STD
+          _regulatoryLanguage,                       // AVIA
+          LessonStandardData.tagQuestions,           // STD ★
+          _expertVocab,                              // AVIA
+          LessonStandardData.discourseMarkers,       // STD
+          _complexStructures,                        // AVIA
+          LessonStandardData.wishIfOnly,             // STD ★
+          LessonStandardData.usedToWould,            // STD ★
+          LessonStandardData.quantifiers,            // STD ★
+          LessonStandardData.phrasalVerbs,           // STD ★
+          LessonStandardData.wordFormation,          // STD ★
+          // Öğrenci diyalog dersleri
           _studentDlg1,
         ];
     }

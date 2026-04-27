@@ -48,8 +48,6 @@ class _Feature {
   const _Feature(this.icon, this.text, {this.highlight = false});
 }
 
-const _kDiscount = 0.30; // %30
-
 final _plans = [
   _Plan(
     roleKey: 'pilot',
@@ -141,11 +139,21 @@ class _SubscriptionScreenState extends ConsumerState<SubscriptionScreen> {
   String _selectedRoleKey = 'pilot';
   bool _paymentResultHandled = false;
   String? _currentPlanKey;
+  int _appliedDiscountPercent = 0;
+  String? _appliedCouponCode;
+  String _appliedDiscountPlanRestriction = '';
+  final _scrollCtrl = ScrollController();
 
   @override
   void initState() {
     super.initState();
     _loadCurrentPlan();
+  }
+
+  @override
+  void dispose() {
+    _scrollCtrl.dispose();
+    super.dispose();
   }
 
   Future<void> _loadCurrentPlan() async {
@@ -163,6 +171,19 @@ class _SubscriptionScreenState extends ConsumerState<SubscriptionScreen> {
     } catch (_) {}
   }
 
+  int _effectiveDiscount(String planKey) {
+    if (_appliedDiscountPercent <= 0) return 0;
+    if (_appliedDiscountPlanRestriction.isEmpty) return _appliedDiscountPercent;
+    return _appliedDiscountPlanRestriction == planKey ? _appliedDiscountPercent : 0;
+  }
+
+  static String _planLabel(String key) => const {
+    'pilot':      '✈️ Pilot',
+    'cabin_crew': '💺 Kabin',
+    'amt':        '🔧 AMT',
+    'student':    '🎓 Öğrenci',
+  }[key] ?? key;
+
   @override
   void didChangeDependencies() {
     super.didChangeDependencies();
@@ -170,12 +191,27 @@ class _SubscriptionScreenState extends ConsumerState<SubscriptionScreen> {
     if (profile != null && profile.role.isNotEmpty) {
       _selectedRoleKey = profile.role;
     }
-    // iyzico callback'ten dönen ?payment= parametresini yakala
+    // iyzico/paytr callback'ten dönen ?payment= parametresini yakala
     if (!_paymentResultHandled) {
       _paymentResultHandled = true;
-      final payment = GoRouterState.of(context).uri.queryParameters['payment'];
+      final params = GoRouterState.of(context).uri.queryParameters;
+      final payment = params['payment'];
       if (payment != null) {
         WidgetsBinding.instance.addPostFrameCallback((_) => _handlePaymentReturn(payment));
+      }
+      // Kupon bottom sheet'ten gelen indirim parametresi
+      final couponCode = params['coupon'];
+      final discountStr = params['discount'];
+      if (couponCode != null && discountStr != null) {
+        final pct = int.tryParse(discountStr) ?? 0;
+        if (pct > 0) {
+          WidgetsBinding.instance.addPostFrameCallback((_) {
+            if (mounted) setState(() {
+              _appliedDiscountPercent = pct;
+              _appliedCouponCode = couponCode;
+            });
+          });
+        }
       }
     }
   }
@@ -183,8 +219,14 @@ class _SubscriptionScreenState extends ConsumerState<SubscriptionScreen> {
   void _handlePaymentReturn(String status) {
     if (!mounted) return;
     if (status == 'success') {
+      setState(() {
+        _appliedDiscountPercent = 0;
+        _appliedCouponCode = null;
+        _appliedDiscountPlanRestriction = '';
+      });
       showDialog(
         context: context,
+        barrierDismissible: false,
         builder: (_) => AlertDialog(
           shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(20)),
           title: const Text('Ödeme Başarılı! 🎉'),
@@ -197,7 +239,7 @@ class _SubscriptionScreenState extends ConsumerState<SubscriptionScreen> {
                 Navigator.of(context).pop();
                 context.go('/home/exams');
               },
-              child: const Text('Harika!'),
+              child: const Text('Harika! 🚀'),
             ),
           ],
         ),
@@ -246,7 +288,12 @@ class _SubscriptionScreenState extends ConsumerState<SubscriptionScreen> {
   Future<void> _purchaseWeb() async {
     try {
       final service = ref.read(subscriptionServiceProvider);
-      final url = await service.createCheckout(planKey: _selectedRoleKey, annual: _fourMonth);
+      final url = await service.createCheckout(
+        planKey:         _selectedRoleKey,
+        annual:          _fourMonth,
+        discountPercent: _effectiveDiscount(_selectedRoleKey),
+        couponCode:      _appliedCouponCode,
+      );
       if (!mounted) return;
       final uri = Uri.parse(url);
       if (await canLaunchUrl(uri)) {
@@ -279,6 +326,7 @@ class _SubscriptionScreenState extends ConsumerState<SubscriptionScreen> {
     return Scaffold(
       backgroundColor: const Color(0xFFF8FAFF),
       body: CustomScrollView(
+        controller: _scrollCtrl,
         slivers: [
           // ── Hero app bar ───────────────────────────────────────────────────
           SliverAppBar(
@@ -343,12 +391,48 @@ class _SubscriptionScreenState extends ConsumerState<SubscriptionScreen> {
                       ),
                       const SizedBox(height: 20),
 
+                      // ── İndirim banner ──────────────────────────────────────
+                      if (_appliedDiscountPercent > 0) ...[
+                        Container(
+                          margin: const EdgeInsets.only(bottom: 12),
+                          padding: const EdgeInsets.symmetric(horizontal: 14, vertical: 10),
+                          decoration: BoxDecoration(
+                            color: const Color(0xFFF0FDF4),
+                            borderRadius: BorderRadius.circular(12),
+                            border: Border.all(color: const Color(0xFF16A34A)),
+                          ),
+                          child: Row(
+                            children: [
+                              const Text('🎟️', style: TextStyle(fontSize: 18)),
+                              const SizedBox(width: 10),
+                              Expanded(
+                                child: Text(
+                                  _appliedDiscountPlanRestriction.isNotEmpty
+                                      ? '%$_appliedDiscountPercent indirim uygulandı · ${_planLabel(_appliedDiscountPlanRestriction)} planı için'
+                                      : '%$_appliedDiscountPercent indirim kuponu uygulandı!',
+                                  style: const TextStyle(fontSize: 13, fontWeight: FontWeight.w700, color: Color(0xFF15803D)),
+                                ),
+                              ),
+                              GestureDetector(
+                                onTap: () => setState(() {
+                                  _appliedDiscountPercent = 0;
+                                  _appliedCouponCode = null;
+                                  _appliedDiscountPlanRestriction = '';
+                                }),
+                                child: const Icon(Icons.close_rounded, size: 18, color: Color(0xFF15803D)),
+                              ),
+                            ],
+                          ),
+                        ),
+                      ],
+
                       // ── Plan kartları ───────────────────────────────────────
                       ..._plans.map((p) => _PlanCard(
                         plan: p,
                         isSelected: p.roleKey == _selectedRoleKey,
                         isCurrentPlan: isPremium && p.roleKey == _currentPlanKey,
                         fourMonth: _fourMonth,
+                        discountPercent: _effectiveDiscount(p.roleKey),
                         onTap: () => setState(() => _selectedRoleKey = p.roleKey),
                       )),
 
@@ -390,6 +474,7 @@ class _SubscriptionScreenState extends ConsumerState<SubscriptionScreen> {
                               plan: plan,
                               fourMonth: _fourMonth,
                               isPremium: isPremium,
+                              discountPercent: _effectiveDiscount(_selectedRoleKey),
                               onPressed: _purchase,
                             ),
 
@@ -412,7 +497,26 @@ class _SubscriptionScreenState extends ConsumerState<SubscriptionScreen> {
 
                       const SizedBox(height: 8),
                       // ── Kupon girişi ────────────────────────────────────────
-                      const _CouponSection(),
+                      _CouponSection(
+                        onDiscountApplied: (pct, code, planRestriction) {
+                          setState(() {
+                            _appliedDiscountPercent = pct;
+                            _appliedCouponCode = code;
+                            _appliedDiscountPlanRestriction = planRestriction;
+                            if (planRestriction.isNotEmpty) {
+                              _selectedRoleKey = planRestriction;
+                            }
+                          });
+                          // Planları görmek için yukarı scroll et
+                          Future.delayed(const Duration(milliseconds: 300), () {
+                            _scrollCtrl.animateTo(
+                              0,
+                              duration: const Duration(milliseconds: 500),
+                              curve: Curves.easeOut,
+                            );
+                          });
+                        },
+                      ),
                       const SizedBox(height: 12),
 
                       // Güven metni
@@ -654,6 +758,7 @@ class _PlanCard extends StatelessWidget {
   final bool isSelected;
   final bool isCurrentPlan;
   final bool fourMonth;
+  final int discountPercent;
   final VoidCallback onTap;
 
   const _PlanCard({
@@ -661,15 +766,22 @@ class _PlanCard extends StatelessWidget {
     required this.isSelected,
     this.isCurrentPlan = false,
     required this.fourMonth,
+    this.discountPercent = 0,
     required this.onTap,
   });
 
   @override
   Widget build(BuildContext context) {
-    final price = fourMonth ? plan.fourMonthPrice : plan.monthlyPrice;
+    final basePrice = fourMonth ? plan.fourMonthPrice : plan.monthlyPrice;
+    final price = discountPercent > 0
+        ? (basePrice * (1 - discountPercent / 100)).round()
+        : basePrice;
     final priceStr = '₺${_fmt(price)}';
+    final billedTotal = fourMonth
+        ? (discountPercent > 0 ? price * 4 : plan.fourMonthTotal)
+        : 0;
     final billNote = fourMonth
-        ? '₺${_fmt(plan.fourMonthTotal)} · 4 ayda bir ödenir'
+        ? '₺${_fmt(billedTotal)} · 4 ayda bir ödenir'
         : 'Her ay yenilenir';
     final saving = fourMonth ? '₺${_fmt(plan.fourMonthSaving)} tasarruf' : '';
 
@@ -764,6 +876,19 @@ class _PlanCard extends StatelessWidget {
                   Column(
                     crossAxisAlignment: CrossAxisAlignment.end,
                     children: [
+                      if (discountPercent > 0) ...[
+                        // Üstü çizili orijinal fiyat
+                        Text(
+                          '₺${_fmt(basePrice)}',
+                          style: TextStyle(
+                            fontSize: 13,
+                            fontWeight: FontWeight.w600,
+                            color: AppColors.textHint,
+                            decoration: TextDecoration.lineThrough,
+                          ),
+                        ),
+                        const SizedBox(height: 1),
+                      ],
                       RichText(
                         text: TextSpan(
                           children: [
@@ -772,7 +897,9 @@ class _PlanCard extends StatelessWidget {
                               style: TextStyle(
                                 fontSize: 20,
                                 fontWeight: FontWeight.w900,
-                                color: isSelected ? plan.accent : AppColors.textPrimary,
+                                color: discountPercent > 0
+                                    ? const Color(0xFF16A34A)
+                                    : (isSelected ? plan.accent : AppColors.textPrimary),
                               ),
                             ),
                             TextSpan(
@@ -787,7 +914,20 @@ class _PlanCard extends StatelessWidget {
                           ],
                         ),
                       ),
-                      if (fourMonth)
+                      if (discountPercent > 0)
+                        Container(
+                          margin: const EdgeInsets.only(top: 3),
+                          padding: const EdgeInsets.symmetric(horizontal: 7, vertical: 2),
+                          decoration: BoxDecoration(
+                            color: const Color(0xFFDCFCE7),
+                            borderRadius: BorderRadius.circular(6),
+                          ),
+                          child: Text(
+                            '%$discountPercent indirim',
+                            style: const TextStyle(fontSize: 10, fontWeight: FontWeight.w700, color: Color(0xFF15803D)),
+                          ),
+                        )
+                      else if (fourMonth)
                         Container(
                           margin: const EdgeInsets.only(top: 3),
                           padding: const EdgeInsets.symmetric(horizontal: 7, vertical: 2),
@@ -797,11 +937,7 @@ class _PlanCard extends StatelessWidget {
                           ),
                           child: Text(
                             saving,
-                            style: const TextStyle(
-                              fontSize: 10,
-                              fontWeight: FontWeight.w700,
-                              color: Color(0xFF15803D),
-                            ),
+                            style: const TextStyle(fontSize: 10, fontWeight: FontWeight.w700, color: Color(0xFF15803D)),
                           ),
                         ),
                       Text(
@@ -936,7 +1072,8 @@ class _FeatureRow extends StatelessWidget {
 // ── Kupon girişi ──────────────────────────────────────────────────────────────
 
 class _CouponSection extends ConsumerStatefulWidget {
-  const _CouponSection();
+  final void Function(int pct, String code, String planRestriction)? onDiscountApplied;
+  const _CouponSection({this.onDiscountApplied});
   @override
   ConsumerState<_CouponSection> createState() => _CouponSectionState();
 }
@@ -967,7 +1104,6 @@ class _CouponSectionState extends ConsumerState<_CouponSection>
     if (!_expanded) _ctrl.clear();
   }
 
-  // Adım 1: önizle → onay dialog'u göster
   Future<void> _preview() async {
     final code = _ctrl.text.trim();
     if (code.isEmpty) { setState(() => _error = 'Kupon kodunu gir.'); return; }
@@ -978,7 +1114,19 @@ class _CouponSectionState extends ConsumerState<_CouponSection>
       final preview = await svc.previewCoupon(code);
       if (!mounted) return;
       setState(() => _loading = false);
-      _showConfirm(preview);
+
+      if (preview.isDiscountCoupon) {
+        // İndirim kuponu → dialog yok, direkt planları indirimli göster
+        widget.onDiscountApplied?.call(
+          preview.discountPercent,
+          preview.code,
+          preview.discountPlanRestriction,
+        );
+        _toggle();
+      } else {
+        // Plan erişim kuponu → onay dialog'u göster
+        _showConfirm(preview);
+      }
     } catch (e) {
       if (!mounted) return;
       setState(() {
@@ -988,7 +1136,6 @@ class _CouponSectionState extends ConsumerState<_CouponSection>
     }
   }
 
-  // Adım 2: onay dialog'u
   void _showConfirm(CouponPreview preview) {
     showGeneralDialog(
       context: context,
@@ -1007,8 +1154,8 @@ class _CouponSectionState extends ConsumerState<_CouponSection>
     );
   }
 
-  // Adım 3: kullan + kutlama
-  Future<void> _redeem(CouponPreview preview) async {
+  // Plan erişim kuponu → premium aktif et
+  Future<void> _redeemPlanCoupon(CouponPreview preview) async {
     setState(() { _loading = true; _error = null; });
     try {
       final svc = ref.read(couponServiceProvider);
@@ -1016,7 +1163,10 @@ class _CouponSectionState extends ConsumerState<_CouponSection>
       if (uid == null) throw Exception('Giriş yapılmamış.');
 
       final result = await svc.redeemCoupon(preview.code);
-      if (result.plan == 'authorized') {
+      if (result.plan == 'discount' || result.plan.startsWith('discount_')) {
+        // İndirim kuponu buraya düşmemeli ama düşerse güvenli çık
+        throw Exception('Bu kupon indirim kuponu, premium açmaz.');
+      } else if (result.plan == 'authorized') {
         await svc.activateAuthorizedFromCoupon(uid: uid, code: result.code);
       } else {
         await svc.activatePremiumFromCoupon(
@@ -1037,7 +1187,6 @@ class _CouponSectionState extends ConsumerState<_CouponSection>
     if (!mounted) return;
     setState(() => _loading = false);
 
-    // Kutlama popup'ı
     await showGeneralDialog(
       context: context,
       barrierDismissible: false,
@@ -1057,6 +1206,8 @@ class _CouponSectionState extends ConsumerState<_CouponSection>
       context.go('/home/exams');
     }
   }
+
+  void _redeem(CouponPreview preview) => _redeemPlanCoupon(preview);
 
   @override
   Widget build(BuildContext context) {
@@ -1203,12 +1354,35 @@ class _ConfirmDialog extends StatelessWidget {
                 padding: const EdgeInsets.all(20),
                 child: Column(
                   children: [
-                    _DetailRow(icon: Icons.workspace_premium_rounded, label: 'Plan', value: preview.planLabel, color: const Color(0xFF16A34A)),
-                    const SizedBox(height: 10),
-                    _DetailRow(icon: Icons.timer_outlined, label: 'Süre', value: preview.durationLabel, color: AppColors.primary),
-                    if (expiresAt != null) ...[
+                    if (preview.isDiscountCoupon) ...[
+                      _DetailRow(
+                        icon: Icons.percent_rounded,
+                        label: 'İndirim',
+                        value: '%${preview.discountPercent}',
+                        color: const Color(0xFF16A34A),
+                      ),
                       const SizedBox(height: 10),
-                      _DetailRow(icon: Icons.event_outlined, label: 'Bitiş', value: expiryStr, color: const Color(0xFFD97706)),
+                      Container(
+                        padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 10),
+                        decoration: BoxDecoration(
+                          color: const Color(0xFFF0FDF4),
+                          borderRadius: BorderRadius.circular(10),
+                          border: Border.all(color: const Color(0xFF16A34A).withValues(alpha: 0.3)),
+                        ),
+                        child: const Text(
+                          'Bu kupon seçtiğin plana indirim uygular. İndirimli fiyatı görmek için planını seç ve öde.',
+                          style: TextStyle(fontSize: 12, color: Color(0xFF15803D), height: 1.4),
+                          textAlign: TextAlign.center,
+                        ),
+                      ),
+                    ] else ...[
+                      _DetailRow(icon: Icons.workspace_premium_rounded, label: 'Plan', value: preview.planLabel, color: const Color(0xFF16A34A)),
+                      const SizedBox(height: 10),
+                      _DetailRow(icon: Icons.timer_outlined, label: 'Süre', value: preview.durationLabel, color: AppColors.primary),
+                      if (expiresAt != null) ...[
+                        const SizedBox(height: 10),
+                        _DetailRow(icon: Icons.event_outlined, label: 'Bitiş', value: expiryStr, color: const Color(0xFFD97706)),
+                      ],
                     ],
                     const SizedBox(height: 20),
                     // Onayla butonu
@@ -1222,7 +1396,11 @@ class _ConfirmDialog extends StatelessWidget {
                           borderRadius: BorderRadius.circular(14),
                           boxShadow: [BoxShadow(color: const Color(0xFF16A34A).withValues(alpha: 0.35), blurRadius: 12, offset: const Offset(0, 4))],
                         ),
-                        child: const Text('✅  Kuponu Uygula', textAlign: TextAlign.center, style: TextStyle(color: Colors.white, fontSize: 15, fontWeight: FontWeight.w800)),
+                        child: Text(
+                          preview.isDiscountCoupon ? '🎟️  İndirimi Uygula' : '✅  Kuponu Uygula',
+                          textAlign: TextAlign.center,
+                          style: const TextStyle(color: Colors.white, fontSize: 15, fontWeight: FontWeight.w800),
+                        ),
                       ),
                     ),
                     const SizedBox(height: 10),
@@ -1438,13 +1616,17 @@ class _BuyButton extends StatelessWidget {
   final _Plan plan;
   final bool fourMonth;
   final bool isPremium;
+  final int discountPercent;
   final VoidCallback onPressed;
 
-  const _BuyButton({required this.plan, required this.fourMonth, this.isPremium = false, required this.onPressed});
+  const _BuyButton({required this.plan, required this.fourMonth, this.isPremium = false, this.discountPercent = 0, required this.onPressed});
 
   @override
   Widget build(BuildContext context) {
-    final price = fourMonth ? plan.fourMonthPrice : plan.monthlyPrice;
+    final basePrice = fourMonth ? plan.fourMonthPrice : plan.monthlyPrice;
+    final price = discountPercent > 0
+        ? (basePrice * (1 - discountPercent / 100)).round()
+        : basePrice;
     final priceStr = '₺${_PlanCard._fmt(price)}/ay';
 
     return GestureDetector(
@@ -1489,9 +1671,11 @@ class _BuyButton extends StatelessWidget {
             ),
             const SizedBox(height: 2),
             Text(
-              fourMonth
-                  ? '$priceStr · ${_PlanCard._fmt(plan.fourMonthTotal)} ₺ 4 ayda bir'
-                  : '$priceStr · Her ay yenilenir',
+              discountPercent > 0
+                  ? '$priceStr · %$discountPercent kupon indirimi'
+                  : (fourMonth
+                      ? '$priceStr · ${_PlanCard._fmt(plan.fourMonthTotal)} ₺ 4 ayda bir'
+                      : '$priceStr · Her ay yenilenir'),
               style: const TextStyle(color: Colors.white70, fontSize: 12),
             ),
           ],
