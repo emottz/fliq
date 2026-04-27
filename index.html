@@ -82,22 +82,30 @@
 <body>
   <script>
     // Service worker otomatik güncelleme:
-    // Yeni versiyon deploy edilince sayfa kendiliğinden yenilenir,
-    // kullanıcının cache temizlemesine gerek kalmaz.
+    // Yeni versiyon deploy edilince SW aktifleşir.
+    // Reload yalnızca Flutter henüz başlamadıysa yapılır;
+    // kullanıcı aktif kullanımdaysa reload yapılmaz — oturum kesilmez.
     if ('serviceWorker' in navigator) {
+      window._swReloadSafe = true;
+
+      // Flutter ilk frame'ini render edince reload artık güvenli değil
+      window.addEventListener('flutter-first-frame', function () {
+        window._swReloadSafe = false;
+      });
+
       navigator.serviceWorker.addEventListener('controllerchange', function () {
-        window.location.reload();
+        if (window._swReloadSafe) {
+          window.location.reload();
+        }
+        // Flutter aktifken reload yok — yeni SW bir sonraki ziyarette devreye girer
       });
 
       navigator.serviceWorker.ready.then(function (reg) {
-        // Her sayfa açılışında güncelleme kontrol et
         reg.update();
-
         reg.addEventListener('updatefound', function () {
           var newWorker = reg.installing;
           if (!newWorker) return;
           newWorker.addEventListener('statechange', function () {
-            // Yeni SW yüklenip beklemeye geçince hemen aktifleştir
             if (newWorker.state === 'installed' && navigator.serviceWorker.controller) {
               newWorker.postMessage({ type: 'SKIP_WAITING' });
             }
